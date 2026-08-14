@@ -1,0 +1,43 @@
+[
+	{
+		"number": 324949,
+		"data": "1,20,380,7064,129740,2368008,43069168,781583572,14160543572,256233400004,4631789851254",
+		"name": "Number of path change-ringing sequences of length n for 7 bells.",
+		"comment": [
+			"a(n) is the number of (change-ringing) sequences of length[*] n when we are looking at sequences of permutations of the set {1,2,3,4,5,6,7} that satisfy:",
+			"1. The position of each bell (number) from one permutation to the next can stay the same or move by at most one place.",
+			"2. No permutation can be repeated except for the starting permutation which can be repeated at most once at the end of the sequence to accommodate criterion 4.",
+			"3. The sequence must start with the permutation (1,2,3,4,5,6,7).",
+			"And does not satisfy:",
+			"4. The sequence must end with the same permutation that it started with.",
+			"[*]: We define the length of a change-ringing sequence to be the number of permutations in the sequence.",
+			"With this [*] definition of the length of a change-ringing sequence; for 7 bells we get a maximum length of factorial(7)=5040, thus we have 5040 possible lengths, namely 1,2,...,5040. Hence {a(n)} has 5040 terms. For m bells, where m is a natural number larger than zero, we get a maximum length of factorial(m). When denoting the number of path change-ringing sequences of length n for m bells as a_m(n), {a_m(n)} has factorial(m) terms for all m."
+		],
+		"link": [
+			"Jonas K. Sønsteby, \u003ca href=\"https://github.com/jonassonsteby/change-ringing\"\u003ePython program\u003c/a\u003e.",
+			"\u003ca href=\"/index/Be#bell_ringing\"\u003eIndex entries for sequences related to bell ringing.\u003c/a\u003e"
+		],
+		"program": [
+			"(Python) # See Jonas K. Sønsteby link."
+		],
+		"xref": [
+			"4 bells: A324942, A324943.",
+			"5 bells: A324944, A324945.",
+			"6 bells: A324946, A324947.",
+			"7 bells: A324948, This sequence.",
+			"8 bells: A324950, A324951.",
+			"9 bells: A324952, A324953.",
+			"Number of allowable transition rules: A000071."
+		],
+		"keyword": "nonn,fini,more",
+		"offset": "1,2",
+		"author": "_Jonas K. Sønsteby_, May 01 2019",
+		"ext": [
+			"a(7)-a(11) from _Bert Dobbelaere_, May 17 2025"
+		],
+		"references": 11,
+		"revision": 10,
+		"time": "2025-09-29T23:29:50-04:00",
+		"created": "2019-07-27T12:11:50-04:00"
+	}
+]

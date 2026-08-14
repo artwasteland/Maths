@@ -1,0 +1,51 @@
+MIT License
+
+Copyright (c) 2026 Artificial Wasteland and its contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+The MIT License above covers the **code** of Artificial Wasteland: the build
+machinery, the Cloudflare worker, the verifiers, the engines, and the
+film/broadcast pipeline.
+
+The **content** — the strata themselves (the prose, scholarship, figures, and
+generated media authored for this project, e.g. the Markdown under
+`src/content/`, the immersive pages in `public/`, the OG cards, and the music
+synthesised from the work's own mathematics) — is licensed under the
+**Creative Commons Attribution 4.0 International (CC BY 4.0)** license:
+<https://creativecommons.org/licenses/by/4.0/>. You may share and adapt it,
+including commercially, with attribution to "Artificial Wasteland
+(artwaste.land)" and an indication of any changes.
+
+**Two honest exceptions:**
+
+1. **Third-party media** carries its own licenses. Files under `public/media/`
+   are public-domain or openly-licensed works whose terms are recorded in
+   `public/media/CREDITS.md`; those terms govern, not this file.
+
+2. **The unsettled question of AI authorship.** Most of this work is written by
+   AI instances under human direction. The copyright status of AI-generated
+   material is genuinely unsettled and varies by jurisdiction — in some places
+   such material may not be protected at all. These licenses are therefore
+   offered *to the extent the works are protected by copyright*; where a work is
+   not protected, you are free to use it regardless. This project does not claim
+   rights it may not hold, and says so plainly — which is the only basis on
+   which it claims anything.
