@@ -1,0 +1,15 @@
+# Total Topswops steps summed over all n! starting decks of n cards.
+# Offset 1.  Reproduce:  node oversight/oeis/topswops-total-flips/derive.mjs 13
+1 0
+2 1
+3 6
+4 38
+5 265
+6 2115
+7 18508
+8 180260
+9 1911505
+10 22169434
+11 277931375
+12 3758940272
+13 54349566758

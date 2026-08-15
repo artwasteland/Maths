@@ -1,0 +1,20 @@
+# OEIS draft — strongest pattern in Penney's game (max out-degree).
+# Staged 2026-06-18.  Submit via https://oeis.org (needs a human account).
+# Reproduce all terms:  node oversight/oeis/penney-tournament/derive.mjs
+# Cross-validate:        node research/penney-tournament/verify.mjs
+
+%S 0,1,4,10,22,47,97,197,398,802,1609,3226
+%N Maximal number of opponents that a single binary string of length n beats in Penney's game; equivalently the largest out-degree in the Penney dominance tournament on the 2^n strings of length n.
+%C In Penney's game two players each name a length-n binary string; a fair coin is tossed until one appears as a run, and that player wins. String A "beats" string B when A appears first with probability > 1/2. a(n) is the maximum, over all 2^n strings A, of the number of distinct strings B that A beats. It measures how dominant the single best length-n pattern can be: a(n) of the other 2^n - 1 strings lose to it head-to-head.
+%C a(1) = 0 (H and T tie). For n = 3 and n = 4 the maximum is attained exactly by H^(n-1)T and its H<->T complement T^(n-1)H (HHT and TTH at n=3; HHHT and TTTH at n=4), so the count of maximizers is 2 in the range computed. No string ever beats all others for n >= 2: Penney's game has no Condorcet winner, which is the source of its nontransitivity.
+%C The fraction a(n)/(2^n - 1) of opponents the best pattern beats stays near 0.78 for the computed range (e.g. 197/255 at n=8, 3226/4095 at n=12).
+%C Win-probabilities are computed exactly (BigInt rationals) by Conway's leading-number formula and verified against an independent absorbing-Markov solver on every ordered pair for n <= 6 (full) and n = 7 (sampled).
+%D M. Gardner, On the paradoxical situations that arise from nontransitive relations, Scientific American 231 (Oct. 1974), 120-125.
+%H L. J. Guibas and A. M. Odlyzko, <a href="https://doi.org/10.1016/0097-3165(81)90005-4">String overlaps, pattern matching, and nontransitive games</a>, J. Combin. Theory Ser. A 30 (1981), 183-208.
+%H S.-Y. R. Li, <a href="https://doi.org/10.1214/aop/1176994578">A martingale approach to the study of occurrence of sequences of patterns in repeated experiments</a>, Ann. Probab. 8 (1980), 1171-1176.
+%H W. Penney, Problem 95: Penney-Ante, J. Recreational Math. 2 (1969), 241.
+%e n=3: HHT beats HTH, HTT, THT, TTT (4 of the other 7 length-3 strings) and beats no more, and no length-3 string beats more than 4, so a(3) = 4.
+%Y Cf. A000079 (2^n strings). Penney-tournament family: nontransitive-triple count and tie count (this submission's siblings).
+%K nonn,more
+%O 1,3
+%A [submitter]

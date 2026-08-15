@@ -1,0 +1,52 @@
+{
+  "//": "Zenodo deposit metadata (paste into the web form, or read from a GitHub release). Depositor: the human. Provenance stated honestly, not laundered.",
+  "title": "The next terms of OEIS A282901: labeled chip-firing reaches a(5)=819 and a(6)=2555 (exact, reproducible)",
+  "upload_type": "dataset",
+  "description": "OEIS A282901 counts the permutations of 1..2n+1 obtainable via labeled chip-firing (Hopkins, McConville, Propp, 'Sorting via chip-firing', Electronic J. Combinatorics 24 (2017) #P3.13; arXiv:1612.06816). Start with 2n+1 labeled chips at the origin of the integer line; fire any site holding two or more chips by sending the lesser-labeled of a chosen pair one step left and the greater one step right; a(n) is the number of distinct sorted-ish terminal permutations reachable. The sequence had five terms on record (a(0..4) = 1, 3, 12, 54, 232; OEIS keyword 'more'; no b-file, no program). This work computes the next two terms: a(5) = 819 (11 chips, 6,520,201 configurations) and a(6) = 2555 (13 chips, 705,592,802 configurations), exactly, by exhaustive search of the reachable-configuration graph. Trust rests on THREE independent enumerators that agree on every odd N <= 9 -- reproducing all five published terms AND their reachable-configuration counts 1, 4, 56, 1699, 84793 -- and then agree on a(5) = 819: a real-integer-position Map enumerator in JavaScript; a nibble-packed Number enumerator in JavaScript; and a flat-open-addressing uint64 enumerator in C++. The related theorem of the same paper (Theorem 13: for an EVEN number of chips the process confluES to the unique sorted order regardless of firing choices) is reproduced as ground truth, with the terminal sites matching its closed form. For odd N the support never fires its boundary sites, an invariant asserted (and never triggered) by the enumerators. Gate: node research/labeled-chip-firing/verify.mjs (29/29). Only a(5) and a(6) carry the novelty claim (a(6), past the reach of the JS methods, is confirmed by two independent C++ builds with different hash functions and probing schemes); the process, the firing rule, Theorem 13, and the sequence itself are Hopkins-McConville-Propp's, cited and not claimed as new. PROVENANCE: the computation and prose were produced by an AI instance (Claude) within the open 'Artificial Wasteland' project under a strict never-lie / show-the-check rule; everything is verified by reproducible code. Deposited as a citable, independently-checkable artifact and explicitly offered for independent human verification. Per OEIS policy it has NOT been submitted to the OEIS by the project; any extension of A282901 should be authored only by a human who has verified it themselves.",
+  "creators": [
+    {
+      "name": "Thomas, Liam",
+      "affiliation": "Artificial Wasteland (curator/depositor)"
+    },
+    {
+      "name": "Artificial Wasteland (AI instance)",
+      "affiliation": "computation & drafting; https://artwaste.land"
+    }
+  ],
+  "keywords": [
+    "labeled chip-firing",
+    "chip-firing",
+    "abelian sandpile",
+    "sorting",
+    "confluence",
+    "integer sequence",
+    "combinatorics",
+    "OEIS",
+    "A282901",
+    "Hopkins",
+    "McConville",
+    "Propp",
+    "exact enumeration",
+    "reproducible"
+  ],
+  "license": "CC-BY-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://artwaste.land/strata/the-pile-that-sorts-itself/",
+      "resource_type": "other"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://oeis.org/A282901",
+      "resource_type": "dataset"
+    },
+    {
+      "relation": "references",
+      "identifier": "arXiv:1612.06816",
+      "resource_type": "publication-preprint"
+    }
+  ],
+  "notes": "Reproduce every term and check from the bundled code: node research/labeled-chip-firing/verify.mjs (29/29) and node oversight/oeis/labeled-chip-firing/derive.mjs (rewrites the b-file). b-file b282901.txt gives a(0..6) = 1,3,12,54,232,819,2555 at offset 0. a(5) = 819 confirmed by a C++ flat-hash enumerator and, independently, by a JavaScript nibble enumerator (both over 6,520,201 configs). a(6)=2555 at N=13 (705,592,802 configs) is the compute wall on a single commodity box; a(7) at N=15 is out of range."
+}

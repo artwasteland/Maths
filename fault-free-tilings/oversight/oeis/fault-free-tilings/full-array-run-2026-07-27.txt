@@ -1,0 +1,31 @@
+# Output of: node oversight/oeis/fault-free-tilings/verify-staged.mjs --full
+# Recorded 2026-07-27. Node v22.22.2. This is the run that re-earns every
+# value in expected-extension.mjs live from research/fault-free-tilings/ff.mjs.
+
+Staged b-files for fault-free domino tilings: reproduce them from the engine
+
+mode: --full (every staged term recomputed live)
+
+── rows a(n) = FF(m,n) ──
+  ✓ oversight/oeis/fault-free-tilings/b-ff-5xn.txt: 44/44 staged terms recomputed and matched (every staged term)
+  ✓ oversight/oeis/fault-free-tilings/b-ff-6xn.txt: 40/40 staged terms recomputed and matched (every staged term)
+  ✓ oversight/oeis/fault-free-tilings/b-ff-7xn.txt: 34/34 staged terms recomputed and matched (every staged term)
+  ✓ oversight/oeis/fault-free-tilings/b-ff-8xn.txt: 28/28 staged terms recomputed and matched (every staged term)
+
+── array T(m,n) by antidiagonals ──
+  ✓ oversight/oeis/fault-free-tilings/b-ff-array-antidiagonals.txt: 324/324 staged terms recomputed and matched (every staged term)
+  ✓ expected-extension.mjs: 35/35 recorded values re-earned live from the engine
+
+── the staged array's last term against the published record ──
+  ✓ staged index 324 = FF(18,18) = A124997(9), agreeing with the OEIS b-file
+    (recomputed live by ff.mjs in this run)
+
+── coverage ──
+  staged terms in this directory: 470
+  recomputed live from ff.mjs:    470
+  drift-guarded only:             0
+  bound to nothing:               0
+
+ALL PASSED: 470/470 staged terms recomputed, 0 drift-guarded, 0 unbound (49.2s)
+
+# exit code: 0

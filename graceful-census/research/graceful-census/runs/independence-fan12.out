@@ -1,0 +1,18 @@
+# fan(11) seed=12345  v=12 m=21  shards=22
+fan(11) permuted = 4990632
+# fan(12) seed=12345  v=13 m=23  shards=24
+fan(12) permuted = 39745364
+# helm(7) seed=12345  v=15 m=21  shards=22
+helm(7) permuted = 359216956
+
+# Provenance: produced by `bash independence.sh <family> <n>` (seed 12345) on
+# 2026-07-20, instance claude-curious-noether-8b2d41, 4-core box.
+# fan(11) and helm(7) are the CONTROLS: both must reproduce their committed
+# b-file terms, and both do. fan(12) is the term under test -- it has no OEIS
+# cousin, so this permuted recount is its independent confirmation.
+# Cross-check the b-files: fan(12)=39745364, helm(7)=359216956.
+
+# Second seed (9001), 2026-07-20, same instance: a different permutation, so a
+# different traversal again. fan(12) permuted = 39745364. Matches.
+# fan(12) seed=9001  v=13 m=23  shards=24
+# fan(12) permuted = 39745364

@@ -1,0 +1,21 @@
+# OEIS draft — nontransitive (cyclic) triples in the Penney's-game tournament.
+# Staged 2026-06-18.  Submit via https://oeis.org (needs a human account).
+# Reproduce all terms:  node oversight/oeis/penney-tournament/derive.mjs
+# Cross-validate the win-probabilities two independent ways (Conway's formula vs
+# an exact Markov solver, every pair):  node research/penney-tournament/verify.mjs
+
+%S 0,0,0,14,182,1790,16792,146894,1208544,9820040
+%N Number of directed 3-cycles (nontransitive triples) in the Penney's-game dominance tournament on the 2^n binary strings of length n.
+%C In Penney's game two players each name a binary string of length n; a fair coin is tossed until one string appears as a run of consecutive outcomes, and that player wins. For length n the 2^n strings form a tournament: for distinct strings A and B let p(A,B) be the probability that A appears before B, draw the edge A -> B when p(A,B) > 1/2 ("A beats B"), and leave the pair undecided when p(A,B) = 1/2 (a tie; see the companion sequence of tie counts). a(n) counts the unordered triples {A,B,C} all three of whose pairs are decided and which form a directed 3-cycle A -> B -> C -> A. This is the number of rock-paper-scissors triangles hidden in a fair coin at string length n.
+%C a(1) = a(2) = a(3) = 0: there is no nontransitive TRIANGLE until n = 4. This is notable because Penney's game is already nontransitive at n = 3 -- the four strings HHT, HTT, TTH, THH form a directed 4-CYCLE (each beats the next, with odds 2/3, 3/4, 2/3, 3/4) -- yet every decided triple of length-3 strings is transitive. The smallest cyclic structure at length 3 is a square, not a triangle; triangles first appear at length 4.
+%C The tournament is invariant under the H<->T complement (it merely relabels the coin), so the counts inherit that symmetry.
+%C Win-probabilities are computed exactly (BigInt rationals) by Conway's leading-number formula and independently by an absorbing-Markov linear solver; the two agree on every ordered pair for n <= 6 (full) and n = 7 (sampled). The 3-cycle count is itself recomputed two ways (direct triple enumeration and a bitset triangle count).
+%D M. Gardner, On the paradoxical situations that arise from nontransitive relations, Scientific American 231 (Oct. 1974), 120-125.
+%H L. J. Guibas and A. M. Odlyzko, <a href="https://doi.org/10.1016/0097-3165(81)90005-4">String overlaps, pattern matching, and nontransitive games</a>, J. Combin. Theory Ser. A 30 (1981), 183-208.
+%H S.-Y. R. Li, <a href="https://doi.org/10.1214/aop/1176994578">A martingale approach to the study of occurrence of sequences of patterns in repeated experiments</a>, Ann. Probab. 8 (1980), 1171-1176.
+%H W. Penney, Problem 95: Penney-Ante, J. Recreational Math. 2 (1969), 241.
+%e n=4: among the 16 length-4 strings there are 14 unordered triples whose three Penney matchups form a directed 3-cycle; a(4) = 14.
+%Y Cf. A000079 (number of strings = 2^n). Penney-tournament family: tie counts and maximal out-degree (this submission's siblings).
+%K nonn,more
+%O 1,4
+%A [submitter]

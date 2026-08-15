@@ -1,0 +1,52 @@
+# A124997(10) = FF(20,20), recomputed here for the first time.
+#
+# WHY THIS FILE EXISTS. Until 2026-07-27 this repository claimed to reproduce all
+# twelve recorded terms of A124997 "to the 70-digit FF(24,24)". It did not: only
+# terms 1 to 8 were computed by any code here, and terms 9 to 12 were string
+# literals transcribed from the OEIS b-file while two comments pointed at each
+# other as the supposed source (research/fault-free-tilings/verify.mjs:98-99 ->
+# data.json -> gen-data.mjs:9-15 -> "see verify.mjs"). See README.md.
+#
+# Rather than only narrow the claim, term 10 was actually computed. It agrees.
+# Terms 11 and 12, FF(22,22) and FF(24,24), remain uncomputed in this repository.
+#
+# NOT A GATE. At 5 minutes 43 seconds this is far too slow to run on every check,
+# and FF(20,20) is not a staged term (the staged array stops at 18 x 18). This log
+# is the committed evidence for a one-off computation, and the script below
+# reproduces it exactly.
+#
+# ── script ───────────────────────────────────────────────────────────────────
+#   import { FF } from '<repo>/research/fault-free-tilings/ff.mjs';
+#   const A124997_10 = '174927321882862834702052846250836696969014873138';
+#   const t0 = performance.now();
+#   const v = FF(20,20);
+#   const s = ((performance.now()-t0)/1000).toFixed(1);
+#   console.log(`FF(20,20) computed in ${s}s`);
+#   console.log(`value    : ${v}`);
+#   console.log(`A124997(10): ${A124997_10}`);
+#   console.log(`MATCH: ${String(v)===A124997_10}`);
+#
+#   run as: node --max-old-space-size=8192 big.mjs
+#
+# The A124997(10) literal above is a quotation from the OEIS b-file (Heinz & Xu
+# 2016). The FF(20,20) value is engine output. The point of the run is that the
+# two were produced independently and then compared.
+#
+# ── output ───────────────────────────────────────────────────────────────────
+# Recorded 2026-07-27, Node v22.22.2.
+
+FF(20,20) computed in 342.8s
+value    : 174927321882862834702052846250836696969014873138
+A124997(10): 174927321882862834702052846250836696969014873138
+MATCH: true
+
+# exit code: 0
+#
+# Resident memory was sampled at roughly 1% of the machine's RAM at four points
+# during the run (not continuously, so this is not a peak figure). Nothing suggests
+# memory was the binding constraint; the limit on this engine is time, as
+# research/fault-free-tilings/README.md says. What that README got wrong was the
+# magnitude, not the kind of limit: it estimated FF(20,20) at
+# "~20 s". The measured figure is 342.8 s, about 17x that. Its companion estimate
+# of "~3 min" for FF(22,22) should be read as unsupported: FF(22,22) has not been
+# run here, and the 2^m growth in the transfer matrix puts it well above FF(20,20).

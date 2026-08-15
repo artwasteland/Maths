@@ -1,0 +1,74 @@
+{
+  "sequence": "A282901",
+  "definition": "Number of permutations of 1..2n+1 obtainable via labeled chip-firing (Hopkins-McConville-Propp).",
+  "offset": 0,
+  "terms": [
+    1,
+    3,
+    12,
+    54,
+    232,
+    819,
+    2555
+  ],
+  "knownFromOEIS": [
+    1,
+    3,
+    12,
+    54,
+    232
+  ],
+  "newTerms": {
+    "5": 819,
+    "6": 2555
+  },
+  "configs": {
+    "1": 1,
+    "3": 4,
+    "5": 56,
+    "7": 1699,
+    "9": 84793,
+    "11": 6520201,
+    "13": 705592802
+  },
+  "exampleReachable": {
+    "1": [
+      "123",
+      "132",
+      "213"
+    ],
+    "2": [
+      "12345",
+      "12354",
+      "12435",
+      "12534",
+      "13245",
+      "13254",
+      "13425",
+      "14235",
+      "21345",
+      "21354",
+      "21435",
+      "23145"
+    ]
+  },
+  "evenSorts": [
+    {
+      "N": 2,
+      "reachable": 1
+    },
+    {
+      "N": 4,
+      "reachable": 1
+    },
+    {
+      "N": 6,
+      "reachable": 1
+    },
+    {
+      "N": 8,
+      "reachable": 1
+    }
+  ],
+  "generated": "2026-07-12"
+}

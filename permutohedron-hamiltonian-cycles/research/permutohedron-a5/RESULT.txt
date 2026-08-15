@@ -1,0 +1,17 @@
+uniform seeds: 48   total dives: 288,000,000
+per-seed estimates (1e21): 0.863, 0.909, 0.914, 0.937, 0.940, 0.977, 0.981, 0.996, 1.006, 1.008, 1.010, 1.011, 1.014, 1.018, 1.022, 1.034, 1.039, 1.047, 1.049, 1.052, 1.058, 1.072, 1.073, 1.084, 1.094, 1.100, 1.103, 1.105, 1.122, 1.127, 1.150, 1.156, 1.167, 1.172, 1.187, 1.196, 1.207, 1.215, 1.225, 1.241, 1.272, 1.273, 1.279, 1.294, 1.342, 1.343, 1.349, 1.487
+min/median/max (1e21): 0.863 / 1.089 / 1.487
+
+PRIMARY  equal-weight mean : a(5) = 1.1108e+21   (between-seed SE 1.93e+19, rel 1.7%)
+  (1) normal-approx 95% CI : [1.073e+21, 1.149e+21]  = (1.07 .. 1.15) x 1e21
+  (2) bootstrap   95% CI   : [1.074e+21, 1.149e+21]  = (1.07 .. 1.15) x 1e21
+  (3) median-of-means (k=8) : 1.1066e+21  = 1.107 x 1e21  (heavy-tail-robust cross-check)
+
+point estimate: a(5) ~ 1.11 x 1e21
+prior (2026-06-04, 8 seeds / 48M dives): 1.115 x 1e21  (inside the new bootstrap CI)
+
+Honesty note: the SIS estimator is heavy-tailed — the mean is unbiased in
+expectation, but even this CI is empirical, not a proof of bounds. Agreement
+of the normal-approx CI, the bootstrap CI, and median-of-means is evidence the
+tail is adequately sampled at this scale; it is not a guarantee. The EXACT
+integer stays open (RAM-blocked; see README.md and request 007).

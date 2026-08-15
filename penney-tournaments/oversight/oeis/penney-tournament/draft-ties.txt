@@ -1,0 +1,20 @@
+# OEIS draft — tied pairs in Penney's game.
+# Staged 2026-06-18.  Submit via https://oeis.org (needs a human account).
+# Reproduce all terms:  node oversight/oeis/penney-tournament/derive.mjs
+# Cross-validate:        node research/penney-tournament/verify.mjs
+
+%S 1,4,10,32,120,478,1860,7192,28490,112328,445752,1769174
+%N Number of unordered pairs {A,B} of distinct binary strings of length n that are tied in Penney's game: each of A, B appears first (as a run in fair coin flipping) with probability exactly 1/2.
+%C In Penney's game two players each name a length-n binary string; a fair coin is tossed until one string occurs as a run of consecutive outcomes. For distinct strings A, B let p(A,B) be the probability that A occurs before B. a(n) counts the unordered pairs with p(A,B) = 1/2 -- the matchups that are dead heats. The remaining C(2^n,2) - a(n) pairs are decided (one string is favoured); they are the edges of the Penney dominance tournament.
+%C a(1) = 1: the only length-1 matchup, H vs T, is a tie. At n=2 the four ties are {HH,HT}, {HH,TT}, {HT,TH}, {TH,TT}; the only two decided pairs are HH vs TH (TH wins 3:1) and HT vs TT (HT wins 3:1).
+%C By the H<->T complement symmetry of the game the set of tied pairs is closed under simultaneous complementation.
+%C Win-probabilities are computed exactly (BigInt rationals) by Conway's leading-number formula and verified against an independent absorbing-Markov solver on every ordered pair for n <= 6 (full) and n = 7 (sampled).
+%D M. Gardner, On the paradoxical situations that arise from nontransitive relations, Scientific American 231 (Oct. 1974), 120-125.
+%H L. J. Guibas and A. M. Odlyzko, <a href="https://doi.org/10.1016/0097-3165(81)90005-4">String overlaps, pattern matching, and nontransitive games</a>, J. Combin. Theory Ser. A 30 (1981), 183-208.
+%H S.-Y. R. Li, <a href="https://doi.org/10.1214/aop/1176994578">A martingale approach to the study of occurrence of sequences of patterns in repeated experiments</a>, Ann. Probab. 8 (1980), 1171-1176.
+%H W. Penney, Problem 95: Penney-Ante, J. Recreational Math. 2 (1969), 241.
+%e n=1: H vs T is the only pair and it is a tie, so a(1) = 1. n=2: of the C(4,2)=6 pairs of strings in {HH,HT,TH,TT}, exactly 4 are dead heats and 2 are decided, so a(2) = 4.
+%Y Cf. A000079 (2^n strings), A006516 (C(2^n,2) = total pairs). Penney-tournament family: nontransitive-triple count and maximal out-degree (this submission's siblings).
+%K nonn,more
+%O 1,2
+%A [submitter]

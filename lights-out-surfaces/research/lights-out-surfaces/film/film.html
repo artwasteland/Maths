@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1920, initial-scale=1" />
+<title>The Lights That Hide (companion film)</title>
+<style>
+  @font-face{font-family:"Fraunces";src:url("./fraunces.woff2") format("woff2");font-weight:400;font-display:block}
+  @font-face{font-family:"Fraunces";src:url("./fraunces-italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:block}
+  @font-face{font-family:"Martian Mono";src:url("./martian-mono.woff2") format("woff2");font-weight:400;font-display:block}
+  html,body{margin:0;padding:0;background:#0d0f14;overflow:hidden}
+  #stage{display:block;width:1920px;height:1080px}
+</style>
+</head>
+<body>
+<canvas id="stage" width="1920" height="1080"></canvas>
+<script type="module">
+import { closedNeighbourhood, buildMatrix, surfaceNullity } from '../engine.mjs';
+import { kernelBasis } from './kernel.mjs';
+
+// ---------------------------------------------------------------------------
+// palette — carried verbatim from the stratum page (/strata/the-lights-that-hide/)
+// ---------------------------------------------------------------------------
+const C = {
+  bg:'#0d0f14', panel:'#141821', panel2:'#1b2130', ink:'#e9edf3', dim:'#9aa7b8',
+  line:'#28303f', cellOff:'#10151d', cellBorder:'#232b39',
+  gold:'#ffc94a', gold2:'#ff9f45', goldHi:'#ffe08a', goldLo:'#e0a52f',
+  good:'#5fd08a', bad:'#f0736a', cool:'#6db6ff', wrap:'#c98bff',
+};
+const W = 1920, H = 1080;
+const cv = document.getElementById('stage');
+const ctx = cv.getContext('2d');
+
+// ---------------------------------------------------------------------------
+// timeline (seconds). Bells in make-audio.mjs are struck on these boundaries.
+// ---------------------------------------------------------------------------
+const DUR = 166;
+const P = { title:[0,15], rule:[15,34], quiet:[34,68], number:[68,86], glue:[86,120], census:[120,148], parity:[148,166] };
+
+// ---------------------------------------------------------------------------
+// easing helpers (the whole film is closed-form in t)
+// ---------------------------------------------------------------------------
+const smooth = (t,a,b)=> t<=a?0: t>=b?1: 0.5-0.5*Math.cos(Math.PI*(t-a)/(b-a));
+const pulse  = (t,a,b)=>{ const m=a+(b-a)*0.35; return smooth(t,a,m)*(1-smooth(t,m,b)); };
+const clamp  = (x,a,b)=>Math.max(a,Math.min(b,x));
+const bits   = (v,i)=> (v>>BigInt(i))&1n;
+
+// ---------------------------------------------------------------------------
+// precompute — all deterministic; assembled once at boot
+// ---------------------------------------------------------------------------
+const M5 = buildMatrix(5,5,'plane').rows;         // symmetric: row j = closed nbhd of j
+// HERO quiet pattern: the classic 5x5 diamond (16 buttons), which changes nothing.
+const QMASK = kernelBasis(5,'plane')[0];
+const QBUTTONS = []; for(let i=0;i<25;i++) if(bits(QMASK,i)) QBUTTONS.push(i);
+// start board = an X (both diagonals). Pressing the whole quiet pattern returns it.
+const START_X = [0,6,12,18,24, 4,8,16,20];
+let sx = 0n; for(const i of START_X) sx |= 1n<<BigInt(i);
+const HERO_STATES = [sx];
+for(const j of QBUTTONS){ let b = HERO_STATES[HERO_STATES.length-1]; b ^= M5[j]; HERO_STATES.push(b); }
+// (sanity, silent) HERO_STATES[16] === sx by construction of a kernel vector.
+
+// closed neighbourhood as index array, for drawing the plus / wraps.
+const nbhd = (r,c,n,s)=> [...closedNeighbourhood(r,c,n,n,s)];
+
+// CENSUS — computed live from the engine, n=1..10, five surfaces.
+const CN = 10;
+const CENSUS = {
+  plane:   { label:'flat grid',    oeis:'A159257', cat:true  , vals:[] },
+  torus:   { label:'torus',        oeis:'A165738', cat:true  , vals:[] },
+  cylinder:{ label:'cylinder',     oeis:'absent',  cat:false , vals:[] },
+  mobius:  { label:'Möbius band',  oeis:'absent',  cat:false , vals:[] },
+  klein:   { label:'Klein bottle', oeis:'absent',  cat:false , vals:[] },
+};
+for(const s of Object.keys(CENSUS)) for(let n=1;n<=CN;n++) CENSUS[s].vals.push(surfaceNullity(n,s));
+
+// PARITY — the cylinder sequence n=1..30. Taken from the project's own census
+// file (data.json, the same numbers the OEIS deposit is built on) and spot-checked
+// against the live engine below, so the row on screen cannot drift from the maths.
+let CYL30 = [];
+async function loadParity(){
+  const data = await (await fetch('../data.json')).json();
+  CYL30 = data.seq.cylinder.slice(0,30);
+  for(const n of [5,8,14,23]) if(surfaceNullity(n,'cylinder') !== CYL30[n-1]) throw new Error('parity drift n='+n);
+}
+
+// ---------------------------------------------------------------------------
+// drawing primitives
+// ---------------------------------------------------------------------------
+function roundRect(x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+
+// draw an n x n board centred at (cx,cy). getCell(i) -> {lit, quiet, press}
+// where press in [0,1] scales a highlight ring; alpha fades the whole board.
+function drawBoard(cx, cy, n, cell, gap, getCell, alpha=1){
+  const span = n*cell + (n-1)*gap;
+  const x0 = cx - span/2, y0 = cy - span/2;
+  ctx.save(); ctx.globalAlpha = alpha;
+  for(let r=0;r<n;r++) for(let c=0;c<n;c++){
+    const i = r*n+c, x = x0 + c*(cell+gap), y = y0 + r*(cell+gap);
+    const st = getCell(i) || {};
+    const rad = Math.max(6, cell*0.19);
+    if(st.lit){
+      const g = ctx.createRadialGradient(x+cell*0.38, y+cell*0.34, cell*0.05, x+cell*0.5, y+cell*0.5, cell*0.72);
+      g.addColorStop(0, C.goldHi); g.addColorStop(0.62, C.gold); g.addColorStop(1, C.goldLo);
+      ctx.save(); ctx.shadowColor='rgba(255,201,74,.55)'; ctx.shadowBlur=cell*0.5;
+      roundRect(x,y,cell,cell,rad); ctx.fillStyle=g; ctx.fill(); ctx.restore();
+      roundRect(x,y,cell,cell,rad); ctx.lineWidth=1.5; ctx.strokeStyle='#ffcf5e'; ctx.stroke();
+    } else {
+      roundRect(x,y,cell,cell,rad); ctx.fillStyle=C.cellOff; ctx.fill();
+      ctx.lineWidth=1.5; ctx.strokeStyle=C.cellBorder; ctx.stroke();
+    }
+    if(st.quiet){
+      ctx.beginPath(); ctx.arc(x+cell/2, y+cell/2, cell*0.16, 0, 7); ctx.fillStyle=C.wrap;
+      ctx.save(); ctx.shadowColor=C.wrap; ctx.shadowBlur=cell*0.35; ctx.fill(); ctx.restore();
+    }
+    if(st.press>0){
+      const k = st.press; roundRect(x-4,y-4,cell+8,cell+8,rad+4);
+      ctx.lineWidth=3+3*k; ctx.strokeStyle='rgba(255,224,138,'+(0.9*k)+')'; ctx.stroke();
+    }
+  }
+  ctx.restore();
+  return {x0,y0,span,cell,gap,n};
+}
+// centre pixel of cell i on a board layout
+function cellCenter(bl, i){ const r=Math.floor(i/bl.n), c=i%bl.n; return [bl.x0 + c*(bl.cell+bl.gap) + bl.cell/2, bl.y0 + r*(bl.cell+bl.gap) + bl.cell/2]; }
+
+function text(str, x, y, {size=40, font='Fraunces', color=C.ink, align='center', alpha=1, italic=false, weight='400', spacing=0}={}){
+  if(alpha<=0) return;
+  ctx.save(); ctx.globalAlpha=alpha; ctx.fillStyle=color; ctx.textAlign=align; ctx.textBaseline='middle';
+  ctx.font=(italic?'italic ':'')+weight+' '+size+'px "'+font+'"';
+  if(spacing){ // manual letter-spacing for eyebrows
+    const total = str.split('').reduce((a,ch)=>a+ctx.measureText(ch).width+spacing,0)-spacing;
+    let cx = align==='center'? x-total/2 : x; ctx.textAlign='left';
+    for(const ch of str){ ctx.fillText(ch,cx,y); cx+=ctx.measureText(ch).width+spacing; }
+  } else ctx.fillText(str,x,y);
+  ctx.restore();
+}
+function wrap(str, x, y, maxW, lh, o={}){
+  ctx.save(); ctx.font=((o.italic?'italic ':'')+(o.weight||'400')+' '+(o.size||40)+'px "'+(o.font||'Fraunces')+'"');
+  const words=str.split(' '); const lines=[]; let line='';
+  for(const w of words){ const test=line?line+' '+w:w; if(ctx.measureText(test).width>maxW && line){ lines.push(line); line=w; } else line=test; }
+  if(line) lines.push(line); ctx.restore();
+  const y0 = y - (lines.length-1)*lh/2;
+  lines.forEach((l,i)=> text(l, x, y0+i*lh, o));
+  return lines.length;
+}
+
+// ---------------------------------------------------------------------------
+// scene painters
+// ---------------------------------------------------------------------------
+function bg(t){
+  ctx.fillStyle=C.bg; ctx.fillRect(0,0,W,H);
+  // faint radial washes, matching the page's mood (fixed, deterministic)
+  const g1=ctx.createRadialGradient(W*0.78,-90,0,W*0.78,-90,900); g1.addColorStop(0,'rgba(23,32,46,.55)'); g1.addColorStop(1,'rgba(23,32,46,0)');
+  ctx.fillStyle=g1; ctx.fillRect(0,0,W,H);
+  const g2=ctx.createRadialGradient(W*0.10,60,0,W*0.10,60,820); g2.addColorStop(0,'rgba(25,20,38,.5)'); g2.addColorStop(1,'rgba(25,20,38,0)');
+  ctx.fillStyle=g2; ctx.fillRect(0,0,W,H);
+}
+function eyebrow(t, a){
+  text('LIGHTS OUT  ·  GROUND TRUTH', W/2, 96, {size:26, font:'Martian Mono', color:C.gold, align:'center', alpha:a, spacing:7});
+}
+
+// P0 — title + first press
+function sceneTitle(t){
+  const [a,b]=P.title;
+  eyebrow(t, smooth(t,1,2.4)*(1-smooth(t,13.5,15)));
+  const tA = smooth(t,1.4,4)*(1-smooth(t,13.5,15));
+  text('The Lights That Hide', W/2, 300, {size:112, color:C.ink, alpha:tA});
+  // board: start all-off, one centre press at t≈6 lighting the closed neighbourhood.
+  const pressT = 6.0;
+  const lit = smooth(t,pressT,pressT+0.5);
+  const nb = new Set(nbhd(2,2,5,'plane'));
+  const bl = drawBoard(W/2, 700, 5, 118, 16, i=>({
+    lit: lit>0.5 && nb.has(i),
+    press: i===12 ? pulse(t,pressT-0.1,pressT+0.7) : 0
+  }), smooth(t,3,5)*(1-smooth(t,13.5,15)));
+  const cap = smooth(t,7,8.2)*(1-smooth(t,13.2,14.6));
+  wrap('Press a light. It, and its four neighbours, flip.', W/2, 990, 1200, 60, {size:44, color:C.dim, alpha:cap});
+}
+
+// P1 — the rule / GF(2): a press flipped twice is untouched
+function sceneRule(t){
+  const [a,b]=P.rule;
+  const app = smooth(t,a+0.4,a+2)*(1-smooth(t,b-1.2,b));
+  // two overlapping presses on an all-off board.
+  const t1=18.5, t2=22.5;   // press centre(2,2) then its right neighbour (2,3)
+  const nb1 = new Set(nbhd(2,2,5,'plane')), nb2 = new Set(nbhd(2,3,5,'plane'));
+  const on1 = t>=t1, on2 = t>=t2;
+  function lit(i){
+    let v=0; if(on1&&nb1.has(i))v^=1; if(on2&&nb2.has(i))v^=1; return v===1;
+  }
+  const overlap = [...nb1].filter(i=>nb2.has(i)); // cells toggled by both -> back off
+  const bl = drawBoard(W/2, 470, 5, 128, 16, i=>({
+    lit: lit(i),
+    press: (i===12?pulse(t,t1-0.1,t1+0.7):0) + (i===13?pulse(t,t2-0.1,t2+0.7):0)
+  }), app);
+  // circle the shared cell as it returns to off
+  const ringA = pulse(t, t2+0.1, t2+1.8);
+  if(ringA>0){ for(const i of overlap){ const [x,y]=cellCenter(bl,i); ctx.save(); ctx.globalAlpha=ringA*app; ctx.beginPath(); ctx.arc(x,y,bl.cell*0.62,0,7); ctx.lineWidth=4; ctx.strokeStyle=C.cool; ctx.stroke(); ctx.restore(); } }
+  const c1 = smooth(t,16,17.4)*(1-smooth(t,21.5,22.5));
+  wrap('Every press adds its cross to the board.', W/2, 900, 1300, 62, {size:46, color:C.dim, alpha:c1});
+  const c2 = smooth(t,23,24.4)*(1-smooth(t,30.5,31.6));
+  wrap('Press a light twice and it is untouched. Over GF(2), 1 + 1 = 0.', W/2, 895, 1400, 62, {size:46, color:C.ink, alpha:c2});
+  const c3 = smooth(t,31.4,32.6)*(1-smooth(t,b-0.4,b));
+  wrap('So the whole puzzle is one linear map.', W/2, 900, 1300, 62, {size:44, color:C.dim, alpha:c3});
+}
+
+// P2 — the quiet pattern (the heart)
+function sceneQuiet(t){
+  const [a,b]=P.quiet;
+  const app = smooth(t,a+0.3,a+2)*(1-smooth(t,b-1.4,b));
+  // press schedule: 16 presses, 1.05s apart, starting at pressStart.
+  const pressStart = 41.0, step = 1.05;
+  const doneAll = pressStart + QBUTTONS.length*step; // ≈ 57.8
+  const kFloat = (t - pressStart)/step;
+  const kDone = Math.max(0, Math.min(QBUTTONS.length, Math.floor(kFloat + 1e-6)));
+  const board = HERO_STATES[kDone];
+  const startBoard = HERO_STATES[0];
+  // violet quiet dots appear before the presses and again once restored
+  const dotsIn = smooth(t,35.5,40)*(1-smooth(t,41,41.6)) + smooth(t,doneAll+0.6, doneAll+2.2);
+  const quietDot = i=> bits(QMASK,i)===1n ? clamp(dotsIn,0,1) : 0;
+  const activeBtn = (t>=pressStart && t<doneAll) ? QBUTTONS[Math.min(QBUTTONS.length-1, Math.floor(kFloat))] : -1;
+  const bl = drawBoard(660, 560, 5, 132, 16, i=>({
+    lit: bits(board,i)===1n,
+    quiet: quietDot(i)>0.4,
+    press: i===activeBtn ? pulse(t, pressStart+Math.floor(kFloat)*step-0.05, pressStart+Math.floor(kFloat)*step+0.55) : 0
+  }), app);
+
+  // frozen "start" thumbnail top-right + a live difference readout
+  const thumbA = smooth(t,41,42.4)*app;
+  drawBoard(1430, 360, 5, 52, 8, i=>({lit: bits(startBoard,i)===1n}), thumbA*0.9);
+  text('start', 1430, 210, {size:30, font:'Martian Mono', color:C.dim, align:'center', alpha:thumbA});
+  // difference count
+  let diff=0; for(let i=0;i<25;i++) if(bits(board,i)!==bits(startBoard,i)) diff++;
+  const readA = smooth(t,42.5,44)*app;
+  text('lights differing from start', 1430, 620, {size:30, font:'Martian Mono', color:C.dim, align:'center', alpha:readA});
+  const big = (t>doneAll-0.2) ? C.good : (diff===0?C.good:C.gold);
+  text(String(diff), 1430, 700, {size:130, font:'Martian Mono', color:big, align:'center', alpha:readA});
+
+  // captions
+  const c1 = smooth(t,34.6,36)*(1-smooth(t,40.2,41.2));
+  wrap('Here is the strange part.', W/2, 995, 1300, 60, {size:46, color:C.dim, alpha:c1});
+  const c2 = smooth(t,41,42.2)*(1-smooth(t,doneAll-1, doneAll));
+  wrap('These violet buttons are a set you can press together that changes nothing. Watch.', 660, 990, 1080, 54, {size:40, color:C.wrap, alpha:c2});
+  const c3 = smooth(t,doneAll+0.8, doneAll+2)*(1-smooth(t,b-0.6,b));
+  text('Exactly as it began.', 660, 970, {size:54, color:C.good, alpha:c3});
+  wrap('A quiet pattern: the lights that hide.', 660, 1030, 1080, 50, {size:40, color:C.dim, alpha:c3, italic:true});
+}
+
+// P3 — the one number d
+function sceneNumber(t){
+  const [a,b]=P.number;
+  const app = smooth(t,a+0.3,a+1.8)*(1-smooth(t,b-1.2,b));
+  // formula: d(n) = n² − rank_GF(2)(M) — laid out by measured advance so pieces never collide
+  const fA = smooth(t,a+0.6,a+2.4);
+  {
+    const baseY=300, big='400 80px "Martian Mono", sans-serif', sub='400 38px "Martian Mono", sans-serif';
+    const pieces=[
+      {s:'d(n)  =  n²  −  rank', f:big, dy:0, col:C.ink},
+      {s:'GF(2)', f:sub, dy:26, col:C.dim},
+      {s:'(M)', f:big, dy:0, col:C.ink},
+    ];
+    ctx.save(); ctx.globalAlpha=fA*app; ctx.textAlign='left'; ctx.textBaseline='middle';
+    let total=0; for(const p of pieces){ ctx.font=p.f; total+=ctx.measureText(p.s).width; }
+    let x=W/2-total/2;
+    for(const p of pieces){ ctx.font=p.f; ctx.fillStyle=p.col; ctx.fillText(p.s, x, baseY+p.dy); x+=ctx.measureText(p.s).width; }
+    ctx.restore();
+  }
+
+  const c1 = smooth(t,a+2.6,a+4)*(1-smooth(t,b-6.6,b-5.6));
+  wrap('d counts the independent quiet patterns: the rank deficiency of the puzzle over GF(2).', W/2, 470, 1400, 58, {size:44, color:C.dim, alpha:c1});
+  // two outcomes
+  const oA = smooth(t,a+6,a+7.4)*(1-smooth(t,b-0.6,b));
+  text('d = 0', W/2-430, 640, {size:66, font:'Martian Mono', color:C.good, align:'center', alpha:oA});
+  wrap('every board has exactly one solution', W/2-430, 730, 560, 46, {size:36, color:C.dim, alpha:oA});
+  text('d > 0', W/2+430, 640, {size:66, font:'Martian Mono', color:C.wrap, align:'center', alpha:oA});
+  wrap('some can’t be solved at all, and the rest have 2^d solutions each', W/2+430, 730, 560, 46, {size:36, color:C.dim, alpha:oA});
+  // divider
+  ctx.save(); ctx.globalAlpha=oA*0.5; ctx.strokeStyle=C.line; ctx.lineWidth=2; ctx.beginPath(); ctx.moveTo(W/2,600); ctx.lineTo(W/2,800); ctx.stroke(); ctx.restore();
+  const c3 = smooth(t,b-4.6,b-3.4)*(1-smooth(t,b-0.5,b));
+  text('The 5×5 board: d = 2, so four quiet patterns hide inside it.', W/2, 910, {size:40, color:C.ink, alpha:c3});
+}
+
+// P4 — glue the board / the twist
+function sceneGlue(t){
+  const [a,b]=P.glue;
+  const app = smooth(t,a+0.3,a+1.8)*(1-smooth(t,b-1.2,b));
+  const head = smooth(t,a+0.4,a+2)*(1-smooth(t,b-1.2,b));
+  text('Now glue the edges.', W/2, 150, {size:52, color:C.ink, alpha:head*(1-smooth(t,a+7,a+8.5))});
+
+  // three sub-scenes: cylinder (plain wrap), Möbius (wrap + flip), then names.
+  const n=6, cell=112, gap=14;
+  function edgePress(surface, pr, r, c){
+    // pressed cell (r,c) in the rightmost column; show its closed neighbourhood,
+    // which on this surface wraps to the left edge (with a flip for Möbius).
+    const nb = new Set(nbhd(r,c,n,surface));
+    const bl = drawBoard(W/2, 560, n, cell, gap, i=>({
+      lit: nb.has(i) ? (pr>0.5) : false,
+      press: i===(r*n+c) ? pr : 0
+    }), app);
+    // draw an arc from the pressed edge cell to its wrapped partner on the far edge
+    const pressedIdx = r*n+c;
+    // the wrapped neighbour is the one in the closed nbhd that is NOT geometrically adjacent
+    const geo = new Set([pressedIdx, pressedIdx-1, pressedIdx+ (c<n-1?1:-999), pressedIdx-n, pressedIdx+n].filter(x=>x>=0&&x<n*n));
+    let wrapIdx=-1; for(const i of nb) if(!geo.has(i) || (i%n===0 && c===n-1)) { if(i%n===0) { wrapIdx=i; break; } }
+    if(wrapIdx>=0 && pr>0.3){
+      const [x1,y1]=cellCenter(bl,pressedIdx), [x2,y2]=cellCenter(bl,wrapIdx);
+      ctx.save(); ctx.globalAlpha=app*clamp((pr-0.3)/0.4,0,1); ctx.strokeStyle=C.wrap; ctx.lineWidth=4; ctx.setLineDash([2,10]); ctx.lineCap='round';
+      ctx.beginPath(); ctx.moveTo(x1,y1); ctx.bezierCurveTo(x1+260, y1-260, x2-260, y2-260, x2,y2); ctx.stroke(); ctx.restore();
+    }
+    return bl;
+  }
+  // 87–96 cylinder ; 97–106 Möbius ; 106–120 names + line
+  if(t < 97){
+    const pr = smooth(t,89,89.6)*(1-smooth(t,95.6,96.4));
+    edgePress('cylinder', pr, 1, n-1);
+    const lab = smooth(t,88,89.2)*(1-smooth(t,95.6,96.4));
+    text('cylinder', W/2, 200, {size:44, font:'Martian Mono', color:C.gold, alpha:lab});
+    wrap('Join the left edge to the right. A press on the rim reaches around to the far side.', W/2, 990, 1300, 56, {size:42, color:C.dim, alpha:lab});
+  } else if(t < 107){
+    const pr = smooth(t,99,99.6)*(1-smooth(t,105.6,106.4));
+    edgePress('mobius', pr, 1, n-1);
+    const lab = smooth(t,98,99.2)*(1-smooth(t,105.6,106.4));
+    text('Möbius band', W/2, 200, {size:44, font:'Martian Mono', color:C.wrap, alpha:lab});
+    wrap('Join it with a half-twist, so the row flips. The press wraps around the twist.', W/2, 990, 1300, 56, {size:42, color:C.ink, alpha:lab});
+  } else {
+    const lab = smooth(t,107.4,109);
+    text('one board, four surfaces', W/2, 200, {size:44, font:'Martian Mono', color:C.dim, alpha:lab*(1-smooth(t,b-1.2,b))});
+    const names=[['cylinder',C.gold],['Möbius band',C.wrap],['Klein bottle',C.wrap],['torus',C.cool]];
+    for(let i=0;i<4;i++){ const y=430+i*130; const aa=smooth(t,108.5+i*0.7, 110+i*0.7)*(1-smooth(t,b-1.2,b));
+      text(names[i][0], W/2-260, y, {size:52, color:names[i][1], align:'right', alpha:aa});
+      const notes=['edges wrap, rows free','edges wrap with a flip','flip one way, wrap the other','both edges wrap plainly'];
+      text(notes[i], W/2-190, y, {size:34, font:'Martian Mono', color:C.dim, align:'left', alpha:aa*0.85});
+    }
+    const c=smooth(t,114.5,116)*(1-smooth(t,b-1,b));
+    wrap('And the count of hidden patterns changes with the surface.', W/2, 990, 1300, 56, {size:44, color:C.ink, alpha:c});
+  }
+}
+
+// P5 — the census with holes
+function sceneCensus(t){
+  const [a,b]=P.census;
+  const app = smooth(t,a+0.3,a+1.8)*(1-smooth(t,b-1.2,b));
+  const head = smooth(t,a+0.4,a+2)*(1-smooth(t,b-1.2,b));
+  text('The one number, on every surface', W/2, 150, {size:50, color:C.ink, alpha:head});
+
+  const order=['plane','torus','cylinder','mobius','klein'];
+  const x0=720, colW=88, rowH=92, y0=300, labelX=x0-280;
+  // header: n = 1..10
+  text('n', labelX, y0-70, {size:34, font:'Martian Mono', color:C.dim, align:'left', alpha:app});
+  for(let n=1;n<=CN;n++) text(String(n), x0+(n-1)*colW, y0-70, {size:34, font:'Martian Mono', color:C.dim, align:'center', alpha:app*smooth(t,a+1.4,a+2.6)});
+  order.forEach((s,ri)=>{
+    const row=CENSUS[s], y=y0+ri*rowH;
+    const rowIn = smooth(t, a+2.2 + ri*0.5, a+3.6 + ri*0.5);
+    const nameCol = row.cat ? C.cool : C.wrap;
+    text(row.label, labelX, y, {size:34, color:nameCol, align:'left', alpha:app*rowIn});
+    // values stream in left→right
+    for(let n=1;n<=CN;n++){
+      const cellIn = smooth(t, a+3 + ri*0.5 + (n-1)*0.14, a+3.5 + ri*0.5 + (n-1)*0.14);
+      const v=row.vals[n-1];
+      const col = v===0 ? '#4b5568' : (v%2===1 ? C.wrap : C.gold);
+      text(String(v), x0+(n-1)*colW, y, {size:38, font:'Martian Mono', color:col, align:'center', alpha:app*cellIn});
+    }
+    // OEIS tag at the right
+    const tag = row.oeis, tagCol = row.cat ? C.cool : C.wrap;
+    text(row.oeis==='absent'?'absent':row.oeis, x0+CN*colW+40, y, {size:30, font:'Martian Mono', color:tagCol, align:'left', alpha:app*rowIn*smooth(t,a+7,a+9)});
+  });
+
+  const c1 = smooth(t,a+9.5,a+11)*(1-smooth(t,a+16,a+17.5));
+  wrap('OEIS records two of these: the flat grid and the torus.', W/2, 900, 1400, 56, {size:44, color:C.cool, alpha:c1});
+  const c2 = smooth(t,a+17.5,a+19)*(1-smooth(t,a+23,a+24.5));
+  wrap('The cylinder, the Möbius band, the Klein bottle: absent. Computed here four independent ways.', W/2, 900, 1500, 56, {size:44, color:C.wrap, alpha:c2});
+  const c3 = smooth(t,a+24.5,a+26)*(1-smooth(t,b-0.6,b));
+  wrap('The same engine reproduces the two published sequences bit-for-bit before trusting one new integer.', W/2, 900, 1500, 56, {size:42, color:C.dim, alpha:c3});
+}
+
+// P6 — parity finding + close
+function sceneParity(t){
+  const [a,b]=P.parity;
+  // the parity content clears out before the closing card fades in (no overlap)
+  const midOut = 1-smooth(t, b-5.6, b-4.4);
+  const app = smooth(t,a+0.3,a+1.8)*midOut;
+  const head = smooth(t,a+0.4,a+2)*midOut;
+  text('The twist shows in the parity', W/2, 150, {size:52, color:C.ink, alpha:head});
+
+  // cylinder n=1..30, even dim, odd (n≡5 mod6) glow violet with a marker
+  const per=Math.min(CYL30.length,30), x0=210, colW=(W-420)/(per-1), y=430;
+  for(let n=1;n<=per;n++){
+    const v=CYL30[n-1], odd=(v%2===1), x=x0+(n-1)*colW;
+    const cellIn=smooth(t, a+2 + (n-1)*0.18, a+2.5 + (n-1)*0.18);
+    const glow = odd ? pulse(t, a+2 + (n-1)*0.18, a+2 + (n-1)*0.18 + 3) : 0;
+    text(String(v), x, y, {size: odd?52:40, font:'Martian Mono', color: v===0?'#3f4757':(odd?C.wrap:C.dim), align:'center', alpha:app*cellIn});
+    text(String(n), x, y+70, {size:24, font:'Martian Mono', color: odd?C.wrap:'#4b5568', align:'center', alpha:app*cellIn});
+    if(odd && (cellIn>0.5)){ ctx.save(); ctx.globalAlpha=app*(0.5+0.5*glow); ctx.beginPath(); ctx.arc(x, y-70, 9+6*glow, 0,7); ctx.fillStyle=C.wrap; ctx.shadowColor=C.wrap; ctx.shadowBlur=20; ctx.fill(); ctx.restore(); }
+  }
+  const c1 = smooth(t,a+7,a+8.6)*midOut;
+  wrap('On the flat grid and the torus, d(n) is always even. Glue in a twist and the count turns odd: for the cylinder, at exactly n ≡ 5 (mod 6).', W/2, 640, 1500, 58, {size:44, color:C.ink, alpha:c1});
+  const c2 = smooth(t,a+9.5,a+11)*midOut;
+  text('The parity of the answer can tell you the board was twisted.', W/2, 760, {size:42, color:C.dim, alpha:c2, italic:true});
+
+  // final card
+  const fin = smooth(t, b-4.2, b-2.8);
+  text('The Lights That Hide', W/2, 400, {size:100, color:C.ink, alpha:fin});
+  wrap('three counts OEIS never recorded  ·  computed four independent ways  ·  staged for deposit', W/2, 540, 1560, 44, {size:29, font:'Martian Mono', color:C.dim, alpha:fin});
+  text('artwaste.land / strata / the-lights-that-hide', W/2, 650, {size:34, font:'Martian Mono', color:C.gold, alpha:fin});
+}
+
+// ---------------------------------------------------------------------------
+// master frame
+// ---------------------------------------------------------------------------
+function frame(){
+  const t = (typeof window.__filmT === 'number') ? window.__filmT : (Date.now()-START)/1000;
+  bg(t);
+  if(t<P.title[1]) sceneTitle(t);
+  else if(t<P.rule[1]) sceneRule(t);
+  else if(t<P.quiet[1]) sceneQuiet(t);
+  else if(t<P.number[1]) sceneNumber(t);
+  else if(t<P.glue[1]) sceneGlue(t);
+  else if(t<P.census[1]) sceneCensus(t);
+  else sceneParity(t);
+  // global 0.5s fade from black at the very start
+  if(t<0.6){ ctx.save(); ctx.globalAlpha=1-t/0.6; ctx.fillStyle='#000'; ctx.fillRect(0,0,W,H); ctx.restore(); }
+  window.requestAnimationFrame(frame);
+}
+
+let START = Date.now();
+async function boot(){
+  await loadParity();
+  await document.fonts.load('400 100px "Fraunces"');
+  await document.fonts.load('400 40px "Martian Mono"');
+  await document.fonts.load('italic 400 40px "Fraunces"');
+  await document.fonts.ready;
+  window.__ready = true;
+  window.requestAnimationFrame(frame);
+}
+boot();
+</script>
+</body>
+</html>

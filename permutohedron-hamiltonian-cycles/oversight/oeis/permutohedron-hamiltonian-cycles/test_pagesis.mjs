@@ -1,0 +1,8 @@
+// replicate the page's diveOnce (degree-only prune) to confirm it's unbiased: n=4 -> ~44
+function perms(n){const res=[];const a=[...Array(n).keys()];const c=new Array(n).fill(0);res.push(a.slice());let i=0;while(i<n){if(c[i]<i){const j=(i%2===0)?0:c[i];[a[i],a[j]]=[a[j],a[i]];res.push(a.slice());c[i]++;i=0;}else{c[i]=0;i++;}}return res;}
+function buildGraph(n){const ps=perms(n);const idx=new Map();ps.forEach((p,i)=>idx.set(p.join(''),i));const adj=ps.map(p=>{const s=[];for(let k=0;k<n-1;k++){const q=p.slice();[q[k],q[k+1]]=[q[k+1],q[k]];const j=idx.get(q.join(''));if(j!==undefined)s.push(j);}return s;});return {ps,adj,n};}
+function diveOnce(g){const N=g.adj.length,adj=g.adj;const visited=new Uint8Array(N);const avail=new Int32Array(N);for(let i=0;i<N;i++)avail[i]=adj[i].length;let head=0,depth=1,w=1.0;visited[0]=1;for(const u of adj[0])avail[u]--;
+ while(depth<N){const cands=[];for(const wv of adj[head]){if(visited[wv])continue;visited[wv]=1;for(const u of adj[wv])avail[u]--;let ok=(avail[0]>0||depth+1===N);if(ok){for(let u=0;u<N&&ok;u++){if(visited[u])continue;let d=avail[u]+(adj[u].includes(wv)?1:0)+(adj[u].includes(0)?1:0);if(d<2)ok=false;}}visited[wv]=0;for(const u of adj[wv])avail[u]++;if(ok)cands.push(wv);}
+  if(cands.length===0)return 0;w*=cands.length;const pick=cands[(Math.random()*cands.length)|0];visited[pick]=1;for(const u of adj[pick])avail[u]--;head=pick;depth++;}
+ return adj[head].includes(0)?w:0;}
+for(const n of [4,5]){ const g=buildGraph(n); const S=n===4?2000000:1500000; let sum=0,hits=0; for(let i=0;i<S;i++){const c=diveOnce(g); sum+=c; if(c>0)hits++;} const meanU=sum/S/2; console.log(`n=${n}: undirected est = ${meanU.toExponential(3)}  hits=${hits}/${S}`); }

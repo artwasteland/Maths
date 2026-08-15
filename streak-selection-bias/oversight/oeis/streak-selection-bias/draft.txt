@@ -1,0 +1,44 @@
+# OEIS draft — staged 2026-06-02. Two related sequences (numerator + denominator).
+# Submit via https://oeis.org (needs a human account).
+#
+# Reproduce and CHECK the staged b-files:
+#   node oversight/oeis/streak-selection-bias/verify-staged.mjs
+# That reads both b-files and recomputes all 21 terms of each (n=2..22) by two
+# paths that differ in what they iterate over: instance enumeration over all 2^n
+# sequences, and a class-counting DP that never builds a sequence. No term is
+# left to a stored table. compute.mjs is a GENERATOR, not a check: it prints
+# values, never reads a b-file, and has no pass/fail exit status, so running it
+# verifies nothing.
+#
+# Published values reach 2 of the 21 terms: E(2)=1/2 and E(3)=5/12 (Miller &
+# Sanjurjo 2018, Table 1). Terms n=4..22 have no external source in this
+# repository and rest on the two paths agreeing.
+#
+# ABSENCE FROM OEIS: asserted after a direct search on 2026-06-02, but no search
+# transcript, URL, or result snapshot was recorded, and the 2026-07-20 audit
+# could not re-run it (oeis.org returns HTTP 403 to automated fetches). Treat
+# the absence claim as an undocumented assertion that a human must redo before
+# any deposit or submission, not as a check you can re-read here.
+
+# ============================ SEQUENCE 1 (numerators) ============================
+%S 1,5,17,49,129,107,769,1793,4097,9217,20481,15019,98305,212993,458753,983041,2097153,495161,9437185,3984589,5991863
+%N Numerators of the expected proportion of heads on the flip immediately following a heads, averaged over all fair coin sequences of length n in which at least one such flip exists (the Miller-Sanjurjo streak-selection bias, streak length 1).
+%C Offset n=2. Let E(n) be the expectation, over the 2^n - 2 length-n sequences of fair coin flips that contain at least one flip preceded by heads, of the within-sequence proportion of heads among the flips immediately following a heads. Then E(n) = a(n)/A_den(n) in lowest terms; this sequence gives the numerators (denominators in the companion sequence). E(2)=1/2, E(3)=5/12, E(4)=17/42, E(5)=49/120, ...
+%C This is the finite-sample selection bias proved by J. B. Miller and A. Sanjurjo, "Surprised by the Hot Hand Fallacy? A Truth in the Law of Small Numbers," Econometrica 86(6) (2018), 2019-2047: although the *pooled* proportion of heads after a heads is exactly 1/2, the per-sequence average E(n) is strictly less than 1/2 for all finite n>=3 (E(3)=5/12 is their Table 1). E(n) -> 1/2 as n -> infinity.
+%C Correcting for this bias reverses the conclusion of Gilovich, Vallone & Tversky (1985) that the basketball "hot hand" is a cognitive illusion.
+%H J. B. Miller and A. Sanjurjo, Econometrica 86(6) (2018), 2019-2047; arXiv:1902.01265.
+%e a(3)=5 because E(3) = 5/12 (averaging the proportion over the six 3-flip sequences in which a flip follows a heads).
+%Y Companion (denominators): see SEQUENCE 2 below.
+%K nonn,frac
+%O 2,2
+%A [submitter]
+
+# =========================== SEQUENCE 2 (denominators) ===========================
+%S 2,12,42,120,310,252,1778,4080,9198,20460,45034,32760,212966,458724,983010,2097120,4456414,1048572,19922906,8388600,12582906
+%N Denominators of the expected proportion of heads on the flip immediately following a heads, over fair coin sequences of length n (the Miller-Sanjurjo streak-selection bias, streak length 1).
+%C See the companion numerator sequence for the definition and references. Offset n=2; E(n) = num(n)/a(n) in lowest terms.
+%e a(3)=12 because E(3)=5/12.
+%Y Companion (numerators): see SEQUENCE 1 above.
+%K nonn,frac
+%O 2,1
+%A [submitter]

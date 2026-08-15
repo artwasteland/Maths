@@ -1,0 +1,50 @@
+{
+  "//": "Zenodo deposit metadata (paste into the web form, or read from a GitHub release). Depositor: the human. Provenance stated honestly, not laundered.",
+  "title": "Fault-free domino tilings of the rectangle: the general array and its rows, absent from the OEIS (exact, reproducible)",
+  "upload_type": "dataset",
+  "description": "Exact counts of fault-free domino tilings of the m x n rectangle. A 'fault line' is a straight line spanning the whole rectangle that crosses no domino; a tiling with none is fault-free (a bricklayer's running bond). WHAT IS DEPOSITED: 470 terms in five b-files, namely the rows FF(5,n) to n=44, FF(6,n) to n=40, FF(7,n) to n=34, FF(8,n) to n=28, and the array T(m,n) for 1 <= m,n <= 18 read by antidiagonals. WHAT IS NEW: the OFF-diagonal / general-rectangle counts, confirmed absent from the OEIS on 2026-07-11 and re-confirmed 2026-07-20. The square diagonal FF(2n,2n) is the known OEIS A124997 (Knuth 2008; b-file by Heinz and Xu to the 24x24 square) and is NOT claimed as new. HOW MUCH OF A124997 THIS WORK ACTUALLY REPRODUCES: ten of its twelve recorded terms, at three different strengths of evidence, which are not blurred together. Terms 1 to 8, FF(2,2) through FF(16,16), are recomputed live by research/fault-free-tilings/verify.mjs on every run, in seconds. Term 9, FF(18,18) = 50272239752141442901464758051467073726, is recomputed by oversight/oeis/fault-free-tilings/verify-staged.mjs --full and is the last term of the deposited array. Term 10, FF(20,20) = 174927321882862834702052846250836696969014873138, was recomputed once out of band on 2026-07-27 in 342.8 seconds and matched the recorded value; the committed evidence is ff-20x20-run-2026-07-27.txt, which includes the script that reproduces it. It is too slow for any gate and is not a deposited term. Terms 11 and 12, FF(22,22) and FF(24,24) including the often-quoted 70-digit value, are TRANSCRIBED from the Heinz and Xu b-file and are computed nowhere in this work; agreement with them is not evidence about this engine, which has never produced them. An earlier version of this metadata claimed all twelve were reproduced 'exactly ... to the 70-digit FF(24,24)'. That was wrong, and wrong in a self-certifying way: the verifier deferred the four largest terms to data.json, whose diagonal block is a hardcoded literal whose own comment deferred back to the verifier. It is corrected here. HOW FAR EACH CHECK REACHES: the engine is an inclusion-exclusion sieve over the fault lines and is the single source of all 470 deposited terms. A genuinely different algorithm, a from-scratch brute force that lays out every tiling and detects a fault directly, agrees with it on 8 boards, the largest being 5x10, 6x8 and 7x8; above that horizon each deposited term rests on the sieve alone, plus agreement with the OEIS wherever the OEIS has the value. brute.cpp is the same brute-force algorithm ported to C++, not a third independent path, and no gate compiles or runs it and no run output is committed, so no claim rests on it. The engine additionally reproduces OEIS A232621 (vertically fault-free 5x2n, n=1..6) and the full Graham-Kotzig zero/nonzero map for m,n <= 12 exactly, including the unique 6x6 exception and the smallest fault-free rectangle 5x6 (FF=6). ARE THE DEPOSITED NUMBERS THEMSELVES CHECKED: yes, since 2026-07-27, and not before. A mutation probe on that date rewrote all 470 staged terms at once and the then-committed check set produced byte-identical output and exit code 0, so zero of 470 terms were bound to any check. The bundled oversight/oeis/fault-free-tilings/verify-staged.mjs now reads the five b-files and reproduces them from the engine: 435 of 470 terms recomputed live in 10 to 15 seconds, all 470 with --full in 36 to 50 seconds (ranges over 5 and 3 measured runs respectively, not point estimates). The 35 not recomputed by default are the array cells with m=18 or n=18; they are read and compared against a provenance-commented table (expected-extension.mjs), which is drift protection, not an independent recomputation. Timings measured on Node v22.22.2, and the default check was confirmed to fail on mutated input: six staged terms altered by +1 produced six named failures and exit code 1, after which the b-files were restored byte-identically and checksum-verified. The --full check was not separately mutation-tested. Gates: node oversight/oeis/fault-free-tilings/verify-staged.mjs and node research/fault-free-tilings/verify.mjs (32/32). Tilings are counted labelled (rectangle fixed in the plane), as A124997 does; the up-to-symmetry count is a distinct, also-unrecorded sequence noted as a next step. The classification theorem, which rectangle sizes admit a fault-free tiling, is R. L. Graham, 'Fault-free tilings of rectangles,' in The Mathematical Gardner (1981), with the 6x6 square case due to A. Kotzig; it is cited, not claimed as new. Only the specific new rows and the general array carry the absence claim. PROVENANCE: the computation and prose were produced by an AI instance (Claude) within the open 'Artificial Wasteland' project, under a strict never-lie / show-the-check rule; everything is verified by reproducible code. Deposited as a citable, independently-checkable artifact and explicitly offered for independent human verification. Per OEIS policy it has NOT been submitted to the OEIS by the project; any OEIS entry should be authored only by a human who has verified it themselves.",
+  "creators": [
+    {
+      "name": "Thomas, Liam",
+      "affiliation": "Artificial Wasteland (curator/depositor)"
+    },
+    {
+      "name": "Artificial Wasteland (AI instance)",
+      "affiliation": "computation & drafting; https://artwaste.land"
+    }
+  ],
+  "keywords": [
+    "domino tilings",
+    "dimer coverings",
+    "fault-free",
+    "running bond",
+    "brick bond",
+    "fault line",
+    "rectangle tiling",
+    "integer sequence",
+    "combinatorics",
+    "OEIS",
+    "A124997",
+    "Graham",
+    "Kotzig",
+    "inclusion-exclusion",
+    "transfer matrix",
+    "reproducible",
+    "exact enumeration"
+  ],
+  "license": "CC-BY-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://artwaste.land/strata/the-wall-that-wont-crack/",
+      "resource_type": "other"
+    },
+    {
+      "relation": "references",
+      "identifier": "https://oeis.org/A124997",
+      "resource_type": "dataset"
+    }
+  ],
+  "notes": "Check every deposited term from the bundled code: node oversight/oeis/fault-free-tilings/verify-staged.mjs reproduces 435 of the 470 staged terms from the engine and compares the remaining 35 against expected-extension.mjs; add --full to recompute all 470. node research/fault-free-tilings/verify.mjs (32/32) checks the engine itself. Do NOT run derive.mjs to verify: it REWRITES the b-files from the engine, so it can only ever agree with itself. New rows (a(n)=FF(m,n), n>=1, leading zeros kept): 5xn 0,0,0,0,0,6,0,108,0,1182,0,10338,0,79818,...; 6xn 0,0,0,0,6,0,124,62,1646,1630,18120,25654,180288,317338,...; 7xn 0,0,0,0,0,124,0,13514,0,765182,0,32046702,...; 8xn 0,0,0,0,108,62,13514,25506,991186,3103578,57718190,.... Array by antidiagonals in b-ff-array-antidiagonals.txt, last term FF(18,18)=A124997(9). Absence from the OEIS confirmed 2026-07-11, re-confirmed 2026-07-20. Coverage of the deposited terms by a committed check dates only from 2026-07-27; see README.md. The bundle also carries two run records: full-array-run-2026-07-27.txt (the --full check reproducing all 470 terms) and ff-20x20-run-2026-07-27.txt (the one-off FF(20,20) computation, with the script that reproduces it)."
+}

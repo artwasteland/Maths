@@ -1,0 +1,13 @@
+# compiled binaries (rebuild from the .c/.cpp sources)
+count
+count_par
+estimate
+sis
+sis_w
+min_frontier
+count_frontier
+count_frontier2
+count_frontier3
+count_frontier4
+# scratch run outputs (the .log are already ignored globally)
+*.out

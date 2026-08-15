@@ -1,0 +1,14 @@
+# A282901: Number of permutations of 1,2,...,2n+1 obtainable via labeled chip-firing.
+# Hopkins, McConville, Propp, "Sorting via chip-firing", EJC 24 (2017) #P3.13; arXiv:1612.06816.
+# a(0..4) = 1,3,12,54,232 were on record (OEIS, keyword `more`, no b-file).
+# a(5) = 819 computed and verified three independent ways in the Artificial Wasteland,
+#   2026-07-12 (research/labeled-chip-firing/, verify.mjs 29/29). Offset 0.
+# a(6) = 2555 computed at N=13 (705,592,802 configs) by two independent C++ enumerators
+#   (cf.cpp flat-hash/linear + a second FNV/quadratic build); the JS methods cannot reach N=13.
+0 1
+1 3
+2 12
+3 54
+4 232
+5 819
+6 2555

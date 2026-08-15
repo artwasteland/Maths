@@ -1,0 +1,21 @@
+# A proposed COMMENT for an EXISTING sequence — not a new sequence.
+# A000255 already exists (a(n) = n*a(n-1) + (n-1)*a(n-2), a0=a1=1: 1,1,3,11,53,309,...).
+# This is a new INTERPRETATION of it, connecting it to Conway's Topswops, staged the
+# same way as a draft: a human who verifies it independently may add it as a comment.
+# Reproduce:  node research/topswops/verify.mjs   (the garden-of-eden checks)
+#
+# Proposed %C line for A000255:
+
+%C a(n-1) is the number of "Garden of Eden" decks in Conway's Topswops on n cards: the
+   permutations of 1..n that cannot arise as the result of any single Topswops reversal,
+   i.e. that have no predecessor under the map "reverse the first a(1) cards". A deck q is
+   the image of a reversal step iff there is some k in 2..n with q(k) = k (reversing the
+   first k cards of any deck whose top card is k lands on such a q, and only on such a q);
+   hence the unreachable decks are exactly the permutations of 1..n with no fixed point in
+   positions 2..n. Counting those by inclusion-exclusion gives Sum_{j=0..n-1} (-1)^j *
+   C(n-1,j) * (n-j)! = A000255(n-1). (Cf. A000375, A123398 for other Topswops statistics.)
+
+# Numerics (n = 1..10 cards -> A000255(n-1)): 1,1,3,11,53,309,2119,16687,148329,1468457.
+# This is the same A000255 already described by Euler as "fixed-point-free permutations
+# of [n+2] beginning with 2"; the Topswops reading is a different combinatorial model of
+# the same count, verified three independent ways in research/topswops/verify.mjs.

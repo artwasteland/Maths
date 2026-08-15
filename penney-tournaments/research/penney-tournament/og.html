@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8" />
+<link rel="stylesheet" href="/fonts/fonts.css" />
+<style>
+  :root{ --ground:#08090c; --band:#0f1117; --ink:#ece9e2; --soft:#aba796; --faint:#6f6a5c;
+    --accent:#deae45; --dim:#967428; --rule:#221f1a;
+    --serif:"Fraunces",Georgia,serif; --mono:"Martian Mono",monospace; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{width:1200px;height:630px;background:var(--ground);color:var(--ink);font-family:var(--serif);overflow:hidden;position:relative;}
+  body::before{content:"";position:absolute;inset:0;
+    background:radial-gradient(120% 90% at 18% 0%,transparent 50%,rgba(0,0,0,0.6) 100%),
+    repeating-linear-gradient(to bottom,rgba(255,255,255,0.014) 0,rgba(255,255,255,0.014) 1px,transparent 2px,transparent 3px);}
+  .pad{position:relative;height:100%;display:flex;align-items:center;padding:0 64px;gap:30px;}
+  .left{flex:1 1 0;}
+  .eyebrow{font-family:var(--mono);font-size:17px;letter-spacing:0.28em;text-transform:uppercase;color:var(--faint);}
+  h1{font-weight:500;font-size:78px;line-height:1.0;letter-spacing:-0.02em;margin:20px 0 22px;}
+  .sub{font-size:27px;line-height:1.32;color:var(--soft);max-width:18ch;}
+  .sub b{color:var(--accent);font-weight:500;}
+  .seq{font-family:var(--mono);font-size:20px;letter-spacing:0.04em;color:var(--faint);margin-top:26px;border-top:1px solid var(--rule);padding-top:16px;}
+  .seq b{color:var(--accent);}
+  .right{flex:0 0 430px;display:flex;align-items:center;justify-content:center;}
+  .ringlabel{font-family:var(--mono);font-weight:600;font-size:24px;fill:var(--ink);}
+  .ringfrac{font-family:var(--mono);font-size:19px;fill:var(--accent);}
+  .brand{position:absolute;bottom:34px;left:64px;font-family:var(--mono);font-size:15px;letter-spacing:0.18em;text-transform:uppercase;color:var(--faint);}
+  .brand b{color:var(--soft);font-weight:400;}
+</style></head>
+<body>
+<div class="pad">
+  <div class="left">
+    <div class="eyebrow">Artificial Wasteland · Pattern</div>
+    <h1>No Triangle<br/>at Three</h1>
+    <div class="sub">Penney's game is nontransitive at length&nbsp;3 — but the cycle is a <b>square</b>.</div>
+    <div class="seq">nontransitive triples &nbsp;<b>0, 0, 0, 14,</b> …<br/>the first triangle waits for length 4</div>
+  </div>
+  <div class="right">
+    <svg id="ring" width="420" height="380" viewBox="0 0 420 380" role="img" aria-label="ring"></svg>
+  </div>
+</div>
+<div class="brand">artwaste.land &nbsp;·&nbsp; <b>three new OEIS sequences</b></div>
+<script>
+(function(){
+  function corr(X,Y){var L=X.length,t=0;for(var k=1;k<=L;k++){if(X.slice(-k)===Y.slice(0,k))t+=Math.pow(2,k-1);}return t;}
+  function gcd(x,y){x=Math.abs(x);y=Math.abs(y);while(y){var t=y;y=x%y;x=t;}return x||1;}
+  function pfrac(A,B){var AA=corr(A,A),AB=corr(A,B),BA=corr(B,A),BB=corr(B,B);var n=BB-BA,d=(BB-BA)+(AA-AB),g=gcd(n,d);return n/g+"/"+(d/g);}
+  var cyc=["HHT","HTT","TTH","THH"],svg=document.getElementById("ring"),NS="http://www.w3.org/2000/svg";
+  var cx=210,cy=190,R=125;
+  var pos=cyc.map(function(_,i){var a=-Math.PI/2+i*Math.PI/2;return{x:cx+R*Math.cos(a),y:cy+R*Math.sin(a)};});
+  function mk(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  var defs=mk("defs",{}),m=mk("marker",{id:"ah",markerWidth:"9",markerHeight:"9",refX:"7",refY:"3",orient:"auto"});
+  m.appendChild(mk("path",{d:"M0,0 L7,3 L0,6 Z",fill:"#deae45"}));defs.appendChild(m);svg.appendChild(defs);
+  // absent triangle (faint dashed) inside, connecting three of the nodes
+  svg.appendChild(mk("path",{d:"M"+pos[0].x+" "+pos[0].y+" L"+pos[1].x+" "+pos[1].y+" L"+pos[2].x+" "+pos[2].y+" Z",
+    fill:"none",stroke:"#332e25","stroke-width":"1.4","stroke-dasharray":"3 6"}));
+  var ab=mk("text",{x:cx,y:cy+4,"text-anchor":"middle",class:"ringfrac",fill:"#4a463c"});ab.textContent="∅";ab.setAttribute("font-size","30");svg.appendChild(ab);
+  for(var i=0;i<4;i++){
+    var p=pos[i],q=pos[(i+1)%4],dx=q.x-p.x,dy=q.y-p.y,len=Math.sqrt(dx*dx+dy*dy),ux=dx/len,uy=dy/len,pad=38;
+    var x1=p.x+ux*pad,y1=p.y+uy*pad,x2=q.x-ux*pad,y2=q.y-uy*pad,mx=(x1+x2)/2-uy*26,my=(y1+y2)/2+ux*26;
+    svg.appendChild(mk("path",{d:"M"+x1+" "+y1+" Q "+mx+" "+my+" "+x2+" "+y2,fill:"none",stroke:"#967428","stroke-width":"2","marker-end":"url(#ah)"}));
+    var t=mk("text",{x:mx,y:my,"text-anchor":"middle","dominant-baseline":"middle",class:"ringfrac"});t.textContent=pfrac(cyc[i],cyc[(i+1)%4]);svg.appendChild(t);
+  }
+  for(var j=0;j<4;j++){
+    svg.appendChild(mk("circle",{cx:pos[j].x,cy:pos[j].y,r:"33",fill:"#05060a",stroke:"#967428","stroke-width":"1.6"}));
+    var l=mk("text",{x:pos[j].x,y:pos[j].y,"text-anchor":"middle","dominant-baseline":"central",class:"ringlabel"});l.textContent=cyc[j];svg.appendChild(l);
+  }
+  window.__ogready=true;
+})();
+</script>
+</body></html>

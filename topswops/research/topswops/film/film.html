@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Topswops Machine — companion film</title>
+<style>
+  /* Self-hosted, subset-free local woff2 copies (placed by build.sh). No third-party requests. */
+  @font-face { font-family:'Fraunces'; src:url('./fraunces.woff2') format('woff2'); font-weight:300 900; font-display:block; }
+  @font-face { font-family:'FrauncesIt'; src:url('./fraunces-italic.woff2') format('woff2'); font-weight:300 900; font-style:italic; font-display:block; }
+  @font-face { font-family:'Martian'; src:url('./martian-mono.woff2') format('woff2'); font-weight:300 700; font-display:block; }
+  html,body{margin:0;padding:0;background:#0a0c11;overflow:hidden;}
+  #stage{width:1920px;height:1080px;position:relative;}
+  canvas{display:block;width:1920px;height:1080px;background:#0a0c11;}
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="c" width="1920" height="1080"></canvas></div>
+<script>
+"use strict";
+/* ===========================================================================
+   THE TOPSWOPS MACHINE — companion film
+   ---------------------------------------------------------------------------
+   A canvas-register film (150 s) for the stratum /strata/topswops-machine/.
+   Conway's one-rule card game: read the top card k, reverse the top k cards,
+   repeat until the ace (1) surfaces. Conway proved it always stops.
+
+   Everything on screen is computed live from the stratum's OWN engine
+   (research/topswops/engine.mjs, ported verbatim below):
+     • the centre cascade is the deck [4,7,6,2,1,5,3], which the code confirms
+       lasts 16 flips — the maximum for 7 cards (OEIS A000375);
+     • the flip-count histogram is the exhaustive tally over all 5,040 deals;
+     • the sequence table (max flips A000375, longest-lasting A123398, total
+       flips [new], unreachable A000255(n-1)) is enumerated live for n = 2..9;
+     • the Garden-of-Eden example and count are computed from the same engine.
+   So the picture and every printed number are read off one computation and
+   cannot drift apart. Every sentence is verbatim from the stratum or a plain
+   description of what is actually drawn.
+   =========================================================================== */
+
+const W = 1920, H = 1080;
+const cv = document.getElementById('c');
+const ctx = cv.getContext('2d');
+
+/* palette — taken from the stratum's own page (public/strata/topswops-machine) */
+const BG    = '#0a0c11';
+const INK   = '#e8edf2';
+const DIM   = '#9aa7b4';
+const FAINT = '#5b6776';
+const GOLD  = '#ffc94a';   // --accent  : the top card, the new column
+const HOT   = '#ff7a59';   // --hot     : the segment about to reverse
+const GREEN = '#7fdc5a';   // --green   : the ace, the check
+const CARD  = '#121821';   // --card
+const CARDT = '#2a2113';   // --cardtop
+const LINE  = '#22303b';   // --line
+
+/* ───────────────────────── the engine, ported verbatim ─────────── */
+function factorial(n){ let f=1; for(let i=2;i<=n;i++) f*=i; return f; }
+function flipsOf(deck){ const a=deck.slice(); let c=0; while(a[0]!==1){ const k=a[0]; let i=0,j=k-1; while(i<j){const t=a[i];a[i]=a[j];a[j]=t;i++;j--;} c++; } return c; }
+// Heap's algorithm, calling cb on each permutation of [1..n].
+function eachPerm(n, cb){
+  const a=[]; for(let i=1;i<=n;i++) a.push(i);
+  const c=new Array(n).fill(0);
+  cb(a); let i=0;
+  while(i<n){
+    if(c[i]<i){ if(i%2===0){const t=a[0];a[0]=a[i];a[i]=t;} else {const t=a[c[i]];a[c[i]]=a[i];a[i]=t;} cb(a); c[i]++; i=0; }
+    else { c[i]=0; i++; }
+  }
+}
+// All statistics over the full n! decks, computed exactly.
+function enumerate(n){
+  let max=0, total=0, garden=0; const hist={};
+  eachPerm(n, p=>{
+    const f=flipsOf(p);
+    if(f>max) max=f;
+    total+=f; hist[f]=(hist[f]||0)+1;
+    let g=true; for(let j=1;j<n;j++) if(p[j]===j+1){ g=false; break; }
+    if(g) garden++;
+  });
+  const champ=hist[max]||0;
+  return { n, max, champ, total, garden, hist };
+}
+// A000255: a(k) = k*a(k-1) + (k-1)*a(k-2), a0=a1=1.  (Euler's fixed-point-free count.)
+function A000255(upto){ const a=[1,1]; for(let i=2;i<=upto;i++) a[i]=i*a[i-1]+(i-1)*a[i-2]; return a; }
+
+/* the centre cascade: the 16-flip deck, with its full trajectory, computed live */
+const DECK0 = [4,7,6,2,1,5,3];
+function trajectory(deck){
+  const a=deck.slice(); const states=[a.slice()]; const tops=[];
+  while(a[0]!==1){ const k=a[0]; tops.push(k); let i=0,j=k-1; while(i<j){const t=a[i];a[i]=a[j];a[j]=t;i++;j--;} states.push(a.slice()); }
+  return { states, tops };
+}
+const TRAJ = trajectory(DECK0);            // states[0..16], tops[0..15]
+const NFLIPS = TRAJ.tops.length;            // 16
+
+/* exhaustive tallies (computed once at boot) */
+const E7 = enumerate(7);                     // for the histogram + the n=7 facts
+const TABLE = [];                            // rows n=2..9, all live
+for(let n=2;n<=9;n++) TABLE.push(enumerate(n));
+const A255 = A000255(12);
+
+/* a Garden-of-Eden example for n=7: the lexicographically-first deck with no card
+   in its own place except possibly the top (the unreachable signature). */
+function gardenExample(n){
+  const used=new Array(n+1).fill(false); const out=[];
+  (function place(pos){
+    if(pos===n) return true;
+    for(let v=1;v<=n;v++){
+      if(used[v]) continue;
+      if(pos>=1 && v===pos+1) continue;    // no card in its own place below the top
+      if(pos===0 && v===1) continue;       // pick a representative whose top is NOT the ace
+      used[v]=true; out[pos]=v;            // (only to read clearly as a fresh deal; the count is unaffected)
+      if(place(pos+1)) return true;
+      used[v]=false;
+    }
+    return false;
+  })(0);
+  return out.slice();
+}
+const EDEN7 = gardenExample(7);             // e.g. [1,3,2,5,4,7,6]-ish; verified live below
+// sanity: EDEN7 must indeed have no fixed point in positions 2..n
+(function(){ for(let j=1;j<7;j++) if(EDEN7[j]===j+1) throw new Error('eden example invalid'); })();
+
+const fmt = x => Number(x).toLocaleString('en-US');
+
+/* ───────────────────────── timeline (seconds) ───────────────────────── */
+const DUR = 150;
+const P = {
+  title:   [0,   11],
+  rule:    [11,  25],
+  cascade: [25,  66],   // the longest 7-card game, played card by card
+  stops:   [66,  80],   // Conway proved it always stops
+  hist:    [80,  104],  // every one of the 5,040 deals, counted
+  garden:  [104, 127],  // the decks no flip can produce
+  table:   [127, 145],  // three sequences fall out
+  close:   [145, 150],
+};
+const PHASE_BOUNDS = [0,11,25,66,80,104,127,145];
+
+/* ───────────────────────── easing helpers ───────────────────────── */
+function smooth(t,t0,t1){ if(t<=t0)return 0; if(t>=t1)return 1; const x=(t-t0)/(t1-t0); return 0.5-0.5*Math.cos(Math.PI*x); }
+function pulse(t,t0,t1){ const u=smooth(t,t0,t0+(t1-t0)*0.3); const v=1-smooth(t,t0+(t1-t0)*0.7,t1); return u*v; }
+function lerp(a,b,k){ return a+(b-a)*k; }
+function band(t,a,b,fadeIn=0.7,fadeOut=0.7){ return smooth(t,a,a+fadeIn)*(1-smooth(t,b-fadeOut,b)); }
+function easeBack(x){ const s=1.70158; return 1+ (s+1)*Math.pow(x-1,3) + s*Math.pow(x-1,2); }
+
+/* ───────────────────────── text ───────────────────────── */
+function txt(s,x,y,size,opts={}){
+  const { font='Fraunces', weight=400, color=INK, align='left', alpha=1, italic=false, track=0 } = opts;
+  if(alpha<=0) return;
+  ctx.save();
+  ctx.globalAlpha = Math.max(0,Math.min(1,alpha));
+  ctx.fillStyle = color;
+  ctx.textAlign = align; ctx.textBaseline = 'alphabetic';
+  ctx.font = `${italic?'italic ':''}${weight} ${size}px ${italic?'FrauncesIt':font}, ${font}, sans-serif`;
+  if(track){
+    ctx.textAlign='left';
+    let total=0; for(const ch of s) total+=ctx.measureText(ch).width+track; total-=track;
+    let cx = align==='center'? x-total/2 : align==='right'? x-total : x;
+    for(const ch of s){ ctx.fillText(ch,cx,y); cx+=ctx.measureText(ch).width+track; }
+  } else { ctx.fillText(s,x,y); }
+  ctx.restore();
+}
+function eyebrow(s,x,y,alpha,color=DIM,size=23){ txt(s.toUpperCase(),x,y,size,{font:'Martian',weight:500,color,align:'center',alpha,track:7}); }
+function wrap(s,maxW,size,font,weight,italic){
+  ctx.font = `${italic?'italic ':''}${weight} ${size}px ${italic?'FrauncesIt':font}, ${font}, sans-serif`;
+  const words=s.split(' '); const lines=[]; let cur='';
+  for(const w of words){ const test=cur?cur+' '+w:w; if(ctx.measureText(test).width>maxW && cur){ lines.push(cur); cur=w; } else cur=test; }
+  if(cur) lines.push(cur); return lines;
+}
+function paragraph(s,cx,y,maxW,size,lh,opts={}){
+  const { font='Fraunces', weight=400, color=INK, alpha=1, italic=false } = opts;
+  const lines = wrap(s,maxW,size,font,weight,italic);
+  lines.forEach((ln,i)=> txt(ln,cx,y+i*lh,size,{font,weight,color,align:'center',alpha,italic}));
+  return lines.length;
+}
+
+/* ───────────────────────── background ───────────────────────── */
+function background(){
+  ctx.fillStyle = BG; ctx.fillRect(0,0,W,H);
+  const g = ctx.createRadialGradient(W/2,-120,200, W/2,-120,1500);
+  g.addColorStop(0,'rgba(17,21,31,0.9)'); g.addColorStop(1,'rgba(10,12,17,0)');
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+}
+
+/* ───────────────────────── a playing card ───────────────────────── */
+function roundRect(x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
+function drawCard(x,y,w,h,value,style,alpha,scaleX){
+  if(alpha<=0) return;
+  ctx.save(); ctx.globalAlpha=Math.max(0,Math.min(1,alpha));
+  if(scaleX!==undefined && scaleX!==1){ ctx.translate(x+w/2,0); ctx.scale(Math.max(0.02,Math.abs(scaleX)),1); ctx.translate(-(x+w/2),0); }
+  let bg=CARD, bd=LINE, fg=INK;
+  if(style==='top'){ bg=CARDT; bd=GOLD; fg=GOLD; }
+  else if(style==='ace'){ bg='#0f1d10'; bd=GREEN; fg=GREEN; }
+  else if(style==='dim'){ bg=CARD; bd=LINE; fg=DIM; }
+  ctx.fillStyle=bg; roundRect(x,y,w,h,16); ctx.fill();
+  ctx.lineWidth=3; ctx.strokeStyle=bd; roundRect(x,y,w,h,16); ctx.stroke();
+  if(style==='inrev'){ ctx.lineWidth=4; ctx.strokeStyle=HOT; roundRect(x+5,y+5,w-10,h-10,12); ctx.stroke(); }
+  ctx.fillStyle=fg; ctx.textAlign='center'; ctx.textBaseline='middle';
+  ctx.font=`700 ${Math.round(h*0.46)}px Martian, monospace`;
+  ctx.fillText(value, x+w/2, y+h/2+2);
+  ctx.restore();
+}
+
+/* deck geometry */
+const CW=148, CH=204, CGAP=22, NC=7;
+const DECK_W = NC*CW + (NC-1)*CGAP;
+const DECK_X0 = W/2 - DECK_W/2;
+function slotX(p){ return DECK_X0 + p*(CW+CGAP); }
+const DECK_Y = 452;
+
+/* ===========================================================================
+   PHASE DRAWERS
+   =========================================================================== */
+
+/* ── P0 · title ──────────────────────────────────────────────────────────── */
+function drawTitle(t){
+  const a=P.title;
+  // a faint row of cards drifting behind the title
+  const appear = smooth(t,1.2,4.5)*(1-smooth(t,a[1]-1.2,a[1]));
+  if(appear>0){
+    for(let p=0;p<NC;p++){
+      const val=DECK0[p];
+      drawCard(slotX(p), 690, CW*0.62, CH*0.62, val, p===0?'top':'normal', 0.18*appear, 1);
+    }
+  }
+  const eA = band(t,0.6,a[1]-0.6,1.2,1.0);
+  eyebrow("Conway's one-rule card game", W/2, 360, eA, DIM, 25);
+  const tA = band(t,1.6,a[1]-0.6,1.6,1.0);
+  txt('The Topswops Machine', W/2, 478, 104, {weight:600,color:INK,align:'center',alpha:tA});
+  const sA = band(t,3.4,a[1]-0.6,1.4,1.0);
+  txt('Read the top card, flip over that many.', W/2, 575, 50, {weight:400,color:GOLD,align:'center',alpha:sA,italic:true,font:'FrauncesIt'});
+  const fA = band(t,4.6,a[1]-0.6,1.2,1.0);
+  eyebrow('A companion film · artwaste.land', W/2, 640, fA, FAINT, 19);
+}
+
+/* ── P1 · the rule ───────────────────────────────────────────────────────── */
+function drawRule(t){
+  const a=P.rule;
+  const eA=band(t,a[0]+0.3,a[1]-0.5,1.0,0.9);
+  eyebrow('The rule', W/2, 250, eA);
+  const l1=band(t,a[0]+0.9,a[1]-0.4,1.1,1.0);
+  paragraph('If the top card is k, reverse the order of the top k cards.',
+            W/2, 380, 1500, 52, 70, {weight:400,color:INK,alpha:l1});
+  const l2=band(t,a[0]+4.2,a[1]-0.4,1.1,1.0);
+  paragraph('If it is 1 — the ace — stop.',
+            W/2, 500, 1400, 52, 70, {weight:400,color:GREEN,alpha:l2,italic:true});
+  // a single demonstrating flip: [3,1,2] -> read 3 -> reverse all -> [2,1,3] (top now 2) ... keep it tiny + honest
+  const demoIn = smooth(t,a[0]+7.0,a[0]+8.0);
+  if(demoIn>0){
+    const cw=120, ch=164, gap=18, x0=W/2-(3*cw+2*gap)/2, y=650;
+    const before=[3,1,2], after=[2,1,3];
+    const k = smooth(t, a[0]+9.5, a[0]+11.5);     // reverse all 3 (top card was 3)
+    for(let p=0;p<3;p++){
+      const dest = 2-p;                            // reverse of 3
+      const x = lerp(x0+p*(cw+gap), x0+dest*(cw+gap), k);
+      const lift = -Math.sin(Math.PI*Math.min(1,Math.max(0,(t-(a[0]+9.5))/2)))*36 * (p===1?0:1);
+      const val = before[p];
+      const isTop = (k<0.5 ? p===0 : false);
+      drawCard(x, y+lift, cw, ch, val, isTop?'top':'normal', demoIn, 1);
+    }
+    const cap=band(t,a[0]+8.0,a[1]-0.3,1.0,0.8);
+    txt('top card 3  →  flip the top 3', W/2, 640, 26, {font:'Martian',weight:500,color:DIM,align:'center',alpha:cap,track:1});
+  }
+}
+
+/* ── P2 · the cascade: the longest 7-card game, played ───────────────────── */
+function drawCascade(t){
+  const a=P.cascade;
+  const eA=band(t,a[0]+0.3,a[0]+5.5,1.0,1.0)*0.0 + band(t,a[0]+0.4,a[1]-0.4,1.0,0.9);
+  eyebrow('Which decks last longest? Run one.', W/2, 150, eA, DIM, 22);
+
+  const T_FIRST = 27.0, DT = 2.25;
+  const tLocal = t;
+  // ---- deal-in over [25,27] ----
+  if(tLocal < T_FIRST){
+    const di = smooth(tLocal, a[0]+0.2, T_FIRST-0.1);
+    for(let p=0;p<NC;p++){
+      const pa = smooth(tLocal, a[0]+0.2 + p*0.12, a[0]+0.2 + p*0.12 + 0.7);
+      const yoff = (1-pa)*-60;
+      drawCard(slotX(p), DECK_Y+yoff, CW, CH, DECK0[p], p===0?'top':'normal', pa, 1);
+    }
+    txt('A deal of seven cards.', W/2, DECK_Y+CH+96, 40, {weight:400,color:DIM,align:'center',alpha:di});
+    drawFlipCounter(0, 0.0);
+    return;
+  }
+
+  // ---- which flip are we in ----
+  const fi = Math.floor((tLocal - T_FIRST) / DT);     // 0-based flip index
+  if(fi >= NFLIPS){
+    // resolved: the ace has surfaced, the deck is sorted
+    const fin = TRAJ.states[NFLIPS];
+    const settle = smooth(tLocal, T_FIRST+NFLIPS*DT, T_FIRST+NFLIPS*DT+0.6);
+    for(let p=0;p<NC;p++){
+      drawCard(slotX(p), DECK_Y, CW, CH, fin[p], p===0?'ace':'normal', 1, 1);
+    }
+    drawFlipCounter(NFLIPS, 1);
+    const glow = pulse(tLocal, T_FIRST+NFLIPS*DT+0.1, T_FIRST+NFLIPS*DT+2.2);
+    if(glow>0){ ctx.save(); ctx.globalAlpha=glow*0.5; ctx.strokeStyle=GREEN; ctx.lineWidth=3; roundRect(slotX(0)-8,DECK_Y-8,CW+16,CH+16,20); ctx.stroke(); ctx.restore(); }
+    txt('The ace surfaced. Sixteen flips —', W/2, DECK_Y+CH+92, 42, {weight:400,color:INK,align:'center',alpha:settle});
+    txt('the longest a 7-card deck can last.', W/2, DECK_Y+CH+146, 42, {weight:500,color:GOLD,align:'center',alpha:settle,italic:true,font:'FrauncesIt'});
+    return;
+  }
+
+  // ---- animate flip fi ----
+  const st   = TRAJ.states[fi];        // state before this flip
+  const k    = st[0];                  // card read off the top
+  const tIn  = tLocal - (T_FIRST + fi*DT);   // time within this flip [0,DT)
+  // sub-phases within a flip
+  const HL   = smooth(tIn, 0.0, 0.40);             // top-card highlight
+  const SEG  = smooth(tIn, 0.45, 0.75);            // segment highlight
+  const REV  = smooth(tIn, 0.78, 1.62);            // the reversal motion
+  const done = tIn >= 1.62;
+
+  // draw each card at its (possibly moving) position
+  for(let p=0;p<NC;p++){
+    let x = slotX(p), sclX = 1, lift = 0, style='normal';
+    if(p===0) style = (st[0]===1?'ace':'top');
+    if(p < k){
+      // this card belongs to the reversal segment
+      if(SEG>0 && REV<=0) style='inrev';
+      if(REV>0){
+        const dest = k-1-p;
+        x = lerp(slotX(p), slotX(dest), REV);
+        lift = -Math.sin(Math.PI*REV)*64;
+        sclX = Math.cos(Math.PI*REV);           // flip-over read
+        style = 'inrev';
+      }
+    }
+    drawCard(x, DECK_Y+lift, CW, CH, st[p], style, 1, sclX);
+  }
+  drawFlipCounter(done ? fi+1 : fi, HL);
+
+  // readout line under the deck — switches to "Flip N" exactly when the
+  // reversal motion completes and the counter ticks (tIn >= 1.62), so the
+  // number on the right and the sentence below never disagree.
+  const m = TRAJ.states[fi+1][0];      // top after this flip
+  let line;
+  if(tIn < 1.62) line = 'Top card is '+k+'  →  flip the top '+k+'.';
+  else line = 'Flip '+(fi+1)+': top was '+k+'.  Now top is '+(m===1?'1 — the ace':m)+'.';
+  txt(line, W/2, DECK_Y+CH+96, 38, {font:'Martian',weight:400,color:(m===1&&tIn>=1.62)?GREEN:DIM,align:'center',alpha:0.95});
+}
+function drawFlipCounter(nFlips, pulseK){
+  const bx = DECK_X0 + DECK_W + 70, by = DECK_Y + 30;
+  if(bx > W-260) { /* fall back to top-right */ }
+  txt('flips', bx, by, 24, {font:'Martian',weight:500,color:DIM,align:'left',track:3});
+  const sc = 1 + 0.18*(pulseK||0);
+  ctx.save(); ctx.translate(bx, by+96); ctx.scale(sc,sc);
+  txt(String(nFlips), 0, 0, 96, {font:'Martian',weight:700,color:GOLD,align:'left'});
+  ctx.restore();
+}
+
+/* ── P3 · Conway proved it always stops ──────────────────────────────────── */
+function drawStops(t){
+  const a=P.stops;
+  const eA=band(t,a[0]+0.3,a[1]-0.5,1.0,0.9);
+  eyebrow('Why this is not obvious', W/2, 285, eA);
+  const l1=band(t,a[0]+0.9,a[1]-0.4,1.2,1.0);
+  txt('Conway proved this always stops.', W/2, 430, 62, {weight:500,color:INK,align:'center',alpha:l1});
+  const l2=band(t,a[0]+4.0,a[1]-0.4,1.2,1.0);
+  paragraph('And every game length, from zero flips up to the longest, is reached by some deck — no gaps.',
+            W/2, 560, 1500, 44, 62, {weight:400,color:DIM,alpha:l2});
+  const l3=band(t,a[0]+8.0,a[1]-0.3,1.2,1.0);
+  txt('How long, which deck, how many — there is only one way to know.', W/2, 700, 40, {weight:400,color:GOLD,align:'center',alpha:l3,italic:true,font:'FrauncesIt'});
+}
+
+/* ── P4 · the histogram of all 5,040 deals ──────────────────────────────── */
+function drawHist(t){
+  const a=P.hist;
+  const eA=band(t,a[0]+0.3,a[1]-0.4,1.0,0.9);
+  eyebrow('Every one of the 5,040 deals of 7 cards, counted', W/2, 140, eA, DIM, 22);
+
+  const PX=300, PY=300, PW=1320, PH=420;
+  const max=E7.max;                          // 16
+  let top=0; for(let f=0;f<=max;f++) top=Math.max(top, E7.hist[f]||0);
+  const bw = PW/(max+1);
+  // axis baseline
+  const baseA=band(t,a[0]+0.4,a[1]-0.3,1.0,0.0);
+  ctx.save(); ctx.globalAlpha=0.7*baseA; ctx.strokeStyle=LINE; ctx.lineWidth=2;
+  ctx.beginPath(); ctx.moveTo(PX,PY+PH); ctx.lineTo(PX+PW,PY+PH); ctx.stroke(); ctx.restore();
+  // bars grow
+  const grow=smooth(t,a[0]+1.0,a[0]+6.5);
+  for(let f=0;f<=max;f++){
+    const c=E7.hist[f]||0;
+    const h=top? (c/top)*PH*grow : 0;
+    const x=PX+f*bw+5, y=PY+PH-h, w=bw-10;
+    const isMax = f===max;
+    ctx.save(); ctx.globalAlpha=baseA;
+    ctx.fillStyle = isMax? GOLD : '#2b3a4a';
+    roundRect(x,y,w,Math.max(h,1.5),4); ctx.fill();
+    ctx.restore();
+    // x label every other
+    if(f%2===0 || isMax)
+      txt(String(f), x+w/2, PY+PH+34, 20, {font:'Martian',weight:400,color:isMax?GOLD:DIM,align:'center',alpha:baseA});
+  }
+  txt('game length (flips)', PX+PW/2, PY+PH+78, 22, {font:'Martian',weight:400,color:DIM,align:'center',alpha:baseA,track:2});
+  // the longest bar pointer
+  const ptr=band(t,a[0]+6.5,a[1]-0.3,1.0,1.0);
+  if(ptr>0){
+    const xm=PX+max*bw+bw/2;
+    txt('16 flips — '+E7.champ+' decks', xm, PY-18, 24, {font:'Martian',weight:600,color:GOLD,align:'center',alpha:ptr});
+  }
+  // stat cards
+  const cA=band(t,a[0]+7.5,a[1]-0.3,1.0,1.0);
+  const mean=(E7.total/factorial(7));
+  const cards=[
+    ['Longest game', E7.max+' flips', 'OEIS A000375'],
+    ['Decks that last that long', String(E7.champ), 'OEIS A123398'],
+    ['Average game', mean.toFixed(3)+' flips', 'total ÷ '+fmt(factorial(7))],
+    ['Total flips, all deals', fmt(E7.total), 'a new sequence'],
+  ];
+  const cw=380, gap=24, x0=W/2-(cards.length*cw+(cards.length-1)*gap)/2, cy=PY+PH+128;
+  cards.forEach((c,i)=>{
+    const cx=x0+i*(cw+gap); const ca=cA*smooth(t,a[0]+7.5+i*0.25, a[0]+8.2+i*0.25);
+    ctx.save(); ctx.globalAlpha=ca; ctx.fillStyle='#0c1118'; ctx.strokeStyle=LINE; ctx.lineWidth=1.5;
+    roundRect(cx,cy,cw,118,10); ctx.fill(); ctx.stroke(); ctx.restore();
+    txt(c[0].toUpperCase(), cx+22, cy+34, 16, {font:'Martian',weight:600,color:DIM,align:'left',alpha:ca,track:2});
+    txt(c[1], cx+22, cy+78, 34, {font:'Martian',weight:700,color: i===3?GOLD:INK,align:'left',alpha:ca});
+    txt(c[2], cx+22, cy+104, 17, {font:'Martian',weight:400,color:FAINT,align:'left',alpha:ca});
+  });
+}
+
+/* ── P5 · the Garden of Eden ─────────────────────────────────────────────── */
+function drawGarden(t){
+  const a=P.garden;
+  const eA=band(t,a[0]+0.3,a[1]-0.4,1.0,0.9);
+  eyebrow('The decks no flip can produce', W/2, 140, eA, DIM, 22);
+  const l1=band(t,a[0]+0.8,a[0]+9.0,1.0,0.8);
+  paragraph('Run the game backwards. Some deals are never the result of a flip — they can only ever be a starting hand.',
+            W/2, 232, 1500, 40, 56, {weight:400,color:DIM,alpha:l1});
+
+  // the example deck with its signature
+  const din=smooth(t,a[0]+2.2,a[0]+3.4);
+  const cw=130, ch=178, gap=20, x0=W/2-(7*cw+6*gap)/2, y=360;
+  for(let p=0;p<7;p++){
+    const pa=din*smooth(t,a[0]+2.2+p*0.08,a[0]+2.9+p*0.08);
+    // position index above
+    txt('pos '+(p+1), x0+p*(cw+gap)+cw/2, y-22, 18, {font:'Martian',weight:400,color:FAINT,align:'center',alpha:pa*0.8,track:1});
+    drawCard(x0+p*(cw+gap), y, cw, ch, EDEN7[p], p===0?'top':'normal', pa, 1);
+    // tick: for positions 2..7, the card is NOT its own position number
+    if(p>=1){
+      const tk=din*smooth(t,a[0]+4.0+p*0.12,a[0]+4.7+p*0.12);
+      txt('≠ '+(p+1), x0+p*(cw+gap)+cw/2, y+ch+34, 20, {font:'Martian',weight:500,color:GREEN,align:'center',alpha:tk});
+    }
+  }
+  const sig=band(t,a[0]+5.6,a[0]+12.0,1.0,0.9);
+  paragraph('No card sits in its own place except possibly the top. That is the whole signature.',
+            W/2, y+ch+96, 1500, 38, 52, {weight:400,color:INK,alpha:sig});
+
+  // the reveal: the count, and the bridge
+  const rv=band(t,a[0]+12.5,a[1]-0.3,1.0,1.0);
+  if(rv>0){
+    const g=E7.garden;                       // 2119, live
+    txt('For 7 cards: '+fmt(g)+' unreachable decks', W/2, y+ch+182, 48, {weight:600,color:GOLD,align:'center',alpha:rv});
+    txt('= A000255(6) — Euler’s fixed-point-free count, 18th century', W/2, y+ch+232, 28, {font:'Martian',weight:400,color:DIM,align:'center',alpha:rv,track:1});
+    const br=band(t,a[0]+15.5,a[1]-0.3,1.0,1.0);
+    txt('A new bridge between a card game and an old permutation count.', W/2, y+ch+300, 40, {weight:400,color:GREEN,align:'center',alpha:br,italic:true,font:'FrauncesIt'});
+  }
+}
+
+/* ── P6 · three sequences fall out ───────────────────────────────────────── */
+function drawTable(t){
+  const a=P.table;
+  const eA=band(t,a[0]+0.3,a[1]-0.4,1.0,0.9);
+  eyebrow('Three sequences fall out', W/2, 130, eA, DIM, 22);
+  const sub=band(t,a[0]+0.7,a[1]-0.4,1.0,0.9);
+  paragraph('Two were already catalogued. One — the total flips across all deals — was not in the OEIS.',
+            W/2, 210, 1500, 38, 52, {weight:400,color:DIM,alpha:sub});
+
+  // table geometry
+  const cols=[
+    {h:'n',                     w:90,  get:r=>String(r.n),        col:INK,  new:false},
+    {h:'max flips · A000375',   w:330, get:r=>String(r.max),      col:INK,  new:false},
+    {h:'longest-lasting · A123398', w:380, get:r=>fmt(r.champ),   col:INK,  new:false},
+    {h:'total flips · new',     w:360, get:r=>fmt(r.total),       col:GOLD, new:true},
+    {h:'unreachable · A000255(n−1)', w:380, get:r=>fmt(r.garden), col:INK, new:false},
+  ];
+  const tW=cols.reduce((s,c)=>s+c.w,0);
+  const x0=W/2-tW/2, yHead=320, rowH=58;
+  // header
+  const hA=band(t,a[0]+1.0,a[1]-0.3,1.0,0.0);
+  let cx=x0;
+  for(const c of cols){
+    ctx.save();
+    if(c.new){ ctx.globalAlpha=0.10*hA; ctx.fillStyle=GOLD; ctx.fillRect(cx-6, yHead-40, c.w, rowH*(TABLE.length+1)+30); ctx.restore(); }
+    else ctx.restore();
+    txt(c.h.toUpperCase(), cx+c.w-14, yHead-12, 15, {font:'Martian',weight:600,color:c.new?GOLD:DIM,align:'right',alpha:hA,track:1});
+    cx+=c.w;
+  }
+  ctx.save(); ctx.globalAlpha=hA; ctx.strokeStyle=LINE; ctx.lineWidth=1.5;
+  ctx.beginPath(); ctx.moveTo(x0-6,yHead+8); ctx.lineTo(x0+tW,yHead+8); ctx.stroke(); ctx.restore();
+  // rows reveal top-to-bottom
+  for(let ri=0;ri<TABLE.length;ri++){
+    const r=TABLE[ri];
+    const ra=band(t, a[0]+1.6+ri*0.45, a[1]-0.25, 0.6, 0.0);
+    if(ra<=0) continue;
+    const ry=yHead+40+ri*rowH;
+    let cxx=x0;
+    for(const c of cols){
+      txt(c.get(r), cxx+c.w-14, ry, 30, {font:'Martian',weight:c.new?700:400,color:c.col,align:'right',alpha:ra});
+      cxx+=c.w;
+    }
+  }
+  // the new-sequence call-out
+  const co=band(t,a[0]+10.0,a[1]-0.25,1.0,1.0);
+  if(co>0)
+    txt('0, 1, 6, 38, 265, 2115, 18508, 180260, 1911505 …', W/2, yHead+40+TABLE.length*rowH+62, 30, {font:'Martian',weight:500,color:GOLD,align:'center',alpha:co,track:1});
+  const cap=band(t,a[0]+12.5,a[1]-0.25,1.0,1.0);
+  if(cap>0)
+    paragraph('Reproducing the two catalogued columns exactly is the calibration — it is why the new column can be trusted.',
+              W/2, yHead+40+TABLE.length*rowH+118, 1500, 34, 48, {weight:400,color:DIM,alpha:cap});
+}
+
+/* ── P7 · the check / close ──────────────────────────────────────────────── */
+function drawClose(t){
+  const a=P.close;
+  const eA=band(t,a[0]+0.2,DUR+1,1.0,0.0);
+  ctx.save(); ctx.globalAlpha=eA; ctx.fillStyle=GREEN; ctx.beginPath(); ctx.arc(W/2,330,9,0,6.2832); ctx.fill(); ctx.restore();
+  txt('Every number here was recomputed live —', W/2, 440, 44, {weight:400,color:INK,align:'center',alpha:eA});
+  txt('all 5,040 deals played, the catalogued sequences reproduced.', W/2, 500, 40, {weight:400,color:DIM,align:'center',alpha:eA});
+  txt('research/topswops/verify.mjs  ·  9/9', W/2, 590, 26, {font:'Martian',weight:400,color:DIM,align:'center',alpha:eA,track:1});
+  const l2=band(t,a[0]+1.4,DUR+1,1.0,0.0);
+  txt('artwaste.land', W/2, 700, 34, {weight:400,color:GOLD,align:'center',alpha:l2,italic:true,font:'FrauncesIt'});
+}
+
+/* ───────────────────────── master frame ───────────────────────── */
+function frame(){
+  const t=(Date.now()-START)/1000;
+  background();
+  if(t < P.title[1])        drawTitle(t);
+  else if(t < P.rule[1])    drawRule(t);
+  else if(t < P.cascade[1]) drawCascade(t);
+  else if(t < P.stops[1])   drawStops(t);
+  else if(t < P.hist[1])    drawHist(t);
+  else if(t < P.garden[1])  drawGarden(t);
+  else if(t < P.table[1])   drawTable(t);
+  else                      drawClose(t);
+  ctx.globalAlpha=1;
+  if(t <= DUR+1.5) requestAnimationFrame(frame);
+}
+
+/* boot */
+let START=Date.now();
+async function boot(){
+  try{
+    await Promise.all([
+      document.fonts.load('600 104px Fraunces'),
+      document.fonts.load('italic 400 50px FrauncesIt'),
+      document.fonts.load('700 96px Martian'),
+    ]);
+    await document.fonts.ready;
+  }catch(e){}
+  START=Date.now();
+  window.__ready=true;
+  requestAnimationFrame(frame);
+}
+boot();
+</script>
+</body>
+</html>
