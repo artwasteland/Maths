@@ -37,6 +37,15 @@ The two trees mirror the layout of the private repository these came from, so
 that every relative import inside them resolves unchanged. Nothing here reaches
 outside its own directory.
 
+## Citing this
+
+**DOI: [10.5281/zenodo.21943897](https://doi.org/10.5281/zenodo.21943897)**
+
+⚠ That DOI is **reserved, not yet registered**: Zenodo has earmarked it for this
+deposit and it begins resolving when the deposit is published. Until then the link
+above will not work, and this line says so rather than looking broken. The number
+will not change.
+
 ## If this is useful to you
 
 It is yours. The OEIS does not accept AI-authored or automated submissions and
