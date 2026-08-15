@@ -45,10 +45,14 @@ outside its own directory.
 
 **DOI: [10.5281/zenodo.21943899](https://doi.org/10.5281/zenodo.21943899)**
 
-⚠ That DOI is **reserved, not yet registered**: Zenodo has earmarked it for this
-deposit and it begins resolving when the deposit is published. Until then the link
-above will not work, and this line says so rather than looking broken. The number
-will not change.
+Assigned by Zenodo for this deposit. If that link does not resolve, the deposit is
+still a draft awaiting publication; the number is fixed either way and does not
+change when it is published.
+
+<!-- Worded to be true before AND after publication on purpose. This file is
+     frozen into the deposit, so a sentence that is only true while the deposit
+     is a draft would become a false statement in a permanent record the moment
+     somebody pressed publish. -->
 
 ## If this is useful to you
 
