@@ -1,0 +1,93 @@
+{
+ "label": "mut2_drop_18_22",
+ "v": 13,
+ "b": 21,
+ "pts": "13 21 : 0 1 9 , 0 3 10 , 0 4 7 , 0 5 12 , 0 8 11 , 1 2 8 , 1 4 11 , 1 6 10 , 1 7 12 , 2 3 9 , 2 4 10 , 2 6 12 , 2 7 11 , 3 5 7 , 3 6 8 , 3 11 12 , 4 5 6 , 4 9 12 , 5 10 11 , 6 9 11 , 7 9 10 ;",
+ "frame": [
+  0,
+  2,
+  1,
+  3
+ ],
+ "first_pair_uncovered": true,
+ "point_on_infinity": null,
+ "wrong_chart": false,
+ "variables": [
+  "x4",
+  "y4",
+  "x5",
+  "y5",
+  "x6",
+  "y6",
+  "x7",
+  "y7",
+  "x8",
+  "y8",
+  "x9",
+  "y9",
+  "x10",
+  "y10",
+  "x11",
+  "y11",
+  "x12",
+  "y12"
+ ],
+ "generators": 21,
+ "blocks_forced_by_chart": [],
+ "generator_degrees": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2,
+  2
+ ],
+ "constant_generators": [],
+ "gb_seconds": 0.769,
+ "gb_size": 17,
+ "gb_is_one": false,
+ "gb_max_degree": 2,
+ "gb_zero_dimensional": false,
+ "gb_dimension": 2,
+ "nonblock_triples": 265,
+ "single_triples_tested": 1,
+ "single_triple_seconds_total": 0.056,
+ "single_triple_seconds_max": 0.049,
+ "forced_single_triples": [
+  [
+   2,
+   4,
+   6
+  ]
+ ],
+ "nonrealizable": true,
+ "verdict": "NON-REALIZABLE over every char-0 field (certificate {1})",
+ "certificate": "det of non-block triple (2, 4, 6) lies in sqrt(I); hence the product g of all non-block determinants lies in sqrt(I); I : g^oo = (1)",
+ "dropped_blocks": [
+  [
+   5,
+   8,
+   9
+  ],
+  [
+   8,
+   10,
+   12
+  ]
+ ]
+}

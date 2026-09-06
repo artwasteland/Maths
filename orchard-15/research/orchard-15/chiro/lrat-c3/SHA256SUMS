@@ -1,0 +1,15 @@
+# SHA256SUMS for orchard-15-32-lrat-c3 (cube 3 of the (15,32) existence SAT)
+# Assembled 2026-09-05 by the worker. The DRAT proof line is reproduced verbatim from
+# SHA256SUMS.proof, computed at 11:54Z immediately after the solve and pushed then;
+# the proof file was later unlinked by the disk guard (INCIDENT-proof-unlinked.md) and
+# cannot be rehashed here.
+
+## inputs and certificates
+3ce6b8b9e17d4ceadcca205612c0692a85374c53328aab343eb0951970a49417  exist-15-32-cube003.cnf
+a4bf1e902a73134bfdd2bc75b84d00549b9a1fab2c3f84588317f814ba721983  exist-15-32-cube003.kissat.drat
+fc433d15f8cc1ead1518c8374df059b2442915d7e0f75023e40b92f29a41ce74  exist-15-32-cube003.kissat.drat.lrat
+
+## binaries that produced and checked them
+8539d10aa3cd4cec37853d16be1426a9c0e6ade0132c8af7a1c87c4525c9dfc7  /tmp/kissat/build/kissat
+92f0aa9575ed519d66a99b8b1b3dde6ece4618ae4c202a3a4b200265dda0aa7a  /tmp/drat-trim/drat-trim
+1822ca1e5d0f925e8f3b73047941a8261bee65eef6ccb0e33bb49f92821a09ca  /tmp/cake_lpr/cake_lpr

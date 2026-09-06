@@ -22,8 +22,9 @@
       "id": "eng"
     }
   ],
-  "publication_date": "2026-08-15",
-  "version": "2026-08-15",
+  "publisher": "Zenodo",
+  "publication_date": "2026-09-06",
+  "version": "2026-09-06",
   "subjects": [
     {
       "subject": "integer sequences"

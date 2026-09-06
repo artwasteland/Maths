@@ -1,0 +1,22 @@
+{
+  "13,23": {
+    "labelled_models": 441,
+    "canonical_classes": 1,
+    "pseudoline_reverifications": 1,
+    "known_pts_present": true,
+    "terminal_solver_result": "UNSAT",
+    "wall_seconds": 2933.493624
+  },
+  "13,24": {
+    "labelled_models": 0,
+    "terminal_solver_result": "UNSAT",
+    "wall_seconds": 589.79914
+  },
+  "14,28": {
+    "labelled_models": 0,
+    "terminal_solver_result": "UNSAT",
+    "wall_seconds": 1125.706361
+  },
+  "backend": "pysat-cadical153-incremental",
+  "proof_logged": false
+}

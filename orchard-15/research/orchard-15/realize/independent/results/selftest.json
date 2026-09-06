@@ -1,0 +1,20 @@
+{
+ "wrong_chart_frame": [
+  0,
+  1,
+  3,
+  4
+ ],
+ "wrong_chart_gives_one": true,
+ "wrong_chart_constant_generators": [
+  "1"
+ ],
+ "right_chart_gives_one": false,
+ "wrong_chart_point": 2,
+ "perturbed_pappus_witness_rejected": true,
+ "perturbed_pappus_witness_rejected_by_ideal": true,
+ "pappus_first_nonblock_not_forced": true,
+ "pappus_theorem_678_in_radical_of_8_blocks": true,
+ "pappus_theorem_678_in_radical_after_saturation": true,
+ "pappus_8block_saturated_dim": 2
+}

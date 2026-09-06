@@ -1,0 +1,1 @@
+cube 3 depth-2 (Lemma 7'): 5393 children, verdicts {'UNSAT': 5393}, all proof_verified=True, total solve 215210 s, total drat-trim check 145280 s, total proof bytes 314327464929

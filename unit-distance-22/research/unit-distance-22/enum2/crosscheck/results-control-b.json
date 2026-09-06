@@ -1,0 +1,221 @@
+{
+ "tag": "control-b",
+ "dag": "<repo>/research/unit-distance-22/enum/out-22/dag-22-61-f12",
+ "host": "liam-desktop",
+ "shards_total": 2,
+ "shards_identical": 0,
+ "parents_replayed": 60,
+ "udenum_children": 447,
+ "enum2_children": 631,
+ "all_identical": false,
+ "per_cell": [
+  {
+   "cell": "11-17",
+   "shards": 1,
+   "shards_in_cell": 4,
+   "parents_replayed": 30,
+   "parents_in_cell": 31131,
+   "udenum_children": 155,
+   "enum2_children": 217,
+   "only_udenum": 0,
+   "only_enum2": 62,
+   "identical": false,
+   "enum2_cpu_seconds": 3.025,
+   "d_values": [
+    2
+   ]
+  },
+  {
+   "cell": "12-20",
+   "shards": 1,
+   "shards_in_cell": 37,
+   "parents_replayed": 30,
+   "parents_in_cell": 369247,
+   "udenum_children": 292,
+   "enum2_children": 414,
+   "only_udenum": 0,
+   "only_enum2": 122,
+   "identical": false,
+   "enum2_cpu_seconds": 5.178,
+   "d_values": [
+    2
+   ]
+  }
+ ],
+ "per_shard": [
+  {
+   "shard_id": "12-20-200000-210000",
+   "cell": "12-20",
+   "n": 12,
+   "m": 20,
+   "shard_range": [
+    200000,
+    210000
+   ],
+   "range": [
+    200000,
+    200030
+   ],
+   "whole_shard": false,
+   "d_values": [
+    2
+   ],
+   "parents_replayed": 30,
+   "udenum_children": 292,
+   "udenum_distinct": 292,
+   "udenum_block": [
+    0,
+    292
+   ],
+   "udenum_shard_lines": 118877,
+   "udenum_manifest_children_written": 118877,
+   "udenum_recovered_parents": 301,
+   "enum2_children_raw": 414,
+   "enum2_children": 414,
+   "only_udenum": 0,
+   "only_enum2": 122,
+   "identical": false,
+   "only_udenum_first20": [],
+   "only_enum2_first20": [
+    "K???G_JMNGw{",
+    "K???GodSdPxq",
+    "K???GogH]dXp",
+    "K???HGQE]P\\w",
+    "K???HGYA]_{Z",
+    "K???HHOA[s{]",
+    "K???HOopGvWx",
+    "K???HPCKspxs",
+    "K???HRCE`bxq",
+    "K???H_YA]G{Z",
+    "K???KOqSX[Xb",
+    "K???OGPDvP[r",
+    "K???OdCwPXq\\",
+    "K???OpDh@ewt",
+    "K???PESSX[Xb",
+    "K???PGWpMKe\\",
+    "K???Q?rhO{Xh",
+    "K???QGaESh|s",
+    "K???Wv?HGl{I",
+    "K???YIOHGu^B"
+   ],
+   "enum2_cpu_seconds": 5.178,
+   "children_file_sha256": "eaf81af3de9b5289cfc5ee89d4fe01c9dd3dcbb6e18b293e7d85d1eed8237a11",
+   "children_file_sha256_matches_manifest": true,
+   "mutated": []
+  },
+  {
+   "shard_id": "11-17-20000-30000",
+   "cell": "11-17",
+   "n": 11,
+   "m": 17,
+   "shard_range": [
+    20000,
+    30000
+   ],
+   "range": [
+    25000,
+    25030
+   ],
+   "whole_shard": false,
+   "d_values": [
+    2
+   ],
+   "parents_replayed": 30,
+   "udenum_children": 155,
+   "udenum_distinct": 155,
+   "udenum_block": [
+    33298,
+    33453
+   ],
+   "udenum_shard_lines": 91641,
+   "udenum_manifest_children_written": 91641,
+   "udenum_recovered_parents": 167,
+   "enum2_children_raw": 255,
+   "enum2_children": 217,
+   "only_udenum": 0,
+   "only_enum2": 62,
+   "identical": false,
+   "only_udenum_first20": [],
+   "only_enum2_first20": [
+    "J??G_^_KmW_",
+    "J??GbAMKuW_",
+    "J??H_cLwFw?",
+    "J?C?^?EK]H_",
+    "J?C?xJ?H]o_",
+    "J?GGGNOCvo_",
+    "J?GOGNOAvo_",
+    "J?HOOCP_~J?",
+    "J?K?gKDoNB_",
+    "J?KOGN??~o_",
+    "J?OH_aD`ZE_",
+    "J@??G^GMMK_",
+    "J@??HNGUK[_",
+    "J@??INGMK[_",
+    "J@??IQMMUK_",
+    "J@??IQMUTK_",
+    "J@??YJGK[[_",
+    "J@??]OEK]H_",
+    "J@?HAAMSsY_",
+    "J@@?PEKTKU_"
+   ],
+   "enum2_cpu_seconds": 3.025,
+   "children_file_sha256": "23f6cb53560cf051195699d4e1dda862457da13f38126849198c1ec8f835ee6c",
+   "children_file_sha256_matches_manifest": true,
+   "mutated": []
+  }
+ ],
+ "selection": {
+  "mode": "ranges",
+  "ranges": "12-20-200000-210000:200000:200030,11-17-20000-30000:25000:25030",
+  "shards": [
+   [
+    "12-20-200000-210000",
+    200000,
+    200030
+   ],
+   [
+    "11-17-20000-30000",
+    25000,
+    25030
+   ]
+  ]
+ },
+ "inputs": {
+  "parent_files": {
+   "<repo>/research/unit-distance-22/enum/out-22/dag-22-61-f12/_parents/12-20.g6": {
+    "sha256": "3e8f3b8ad92519dce733e2f2744f38544bae34b856a979920e363c70923c9130",
+    "records": 369247
+   },
+   "<repo>/research/unit-distance-22/enum/out-22/dag-22-61-f12/_parents/11-17.g6": {
+    "sha256": "5ffc92363c779b8b6c8ba6975ec2ecfe19ec8db3512d4cdc68a0037287a8e0f6",
+    "records": 31131
+   }
+  },
+  "forbidden": {
+   "path": "<repo>/research/unit-distance-22/data/forbidden-74.json",
+   "sha256": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a"
+  },
+  "udenum": {
+   "path": "<repo>/research/unit-distance-22/enum/udenum",
+   "sha256": "94a85d333d753ec2f518e62ef6d2f855d56b22dc6f3b890f53aa9575680f57b4"
+  },
+  "enum2.py": {
+   "path": "<repo>/research/unit-distance-22/enum2/enum2.py",
+   "sha256": "1baf3478776993b8d188a23e09ec158771fcb8c77add0de5b2c7d500a3b48151"
+  },
+  "replay.py": {
+   "path": "<repo>/research/unit-distance-22/enum2/crosscheck/replay.py",
+   "sha256": "c1cada1dd9592c0dc9bb91e48102f504da751f2f822f617ebb8577271d4c8743"
+  },
+  "mismatches": [],
+  "forbidden_used": {
+   "path": "<repo>/research/unit-distance-22/enum2/crosscheck/forbidden-73-drop1.json",
+   "sha256": "38ab9bcc08af7f27cc75e7ed50628d9d9b41c108b501392bfd3deee4e8c9ee89"
+  }
+ },
+ "workers": 2,
+ "wall_seconds": 4.4,
+ "mutation": null,
+ "started_utc": "2026-09-05T13:24:12Z",
+ "finished_utc": "2026-09-05T13:24:16Z"
+}

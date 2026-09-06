@@ -6,7 +6,7 @@ Documented on the Artificial Wasteland at [/strata/chess-on-a-mobius-strip/](htt
 
 ## What is verified, and how far
 
-Of the 193 staged terms here, **81 recomputed**, 104 drift-guarded, **8 unbound** (measured by `bind-staged.mjs --full`, not asserted).
+Of the 201 staged terms here, **81 recomputed**, 120 drift-guarded (measured by `bind-staged.mjs --full`, not asserted).
 
 | b-file | staged | recomputed | drift-guarded | unbound |
 |---|---:|---:|---:|---:|
@@ -16,14 +16,14 @@ Of the 193 staged terms here, **81 recomputed**, 104 drift-guarded, **8 unbound*
 | `nonorientable-queens/b-torus-total.txt` | 12 | 12 | 0 | 0 |
 | `nonorientable-kings/b-klein-total.txt` | 13 | 13 | 0 | 0 |
 | `nonorientable-kings/b-mobius-total.txt` | 13 | 13 | 0 | 0 |
-| `nonorientable-leapers/b-klein-camel.txt` | 14 | 0 | 13 | 1 |
-| `nonorientable-leapers/b-klein-giraffe.txt` | 14 | 0 | 13 | 1 |
-| `nonorientable-leapers/b-klein-knight.txt` | 14 | 0 | 13 | 1 |
-| `nonorientable-leapers/b-klein-zebra.txt` | 14 | 0 | 13 | 1 |
-| `nonorientable-leapers/b-mobius-camel.txt` | 14 | 0 | 13 | 1 |
-| `nonorientable-leapers/b-mobius-giraffe.txt` | 14 | 0 | 13 | 1 |
-| `nonorientable-leapers/b-mobius-knight.txt` | 14 | 0 | 13 | 1 |
-| `nonorientable-leapers/b-mobius-zebra.txt` | 14 | 0 | 13 | 1 |
+| `nonorientable-leapers/b-klein-camel.txt` | 15 | 0 | 15 | 0 |
+| `nonorientable-leapers/b-klein-giraffe.txt` | 15 | 0 | 15 | 0 |
+| `nonorientable-leapers/b-klein-knight.txt` | 15 | 0 | 15 | 0 |
+| `nonorientable-leapers/b-klein-zebra.txt` | 15 | 0 | 15 | 0 |
+| `nonorientable-leapers/b-mobius-camel.txt` | 15 | 0 | 15 | 0 |
+| `nonorientable-leapers/b-mobius-giraffe.txt` | 15 | 0 | 15 | 0 |
+| `nonorientable-leapers/b-mobius-knight.txt` | 15 | 0 | 15 | 0 |
+| `nonorientable-leapers/b-mobius-zebra.txt` | 15 | 0 | 15 | 0 |
 
 **recomputed** means this project's gate recomputed the term from the engine and
 compared it to the published file. **drift-guarded** means the published file was

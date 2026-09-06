@@ -1,0 +1,10 @@
+zero-sum triples: 31  max|det| on them: 1.1948e-58  min|det| off them: 0.018803
+leave degrees (Z/15 labelling): [0, 2, 2, 2, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 2]
+G0 lex descent steps: 23
+MONOLITH (15,31), G0 lex: {'falsified': 0, 'example': [], 'free_vars': 1078, 'unsatisfied_clauses': 1066} vars 129299 clauses 727103 3s
+(15,31): row1 configs 6040 cubes 4 orbits [120, 1440, 640, 3840] |G1| 46080
+full points besides 0 (canonical labelling): [9, 10]
+Pegg lands in cube 2 orbit size 640 |G2| = 72
+CUBE (15,31) cube 2 G2 lex: {'falsified': 0, 'example': [], 'free_vars': 1080, 'unsatisfied_clauses': 1068} vars 151929 clauses 862684 lex elements 71 4s
+negative control (one sign flipped): 370 falsified clauses (must be > 0)
+PEGG_E2E PASS monolith falsified=0 cube falsified=0 negative=370

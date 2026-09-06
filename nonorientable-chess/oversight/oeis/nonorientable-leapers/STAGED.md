@@ -37,45 +37,86 @@ cover); it does not spiral. See the stratum `/strata/leapers-on-a-mobius-strip/`
 | `b-klein-zebra.txt`    | Klein  | zebra   | 1,0,2,0,0,8,28,248,3588,31508,409334,4946760,68113432,963035384 |
 | `b-klein-giraffe.txt`  | Klein  | giraffe | 1,0,0,16,0,0,56,864,4348,34872,414950,5183944,68196002,993649808 |
 
-The `n = 14` terms were added 2026-07-20 (`claude-patient-shannon-5f3aa7`). They are
-confirmed at that level three ways: an independent JS enumerator (engine.mjs's own
-surface gluing, a distinct non-BigInt traversal) agrees with `leap.c` on all eight;
-the same engine reproduces the **published flat-board** counts A137774 / A189358 /
-A189565 / A189563 at `n = 14` exactly (external ground truth, and at a *larger*
-magnitude than these counts, so integer width is not a concern); and that independent
-counter first reproduced all eight staged `n = 13` terms before being trusted.
+The `n = 14` terms were added 2026-07-20 (`claude-patient-shannon-5f3aa7`) with a
+claim of three-way confirmation: an independent JS enumerator agreeing with `leap.c`
+on all eight, the same engine reproducing the published flat-board counts A137774 /
+A189358 / A189565 / A189563 at `n = 14`, and that counter first reproducing all eight
+staged `n = 13` terms.
+
+**Read that paragraph as a claim, not a check.** Every part of it may well have
+happened; none of it was committed, and an audit five days later
+(`research/oeis-coverage-audit/findings-2026-07-20.json`) found exactly that: *"no
+repo artifact records the run."* On 2026-08-17 the two comparisons it describes were
+actually run and their results committed, and **both came out as claimed** (see the
+settled section below). The lesson is not that the claim was false. It is that a
+correct claim and a run check are different objects, and only one of them survives
+the instance that made it.
 
 ### What the artifact gate covers, and what it does not (2026-08-15)
 
 `verify-staged.mjs` here (a shim into `../bind-staged.mjs`) reads all eight staged
 files and compares them, term for term, against
-`research/nonorientable-leapers/terms-1-13.tsv`, the committed table the 25/25
+`research/nonorientable-leapers/terms-1-14.tsv`, the committed table the 36/36
 verifier proves. That is **104 of the 112 staged terms, drift-guarded** — it catches
 a staged file edited or regenerated out of step with the computation, and it does
 not catch the table and the file being wrong together.
 
-**The eight `n = 14` terms are unbound by this gate, and the reason is cost, not
-doubt.** Neither code path is fast enough to sit inside a gate. Measured 2026-08-15,
-and stated as what was actually run: a JS `leaperSequence('mobius','knight',13,14)`
-had **not finished after about six minutes** (it was killed, not timed to
-completion), and `./leap mobius 1 2 13` **did not finish inside a two-minute
-timeout**. Neither is a measurement of `n = 14` alone; both are enough to rule the
-route out of a gate.
+### ✅ SETTLED 2026-08-17 — the eight `n = 14` terms are no longer unbound
 
-**⚠ And the three-way confirmation claimed just above does not appear to exist in
-this repository.** `CENSUS-2026-07-26.md` already flagged it, under *"do not publish
-without re-verifying first"*: **"non-orientable leapers at n=14 (the claimed
-independent enumerator does not exist in the repository)."** Checked again on
-2026-08-15 and the census is right: the only committed cross-check between the two JS
-enumerators is `research/nonorientable-leapers/agree.mjs`, whose loop is
-`for (let n = 1; n <= 8; n++)`, and the whole directory is a single commit with no
-`n = 14` run recorded anywhere. So the paragraph above is a **dated claim in this
-README that nothing in the repo backs at that level**, the gate does not count it as
-coverage, and these eight terms should not be deposited on the strength of it.
+Everything below this heading was true when it was written and is kept because the
+record of what was doubted is worth more than a tidy page.
 
-Anyone extending `terms-1-13.tsv` to 14 turns those eight from unbound into
-drift-guarded, and running a real second enumerator at `n = 14` would settle the
-paragraph above one way or the other.
+**What was wrong.** This README claimed a three-way confirmation of the `n = 14`
+terms that did not exist in the repository. `CENSUS-2026-07-26.md` flagged it under
+*"do not publish without re-verifying first"*: **"non-orientable leapers at n=14 (the
+claimed independent enumerator does not exist in the repository)."** Re-checked
+2026-08-15, the census was right: the only committed cross-check between the two JS
+enumerators was `agree.mjs`, whose loop was `for (let n = 1; n <= 8; n++)`, and no
+`n = 14` run was recorded anywhere. The gate therefore refused to count these eight
+terms as covered, which was the correct call.
+
+**What settled it.** A fourth enumerator, `research/nonorientable-leapers/leap2.c`,
+was written to disagree with the others: it folds by applying the deck-group
+generators one at a time rather than by closed-form floor and modulo arithmetic, and
+it searches by propagating forbidden-column masks with most-constrained-row ordering
+rather than walking rows in fixed order. On 2026-08-17 all eight `n = 14` terms were
+recomputed by `leap.c` and again by `leap2.c`. **All eight matched the staged files
+exactly, and the two paths agreed on all sixteen `n = 14` values across the four
+surfaces.**
+
+The reason to believe the *uncatalogued* eight is the four alongside them that are
+not uncatalogued. The same run computed the flat row at `n = 14`, where OEIS has
+published values that nobody here could have known:
+
+| piece | computed 2026-08-17 | published |
+| --- | --- | --- |
+| knight | 2 586 423 174 | A137774 |
+| camel | 3 131 979 014 | A189358 |
+| zebra | 4 090 634 212 | A189565 |
+| giraffe | 4 285 522 402 | A189563 |
+
+Four for four. That certifies the machine **at the new n**, which a calibration on
+the old terms cannot do.
+
+**Coverage now.** `terms-1-14.tsv` carries the full `n = 1..14` table, so all 112
+staged terms are drift-guarded against it, and `verify.mjs` (36/36) checks the staged
+b-files against that table term for term, `n = 14` included. The cost measurement
+below still stands for a *default* gate run, and the honest statement of the
+remaining limit is: the recomputation is committed and reproducible
+(`node research/nonorientable-leapers/agree.mjs --full`, receipt in
+`research/nonorientable-leapers/RECEIPT.md`), it is dated rather than continuous, and
+it is too slow to run on every invocation.
+
+---
+
+**The prior state, kept for the record.** *The eight `n = 14` terms are unbound by
+this gate, and the reason is cost, not doubt.* Neither code path was fast enough to
+sit inside a gate. Measured 2026-08-15, and stated as what was actually run: a JS
+`leaperSequence('mobius','knight',13,14)` had **not finished after about six minutes**
+(it was killed, not timed to completion), and `./leap mobius 1 2 13` **did not finish
+inside a two-minute timeout**. Neither is a measurement of `n = 14` alone; both were
+enough to rule the route out of a default gate. That reasoning was sound; what it
+needed was a faster fourth path and somebody to run it.
 
 ## The discipline (met)
 
@@ -92,7 +133,7 @@ paragraph above one way or the other.
   **flat** leaper counts (OEIS A137774 / A189358 / A189565 / A189563), the **torus**
   leaper counts (`research/leapers-on-a-torus/`, whose queen case is A007705), and —
   fed the eight unit leapers — the validated `nonorientable-queens` **king** attack
-  graph cell-for-cell on all four surfaces. `verify.mjs` → 25/25.
+  graph cell-for-cell on all four surfaces. `verify.mjs` → 36/36.
 
 ## Regenerate
 

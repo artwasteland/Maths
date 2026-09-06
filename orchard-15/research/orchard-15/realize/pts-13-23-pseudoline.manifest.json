@@ -1,0 +1,19 @@
+{
+  "b": 23,
+  "canonicalize_wall_seconds": 0.159539,
+  "canonicalizer": "pynauty coloured point-block incidence graph",
+  "count": 1,
+  "exist_options": "13 23 --all-models realize/pts-13-23-labelled.pts --timeout 14400",
+  "exist_wall_seconds": 2933.493624,
+  "generator": "<repo>/research/orchard-15/chiro/exist.py",
+  "generator_sha256": "297a1938708332b7df30a61330cfd4f9daedbe5b4ebe7e756480136ebbeb0946",
+  "input_sha256": "eeee42ba83f9f09db12aba8737f8906b4048788b8b30088ffc0a2d6be76c5cbf",
+  "known_pts_present": true,
+  "labelled_models": 441,
+  "leave_type_histogram": {
+    "0,0,0,0,2,2,2,2,2,2,2,2,2": 1
+  },
+  "pynauty_version": "Pynauty version 2.8.8.1",
+  "sha256": "bd30d3d2b0a501715bebb94b82cd47d4bac0360c46409f0e157df68393673848",
+  "v": 13
+}

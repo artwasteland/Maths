@@ -1,0 +1,12 @@
+v=13 b=22 N=40000 dead=12587 labeled=1.1971e+15 relse=0.022  labeled/v!=1.9224e+05
+v=13 b=23 N=40000 dead=19939 labeled=5.2561e+13 relse=0.022  labeled/v!=8.4407e+03
+v=13 b=24 N=40000 dead=26771 labeled=1.4603e+12 relse=0.045  labeled/v!=2.3451e+02
+v=14 b=26 N=40000 dead=15338 labeled=1.2161e+18 relse=0.042  labeled/v!=1.3949e+07
+v=14 b=27 N=40000 dead=26705 labeled=3.2244e+16 relse=0.086  labeled/v!=3.6986e+05
+v=14 b=28 N=40000 dead=39336 labeled=5.9413e+13 relse=0.132  labeled/v!=6.8152e+02
+v=16 b=36 N=40000 dead=27574 labeled=2.7260e+23 relse=0.071  labeled/v!=1.3029e+10
+v=16 b=37 N=40000 dead=38337 labeled=9.1182e+20 relse=0.103  labeled/v!=4.3580e+07
+v=17 b=40 N=40000 dead=15788 labeled=2.2163e+29 relse=0.037  labeled/v!=6.2312e+14
+v=17 b=41 N=40000 dead=21804 labeled=6.8828e+27 relse=0.061  labeled/v!=1.9351e+13
+v=17 b=42 N=40000 dead=27337 labeled=1.3018e+26 relse=0.098  labeled/v!=3.6600e+11
+DONE

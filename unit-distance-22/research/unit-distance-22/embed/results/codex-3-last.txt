@@ -1,0 +1,26 @@
+Implemented the supported fixes in [udembed.py](<repo>/research/unit-distance-22/embed/udembed.py:840):
+
+- Added stderr-only `--trace`.
+- Removed the 80-triple L3 cutoff.
+- Added exhaustive exact dependence tests using number-field arithmetic.
+- Prioritized graph triangles to limit field growth.
+- Preserved the global state limit and checker witness schema.
+- n=19 now produces a checker-accepted 15-node refutation in 36.44 seconds, down from a 303.63-second unknown.
+
+Regressions pass:
+
+- 56/56 catalog graphs embedded and checker-accepted.
+- 41/41 prior forbidden graphs freshly refuted and checker-accepted in 22.35 seconds.
+- `selfcheck.py --jobs 2`: PASS.
+- Mutated L3-d certificate: correctly rejected.
+
+The requested overall G3 PASS is blocked by the binding schema. The n=17 search reaches an exact forced relation with Heron discriminant `-77` in 9.35 seconds. This proves non-embeddability mathematically, but `udcheck.py` explicitly rejects negative-discriminant L3 witnesses. I therefore followed the brief and documented a proposed checker-supported `L1c` negative-Heron leaf in [REPORT.md](<repo>/research/unit-distance-22/embed/REPORT.md:287), without emitting an unverifiable move.
+
+The default n=18 run did not complete within the available time. Its line below is explicitly from the documented `--max-states 1` diagnostic; the other three lines are from default gate cells.
+
+```text
+OK   n=16 m=41: survivors=1 (expect 1), embedded=1 (expect 1), refuted=0, unknown=0, dups=0, known-among-survivors=1/1, extra-embedded=0, missing-embedded=0, known-refuted=0, checker=ACCEPT
+FAIL n=17 m=43: survivors=8 (expect 8), embedded=7 (expect 7), refuted=0, unknown=1, dups=0, known-among-survivors=7/7, extra-embedded=0, missing-embedded=0, known-refuted=0, checker=ACCEPT
+FAIL n=18 m=46: survivors=38 (expect 38), embedded=16 (expect 16), refuted=2, unknown=20, dups=0, known-among-survivors=16/16, extra-embedded=0, missing-embedded=0, known-refuted=0, checker=ACCEPT
+OK   n=19 m=50: survivors=5 (expect 5), embedded=3 (expect 3), refuted=2, unknown=0, dups=0, known-among-survivors=3/3, extra-embedded=0, missing-embedded=0, known-refuted=0, checker=ACCEPT
+```

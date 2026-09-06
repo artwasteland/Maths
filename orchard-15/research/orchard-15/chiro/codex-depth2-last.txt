@@ -1,0 +1,19 @@
+Implemented and verified depth-2 cube-and-conquer support.
+
+- Added `--cube-children A:B`, stable global child names, complete child listings, append-mode JSONL output, and depth-2 coverage mutation in [exist.py](<repo>/research/orchard-15/chiro/exist.py).
+- Added Lemma 7′, exact commands, verdicts, failure outputs, controls, and updated status sections in [REPORT-EXIST.md](<repo>/research/orchard-15/chiro/REPORT-EXIST.md).
+- Added the strict [aggregate-depth2.py](<repo>/research/orchard-15/chiro/aggregate-depth2.py). PASS, drop, duplicate, and corrupted-field tests behaved correctly.
+- Complete verified UNSAT controls:
+
+  - `(8,8)`: 8 children, solve 0.071240 s, check 0.734602 s
+  - `(10,13)`: 141 children, solve 4.639731 s, check 16.995779 s
+  - `(12,20)`: 593 children, solve 69.499496 s, check 135.580267 s
+  - `(13,24)`: 700 children, solve 310.549628 s, check 378.630222 s
+
+- `(14,27)` child `cube006-14979` was SAT in 7.009980 s, with `model_checked=true`.
+- `(14,28)` listed 6,912 children. Its first 20 were verified UNSAT.
+- `(15,32)` cube 3 listed 5,393 children and none were solved. Stabiliser distribution: `{1: 4638, 2: 674, 3: 2, 4: 64, 6: 9, 12: 6}`.
+- `make check` passes.
+- The 67-line [orchard-c3-depth2.sh](<repo>/research/orchard-15/chiro/orchard-c3-depth2.sh) is syntax-checked and staged. The sandbox rejected writing it to the checkout-level `coordination/cloud-workers/` directory, so it still needs copying there. It uses contiguous worker shares because modulo shares cannot be represented by four long-lived `A:B` ranges.
+
+Regression hashes: before `5dfdfb7d11c70238dedfae7c56e1bb441dca1adc7a10279338b4dda5b0b49a69`; after `5dfdfb7d11c70238dedfae7c56e1bb441dca1adc7a10279338b4dda5b0b49a69`

@@ -1,0 +1,76 @@
+{
+  "kind": "prune",
+  "level": [
+    21,
+    57
+  ],
+  "level_file": "<repo>/research/unit-distance-22/enum/out-cloud/dag-21-57/21-57.reach.g6",
+  "target": [
+    21,
+    57
+  ],
+  "tu_rule_bound": {
+    "n": 21,
+    "proved_upper_bound": 57
+  },
+  "software_sha256": {
+    "prune.py": "d0f51c3d42c5f4cbef94f740377f2c1ea3bbf53e848ebb508602de52ea2da204",
+    "udfilter": "d4ccae3ff45dcd2d45a64087bebb9519e901110c07fabd1661995b148cee600a",
+    "udembed.py": "31b1f22b8fa48db4fa3485f9e5b7cffbd4031cf0b3f91d71837e41d96f4e8cdd",
+    "exact_verify.py": "ab55ce77bca0d66f13ba4189ddb16cc0a27fda36838abcf89bb1bda0d8285a7c",
+    "udcheck.py": "f137388b131f8a52be745116c4b006f1bc5b4ae43f26b951abdb33dc9473c320",
+    "python": "/usr/local/bin/python3 3.11.15"
+  },
+  "inputs_sha256": {
+    "<repo>/research/unit-distance-22/enum/out-cloud/dag-21-57/21-57.reach.g6": "2a6efc806435a246c2bbc06fea32a74e928f80ac6d2ecd497df974d16f8fa408",
+    "<repo>/research/unit-distance-22/data/forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "<repo>/research/unit-distance-22/data/tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629",
+    "reach.json": "679825d0a38c7b8b01cbf59fd9dc80c887d431967bc5c504421c95d16b23275d"
+  },
+  "outputs_sha256": {
+    "<repo>/research/unit-distance-22/enum/out-cloud/dag-21-57/21-57.certs.jsonl": "a5ae57c4ecea3539c839fe4572054f28d4fcea7c9d9c471cf10f2823aa4ec43d",
+    "<repo>/research/unit-distance-22/enum/out-cloud/dag-21-57/21-57.keep.g6": "ecfdbd5b80a4e893a85cf0a4933cf8cec44a8547a5482e2985fa470fc4b45921",
+    "<repo>/research/unit-distance-22/enum/out-cloud/dag-21-57/21-57.UNKNOWN.g6": "ecfdbd5b80a4e893a85cf0a4933cf8cec44a8547a5482e2985fa470fc4b45921",
+    "<repo>/research/unit-distance-22/enum/out-cloud/dag-21-57/_prune/21-57/filter.jsonl": "0866c8ff7e283463988fd1b7443227cf513df150b8c8541edebae618373c160b",
+    "<repo>/research/unit-distance-22/enum/out-cloud/dag-21-57/_prune/21-57/survivors.g6": "ecfdbd5b80a4e893a85cf0a4933cf8cec44a8547a5482e2985fa470fc4b45921"
+  },
+  "counts": {
+    "input": 24,
+    "tu": 5,
+    "survivors": 19,
+    "embedded": 0,
+    "refuted": 0,
+    "unknown": 19,
+    "kept": 19,
+    "pruned": 5
+  },
+  "embedder": {
+    "skipped": true,
+    "filter_only": true,
+    "survivors": 19
+  },
+  "jobs": 4,
+  "wall_seconds": {
+    "filter": 0.024146263000147883,
+    "embed": 0.0,
+    "check": 0.08320621799794026,
+    "total": 0.11055345999920974
+  },
+  "checker": "ACCEPT certificates records=24 forbidden=0 tu=5 embedded=0 refuted=0 unknown=19 proof_nodes=0",
+  "verified_counts": {
+    "records": 24,
+    "tu": 5,
+    "refuted": 0,
+    "embedded": 0,
+    "unknown": 19,
+    "kept": 19
+  },
+  "mutation": {
+    "unknown_as_pruned": false
+  },
+  "started": "2026-09-05T14:31:37Z",
+  "finished": "2026-09-05T14:31:37Z",
+  "host": "vm",
+  "exit_status": 0,
+  "problems": []
+}

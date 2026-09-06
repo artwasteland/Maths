@@ -1,0 +1,20 @@
+# Environment for the orchard CNF audit (regeneration of the four (15,32) cube CNFs)
+# generated 2026-09-05T01:16:43Z
+
+python3 --version: Python 3.11.15
+pysat.__version__: 1.9.dev15
+git log -1 --format=%H: 584fbe7613499ed2afcab38d74f011f7806718a1
+cadical --version: 1.7.3
+nproc: 4
+
+# provenance
+generator: research/orchard-15/chiro/exist.py, unmodified, at the commit above
+driver: research/orchard-15/chiro/scratch/cnf-audit/emit_cube_cnf.py
+  (exist.py honours --cnf-only only on its non-cube path, exist.py:1193; with
+   --cubes it goes through run_cubes -> solve_standalone and would actually run
+   cadical. The driver replays run_cubes' encoding steps and calls the same
+   chirosat.write_clauses, so no solving happens.)
+equivalence check: scratch/cnf-audit/verify_driver.py ran the real exist.run_cubes
+  with only solve_standalone's solver call stubbed out, for k=0..3, and the CNFs
+  it wrote were byte-identical (sha256) to the driver's. Result: ALL MATCH.
+note: cadical is recorded for the environment only; no solver was invoked.

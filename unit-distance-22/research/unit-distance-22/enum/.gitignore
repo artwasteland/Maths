@@ -1,0 +1,11 @@
+/udenum
+/scratch/
+/__pycache__/
+/out-prune/*/_parents/
+/out-prune/*/_geng/
+/out-prune/*/_prune/
+/out-prune/*/shards/*/*.g6
+/out-sup2/*/_parents/
+/out-sup2/*/_geng/
+/out-sup2/*/_prune/
+/out-sup2/*/shards/*/*.g6

@@ -1,0 +1,744 @@
+{
+ "run": "dag-19-50-unpruned",
+ "target": [
+  19,
+  50
+ ],
+ "jobs": 4,
+ "note": "shard_cpu_seconds is the sum over a cell's shards, i.e. CPU-seconds across the four --jobs workers, not elapsed time; cell_wall_seconds is what run-dag2.py timed for seed cells.",
+ "completed_through_n": 19,
+ "per_level": {
+  "0": {
+   "children": 1,
+   "shard_cpu_seconds": 0.0,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "1": {
+   "children": 1,
+   "shard_cpu_seconds": 0.0,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "2": {
+   "children": 1,
+   "shard_cpu_seconds": 0.0,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "3": {
+   "children": 1,
+   "shard_cpu_seconds": 0.0,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "4": {
+   "children": 1,
+   "shard_cpu_seconds": 0.0,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "5": {
+   "children": 1,
+   "shard_cpu_seconds": 0.0,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "6": {
+   "children": 4,
+   "shard_cpu_seconds": 0.0,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "7": {
+   "children": 1,
+   "shard_cpu_seconds": 0.0,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "8": {
+   "children": 3,
+   "shard_cpu_seconds": 0.0,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "9": {
+   "children": 1,
+   "shard_cpu_seconds": 0.0,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "10": {
+   "children": 44111,
+   "shard_cpu_seconds": 0.0,
+   "cells": 6,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  },
+  "11": {
+   "children": 243238,
+   "shard_cpu_seconds": 9.2,
+   "cells": 6,
+   "elapsed_estimate_minutes_4_jobs": 0.04
+  },
+  "12": {
+   "children": 1658636,
+   "shard_cpu_seconds": 138.9,
+   "cells": 7,
+   "elapsed_estimate_minutes_4_jobs": 0.58
+  },
+  "13": {
+   "children": 4694852,
+   "shard_cpu_seconds": 2162.4,
+   "cells": 7,
+   "elapsed_estimate_minutes_4_jobs": 9.01
+  },
+  "14": {
+   "children": 6588098,
+   "shard_cpu_seconds": 2565.2,
+   "cells": 6,
+   "elapsed_estimate_minutes_4_jobs": 10.69
+  },
+  "15": {
+   "children": 2755058,
+   "shard_cpu_seconds": 2982.3,
+   "cells": 6,
+   "elapsed_estimate_minutes_4_jobs": 12.43
+  },
+  "16": {
+   "children": 1175241,
+   "shard_cpu_seconds": 4212.7,
+   "cells": 6,
+   "elapsed_estimate_minutes_4_jobs": 17.55
+  },
+  "17": {
+   "children": 80235,
+   "shard_cpu_seconds": 3307.8,
+   "cells": 4,
+   "elapsed_estimate_minutes_4_jobs": 13.78
+  },
+  "18": {
+   "children": 1320,
+   "shard_cpu_seconds": 100.1,
+   "cells": 2,
+   "elapsed_estimate_minutes_4_jobs": 0.42
+  },
+  "19": {
+   "children": 17,
+   "shard_cpu_seconds": 0.9,
+   "cells": 1,
+   "elapsed_estimate_minutes_4_jobs": 0.0
+  }
+ },
+ "cells": [
+  {
+   "n": 0,
+   "m": 0,
+   "kind": "seed",
+   "parents": null,
+   "children": 1,
+   "cell_wall_seconds": 0.004,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 1,
+   "m": 0,
+   "kind": "seed",
+   "parents": null,
+   "children": 1,
+   "cell_wall_seconds": 0.007,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 2,
+   "m": 1,
+   "kind": "seed",
+   "parents": null,
+   "children": 1,
+   "cell_wall_seconds": 0.007,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 3,
+   "m": 3,
+   "kind": "seed",
+   "parents": null,
+   "children": 1,
+   "cell_wall_seconds": 0.007,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 4,
+   "m": 5,
+   "kind": "seed",
+   "parents": null,
+   "children": 1,
+   "cell_wall_seconds": 0.007,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 5,
+   "m": 7,
+   "kind": "seed",
+   "parents": null,
+   "children": 1,
+   "cell_wall_seconds": 0.007,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 6,
+   "m": 9,
+   "kind": "seed",
+   "parents": null,
+   "children": 4,
+   "cell_wall_seconds": 0.007,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 7,
+   "m": 12,
+   "kind": "seed",
+   "parents": null,
+   "children": 1,
+   "cell_wall_seconds": 0.007,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 8,
+   "m": 14,
+   "kind": "seed",
+   "parents": null,
+   "children": 3,
+   "cell_wall_seconds": 0.01,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 9,
+   "m": 18,
+   "kind": "seed",
+   "parents": null,
+   "children": 1,
+   "cell_wall_seconds": 0.05,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 10,
+   "m": 15,
+   "kind": "seed",
+   "parents": null,
+   "children": 25405,
+   "cell_wall_seconds": 1.419,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 10,
+   "m": 16,
+   "kind": "seed",
+   "parents": null,
+   "children": 15373,
+   "cell_wall_seconds": 1.31,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 10,
+   "m": 17,
+   "kind": "seed",
+   "parents": null,
+   "children": 3086,
+   "cell_wall_seconds": 0.916,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 10,
+   "m": 18,
+   "kind": "seed",
+   "parents": null,
+   "children": 227,
+   "cell_wall_seconds": 0.892,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 10,
+   "m": 19,
+   "kind": "seed",
+   "parents": null,
+   "children": 19,
+   "cell_wall_seconds": 1.088,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 10,
+   "m": 20,
+   "kind": "seed",
+   "parents": null,
+   "children": 1,
+   "cell_wall_seconds": 1.332,
+   "shard_cpu_seconds": 0,
+   "shards": 0
+  },
+  {
+   "n": 11,
+   "m": 18,
+   "kind": "augmentation",
+   "parents": 28401,
+   "children": 177983,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 2.989,
+   "shards": 3
+  },
+  {
+   "n": 11,
+   "m": 19,
+   "kind": "augmentation",
+   "parents": 18667,
+   "children": 59129,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 4.362,
+   "shards": 2
+  },
+  {
+   "n": 11,
+   "m": 20,
+   "kind": "augmentation",
+   "parents": 3331,
+   "children": 5736,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 1.639,
+   "shards": 1
+  },
+  {
+   "n": 11,
+   "m": 21,
+   "kind": "augmentation",
+   "parents": 247,
+   "children": 363,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.162,
+   "shards": 1
+  },
+  {
+   "n": 11,
+   "m": 22,
+   "kind": "augmentation",
+   "parents": 247,
+   "children": 25,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.022,
+   "shards": 1
+  },
+  {
+   "n": 11,
+   "m": 23,
+   "kind": "augmentation",
+   "parents": 20,
+   "children": 2,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.006,
+   "shards": 1
+  },
+  {
+   "n": 12,
+   "m": 21,
+   "kind": "augmentation",
+   "parents": 237112,
+   "children": 1406860,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 79.838,
+   "shards": 24
+  },
+  {
+   "n": 12,
+   "m": 22,
+   "kind": "augmentation",
+   "parents": 64865,
+   "children": 234373,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 53.381,
+   "shards": 7
+  },
+  {
+   "n": 12,
+   "m": 23,
+   "kind": "augmentation",
+   "parents": 6124,
+   "children": 16281,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 5.184,
+   "shards": 1
+  },
+  {
+   "n": 12,
+   "m": 24,
+   "kind": "augmentation",
+   "parents": 6126,
+   "children": 1034,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.417,
+   "shards": 1
+  },
+  {
+   "n": 12,
+   "m": 25,
+   "kind": "augmentation",
+   "parents": 390,
+   "children": 81,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.04,
+   "shards": 1
+  },
+  {
+   "n": 12,
+   "m": 26,
+   "kind": "augmentation",
+   "parents": 27,
+   "children": 6,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.011,
+   "shards": 1
+  },
+  {
+   "n": 12,
+   "m": 27,
+   "kind": "augmentation",
+   "parents": 2,
+   "children": 1,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.005,
+   "shards": 1
+  },
+  {
+   "n": 13,
+   "m": 24,
+   "kind": "augmentation",
+   "parents": 1406860,
+   "children": 3399890,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 1807.052,
+   "shards": 141
+  },
+  {
+   "n": 13,
+   "m": 25,
+   "kind": "augmentation",
+   "parents": 250654,
+   "children": 1224356,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 329.842,
+   "shards": 26
+  },
+  {
+   "n": 13,
+   "m": 26,
+   "kind": "augmentation",
+   "parents": 251688,
+   "children": 66448,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 23.285,
+   "shards": 26
+  },
+  {
+   "n": 13,
+   "m": 27,
+   "kind": "augmentation",
+   "parents": 17402,
+   "children": 3867,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 1.906,
+   "shards": 2
+  },
+  {
+   "n": 13,
+   "m": 28,
+   "kind": "augmentation",
+   "parents": 1122,
+   "children": 272,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.227,
+   "shards": 1
+  },
+  {
+   "n": 13,
+   "m": 29,
+   "kind": "augmentation",
+   "parents": 88,
+   "children": 18,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.073,
+   "shards": 1
+  },
+  {
+   "n": 13,
+   "m": 30,
+   "kind": "augmentation",
+   "parents": 7,
+   "children": 1,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.018,
+   "shards": 1
+  },
+  {
+   "n": 14,
+   "m": 28,
+   "kind": "augmentation",
+   "parents": 4624246,
+   "children": 6175834,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 2372.626,
+   "shards": 463
+  },
+  {
+   "n": 14,
+   "m": 29,
+   "kind": "augmentation",
+   "parents": 1294671,
+   "children": 391774,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 174.266,
+   "shards": 130
+  },
+  {
+   "n": 14,
+   "m": 30,
+   "kind": "augmentation",
+   "parents": 70587,
+   "children": 19328,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 16.67,
+   "shards": 8
+  },
+  {
+   "n": 14,
+   "m": 31,
+   "kind": "augmentation",
+   "parents": 4158,
+   "children": 1105,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 1.447,
+   "shards": 1
+  },
+  {
+   "n": 14,
+   "m": 32,
+   "kind": "augmentation",
+   "parents": 291,
+   "children": 55,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.201,
+   "shards": 1
+  },
+  {
+   "n": 14,
+   "m": 33,
+   "kind": "augmentation",
+   "parents": 19,
+   "children": 2,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.035,
+   "shards": 1
+  },
+  {
+   "n": 15,
+   "m": 32,
+   "kind": "augmentation",
+   "parents": 6567608,
+   "children": 2616392,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 2749.371,
+   "shards": 657
+  },
+  {
+   "n": 15,
+   "m": 33,
+   "kind": "augmentation",
+   "parents": 412207,
+   "children": 132529,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 218.236,
+   "shards": 42
+  },
+  {
+   "n": 15,
+   "m": 34,
+   "kind": "augmentation",
+   "parents": 20488,
+   "children": 5873,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 13.429,
+   "shards": 3
+  },
+  {
+   "n": 15,
+   "m": 35,
+   "kind": "augmentation",
+   "parents": 1162,
+   "children": 252,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 1.12,
+   "shards": 1
+  },
+  {
+   "n": 15,
+   "m": 36,
+   "kind": "augmentation",
+   "parents": 57,
+   "children": 11,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.106,
+   "shards": 1
+  },
+  {
+   "n": 15,
+   "m": 37,
+   "kind": "augmentation",
+   "parents": 2,
+   "children": 1,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.013,
+   "shards": 1
+  },
+  {
+   "n": 16,
+   "m": 36,
+   "kind": "augmentation",
+   "parents": 2748921,
+   "children": 1131844,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 4023.565,
+   "shards": 275
+  },
+  {
+   "n": 16,
+   "m": 37,
+   "kind": "augmentation",
+   "parents": 138402,
+   "children": 41242,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 177.594,
+   "shards": 14
+  },
+  {
+   "n": 16,
+   "m": 38,
+   "kind": "augmentation",
+   "parents": 6136,
+   "children": 2040,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 10.639,
+   "shards": 1
+  },
+  {
+   "n": 16,
+   "m": 39,
+   "kind": "augmentation",
+   "parents": 264,
+   "children": 108,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.808,
+   "shards": 1
+  },
+  {
+   "n": 16,
+   "m": 40,
+   "kind": "augmentation",
+   "parents": 264,
+   "children": 6,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.064,
+   "shards": 1
+  },
+  {
+   "n": 16,
+   "m": 41,
+   "kind": "augmentation",
+   "parents": 12,
+   "children": 1,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.01,
+   "shards": 1
+  },
+  {
+   "n": 17,
+   "m": 40,
+   "kind": "augmentation",
+   "parents": 1131844,
+   "children": 64407,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 3148.696,
+   "shards": 114
+  },
+  {
+   "n": 17,
+   "m": 41,
+   "kind": "augmentation",
+   "parents": 43282,
+   "children": 15380,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 150.153,
+   "shards": 5
+  },
+  {
+   "n": 17,
+   "m": 42,
+   "kind": "augmentation",
+   "parents": 2148,
+   "children": 433,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 8.348,
+   "shards": 1
+  },
+  {
+   "n": 17,
+   "m": 43,
+   "kind": "augmentation",
+   "parents": 2155,
+   "children": 15,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.592,
+   "shards": 1
+  },
+  {
+   "n": 18,
+   "m": 45,
+   "kind": "augmentation",
+   "parents": 79787,
+   "children": 1236,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 96.408,
+   "shards": 8
+  },
+  {
+   "n": 18,
+   "m": 46,
+   "kind": "augmentation",
+   "parents": 15828,
+   "children": 84,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 3.661,
+   "shards": 2
+  },
+  {
+   "n": 19,
+   "m": 50,
+   "kind": "augmentation",
+   "parents": 1320,
+   "children": 17,
+   "cell_wall_seconds": 0,
+   "shard_cpu_seconds": 0.904,
+   "shards": 1
+  }
+ ]
+}

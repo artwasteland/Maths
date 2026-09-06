@@ -1,0 +1,10 @@
+header vars=262585 clauses=1521924 parsed=1521924 units=580
+anchors: 15 [(0, 1, 3), (0, 1, 4), (0, 1, 5), (0, 1, 6), (0, 1, 7), (0, 1, 8), (0, 1, 9), (0, 1, 10), (0, 1, 11), (0, 1, 12), (0, 1, 13), (0, 1, 14), (0, 2, 3), (0, 3, 5), (1, 2, 3)]
+true block units: True [(0, 1, 2), (0, 3, 4), (0, 5, 6), (0, 7, 8), (0, 9, 10), (0, 11, 12), (0, 13, 14), (1, 3, 5), (1, 4, 6), (1, 7, 9), (1, 8, 10), (1, 11, 13), (1, 12, 14)]
+false block units: 156 expected 156 match: True
+|G1|=46080 |G2|=384 prefix-equal starts=383 (expected 383)
+lex clauses: 806783
+lex trials ok=25 bad=0 [2.1s]
+PROBLEMS: none
+CNFCHECK PASS cube=0 file=scratch/cnf-audit/c0/exist-15-32-cube000.cnf
+exit 0

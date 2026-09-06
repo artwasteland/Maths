@@ -1,0 +1,2 @@
+COVERAGE FAIL: 1 problem(s)
+- missing cube003-5392

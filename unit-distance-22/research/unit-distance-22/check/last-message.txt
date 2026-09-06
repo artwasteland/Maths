@@ -1,0 +1,17 @@
+Implemented the independent checker and supporting proofs:
+
+- [udcheck.py](<repo>/research/unit-distance-22/check/udcheck.py)
+- [PROOFS.md](<repo>/research/unit-distance-22/check/PROOFS.md)
+- [selftest.py](<repo>/research/unit-distance-22/check/selftest.py)
+- [REPORT.md](<repo>/research/unit-distance-22/check/REPORT.md)
+- Required K4, Moser spindle, planted-forbidden, and corrupted fixtures in [fixtures](<repo>/research/unit-distance-22/check/fixtures)
+
+Validation result:
+
+```text
+SELFTEST PASS checks=36 positive=17 rejected_mutations=19
+```
+
+The checker covers all verdict types, exact algebraic embeddings, L1a/L1b/L2/L3 proof trees, all six TU gadgets, unknown accounting, canonical graph6 validation, and plain or zstd manifest files.
+
+No production `(22,61)` certificates or manifests were available, so no claim about \(u(22)\) was made. REPORT.md documents the manifest provenance gap and proposed contract amendments.

@@ -1,0 +1,7 @@
+{"g6":"S?COW?@?O@c?TXQfR?cKHWID`OlgoDV?C","verdict":"tu","witness":{"index":0,"map":[3,12,11,14,4,13],"pair":[1,5]}}
+{"g6":"S?Q@PSSDGoC`O`_IGG{?uKBBK??CcwBB[","verdict":"tu","witness":{"index":0,"map":[12,1,17,18,15,0],"pair":[1,5]}}
+{"g6":"S?CjCa_gI_I@@WAa?iWSMN?BB??@Kw?r[","verdict":"tu","witness":{"index":0,"map":[12,7,17,18,15,6],"pair":[1,5]}}
+{"g6":"S?EPCQHWB?_g@HCdAPYSKI_FS??AiW@T[","verdict":"tu","witness":{"index":0,"map":[9,1,17,18,13,3],"pair":[1,5]}}
+{"g6":"S??XPV?oGK?ha?CIaAyw?g?`_MGDQoAhs","verdict":"tu","witness":{"index":0,"map":[8,1,15,18,13,3],"pair":[1,5]}}
+{"g6":"S?E@cQHWB?_Q?bDPAcYWKM_BC?OAiW@T[","verdict":"pass"}
+{"g6":"S@G`G`GPu?W@@O?oaDO`JcSAgb?WTOSIs","verdict":"tu","witness":{"index":0,"map":[10,1,8,14,18,4],"pair":[1,5]}}

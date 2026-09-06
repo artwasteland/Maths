@@ -1,0 +1,14 @@
+level 1 -> 1 systems, canonical calls=169
+level 2 -> 2 systems, canonical calls=299
+level 3 -> 5 systems, canonical calls=491
+level 4 -> 11 systems, canonical calls=831
+level 5 -> 19 systems, canonical calls=1375
+level 6 -> 34 systems, canonical calls=1987
+level 7 -> 41 systems, canonical calls=2677
+level 8 -> 31 systems, canonical calls=3147
+level 9 -> 12 systems, canonical calls=3317
+level 10 -> 4 systems, canonical calls=3355
+level 11 -> 1 systems, canonical calls=3363
+level 12 -> 1 systems, canonical calls=3365
+count=1 wall_seconds=0.026811 canonical_calls=3365
+TIME 0.39

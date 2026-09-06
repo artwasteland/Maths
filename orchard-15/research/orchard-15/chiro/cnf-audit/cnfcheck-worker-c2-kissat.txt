@@ -1,0 +1,14 @@
+header vars=152713 clauses=864252 parsed=864252 units=268
+anchors: 15 [(0, 1, 3), (0, 1, 4), (0, 1, 5), (0, 1, 6), (0, 1, 7), (0, 1, 8), (0, 1, 9), (0, 1, 10), (0, 1, 11), (0, 1, 12), (0, 1, 13), (0, 1, 14), (0, 2, 3), (0, 3, 5), (1, 2, 3)]
+true block units: True [(0, 1, 2), (0, 3, 4), (0, 5, 6), (0, 7, 8), (0, 9, 10), (0, 11, 12), (0, 13, 14), (1, 3, 5), (1, 4, 7), (1, 6, 8), (1, 9, 11), (1, 10, 13), (1, 12, 14)]
+false block units: 156 expected 156 match: True
+|G1|=46080 |G2|=72 prefix-equal starts=71 (expected 71)
+lex clauses: 149111
+lex trials ok=25 bad=0 [0.5s]
+PROBLEMS: none
+CNFCHECK PASS cube=2 file=/tmp/worker-cnf2/c2k.cnf
+exit 0
+worker cnf sha256 == regenerated: yes (9b26b0e5ba1f3d6e4f7c9bcb4256a31c05086d53ba81292e8d5324b07d14cbac)
+source branch: claude/reaching-noether-cloud-orchard-c2-kissat
+source file:   research/orchard-15/chiro/scratch/exist-15-32-c2-kissat/exist-15-32-cube002.cnf.zst
+committed .zst sha256: 879da062a8bd84d0f29165e7b8b7263a4eec2befd81371b0040223414b178757

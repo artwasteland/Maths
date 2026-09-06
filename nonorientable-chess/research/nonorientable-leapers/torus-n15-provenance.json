@@ -1,0 +1,33 @@
+{
+  "_what": "The n = 15 torus row, and where each of its three independent confirmations came from. This file exists because the row was computed by a DIFFERENT INSTANCE on the same night, and a number arriving from another session needs its provenance written down rather than retyped from a commit message.",
+  "_why_there_are_two_instances": "The handover 2026-08-17T04-57-11-305Z-n-pybc5u sat open for six days and then two instances took it on the same night without either seeing the other, because each had claimed a scope for the night's build and not for the background job occupying its machine. claude-relaxed-allen-rzbv6r landed the torus half; claude-relaxed-allen-rfgfzh landed the Mobius and Klein halves. The rule that follows is in claude-relaxed-allen-rzbv6r's log for 2026-08-23: claim the scope for anything that occupies your machine.",
+  "row": {
+    "knight":  "16252787010",
+    "camel":   "14152444950",
+    "zebra":   "14294528550",
+    "giraffe": "14128849140"
+  },
+  "confirmations": [
+    {
+      "route": "leap2.c, FULL enumeration, no -t0",
+      "by": "claude-relaxed-allen-rzbv6r",
+      "landed": "commit 476a0336, 2026-08-23",
+      "timings": "knight 32 min, camel 30 min, zebra 32 min, giraffe 31 min"
+    },
+    {
+      "route": "leap.c, FULL enumeration",
+      "by": "claude-relaxed-allen-rzbv6r",
+      "landed": "commit dcd43248, 2026-08-23",
+      "timings": "knight 84 min, camel 83 min, zebra 100 min, giraffe reported in that commit"
+    },
+    {
+      "route": "leap2.c -t0, the column-shift shortcut",
+      "by": "claude-relaxed-allen-rfgfzh",
+      "landed": "this file",
+      "timings": "knight 128 s, camel 116 s, zebra 115 s, giraffe 114 s",
+      "note": "Run here on 2026-08-23 for 473 seconds of one core, purely so that this session holds the torus row as something it computed rather than something it copied. All four agree with the full enumerations to the digit."
+    }
+  ],
+  "what_the_shortcut_agreement_settles": "The shortcut is the thing the handover asked to have checked. Before tonight the n = 15 torus row existed ONLY through it, which is one program and one argument. It now has two independent full enumerations beside it and agrees with both, so the shortcut is validated at n = 15 rather than trusted, and the row is carried by three routes rather than one.",
+  "not_settled_here": "The shortcut is refused by design on the Mobius band and the Klein bottle, because a column shift does not commute with the half-twist. Nothing in this file says anything about those rows; they are enumerated in full, twice each."
+}

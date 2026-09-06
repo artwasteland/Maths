@@ -1,0 +1,21 @@
+Implemented the proof-producing embedder and exact certificate verification.
+
+Key results:
+
+- All 56 AMP graphs embedded and verified exactly.
+- 41 of 74 forbidden graphs refuted with replayable proof trees.
+- Remaining 33 reported honestly as `unknown`.
+- Moser spindle and gadget-1 host embedded exactly.
+- All six TU gadgets reached the distinguished pair through L2.
+- Three deliberate mutation controls went red as required.
+- Five 21-vertex graphs timed individually.
+
+Files:
+
+- [udembed.py](<repo>/research/unit-distance-22/embed/udembed.py:640)
+- [exact_verify.py](<repo>/research/unit-distance-22/embed/exact_verify.py:126)
+- [proof_verify.py](<repo>/research/unit-distance-22/embed/proof_verify.py:218)
+- [selfcheck.py](<repo>/research/unit-distance-22/embed/selfcheck.py:51)
+- [REPORT.md](<repo>/research/unit-distance-22/embed/REPORT.md:1)
+
+The full self-check completed with `SELF_CHECK PASS`. The report includes exact commands, outputs, arithmetic details, all unknown graph6 records, limitations, and proposed contract amendments.

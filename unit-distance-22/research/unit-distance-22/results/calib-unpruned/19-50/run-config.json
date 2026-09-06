@@ -1,0 +1,15 @@
+{
+  "target": [
+    19,
+    50
+  ],
+  "seed_n": 10,
+  "reach": true,
+  "reach_root_k": 4,
+  "prune": false,
+  "prune_from": null,
+  "prune_filter_only": false,
+  "prune_tries": null,
+  "prune_max_states": null,
+  "slice": null
+}

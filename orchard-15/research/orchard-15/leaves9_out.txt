@@ -1,0 +1,15 @@
+### E=9
+cycle3tri_octminusface nv=6 aut=6 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=12777 mean=4.239342e+10 relse=0.009
+C4C5_share2v nv=7 aut=12 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=7115 mean=4.886359e+10 relse=0.005
+K4minus_e_plus_path nv=7 aut=4 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=6215 mean=4.041122e+10 relse=0.005
+F3_windmill nv=7 aut=48 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=11628 mean=4.668071e+10 relse=0.009
+K3C6_share2v nv=7 aut=4 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=6349 mean=4.568336e+10 relse=0.006
+chain3tri nv=7 aut=8 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=11736 mean=3.745007e+10 relse=0.008
+C4C5_share1v nv=8 aut=4 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=6399 mean=3.819457e+10 relse=0.005
+K3C6_share1v nv=8 aut=4 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=7024 mean=3.502594e+10 relse=0.006
+bowtie_plus_K3 nv=8 aut=48 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=11719 mean=2.792159e+10 relse=0.008
+C9 nv=9 aut=18 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=7605 mean=3.006139e+10 relse=0.006
+C4_plus_C5_disjoint nv=9 aut=80 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=8534 mean=2.910577e+10 relse=0.006
+K3_plus_C6_disjoint nv=9 aut=72 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=9061 mean=2.799954e+10 relse=0.008
+3K3 nv=9 aut=1296 :: v=15 leave_edges=9 triangles_needed=32 N=40000 dead=11560 mean=2.391738e+10 relse=0.009
+DONE

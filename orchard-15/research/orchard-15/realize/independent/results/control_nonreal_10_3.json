@@ -1,0 +1,193 @@
+{
+ "label": "nonreal_10_3",
+ "v": 10,
+ "b": 10,
+ "pts": "10 10 : 0 4 6 , 0 5 7 , 0 8 9 , 1 2 3 , 1 4 5 , 1 6 7 , 2 4 8 , 2 5 9 , 3 6 8 , 3 7 9 ;",
+ "frame": [
+  0,
+  1,
+  2,
+  4
+ ],
+ "first_pair_uncovered": true,
+ "point_on_infinity": null,
+ "wrong_chart": false,
+ "variables": [
+  "x3",
+  "y3",
+  "x5",
+  "y5",
+  "x6",
+  "y6",
+  "x7",
+  "y7",
+  "x8",
+  "y8",
+  "x9",
+  "y9"
+ ],
+ "generators": 10,
+ "blocks_forced_by_chart": [],
+ "generator_degrees": [
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  2
+ ],
+ "constant_generators": [],
+ "gb_seconds": 0.015,
+ "gb_size": 13,
+ "gb_is_one": false,
+ "gb_max_degree": 4,
+ "gb_zero_dimensional": false,
+ "gb_dimension": 2,
+ "nonblock_triples": 110,
+ "single_triples_tested": 110,
+ "single_triple_seconds_total": 4.183,
+ "single_triple_seconds_max": 0.131,
+ "forced_single_triples": [],
+ "saturation_steps": [
+  {
+   "triple": [
+    0,
+    2,
+    3
+   ],
+   "seconds": 0.055,
+   "dim": 2,
+   "size": 11
+  },
+  {
+   "triple": [
+    0,
+    2,
+    5
+   ],
+   "seconds": 0.043,
+   "dim": 2,
+   "size": 11
+  },
+  {
+   "triple": [
+    0,
+    2,
+    6
+   ],
+   "seconds": 0.039,
+   "dim": 2,
+   "size": 11
+  },
+  {
+   "triple": [
+    0,
+    2,
+    7
+   ],
+   "seconds": 0.041,
+   "dim": 2,
+   "size": 11
+  },
+  {
+   "triple": [
+    0,
+    2,
+    8
+   ],
+   "seconds": 0.034,
+   "dim": 2,
+   "size": 10
+  },
+  {
+   "triple": [
+    0,
+    2,
+    9
+   ],
+   "seconds": 0.027,
+   "dim": 2,
+   "size": 10
+  },
+  {
+   "triple": [
+    0,
+    3,
+    4
+   ],
+   "seconds": 0.034,
+   "dim": 2,
+   "size": 10
+  },
+  {
+   "triple": [
+    0,
+    3,
+    5
+   ],
+   "seconds": 0.034,
+   "dim": 2,
+   "size": 10
+  },
+  {
+   "triple": [
+    0,
+    3,
+    6
+   ],
+   "seconds": 0.034,
+   "dim": 2,
+   "size": 10
+  },
+  {
+   "triple": [
+    0,
+    3,
+    7
+   ],
+   "seconds": 0.039,
+   "dim": 2,
+   "size": 10
+  },
+  {
+   "triple": [
+    0,
+    3,
+    8
+   ],
+   "seconds": 0.036,
+   "dim": 2,
+   "size": 10
+  },
+  {
+   "triple": [
+    0,
+    3,
+    9
+   ],
+   "seconds": 0.033,
+   "dim": 2,
+   "size": 10
+  },
+  {
+   "triple": [
+    0,
+    4,
+    5
+   ],
+   "seconds": 0.012,
+   "dim": -1,
+   "size": 1
+  }
+ ],
+ "saturation_seconds": 0.479,
+ "nonrealizable": true,
+ "verdict": "NON-REALIZABLE over every char-0 field: I : (d_1...d_22)^oo = (1) after 13 saturation steps",
+ "expected": "one",
+ "got": "one",
+ "control_passed": true
+}

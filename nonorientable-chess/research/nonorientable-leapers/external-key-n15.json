@@ -1,0 +1,23 @@
+{
+  "_what": "The flat leaper counts at n = 15, read from the OEIS BEFORE this session's own n = 15 enumeration returned anything. They are the external key on the new column: four values by four authors that this project did not compute and could not have known, at the very n in question.",
+  "_why_the_order_matters": "The same key was used for the n = 14 column on 2026-08-17, and it is the strongest single check in this directory because it certifies the NEW row rather than the old ones. Fetching it after the fact would still be a check, but it would not be a blind one. This file is committed before the flat n = 15 jobs have returned; the git history is the receipt.",
+  "fetched": "2026-08-23",
+  "source": "https://oeis.org/search?q=id:<A-number>&fmt=json",
+  "offsets_checked": "A137774 has offset 1; A189358, A189565 and A189563 have offset 0 and publish a(0) = 1, which moves their term one place along the printed list without moving its index. All four therefore align as our n = a(n). Verified here by reading a(14) back out and matching the committed n = 14 column exactly.",
+  "n14_readback": {
+    "knight": "2586423174", "camel": "3131979014",
+    "zebra": "4090634212", "giraffe": "4285522402",
+    "_note": "these four match terms-1-14.tsv's flat row exactly, which is how the offset alignment is confirmed rather than assumed"
+  },
+  "n15_expected": {
+    "knight":  { "oeis": "A137774", "value": "36769177348" },
+    "camel":   { "oeis": "A189358", "value": "44540692612" },
+    "zebra":   { "oeis": "A189565", "value": "57274447458" },
+    "giraffe": { "oeis": "A189563", "value": "59536763892" }
+  },
+  "n16_for_later": {
+    "knight": "563504645310", "camel": "681114241416",
+    "zebra": "863488976620", "giraffe": "892785282788",
+    "_note": "recorded only so a future run does not have to re-fetch. n = 16 is roughly thirteen times the cost of n = 15 and is not attempted here."
+  }
+}

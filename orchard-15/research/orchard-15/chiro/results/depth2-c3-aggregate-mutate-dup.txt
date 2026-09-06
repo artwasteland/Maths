@@ -1,0 +1,3 @@
+COVERAGE FAIL: 2 problem(s)
+- duplicated cube003-000: 2 records
+- missing cube003-5392

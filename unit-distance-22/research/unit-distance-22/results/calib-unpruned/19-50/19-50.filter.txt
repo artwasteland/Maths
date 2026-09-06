@@ -1,0 +1,17 @@
+{"g6":"RIL_w?F???_A?BsMTCsES`TDPE@QoG","verdict":"tu","witness":{"index":0,"map":[1,13,8,5,2,14],"pair":[1,5]}}
+{"g6":"R?OiPK[Cy?G@GAG@m?C?j_ImYBCiWG","verdict":"tu","witness":{"index":0,"map":[10,1,14,16,12,2],"pair":[1,5]}}
+{"g6":"R?EA@C[WB?aoB`GwOAk?VpG?PSgQSw","verdict":"tu","witness":{"index":0,"map":[9,1,16,17,14,0],"pair":[1,5]}}
+{"g6":"R??I?cRWdOS`QOPGpoC_@K?{HYOHig","verdict":"pass"}
+{"g6":"R?C@IG`G[oCpOHODwHCgCb?SQaoSbW","verdict":"tu","witness":{"index":0,"map":[12,1,14,17,15,0],"pair":[1,5]}}
+{"g6":"R@K?KHCPIC?D?FWaQOcSDhP_Pd_Qeg","verdict":"tu","witness":{"index":0,"map":[3,2,13,17,14,6],"pair":[1,5]}}
+{"g6":"RGC?GKW?SAkMDCCc``OSRgGj?`^{??","verdict":"tu","witness":{"index":0,"map":[12,9,10,14,16,0],"pair":[1,5]}}
+{"g6":"R{dAG_GAGaC?G@@X?iWDY?ek]EBBo?","verdict":"tu","witness":{"index":5,"map":[5,13,17,11,15,6,1,8],"pair":[6,7]}}
+{"g6":"RGC?GMB`CGr?^??T?HiPAIGLQPPcPW","verdict":"tu","witness":{"index":0,"map":[9,0,11,13,17,3],"pair":[1,5]}}
+{"g6":"R@?KAI@_]CFOBP@g?qJOAU?K_jO_tW","verdict":"tu","witness":{"index":0,"map":[13,6,10,17,15,1],"pair":[1,5]}}
+{"g6":"RJ?GKEB`CGh?AKAIh_`CKC`S`QoaRW","verdict":"pass"}
+{"g6":"R?CcEB@X?w?w@h_aGPH_HI?kPTOPeW","verdict":"tu","witness":{"index":0,"map":[7,1,9,17,11,5],"pair":[1,5]}}
+{"g6":"R@K?KIA_iC?D?FWaI_aWDhP_Pd_Qeg","verdict":"tu","witness":{"index":0,"map":[3,2,13,17,14,1],"pair":[1,5]}}
+{"g6":"R@KCAHD`CG_U?jH_SOI_IQ?sPSoQTW","verdict":"pass"}
+{"g6":"R?CCGx_oE?_Q?b`oKKpgGJ?cOtOPUW","verdict":"pass"}
+{"g6":"Rw?G?CbJ?_aBAa@a`GoIJSGiO`]}??","verdict":"pass"}
+{"g6":"RwCOOOHD?SCPH[?U?FK_IS@MF@QL@W","verdict":"tu","witness":{"index":0,"map":[0,2,11,15,17,6],"pair":[1,5]}}

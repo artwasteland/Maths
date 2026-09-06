@@ -1,0 +1,16 @@
+Implemented checker-schema certificate serialization in [udembed.py](<repo>/research/unit-distance-22/embed/udembed.py:426).
+
+Results:
+
+- K4: accepted, 1 refutation node.
+- AMP catalog: 56/56 embedded and accepted.
+- Forbidden graphs: 41 refuted certificates accepted, 33 remain unknown.
+- Stress sample: 119 refuted, 1 unknown, all 120 records accepted with the matching unknown file.
+- Stress runtime: 303.28 seconds total, 2.527333 seconds per graph.
+- Corrupted L3 `d`: rejected for failing the exact discriminant-square check.
+- Integrated self-check: passed.
+- Python compilation: passed.
+
+The regenerated artifact is [stress/verdicts-120.jsonl](<repo>/research/unit-distance-22/embed/stress/verdicts-120.jsonl), with its matching [stress/UNKNOWN.g6](<repo>/research/unit-distance-22/embed/stress/UNKNOWN.g6).
+
+Exact commands, outputs, limitations, mutation evidence, and proposed amendment are recorded in [REPORT.md](<repo>/research/unit-distance-22/embed/REPORT.md).

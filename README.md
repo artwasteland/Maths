@@ -22,7 +22,19 @@ publishes its own corrections prominently and has a standing habit of doing so.
 
 ## What is here
 
-Across the directories below, the artifact gate reads the **895 terms published here** and reports **782 recomputed**, 105 drift-guarded and **8 unbound**, with **0** disagreeing with the computation. Those three words are defined in each result's README, and every number in them is generated from the same run as this sentence.
+Across the directories below, the artifact gate reads the **903 terms published here** and reports **782 recomputed**, 121 drift-guarded and **0 unbound**, with **0** disagreeing with the computation. Those three words are defined in each result's README, and every number in them is generated from the same run as this sentence.
+
+### [`unit-distance-22/`](unit-distance-22/) — The unit-distance number of 22 points: u(22) = 60, with checked certificates
+
+No set of 22 points in the plane has 61 unit distances, so **A186705(22) = 60**, the value Alexeev, Mixon and Parshall bracketed as 60 or 61 in 2024. The method is theirs, reimplemented: canonical augmentation of the forbidden-subgraph-free graphs with 22 vertices and 61 edges, pruned at every level by six totally unfaithful gadgets and a minimum-degree lemma (18,689 extensions checked), cut into 48 slices and run on fourteen machines. The top level produced four graphs in all; each contains a gadget with its forced pair non-adjacent and each is refuted algebraically, both certificate sets accepted by a blind checker (`results/u22/cell-22-61/`).
+
+> ⚠ Carries a stated limit. See [`unit-distance-22/README.md`](unit-distance-22/README.md).
+
+### [`orchard-15/`](orchard-15/) — The orchard problem at fifteen points: t3(15) = 31, with a checked SAT certificate
+
+No configuration of 15 points in the real plane has 32 lines through exactly three of them, so **A003035(15) = 31**, the value Burr, Grünbaum and Sloane left as "31 or 32" in 1974. The reduction (pair counting with Kelly-Moser, then rank-3 chirotopes) is in `RESULT-15-32.md`; the certificate is four cube CNFs, each refuted with a DRAT proof checked by drat-trim and an LRAT proof checked by the formally verified cake_lpr, the largest cube also by a 5393-way second split. The theorem holds for pseudoline arrangements. Below fifteen, `realize/` certifies Du's t3(13) = 22 (the unique pseudoline-admitting PTS(13,23) has no realisation over any field) and shows no (13,24) chirotope exists.
+
+> ⚠ Carries a stated limit. See [`orchard-15/README.md`](orchard-15/README.md).
 
 ### [`change-ringing/`](change-ringing/) — Fourteen new terms for six OEIS change-ringing sequences
 

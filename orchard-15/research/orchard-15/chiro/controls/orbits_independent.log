@@ -1,0 +1,96 @@
+==============================================================================
+(a) row-1 configurations for (v,b)=(15,32): perfect matchings of {3..14} avoiding row-0 pairs
+==============================================================================
+  [ok] (a) row-1 configurations, brute force: recomputed 6040  expected 6040
+  [ok] (a) row-1 configurations, inclusion-exclusion sum_j (-1)^j C(6,j) (11-2j)!!: recomputed 6040  expected 6040
+  [ok] (a) control: enumerator WITHOUT the row-0 exclusion gives 11!!: recomputed 10395  expected 10395
+  [ok] (a) control: that count differs from 6040: got 10395  must differ from 6040  -> differs
+
+==============================================================================
+G1 = permutations fixing 0,1,2 and preserving row 0, built as (pair permutation, within-pair swaps)
+==============================================================================
+  G1: 46080 elements; sanity problems: none (all fix 0,1,2 and preserve row 0; 20000 sampled compositions and inverses closed)
+  [ok]   |G1|: recomputed 46080  expected 46080
+  Completeness argument: any permutation fixing 0,1,2 and preserving row 0 permutes the six
+  row-0 pairs and orients each, so there are at most 2^6 * 6! = 46080 of them; the 46080
+  distinct elements built above are all of that kind, hence they are the whole group.
+
+==============================================================================
+(b) G1-orbits of the 6040 row-1 configurations (full-group expansion of each orbit minimum)
+==============================================================================
+  orbit scan: 4 orbits in 0.88 s; problems: none
+  [ok] (b) orbit scan problems: recomputed []  expected []
+  [ok] (b) number of G1-orbits: recomputed 4  expected 4
+  [ok] (b) sum of orbit sizes: recomputed 6040  expected 6040
+  [ok] (b) orbit sizes (sorted): recomputed [120, 640, 1440, 3840]  expected [120, 640, 1440, 3840]
+  [ok] (b) stabiliser order by orbit size: recomputed {120: 384, 1440: 32, 640: 72, 3840: 12}  expected {120: 384, 1440: 32, 640: 72, 3840: 12}
+  [ok] (b) each orbit has a single cycle type: recomputed True  expected True
+  [ok] (b) cycle type by orbit size: recomputed {120: (2, 2, 2), 1440: (4, 2), 640: (3, 3), 3840: (6,)}  expected {120: (2, 2, 2), 1440: (4, 2), 640: (3, 3), 3840: (6,)}
+  [ok] (b) configurations per cycle type (no group used): recomputed {(2, 2, 2): 120, (4, 2): 1440, (3, 3): 640, (6,): 3840}  expected {(2, 2, 2): 120, (4, 2): 1440, (3, 3): 640, (6,): 3840}
+
+------------------------------------------------------------------------------
+(b) NEGATIVE CONTROL: the same orbit computation with the WRONG group (no within-pair swaps)
+------------------------------------------------------------------------------
+  G1_noswap: 720 elements; sanity problems: none (all fix 0,1,2 and preserve row 0; 20000 sampled compositions and inverses closed)
+  [ok]   |G1_noswap|: recomputed 720  expected 720
+  wrong group: 24 orbits, problems none; size multiset [(15, 2), (40, 1), (45, 2), (90, 4), (120, 2), (180, 2), (240, 1), (360, 7), (720, 3)]
+  [ok] (b) control: orbit sizes under the wrong group: got [15, 15, 40, 45, 45, 90, 90, 90, 90, 120, 120, 180, 180, 240, 360, 360, 360, 360, 360, 360, 360, 720, 720, 720]  must differ from [120, 640, 1440, 3840]  -> differs
+  [ok] (b) control: number of orbits under the wrong group: got 24  must differ from 4  -> differs
+
+==============================================================================
+(c) lexicographically least representative of each orbit, vs exist.py's cube representatives
+==============================================================================
+  exist.py representatives read from: scratch/*/cubes-15-32-depth1.jsonl
+    cube000: [{3,5}, {4,6}, {7,9}, {8,10}, {11,13}, {12,14}]   <- ../scratch/exist-15-32-c0/cubes-15-32-depth1.jsonl, ../scratch/regen-c0/cubes-15-32-depth1.jsonl
+    cube001: [{3,5}, {4,6}, {7,9}, {8,11}, {10,13}, {12,14}]   <- ../scratch/regen-c1/cubes-15-32-depth1.jsonl
+    cube002: [{3,5}, {4,7}, {6,8}, {9,11}, {10,13}, {12,14}]   <- ../scratch/regen-c2/cubes-15-32-depth1.jsonl
+    cube003: [{3,5}, {4,7}, {6,9}, {8,11}, {10,13}, {12,14}]   <- ../scratch/regen-c3/cubes-15-32-depth1.jsonl
+  [ok] (c) every exist.py cube name has exactly one row description: recomputed True  expected True
+  this script's orbits (ordered by lexicographic minimum):
+    orbit 0: size   120  stabiliser  384  cycle type 2+2+2   min rep [{3,5}, {4,6}, {7,9}, {8,10}, {11,13}, {12,14}]
+    orbit 1: size  1440  stabiliser   32  cycle type 4+2     min rep [{3,5}, {4,6}, {7,9}, {8,11}, {10,13}, {12,14}]
+    orbit 2: size   640  stabiliser   72  cycle type 3+3     min rep [{3,5}, {4,7}, {6,8}, {9,11}, {10,13}, {12,14}]
+    orbit 3: size  3840  stabiliser   12  cycle type 6       min rep [{3,5}, {4,7}, {6,9}, {8,11}, {10,13}, {12,14}]
+    cube000: lies in this script's orbit 0 (size 120, stabiliser 384); ledger says (orbit 120, stabiliser 384) -> consistent; identical to this script's lex-min representative: YES
+    cube001: lies in this script's orbit 1 (size 1440, stabiliser 32); ledger says (orbit 1440, stabiliser 32) -> consistent; identical to this script's lex-min representative: YES
+    cube002: lies in this script's orbit 2 (size 640, stabiliser 72); ledger says (orbit 640, stabiliser 72) -> consistent; identical to this script's lex-min representative: YES
+    cube003: lies in this script's orbit 3 (size 3840, stabiliser 12); ledger says (orbit 3840, stabiliser 12) -> consistent; identical to this script's lex-min representative: YES
+  [ok] (c) each exist.py cube k lies in this script's orbit k with the ledger's size and stabiliser: recomputed True  expected True
+  [ok] (c) exist.py's representatives are exactly this script's lex-min representatives: recomputed True  expected True
+
+==============================================================================
+(d) Lemma 7' depth-2 split of the size-3840 orbit (cube 3): rows of point 2 under G2 = Stab_G1(c1)
+==============================================================================
+  c1 = [{3,5}, {4,7}, {6,9}, {8,11}, {10,13}, {12,14}]
+  G2 = elements of G1 fixing c1: 12 elements; closed under composition (all pairs): True
+  [ok] (d) |G2|: recomputed 12  expected 12
+  [ok] (d) G2 closed under composition: recomputed True  expected True
+  Lemma 7': e = 9, p = 0, top = min(v-3, 2e-(v-1)p) = 12, all_degrees_minimum = False
+  admissible leave degrees d of point 2: [0, 2, 4, 6, 8, 10, 12]; a row-2 configuration with leave degree d is a
+  set of (v-1-d)/2 - 1 pairs on {3..14} avoiding the row-0 pairs and c1, the other d points being
+  point 2's leave partners (so pairs and leave set partition {3..14}).
+  Reading of the text adopted: d ranges over p, p+2, ..., top with NO further restriction (the lemma
+  states no other), and the configuration is identified with its pair set (the leave set is implied).
+  row-2 configurations: 59924 (per d: {0: 3326, 2: 23904, 4: 23940, 6: 7700, 8: 999, 10: 54, 12: 1}; duplicate descriptions removed: 0) in 0.24 s
+  G2-orbit scan: 5393 children in 0.61 s; problems: none
+  [ok] (d) depth-2 orbit scan problems: recomputed []  expected []
+  [ok] (d) number of depth-2 children of cube 3: recomputed 5393  expected 5393
+  [ok] (d) child stabiliser-order distribution: recomputed {1: 4638, 2: 674, 3: 2, 4: 64, 6: 9, 12: 6}  expected {1: 4638, 2: 674, 3: 2, 4: 64, 6: 9, 12: 6}
+  [ok] (d) sum over children of |G2|/|H| equals the number of row-2 configurations: recomputed 59924  expected 59924
+  children per leave degree d: {0: 362, 2: 2118, 4: 2113, 6: 690, 8: 102, 10: 7, 12: 1}
+  Burnside: sum_g |Fix(g)| = 64716, / |G2| = 5393.0
+  [ok] (d) Burnside orbit count (sum_g |Fix(g)| / |G2|): recomputed 5393  expected 5393
+
+------------------------------------------------------------------------------
+(d) NEGATIVE CONTROLS
+------------------------------------------------------------------------------
+  proper subgroup of G2: <element of order 6>, 6 elements
+  children under that subgroup: 10164 (problems none)
+  [ok] (d) control: child count under a proper subgroup of G2: got 10164  must differ from 5393  -> differs
+  stabiliser of the WRONG cube (cube 0, order 384) applied to cube 3's row-2 configurations:
+    closure violations reported: 489 (of 800 problems)
+  [ok] (d) control: the closure check goes red under the wrong stabiliser: got 489  must differ from 0  -> differs
+
+==============================================================================
+checks: 28 total, 28 passed, 0 failed; runtime 5.2 s
+ORBITS_INDEPENDENT PASS

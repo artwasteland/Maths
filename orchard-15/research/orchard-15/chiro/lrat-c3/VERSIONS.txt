@@ -1,0 +1,44 @@
+# VERSIONS for orchard-15-32-lrat-c3
+host: fresh cloud sandbox, 4 cores, 15 GB RAM, 6 GB swapfile, 25 GB disk at start
+launched_utc: 2026-09-05T10:10Z   finished_utc: 2026-09-05T15:53:48Z
+
+kissat --version: 4.0.4
+kissat git: 8af8e56f174b778aef3aa45af9f739b2a5f492c2 2025-10-16 19:24:28 +0200 bumped VERSION
+python3 --version: Python 3.11.15
+pysat version: 1.9.dev15
+drat-trim git: 2e3b2dc0ecf938addbd779d42877b6ed69d9a985 2024-11-25 10:20:26 -0500 long
+cake_lpr git:  a36874a8b750b43fe4b385b8ddbf5b033e46a3fa 2026-07-22 23:43:47 +0100 Replace heap/stack size env variables with command-line flags
+this checkout: 75845d912a59e3966b86a7b3135a2851bc84c588 2026-09-05 15:44:04 +0000 orchard lrat c3: heartbeat 2026-09-05T15:44:04Z (cake_lpr)
+
+## sizes
+CNF bytes:   13766012
+DRAT bytes:  3716998324   (kissat 4.0.4, solve ~5900 s single-threaded)
+LRAT bytes:  16063366058  (drat-trim -L, written in one burst at the end of the check)
+
+## verdicts, verbatim
+drat-trim: 's VERIFIED'      exit 0, 13462.512 s verification time (13463.017 s wall)
+           21318798 of 32951340 lemmas in core, 1577747488 resolution steps,
+           221127 of 738624 clauses in core, 22394 RAT lemmas in core.
+cake_lpr:  's VERIFIED UNSAT' exit 0
+
+## cake_lpr provenance
+cake_lpr.S (the CakeML-compiled, formally verified core):
+2f3af32d55083839b3fa0e693afd817679c0b8944bef41def05a8b0ec72b7d4a  /tmp/cake_lpr/cake_lpr.S
+  matches the value checked into the upstream repo's cake_lpr.sha256: YES
+basis_ffi.c (the unverified C FFI shim):
+8e30d84fdcb2177aa5571d7fa6661a2fae5ecfd56baa0ce49c65f9233a9f87cb  /tmp/cake_lpr/basis_ffi.c
+  upstream cake_lpr.sha256 lists 3fbd8f31...; the shipped file is 8e30d84f..., i.e. that
+  manifest entry is stale relative to the shipped file. The verified core does match.
+
+## acceptance criterion actually used
+cake_lpr on this build exits 0 on EVERY outcome, including rejection and a missing input
+file (five RED controls in SMOKE.md). Acceptance here is the exact stdout line
+'s VERIFIED UNSAT', not the exit status. Both are reported.
+
+## cross-check against the earlier cube-3 kissat worker
+The DRAT produced here is BIT-IDENTICAL to the one in AUDIT-15-32.md (a4bf1e90...),
+and the drat-trim binary built here is bit-identical to that worker's (92f0aa95...).
+kissat 4.0.4 is deterministic on this input. So this run is NOT an independent second
+proof, and its drat-trim pass is not an independent second check of the DRAT. What is
+new is the LRAT and its acceptance by cake_lpr, a formally verified checker, on a
+machine that produced none of the earlier proofs.
