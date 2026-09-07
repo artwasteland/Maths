@@ -1,0 +1,73 @@
+ALIVE 2026-09-06T00:38:22Z models=0 proc=running log=
+ALIVE 2026-09-06T00:48:25Z models=1210 proc=running log=all-models: 1000 block assignments
+ALIVE 2026-09-06T00:58:27Z models=2337 proc=running log=all-models: 2000 block assignments
+ALIVE 2026-09-06T00:59:25Z models=2337 proc=running log=all-models: 2000 block assignments
+ALIVE 2026-09-06T01:09:27Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T01:18:29Z models=3125 proc=running log=all-models: 3000 block assignments (coordinator check-in 01:17Z: process 5394 at 99.9% CPU state R, CPU-time tracking wall 1:1; last model written 01:02:32Z, so ~15 min searching for model 3126 vs ~100/min earlier -- enumeration tail lengthening, not a hang)
+ALIVE 2026-09-06T01:19:30Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T01:29:32Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T01:39:34Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T01:49:36Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T01:59:38Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T02:09:40Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T02:18:04Z models=3125 proc=running log=all-models: 3000 block assignments (coordinator check-in 02:17Z: ESCALATION STANDS -- model 3126 now 75 min at 99.9% CPU vs 25 min for models 1-3125 combined; 8.33 h of budget left; expect the 10 h cap to be hit with the enumeration unfinished, i.e. a PARTIAL census that does NOT certify t3(14)=26. Not resharding: not authorised by this brief. Coordinator's options: cube-and-conquer via exist.py --cubes --cube-index k as used for (15,32), a larger budget, or accepting partial. Owner notified 01:54Z. Step-5 tooling already validated end-to-end at v=14: controls 6/6, dry-run 3125 models -> 8 classes -> 8 no-realization -> 8/8 blind-checked in ~40 s, so step 5 costs minutes whenever the census stops.)
+ALIVE 2026-09-06T02:19:42Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T02:29:44Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T02:39:46Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T02:49:48Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T02:59:50Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T03:09:52Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T03:17:38Z models=3125 proc=running log=all-models: 3000 block assignments (coordinator check-in 03:17Z: unchanged. Model 3126 stalled 135 min; worker pid 5394 at 99.9% CPU with CPU-time == elapsed, parent 5393 idle -- healthy, not hung. Escalation of 01:54Z stands: expect the 10 h cap to be hit, deliverable PARTIAL, does NOT certify t3(14)=26. Owner notified once at 01:54Z; not re-notifying an unchanged finding. Step-5 tooling pre-validated, costs minutes.)
+ALIVE 2026-09-06T03:19:54Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T03:29:57Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T03:39:59Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T03:50:01Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T03:59:48Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T04:09:50Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T04:17:35Z models=3125 proc=running log=all-models: 3000 block assignments (coordinator check-in 04:17Z: unchanged, model 3126 stalled 195 min, worker 5394 at 99.9% CPU. Escalation of 01:54Z stands: PARTIAL census expected, does NOT certify t3(14)=26. Owner notified once; not re-notifying unchanged state.)
+ALIVE 2026-09-06T04:19:52Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T04:29:54Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T04:39:56Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T04:49:58Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T05:00:00Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T05:10:03Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T05:17:19Z models=3125 proc=running log=all-models: 3000 block assignments (coordinator check-in 05:17Z: unchanged, model 3126 stalled 255 min, worker 5394 99.9% CPU. Escalation 01:54Z stands: PARTIAL census expected, does NOT certify t3(14)=26.)
+ALIVE 2026-09-06T05:20:05Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T05:30:07Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T05:40:09Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T05:50:11Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T06:00:13Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T06:10:15Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T06:19:58Z models=3125 proc=running log=all-models: 3000 block assignments (coordinator check-in 06:17Z: census still running, model 3126 stalled 317 min. NEW: built kissat 4.0.4 from source (not in apt) and started the CLOSURE CERTIFICATE EARLY, ahead of the coordinator's stated trigger, on the 3125-model file: closure-14-27.cnf sha256 e865941564d10625a6bf8464c59cd5e8169d4d7a2841b9f839f7ead0f4c6ae6c, 491098 clauses, 87353 vars, 3125 distinct models, kissat pid 15910 with DRAT proof to /tmp. Rationale: census_closure.py's own docstring says the final UNSAT call is what takes many hours, so the stall may BE the closing UNSAT with the census already complete at 3125 -- the closure settles that, and running it now costs an idle core instead of waiting until 10:37Z.)
+ALIVE 2026-09-06T06:20:17Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T06:30:20Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T06:40:22Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T06:50:24Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T07:00:26Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T07:10:28Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T07:17:37Z models=3125 proc=running log=all-models: 3000 block assignments (coordinator check-in 07:17Z: census stalled 375 min; CLOSURE running since 06:18Z, kissat pid 15910, proof 2101 MB, no verdict yet. Closure was started EARLY on the 3125-model file, ahead of the stated trigger. Note to coordinator: your step 2b writes the DRAT proof into research/orchard-15/realize/; I wrote it to /tmp instead and gitignored *.drat, because it is already multi-GB and the repo has a 5 MB cap.)
+ALIVE 2026-09-06T07:20:30Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T07:30:32Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T07:40:34Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T07:50:36Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T08:00:39Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T08:10:41Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T08:17:36Z models=3125 proc=running log=all-models: 3000 block assignments (coordinator check-in 08:17Z: census stalled 435 min, no verdict; CLOSURE running since 06:18Z, kissat pid 15910, proof 4034 MB, no verdict yet.)
+ALIVE 2026-09-06T08:20:43Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T08:30:45Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T08:40:47Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T08:50:49Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T09:00:51Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T09:10:53Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T09:18:11Z models=3125 proc=running log=all-models: 3000 block assignments (coordinator check-in 09:17Z: census stalled 496 min, no verdict, cap at 10:37:30Z; CLOSURE running, kissat pid 15910, proof 5912 MB, no verdict yet. Reminder: closure has no time limit and stays running after the census dies -- its verdict, not the census timeout, decides COMPLETE vs PARTIAL.)
+ALIVE 2026-09-06T09:20:55Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T09:30:58Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T09:41:00Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T09:51:02Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T10:01:04Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T10:11:06Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T10:17:35Z models=3125 proc=running log=all-models: 3000 block assignments (coordinator check-in 10:17Z: census still running, no verdict, cap ~20 min away; CLOSURE running, proof 7713 MB. On your step 2a 'if the census timed out, every file and the report must say PARTIAL': I will say the enumeration did not finish in budget, but I will NOT assert the census is incomplete while the closure is unresolved -- census_closure.py's own docstring says the final UNSAT call takes many hours, so this stall may BE that call with the file already complete at 3125. Writing PARTIAL as a fact before the closure returns could be false. The report will say: enumeration did not complete in budget, completeness PENDING the closure, certifies nothing about t3(14)=26 so far.)
+ALIVE 2026-09-06T10:21:08Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T10:31:11Z models=3125 proc=running log=all-models: 3000 block assignments
+ALIVE 2026-09-06T10:40:21Z models=3125 proc=CENSUS-TIMED-OUT log=verdict TIMEOUT at 36000.755419 s (STEP 5 DONE: 8 classes, 8 no-realization, 0 real, 0 complex-only, 0 unknown, checker 8/8 accepted. Census did NOT finish its enumeration. COMPLETENESS PENDING the closure certificate, still running: kissat pid 15910, 4h20m, 8.3 GB proof. closure UNSAT => census complete at 3125 => t3(14)=26 certified; closure SAT => genuinely partial, certifies nothing.)
+ALIVE 2026-09-06T10:41:13Z models=3125 proc=DEAD log={"all_degrees_minimum": false, "b": 27, "backend": "pysat-cadical153-incremental", "chiro_gp_relations": 10010, "clauses": 487973, "counts": {"anchor_units": 14, "base_clauses": 421876, "cardinality_clauses": 36396, "cardinality_variables": 18198, "cube_units": 0, "degree_clauses": 13020, "degree_variables": 6048, "lex_clauses": 9491, "lex_generators": 11, "lex_variables": 1591, "pair_clauses": 6006, "row_units": 78, "tie_clauses": 1092}, "cube": null, "cube_stabiliser_lex_elements": null, "encode_seconds": 0.704857, "exact_b": true, "kelly_moser": 6, "labelled_models": 3125, "leave_edges": 10, "max_blocks_per_point": 6, "min_leave_degree": 1, "min_leave_points_at_least": 11, "output": "<repo>/research/orchard-15/realize/pts-14-27-labelled.pts", "proof_logged": false, "row_blocks": [[0, 1, 2], [0, 3, 4], [0, 5, 6], [0, 7, 8], [0, 9, 10], [0, 11, 12]], "row_leave_neighbours": [13], "solver_stats": null, "timeout_seconds": 36000.0, "total_seconds": 36000.755419, "v": 14, "variables": 87353, "verdict": "TIMEOUT"}

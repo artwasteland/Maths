@@ -101,3 +101,11 @@ line removed, which cake_lpr rejects (log committed).
    controls in REPORT-EXIST.md). Regression guard run by the coordinator afterwards: all four
    (15,32) depth-1 cube CNFs regenerated with the edited exist.py hash exactly to the audited
    values 0e6352aa..., 8c33bbfe..., 9b26b0e5..., 3ce6b8b9..., so the certificate is untouched.
+
+## Cube 3, cadical proof: verified (2026-09-06 06:01Z)
+
+The 8.98 GB cadical proof of cube 3 (solve 18,004 s) hit drat-trim's compiled 40,000 s limit on the first pass (hazard 1); the recheck with `-t 10000000` returned `s VERIFIED` after 45,331.519 s (19,612,400 of 35,470,012 lemmas in core, 1,451,495,880 resolution steps, 0 RAT). Log and status record mirrored in `chiro/c3-cadical/`. Every redundancy item in this ledger is now complete: each cube has two solver-independent DRAT refutations checked by drat-trim, an LRAT accepted by cake_lpr, and cube 3 additionally its 5393-child depth-2 certification.
+
+## Independent check of the orbit decomposition (2026-09-06)
+
+GAP 4.12.1, from the definition, no input from exist.py: (15,32) four orbits 120/1440/640/3840 with the fixed representatives a transversal and every cube lex-leader group equal to the orbit stabiliser element for element; (14,27) likewise with seven orbits. Scripts, logs and a hand count in `independent/`.

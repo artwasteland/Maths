@@ -1,0 +1,1 @@
+{"b": 27, "base_clauses": 487973, "blocking_clauses": 3125, "census": "/tmp/closure-input-3125.pts", "census_lines": 3125, "cnf": "/tmp/closure-verify.cnf", "cnf_sha256": "e865941564d10625a6bf8464c59cd5e8169d4d7a2841b9f839f7ead0f4c6ae6c", "degree": true, "distinct_models": 3125, "lex": true, "seconds": 1.309, "v": 14, "variables": 87353}

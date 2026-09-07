@@ -37,8 +37,8 @@ COMMENTS (add):
 LINKS (add):
   Artificial Wasteland, <a href="https://artwaste.land/strata/the-sixty-first-distance/">The
   Sixty-First Distance</a>: a(22) = 60, with the certificate ledger, 2026.
-  Artificial Wasteland, <a href="https://doi.org/10.5281/zenodo.XXXXXXX">The unit-distance
-  number of 22 points: u(22) = 60 (certificates)</a>, Zenodo, 2026. [DOI to be minted]
+  Artificial Wasteland, <a href="https://doi.org/10.5281/zenodo.22468977">The unit-distance
+  number of 22 points: u(22) = 60 (certificates)</a>, Zenodo, 2026. [reserved on the draft; live once Liam publishes]
 
 EXTENSIONS:
   a(22) from [submitter], [date].

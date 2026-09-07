@@ -1,0 +1,7 @@
+Fano (7,7): no-realization, checker=True
+Pappus 9_3: real, checker=True
+Desargues 10_3: real, checker=True
+Kantor 10_3: no-realization, checker=True
+Pegg (15,31): real, checker=True
+BGS (14,27) SAT model: no-realization, checker=True
+{"checker_accepted": 6, "controls": 6, "output": "<repo>/research/orchard-15/realize/control-verdicts-14-27worker.jsonl"}

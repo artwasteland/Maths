@@ -5,7 +5,8 @@ of `chiro/AUDIT-15-32.md` reads UNSAT with a drat-trim-verified proof (cube 3's 
 2026-09-05), so the theorem in Section 1 is proved. What remains in progress is redundancy, not
 proof: all four cubes carry LRAT certificates accepted by the formally verified checker cake_lpr
 (cube 3's since 15:54Z), cube 3 is additionally covered by its complete 5393-child depth-2
-certification, and only the drat-trim check of cube 3's cadical proof is still running (Section 3). Section
+certification, and cube 3's cadical proof was verified by drat-trim on 2026-09-06 at 06:01Z
+(45,331 s), so every redundancy item in Section 3 is complete. Section
 6 says what would have happened had any cube been SAT; none was.
 
 ## 1. The claim
@@ -73,7 +74,7 @@ Every row below must be filled from `chiro/AUDIT-15-32.md` before this file is a
 | 0 | 120 | 384 | 0e6352aa... | 262,585 / 1,521,924 | cadical 1.7.3 (local and cloud) | 696,022,996 | 9a09e2c3... | drat-trim `s VERIFIED` twice (3432 s local, 2353 s cloud) |
 | 1 | 1440 | 32 | 8c33bbfe... | 138,233 / 777,572 | cadical 1.7.3 (cloud), 4481 s; kissat 4.0.4 (cloud), 1924 s | 2,455,730,413 (cadical); 933,086,904 (kissat) | 958c8adf... (cadical); 6c4239bf... (kissat) | drat-trim `s VERIFIED` on both: 7628 s and 3520 s |
 | 2 | 640 | 72 | 9b26b0e5... | 152,713 / 864,252 | cadical 1.7.3 (cloud), 5065 s; kissat 4.0.4 (cloud), 1810 s | 2,010,793,854 (cadical); 770,721,286 (kissat) | 137d0fab... (cadical); 94c7a88d... (kissat) | drat-trim `s VERIFIED` on both: 7766 s and 3366 s |
-| 3 | 3840 | 12 | 3ce6b8b9... | 131,725 / 738,624 | kissat 4.0.4 (cloud), 7198 s; cadical 1.7.3 (cloud), ~5 h | 3,716,998,324 (kissat); 8,980,523,963 (cadical) | a4bf1e90... (kissat); cadical pending | drat-trim `s VERIFIED` on the kissat proof (16,289 s, 09:05Z); the cadical proof is still being checked |
+| 3 | 3840 | 12 | 3ce6b8b9... | 131,725 / 738,624 | kissat 4.0.4 (cloud), 7198 s; cadical 1.7.3 (cloud), ~5 h | 3,716,998,324 (kissat); 8,980,523,963 (cadical) | a4bf1e90... (kissat); cadical proof verified 2026-09-06 | drat-trim `s VERIFIED` on the kissat proof (16,289 s, 09:05Z) and on the cadical proof (45,332 s on the second pass with the compiled limit lifted, 06:01Z 2026-09-06) |
 
 How the columns were earned:
 
@@ -116,6 +117,16 @@ How the columns were earned:
   worker; cube 3 is the largest). `chiro/cnfcheck.py <cnf> --v 15 --b 32 --cube k` audits
   the file.
 
+**Independent check of the cube split (2026-09-06, GAP 4.12.1, `chiro/independent/`).** A reader
+objected, correctly, that a wrong orbit decomposition would make every downstream checker say
+VERIFIED of the wrong formula. Built from the definition alone, GAP finds the stabiliser of the
+row-0 partition to have order 46,080, the row-1 configurations to number 6,040, their orbits to
+be exactly four, of sizes 120, 1440, 640 and 3840, the four fixed representatives to be a
+transversal (stabilisers of order 384, 32, 72, 12), and each cube's lex-leader group, dumped from
+the generator element by element, to be identical to GAP's stabiliser. The same holds for the
+(14,27) frame (seven orbits, 120, 160, 960, 640, 480, 384, 3840). The check does not cover the
+encoding of the lex-leader clauses themselves or the sign-anchor part of Lemma 8; see the README.
+
 ## 3b. Below fifteen: t3(13) = 22 certified (stage 3, 2026-09-05 14:55Z; the no-lex census control
 agreed at 19:35Z: `realize/nolex/PREDICTION.md`)
 
@@ -150,6 +161,26 @@ models, all distinct, every one canonicalising to the single class (4 leave-free
 **t3(13) = 22**. What remains before this is stated unconditionally: the census re-run
 without the lex-leader (`realize/nolex/`) must canonicalise to the same single class.
 (14,27), the same route to t3(14) = 26, is the next brief.
+
+## 3c. Fourteen: t3(14) = 26, pending one certificate (2026-09-06 10:40Z)
+
+The same route at (14,27), the last orchard value that rested on Du's lost computation. The lex
+census `exist.py 14 27 --all-models --timeout 36000` (worker branch
+`claude/reaching-noether-cloud-orchard-14-27`, `realize/REPORT-14-27.md`) found 3,125 labelled
+models in its first 25 minutes and then spent 9 h 35 min on one solver call before its cap killed
+it, exactly the shape of the closing call that the (13,23) censuses showed. nauty collapses the
+3,125 to **8 isomorphism classes** (`realize/pts-14-27-pseudoline.txt`, all with leave type
+1^11 3^3), and `realize/realize.py` refutes **all 8 over R**, Groebner basis {1} after saturation,
+with `check_batch.py` accepting all 8 certificates (`realize/verdicts-14-27.jsonl`,
+`realize/checks-14-27.jsonl`). Nothing came out `real` or `unknown`.
+
+What is NOT yet established is that the 8 classes are all of them. The closure certificate of
+`chiro/census_closure.py` (the census CNF plus one blocking clause per found model, sha256
+e8659415..., 487,973 + 3,125 clauses) is being refuted by kissat on the worker and on the
+coordinator's box; `s UNSATISFIABLE` checked by drat-trim would certify the census complete and
+hence **t3(14) = 26** by machine; `s SATISFIABLE` would hand back a missing model and the census
+would continue from it. Until that returns, t3(14) = 26 remains Du's value with eight of its
+cases certified and its completeness open.
 
 ## 4. Controls (all in `chiro/REPORT-EXIST.md`, same encoder, same lemmas)
 

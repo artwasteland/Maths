@@ -1,0 +1,73 @@
+{
+  "_note": "Written by the cloud worker, NOT by exist.py. exist.py raised before writing its own result JSON because drat-trim's first pass hit drat-trim's internal 40000 s limit and chirosat.run_drat_trim treats any non-VERIFIED output as a rejection. The check was then rerun by hand against the same proof file with -t 400000 and returned s VERIFIED. Timings marked derived come from file mtimes and heartbeat lines, not from exist.py's perf_counter fields.",
+  "job": "orchard-15-32-cube-3",
+  "worker": "claude cloud worker for claude-reaching-noether-7e1c",
+  "verdict": "UNSAT",
+  "proof_verified": true,
+  "v": 15,
+  "b": 32,
+  "cube_index": 3,
+  "cube_representative": {
+    "blocks": [[1, 3, 5], [1, 4, 7], [1, 6, 9], [1, 8, 11], [1, 10, 13], [1, 12, 14]],
+    "leave": []
+  },
+  "cube_orbit_size": 3840,
+  "row1_configurations_total": 6040,
+  "cubes_total": 4,
+  "cube_orbit_sizes_all": [120, 1440, 640, 3840],
+  "command": "python3 exist.py 15 32 --backend cadical --cubes --cube-index 3 --artifacts scratch/exist-15-32-c3 --drat-trim /tmp/drat-trim/drat-trim --timeout 36000",
+  "solver": "cadical 1.7.3 (Debian package /usr/bin/cadical; --version prints 1.7.3, package version 1.7.4-1), single threaded, nice -n 5",
+  "checker": "drat-trim built from github.com/marijnheule/drat-trim at HEAD, cloned 2026-09-04",
+  "host": "4 vCPU, 16 GB RAM cloud microVM",
+  "cnf_variables": 131725,
+  "cnf_clauses": 738624,
+  "cnf_bytes": 13766012,
+  "cnf_sha256": "3ce6b8b9e17d4ceadcca205612c0692a85374c53328aab343eb0951970a49417",
+  "proof_bytes": 8980523963,
+  "proof_sha256": "bba323a91ba34ad58cc2ed2568cacfa5335d070293130caa42de3194de8a86a0",
+  "solver_exit": 20,
+  "solver_model_file_contents": "s UNSATISFIABLE",
+  "solve_started_utc": "2026-09-05T01:18:41Z",
+  "solve_ended_utc": "2026-09-05T06:18:45Z",
+  "solve_seconds_derived": 18004,
+  "drat_trim_attempt_1": {
+    "limit_seconds": 40000,
+    "started_utc": "2026-09-05T06:18:45Z",
+    "ended_utc": "2026-09-05T17:25:31Z",
+    "elapsed_seconds": 40006,
+    "result": "s TIMEOUT",
+    "note": "Not a rejection. drat-trim exhausted its built-in limit (TIMEOUT 40000, drat-trim.c:29) during backward checking and exits 0 in that case, which is why the exit code was 0 while stdout said TIMEOUT. exist.py's --timeout 36000 is passed only to the cadical subprocess and never reached drat-trim.",
+    "log": "drat-trim-attempt1-timeout.log"
+  },
+  "drat_trim_attempt_2": {
+    "limit_seconds": 400000,
+    "command": "nice -n 5 /tmp/drat-trim/drat-trim exist-15-32-cube003.cnf exist-15-32-cube003.cadical.drat -t 400000",
+    "started_utc": "2026-09-05T17:26:20Z",
+    "ended_utc": "2026-09-06T06:01:52Z",
+    "verification_seconds": 45331.519,
+    "result": "s VERIFIED",
+    "clauses_in_core": 208398,
+    "clauses_total": 738624,
+    "lemmas_in_core": 19612400,
+    "lemmas_total": 35470012,
+    "resolution_steps": 1451495880,
+    "rat_lemmas_in_core": 0,
+    "redundant_literals_in_core_lemmas": 15968870,
+    "log": "drat-trim-attempt2-verified.log",
+    "note": "Run against the same proof file, unmodified: its mtime (2026-09-05T06:18:45Z) predates both the sha256 above (taken 17:26Z) and this check, so the bytes hashed are the bytes verified. The 165 'backward mode ignores deletion of (pseudo) unit clause' warnings are drat-trim declining to honour deletions of unit clauses in backward mode; it therefore keeps more clauses live than the proof asks it to, which makes the check stricter, not weaker."
+  },
+  "lost_run": {
+    "note": "A first launch of the same job at 2026-09-04T23:54:34Z was killed at 2026-09-05T01:01:07Z (about 66 minutes in) when the microVM was suspended during a session idle window and rebooted at 01:15:49Z. No result; its 1.86 GB partial proof was discarded and the job restarted from scratch at 01:18:36Z. Thereafter the session was held in foreground waits so the VM was never idle."
+  },
+  "smoke_test": {
+    "command": "python3 exist.py 8 8 --backend cadical --artifacts scratch/smoke --drat-trim /tmp/drat-trim/drat-trim",
+    "verdict": "UNSAT",
+    "proof_verified": true,
+    "cnf_sha256": "d820b70ecdc45836a3de554ca1372f37c1225f6b62f1bf2db8353b1c19066f50",
+    "proof_sha256": "b98f0621c60257c19f092affd6b74eda7738ac245b5fe6beb377220eee42ebad",
+    "note": "Both digests match the reference run recorded in REPORT-EXIST.md Section 4 exactly, so this worker reproduces the reference toolchain bit for bit."
+  },
+  "what_this_establishes": "Cube 3 of the (15,32) existence SAT is UNSAT with a DRAT proof verified by drat-trim. By Lemma 7 of REPORT-EXIST.md the four cubes partition every row-1 configuration (orbit sizes 120+1440+640+3840 = 6040 = the enumerated total), so this closes one of the four. It does NOT by itself settle t3(15): cubes 0, 1 and 2 are separate jobs and all four must be UNSAT before the argument of REPORT-EXIST.md concludes that no rank-3 chirotope on 15 elements has a PTS(15,32) as its zero set, and hence that t3(15) = 31.",
+  "reproducing": "The proof is not committed (8.98 GB). Regenerate with the command above using cadical 1.7.3; the CNF is deterministic and should match cnf_sha256. The proof is solver-run dependent and need not match proof_sha256 byte for byte; any DRAT proof cadical emits for this CNF should verify.",
+  "recommendation_for_the_other_cubes": "Pass -t explicitly to drat-trim, or raise TIMEOUT in drat-trim.c. On this hardware cube 3 needed 45332 s of checking against 18004 s of solving, a ratio of about 2.5, so the default 40000 s limit will silently truncate any cube of comparable size and surface as a spurious 'proof rejected'."
+}

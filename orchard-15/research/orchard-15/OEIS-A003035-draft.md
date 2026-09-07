@@ -31,8 +31,8 @@ out only after a mathematician has read it and the certificate; Liam decides whe
    field (Gröbner certificate plus explicit cofactor identities; research/orchard-15/realize/).
    No (13,24) rank-3 chirotope exists at all, which also answers over R the question of Kühne,
    Szemberg and Tutaj-Gasińska (arXiv:2401.14766) about a 13-point configuration with 24
-   three-point lines. [Status at drafting: the census of (13,23) chirotopes is being re-run
-   without symmetry breaking as a control; do not submit item 3 until that run agrees.]
+   three-point lines. [The census re-run without symmetry breaking agreed on 2026-09-05: exactly the predicted
+   184,320 labelled models, every one the same class (realize/nolex/PREDICTION.md, RESULT.md).]
 
 ## Proposed edit text (OEIS conventions: no markup, one fact per line)
 
@@ -49,8 +49,8 @@ COMMENTS (replace the 2013 line):
 LINKS (add):
   Artificial Wasteland, <a href="https://artwaste.land/strata/no-thirty-second-row/">No
   Thirty-Second Row</a>: a(15) = 31, with the certificate ledger, 2026.
-  Artificial Wasteland, <a href="https://doi.org/10.5281/zenodo.XXXXXXX">The orchard problem at
-  fifteen points: t3(15) = 31 (certificates)</a>, Zenodo, 2026. [DOI to be minted; Liam publishes]
+  Artificial Wasteland, <a href="https://doi.org/10.5281/zenodo.22468969">The orchard problem at
+  fifteen points: t3(15) = 31 (certificates)</a>, Zenodo, 2026. [reserved on the draft; live once Liam publishes]
 
 EXTENSIONS:
   a(15)-a(16) from [submitter], [date].

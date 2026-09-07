@@ -1,0 +1,7 @@
+all-models: 500 block assignments
+all-models: 1000 block assignments
+all-models: 1500 block assignments
+all-models: 2000 block assignments
+all-models: 2500 block assignments
+all-models: 3000 block assignments
+{"all_degrees_minimum": false, "b": 27, "backend": "pysat-cadical153-incremental", "chiro_gp_relations": 10010, "clauses": 487973, "counts": {"anchor_units": 14, "base_clauses": 421876, "cardinality_clauses": 36396, "cardinality_variables": 18198, "cube_units": 0, "degree_clauses": 13020, "degree_variables": 6048, "lex_clauses": 9491, "lex_generators": 11, "lex_variables": 1591, "pair_clauses": 6006, "row_units": 78, "tie_clauses": 1092}, "cube": null, "cube_stabiliser_lex_elements": null, "encode_seconds": 0.704857, "exact_b": true, "kelly_moser": 6, "labelled_models": 3125, "leave_edges": 10, "max_blocks_per_point": 6, "min_leave_degree": 1, "min_leave_points_at_least": 11, "output": "<repo>/research/orchard-15/realize/pts-14-27-labelled.pts", "proof_logged": false, "row_blocks": [[0, 1, 2], [0, 3, 4], [0, 5, 6], [0, 7, 8], [0, 9, 10], [0, 11, 12]], "row_leave_neighbours": [13], "solver_stats": null, "timeout_seconds": 36000.0, "total_seconds": 36000.755419, "v": 14, "variables": 87353, "verdict": "TIMEOUT"}
