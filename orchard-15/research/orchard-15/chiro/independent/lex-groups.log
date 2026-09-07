@@ -1,0 +1,26 @@
+15-32 cube 0: GAP stabiliser order 384, exist.py group size 
+384, identical as sets of permutations: true
+15-32 cube 1: GAP stabiliser order 32, exist.py group size 
+32, identical as sets of permutations: true
+15-32 cube 2: GAP stabiliser order 72, exist.py group size 
+72, identical as sets of permutations: true
+15-32 cube 3: GAP stabiliser order 12, exist.py group size 
+12, identical as sets of permutations: true
+VERDICT 15-32: every cube's lex-leader group IS the orbit stabiliser, element \
+for element
+14-27 cube 0: GAP stabiliser order 32, exist.py group size 
+32, identical as sets of permutations: true
+14-27 cube 1: GAP stabiliser order 24, exist.py group size 
+24, identical as sets of permutations: true
+14-27 cube 2: GAP stabiliser order 4, exist.py group size 
+4, identical as sets of permutations: true
+14-27 cube 3: GAP stabiliser order 6, exist.py group size 
+6, identical as sets of permutations: true
+14-27 cube 4: GAP stabiliser order 8, exist.py group size 
+8, identical as sets of permutations: true
+14-27 cube 5: GAP stabiliser order 10, exist.py group size 
+10, identical as sets of permutations: true
+14-27 cube 6: GAP stabiliser order 1, exist.py group size 
+1, identical as sets of permutations: true
+VERDICT 14-27: every cube's lex-leader group IS the orbit stabiliser, element \
+for element
