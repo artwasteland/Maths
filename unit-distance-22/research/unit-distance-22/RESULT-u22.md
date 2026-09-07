@@ -113,7 +113,7 @@ graphs) and the minimum-degree reach table.
   TU filter, the 3 known graphs present (`results/calib-unpruned/19-50/`, a cloud run of
   1 h 40 min); n = 20 gives 7 F-free, 1 after the TU filter, the known graph present
   (`results/calib-unpruned/20-54/`, 1 h 49 min, the tree peaking at 6,588,098 children at
-  n = 14); n = 21 [running: expect 149 / 19]. **The pruned pipeline reproduces AMP's after-TU census** at n = 16..20: 1, 8, 38,
+  n = 14); n = 21 gives 149 F-free graphs, 19 after the TU filter, the 5 known graphs present (`results/calib-unpruned/21-57/`, a cloud run of 33 h on the streamed driver, the tree peaking at 75,955,330 children at n = 15, 2026-09-05 22:30Z to 2026-09-07 05:59Z). **The pruned pipeline reproduces AMP's after-TU census** at n = 16..20: 1, 8, 38,
   5, 1, 19 (the calibration runs at targets (19,50), (20,54), (21,57); the (21,57) run alone
   visits 16-41, 17-43, 18-46, 19-50, 20-54, 21-57 and keeps 1, 8, 38, 5, 1, 19: the whole after-TU
   column of Table 1 from one unsliced pruned run, `results/calib/21-57/`). Inside the (22,61) run itself,
@@ -135,7 +135,7 @@ graphs) and the minimum-degree reach table.
 | gate | requirement | status |
 |---|---|---|
 | G1 | literature recheck on launch day; AMP email drafted for the human | done; the human sent the letter of result to Alexeev, Mixon and Parshall on 2026-09-06 (`EMAIL-DRAFT-AMP.md`); the May 2026 disproof of the unit distance conjecture noted in Section 7 |
-| G2 | Table 1 reproduced | unpruned at 16..20 (21 running); pruned after-TU at 16..21 complete |
+| G2 | Table 1 reproduced | unpruned at 16..21 complete (149 / 19 at 21); pruned after-TU at 16..21 complete |
 | G3 | certificate formats and n <= 21 cases pass the checker | embedder: 16, 17, 19, 20, 21 pass (at 21: 19 survivors, 5 embedded, 14 refuted, 0 unknown, checker ACCEPT); 18 [running: 20 of 38 were unknown before the last two codex jobs] |
 | G4 | the delta = 4 branch | closed (Lemma D4) |
 | G5 | shards to workers with manifests, hashed | done; every slice's manifests on its branch |

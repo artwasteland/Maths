@@ -1,0 +1,5 @@
+known_56_pass=56
+forbidden_planted_verified=74
+tu_pair_removed_verified=6
+tu_pair_present_results=[[0,"pass",null],[1,"pass",null],[2,"pass",null],[3,"tu",4],[4,"tu",0],[5,"pass",null]]
+corrupt_witness_rejected=1

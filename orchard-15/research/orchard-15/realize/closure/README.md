@@ -16,6 +16,20 @@ with a DRAT proof and drat-trim can check the proof. UNSAT = the census is compl
 This reproduces, as a checkable certificate, the "UNSAT after enumeration" with which the lex
 census itself terminated (REPORT.md, 2933 s).
 
-## (13,23), no-lex census (184,320 labelled models) and (14,27)
+## (13,23), no-lex census (184,320 labelled models): abandoned
 
-Running at the time of writing; recorded here when they return.
+kissat ran 10 h on the standalone closure (7,4 GB of proof by then) and was killed on
+2026-09-06 19:05Z with its paused pysat closing call, for disk: the control's prediction was
+already met exactly, the lex closure above is certified, and a proof of that size could not have
+been checked here. Not pursued.
+
+## (14,27): the monolithic closure failed; the cube census replaced it
+
+The same standalone closure (sha256 e8659415..., 487,973 + 3,125 clauses) ran 14 h 50 min in
+kissat on the cloud worker until the proof (26,860,388,352 bytes) exhausted the sandbox disk
+(`kissat: fatal error: flushing 1048576 bytes in proof write-buffer failed`, 2026-09-07 21:08Z
+(sic: 2026-09-06)), no verdict; and 13 h on the coordinator's box (13 GB) before it was killed
+for the same reason. The lex-leader breaking is too weak for the closing call at this size.
+The completeness certificate came instead from the census inside cube frames,
+`chiro/cube_census.py`, recorded in `../cube-census-14-27/` (28,788 children, every closure
+UNSAT with a drat-trim-accepted proof, 2026-09-07 06:01Z).

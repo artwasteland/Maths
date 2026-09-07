@@ -160,9 +160,9 @@ models, all distinct, every one canonicalising to the single class (4 leave-free
 |Z2 wr S6| = 46,080, divided by a trivial automorphism group). Hence no real (13,23) arrangement exists, and with the known (13,22) construction,
 **t3(13) = 22**. What remains before this is stated unconditionally: the census re-run
 without the lex-leader (`realize/nolex/`) must canonicalise to the same single class.
-(14,27), the same route to t3(14) = 26, is the next brief.
+(14,27), the same route, is Section 3c.
 
-## 3c. Fourteen: t3(14) = 26, pending one certificate (2026-09-06 10:40Z)
+## 3c. Fourteen: t3(14) = 26, certified (2026-09-07 06:01Z)
 
 The same route at (14,27), the last orchard value that rested on Du's lost computation. The lex
 census `exist.py 14 27 --all-models --timeout 36000` (worker branch
@@ -174,13 +174,32 @@ it, exactly the shape of the closing call that the (13,23) censuses showed. naut
 with `check_batch.py` accepting all 8 certificates (`realize/verdicts-14-27.jsonl`,
 `realize/checks-14-27.jsonl`). Nothing came out `real` or `unknown`.
 
-What is NOT yet established is that the 8 classes are all of them. The closure certificate of
-`chiro/census_closure.py` (the census CNF plus one blocking clause per found model, sha256
-e8659415..., 487,973 + 3,125 clauses) is being refuted by kissat on the worker and on the
-coordinator's box; `s UNSATISFIABLE` checked by drat-trim would certify the census complete and
-hence **t3(14) = 26** by machine; `s SATISFIABLE` would hand back a missing model and the census
-would continue from it. Until that returns, t3(14) = 26 remains Du's value with eight of its
-cases certified and its completeness open.
+Completeness, the part the lex census could not certify: its closing call did not return in
+36,000 s, and the standalone closure CNF (`chiro/census_closure.py`, sha256 e8659415...,
+487,973 + 3,125 clauses) ran 14 h 50 min in kissat on the worker before its proof (26.9 GB)
+exhausted the disk with no verdict, and 13 h on the coordinator's box before it was killed for
+the same reason; a proof of that size could not have been checked here anyway. The census was
+therefore re-run inside `exist.py`'s cube frames (`chiro/cube_census.py`;
+`realize/cube-census-14-27/README.md`): the rows of points 1 and 2 fixed to one orbit
+representative per cube, 7 depth-1 cubes and 28,788 depth-2 children, the lex-leader in each
+child taken over the stabiliser of its rows (the stabiliser that GAP computes independently,
+Section 3), every model of each child enumerated by an incremental cadical and blocked, and
+the closure of each child (its clauses plus its blocking clauses) refuted by kissat with a DRAT
+proof that drat-trim accepted. Result (`realize/cube-census-14-27/aggregate-manifest.json`,
+2026-09-07 06:01Z): **28,788 of 28,788 children UNSAT VERIFIED**; 834 labelled models in 502
+children, canonicalising to **exactly the 8 classes** of the lex census (`classes.pts` is
+byte-identical to `pts-14-27-pseudoline.txt`), no ninth; 2,575 children were done twice on
+different machines and every pair agreed. The proofs totalled 471 GB and were deleted after
+acceptance (any one is regenerable from its cube name in about a minute); machine time 97.5 h
+of kissat, 196 h of drat-trim and 104 h of enumeration, on 23 four-core cloud workers and the
+coordinator's box, 2026-09-06 20:00Z to 2026-09-07 06:00Z. Controls: (13,23) through the same
+driver gives exactly its one class (12 labelled models over 2 cubes); (13,24) gives none;
+dropping one blocking clause makes every closure SAT; the aggregator fails on a deleted
+record, a flipped verdict and a disagreeing duplicate.
+
+So every PTS(14,27) that admits a rank-3 chirotope is one of the 8, and none of the 8 is
+realizable over R: **t3(14) = 26**, Du's 2008 value, now with a certificate a stranger can
+replay.
 
 ## 4. Controls (all in `chiro/REPORT-EXIST.md`, same encoder, same lemmas)
 
@@ -207,14 +226,16 @@ over-approximation, and an UNSAT refutes the real configurations too.
 
 ## 5. What is and is not claimed
 
-- Claimed (Section 3 now has a verified refutation for every cube; cube 3's second proof and the depth-2 certification are still running): t3(15) = 31 over the reals, and the pseudoline
-  statement of Section 1.
+- Claimed (Section 3: a verified refutation for every cube, LRAT accepted by cake_lpr for all
+  four, cube 3 additionally by its 5393-child depth-2 certification): t3(15) = 31 over the
+  reals, and the pseudoline statement of Section 1.
 - Also new, unconditional now: no (13,24) pseudoline arrangement exists, so t3(13) <= 23 by a
   checkable certificate; Kühne, Szemberg and Tutaj-Gasińska's question over other fields
   (complex, finite) stays open, because chirotopes see only ordered fields.
-- Not claimed: Zhao Hui Du's values t3(13) = 22 and t3(14) = 26 (2008, write-up lost) are not
-  reproduced here. (13,23) is SAT at the chirotope level (a pseudoline (13,23) arrangement
-  exists), so deciding it needs the realizability stage, exactly as (14,27) does.
+- Claimed (Sections 3b and 3c): Zhao Hui Du's values t3(13) = 22 and t3(14) = 26 (2008,
+  write-up lost), each now with a certificate: a complete census of the pseudoline plantings
+  at (13,23) and (14,27), and a checked refutation over R of every class the census finds
+  (one class at 13, eight at 14).
 - Not claimed: anything about Erdős problem #669 beyond its n = 15 instance, and nothing about
   the formula's sporadic exceptions beyond "15 is not one".
 

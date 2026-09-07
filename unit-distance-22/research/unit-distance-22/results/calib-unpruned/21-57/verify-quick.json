@@ -1,0 +1,77 @@
+{
+  "pattern_stats": {
+    "forbidden_graphs": 74,
+    "patterns": 635,
+    "size_distribution": {
+      "2": 61,
+      "3": 413,
+      "4": 130,
+      "5": 26,
+      "6": 4,
+      "7": 1
+    }
+  },
+  "normal_k4": {
+    "parents_seen": 1,
+    "parents_processed": 1,
+    "parents_degree_skipped": 0,
+    "bad_sets": 1,
+    "neighbourhoods": 1,
+    "neighbourhood_orbit_reps": 0,
+    "neighbourhoods_bad": 1,
+    "child_orbit_rejected": 0,
+    "children_written": 0,
+    "wall_seconds": 3.5e-05,
+    "cpu_seconds": 3.2e-05,
+    "max_rss_kib": 17432
+  },
+  "mutant_k4": {
+    "parents_seen": 1,
+    "parents_processed": 1,
+    "parents_degree_skipped": 0,
+    "bad_sets": 0,
+    "neighbourhoods": 1,
+    "neighbourhood_orbit_reps": 1,
+    "neighbourhoods_bad": 0,
+    "child_orbit_rejected": 0,
+    "children_written": 1,
+    "wall_seconds": 4.5e-05,
+    "cpu_seconds": 4.3e-05,
+    "max_rss_kib": 17432
+  },
+  "normal_orbit": {
+    "parents_seen": 2,
+    "parents_processed": 2,
+    "parents_degree_skipped": 0,
+    "bad_sets": 0,
+    "neighbourhoods": 10,
+    "neighbourhood_orbit_reps": 7,
+    "neighbourhoods_bad": 0,
+    "child_orbit_rejected": 2,
+    "children_written": 5,
+    "wall_seconds": 5.4e-05,
+    "cpu_seconds": 5.2e-05,
+    "max_rss_kib": 17432
+  },
+  "mutant_orbit": {
+    "parents_seen": 2,
+    "parents_processed": 2,
+    "parents_degree_skipped": 0,
+    "bad_sets": 0,
+    "neighbourhoods": 10,
+    "neighbourhood_orbit_reps": 7,
+    "neighbourhoods_bad": 0,
+    "child_orbit_rejected": 0,
+    "children_written": 7,
+    "wall_seconds": 5.3e-05,
+    "cpu_seconds": 5.2e-05,
+    "max_rss_kib": 17432
+  },
+  "red_controls": [
+    "RED pattern validator: deleting forbidden graph 73 made --pattern-stats exit 2",
+    "RED forbidden-child rejection: C~ appeared after deleting the K3 bad set",
+    "RED child-orbit uniqueness: duplicate canonical graph6 in <repo>/research/unit-distance-22/enum/scratch/verify-quick/orbit-mutant.g6",
+    "RED byte determinism: files are not byte-identical: <repo>/research/unit-distance-22/enum/scratch/verify-quick/orbit-normal.g6 versus <repo>/research/unit-distance-22/enum/scratch/verify-quick/orbit-repeat-corrupt.g6",
+    "RED manifest hash: child hash is wrong in <repo>/research/unit-distance-22/enum/scratch/verify-quick/broken.manifest.json"
+  ]
+}

@@ -109,3 +109,11 @@ The 8.98 GB cadical proof of cube 3 (solve 18,004 s) hit drat-trim's compiled 40
 ## Independent check of the orbit decomposition (2026-09-06)
 
 GAP 4.12.1, from the definition, no input from exist.py: (15,32) four orbits 120/1440/640/3840 with the fixed representatives a transversal and every cube lex-leader group equal to the orbit stabiliser element for element; (14,27) likewise with seven orbits. Scripts, logs and a hand count in `independent/`.
+
+## (14,27) cube census, the completeness certificate for t3(14) = 26 (2026-09-07 06:01Z)
+
+`cube_census.py 14 27 --cube-depth 2` over all 28,788 depth-2 children on 23 cloud workers and
+the box: 28,788 records UNSAT_VERIFIED (kissat 4.0.4 + drat-trim per child), 834 labelled models
+in 502 children, exactly the 8 known classes, 2,575 agreeing duplicates, proofs 470,771,688,199
+bytes in total (deleted after acceptance), kissat 351,202 s, drat-trim 705,327 s, enumeration
+373,895 s. Archive, manifest, classes and hashes: `../realize/cube-census-14-27/`.
