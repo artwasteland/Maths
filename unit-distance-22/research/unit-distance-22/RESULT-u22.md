@@ -128,7 +128,7 @@ graphs) and the minimum-degree reach table.
   A shared nauty defect would be invisible to this check (both use nauty 2.8.8).
 - **The certificate checker** goes red on a corrupted certificate and on an extra embedded
   graph (`gate-g3.py --self-test`); `check/selftest.py` runs 41 checks with 23 mutations
-  rejected.
+  rejected. Four whole slices (3, 15, 27 and 39) were later replicated byte for byte by a second worker that ran them independently, days apart, on another machine (PROVENANCE.md NEW5).
 
 ## 6. Gates (CONTRACT Section 7), status
 

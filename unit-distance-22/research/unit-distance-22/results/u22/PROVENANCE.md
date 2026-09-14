@@ -158,3 +158,14 @@ Eleven workers now agree; only w10 has not published.
 prefix from scratch under F2 and matches w1 on all 102 shared files. Twelve workers now agree
 (w1 as reference; w2, w3, w5, w6, w7, w8, w9, w11, w12, w13, w14); the two that never published
 (w4, w10) are the two stuck sessions, replaced by w13 and w14.
+
+## NEW5 (2026-09-07 13:13Z): four slices replicated on a second machine, byte for byte
+
+Worker w4 (branch `claude/reaching-noether-cloud-u22-w4`), the session that was stuck in
+its first turn on 2026-09-05 and was replaced by w13 for slices 3, 15, 27 and 39, kept running
+its runbook after it was unstuck and finished all four slices on its own at 13:13Z on
+2026-09-07, from scratch, on a different machine, days after w13. Its `counts.json` and
+`hashes.json` for every one of the four slices are byte-identical to w13's (sha256 compared
+by the coordinator): every per-cell count and every level file's hash from level 14 to the
+(22,61) top agree. This is a full replication of four of the 48 slices, one twelfth of the
+tree above level 13, by two independent runs of the same generator.

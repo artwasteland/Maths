@@ -23,8 +23,8 @@
     }
   ],
   "publisher": "Zenodo",
-  "publication_date": "2026-09-06",
-  "version": "2026-09-06",
+  "publication_date": "2026-09-14",
+  "version": "2026-09-14",
   "subjects": [
     {
       "subject": "integer sequences"
@@ -69,6 +69,13 @@
       "scheme": "url",
       "relation_type": {
         "id": "issupplementto"
+      }
+    },
+    {
+      "identifier": "10.1007/bf00147569",
+      "scheme": "doi",
+      "relation_type": {
+        "id": "cites"
       }
     }
   ],
