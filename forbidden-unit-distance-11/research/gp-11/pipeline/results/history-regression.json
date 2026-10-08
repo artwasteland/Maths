@@ -1,0 +1,7 @@
+{
+  "after_fix": "PASS",
+  "before_fix": "AssertionError: history_duplicate_ancestor",
+  "before_records_valid_json": true,
+  "source_after_sha256": "0c0549279eba70fa5fec9307e0e134c31ed8ac6ffa19e915198ab6ffe84c389f",
+  "source_before_sha256": "cb1d2a919ddee7816e29119ba9a2e11a0b76378e794235bdb1cd0705e996b898"
+}

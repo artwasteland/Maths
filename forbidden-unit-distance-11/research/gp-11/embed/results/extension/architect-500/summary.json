@@ -1,0 +1,77 @@
+{
+  "artifacts": {
+    "UNKNOWN.g6": {
+      "bytes": 624,
+      "sha256": "1758ee81719b9fba3f1d45d0df6dccbaae87bb8001b93d050d42aace92f39168"
+    },
+    "checker-report.json": {
+      "bytes": 1479,
+      "sha256": "3bbe3c327c220b4e074a3dc12074429f4e15862b41b5fa3a52748a04d4d864f0"
+    },
+    "input.g6": {
+      "bytes": 6000,
+      "sha256": "047790b8caf4c0f0accde05ad1b550e8d200efa7ca9268744492c06cf61dd9f3"
+    },
+    "records.jsonl.gz": {
+      "bytes": 281131,
+      "sha256": "d38bd00ec1e10bf8e5b15c5182c787f8aeb30db208b8cdac974438dc72cec083"
+    },
+    "run.json": {
+      "bytes": 218,
+      "sha256": "639598e475120e45b6b46db0071f86c9b71ea81acb187e88b03caa5659027034"
+    },
+    "timings.jsonl.gz": {
+      "bytes": 42253,
+      "sha256": "cd8cff6d6bbfc0b27564ec29182b564d9c6bb918582065b490a41127dd380830"
+    }
+  },
+  "attempt_reasons": {
+    "attempt_timeout": 16,
+    "base_not_biconnected": 126,
+    "embedded": 448,
+    "extension:collision": 99,
+    "extension:far": 23,
+    "graph_timeout": 5
+  },
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "checker_status": "ACCEPT",
+  "completed": true,
+  "count": 500,
+  "counts": {
+    "embedded": 448,
+    "unknown": 52
+  },
+  "field_degrees": {
+    "2": 1,
+    "4": 298,
+    "8": 107,
+    "10": 34,
+    "12": 2,
+    "16": 6
+  },
+  "graph_cpu_seconds": 92.09039300000023,
+  "graph_seconds": 99.82383690727875,
+  "graphs_with_attempted_nonbiconnected_base": {
+    "embedded": 42,
+    "unknown": 19
+  },
+  "max_child_rss_kib": 160468,
+  "max_rss_kib": 160340,
+  "max_seconds": 3.0095045999623835,
+  "mean_seconds": 0.1996476738145575,
+  "median_seconds": 0.05547621473670006,
+  "min_MemAvailable_kib": 5046660,
+  "online_check_seconds": 39.91261019464582,
+  "p95_seconds": 1.0276733417995274,
+  "replay_cpu_seconds": 37.78427500000001,
+  "replay_seconds": 39.85596894985065,
+  "setup_seconds": 22.650252871215343,
+  "unknown_reasons": {
+    "base_not_biconnected": 6,
+    "extension:collision": 7,
+    "extension:far": 4,
+    "graph_timeout": 5,
+    "no_degree_two_vertex": 17,
+    "placements_exhausted": 13
+  }
+}

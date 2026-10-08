@@ -1,0 +1,574 @@
+{
+  "status": "PASS",
+  "lens_positive": {
+    "rows": 3,
+    "square_candidates": 10,
+    "lp_seconds": 0.013999646063894033,
+    "lp_status": 0
+  },
+  "lens_one_constant_mutation": {
+    "rows": 3,
+    "square_candidates": 10,
+    "lp_seconds": 0.002393820323050022,
+    "lp_status": 2
+  },
+  "official_checks": [
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round4/tests-null-positive",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 0,
+      "final_line": "ACCEPT run verified",
+      "seconds": 0.3921064347960055,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+      "producer_detail": {
+        "basis_size": 1,
+        "helper_rows": 8,
+        "sat_pairs": 4,
+        "positive_targets": 1,
+        "collision_tests": 0,
+        "quadratic_discovery": {},
+        "method": "null",
+        "seconds": 0.09375895420089364,
+        "limit": 10,
+        "extra_sat": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "stages": [
+          {
+            "stage": "system",
+            "seconds": 0.0006658341735601425
+          },
+          {
+            "stage": "preprocessed",
+            "seconds": 0.007471853867173195
+          },
+          {
+            "stage": "basis",
+            "seconds": 0.07321046385914087
+          },
+          {
+            "stage": "targets:1",
+            "seconds": 0.073250578250736
+          },
+          {
+            "stage": "lift:True",
+            "seconds": 0.08177704783156514
+          },
+          {
+            "stage": "flattened",
+            "seconds": 0.08559239795431495
+          },
+          {
+            "stage": "serialized",
+            "seconds": 0.08822190202772617
+          },
+          {
+            "stage": "verified",
+            "seconds": 0.09082347899675369
+          }
+        ]
+      }
+    },
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round4/tests-null-red",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 1,
+      "final_line": "REJECT run records_rejected",
+      "seconds": 0.06574798887595534,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+    },
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round4/tests-real-positive",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 0,
+      "final_line": "ACCEPT run verified",
+      "seconds": 0.07304909406229854,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+      "producer_detail": {
+        "basis_size": 16,
+        "helper_rows": 13,
+        "sat_pairs": 3,
+        "positive_targets": 2,
+        "collision_tests": 0,
+        "quadratic_discovery": {},
+        "method": "real",
+        "seconds": 0.11108499765396118,
+        "limit": 10,
+        "extra_sat": [],
+        "stages": [
+          {
+            "stage": "system",
+            "seconds": 0.0005039977841079235
+          },
+          {
+            "stage": "preprocessed",
+            "seconds": 0.004266501870006323
+          },
+          {
+            "stage": "basis",
+            "seconds": 0.01318561565130949
+          },
+          {
+            "stage": "targets:2",
+            "seconds": 0.04937755363062024
+          },
+          {
+            "stage": "lift:True",
+            "seconds": 0.05840676790103316
+          },
+          {
+            "stage": "flattened",
+            "seconds": 0.06283546704798937
+          },
+          {
+            "stage": "serialized",
+            "seconds": 0.08073658077046275
+          },
+          {
+            "stage": "verified",
+            "seconds": 0.09633965091779828
+          }
+        ]
+      }
+    },
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round4/tests-real-red",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 1,
+      "final_line": "REJECT run records_rejected",
+      "seconds": 0.07082515303045511,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+    }
+  ],
+  "hint_mutation_reason": "outside_frozen_B10_or_unparsed",
+  "safe_controls": [
+    {
+      "name": "prism",
+      "detail": {
+        "method": "null",
+        "seconds": 1.0014118570834398,
+        "limit": 1,
+        "extra_sat": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "stages": [
+          {
+            "stage": "system",
+            "seconds": 0.0009921267628669739
+          },
+          {
+            "stage": "preprocessed",
+            "seconds": 0.01999107375741005
+          }
+        ],
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "name": "prism",
+      "detail": {
+        "method": "real",
+        "seconds": 1.001638132147491,
+        "limit": 1,
+        "extra_sat": [],
+        "stages": [
+          {
+            "stage": "system",
+            "seconds": 0.0007963702082633972
+          },
+          {
+            "stage": "preprocessed",
+            "seconds": 0.013701335061341524
+          }
+        ],
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "name": "petersen",
+      "detail": {
+        "method": "null",
+        "seconds": 1.0014126249589026,
+        "limit": 1,
+        "extra_sat": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        "stages": [
+          {
+            "stage": "system",
+            "seconds": 0.001249672845005989
+          },
+          {
+            "stage": "preprocessed",
+            "seconds": 0.00341083575040102
+          }
+        ],
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "name": "petersen",
+      "detail": {
+        "method": "real",
+        "seconds": 1.0022748890332878,
+        "limit": 1,
+        "extra_sat": [],
+        "stages": [
+          {
+            "stage": "system",
+            "seconds": 0.0011238567531108856
+          },
+          {
+            "stage": "preprocessed",
+            "seconds": 0.0020572757348418236
+          }
+        ],
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "name": "spindle",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 28,
+        "helper_rows": 20,
+        "sat_pairs": 10,
+        "positive_targets": 0,
+        "collision_tests": 0,
+        "quadratic_discovery": {},
+        "method": "null",
+        "seconds": 0.028725819196552038,
+        "limit": 1,
+        "extra_sat": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "stages": [
+          {
+            "stage": "system",
+            "seconds": 0.0006187884137034416
+          },
+          {
+            "stage": "preprocessed",
+            "seconds": 0.010654645040631294
+          },
+          {
+            "stage": "basis",
+            "seconds": 0.028624532278627157
+          },
+          {
+            "stage": "targets:0",
+            "seconds": 0.0286316373385489
+          }
+        ]
+      }
+    },
+    {
+      "name": "spindle",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 15,
+        "helper_rows": 12,
+        "sat_pairs": 2,
+        "positive_targets": 0,
+        "collision_tests": 0,
+        "quadratic_discovery": {
+          "rows": 111,
+          "square_candidates": 119,
+          "lp_seconds": 0.007263708394020796,
+          "lp_status": 2
+        },
+        "method": "real",
+        "seconds": 0.052401561755687,
+        "limit": 1,
+        "extra_sat": [],
+        "stages": [
+          {
+            "stage": "system",
+            "seconds": 0.0004488090053200722
+          },
+          {
+            "stage": "preprocessed",
+            "seconds": 0.005214247852563858
+          },
+          {
+            "stage": "basis",
+            "seconds": 0.014822387602180243
+          },
+          {
+            "stage": "targets:0",
+            "seconds": 0.05232504289597273
+          }
+        ]
+      }
+    }
+  ],
+  "source_sha256": {
+    "round4.py": "7bb68675aa2c3a0a2f55c28dded2180a491094f5abfd81a1f26c0aea3bcbab2a",
+    "gp10refute.py": "a71b9c1d00f27253c19723d6227d5fc86e595889f996ed7115d48c638f18acf1",
+    "graphs.py": "29249a6942f9099a89cceb148fcfd2f266e99d545a70d33570abc392ae7b9f1f",
+    "algebra.py": "055b9d6220de0e58000720e5d17dc4aec4cc16da8b88e255d1c3cb6641236570",
+    "dag.py": "1301dd3d802b3b1467042b7f32330dafbc59990b5721642161f9e7732f1e58fe",
+    "quadratic_sos.py": "7f6815248265d25c044f07f27f19ae7c3ab396ac2ac9758d5851e7c7f8edf229",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec"
+  }
+}

@@ -1,0 +1,437 @@
+{
+  "candidate_count": 1515,
+  "tree_completed": 1515,
+  "external_refuted": 98,
+  "external_embedded": 290,
+  "processed": 1144,
+  "new_refuted": 7,
+  "current_eligible": 1127,
+  "unprocessed": 0,
+  "pending_tree": 0,
+  "still_undecided": 1120,
+  "processed_later_embedded": 17,
+  "per_method_attempts": {
+    "tu": 1144,
+    "null": 22,
+    "real": 22,
+    "portfolio": 1115,
+    "tree": 71
+  },
+  "per_method_seconds": {
+    "tu": 112.63135824119672,
+    "null": 43.07414058083668,
+    "real": 43.44985229661688,
+    "portfolio": 1476.8929292368703,
+    "tree": 534.4271119991317
+  },
+  "new_certificate_types": {
+    "tu": 5,
+    "tree": 2
+  },
+  "batch_search_seconds": 2221.896284976974,
+  "batch_check_seconds": 5.182138950563967,
+  "snapshot": {
+    "candidate_sha256": "6def4c94c7640241cf629a56b76a53b76bbd1952d80b9a6b78ac6b664bcb4946",
+    "tree": {
+      "path": "<scratch>/scratchpad/cand/tree5.jsonl",
+      "snapshot_bytes": 651694,
+      "consumed_bytes": 651694,
+      "sha256": "4096cafbc8ccbca3e1ecde6157ff29c057156add64dc608eaf21f9ba85cd3412",
+      "verdicts": {
+        "unknown": 1417,
+        "refuted": 98
+      }
+    },
+    "embed": {
+      "path": "<scratch>/scratchpad/cand/emb.jsonl",
+      "snapshot_bytes": 1701025,
+      "consumed_bytes": 1701025,
+      "sha256": "e36d08d24e14b6e2d8af22597c4310db57aa5d090df97d3a835f836954ca49ae",
+      "verdicts": {
+        "embedded": 290,
+        "unknown": 1225
+      }
+    },
+    "tree_configuration": {
+      "all_sat": false,
+      "extra_sat": [],
+      "forbidden_sha256": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+      "input_sha256": "6def4c94c7640241cf629a56b76a53b76bbd1952d80b9a6b78ac6b664bcb4946",
+      "known_sha256": null,
+      "methods": [
+        "tree"
+      ],
+      "seconds": 5.0,
+      "source_sha256": {
+        "algebra.py": "395d7109e25c880fd22d150af5ff7e4a305be4337fb918354092fa4caa27bf93",
+        "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec",
+        "gp10refute.py": "50d851358b91dbbc6cd6ac1ae8a5b8f110d7b59803d43eecf395ea8769a4e573",
+        "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63"
+      },
+      "states": 200
+    }
+  },
+  "batches": [
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0001",
+      "records": 22,
+      "refuted": 0,
+      "search_seconds": 87.57933761738241,
+      "seconds": 0.10906716296449304,
+      "dependency_records": null,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0002",
+      "records": 30,
+      "refuted": 0,
+      "search_seconds": 35.18470004480332,
+      "seconds": 0.09956820402294397,
+      "dependency_records": null,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0003",
+      "records": 4,
+      "refuted": 0,
+      "search_seconds": 4.071238414850086,
+      "seconds": 0.07158023118972778,
+      "dependency_records": null,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0004",
+      "records": 1,
+      "refuted": 0,
+      "search_seconds": 5.084542037453502,
+      "seconds": 0.33258575526997447,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0005",
+      "records": 40,
+      "refuted": 0,
+      "search_seconds": 35.24589538248256,
+      "seconds": 0.07751998724415898,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0006",
+      "records": 39,
+      "refuted": 0,
+      "search_seconds": 37.48128487588838,
+      "seconds": 0.07989523699507117,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0007",
+      "records": 40,
+      "refuted": 0,
+      "search_seconds": 26.355267398059368,
+      "seconds": 0.07973349466919899,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0008",
+      "records": 40,
+      "refuted": 0,
+      "search_seconds": 50.33450937690213,
+      "seconds": 0.07908099703490734,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0009",
+      "records": 40,
+      "refuted": 0,
+      "search_seconds": 48.5394956311211,
+      "seconds": 0.08373543014749885,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0010",
+      "records": 20,
+      "refuted": 0,
+      "search_seconds": 198.56950467918068,
+      "seconds": 0.10220213187858462,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0011",
+      "records": 39,
+      "refuted": 0,
+      "search_seconds": 54.46983880130574,
+      "seconds": 0.08058920176699758,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0012",
+      "records": 40,
+      "refuted": 0,
+      "search_seconds": 47.05306361382827,
+      "seconds": 0.14044366404414177,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0013",
+      "records": 34,
+      "refuted": 0,
+      "search_seconds": 70.37290636077523,
+      "seconds": 0.12010837299749255,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0014",
+      "records": 34,
+      "refuted": 0,
+      "search_seconds": 73.31484341574833,
+      "seconds": 0.08117300318554044,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0015",
+      "records": 40,
+      "refuted": 1,
+      "search_seconds": 41.083865272812545,
+      "seconds": 0.1535356300882995,
+      "dependency_records": 0,
+      "method_counts": {
+        "tu": 1
+      },
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0016",
+      "records": 39,
+      "refuted": 0,
+      "search_seconds": 30.074239160399884,
+      "seconds": 0.11159888189285994,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0017",
+      "records": 40,
+      "refuted": 0,
+      "search_seconds": 20.99788600578904,
+      "seconds": 0.074138468131423,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0018",
+      "records": 39,
+      "refuted": 0,
+      "search_seconds": 46.24119817605242,
+      "seconds": 0.11116435378789902,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0019",
+      "records": 37,
+      "refuted": 0,
+      "search_seconds": 67.04624189296737,
+      "seconds": 0.07646364299580455,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0020",
+      "records": 30,
+      "refuted": 0,
+      "search_seconds": 91.39568433072418,
+      "seconds": 0.08444257127121091,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0021",
+      "records": 40,
+      "refuted": 0,
+      "search_seconds": 61.96175174694508,
+      "seconds": 0.1392540456727147,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0022",
+      "records": 40,
+      "refuted": 0,
+      "search_seconds": 72.34490690007806,
+      "seconds": 0.23853773903101683,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0023",
+      "records": 40,
+      "refuted": 1,
+      "search_seconds": 41.91992293763906,
+      "seconds": 0.07673396170139313,
+      "dependency_records": 0,
+      "method_counts": {
+        "tu": 1
+      },
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0024",
+      "records": 40,
+      "refuted": 1,
+      "search_seconds": 49.45684504695237,
+      "seconds": 0.18122229212895036,
+      "dependency_records": 0,
+      "method_counts": {
+        "tu": 1
+      },
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0025",
+      "records": 39,
+      "refuted": 1,
+      "search_seconds": 55.47040176205337,
+      "seconds": 0.16162072401493788,
+      "dependency_records": 0,
+      "method_counts": {
+        "tu": 1
+      },
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0026",
+      "records": 37,
+      "refuted": 0,
+      "search_seconds": 33.6455920371227,
+      "seconds": 0.09220639988780022,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0027",
+      "records": 32,
+      "refuted": 0,
+      "search_seconds": 111.96716846665367,
+      "seconds": 0.10438594594597816,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0028",
+      "records": 38,
+      "refuted": 0,
+      "search_seconds": 52.58289224235341,
+      "seconds": 0.10506055690348148,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0029",
+      "records": 32,
+      "refuted": 0,
+      "search_seconds": 99.94341817498207,
+      "seconds": 0.10030424874275923,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0030",
+      "records": 28,
+      "refuted": 0,
+      "search_seconds": 106.84223220916465,
+      "seconds": 0.10867492016404867,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0031",
+      "records": 36,
+      "refuted": 0,
+      "search_seconds": 131.35677725402638,
+      "seconds": 0.14252700190991163,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0032",
+      "records": 34,
+      "refuted": 0,
+      "search_seconds": 119.5065028402023,
+      "seconds": 0.08098564203828573,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0033",
+      "records": 40,
+      "refuted": 0,
+      "search_seconds": 81.6325171967037,
+      "seconds": 0.07600232120603323,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0034",
+      "records": 4,
+      "refuted": 0,
+      "search_seconds": 13.710706033743918,
+      "seconds": 0.06496602669358253,
+      "dependency_records": 0,
+      "method_counts": {},
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0035",
+      "records": 16,
+      "refuted": 3,
+      "search_seconds": 119.05910763982683,
+      "seconds": 1.361030702944845,
+      "dependency_records": 0,
+      "method_counts": {
+        "tu": 1,
+        "tree": 2
+      },
+      "final_line": "ACCEPT run verified"
+    }
+  ]
+}

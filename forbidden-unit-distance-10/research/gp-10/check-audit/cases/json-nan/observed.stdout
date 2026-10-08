@@ -1,0 +1,2 @@
+REJECT record records.jsonl:1 json_constant: NaN
+REJECT run records_rejected

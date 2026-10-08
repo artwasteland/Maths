@@ -1,0 +1,28 @@
+checker: <repo>/research/unit-distance-22/check/udcheck_rhombus.py
+T1 55 known graphs (canonical, order >= 1) in 21 files: accepted 21, rejected 0; prover flags 0; checker totals {'records': 55, 'forbidden': 0, 'tu': 0, 'embedded': 0, 'refuted': 0, 'unknown': 55, 'proof_nodes': 0, 'rhombus_tu': 0, 'rhombus_refuted': 0, 'tri_tu': 0, 'tri_refuted': 0}
+T2 32653 embedded B10 graphs in 11 files: accepted 11, rejected 0; prover tu 9712, refuted 0; checker totals {'records': 32653, 'forbidden': 0, 'tu': 9712, 'embedded': 0, 'refuted': 0, 'unknown': 22941, 'proof_nodes': 0, 'rhombus_tu': 9712, 'rhombus_refuted': 0, 'tri_tu': 0, 'tri_refuted': 0}
+T3 mutant 1: 32695 false flags in 27 files: rejected 27, accepted 0; one record per file: 25 of 25 rejected
+T3 mutant 2: 32706 false flags in 29 files: rejected 29, accepted 0; one record per file: 25 of 25 rejected
+T3 mutant 3: 9712 false flags in 7 files: rejected 7, accepted 0; one record per file: 25 of 25 rejected
+T3 mutant 4: 18319 false flags in 26 files: rejected 26, accepted 0; one record per file: 25 of 25 rejected
+T4 the int64-wrap certificate for K2,3 (sum exceeds 2^63; equal to the target modulo 2^64): rejected: ombus/scratch/through-checker/t4/5-6.certs.jsonl:1.witness.rhombus: rule 6: sum_j l_j r(C_j) is not s(e_a - e_b): they differ at vertices [0, 1, 3, 4]
+T5 a repeated vertex in a cycle (mutant 2, Bw): rejected: earch/unit-distance-22/enum/test-rhombus/scratch/through-checker/t5/3-3.certs.jsonl:1.witness.rhombus: rule 2: cycles[0] [0, 2, 1, 2] repeats a vertex
+T6 28500 descent sample graphs (19 files) in 21 checker files: accepted 21, rejected 0; prover tu 7856 refuted 2876; checker totals {'records': 28500, 'forbidden': 0, 'tu': 7856, 'embedded': 0, 'refuted': 2876, 'unknown': 17768, 'proof_nodes': 0, 'rhombus_tu': 7856, 'rhombus_refuted': 2876, 'tri_tu': 0, 'tri_refuted': 0}
+T7 K2,3 and the six gadgets (canonical): prover/checker [('refuted', True), ('tu', True), ('tu', True), ('tu', True), ('tu', True), ('tu', True), ('tu', True)]
+T8 coefficient changed: rejected: h/through-checker/t8/0/5-6.certs.jsonl:1.witness.rhombus: rule 6: sum_j l_j r(C_j) is not s(e_a - e_b): they differ at vertices [0, 2, 3, 4]
+T8 scale doubled: rejected: scratch/through-checker/t8/1/5-6.certs.jsonl:1.witness.rhombus: rule 6: sum_j l_j r(C_j) is not s(e_a - e_b): they differ at vertices [0, 1]
+T8 float coefficient: rejected: ugh-checker/t8/2/5-6.certs.jsonl:1.witness.rhombus: rule 3: coefficients[0] is not a JSON integer (booleans, floats and strings are refused)
+T8 boolean coefficient: rejected: ugh-checker/t8/3/5-6.certs.jsonl:1.witness.rhombus: rule 3: coefficients[1] is not a JSON integer (booleans, floats and strings are refused)
+T8 extra key: rejected: ness.rhombus: rule 1: a refuted rhombus witness has exactly the keys ['coefficients', 'cycles', 'pair', 'scale']; missing [], extra ['note']
+T8 pair reversed: rejected: scratch/through-checker/t8/5/5-6.certs.jsonl:1.witness.rhombus: rule 6: sum_j l_j r(C_j) is not s(e_a - e_b): they differ at vertices [0, 1]
+T8 repeated vertex: rejected: istance-22/enum/test-rhombus/scratch/through-checker/t8/6/5-6.certs.jsonl:1.witness.rhombus: rule 2: cycles[0] [0, 3, 0, 4] repeats a vertex
+T8 verdict tu without edge: rejected: s.rhombus: rule 1: a tu rhombus witness has exactly the keys ['coefficients', 'cycles', 'edge', 'pair', 'scale']; missing ['edge'], extra []
+T8 coefficient 0: rejected: /research/unit-distance-22/enum/test-rhombus/scratch/through-checker/t8/8/5-6.certs.jsonl:1.witness.rhombus: rule 3: coefficients[0] is zero
+T8 coefficient 2^62: rejected: 22/enum/test-rhombus/scratch/through-checker/t8/9/5-6.certs.jsonl:1.witness.rhombus: rule 3: coefficients[0] has absolute value 2^62 or more
+T8 edge reversed: rejected: gh-checker/t8/10/6-8.certs.jsonl:1.witness.rhombus: rule 6: sum_j l_j r(C_j) is not s(e_a - e_b - e_p + e_q): they differ at vertices [3, 4]
+T8 pair made an edge: rejected: t-rhombus/scratch/through-checker/t8/11/6-8.certs.jsonl:1.witness.rhombus: rule 4: pair [0, 3] is an edge of G; a tu pair must be a non-edge
+T8 edge made a non-edge: rejected: /unit-distance-22/enum/test-rhombus/scratch/through-checker/t8/12/6-8.certs.jsonl:1.witness.rhombus: rule 5: edge [0, 1] is not an edge of G
+T8 edge key dropped: rejected: s.rhombus: rule 1: a tu rhombus witness has exactly the keys ['coefficients', 'cycles', 'edge', 'pair', 'scale']; missing ['edge'], extra []
+T8 verdict refuted with an edge: rejected: ness.rhombus: rule 1: a refuted rhombus witness has exactly the keys ['coefficients', 'cycles', 'pair', 'scale']; missing [], extra ['edge']
+T8 witness key tri: rejected: cker/t8/15/6-8.certs.jsonl:1.witness.tri: witness.tri: missing keys ['tree'], extra keys ['coefficients', 'cycles', 'edge', 'pair', 'scale']
+THROUGH-CHECKER PASS

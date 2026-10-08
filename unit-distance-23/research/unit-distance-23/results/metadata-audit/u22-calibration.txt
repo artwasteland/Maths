@@ -1,0 +1,6 @@
+n=16: known=1; raw=1, known missing from raw=0; keep=None, known missing from keep=None
+n=17: known=7; raw=15, known missing from raw=0; keep=None, known missing from keep=None
+n=18: known=16; raw=84, known missing from raw=0; keep=None, known missing from keep=None
+n=19: known=3; raw=17, known missing from raw=0; keep=5, known missing from keep=0
+n=20: known=1; raw=7, known missing from raw=0; keep=1, known missing from keep=0
+n=21: known=5; raw=149, known missing from raw=0; keep=19, known missing from keep=0

@@ -1,0 +1,28 @@
+{
+  "bytes": 914553,
+  "certificate_sha256": "ffa1e926a9f1570f4395d72ce0356e83f80cebbc8031112725569637f7492771",
+  "certificate_type": "exact",
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "details": {
+    "interval_bisections": 0
+  },
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 78728,
+    "nice": 15,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "field_degree": 60,
+  "g6": "JqM??CNGqg_",
+  "peak_child_rss_kib": 47500,
+  "peak_self_rss_kib": 86792,
+  "profile_sha256": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+  "scope": "E-exact arithmetic only; NOT a run ACCEPT",
+  "scratch_relocation": "<repo>/research/gp-11/tools/endgame-evidence/check-cost/case-001/scratch",
+  "status": "ARITHMETIC_PASS",
+  "verification_seconds": 89.21719719097018,
+  "worker_seconds": 89.65301014389843
+}

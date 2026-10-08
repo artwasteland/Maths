@@ -1,0 +1,26 @@
+{
+  "row_count": 14,
+  "record_bytes": 1677103,
+  "runs": [
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round3/checker-F39-F0",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 0,
+      "final_line": "ACCEPT run verified",
+      "seconds": 1.4978415528312325,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+    },
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round3/checker-F39-F8",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 8,
+      "checker_exit": 0,
+      "final_line": "ACCEPT run verified",
+      "seconds": 1.0165796638466418,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+    }
+  ]
+}

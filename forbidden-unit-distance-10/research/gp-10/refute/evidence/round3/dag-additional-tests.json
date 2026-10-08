@@ -1,0 +1,56 @@
+[
+  {
+    "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-automatic-dag",
+    "records": 1,
+    "refuted": 1,
+    "forbidden_limit": 0,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "seconds": 0.4004027037881315,
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "type": "null-dag"
+  },
+  {
+    "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-real-dag-sturm",
+    "records": 1,
+    "refuted": 1,
+    "forbidden_limit": 0,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "seconds": 0.08269826974719763,
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+  },
+  {
+    "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-real-dag-sturm-red",
+    "records": 1,
+    "refuted": 1,
+    "forbidden_limit": 0,
+    "checker_exit": 1,
+    "final_line": "REJECT run records_rejected",
+    "seconds": 0.07843734370544553,
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+  },
+  {
+    "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-real-dag-constant",
+    "records": 1,
+    "refuted": 1,
+    "forbidden_limit": 0,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "seconds": 0.06305380398407578,
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+  },
+  {
+    "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-real-dag-constant-red",
+    "records": 1,
+    "refuted": 1,
+    "forbidden_limit": 0,
+    "checker_exit": 1,
+    "final_line": "REJECT run records_rejected",
+    "seconds": 0.06941460957750678,
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+  },
+  {
+    "rational_red": "polynomial: denominator must be positive"
+  }
+]

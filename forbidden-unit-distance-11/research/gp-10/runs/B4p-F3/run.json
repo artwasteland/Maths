@@ -1,0 +1,9 @@
+{
+ "profile": "B4p",
+ "input": "../../data/B4p.g6",
+ "input_sha256": "db1441296b09fed03d9b68808408ee3c9825128b2eb006712290b1030610ff06",
+ "records": [
+  "records.jsonl"
+ ],
+ "unknown": "UNKNOWN.g6"
+}

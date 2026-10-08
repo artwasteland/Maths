@@ -1,0 +1,4281 @@
+{
+ "reference": {
+  "path": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/test-398/base398/udenum",
+  "sha256": "a99b130ab5ad0386265c429b78cf3c4a4c708e1d5dd6e222bec14a4596c16a84"
+ },
+ "candidates": {
+  "new": {
+   "path": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/udenum",
+   "sha256": "84adaddfb449a3355c56990cd6d6ac7b564a3ad6d912372b6a3668d72924731a"
+  },
+  "new-K1": {
+   "path": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/bin/udenum-K1",
+   "sha256": "35c5ef3cea31ed9437a5ae731798326133517d22de70e15a119c22f97841a224"
+  },
+  "new-Kinf": {
+   "path": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/bin/udenum-Kinf",
+   "sha256": "faf31ec231fd543a07c356d0cef180c814a7242ab38064e0d600729f5bbf1fc3"
+  },
+  "new-U1": {
+   "path": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/bin/udenum-U1",
+   "sha256": "89d03238605ead8efc4715bd1865c8dca1291e1b49359453a5d53a5f29eb1a84"
+  }
+ },
+ "by_group": {
+  "extra": {
+   "runs": 84,
+   "identical": 84,
+   "parents": 985612,
+   "children": 2342213,
+   "refusals": 16
+  }
+ },
+ "runs": [
+  {
+   "group": "extra",
+   "cell": "dag-22-61_11-17",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-22-61_11-17.p398.g6",
+   "parents": 31127,
+   "reference": {
+    "returncode": 0,
+    "cpu": 47.375814,
+    "stats": {
+     "parents_seen": 31127,
+     "parents_processed": 25958,
+     "parents_degree_skipped": 5169,
+     "bad_sets": 92592,
+     "neighbourhoods": 689944,
+     "neighbourhood_orbit_reps": 537744,
+     "neighbourhoods_bad": 92620,
+     "child_orbit_rejected": 374524,
+     "children_written": 163220,
+     "wall_seconds": 47.558183,
+     "cpu_seconds": 47.375814,
+     "max_rss_kib": 30956
+    },
+    "stderr": "",
+    "output_sha256": "5c28353d35ca81a1cd6cf59258d0761b30fc13bde228b8417588d0a090739699",
+    "children": 163220
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.565681
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.343312
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.575219
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.567613
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_11-17",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-22-61_11-17.p398.g6",
+   "parents": 31127,
+   "reference": {
+    "returncode": 0,
+    "cpu": 49.411753,
+    "stats": {
+     "parents_seen": 31127,
+     "parents_processed": 25958,
+     "parents_degree_skipped": 5169,
+     "bad_sets": 92592,
+     "neighbourhoods": 689944,
+     "neighbourhood_orbit_reps": 537744,
+     "neighbourhoods_bad": 92620,
+     "child_orbit_rejected": 374524,
+     "children_written": 163220,
+     "wall_seconds": 49.444437,
+     "cpu_seconds": 49.411753,
+     "max_rss_kib": 32756
+    },
+    "stderr": "",
+    "output_sha256": "5c28353d35ca81a1cd6cf59258d0761b30fc13bde228b8417588d0a090739699",
+    "children": 163220
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.616558
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.377359
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.627096
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.646141
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_11-17",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-22/dag-22-61/_parents/11-17.g6",
+   "parents": 31131,
+   "reference": {
+    "returncode": 0,
+    "cpu": 47.091347,
+    "stats": {
+     "parents_seen": 31131,
+     "parents_processed": 25962,
+     "parents_degree_skipped": 5169,
+     "bad_sets": 92640,
+     "neighbourhoods": 690124,
+     "neighbourhood_orbit_reps": 537816,
+     "neighbourhoods_bad": 92668,
+     "child_orbit_rejected": 374559,
+     "children_written": 163257,
+     "wall_seconds": 47.107572,
+     "cpu_seconds": 47.091347,
+     "max_rss_kib": 32772
+    },
+    "stderr": "",
+    "output_sha256": "b69503d20ee6c8717e29105e3b14195723b1654fc80b3d2223598926fe637140",
+    "children": 163257
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.560662
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.343325
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.587289
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.56632
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_11-17",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-22/dag-22-61/_parents/11-17.g6",
+   "parents": 31131,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "88502fcc88c1f30ad673000a7eb24e2d98f6c68ae8b99f6cf0f656d3f0d42605",
+    "children": 38297
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_11-18",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-22-61_11-18.p398.g6",
+   "parents": 43103,
+   "reference": {
+    "returncode": 0,
+    "cpu": 19.439285,
+    "stats": {
+     "parents_seen": 43103,
+     "parents_processed": 24222,
+     "parents_degree_skipped": 18881,
+     "bad_sets": 152927,
+     "neighbourhoods": 671901,
+     "neighbourhood_orbit_reps": 476658,
+     "neighbourhoods_bad": 154133,
+     "child_orbit_rejected": 277571,
+     "children_written": 199087,
+     "wall_seconds": 19.452017,
+     "cpu_seconds": 19.439285,
+     "max_rss_kib": 32780
+    },
+    "stderr": "",
+    "output_sha256": "33721e4c81d7d014e4d628e4c936a72bfaee3d03f19e5dcadebb4d10b5a408f4",
+    "children": 199087
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.457723
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.41161
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.656331
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.598249
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_11-18",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-22-61_11-18.p398.g6",
+   "parents": 43103,
+   "reference": {
+    "returncode": 0,
+    "cpu": 26.525661,
+    "stats": {
+     "parents_seen": 43103,
+     "parents_processed": 24222,
+     "parents_degree_skipped": 18881,
+     "bad_sets": 152927,
+     "neighbourhoods": 671901,
+     "neighbourhood_orbit_reps": 476658,
+     "neighbourhoods_bad": 154133,
+     "child_orbit_rejected": 277571,
+     "children_written": 199087,
+     "wall_seconds": 26.586246,
+     "cpu_seconds": 26.525661,
+     "max_rss_kib": 34520
+    },
+    "stderr": "",
+    "output_sha256": "33721e4c81d7d014e4d628e4c936a72bfaee3d03f19e5dcadebb4d10b5a408f4",
+    "children": 199087
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.640803
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.914261
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.672691
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.709632
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_11-18",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-22/dag-22-61/_parents/11-18.g6",
+   "parents": 43603,
+   "reference": {
+    "returncode": 0,
+    "cpu": 19.343881,
+    "stats": {
+     "parents_seen": 43603,
+     "parents_processed": 24722,
+     "parents_degree_skipped": 18881,
+     "bad_sets": 155299,
+     "neighbourhoods": 682038,
+     "neighbourhood_orbit_reps": 483269,
+     "neighbourhoods_bad": 156606,
+     "child_orbit_rejected": 278547,
+     "children_written": 204722,
+     "wall_seconds": 19.349925,
+     "cpu_seconds": 19.343881,
+     "max_rss_kib": 34520
+    },
+    "stderr": "",
+    "output_sha256": "8cba98ed0ac020af3a86f31a0d6d0ef0a77a1a7431a010240b3ea4da2928d00a",
+    "children": 204722
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.472506
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.414083
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.524599
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.479446
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_11-18",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-22/dag-22-61/_parents/11-18.g6",
+   "parents": 43603,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "b7cb82c61c31fa96a75c5e74d09b9df3117d5d6f8ea281f98bc96f677853a4f4",
+    "children": 212
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_12-22",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-22-61_12-22.p398.g6",
+   "parents": 52944,
+   "reference": {
+    "returncode": 0,
+    "cpu": 238.798622,
+    "stats": {
+     "parents_seen": 52944,
+     "parents_processed": 49992,
+     "parents_degree_skipped": 2952,
+     "bad_sets": 1073268,
+     "neighbourhoods": 2223949,
+     "neighbourhood_orbit_reps": 424322,
+     "neighbourhoods_bad": 1761869,
+     "child_orbit_rejected": 273992,
+     "children_written": 150330,
+     "wall_seconds": 238.8669,
+     "cpu_seconds": 238.798622,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "1bf3a5a14f91531fb56a3dd3c2ffb07f41fa39129f5e64fdbd0e77483bb65993",
+    "children": 150330
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 16.054599
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 17.256381
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 28.847953
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 15.824993
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_12-22",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-22-61_12-22.p398.g6",
+   "parents": 52944,
+   "reference": {
+    "returncode": 0,
+    "cpu": 268.935686,
+    "stats": {
+     "parents_seen": 52944,
+     "parents_processed": 49992,
+     "parents_degree_skipped": 2952,
+     "bad_sets": 1073268,
+     "neighbourhoods": 2223949,
+     "neighbourhood_orbit_reps": 424322,
+     "neighbourhoods_bad": 1761869,
+     "child_orbit_rejected": 273992,
+     "children_written": 150330,
+     "wall_seconds": 269.453871,
+     "cpu_seconds": 268.935686,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "1bf3a5a14f91531fb56a3dd3c2ffb07f41fa39129f5e64fdbd0e77483bb65993",
+    "children": 150330
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 16.744086
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 20.473584
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 30.85872
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 16.973306
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_12-22",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-22/dag-22-61/_parents/12-22.g6",
+   "parents": 65229,
+   "reference": {
+    "returncode": 0,
+    "cpu": 269.527758,
+    "stats": {
+     "parents_seen": 65229,
+     "parents_processed": 62232,
+     "parents_degree_skipped": 2997,
+     "bad_sets": 1256854,
+     "neighbourhoods": 2899201,
+     "neighbourhood_orbit_reps": 476618,
+     "neighbourhoods_bad": 2381868,
+     "child_orbit_rejected": 282185,
+     "children_written": 194433,
+     "wall_seconds": 270.210142,
+     "cpu_seconds": 269.527758,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "15b412062846184dfa0687d83efc3d0c6e414a60f97290b7879d533398efb9a2",
+    "children": 194433
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 18.584275
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 20.110054
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 31.609959
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 18.610293
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-22-61_12-22",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-22/dag-22-61/_parents/12-22.g6",
+   "parents": 65229,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "30ca84cb9c6ef6ccc7c6527630384e774a7118814fa5874653fdd961e5c0a411",
+    "children": 3
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-19",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_11-19.p398.g6",
+   "parents": 18200,
+   "reference": {
+    "returncode": 0,
+    "cpu": 32.628937,
+    "stats": {
+     "parents_seen": 18200,
+     "parents_processed": 14169,
+     "parents_degree_skipped": 4031,
+     "bad_sets": 88061,
+     "neighbourhoods": 237526,
+     "neighbourhood_orbit_reps": 119987,
+     "neighbourhoods_bad": 101891,
+     "child_orbit_rejected": 71796,
+     "children_written": 48191,
+     "wall_seconds": 32.726001,
+     "cpu_seconds": 32.628937,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "2979c2c10ae2e55d33f2199dec9c5fa4c484b76031b3e658cf5e0b10026a6094",
+    "children": 48191
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.598139
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.787587
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.251931
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.579855
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-19",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_11-19.p398.g6",
+   "parents": 18200,
+   "reference": {
+    "returncode": 0,
+    "cpu": 37.845021,
+    "stats": {
+     "parents_seen": 18200,
+     "parents_processed": 14169,
+     "parents_degree_skipped": 4031,
+     "bad_sets": 88061,
+     "neighbourhoods": 237526,
+     "neighbourhood_orbit_reps": 119987,
+     "neighbourhoods_bad": 101891,
+     "child_orbit_rejected": 71796,
+     "children_written": 48191,
+     "wall_seconds": 38.031538,
+     "cpu_seconds": 37.845021,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "2979c2c10ae2e55d33f2199dec9c5fa4c484b76031b3e658cf5e0b10026a6094",
+    "children": 48191
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.661058
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.686708
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.344126
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.6712
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-19",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/11-19.g6",
+   "parents": 18705,
+   "reference": {
+    "returncode": 0,
+    "cpu": 32.51281,
+    "stats": {
+     "parents_seen": 18705,
+     "parents_processed": 14674,
+     "parents_degree_skipped": 4031,
+     "bad_sets": 95680,
+     "neighbourhoods": 259776,
+     "neighbourhood_orbit_reps": 129490,
+     "neighbourhoods_bad": 113389,
+     "child_orbit_rejected": 72292,
+     "children_written": 57198,
+     "wall_seconds": 32.522616,
+     "cpu_seconds": 32.51281,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "761e6b50fd7eb76664e51639a89295155c434f9e4023f3844b09cfe101b7826b",
+    "children": 57198
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.612726
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.884834
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.383704
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.675244
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-19",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/11-19.g6",
+   "parents": 18705,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "814c70468b3083e2787455ea87ef0c5a443475323941a84e62c296e574fe8eaf",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-20",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_11-20.p398.g6",
+   "parents": 2971,
+   "reference": {
+    "returncode": 0,
+    "cpu": 8.52113,
+    "stats": {
+     "parents_seen": 2971,
+     "parents_processed": 2823,
+     "parents_degree_skipped": 148,
+     "bad_sets": 46669,
+     "neighbourhoods": 82538,
+     "neighbourhood_orbit_reps": 10231,
+     "neighbourhoods_bad": 69837,
+     "child_orbit_rejected": 5802,
+     "children_written": 4429,
+     "wall_seconds": 8.52269,
+     "cpu_seconds": 8.52113,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "e710144b551ae30149456f282f4a286029a4d59a706bca1fc1557922a47e1a54",
+    "children": 4429
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.687873
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.891755
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.033382
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.677087
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-20",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_11-20.p398.g6",
+   "parents": 2971,
+   "reference": {
+    "returncode": 0,
+    "cpu": 10.140424,
+    "stats": {
+     "parents_seen": 2971,
+     "parents_processed": 2823,
+     "parents_degree_skipped": 148,
+     "bad_sets": 46669,
+     "neighbourhoods": 82538,
+     "neighbourhood_orbit_reps": 10231,
+     "neighbourhoods_bad": 69837,
+     "child_orbit_rejected": 5802,
+     "children_written": 4429,
+     "wall_seconds": 10.157193,
+     "cpu_seconds": 10.140424,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "e710144b551ae30149456f282f4a286029a4d59a706bca1fc1557922a47e1a54",
+    "children": 4429
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.678258
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.981662
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.068433
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.684287
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-20",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/11-20.g6",
+   "parents": 3333,
+   "reference": {
+    "returncode": 0,
+    "cpu": 8.99661,
+    "stats": {
+     "parents_seen": 3333,
+     "parents_processed": 3185,
+     "parents_degree_skipped": 148,
+     "bad_sets": 62475,
+     "neighbourhoods": 121719,
+     "neighbourhood_orbit_reps": 10816,
+     "neighbourhoods_bad": 108239,
+     "child_orbit_rejected": 6119,
+     "children_written": 4697,
+     "wall_seconds": 8.99992,
+     "cpu_seconds": 8.99661,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "2839da78954db2f4190c08c1e614b0ba3ad6719e2136d9403bfc8c34fcf03ee1",
+    "children": 4697
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.777097
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.986786
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.11258
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.814779
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-20",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/11-20.g6",
+   "parents": 3333,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "eb07b4b3a4b5c2e5012e17e6fa0d674851fd763c2a65a1fc34a7b0487ad81359",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-21",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_11-21.p398.g6",
+   "parents": 238,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.950079,
+    "stats": {
+     "parents_seen": 238,
+     "parents_processed": 233,
+     "parents_degree_skipped": 5,
+     "bad_sets": 5546,
+     "neighbourhoods": 11976,
+     "neighbourhood_orbit_reps": 730,
+     "neighbourhoods_bad": 10879,
+     "child_orbit_rejected": 387,
+     "children_written": 343,
+     "wall_seconds": 0.950777,
+     "cpu_seconds": 0.950079,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "4d9b60295b48c7c402f5f9c82e282580898fd900442a0b9f8f6a4c22301ebbf8",
+    "children": 343
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.137895
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.153046
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.195776
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.134246
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-21",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_11-21.p398.g6",
+   "parents": 238,
+   "reference": {
+    "returncode": 0,
+    "cpu": 1.117175,
+    "stats": {
+     "parents_seen": 238,
+     "parents_processed": 233,
+     "parents_degree_skipped": 5,
+     "bad_sets": 5546,
+     "neighbourhoods": 11976,
+     "neighbourhood_orbit_reps": 730,
+     "neighbourhoods_bad": 10879,
+     "child_orbit_rejected": 387,
+     "children_written": 343,
+     "wall_seconds": 1.137808,
+     "cpu_seconds": 1.117175,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "4d9b60295b48c7c402f5f9c82e282580898fd900442a0b9f8f6a4c22301ebbf8",
+    "children": 343
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.139864
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.156826
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.217414
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.136979
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-21",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/11-21.g6",
+   "parents": 247,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.951045,
+    "stats": {
+     "parents_seen": 247,
+     "parents_processed": 242,
+     "parents_degree_skipped": 5,
+     "bad_sets": 5934,
+     "neighbourhoods": 12972,
+     "neighbourhood_orbit_reps": 736,
+     "neighbourhoods_bad": 11863,
+     "child_orbit_rejected": 392,
+     "children_written": 344,
+     "wall_seconds": 0.951252,
+     "cpu_seconds": 0.951045,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "1e15baf6fc76fc17f0c663c2ee188e75f7ec0227c38b4eeaa07b0b5b98ec8f4c",
+    "children": 344
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.140143
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.158796
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.216434
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.138347
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-21",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/11-21.g6",
+   "parents": 247,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "c111e2f167cbe2ab5a03ad6d30e90ba963d583676f55a966a9974e2e19735fa9",
+    "children": 31
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-22",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_11-22.p398.g6",
+   "parents": 238,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.122041,
+    "stats": {
+     "parents_seen": 238,
+     "parents_processed": 36,
+     "parents_degree_skipped": 202,
+     "bad_sets": 640,
+     "neighbourhoods": 1550,
+     "neighbourhood_orbit_reps": 49,
+     "neighbourhoods_bad": 1455,
+     "child_orbit_rejected": 24,
+     "children_written": 25,
+     "wall_seconds": 0.122144,
+     "cpu_seconds": 0.122041,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "0630f3fa190241abca79f136c3933653c280a8f22720bb11dd8cafd9d9c300b4",
+    "children": 25
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.031493
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.030527
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.049052
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.021137
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-22",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_11-22.p398.g6",
+   "parents": 238,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.271219,
+    "stats": {
+     "parents_seen": 238,
+     "parents_processed": 36,
+     "parents_degree_skipped": 202,
+     "bad_sets": 640,
+     "neighbourhoods": 1550,
+     "neighbourhood_orbit_reps": 49,
+     "neighbourhoods_bad": 1455,
+     "child_orbit_rejected": 24,
+     "children_written": 25,
+     "wall_seconds": 0.271252,
+     "cpu_seconds": 0.271219,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "0630f3fa190241abca79f136c3933653c280a8f22720bb11dd8cafd9d9c300b4",
+    "children": 25
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.038173
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.04812
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.055201
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.032714
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-22",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/11-22.g6",
+   "parents": 247,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.119996,
+    "stats": {
+     "parents_seen": 247,
+     "parents_processed": 40,
+     "parents_degree_skipped": 207,
+     "bad_sets": 644,
+     "neighbourhoods": 1554,
+     "neighbourhood_orbit_reps": 49,
+     "neighbourhoods_bad": 1459,
+     "child_orbit_rejected": 24,
+     "children_written": 25,
+     "wall_seconds": 0.120008,
+     "cpu_seconds": 0.119996,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "0630f3fa190241abca79f136c3933653c280a8f22720bb11dd8cafd9d9c300b4",
+    "children": 25
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.026491
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.026754
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.038651
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.021444
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-22",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/11-22.g6",
+   "parents": 247,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "children": 0
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-23",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_11-23.p398.g6",
+   "parents": 20,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.015109,
+    "stats": {
+     "parents_seen": 20,
+     "parents_processed": 9,
+     "parents_degree_skipped": 11,
+     "bad_sets": 48,
+     "neighbourhoods": 104,
+     "neighbourhood_orbit_reps": 2,
+     "neighbourhoods_bad": 101,
+     "child_orbit_rejected": 0,
+     "children_written": 2,
+     "wall_seconds": 0.015111,
+     "cpu_seconds": 0.015109,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "9cc850a8c6b406c368809cb76c2cb9e51d257fc72cdb4a11fd165e63b5e0f2db",
+    "children": 2
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005414
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005363
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005637
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005735
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-23",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_11-23.p398.g6",
+   "parents": 20,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.031142,
+    "stats": {
+     "parents_seen": 20,
+     "parents_processed": 9,
+     "parents_degree_skipped": 11,
+     "bad_sets": 48,
+     "neighbourhoods": 104,
+     "neighbourhood_orbit_reps": 2,
+     "neighbourhoods_bad": 101,
+     "child_orbit_rejected": 0,
+     "children_written": 2,
+     "wall_seconds": 0.031155,
+     "cpu_seconds": 0.031142,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "9cc850a8c6b406c368809cb76c2cb9e51d257fc72cdb4a11fd165e63b5e0f2db",
+    "children": 2
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.0076
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.014133
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.008542
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.007625
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-23",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/11-23.g6",
+   "parents": 20,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.014866,
+    "stats": {
+     "parents_seen": 20,
+     "parents_processed": 9,
+     "parents_degree_skipped": 11,
+     "bad_sets": 48,
+     "neighbourhoods": 104,
+     "neighbourhood_orbit_reps": 2,
+     "neighbourhoods_bad": 101,
+     "child_orbit_rejected": 0,
+     "children_written": 2,
+     "wall_seconds": 0.014869,
+     "cpu_seconds": 0.014866,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "9cc850a8c6b406c368809cb76c2cb9e51d257fc72cdb4a11fd165e63b5e0f2db",
+    "children": 2
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005388
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005225
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006174
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005324
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_11-23",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/11-23.g6",
+   "parents": 20,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.035004,
+    "stats": {
+     "parents_seen": 20,
+     "parents_processed": 9,
+     "parents_degree_skipped": 11,
+     "bad_sets": 48,
+     "neighbourhoods": 104,
+     "neighbourhood_orbit_reps": 2,
+     "neighbourhoods_bad": 101,
+     "child_orbit_rejected": 0,
+     "children_written": 2,
+     "wall_seconds": 0.035012,
+     "cpu_seconds": 0.035004,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "9cc850a8c6b406c368809cb76c2cb9e51d257fc72cdb4a11fd165e63b5e0f2db",
+    "children": 2
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.007639
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.013819
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.008419
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.007534
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-22",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-22.p398.g6",
+   "parents": 52988,
+   "reference": {
+    "returncode": 0,
+    "cpu": 252.198887,
+    "stats": {
+     "parents_seen": 52988,
+     "parents_processed": 50017,
+     "parents_degree_skipped": 2971,
+     "bad_sets": 1073268,
+     "neighbourhoods": 2223974,
+     "neighbourhood_orbit_reps": 424347,
+     "neighbourhoods_bad": 1761869,
+     "child_orbit_rejected": 273992,
+     "children_written": 150355,
+     "wall_seconds": 252.91138,
+     "cpu_seconds": 252.198887,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "19d866b1ae91f2629222a600b528437feafec0e52a2fc3810e665f1dabd789be",
+    "children": 150355
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 15.942856
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 17.71947
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 29.902439
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 16.377509
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-22",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-22.p398.g6",
+   "parents": 52988,
+   "reference": {
+    "returncode": 0,
+    "cpu": 276.382604,
+    "stats": {
+     "parents_seen": 52988,
+     "parents_processed": 50017,
+     "parents_degree_skipped": 2971,
+     "bad_sets": 1073268,
+     "neighbourhoods": 2223974,
+     "neighbourhood_orbit_reps": 424347,
+     "neighbourhoods_bad": 1761869,
+     "child_orbit_rejected": 273992,
+     "children_written": 150355,
+     "wall_seconds": 277.705531,
+     "cpu_seconds": 276.382604,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "19d866b1ae91f2629222a600b528437feafec0e52a2fc3810e665f1dabd789be",
+    "children": 150355
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 17.069561
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 20.717124
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 31.362173
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 17.127405
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-22",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-22.g6",
+   "parents": 65273,
+   "reference": {
+    "returncode": 0,
+    "cpu": 277.062208,
+    "stats": {
+     "parents_seen": 65273,
+     "parents_processed": 62257,
+     "parents_degree_skipped": 3016,
+     "bad_sets": 1256854,
+     "neighbourhoods": 2899226,
+     "neighbourhood_orbit_reps": 476643,
+     "neighbourhoods_bad": 2381868,
+     "child_orbit_rejected": 282185,
+     "children_written": 194458,
+     "wall_seconds": 278.232027,
+     "cpu_seconds": 277.062208,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "b17b96c6636fcb16d4424e274e7aa19e4e88c21316174945c2477cdf0f225a33",
+    "children": 194458
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 19.733733
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 23.700157
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 43.159478
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 26.104454
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-22",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-22.g6",
+   "parents": 65273,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "30ca84cb9c6ef6ccc7c6527630384e774a7118814fa5874653fdd961e5c0a411",
+    "children": 3
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-23",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-23.p398.g6",
+   "parents": 4799,
+   "reference": {
+    "returncode": 0,
+    "cpu": 34.437553,
+    "stats": {
+     "parents_seen": 4799,
+     "parents_processed": 4689,
+     "parents_degree_skipped": 110,
+     "bad_sets": 147613,
+     "neighbourhoods": 306312,
+     "neighbourhood_orbit_reps": 26890,
+     "neighbourhoods_bad": 275078,
+     "child_orbit_rejected": 15438,
+     "children_written": 11452,
+     "wall_seconds": 34.953692,
+     "cpu_seconds": 34.437553,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "16d2a4eab2c43edd0a881a8ab66bebfbc227bbf05362aa10b03c4d1a1074ce37",
+    "children": 11452
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.969654
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.07998
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.532996
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.108017
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-23",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-23.p398.g6",
+   "parents": 4799,
+   "reference": {
+    "returncode": 0,
+    "cpu": 40.662434,
+    "stats": {
+     "parents_seen": 4799,
+     "parents_processed": 4689,
+     "parents_degree_skipped": 110,
+     "bad_sets": 147613,
+     "neighbourhoods": 306312,
+     "neighbourhood_orbit_reps": 26890,
+     "neighbourhoods_bad": 275078,
+     "child_orbit_rejected": 15438,
+     "children_written": 11452,
+     "wall_seconds": 41.793233,
+     "cpu_seconds": 40.662434,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "16d2a4eab2c43edd0a881a8ab66bebfbc227bbf05362aa10b03c4d1a1074ce37",
+    "children": 11452
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.836526
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.538846
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.465968
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.270207
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-23",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-23.g6",
+   "parents": 6127,
+   "reference": {
+    "returncode": 0,
+    "cpu": 39.649515,
+    "stats": {
+     "parents_seen": 6127,
+     "parents_processed": 6017,
+     "parents_degree_skipped": 110,
+     "bad_sets": 221625,
+     "neighbourhoods": 507476,
+     "neighbourhood_orbit_reps": 30195,
+     "neighbourhoods_bad": 472663,
+     "child_orbit_rejected": 17356,
+     "children_written": 12839,
+     "wall_seconds": 49.243494,
+     "cpu_seconds": 39.649515,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "e49c2a5d88860f3c61679515c4b624352e752b823fa1291033d2ce41b259a6af",
+    "children": 12839
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.931314
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 5.010375
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.160786
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.054522
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-23",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-23.g6",
+   "parents": 6127,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "children": 0
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-24",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-24.p398.g6",
+   "parents": 4799,
+   "reference": {
+    "returncode": 0,
+    "cpu": 2.657861,
+    "stats": {
+     "parents_seen": 4799,
+     "parents_processed": 582,
+     "parents_degree_skipped": 4217,
+     "bad_sets": 12630,
+     "neighbourhoods": 31680,
+     "neighbourhood_orbit_reps": 1895,
+     "neighbourhoods_bad": 29217,
+     "child_orbit_rejected": 974,
+     "children_written": 921,
+     "wall_seconds": 2.851753,
+     "cpu_seconds": 2.657861,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "29a6f11df1afe07c326d9645517d750593f023b6a903a03b4acf862d3562c537",
+    "children": 921
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.533288
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.684821
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.159127
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.569452
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-24",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-24.p398.g6",
+   "parents": 4799,
+   "reference": {
+    "returncode": 0,
+    "cpu": 8.159034,
+    "stats": {
+     "parents_seen": 4799,
+     "parents_processed": 582,
+     "parents_degree_skipped": 4217,
+     "bad_sets": 12630,
+     "neighbourhoods": 31680,
+     "neighbourhood_orbit_reps": 1895,
+     "neighbourhoods_bad": 29217,
+     "child_orbit_rejected": 974,
+     "children_written": 921,
+     "wall_seconds": 9.064239,
+     "cpu_seconds": 8.159034,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "29a6f11df1afe07c326d9645517d750593f023b6a903a03b4acf862d3562c537",
+    "children": 921
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.013768
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.276729
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.640793
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.090912
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-24",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-24.g6",
+   "parents": 6127,
+   "reference": {
+    "returncode": 0,
+    "cpu": 3.468147,
+    "stats": {
+     "parents_seen": 6127,
+     "parents_processed": 862,
+     "parents_degree_skipped": 5265,
+     "bad_sets": 14024,
+     "neighbourhoods": 35240,
+     "neighbourhood_orbit_reps": 1930,
+     "neighbourhoods_bad": 32735,
+     "child_orbit_rejected": 987,
+     "children_written": 943,
+     "wall_seconds": 3.821125,
+     "cpu_seconds": 3.468147,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "842730afd110d0dbe53d736d02e26c25a69939d7b3f8e1d363f51b2a38db4fc4",
+    "children": 943
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.75954
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.738697
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.895134
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.613969
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-24",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-24.g6",
+   "parents": 6127,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "children": 0
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-25",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-25.p398.g6",
+   "parents": 370,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.348734,
+    "stats": {
+     "parents_seen": 370,
+     "parents_processed": 129,
+     "parents_degree_skipped": 241,
+     "bad_sets": 1110,
+     "neighbourhoods": 3580,
+     "neighbourhood_orbit_reps": 134,
+     "neighbourhoods_bad": 3368,
+     "child_orbit_rejected": 55,
+     "children_written": 79,
+     "wall_seconds": 0.374458,
+     "cpu_seconds": 0.348734,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "374501a4607b11cdba813884379afc33c47aec2f05f75fd43d0f307536950818",
+    "children": 79
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.133094
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.160312
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.145194
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.083856
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-25",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-25.p398.g6",
+   "parents": 370,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.709194,
+    "stats": {
+     "parents_seen": 370,
+     "parents_processed": 129,
+     "parents_degree_skipped": 241,
+     "bad_sets": 1110,
+     "neighbourhoods": 3580,
+     "neighbourhood_orbit_reps": 134,
+     "neighbourhoods_bad": 3368,
+     "child_orbit_rejected": 55,
+     "children_written": 79,
+     "wall_seconds": 0.748005,
+     "cpu_seconds": 0.709194,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "374501a4607b11cdba813884379afc33c47aec2f05f75fd43d0f307536950818",
+    "children": 79
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.176589
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.254706
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.161276
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.201916
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-25",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-25.g6",
+   "parents": 390,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.346532,
+    "stats": {
+     "parents_seen": 390,
+     "parents_processed": 149,
+     "parents_degree_skipped": 241,
+     "bad_sets": 1130,
+     "neighbourhoods": 3971,
+     "neighbourhood_orbit_reps": 134,
+     "neighbourhoods_bad": 3759,
+     "child_orbit_rejected": 55,
+     "children_written": 79,
+     "wall_seconds": 0.437694,
+     "cpu_seconds": 0.346532,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "374501a4607b11cdba813884379afc33c47aec2f05f75fd43d0f307536950818",
+    "children": 79
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.133384
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.160984
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.115319
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.08658
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-25",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-25.g6",
+   "parents": 390,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "cda84cd5347073225f4e0397ad2d84f75f88d8ce0b260bc586cc6cf5da8b6d0f",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-26",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-26.p398.g6",
+   "parents": 27,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.063128,
+    "stats": {
+     "parents_seen": 27,
+     "parents_processed": 18,
+     "parents_degree_skipped": 9,
+     "bad_sets": 156,
+     "neighbourhoods": 591,
+     "neighbourhood_orbit_reps": 11,
+     "neighbourhoods_bad": 573,
+     "child_orbit_rejected": 5,
+     "children_written": 6,
+     "wall_seconds": 0.06319,
+     "cpu_seconds": 0.063128,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "154ee4fc1c7833aaff1494972d49ac0916c8ac6d5fac1cd1a2636c298b01fe2e",
+    "children": 6
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.034462
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.058106
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.034225
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.04166
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-26",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-26.p398.g6",
+   "parents": 27,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.125227,
+    "stats": {
+     "parents_seen": 27,
+     "parents_processed": 18,
+     "parents_degree_skipped": 9,
+     "bad_sets": 156,
+     "neighbourhoods": 591,
+     "neighbourhood_orbit_reps": 11,
+     "neighbourhoods_bad": 573,
+     "child_orbit_rejected": 5,
+     "children_written": 6,
+     "wall_seconds": 0.125387,
+     "cpu_seconds": 0.125227,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "154ee4fc1c7833aaff1494972d49ac0916c8ac6d5fac1cd1a2636c298b01fe2e",
+    "children": 6
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.063112
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.068421
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.029851
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.053243
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-26",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-26.g6",
+   "parents": 27,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.075656,
+    "stats": {
+     "parents_seen": 27,
+     "parents_processed": 18,
+     "parents_degree_skipped": 9,
+     "bad_sets": 156,
+     "neighbourhoods": 591,
+     "neighbourhood_orbit_reps": 11,
+     "neighbourhoods_bad": 573,
+     "child_orbit_rejected": 5,
+     "children_written": 6,
+     "wall_seconds": 0.139862,
+     "cpu_seconds": 0.075656,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "154ee4fc1c7833aaff1494972d49ac0916c8ac6d5fac1cd1a2636c298b01fe2e",
+    "children": 6
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.051244
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.045749
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.034405
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.042244
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-26",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-26.g6",
+   "parents": 27,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.107385,
+    "stats": {
+     "parents_seen": 27,
+     "parents_processed": 18,
+     "parents_degree_skipped": 9,
+     "bad_sets": 156,
+     "neighbourhoods": 591,
+     "neighbourhood_orbit_reps": 11,
+     "neighbourhoods_bad": 573,
+     "child_orbit_rejected": 5,
+     "children_written": 6,
+     "wall_seconds": 0.115716,
+     "cpu_seconds": 0.107385,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "154ee4fc1c7833aaff1494972d49ac0916c8ac6d5fac1cd1a2636c298b01fe2e",
+    "children": 6
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.039159
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.056755
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.030827
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.033807
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-27",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-27.p398.g6",
+   "parents": 2,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.017326,
+    "stats": {
+     "parents_seen": 2,
+     "parents_processed": 2,
+     "parents_degree_skipped": 0,
+     "bad_sets": 17,
+     "neighbourhoods": 72,
+     "neighbourhood_orbit_reps": 1,
+     "neighbourhoods_bad": 71,
+     "child_orbit_rejected": 0,
+     "children_written": 1,
+     "wall_seconds": 0.02094,
+     "cpu_seconds": 0.017326,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "71ae4680b8cc51893b8500920d6dfb5ca75c70abd45441a9490488467b662f25",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.016006
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.016076
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.007979
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.016084
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-27",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_12-27.p398.g6",
+   "parents": 2,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.020197,
+    "stats": {
+     "parents_seen": 2,
+     "parents_processed": 2,
+     "parents_degree_skipped": 0,
+     "bad_sets": 17,
+     "neighbourhoods": 72,
+     "neighbourhood_orbit_reps": 1,
+     "neighbourhoods_bad": 71,
+     "child_orbit_rejected": 0,
+     "children_written": 1,
+     "wall_seconds": 0.025181,
+     "cpu_seconds": 0.020197,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "71ae4680b8cc51893b8500920d6dfb5ca75c70abd45441a9490488467b662f25",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.01612
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.01177
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009269
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.015998
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-27",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-27.g6",
+   "parents": 2,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.016852,
+    "stats": {
+     "parents_seen": 2,
+     "parents_processed": 2,
+     "parents_degree_skipped": 0,
+     "bad_sets": 17,
+     "neighbourhoods": 72,
+     "neighbourhood_orbit_reps": 1,
+     "neighbourhoods_bad": 71,
+     "child_orbit_rejected": 0,
+     "children_written": 1,
+     "wall_seconds": 0.024146,
+     "cpu_seconds": 0.016852,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "71ae4680b8cc51893b8500920d6dfb5ca75c70abd45441a9490488467b662f25",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.014956
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.0111
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004636
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.010366
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_12-27",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/12-27.g6",
+   "parents": 2,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.02138,
+    "stats": {
+     "parents_seen": 2,
+     "parents_processed": 2,
+     "parents_degree_skipped": 0,
+     "bad_sets": 17,
+     "neighbourhoods": 72,
+     "neighbourhood_orbit_reps": 1,
+     "neighbourhoods_bad": 71,
+     "child_orbit_rejected": 0,
+     "children_written": 1,
+     "wall_seconds": 0.052282,
+     "cpu_seconds": 0.02138,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "71ae4680b8cc51893b8500920d6dfb5ca75c70abd45441a9490488467b662f25",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.015377
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.015951
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009934
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.016465
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-27",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_13-27.p398.g6",
+   "parents": 12459,
+   "reference": {
+    "returncode": 0,
+    "cpu": 15.133038,
+    "stats": {
+     "parents_seen": 12459,
+     "parents_processed": 3336,
+     "parents_degree_skipped": 9123,
+     "bad_sets": 49638,
+     "neighbourhoods": 144806,
+     "neighbourhood_orbit_reps": 6417,
+     "neighbourhoods_bad": 136577,
+     "child_orbit_rejected": 3123,
+     "children_written": 3294,
+     "wall_seconds": 16.722319,
+     "cpu_seconds": 15.133038,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "e22ce72e742e7f4276b4b5ba55648a6cd3e0f81ab21821c676b838645eae16e2",
+    "children": 3294
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.333897
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.050915
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.8954
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.642059
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-27",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_13-27.p398.g6",
+   "parents": 12459,
+   "reference": {
+    "returncode": 0,
+    "cpu": 28.576679,
+    "stats": {
+     "parents_seen": 12459,
+     "parents_processed": 3336,
+     "parents_degree_skipped": 9123,
+     "bad_sets": 49638,
+     "neighbourhoods": 144806,
+     "neighbourhood_orbit_reps": 6417,
+     "neighbourhoods_bad": 136577,
+     "child_orbit_rejected": 3123,
+     "children_written": 3294,
+     "wall_seconds": 29.496702,
+     "cpu_seconds": 28.576679,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "e22ce72e742e7f4276b4b5ba55648a6cd3e0f81ab21821c676b838645eae16e2",
+    "children": 3294
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.362252
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.409052
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 9.32741
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 5.510011
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-27",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/13-27.g6",
+   "parents": 17405,
+   "reference": {
+    "returncode": 0,
+    "cpu": 16.155319,
+    "stats": {
+     "parents_seen": 17405,
+     "parents_processed": 6356,
+     "parents_degree_skipped": 11049,
+     "bad_sets": 60371,
+     "neighbourhoods": 188167,
+     "neighbourhood_orbit_reps": 6607,
+     "neighbourhoods_bad": 179639,
+     "child_orbit_rejected": 3201,
+     "children_written": 3406,
+     "wall_seconds": 17.033635,
+     "cpu_seconds": 16.155319,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "d594d70ab8a750f7c5832aa9ed589371e9d3b2e2264b1be08d800580c8b62c11",
+    "children": 3406
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.236361
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.996199
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.30497
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.938137
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-27",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/13-27.g6",
+   "parents": 17405,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "children": 0
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-28",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_13-28.p398.g6",
+   "parents": 1007,
+   "reference": {
+    "returncode": 0,
+    "cpu": 1.877696,
+    "stats": {
+     "parents_seen": 1007,
+     "parents_processed": 527,
+     "parents_degree_skipped": 480,
+     "bad_sets": 6085,
+     "neighbourhoods": 25098,
+     "neighbourhood_orbit_reps": 432,
+     "neighbourhoods_bad": 24407,
+     "child_orbit_rejected": 173,
+     "children_written": 259,
+     "wall_seconds": 1.916366,
+     "cpu_seconds": 1.877696,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "351ea2232391fc36cd7095db92d9aa15a6c841f684f3d6884bf3a950749570e7",
+    "children": 259
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.703516
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.749439
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.56778
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.45112
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-28",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_13-28.p398.g6",
+   "parents": 1007,
+   "reference": {
+    "returncode": 0,
+    "cpu": 3.776122,
+    "stats": {
+     "parents_seen": 1007,
+     "parents_processed": 527,
+     "parents_degree_skipped": 480,
+     "bad_sets": 6085,
+     "neighbourhoods": 25098,
+     "neighbourhood_orbit_reps": 432,
+     "neighbourhoods_bad": 24407,
+     "child_orbit_rejected": 173,
+     "children_written": 259,
+     "wall_seconds": 4.402972,
+     "cpu_seconds": 3.776122,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "351ea2232391fc36cd7095db92d9aa15a6c841f684f3d6884bf3a950749570e7",
+    "children": 259
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.363145
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.98412
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.139456
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.088537
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-28",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/13-28.g6",
+   "parents": 1122,
+   "reference": {
+    "returncode": 0,
+    "cpu": 1.966972,
+    "stats": {
+     "parents_seen": 1122,
+     "parents_processed": 641,
+     "parents_degree_skipped": 481,
+     "bad_sets": 6347,
+     "neighbourhoods": 28834,
+     "neighbourhood_orbit_reps": 432,
+     "neighbourhoods_bad": 28143,
+     "child_orbit_rejected": 173,
+     "children_written": 259,
+     "wall_seconds": 1.993775,
+     "cpu_seconds": 1.966972,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "351ea2232391fc36cd7095db92d9aa15a6c841f684f3d6884bf3a950749570e7",
+    "children": 259
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.764955
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.635953
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.761162
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.583585
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-28",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/13-28.g6",
+   "parents": 1122,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "children": 0
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-29",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_13-29.p398.g6",
+   "parents": 86,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.418355,
+    "stats": {
+     "parents_seen": 86,
+     "parents_processed": 67,
+     "parents_degree_skipped": 19,
+     "bad_sets": 957,
+     "neighbourhoods": 6138,
+     "neighbourhood_orbit_reps": 23,
+     "neighbourhoods_bad": 6072,
+     "child_orbit_rejected": 5,
+     "children_written": 18,
+     "wall_seconds": 0.430509,
+     "cpu_seconds": 0.418355,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "83a4deb0f9e17ebdf01fdf3f0d46cf7060fd8e474e5d367816e0309947134387",
+    "children": 18
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.310006
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.236674
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.120071
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.169024
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-29",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_13-29.p398.g6",
+   "parents": 86,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.550772,
+    "stats": {
+     "parents_seen": 86,
+     "parents_processed": 67,
+     "parents_degree_skipped": 19,
+     "bad_sets": 957,
+     "neighbourhoods": 6138,
+     "neighbourhood_orbit_reps": 23,
+     "neighbourhoods_bad": 6072,
+     "child_orbit_rejected": 5,
+     "children_written": 18,
+     "wall_seconds": 0.568755,
+     "cpu_seconds": 0.550772,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "83a4deb0f9e17ebdf01fdf3f0d46cf7060fd8e474e5d367816e0309947134387",
+    "children": 18
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.366215
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.412689
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.252372
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.303329
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-29",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/13-29.g6",
+   "parents": 88,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.475791,
+    "stats": {
+     "parents_seen": 88,
+     "parents_processed": 69,
+     "parents_degree_skipped": 19,
+     "bad_sets": 1018,
+     "neighbourhoods": 6678,
+     "neighbourhood_orbit_reps": 23,
+     "neighbourhoods_bad": 6612,
+     "child_orbit_rejected": 5,
+     "children_written": 18,
+     "wall_seconds": 0.475946,
+     "cpu_seconds": 0.475791,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "83a4deb0f9e17ebdf01fdf3f0d46cf7060fd8e474e5d367816e0309947134387",
+    "children": 18
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.318109
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.31181
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.118152
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.179084
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-29",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/13-29.g6",
+   "parents": 88,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "children": 0
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-30",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_13-30.p398.g6",
+   "parents": 7,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.159237,
+    "stats": {
+     "parents_seen": 7,
+     "parents_processed": 7,
+     "parents_degree_skipped": 0,
+     "bad_sets": 209,
+     "neighbourhoods": 1630,
+     "neighbourhood_orbit_reps": 1,
+     "neighbourhoods_bad": 1624,
+     "child_orbit_rejected": 0,
+     "children_written": 1,
+     "wall_seconds": 0.160465,
+     "cpu_seconds": 0.159237,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "50dbd9bab95cd6d4e8b2cac0c529c99ccda5af10c241937fc556e4a71557449b",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.084026
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.083864
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.076723
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.050797
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-30",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_13-30.p398.g6",
+   "parents": 7,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.177701,
+    "stats": {
+     "parents_seen": 7,
+     "parents_processed": 7,
+     "parents_degree_skipped": 0,
+     "bad_sets": 209,
+     "neighbourhoods": 1630,
+     "neighbourhood_orbit_reps": 1,
+     "neighbourhoods_bad": 1624,
+     "child_orbit_rejected": 0,
+     "children_written": 1,
+     "wall_seconds": 0.190613,
+     "cpu_seconds": 0.177701,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "50dbd9bab95cd6d4e8b2cac0c529c99ccda5af10c241937fc556e4a71557449b",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.053582
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.063494
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.085098
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.054453
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-30",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/13-30.g6",
+   "parents": 7,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.160899,
+    "stats": {
+     "parents_seen": 7,
+     "parents_processed": 7,
+     "parents_degree_skipped": 0,
+     "bad_sets": 209,
+     "neighbourhoods": 1630,
+     "neighbourhood_orbit_reps": 1,
+     "neighbourhoods_bad": 1624,
+     "child_orbit_rejected": 0,
+     "children_written": 1,
+     "wall_seconds": 0.160976,
+     "cpu_seconds": 0.160899,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "50dbd9bab95cd6d4e8b2cac0c529c99ccda5af10c241937fc556e4a71557449b",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.050297
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.049616
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.076542
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.050733
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_13-30",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/13-30.g6",
+   "parents": 7,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.179447,
+    "stats": {
+     "parents_seen": 7,
+     "parents_processed": 7,
+     "parents_degree_skipped": 0,
+     "bad_sets": 209,
+     "neighbourhoods": 1630,
+     "neighbourhood_orbit_reps": 1,
+     "neighbourhoods_bad": 1624,
+     "child_orbit_rejected": 0,
+     "children_written": 1,
+     "wall_seconds": 0.187168,
+     "cpu_seconds": 0.179447,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "50dbd9bab95cd6d4e8b2cac0c529c99ccda5af10c241937fc556e4a71557449b",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.087706
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.087779
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.086198
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.054614
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-31",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_14-31.p398.g6",
+   "parents": 3572,
+   "reference": {
+    "returncode": 0,
+    "cpu": 10.646853,
+    "stats": {
+     "parents_seen": 3572,
+     "parents_processed": 1733,
+     "parents_degree_skipped": 1839,
+     "bad_sets": 25191,
+     "neighbourhoods": 98408,
+     "neighbourhood_orbit_reps": 1495,
+     "neighbourhoods_bad": 96388,
+     "child_orbit_rejected": 572,
+     "children_written": 923,
+     "wall_seconds": 11.14176,
+     "cpu_seconds": 10.646853,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "eb6105d3f09f926f4983b58548318da33c28385a0e3a657be1d62e175178d2d1",
+    "children": 923
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.062907
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.389616
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.575241
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.169417
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-31",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_14-31.p398.g6",
+   "parents": 3572,
+   "reference": {
+    "returncode": 0,
+    "cpu": 19.073145,
+    "stats": {
+     "parents_seen": 3572,
+     "parents_processed": 1733,
+     "parents_degree_skipped": 1839,
+     "bad_sets": 25191,
+     "neighbourhoods": 98408,
+     "neighbourhood_orbit_reps": 1495,
+     "neighbourhoods_bad": 96388,
+     "child_orbit_rejected": 572,
+     "children_written": 923,
+     "wall_seconds": 20.586271,
+     "cpu_seconds": 19.073145,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "eb6105d3f09f926f4983b58548318da33c28385a0e3a657be1d62e175178d2d1",
+    "children": 923
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.528778
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 8.902025
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.292679
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 5.74794
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-31",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/14-31.g6",
+   "parents": 4159,
+   "reference": {
+    "returncode": 0,
+    "cpu": 12.677367,
+    "stats": {
+     "parents_seen": 4159,
+     "parents_processed": 2286,
+     "parents_degree_skipped": 1873,
+     "bad_sets": 28074,
+     "neighbourhoods": 133272,
+     "neighbourhood_orbit_reps": 1520,
+     "neighbourhoods_bad": 131215,
+     "child_orbit_rejected": 585,
+     "children_written": 935,
+     "wall_seconds": 13.81927,
+     "cpu_seconds": 12.677367,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "5a42ce965537c2759a6c7810094c6545688b5cb910875f7c658906142c1da946",
+    "children": 935
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.742432
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.406205
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.039027
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.868399
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-31",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/14-31.g6",
+   "parents": 4159,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "children": 0
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-32",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_14-32.p398.g6",
+   "parents": 278,
+   "reference": {
+    "returncode": 0,
+    "cpu": 1.517508,
+    "stats": {
+     "parents_seen": 278,
+     "parents_processed": 183,
+     "parents_degree_skipped": 95,
+     "bad_sets": 3628,
+     "neighbourhoods": 16597,
+     "neighbourhood_orbit_reps": 68,
+     "neighbourhoods_bad": 16481,
+     "child_orbit_rejected": 18,
+     "children_written": 50,
+     "wall_seconds": 1.5528,
+     "cpu_seconds": 1.517508,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "1996c55ae451966cdefd66a5cdcdfae8ddbefcd3014417e7aa607273f4cc9046",
+    "children": 50
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.661668
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.644354
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.542201
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.555924
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-32",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_14-32.p398.g6",
+   "parents": 278,
+   "reference": {
+    "returncode": 0,
+    "cpu": 1.785192,
+    "stats": {
+     "parents_seen": 278,
+     "parents_processed": 183,
+     "parents_degree_skipped": 95,
+     "bad_sets": 3628,
+     "neighbourhoods": 16597,
+     "neighbourhood_orbit_reps": 68,
+     "neighbourhoods_bad": 16481,
+     "child_orbit_rejected": 18,
+     "children_written": 50,
+     "wall_seconds": 1.809129,
+     "cpu_seconds": 1.785192,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "1996c55ae451966cdefd66a5cdcdfae8ddbefcd3014417e7aa607273f4cc9046",
+    "children": 50
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.807425
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.922184
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.745967
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.714062
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-32",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/14-32.g6",
+   "parents": 291,
+   "reference": {
+    "returncode": 0,
+    "cpu": 1.399953,
+    "stats": {
+     "parents_seen": 291,
+     "parents_processed": 196,
+     "parents_degree_skipped": 95,
+     "bad_sets": 3685,
+     "neighbourhoods": 17828,
+     "neighbourhood_orbit_reps": 68,
+     "neighbourhoods_bad": 17712,
+     "child_orbit_rejected": 18,
+     "children_written": 50,
+     "wall_seconds": 1.414499,
+     "cpu_seconds": 1.399953,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "1996c55ae451966cdefd66a5cdcdfae8ddbefcd3014417e7aa607273f4cc9046",
+    "children": 50
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.650347
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.66762
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.567713
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.57232
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-32",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/14-32.g6",
+   "parents": 291,
+   "reference": {
+    "returncode": 2,
+    "cpu": null,
+    "stats": null,
+    "stderr": "udenum: parent file contains a forbidden graph",
+    "output_sha256": "45edf8511bbc45af44d24565b8508ef5bc70f83212bf4bdbc439e9450c13e9e9",
+    "children": 1
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": null
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-33",
+   "input": "p398",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_14-33.p398.g6",
+   "parents": 19,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.403665,
+    "stats": {
+     "parents_seen": 19,
+     "parents_processed": 15,
+     "parents_degree_skipped": 4,
+     "bad_sets": 515,
+     "neighbourhoods": 2331,
+     "neighbourhood_orbit_reps": 2,
+     "neighbourhoods_bad": 2328,
+     "child_orbit_rejected": 0,
+     "children_written": 2,
+     "wall_seconds": 0.414632,
+     "cpu_seconds": 0.403665,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "78c8cc9431a26c0c905d40bc666c661deea8e9aae095d2b6814dc8d6be8871c7",
+    "children": 2
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.165355
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.164688
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.179306
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.151686
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-33",
+   "input": "p398",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<scratch>/scratchpad/m398speed/final-v8/speed398-identity/dag-18-46_14-33.p398.g6",
+   "parents": 19,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.473325,
+    "stats": {
+     "parents_seen": 19,
+     "parents_processed": 15,
+     "parents_degree_skipped": 4,
+     "bad_sets": 515,
+     "neighbourhoods": 2331,
+     "neighbourhood_orbit_reps": 2,
+     "neighbourhoods_bad": 2328,
+     "child_orbit_rejected": 0,
+     "children_written": 2,
+     "wall_seconds": 0.49168,
+     "cpu_seconds": 0.473325,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "78c8cc9431a26c0c905d40bc666c661deea8e9aae095d2b6814dc8d6be8871c7",
+    "children": 2
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.183002
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.189928
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.210295
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.17012
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-33",
+   "input": "p74",
+   "mode": "plain",
+   "verify_parents": false,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/14-33.g6",
+   "parents": 19,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.401831,
+    "stats": {
+     "parents_seen": 19,
+     "parents_processed": 15,
+     "parents_degree_skipped": 4,
+     "bad_sets": 515,
+     "neighbourhoods": 2331,
+     "neighbourhood_orbit_reps": 2,
+     "neighbourhoods_bad": 2328,
+     "child_orbit_rejected": 0,
+     "children_written": 2,
+     "wall_seconds": 0.417845,
+     "cpu_seconds": 0.401831,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "78c8cc9431a26c0c905d40bc666c661deea8e9aae095d2b6814dc8d6be8871c7",
+    "children": 2
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.146466
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.14705
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.180789
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.153056
+    }
+   },
+   "identical": true
+  },
+  {
+   "group": "extra",
+   "cell": "dag-18-46_14-33",
+   "input": "p74",
+   "mode": "verify",
+   "verify_parents": true,
+   "parents_file": "<repo>/.claude/worktrees/agent-aa48d44a9a3ad8d35/research/unit-distance-22/enum/out-sup/dag-18-46/_parents/14-33.g6",
+   "parents": 19,
+   "reference": {
+    "returncode": 0,
+    "cpu": 0.308988,
+    "stats": {
+     "parents_seen": 19,
+     "parents_processed": 15,
+     "parents_degree_skipped": 4,
+     "bad_sets": 515,
+     "neighbourhoods": 2331,
+     "neighbourhood_orbit_reps": 2,
+     "neighbourhoods_bad": 2328,
+     "child_orbit_rejected": 0,
+     "children_written": 2,
+     "wall_seconds": 0.319785,
+     "cpu_seconds": 0.308988,
+     "max_rss_kib": 34804
+    },
+    "stderr": "",
+    "output_sha256": "78c8cc9431a26c0c905d40bc666c661deea8e9aae095d2b6814dc8d6be8871c7",
+    "children": 2
+   },
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.141965
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.185099
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.203037
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.130904
+    }
+   },
+   "identical": true
+  }
+ ],
+ "pass": true,
+ "seconds": 3232.9
+}

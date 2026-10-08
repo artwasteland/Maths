@@ -1,0 +1,3 @@
+REJECT record DJ[ map_length: R-ptr
+ACCEPT record C~ verified
+REJECT run records_rejected

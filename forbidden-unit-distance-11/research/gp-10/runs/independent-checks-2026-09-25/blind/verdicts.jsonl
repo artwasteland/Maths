@@ -1,0 +1,324 @@
+{"g6": "I??OzIJ}?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.013}
+{"g6": "I??XUC{{O", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.011}
+{"g6": "I??[kXpY_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.01}
+{"g6": "I??gpb@~_", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (24 cofactors; frame 0,8; 29 sat pairs; 45 vars)", "seconds": 3.428}
+{"g6": "I??guBoNo", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (24 cofactors; frame 0,7; 29 sat pairs; 45 vars)", "seconds": 3.647}
+{"g6": "I??pOvK{O", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.01}
+{"g6": "I??pYaH}?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.01}
+{"g6": "I?@OpUk{O", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.006}
+{"g6": "I?@XuQoWW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "I?AAhWZ}?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.012}
+{"g6": "I?AOoxhwg", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.01}
+{"g6": "I?CKGxb{G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.012}
+{"g6": "I?CO\\Te{?", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (26 cofactors; frame 3,9; 11 sat pairs; 27 vars)", "seconds": 3.024}
+{"g6": "I?CYKMqYO", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at refuted record I?GPYMX{?", "seconds": 0.0}
+{"g6": "I?C_WnG{W", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "I?CbOiL{O", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.009}
+{"g6": "I?CoUCm{O", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.009}
+{"g6": "I?CtQrCwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (14 rows; frame 3,7; 9 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 5.835}
+{"g6": "I?D@Yib}?", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (25 cofactors; frame 0,8; 28 sat pairs; 44 vars)", "seconds": 0.287}
+{"g6": "I?DHGupw_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.026}
+{"g6": "I?DHtbCwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (8 rows; frame 9,7; 11 sat pairs); univariate in y_6 of degree 2 with no real root", "seconds": 0.301}
+{"g6": "I?DP]QowW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 9,0; 7 sat pairs); f = c + sum of 1 weighted squares, c > 0", "seconds": 0.822}
+{"g6": "I?EGXdpw_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.072}
+{"g6": "I?EHf@bVG", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (23 cofactors; frame 7,8; 7 sat pairs); univariate in x_0 of degree 2 with no real root", "seconds": 1.843}
+{"g6": "I?EJPjOwW", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (26 cofactors; frame 7,9; 10 sat pairs; 26 vars)", "seconds": 0.054}
+{"g6": "I?ERPrCwW", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[17] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "I?Ee@liV?", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (25 cofactors; frame 0,5; 28 sat pairs; 44 vars)", "seconds": 0.117}
+{"g6": "I?ErSPPwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 9,7; 12 sat pairs); univariate in x_2 of degree 4 with no real root", "seconds": 0.759}
+{"g6": "I?FDRGtU_", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (16 rows; frame 7,8; 4 sat pairs); f = c + sum of 11 weighted squares, c > 0", "seconds": 0.157}
+{"g6": "I?GO]C{{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (18 rows; frame 8,2; 10 sat pairs; 26 vars)", "seconds": 1.501}
+{"g6": "I?GPYMX{?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.051}
+{"g6": "I?GWZER{?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.024}
+{"g6": "I?H?pmM{?", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[28] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "I?H[`fGwW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (16 rows; frame 0,6; 7 sat pairs; 23 vars)", "seconds": 3.133}
+{"g6": "I?I?zhIkG", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (13 rows; frame 9,8; 9 sat pairs); f = c + sum of 4 weighted squares, c > 0", "seconds": 0.108}
+{"g6": "I?I]Q_pwW", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (25 cofactors; frame 9,8; 12 sat pairs); univariate in t_10 of degree 2 with no real root", "seconds": 2.253}
+{"g6": "I?K?WnC{W", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.035}
+{"g6": "I?L?HuUw_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.074}
+{"g6": "I?L@GuTw_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:4", "seconds": 0.129}
+{"g6": "I?LU`QDwW", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (23 cofactors; frame 0,6; 9 sat pairs); univariate in y_9 of degree 2 with no real root", "seconds": 0.569}
+{"g6": "I?MUPHPwW", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (25 cofactors; frame 9,8; 9 sat pairs); univariate in y_6 of degree 2 with no real root", "seconds": 2.647}
+{"g6": "I?OTPjK{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 0,6; 8 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 0.643}
+{"g6": "I?O`oiL{O", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.028}
+{"g6": "I?OpSfK{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (17 rows; frame 0,7; 8 sat pairs; 24 vars)", "seconds": 1.259}
+{"g6": "I?P@`yid_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 1 nodes, leaves L1a:1", "seconds": 0.012}
+{"g6": "I?P@hqidO", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[38] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "I?PP_]qiO", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.056}
+{"g6": "I?Q@`yiT_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.012}
+{"g6": "I?_PI[{s_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "I?_y`fGwW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 19 nodes, leaves L1a:4,L1c:4", "seconds": 0.085}
+{"g6": "I?`Hf?rVG", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (8 rows; frame 0,4; 7 sat pairs); univariate in y_7 of degree 2 with no real root", "seconds": 0.412}
+{"g6": "I?`LA_uMW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (21 rows; frame 9,8; 7 sat pairs); f = c + sum of 4 weighted squares, c > 0", "seconds": 0.289}
+{"g6": "I?dP`NGwW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (10 rows; frame 0,4; 8 sat pairs; 24 vars)", "seconds": 0.876}
+{"g6": "I?l@Glo_w", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at refuted record IAh?HKyco", "seconds": 0.0}
+{"g6": "I?oPbIM{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (8 rows; frame 7,9; 10 sat pairs); univariate in y_8 of degree 2 with no real root", "seconds": 0.78}
+{"g6": "I?pP@eM{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (13 rows; frame 3,9; 11 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 1.287}
+{"g6": "I@?KQJoNo", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (16 rows; frame 9,4; 5 sat pairs); f = c + sum of 6 weighted squares, c > 0", "seconds": 3.548}
+{"g6": "I@?O]Omso", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.012}
+{"g6": "I@?WPNA}G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.011}
+{"g6": "I@?kQfK{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 0,6; 8 sat pairs); univariate in t_6 of degree 2 with no real root", "seconds": 0.1}
+{"g6": "I@?mQaL{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 0,6; 8 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 0.07}
+{"g6": "I@@JSaL{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 0,7; 7 sat pairs); univariate in t_5 of degree 2 with no real root", "seconds": 0.234}
+{"g6": "I@@KTHQMW", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (21 cofactors; frame 2,9; 6 sat pairs); f = c + sum of 4 weighted squares, c > 0", "seconds": 0.033}
+{"g6": "I@@RSQL{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (15 rows; frame 7,9; 10 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 1.041}
+{"g6": "I@AGv@M[o", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.016}
+{"g6": "I@ANAGX]G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "I@A_qXico", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.016}
+{"g6": "I@A_q\\gcg", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.011}
+{"g6": "I@A_q]gSg", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.006}
+{"g6": "I@CGNBANg", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.009}
+{"g6": "I@CJ?NDmO", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "I@D?\\FK{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 7,9; 7 sat pairs); univariate in t_4 of degree 2 with no real root", "seconds": 0.097}
+{"g6": "I@E@MPE]W", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.015}
+{"g6": "I@EAZAL{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (19 rows; frame 7,9; 8 sat pairs); f = c + sum of 2 weighted squares, c > 0", "seconds": 2.413}
+{"g6": "I@F?YE`]G", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 9,8; 7 sat pairs); f = c + sum of 4 weighted squares, c > 0", "seconds": 0.369}
+{"g6": "I@GCi\\SbG", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.052}
+{"g6": "I@KQKCLwG", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.021}
+{"g6": "I@P@OmeeO", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[38] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "I@PP?uFi_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.037}
+{"g6": "I@QP?tFi_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.046}
+{"g6": "I@`@|PSoW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (16 rows; frame 9,7; 8 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 0.926}
+{"g6": "I@`BOiL{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (12 rows; frame 0,4; 7 sat pairs; 23 vars)", "seconds": 1.136}
+{"g6": "I@`aOeL{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (9 rows; frame 0,4; 9 sat pairs; 25 vars)", "seconds": 0.899}
+{"g6": "I@hO`DJ`o", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[38] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "I@hUE?hDg", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 3 nodes, leaves L1b:2", "seconds": 0.009}
+{"g6": "IA?HtJK{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (14 rows; frame 0,7; 7 sat pairs; 23 vars)", "seconds": 0.3}
+{"g6": "IA?XTFK{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (17 rows; frame 0,7; 7 sat pairs; 23 vars)", "seconds": 2.353}
+{"g6": "IA?kPfK{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (8 rows; frame 1,9; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 0.118}
+{"g6": "IAAHPfK{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (8 rows; frame 0,8; 6 sat pairs); univariate in y_9 of degree 6 with no real root", "seconds": 0.139}
+{"g6": "IACcPNK{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 0,6; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 0.142}
+{"g6": "IAGO]Ed}?", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (12 rows; frame 9,3; 9 sat pairs); univariate in y_6 of degree 2 with no real root", "seconds": 0.206}
+{"g6": "IAI?gXb}?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.006}
+{"g6": "IAICqGd]W", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (23 cofactors; frame 0,5; 7 sat pairs); univariate in y_9 of degree 2 with no real root", "seconds": 0.224}
+{"g6": "IAMSQCdwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (12 rows; frame 3,4; 8 sat pairs); univariate in y_9 of degree 2 with no real root", "seconds": 1.142}
+{"g6": "IA_HL`M[o", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (7 rows; frame 9,1; 7 sat pairs); univariate in x_0 of degree 2 with no real root", "seconds": 0.492}
+{"g6": "IAh?HKyco", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 2 step(s) ending at forbidden-74[38] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "IB?iSEL{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (15 rows; frame 7,9; 12 sat pairs; 28 vars)", "seconds": 1.306}
+{"g6": "IBA?XVK{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 9,1; 7 sat pairs); univariate in t_6 of degree 2 with no real root", "seconds": 0.13}
+{"g6": "IBOGLEF}?", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (22 cofactors; frame 0,7; 6 sat pairs); univariate in t_5 of degree 2 with no real root", "seconds": 0.678}
+{"g6": "ICCiF@bFg", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (23 cofactors; frame 8,9; 7 sat pairs); univariate in y_0 of degree 2 with no real root", "seconds": 1.939}
+{"g6": "IC`PiOhWw", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (23 cofactors; frame 9,1; 7 sat pairs); univariate in x_0 of degree 2 with no real root", "seconds": 1.277}
+{"g6": "ID?JQIL{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (13 rows; frame 9,7; 7 sat pairs); univariate in t_3 of degree 2 with no real root", "seconds": 2.444}
+{"g6": "ID?iQEL{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (14 rows; frame 9,7; 9 sat pairs; 25 vars)", "seconds": 0.309}
+{"g6": "ID@aOUL{O", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (24 cofactors; frame 0,3; 8 sat pairs; 24 vars)", "seconds": 2.505}
+{"g6": "IDF?R@FIw", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (23 cofactors; frame 0,3; 7 sat pairs); univariate in y_9 of degree 2 with no real root", "seconds": 0.653}
+{"g6": "IG?TOzK{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 0,6; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 0.261}
+{"g6": "IGASQgi]W", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (5 rows; frame 0,5; 6 sat pairs); univariate in x_9 of degree 2 with no real root", "seconds": 0.72}
+{"g6": "IGCKhZOwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 0,6; 7 sat pairs); univariate in t_6 of degree 2 with no real root", "seconds": 0.192}
+{"g6": "IGCPMQM{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 0,7; 8 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 0.101}
+{"g6": "IGCXSNOwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 8,9; 8 sat pairs); univariate in t_5 of degree 2 with no real root", "seconds": 0.536}
+{"g6": "IGC[PNOwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 8,9; 11 sat pairs); univariate in t_9 of degree 2 with no real root", "seconds": 0.726}
+{"g6": "IGC]cGhwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 7,9; 8 sat pairs); univariate in t_6 of degree 2 with no real root", "seconds": 0.105}
+{"g6": "IGDLGqPwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (4 rows; frame 7,8; 7 sat pairs); univariate in y_5 of degree 2 with no real root", "seconds": 0.232}
+{"g6": "IGDPSiIwW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (15 rows; frame 3,7; 9 sat pairs; 25 vars)", "seconds": 1.87}
+{"g6": "IGE?iCl}?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "IGE?lPE]W", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (23 cofactors; frame 7,9; 7 sat pairs); univariate in y_0 of degree 2 with no real root", "seconds": 3.552}
+{"g6": "IGE@[pSwW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (17 rows; frame 0,9; 7 sat pairs; 23 vars)", "seconds": 1.474}
+{"g6": "IGEHGvOwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 0,5; 8 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 0.831}
+{"g6": "IGEH[`PwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 9,0; 7 sat pairs); f = c + sum of 6 weighted squares, c > 0", "seconds": 0.994}
+{"g6": "IGEH_vCwW", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (24 cofactors; frame 8,9; 8 sat pairs; 24 vars)", "seconds": 2.072}
+{"g6": "IGEHsHPwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 7,9; 5 sat pairs); univariate in x_4 of degree 8 with no real root", "seconds": 0.894}
+{"g6": "IGESQgiwW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (10 rows; frame 7,9; 10 sat pairs; 26 vars)", "seconds": 0.248}
+{"g6": "IGGGm_MkW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "IGICqGT]W", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (23 cofactors; frame 0,5; 7 sat pairs); univariate in y_8 of degree 2 with no real root", "seconds": 0.202}
+{"g6": "IGJC_s\\x_", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (22 cofactors; frame 0,9; 5 sat pairs; 21 vars)", "seconds": 0.725}
+{"g6": "IGSsCCN{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (7 rows; frame 7,9; 12 sat pairs; 28 vars)", "seconds": 1.068}
+{"g6": "IG_PIqM{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (12 rows; frame 9,7; 6 sat pairs); univariate in x_5 of degree 2 with no real root", "seconds": 3.075}
+{"g6": "IG_XQGR{G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.01}
+{"g6": "IG_gaMQ}G", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (25 cofactors; frame 0,4; 28 sat pairs); univariate in t_27 of degree 2 with no real root", "seconds": 1.238}
+{"g6": "IG`GhCX{G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "IGdP_MHwW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (12 rows; frame 8,9; 10 sat pairs; 26 vars)", "seconds": 0.275}
+{"g6": "IGoOHeM{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (15 rows; frame 1,9; 8 sat pairs); univariate in y_8 of degree 2 with no real root", "seconds": 0.368}
+{"g6": "IH?O]QM{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 0,9; 7 sat pairs); univariate in t_6 of degree 2 with no real root", "seconds": 0.098}
+{"g6": "IHA?[pE]W", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (23 cofactors; frame 8,9; 7 sat pairs); univariate in x_0 of degree 2 with no real root", "seconds": 1.214}
+{"g6": "IHAAWqL{O", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (24 cofactors; frame 0,5; 28 sat pairs; 44 vars)", "seconds": 1.569}
+{"g6": "IHCCGXF}O", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (24 cofactors; frame 4,9; 8 sat pairs; 24 vars)", "seconds": 0.476}
+{"g6": "IHCKACF~G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.009}
+{"g6": "IHE?ICN}G", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (10 rows; frame 0,5; 9 sat pairs; 25 vars)", "seconds": 0.174}
+{"g6": "II?XCUF}?", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 0,7; 8 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 0.196}
+{"g6": "IIGG_MFmO", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "II_OHUM{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (12 rows; frame 0,4; 7 sat pairs; 23 vars)", "seconds": 0.16}
+{"g6": "IIj?c?jDw", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (16 rows; frame 0,4; 9 sat pairs; 25 vars)", "seconds": 1.471}
+{"g6": "IK?gaUF}?", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (14 rows; frame 0,9; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 3.556}
+{"g6": "IK_AXiL[_", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (17 rows; frame 0,3; 8 sat pairs; 24 vars)", "seconds": 5.238}
+{"g6": "IK_OXhIWw", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (8 rows; frame 0,3; 7 sat pairs); univariate in x_9 of degree 2 with no real root", "seconds": 0.862}
+{"g6": "IK`@?WR~_", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (23 cofactors; frame 0,3; 7 sat pairs; 23 vars)", "seconds": 1.138}
+{"g6": "IK`OgShWw", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (7 rows; frame 7,9; 7 sat pairs); univariate in x_0 of degree 2 with no real root", "seconds": 0.18}
+{"g6": "IMh@K?RBW", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (24 cofactors; frame 0,3; 29 sat pairs; 45 vars)", "seconds": 0.157}
+{"g6": "IMi?hOFOw", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (11 rows; frame 0,3; 8 sat pairs; 24 vars)", "seconds": 0.724}
+{"g6": "IO?ZQaL{O", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (23 cofactors; frame 0,2; 7 sat pairs; 23 vars)", "seconds": 2.78}
+{"g6": "IQ?GXfK{O", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (24 cofactors; frame 0,2; 28 sat pairs; 44 vars)", "seconds": 1.49}
+{"g6": "IQ?H_^C}G", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (10 rows; frame 0,2; 8 sat pairs; 24 vars)", "seconds": 0.46}
+{"g6": "IQ?gu?F}?", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (15 rows; frame 9,0; 12 sat pairs; 28 vars)", "seconds": 1.705}
+{"g6": "IQOH_MD}G", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (16 rows; frame 0,9; 8 sat pairs; 24 vars)", "seconds": 2.68}
+{"g6": "IQQ?z_MgW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 0,2; 6 sat pairs); univariate in t_5 of degree 2 with no real root", "seconds": 0.715}
+{"g6": "IQ_AhW\\w_", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (12 rows; frame 7,8; 6 sat pairs); univariate in t_5 of degree 2 with no real root", "seconds": 0.494}
+{"g6": "IRaAQGbFG", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (6 rows; frame 0,2; 11 sat pairs; 27 vars)", "seconds": 0.252}
+{"g6": "IRr??CfEo", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 7 nodes, leaves L1a:4", "seconds": 0.181}
+{"g6": "ITQAIObFG", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.041}
+{"g6": "IWCAWiL{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (12 rows; frame 0,2; 7 sat pairs; 23 vars)", "seconds": 1.662}
+{"g6": "IWCIWiPwW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (7 rows; frame 0,2; 6 sat pairs); univariate in t_5 of degree 2 with no real root", "seconds": 0.513}
+{"g6": "IWEKa@bFW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (11 rows; frame 0,2; 8 sat pairs; 24 vars)", "seconds": 0.279}
+{"g6": "IWde?_X@w", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.006}
+{"g6": "IYE?{H`Aw", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (15 rows; frame 7,8; 7 sat pairs); univariate in t_6 of degree 2 with no real root", "seconds": 5.84}
+{"g6": "IY_?yWdcg", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (12 rows; frame 8,9; 11 sat pairs); univariate in x_0 of degree 2 with no real root", "seconds": 0.921}
+{"g6": "I[C?GTF~?", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (7 rows; frame 0,2; 6 sat pairs); univariate in t_5 of degree 2 with no real root", "seconds": 0.367}
+{"g6": "I[JAO_RBW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 3 nodes, leaves L1c:2", "seconds": 0.032}
+{"g6": "I[O@]_TBg", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 0,2; 7 sat pairs); univariate in t_4 of degree 2 with no real root", "seconds": 1.659}
+{"g6": "I[O@wXDcW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 0,2; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 1.666}
+{"g6": "I[OBKgLEg", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (14 rows; frame 3,7; 8 sat pairs; 24 vars)", "seconds": 0.537}
+{"g6": "I[OBWWTcW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 0,9; 6 sat pairs); univariate in x_1 of degree 4 with no real root", "seconds": 0.492}
+{"g6": "I_?Xd`hR_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "I_?pQyYx_", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (10 rows; frame 2,9; 7 sat pairs; 23 vars)", "seconds": 0.145}
+{"g6": "I_?pShI}?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.014}
+{"g6": "I_AJ@c[]G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.018}
+{"g6": "I_AQPgiMW", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (20 cofactors; frame 7,9; 5 sat pairs); f = c + sum of 6 weighted squares, c > 0", "seconds": 0.058}
+{"g6": "I_CHbIF}?", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 7,8; 13 sat pairs); univariate in t_12 of degree 2 with no real root", "seconds": 0.427}
+{"g6": "I_CPJQM{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (12 rows; frame 0,9; 10 sat pairs); univariate in y_8 of degree 2 with no real root", "seconds": 1.111}
+{"g6": "I_CbWyooW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 9,8; 7 sat pairs); f = c + sum of 2 weighted squares, c > 0", "seconds": 0.033}
+{"g6": "I_CfClKMG", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (12 rows; frame 0,6; 6 sat pairs); univariate in x_9 of degree 4 with no real root", "seconds": 2.461}
+{"g6": "I_E`yH`EW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (11 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 0.278}
+{"g6": "I_G?}Gt}?", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (16 rows; frame 0,1; 8 sat pairs; 24 vars)", "seconds": 1.402}
+{"g6": "I_GO]Ct}?", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (14 rows; frame 2,9; 7 sat pairs; 23 vars)", "seconds": 0.246}
+{"g6": "I_GP|`KoW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (14 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 0.487}
+{"g6": "I_GQSGyLW", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (20 cofactors; frame 8,9; 6 sat pairs); f = c + sum of 4 weighted squares, c > 0", "seconds": 0.216}
+{"g6": "I_I?X`R~?", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (16 rows; frame 0,1; 8 sat pairs; 24 vars)", "seconds": 1.999}
+{"g6": "I_KOJEM{O", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (23 cofactors; frame 0,9; 8 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 2.192}
+{"g6": "I_O_hqM{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (14 rows; frame 0,9; 6 sat pairs; 22 vars)", "seconds": 0.766}
+{"g6": "I_WOHeM{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (18 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 1.993}
+{"g6": "I_YP?cjDo", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (20 cofactors; frame 6,7; 5 sat pairs); f = c + sum of 6 weighted squares, c > 0", "seconds": 0.043}
+{"g6": "I__gacf}?", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (14 rows; frame 9,0; 8 sat pairs); f = c + sum of 2 weighted squares, c > 0", "seconds": 1.179}
+{"g6": "I_`?pGr~?", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (12 rows; frame 0,1; 9 sat pairs; 25 vars)", "seconds": 0.45}
+{"g6": "I_hRC_hDg", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (12 rows; frame 7,8; 11 sat pairs; 27 vars)", "seconds": 1.742}
+{"g6": "I_hTA_hDg", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "I`?JOiL{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (13 rows; frame 9,0; 9 sat pairs; 25 vars)", "seconds": 0.792}
+{"g6": "I`?M@cN~?", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (20 cofactors; frame 9,0; 3 sat pairs; 19 vars)", "seconds": 0.423}
+{"g6": "I`?iOeL{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (11 rows; frame 7,9; 9 sat pairs; 25 vars)", "seconds": 0.18}
+{"g6": "I`CaOML{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 0,9; 10 sat pairs); univariate in y_6 of degree 2 with no real root", "seconds": 0.182}
+{"g6": "I`GGIeF}?", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (15 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 1.594}
+{"g6": "I`GOSLF}?", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (17 rows; frame 7,8; 8 sat pairs; 24 vars)", "seconds": 2.064}
+{"g6": "I`IQU?FMG", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.023}
+{"g6": "I`O?Wmc}G", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (12 rows; frame 9,0; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 0.249}
+{"g6": "I`Q?zGpag", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 0,1; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 0.417}
+{"g6": "I`Q?zOUgW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 17 nodes, leaves L1a:6", "seconds": 0.077}
+{"g6": "I`QAx_LgW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 8,4; 10 sat pairs); univariate in y_7 of degree 2 with no real root", "seconds": 0.414}
+{"g6": "I`QBWgpaW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 0,1; 8 sat pairs); univariate in t_4 of degree 2 with no real root", "seconds": 0.882}
+{"g6": "I`QBdOUBW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (16 rows; frame 9,8; 9 sat pairs; 25 vars)", "seconds": 0.5}
+{"g6": "I`QBgoLgW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 9,2; 9 sat pairs); univariate in y_8 of degree 2 with no real root", "seconds": 0.096}
+{"g6": "I`QId?FMG", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "I`Z?c?NKo", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.012}
+{"g6": "I`_AWyd[_", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (15 rows; frame 0,1; 8 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 0.898}
+{"g6": "I`_AhW\\w_", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 7,8; 10 sat pairs); univariate in t_5 of degree 2 with no real root", "seconds": 0.402}
+{"g6": "I`_BWyoPW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (12 rows; frame 8,9; 11 sat pairs); univariate in x_0 of degree 2 with no real root", "seconds": 1.37}
+{"g6": "I`_DYosPW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (17 rows; frame 1,7; 9 sat pairs; 25 vars)", "seconds": 0.197}
+{"g6": "I`_EHW\\[_", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (20 rows; frame 1,6; 9 sat pairs; 25 vars)", "seconds": 0.385}
+{"g6": "I``?zGqaW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 1,7; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 0.254}
+{"g6": "I``?~?pBg", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (14 rows; frame 9,6; 5 sat pairs); univariate in x_8 of degree 2 with no real root", "seconds": 4.863}
+{"g6": "I``@jGYaW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (13 rows; frame 3,6; 8 sat pairs); univariate in t_6 of degree 2 with no real root", "seconds": 0.92}
+{"g6": "I``F_odBW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (20 rows; frame 7,8; 10 sat pairs); univariate in x_3 of degree 6 with no real root", "seconds": 3.29}
+{"g6": "Ia?H_]c}G", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (25 cofactors; frame 0,9; 9 sat pairs; 25 vars)", "seconds": 0.797}
+{"g6": "Ia?_o]c}G", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (22 cofactors; frame 0,1; 6 sat pairs); univariate in t_5 of degree 2 with no real root", "seconds": 1.927}
+{"g6": "IaC_\\?N{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 9,3; 7 sat pairs); univariate in y_4 of degree 2 with no real root", "seconds": 1.568}
+{"g6": "IaGH_MD}G", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (12 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 0.245}
+{"g6": "IaYPC?VIo", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.025}
+{"g6": "IbIAsGdAw", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 7,8; 8 sat pairs); univariate in x_6 of degree 2 with no real root", "seconds": 1.292}
+{"g6": "IbQ_S?fEw", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (12 rows; frame 0,1; 9 sat pairs; 25 vars)", "seconds": 1.469}
+{"g6": "IbY?K?NKo", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.009}
+{"g6": "Ibb?P?NKw", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (8 rows; frame 8,9; 8 sat pairs); univariate in y_5 of degree 2 with no real root", "seconds": 0.113}
+{"g6": "IeH`S?RBW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.011}
+{"g6": "Ig?GLpqF_", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.018}
+{"g6": "Ig?G{h`MG", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.009}
+{"g6": "Ig?g_uF}?", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 0,1; 8 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 0.919}
+{"g6": "Ig?hCdYFO", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "Ig?oGuI]G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.018}
+{"g6": "Ig?oWeH]G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "Ig?osPbFO", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "IgAH_cL]G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.013}
+{"g6": "IgAOOse]G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.013}
+{"g6": "IgC@cXFN?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "IgCHcDdFO", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.023}
+{"g6": "IgCWSLaKW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.013}
+{"g6": "IgC_GUR~?", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (13 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 0.188}
+{"g6": "IgK?dLEFG", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "IgKOKCN{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (8 rows; frame 0,1; 7 sat pairs); univariate in t_5 of degree 2 with no real root", "seconds": 0.27}
+{"g6": "Ih??G]Y^?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.012}
+{"g6": "Ih?GoMD}G", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (8 rows; frame 0,1; 10 sat pairs; 26 vars)", "seconds": 0.21}
+{"g6": "Ih?WKTBMG", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "Ih?_kTKEW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 3 nodes, leaves L1c:2", "seconds": 0.009}
+{"g6": "Ih?gKdIEW", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[39] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "IhC_[HBEW", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[19] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "IhEBcGLAw", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 8,9; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 0.378}
+{"g6": "IhEChHHAw", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (15 rows; frame 0,6; 8 sat pairs); univariate in t_7 of degree 4 with no real root", "seconds": 3.213}
+{"g6": "IhECqGdAw", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 4,9; 8 sat pairs); univariate in y_2 of degree 2 with no real root", "seconds": 0.838}
+{"g6": "IhEEOgdAw", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (45 rows; frame 9,7; 9 sat pairs; 25 vars)", "seconds": 0.043}
+{"g6": "Ih_@[hDEg", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (15 rows; frame 5,8; 9 sat pairs); univariate in x_0 of degree 4 with no real root", "seconds": 1.651}
+{"g6": "Ih_@wXDcW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (13 rows; frame 7,9; 8 sat pairs); univariate in y_6 of degree 2 with no real root", "seconds": 1.292}
+{"g6": "Ih_BKoLDg", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (15 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 1.644}
+{"g6": "Ii?HSgMKW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.017}
+{"g6": "Ii?OdSMJG", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.018}
+{"g6": "IiCPCSFJG", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[25] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "Ik?BsgkBW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (13 rows; frame 8,9; 8 sat pairs); univariate in x_2 of degree 2 with no real root", "seconds": 0.789}
+{"g6": "IkC@GWN{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (13 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 0.647}
+{"g6": "IkC_GRRJo", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (17 rows; frame 0,8; 8 sat pairs; 24 vars)", "seconds": 0.636}
+{"g6": "IkIaO_RBW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "IkKaK?RBW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (10 rows; frame 0,1; 11 sat pairs; 27 vars)", "seconds": 1.031}
+{"g6": "IkL@K?RBW", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[37] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "Il`?OGZHo", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 3 nodes, leaves L1b:2", "seconds": 0.009}
+{"g6": "Il`@OgJ@w", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (22 cofactors; frame 8,9; 6 sat pairs); f = c + sum of 12 weighted squares, c > 0", "seconds": 0.055}
+{"g6": "Im?hS?RBW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.01}
+{"g6": "Io?OPlM}?", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (23 cofactors; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 0.707}
+{"g6": "Io?QGwj]?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.039}
+{"g6": "Io?YpGhSW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.061}
+{"g6": "Io?hohHSW", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (22 cofactors; frame 8,9; 7 sat pairs); f = c + sum of 4 weighted squares, c > 0", "seconds": 0.136}
+{"g6": "Io?i_oxPo", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.017}
+{"g6": "Io?pOpRRO", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[19] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "Io@POWR]?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 1 nodes, leaves L1a:1", "seconds": 0.003}
+{"g6": "IoCDiWwPW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (13 rows; frame 7,9; 7 sat pairs); univariate in t_4 of degree 2 with no real root", "seconds": 0.173}
+{"g6": "IoCHIaF]?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.013}
+{"g6": "IoCIGwb[G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.031}
+{"g6": "IoCOPLE}G", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (8 rows; frame 0,1; 8 sat pairs; 24 vars)", "seconds": 0.532}
+{"g6": "IoCQO[d[G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.009}
+{"g6": "IoCWaSeWW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.006}
+{"g6": "IoCY@LIKW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.011}
+{"g6": "IoCi?wbSg", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:2,L1c:2", "seconds": 0.032}
+{"g6": "IoD@GoN{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (16 rows; frame 9,7; 4 sat pairs); f = c + sum of 8 weighted squares, c > 0", "seconds": 0.205}
+{"g6": "IoD@oghPW", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.013}
+{"g6": "IoDPOodOw", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (26 cofactors; frame 0,1; 29 sat pairs; 45 vars)", "seconds": 3.038}
+{"g6": "IoDPS@LKo", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 3 nodes, leaves L1b:2", "seconds": 0.009}
+{"g6": "IoGAGwU]G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "IoGQGoN{O", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (18 rows; frame 7,8; 7 sat pairs; 23 vars)", "seconds": 1.964}
+{"g6": "IoGq?cZRO", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "IoH@?kZV?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1", "seconds": 0.018}
+{"g6": "IoHP?cZRO", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.01}
+{"g6": "IoM?i@FMW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (15 rows; frame 8,9; 10 sat pairs; 26 vars)", "seconds": 0.911}
+{"g6": "IoS_GcN{O", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (13 rows; frame 0,9; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 0.712}
+{"g6": "IoSo?FbFo", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (13 rows; frame 0,8; 5 sat pairs); univariate in x_9 of degree 4 with no real root", "seconds": 2.732}
+{"g6": "Ip??WlK}G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.02}
+{"g6": "Ip?AWgL]G", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "IpD?GUbVG", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (26 cofactors; frame 8,9; 10 sat pairs; 26 vars)", "seconds": 0.738}
+{"g6": "IpO@mGLEg", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (16 rows; frame 7,8; 7 sat pairs; 23 vars)", "seconds": 1.851}
+{"g6": "IpO@m_LBg", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (16 rows; frame 8,9; 9 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 2.45}
+{"g6": "Iq?DQgmFO", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (9 rows; frame 6,8; 8 sat pairs); univariate in t_7 of degree 2 with no real root", "seconds": 0.624}
+{"g6": "Iq?DYgwBW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (17 rows; frame 8,9; 8 sat pairs; 24 vars)", "seconds": 1.121}
+{"g6": "Iq?G`KM}G", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (8 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 0.762}
+{"g6": "IqGFGgLEW", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (18 rows; frame 9,3; 6 sat pairs); univariate in x_6 of degree 6 with no real root", "seconds": 3.993}
+{"g6": "IqGOGQfUo", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (16 rows; frame 8,6; 9 sat pairs); univariate in t_8 of degree 2 with no real root", "seconds": 1.491}
+{"g6": "IqGOGQjTo", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (22 cofactors; frame 0,1; 6 sat pairs); univariate in y_9 of degree 2 with no real root", "seconds": 0.401}
+{"g6": "IqGQSGfEo", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 0,1; 10 sat pairs); univariate in t_9 of degree 2 with no real root", "seconds": 1.454}
+{"g6": "IqGU@SUBW", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (9 rows; frame 0,1; 8 sat pairs; 24 vars)", "seconds": 0.42}
+{"g6": "IqGW?EfUo", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (14 rows; frame 0,1; 13 sat pairs; 29 vars)", "seconds": 1.081}
+{"g6": "IqI?xPDCw", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (11 rows; frame 0,1; 8 sat pairs; 24 vars)", "seconds": 0.174}
+{"g6": "IqI@gXHCw", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (18 rows; frame 8,9; 11 sat pairs; 27 vars)", "seconds": 1.706}
+{"g6": "IqI@qGLCw", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (11 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 0.361}
+{"g6": "Iq_@Z_TBg", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (11 rows; frame 0,1; 7 sat pairs); univariate in t_4 of degree 2 with no real root", "seconds": 0.314}
+{"g6": "IrCkA?FAw", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (23 cofactors; frame 0,1; 29 sat pairs; 45 vars)", "seconds": 0.157}
+{"g6": "IrQG?CfEo", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.017}
+{"g6": "Ir_@gXH@w", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 0,1; 7 sat pairs); univariate in t_3 of degree 2 with no real root", "seconds": 0.388}
+{"g6": "Ir`?X_FAw", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (10 rows; frame 7,2; 5 sat pairs); univariate in t_1 of degree 6 with no real root", "seconds": 1.642}
+{"g6": "Ir`G?CfEo", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (21 cofactors; frame 6,7; 6 sat pairs); f = c + sum of 4 weighted squares, c > 0", "seconds": 0.062}
+{"g6": "Is?@WxcU?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 1 nodes, leaves L1a:1", "seconds": 0.003}
+{"g6": "IsHBOgLCw", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (22 cofactors; frame 0,1; 6 sat pairs); univariate in y_7 of degree 2 with no real root", "seconds": 0.913}
+{"g6": "IsOa_sLHg", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (13 rows; frame 0,1; 7 sat pairs; 23 vars)", "seconds": 1.061}
+{"g6": "IsOapGLCw", "type": "real-dag", "verdict": "ACCEPT", "reason": "identity = f (14 rows; frame 8,9; 7 sat pairs); univariate in x_0 of degree 2 with no real root", "seconds": 2.513}
+{"g6": "ItP?OGrBw", "type": "null", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (24 cofactors; frame 8,9; 8 sat pairs; 24 vars)", "seconds": 1.506}

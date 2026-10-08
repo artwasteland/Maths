@@ -1,0 +1,55 @@
+{
+  "checker_sha256": "9064ccc64ae900aee07672f14d4e3fec4f4cb6a09ec0042bb2db7e6e8df3ce6f",
+  "claim_authorized": false,
+  "conditional": false,
+  "conditional_minimal": [],
+  "counts": {
+    "embedded": 0,
+    "refuted": 2,
+    "unknown": 0
+  },
+  "cross_checks": 0,
+  "detail": "minimality_claim_refuted_deletion",
+  "direct_rejections": 0,
+  "elapsed_seconds": 0.07830855902284384,
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 85188,
+    "nice": 19,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "hosts": false,
+      "path": "<repo>/research/gp-10/check-audit/cases/run-minimality-false-claim/records.jsonl",
+      "sha256": "1581d42c0ad2830c9162c5db52457175885a9dd3fd20f9d208bc15d126d8b916"
+    }
+  ],
+  "forbidden_limit": 4,
+  "hosts": 0,
+  "input_count": 2,
+  "input_sha256": "a894f669846830b21c1ca8bf8da6b296e3af24c96db8ff4ff76add198739b0b0",
+  "kernel_sha256": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+  "minimal": [
+    "DFw"
+  ],
+  "minimal_count": 1,
+  "minimal_file": "minimal.g6",
+  "nonminimal_count": 1,
+  "profile": "sample",
+  "reason": "minimality_claim_refuted_deletion",
+  "scope": "certificate-and-run-checks",
+  "status": "REJECT",
+  "trusted_data_sha256": {
+    "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  },
+  "unknown_rate": {
+    "budgets": "unknown-budgets.jsonl",
+    "denominator": 2,
+    "numerator": 0
+  }
+}

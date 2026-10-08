@@ -1,0 +1,9 @@
+original u22: slices 48, missing objects 0
+21-56.g6: files 48, records 1336, distinct 1336
+21-56.keep.g6: files 48, records 743, distinct 743
+22-61.g6: files 48, records 4, distinct 4
+22-61.keep.g6: files 48, records 0, distinct 0
+22-61.UNKNOWN.g6: files 48, records 0, distinct 0
+retained graph-file hash/count mismatches []
+metadata-only level totals {14: [103807064, 73109083], 15: [341340490, 221302081], 16: [265410249, 166774716], 17: [116383224, 67876870], 18: [54986763, 31131525], 19: [11780192, 5426649], 20: [166642, 82205], 21: [1336, 743], 22: [4, 0]}
+final-levels agrees with count copies True

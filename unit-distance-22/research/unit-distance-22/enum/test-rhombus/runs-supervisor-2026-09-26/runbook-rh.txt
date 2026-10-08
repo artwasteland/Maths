@@ -1,0 +1,47 @@
+K6 U23_RHOMBUS=2: exit 2: U23_RHOMBUS must be 0 or 1; anything written: False
+K6 U23_RHOMBUS=1 with U23_TRIANGLES=1: exit 2: U23_TRIANGLES=1 implies the rhombus rule: set one of the two; anything written: False
+K6 U23_RHOMBUS=1 with a missing checker: exit 3: 0:55:41Z] /nonexistent/udcheck_rhombus.py is missing (the linear rules' provers and checkers are pinned on every worker); run directories made: 0
+K1 rhombus rule, slices 0 and 1 of 2: exit 0
+    [2026-09-26T00:55:41Z] toolchain ok: Nauty&Traces version 2.8081 (32 bits); cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+    [2026-09-26T00:55:47Z] pins and self-checks passed
+    [2026-09-26T00:55:47Z] slice s0of2 starting (output <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-rh-s0of2)
+    results written <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/res/16-41-L12-rh/s0of2
+    [2026-09-26T00:56:05Z] slice s0of2 done
+    [2026-09-26T00:56:05Z] slice s1of2: levels <= 12 hard-linked from <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-rh-s0of2 (111 files)
+    [2026-09-26T00:56:05Z] slice s1of2 starting (output <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-rh-s1of2)
+    results written <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/res/16-41-L12-rh/s1of2
+    [2026-09-26T00:56:08Z] slice s1of2 done
+    [2026-09-26T00:56:08Z] all slices done: 0 1
+K3 pins after the rhombus run: the linear rules' files pinned: ['check/tri_verify.py', 'check/udcheck_rhombus.py', 'filter/udrhombus', 'filter/udrhombus.c', 'filter/udtriangle', 'filter/udtriangle.c']; missing []
+K1 triangles rule, slices 0 and 1 of 2: exit 0
+    [2026-09-26T00:56:08Z] toolchain ok: Nauty&Traces version 2.8081 (32 bits); cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+    [2026-09-26T00:56:14Z] pins and self-checks passed
+    [2026-09-26T00:56:14Z] slice s0of2 starting (output <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-tri-s0of2)
+    results written <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/res/16-41-L12-tri/s0of2
+    [2026-09-26T00:56:30Z] slice s0of2 done
+    [2026-09-26T00:56:30Z] slice s1of2: levels <= 12 hard-linked from <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-tri-s0of2 (111 files)
+    [2026-09-26T00:56:30Z] slice s1of2 starting (output <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-tri-s1of2)
+    results written <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/res/16-41-L12-tri/s1of2
+    [2026-09-26T00:56:33Z] slice s1of2 done
+    [2026-09-26T00:56:33Z] all slices done: 0 1
+K3 pins after the triangles run: the linear rules' files pinned: ['check/tri_verify.py', 'check/udcheck_rhombus.py', 'filter/udrhombus', 'filter/udrhombus.c', 'filter/udtriangle', 'filter/udtriangle.c']; missing []
+K2 no rule, slice 0, same U23_OUT: exit 0
+    [2026-09-26T00:56:33Z] toolchain ok: Nauty&Traces version 2.8081 (32 bits); cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+    [2026-09-26T00:56:39Z] pins and self-checks passed
+    [2026-09-26T00:56:39Z] slice s0of2 starting (output <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-s0of2)
+    results written <repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/res/16-41-L12/s0of2
+    [2026-09-26T00:56:54Z] slice s0of2 done
+    [2026-09-26T00:56:54Z] all slices done: 0
+K3 pins after the plain run: the linear rules' files pinned: ['check/tri_verify.py', 'check/udcheck_rhombus.py', 'filter/udrhombus', 'filter/udrhombus.c', 'filter/udtriangle', 'filter/udtriangle.c']; missing []
+K3 rhombus slice 0: run-config rhombus True, triangles None; 12 prune manifests, 0 not naming the rule and the real checker
+K3 rhombus slice 1: run-config rhombus True, triangles None; 12 prune manifests, 0 not naming the rule and the real checker
+K3 triangles slice 0: run-config triangles True, rhombus None; 12 prune manifests, 0 not naming the rule and the real checker
+K3 triangles slice 1: run-config triangles True, rhombus None; 12 prune manifests, 0 not naming the rule and the real checker
+K3 plain slice 0: run-config rule keys []; prune manifests naming a rule: []
+K4 rhombus: union of the two slices' 16-41.keep.g6: 1 graphs; known (16,41) graphs present 1/1
+K5 verify-chain rhombus slice 0: exit 0: CHAIN OK; {"run": "<repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-rh-s0of2", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files":
+K5 verify-chain rhombus slice 1 --from-n 13: exit 0: CHAIN OK; {"run": "<repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-rh-s1of2", "target": [16, 41], "levels_inspected": 8, "reach_files": 8, "keep_files": 8
+K4 triangles: union of the two slices' 16-41.keep.g6: 1 graphs; known (16,41) graphs present 1/1
+K5 verify-chain triangles slice 0: exit 0: CHAIN OK; {"run": "<repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-tri-s0of2", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files"
+K5 verify-chain triangles slice 1 --from-n 13: exit 0: CHAIN OK; {"run": "<repo>/research/unit-distance-22/enum/test-rhombus/scratch/runbook-rh/out/dag-16-41-L12-tri-s1of2", "target": [16, 41], "levels_inspected": 8, "reach_files": 8, "keep_files": 
+RUNBOOK-RULES PASS

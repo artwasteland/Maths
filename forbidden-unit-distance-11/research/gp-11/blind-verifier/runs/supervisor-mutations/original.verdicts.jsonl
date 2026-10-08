@@ -1,0 +1,1 @@
+{"i": 0, "line": 1, "g6": "JQ`@HKYE]W?", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 59 nodes, leaves L1a:4,L1b:8,L1c:4", "deps": [], "f10_premises": [], "stats": {"nodes": 59, "field_degree": 2}, "bytes": 56556, "wall_seconds": 0.161, "cpu_seconds": 0.153, "peak_rss_mb": 56.4}

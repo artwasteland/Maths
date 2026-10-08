@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "positive_hint": {
+    "reasons": [
+      "all_sampled_real_configurations_collide_within_margin"
+    ],
+    "pairs": [
+      [
+        0,
+        1
+      ]
+    ],
+    "sources": [
+      {
+        "path": "/tmp/gp10-refute/r4-hint-schema-lq7sdwfq/likely-forbidden.jsonl",
+        "line": 1
+      }
+    ],
+    "id": "f4fe95601dd9fcd60ab025266c805420cff49e5e404a557b2ad247e79dd96cf4"
+  },
+  "one_field_mutation": "outside_frozen_B10_or_unparsed",
+  "note": "matches the observed round5.py output schema"
+}

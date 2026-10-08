@@ -1,0 +1,256 @@
+GP-11 pipeline builder report
+Worktree: <repo>
+Base supplied by the coordinator: e0e706df29, claude/answering-alexeev-u22
+No git command changing state was run.
+
+VALIDATION IN PROGRESS
+The full-population measurement and final coordinator checks must be completed
+before this report is treated as a release report.
+
+Files and reasons
+
+drive.py supplies build, preflight, run, resume, intake, and replay commands.
+The assignment is a stable SHA256(graph6) modulus; graph IDs are B11 line offsets.
+Each manifest binds input bytes, source hashes, budgets, and assigned IDs.
+Different source, budgets, input, or intake bytes require a fresh state.
+
+poset.c builds canonical deletion neighbours and child-to-parent permutations.
+poset.py stores both adjacency directions in little-endian memory-mapped arrays.
+The complete 4,721,083-relation index built in 15.607342731 seconds.
+Independent Python operations reproduced 5,279 relations for all 500 sample parents.
+Every tested neighbour set, edge-preserving map, and reverse relation agreed.
+The index occupies about 108 MiB including the local binaries and receipt.
+
+store.py journals assignments, accepted proofs, dependencies, attempts and leases.
+Proof bytes are append-only, addressed by offset, length and SHA256 in SQLite.
+Fsync precedes the transaction that publishes a proof reference.
+A decision, its attempt, and lease deletion commit together.
+Resume truncates an uncommitted tail, hashes retained bytes and rechecks accepted proofs.
+No population-sized collection of decoded certificates is kept in memory.
+Embedded roots propagate downward through checked E-pointers.
+Refuted roots propagate upward through checked R-pointers.
+Off-shard reach is only a scheduling hint until a pointer passes the checker.
+Each propagated pointer refers directly to an accepted root.
+
+tu.c and tu.py propose forced-edge chains and replay their endpoints.
+An F10 hit outside the first 74 is backed by an explicit rechecked GP-10 proof.
+Those endpoint records are indexed on disk, not retained as a large Python dictionary.
+A chain with no checked endpoint remains UNKNOWN.
+Known refuted closures can discharge other checked TU chains.
+
+extension.py wraps the landed extender and tries alternative one-edge B10 bases.
+stages.py implements the required order and the escalation's per-graph budgets.
+The full policy visits every remaining graph; it has no global admission cutoff.
+The null and real stages use all-pairs saturation.
+rigid_system.py ports the order-eleven front end.
+numeric_branch.py, saturated_embed.py, generic_escalated.py, portfolio.py and
+reduce_exact.py port the measured escalation methods and saved-output retries.
+PORTS.json records their original and ported source hashes.
+Original /tmp paths in that file are provenance, not runtime dependencies.
+A negative pinned system is never promoted to a refutation.
+
+export.py emits dependency-complete ordinary checker records and an exact frontier.
+Every UNKNOWN has a reason and the stage budgets/outcomes that led to it.
+The complete exported record stream is replayed through the frozen sample checker.
+The GP-11 profile verifies external pins before exposing that unchanged checker.
+Assigned counts are separated from supporting proof records.
+Frontier rows include edges, degrees, TU closure and attempted stages.
+Packets group shared connected induced nine- and ten-vertex cores.
+Each packet contains at most five independent obligations; singletons are retained.
+Core sharing is not asserted to imply equal verdicts.
+coordinator/rounds.py prepares small UNKNOWN-only allocations for subsequent rounds.
+It binds the allocation and verifies its disjoint returned assignment union.
+It does not accept certificates; the driver rechecks them during the subsequent merge.
+This avoids replaying the full population independently on every repeat-round worker.
+
+The source-pinned long runs
+
+All starts were from empty state, without imported GP-11 sample certificates.
+They use the existing GP-10 embeddings, hosts and checked refutation dependencies.
+The exact sample inputs are preserved or referenced in each job manifest.
+
+Architect sample, 500 graphs:
+  490 embedded, 8 refuted, 2 UNKNOWN; 498 decided, matching the escalation reference.
+  Complete bundle replay: ACCEPT; zero direct rejections.
+  The checker sees 502 records: the 500 assigned graphs and two supporting refutations.
+  Total elapsed: 1,979.672617 seconds, including final replay and frontier export.
+  Final frozen replay: 45.337814 seconds.
+  Parent maximum RSS: 416,976 KiB.
+  Minimum system MemAvailable: 3,739,232 KiB.
+  Portable payload: 1,122,084 bytes.
+  Bundle: results/architect-500-release/.
+
+Fresh architect sample after fault-path hardening, 500 graphs:
+  490 embedded, 8 refuted, 2 UNKNOWN; all 502 exported records ACCEPT.
+  Total elapsed: 2,233.088934 seconds; final frozen replay: 46.538417 seconds.
+  Parent maximum RSS: 440,560 KiB; minimum MemAvailable: 4,374,304 KiB.
+  Portable payload: 1,132,592 bytes.
+  A 4 MB saved coordinate proposal exceeded its 180-second checking allowance.
+  It remained UNKNOWN; it did not seed any propagation.
+  Bundle: results/architect-500-final/.
+  Exact runtime: results/hardened-sample-sources.tar.gz.
+
+Escalation sample, 2,000 graphs:
+  1,977 embedded, 19 refuted, 4 UNKNOWN; 1,996 decided, matching the reference.
+  Complete bundle replay: ACCEPT; zero direct rejections.
+  The checker sees 2,004 records: the assigned graphs and four support refutations.
+  Total elapsed: 6,826.635135 seconds, including final replay and frontier export.
+  Final frozen replay: 239.755277 seconds.
+  Parent maximum RSS: 508,616 KiB.
+  Minimum system MemAvailable: 3,775,812 KiB.
+  Portable payload: 6,023,172 bytes.
+  Bundle: results/escalation-2000/.
+  Input: results/escalation-2000.g6 and escalation-2000-selection.json.
+  This is the original sample, with the architect's 500 excluded from its draw.
+
+Full-population cheap pass, 448,708 graphs:
+  RUNNING from empty state with TU, extension, alternative bases and propagation.
+  No 20,000-graph fallback has been needed.
+  Local state: /tmp/gp11-population-cheap-state.
+  Local output: /tmp/gp11-population-cheap-result.
+
+Final-code coordinator test, 2,000-graph bundle:
+  1,977 embedded, 19 refuted, 4 UNKNOWN; complete output replay ACCEPT.
+  All 2,000 accepted certificates, including four support rows, are unchanged.
+  The UNKNOWN frontier is byte-identical to the input bundle's frontier.
+  Each survivor retains its original 23 attempts plus the three new cheap stages.
+  Intake, propagation, cheap stages and export: 968.968727 seconds.
+  Final frozen replay: 236.474195 seconds.
+  Parent maximum RSS: 392,780 KiB; minimum MemAvailable: 5,057,572 KiB.
+  Portable payload: 3,036,295 bytes.
+  Bundle: results/escalation-2000-intake/.
+
+Controls
+
+Every required mutation is valid JSON and is rejected at its own rule.
+After each mutation, the real parent evidence returns the original 2 E / 2 R / 0 U.
+The missing-record control also replays its original complete frozen-checker run.
+
+E-pointer with the wrong map:
+  map_not_edge_preserving: E-ptr: (0, 10) -> (0, 9)
+R propagation in the wrong direction, to a subgraph:
+  map_not_edge_preserving: R-ptr: (1, 8) -> (1, 8)
+TU chain without its endpoint:
+  tu_end
+Record contradicting an already propagated verdict:
+  embedded_refuted_conflict: J???AStpdo_
+Shard missing a graph:
+  coverage: missing=1 extra=0
+
+test_pipeline.py also rejects stale leases and altered certificate bytes.
+The altered byte fixture is valid JSON and fails at certificate_hash_mismatch.
+An accepted-index row naming another graph's valid proof fails at
+accepted_index_mismatch; restoring the row restores the accepted replay.
+Expired leases are requeued once.
+test_resume.py actually sends SIGKILL to a worker's process group mid-extension.
+Three embeddings are already committed and an extension lease is active at the kill.
+The test adds a torn append, resumes, and compares seven mathematical artifacts.
+Records, assigned input, dependency input, UNKNOWN, attempts, frontier and packets
+are byte-identical to the uninterrupted run; another resume is also identical.
+Operational timings and temporary-path checker receipts are deliberately excluded.
+
+test_reuse.py proves that a bare real TU prefix stays undecided until its endpoint
+passes the checker, then checks the transported refutation.
+It injects a SQLite failure between decision and attempt insertion, verifies rollback
+including the retained lease, retries, and replays the accepted original proof.
+test_merge.py imports one seed shard and one UNKNOWN shard.
+The two UNKNOWNs become one E-pointer and one R-pointer after independent checking.
+Missing and duplicate assignment unions fail as shard_union_coverage and
+shard_union_duplicate; the original positive merge then passes again.
+Valid-JSON oversized and extra-row bundles fail at record_size_cap and
+bundle_record_count respectively; their unchanged originals replay afterward.
+test_merge_cycles.py merges two individually accepted shards whose shortest
+R-tu/R-pointer alternatives would form a cycle. Both grounded alternatives
+are retained until dependencies are checked, so the merge succeeds.
+The unanchored pair fails at intake_dependency_cycle; the real merge passes again.
+test_failures.py injects MemoryError after a producer accepts a real TU endpoint.
+The attempted parent becomes explicit UNKNOWN while the endpoint still propagates
+and skips the next now-decided task. Raw imported UNKNOWN budgets survive intake.
+An initial memory-floor failure returns the resumable exit 75 without a completion.
+test_rounds.py prepares a real two-graph UNKNOWN allocation, returns disjoint
+checked worker bundles, and merges the improvements to 1 E / 1 R / 0 U.
+Missing, duplicate and extra assignments fail at round_union_coverage and
+round_union_duplicate; each original positive assignment union passes afterward.
+test_history.py first reproduced history_duplicate_ancestor on valid UNKNOWN input.
+Preserving inherited provenance now retains three distinct attempts across three
+generations without multiplying their ancestors, including repeated import and resume.
+The final control receipts and their source hashes are in results/final-validation.json.
+
+Resource policy and cloud operation
+
+RUNBOOK.txt gives the complete worker and coordinator commands.
+No new dependency is required beyond the existing GP-10 environment and embed tools.
+The measured package versions, tool hashes and exact preflight are in environment.json.
+The worker's msolve binary must match the pinned GP-10 binary before patching.
+The deterministic seed shim and the small-input binary are prepared locally.
+
+The desktop runs at most two compute tasks concurrently.
+Numerical libraries use one thread and workers run at niceness 15.
+The parent address-space limit is 2,048,000,000 bytes; GP-10 children may be stricter.
+MemAvailable is sampled every 0.1 seconds; below 1.5 GiB, work stops for resumption.
+Cloud workers may run four distinct shards against one read-only index on 15 GB RAM.
+State, indexes and CAS scratch stay local; the portable proof bundle is the git return.
+Each returned bundle must replay and fit below 45,000,000 bytes before its push.
+An oversized shard splits into two deterministic hash subshards in fresh states.
+The coordinator replays every bundle and checks disjoint complete B11 assignments.
+Cross-shard propagation happens before any new search in the next round.
+
+Cost
+
+The primary estimate uses the completed 2,000-graph run.
+For a single compute lane taking t seconds on n sampled graphs, the linear ideal
+four-core machine-hour projection is t * 448708 / (n * 4 * 3600).
+That gives 106.36 four-core machine-hours for the first worker wave.
+It includes final worker replay, one-time preparation, journals and export.
+The fresh 500-graph run projects to 139.17 hours, illustrating sample/tail variation.
+
+The measured coordinator invocation adds 60.39 four-core machine-hours at scale.
+Its formula is 968.968727 * 448708 / (2000 * 3600), without division by four:
+the current coordinator is serial on its four-core machine.
+It replays incoming bundles, verifies records while resolving their dependencies,
+verifies them again on insertion, propagates, and replays the merged export.
+This repeated exact arithmetic is real cost, not just a cheap metadata merge.
+The first wave plus coordinator is therefore 166.75 ideal machine-hours.
+Budget about 200 machine-hours with a roughly 20 percent planning margin.
+
+One fresh repeat round is a separate scenario, not a measured success rate.
+The four surviving cases consumed a mean 538.90 seconds of attempt time each.
+At 4/2000 of B11 (897.4 graphs), repeating that work projects to 33.58 ideal
+four-core search hours, followed by another 60.39-hour coordinator pass.
+First wave, both coordinator passes, and one repeat wave total 260.72 ideal
+machine-hours. Budget about 315 with the same planning margin.
+This uses the small frontier allocation; no full-population replay is charged
+to every repeat-round worker. Further rounds and analyst work are excluded.
+
+These are extrapolations, not observed cloud throughput or a completion guarantee.
+Global cheap propagation can save work; shard imbalance, hardware and slow tails vary.
+The coordinator estimate is conservative if a global cheap bundle supplies many
+short pointers before cloud search, but that saving has not been measured here.
+The earlier study's 100.2 worker hours plus 17.3 serial replay hours describe its
+different measurement workflow, not the complete coordinator implemented here.
+results/measurements.json contains the values, formulas and scenario assumptions.
+
+Provenance and remaining gates
+
+results/measured-sources.tar.gz preserves the exact runtime sources of the long runs.
+results/hardened-sample-sources.tar.gz preserves the fresh hardened 500-graph run.
+The member hashes and each job.json bind those bytes.
+Any later fault-path hardening is separately tested and recorded in this report.
+The GP-10 checker, its kernel, B11, and the external forbidden/gadget data are unchanged.
+These are certificate-workflow results under the explicitly allowed sample profile.
+They do not establish G2, minimality, G3's zero-UNKNOWN claim, or the publication gates.
+PREDICTIONS.md was written before this population cheap pass, after prior measurements.
+The builder did not commit it; the separate commitment/chronology gate is not claimed.
+
+What to build next
+
+Run the contract's B10-withheld-answer, lower-order, named-graph and regression controls
+with an order-parameterized control driver, then assemble the complete B11 profile run.
+For the withheld B10 control, restrict reusable embedding bases to order at most nine;
+it must not read GP-10's ten-vertex answers through the current B11 lookup index.
+Distribute the remaining portfolio work, merge checked shards, and send the exported
+core packets to analysts for independent exact embeddings or refutation certificates.
+Improve exact-field representation and saved-RUR conversion for separated numerical
+survivors; numerical separation itself remains only a search hint.
+Consolidate coordinator proof verification around locally verified record hashes,
+with corruption controls, to reduce repeated exact arithmetic during import.

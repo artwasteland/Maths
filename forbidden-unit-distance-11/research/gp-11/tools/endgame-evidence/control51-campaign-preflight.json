@@ -1,0 +1,315 @@
+{
+  "allowed_files": [
+    "ANALYST-BRIEF.md",
+    "CHECKER_SHA256SUMS",
+    "attempts.jsonl",
+    "check.sh",
+    "check/UNKNOWN.g6",
+    "check/input.g6",
+    "check/run.json",
+    "f9_check.py",
+    "original-unknown.jsonl",
+    "packet.json",
+    "research/gp-10/check/gp10check.py",
+    "research/unit-distance-22/check/udcheck.py",
+    "research/unit-distance-22/data/forbidden-74.json",
+    "research/unit-distance-22/data/tu-gadgets.json"
+  ],
+  "at_utc": "2026-10-02T10:12:41.879691+00:00",
+  "base": "<repo>/research/gp-11/tools/endgame-work/control51/B10-r1",
+  "campaign_id": "1b11fc4fefaa5518d17637e5481a5350702a2c7b22dcafa77b5f6a5f6b288400",
+  "campaign_sha256": "0f86978ea2bc82e430ff6e19eb6ac29ceba1f2bcf62a01d71ea2361b9411e3f5",
+  "campaign_tests": 22,
+  "cases": [
+    {
+      "g6": "I?D@N@xf_",
+      "id": "packet-a71da6b9c114991c",
+      "packet_sha256": "591c84d9281c0f171f8ab724ce1c18adabe0ecef4d8aa6b18176543099902fca"
+    },
+    {
+      "g6": "I?DP]QowW",
+      "id": "packet-45fd9982f18b132d",
+      "packet_sha256": "0238a4ac28fde20cf648f089f6c35140b2dc02f787c04a2fc8ffa63a283892d4"
+    },
+    {
+      "g6": "I?FDRGtU_",
+      "id": "packet-e10a859c243a9e6a",
+      "packet_sha256": "8bd6e51da73aae2ea32fb573bc80f3323ce1432831ecb8f6b7d40dff2e4f4678"
+    },
+    {
+      "g6": "I?GO]C{{O",
+      "id": "packet-924e6a2fe442a505",
+      "packet_sha256": "0211a197486bc6a1c8e73501cea5b2d2697c520a2f78827ee929a50aed2336a2"
+    },
+    {
+      "g6": "I?H_omJ{?",
+      "id": "packet-4701cba296fbbe57",
+      "packet_sha256": "2c31667d251ebef8720e1392443785624d3983715a503c1e5e438999f0c3358a"
+    },
+    {
+      "g6": "I?`LA_uMW",
+      "id": "packet-408d4b35ea89cb76",
+      "packet_sha256": "014f502669e0212fd459b2a6b67595f050fa2ca9d54e5b8325390dd906f0a2b1"
+    },
+    {
+      "g6": "I@?KQJoNo",
+      "id": "packet-75ebdf3184a91b0c",
+      "packet_sha256": "68b50fb7c44d608165980f1dd2339e59043727ac63bb380db48c309628911ece"
+    },
+    {
+      "g6": "I@@KTHQMW",
+      "id": "packet-9899dcda4e4d6685",
+      "packet_sha256": "a00c48c1ea0026a276b8ea7ea081d12cdb8c7356c6681b9ed9b54fb37675e639"
+    },
+    {
+      "g6": "I@F?YE`]G",
+      "id": "packet-65e899a8119a0ca1",
+      "packet_sha256": "37a9a8dd03260d57d320726458a80a2f89bad1084719308c3d4b1f75a1759083"
+    },
+    {
+      "g6": "IQAIPCT}?",
+      "id": "packet-6dfac18de786593c",
+      "packet_sha256": "f01dcb80d1b8412b6f1729a3731d84ea7ad41d8fc4f275f876d101a46fe15dee"
+    },
+    {
+      "g6": "I_AQPgiMW",
+      "id": "packet-5fd726a4a0735291",
+      "packet_sha256": "e46f4a3f47d36e0ca4a7644fe7e670848514290b4068486d6044796aa6fe15e3"
+    },
+    {
+      "g6": "I_GQSGyLW",
+      "id": "packet-8d9a66d984c42b3d",
+      "packet_sha256": "fe4697e76c4e9b6c244bd083f8f149a9b2f1d52d0499666c1b8192d53d18c4d5"
+    },
+    {
+      "g6": "I_YP?cjDo",
+      "id": "packet-3301a21e820be889",
+      "packet_sha256": "457c804e6492becd57d60961cc4a4733aa89af2f775409f1d328b0e67098d2bb"
+    },
+    {
+      "g6": "I_hRC_hDg",
+      "id": "packet-cbf209943fbbf1de",
+      "packet_sha256": "dd300dc46845f2c1780fa52df0906d33942d922c51fb2ffa4ad8c1df45980962"
+    },
+    {
+      "g6": "I_hca_hDg",
+      "id": "packet-285539f1e4ed808a",
+      "packet_sha256": "81ef958964062b1b3c8d3749410a640d75fcca0e082daadb73b8c258a9c5f72f"
+    },
+    {
+      "g6": "I``F_odBW",
+      "id": "packet-83c57ecac1dac3e4",
+      "packet_sha256": "7fef0eb376bd7b88a3c3b80d426c20a72b4ab7677e98daff4412e19afa9913f6"
+    },
+    {
+      "g6": "IaY_c?NKo",
+      "id": "packet-311d6b169712e0e9",
+      "packet_sha256": "18bb09e02af0de11c72787b1fc50d4e554bc9d6f365507772e41a1bc86de962b"
+    },
+    {
+      "g6": "IhC?KLMMO",
+      "id": "packet-6d8ff9fa8a31c422",
+      "packet_sha256": "6ace540216a7f3046a834171ddca09190934dd3ce7915d5f0321f2534804111f"
+    },
+    {
+      "g6": "IkLPC?FAw",
+      "id": "packet-626b5036a718e1cb",
+      "packet_sha256": "a26c3717ee6b6040243f7c0b4345e8abd79e43596c8e3f3ab9e7128b7509bfcd"
+    },
+    {
+      "g6": "Ik_bOgLCw",
+      "id": "packet-0d061f0721b40002",
+      "packet_sha256": "6ccf9e7747eeb83f05ecfc6bdd01ae0456ae8c893e8f98f2d8df64e0d9ccba82"
+    },
+    {
+      "g6": "Il`@OgJ@w",
+      "id": "packet-d2565526b01a5658",
+      "packet_sha256": "3396c6a831c5bedd07323645a20b8362646e4f7b3c0e9d0039e0cbf2ab15fff3"
+    },
+    {
+      "g6": "Io?hohHSW",
+      "id": "packet-421f88e5aa416b9a",
+      "packet_sha256": "ea3b5d30d94a81aa7e0ff5a71adc28790e86cd832e895ddb653c4f4b994955b6"
+    },
+    {
+      "g6": "Io@PWpHKW",
+      "id": "packet-7fcb65b6e2f3f268",
+      "packet_sha256": "83c272866b3c425d4930988d574799271fd8c2327cee3c104c9ecb8a5b2d9580"
+    },
+    {
+      "g6": "IoD@GoN{O",
+      "id": "packet-e54f30cb11493f67",
+      "packet_sha256": "fa9131db16d3baf5fe86bdb7bbfb433b7d9bbb3fb3c353f9a723678d2747d055"
+    },
+    {
+      "g6": "IoEHa@FMO",
+      "id": "packet-790f57d89ad16f90",
+      "packet_sha256": "e2e0be740165dc9e4f68a3385e4eaedeebc4bee029fada996e9ef842320b3787"
+    },
+    {
+      "g6": "IoSo?FbFo",
+      "id": "packet-d7d2998e2c2029d0",
+      "packet_sha256": "eb296a71cbeca5c85cb0ebc888fb185471a51b1356e145d5ee22dcea2c6d47c4"
+    },
+    {
+      "g6": "IqGFGgLEW",
+      "id": "packet-8e1ff98405b34909",
+      "packet_sha256": "9c629e7a2534877cde63399727b350288ccdc8a6f165a77674931f11d024cbe9"
+    },
+    {
+      "g6": "IqL@K?RBW",
+      "id": "packet-a69c7cd171071a84",
+      "packet_sha256": "dd5a947ad090ac520bef91a0be77abced7c221722ed0b6d64fee5cbe9c6bf2e0"
+    },
+    {
+      "g6": "Ir`?X_FAw",
+      "id": "packet-c1b28cd9afcf530b",
+      "packet_sha256": "657a80f33698be9af89e547278d1e8cb5665b56197278284243375da84669810"
+    },
+    {
+      "g6": "Ir`G?CfEo",
+      "id": "packet-b7b2822524b3f974",
+      "packet_sha256": "e760eb0282f944b4a5f61ff797942239eda03e1ab92f832f8faf2d07502036b0"
+    },
+    {
+      "g6": "IsP@OkWHG",
+      "id": "packet-f034d103a3e245d7",
+      "packet_sha256": "d3369970b8bf15b8f3cc3414173c10d68eded9b47cbcfdc388ec6278da2c80b9"
+    },
+    {
+      "g6": "ItPG?CfEo",
+      "id": "packet-cf4d96cfa93e1fdc",
+      "packet_sha256": "7bbd918043d911a4ec77e44ca7a97d40d7c5971848749070bf5a11455dd5c2fe"
+    }
+  ],
+  "checks": [
+    {
+      "action": "prepare",
+      "command": [
+        "bash",
+        "<repo>/research/gp-11/tools/control51_campaign.sh",
+        "prepare",
+        "--repo",
+        "<repo>",
+        "--out",
+        "<repo>/research/gp-11/tools/endgame-work/control51-campaign-verified"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "stdout": "PREPARED existing campaign 1b11fc4fefaa5518d17637e5481a5350702a2c7b22dcafa77b5f6a5f6b288400\n",
+      "wall_seconds": 0.9843014338985085
+    },
+    {
+      "action": "scan",
+      "command": [
+        "bash",
+        "<repo>/research/gp-11/tools/control51_campaign.sh",
+        "scan",
+        "--repo",
+        "<repo>",
+        "--out",
+        "<repo>/research/gp-11/tools/endgame-work/control51-campaign-verified"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "stdout": "BLINDING OK seeds=32 pending=32 accepted=0\n",
+      "wall_seconds": 1.1185633321292698
+    },
+    {
+      "action": "status",
+      "command": [
+        "bash",
+        "<repo>/research/gp-11/tools/control51_campaign.sh",
+        "status",
+        "--repo",
+        "<repo>",
+        "--out",
+        "<repo>/research/gp-11/tools/endgame-work/control51-campaign-verified"
+      ],
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"accepted\":0,\"campaign_id\":\"1b11fc4fefaa5518d17637e5481a5350702a2c7b22dcafa77b5f6a5f6b288400\",\"ledger_events\":0,\"ledger_head\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"unattempted\":32,\"unresolved\":0}\n",
+      "wall_seconds": 0.9824059242382646
+    },
+    {
+      "action": "finalize",
+      "command": [
+        "bash",
+        "<repo>/research/gp-11/tools/control51_campaign.sh",
+        "finalize",
+        "--repo",
+        "<repo>",
+        "--out",
+        "<repo>/research/gp-11/tools/endgame-work/control51-campaign-verified"
+      ],
+      "exit": 3,
+      "stderr": "",
+      "stdout": "NOT RUN complete-B10: 0/32 independently ACCEPTED; 32 unresolved or unattempted\n",
+      "wall_seconds": 0.9866381757892668
+    }
+  ],
+  "evidence_sha256": {
+    "control51-campaign-f9-smoke-report.json": "cb5c092e7e96c9eb120bbb904df5451562de4432a4e3ea7ddeada079d285d24f",
+    "control51-campaign-f9-smoke.json": "164bcb7a79fa8efeef5defd5a52612988e29c81797bda9aa27b6e32b8a418460",
+    "control51-campaign-filesystem-probe.log": "63128e6fd43cb4a1bc8895906db2126ab7af2e3b886f8a01cdc721424a0b131d",
+    "control51-campaign-network-namespace-probe.log": "31c2cb0dffdeb9049fa2269e24af62df15e4161d4f752a648faf9630259725fe",
+    "control51-campaign-packet-tests.txt": "3dcfb9fc66f79ff607f275906b3e6a0df242d9f62b0ad93c12f239b2f57a7f3a",
+    "control51-campaign-tests.txt": "a701549e6181b71b94d04a6b59053ad4710e9280c15fecb03cf6e4149605f500"
+  },
+  "final_source_copy_bytes": 233101994,
+  "final_status": {
+    "reason": "NOT RUN complete-B10: 0/32 independently ACCEPTED; 32 unresolved or unattempted",
+    "status": "NOT_RUN"
+  },
+  "frozen_source_pins": {
+    "research/gp-10/check/gp10check.py": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "research/gp-11/CONTRACT.md": "dc4ea1bb1df5fc2011772724003799623778ebc694778965201fd18a4697ab21",
+    "research/gp-11/PROOFS.md": "b8b090aea7dd7dfa89f4c2468e029c5e69b351d3098d3ca0cf35568b397da22b",
+    "research/gp-11/check/gp11check.py": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+    "research/gp-11/check/selftest.py": "6cfa561fb4fe73bbf05762e0d4dea30a47446fbf16940ac40aa45e9fbfb83691",
+    "research/gp-11/tools/guard.py": "9721b456c26f982fd9cc7ccd47eed6d382de71c512f3789fbc0a4defaea3913d",
+    "research/gp-11/tools/write_result.py": "736ae0a31fe7ada02fb31a02908161aa105333d3d20ecc319f48b57760bbfcb0",
+    "research/unit-distance-22/check/udcheck.py": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+    "research/unit-distance-22/data/forbidden-398.json": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+    "research/unit-distance-22/data/forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "research/unit-distance-22/data/tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629",
+    "research/unit-distance-22/sources/amp/anc/graph6.txt": "4f7da8729d4818712e8718daabce29fb7f423cd7abec07eb195f0a04d6601a49"
+  },
+  "helpers": {
+    "ANALYST-BRIEF.md": "a52a4700730047cdcfdabac76965e4c294955a751336bf38ce1d722788ad14a0",
+    "control51_campaign.py": "fbdceec901e1f54c8bb01d87fbd45dc77376b1efc084afd251a45983da852190",
+    "control51_campaign.sh": "500b6d79b138dd2bf8cddcd26efd0d8c2ba82da0951c6e1fd29ce1aa017564e9",
+    "control51_f9_check.py": "677696551aa58c9a76ff0fc517009b564bfcd17012bf02a8dc8623d44350fe4b",
+    "make_packets.py": "6f6e80fc33843b278761ef970a972dcc60f2b761592665cb7003c027cff4e076"
+  },
+  "namespace_probe": {
+    "filesystem": "PASS; flint/networkx importable; checkout, bundles and coordinator files absent",
+    "private_network": "not available in this outer sandbox: NETLINK_ROUTE socket creation denied; no unisolated launch fallback"
+  },
+  "out": "<repo>/research/gp-11/tools/endgame-work/control51-campaign-verified",
+  "packet_summary": {
+    "bundles": 128,
+    "failure_classes": {
+      "no_separated_seed": 20,
+      "seed_without_exact": 12
+    },
+    "failure_flags": {
+      "attempt_deadline_unspecified": 9,
+      "producer_algebra_error": 9,
+      "producer_timeout": 32
+    },
+    "packets": 32,
+    "saved_proposals": 0,
+    "source_counts": {
+      "embedded": 32641,
+      "refuted": 489,
+      "unknown": 32
+    }
+  },
+  "packet_tests": 12,
+  "preparation_bytes": 13860130,
+  "raw_packet_manifest_sha256": "37eee6a27b30145487f8b12e7db863dc7e825cd08c5ea8fd2bc763c5fb048bab",
+  "schema": "control51-offline-preflight-v1",
+  "scope": "offline preparation and tests only; no analysts, Codex calls, authentication reads or network requests",
+  "selection_sha256": "d78ff67574e870e8e25ac9c35a22c22da5b87116e9aba2d7e7849b1164bb3aee"
+}

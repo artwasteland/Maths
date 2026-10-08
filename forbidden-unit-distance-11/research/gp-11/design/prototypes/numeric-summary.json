@@ -1,0 +1,15 @@
+{
+  "method": "numeric",
+  "cap": 2.0,
+  "count": 500,
+  "counts": {
+    "unknown": 498,
+    "embedded": 2
+  },
+  "extra": {},
+  "seconds": 746.4303275458515,
+  "max_rss_kib": 149180,
+  "min_MemAvailable_kib": 4354500,
+  "cpu_self": 665.463114,
+  "cpu_children": 0.0013269999999999998
+}

@@ -1,0 +1,20 @@
+old udenum 94a85d333d753ec2f518e62ef6d2f855d56b22dc6f3b890f53aa9575680f57b4; new udenum a99b130ab5ad0386265c429b78cf3c4a4c708e1d5dd6e222bec14a4596c16a84; reach.json 7ef2d3a6bc0d80852633e8a55b55462793be90238f40d62061249d77e1826dbc
+level 12 stage 12-20: 1567768 graphs
+level 12 stage 12-21: 641784 graphs
+level 12 stage 12-22: 84556 graphs
+level 12 stage 12-23: 4446 graphs
+level 12 stage 12-24: 250 graphs
+level 12 stage 12-25: 26 graphs
+level 12 stage 12-26: 2 graphs
+level 12 stage 12-27: 1 graphs
+level 13: 16777 children of 1500 sampled level-12 parents after reach, 13986 kept after TU, sample 3000
+level 14: 14484 children of 3000 sampled level-13 parents after reach, 9959 kept after TU, sample 3000
+level 15: 13811 children of 3000 sampled level-14 parents after reach, 9154 kept after TU, sample 6000
+level 16: 3357 children of 6000 sampled level-15 parents after reach, 2016 kept after TU, sample 2016
+level 17: 698 children of 2016 sampled level-16 parents after reach, 313 kept after TU, sample 313
+level 18: 144 children of 313 sampled level-17 parents after reach, 52 kept after TU, sample 52
+level 12: 1500 parents (1399 398-free); cpu s median old74 2.900, new74 3.037, new398 13.818, new398f 13.659; children old74 16777, new74 16777, new398 16177, new398f 13768
+level 15: 1500 parents (759 398-free); cpu s median old74 1.007, new74 1.017, new398 2.387, new398f 1.655; children old74 876, new74 876, new398 441, new398f 72
+level 18: 52 parents (2 398-free); cpu s median old74 0.415, new74 0.397, new398 2.486, new398f 0.104; children old74 167, new74 167, new398 20, new398f 1
+level 21: 743 parents (40 398-free); cpu s median old74 2.002, new74 1.949, new398 3.271, new398f 0.706; children old74 4, new74 4, new398 0, new398f 0
+done

@@ -1,0 +1,6 @@
+all4.g6 sha256 f1da1fa48b9d95d43525f76be554c9c3caadf57679e5a21278916a983ebd3648; 4 graphs
+U@?GOK_CG??@gaW`qHQaJ`DAGcIGoQPOKB{?~???: udfilter member 127 (L10 line 53, I?l@Glo_w) witness verified; matcher member 127 (L10 line 53) witness verified
+U@?GGS_CG??@gaW`qHQaJ`DAGcIGoQPOKB{?~???: udfilter member 127 (L10 line 53, I?l@Glo_w) witness verified; matcher member 127 (L10 line 53) witness verified
+UrQH?cCAK?G?h?U?_R?BP?dG@cW?UW?N_os@Bq?g: udfilter member 157 (L10 line 83, I@hO`DJ`o) witness verified; matcher member 157 (L10 line 83) witness verified
+UrQH?cCAK?G?h?U?_J?DP?TGAcW?UW?N_os@Bq?g: udfilter member 157 (L10 line 83, I@hO`DJ`o) witness verified; matcher member 157 (L10 line 83) witness verified
+RESULT: each of the four contains one of the 324

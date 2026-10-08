@@ -1,0 +1,6 @@
+source <scratch>/scratchpad/fleet/results/f01-jjpzl7/research/unit-distance-23/results/u23/23-65-L12-tri-pf74/s0of1920
+changed intermediate (13,23) counts only: tu 1022 -> 1023, tri_tu 354 -> 353, survivors 6276 -> 6275
+summary audit problems []; unresolved []
+target read_copy reasons []; G4 scope reasons []
+counts arithmetic holds True; checked-file digest unchanged True
+judge_copy against equally changed count metadata (unaltered graph hashes) []

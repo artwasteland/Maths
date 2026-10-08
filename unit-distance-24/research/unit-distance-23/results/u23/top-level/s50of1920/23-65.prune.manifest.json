@@ -1,0 +1,83 @@
+{
+  "kind": "prune",
+  "level": [
+    23,
+    65
+  ],
+  "level_file": "<scratch>/scratchpad/top50/full/23-65.g6",
+  "target": [
+    23,
+    65
+  ],
+  "forbidden_set": 398,
+  "tu_rule_bound": {
+    "n": 23,
+    "proved_upper_bound": 65,
+    "source": "u(22) = 60 (research/unit-distance-22/RESULT-u22.md) and Schade's lemma: ceil(66 * 21 / 23) = 61 > u(22)"
+  },
+  "software_sha256": {
+    "prune.py": "b4858cabc512f8190308d692ea21bedf37e1f1b927f32c40e714bdd99e47a900",
+    "udfilter": "6e0771bb0888e193b7790bdd4b34518d5b35b313fd6a15f330f39f8489fd6dcc",
+    "udembed.py": "75886c6323caa82d15c2a4c14680c0b6ed3b5cc3608abf116934463361decbda",
+    "exact_verify.py": "ab55ce77bca0d66f13ba4189ddb16cc0a27fda36838abcf89bb1bda0d8285a7c",
+    "udcheck.py": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+    "python": "<repo>/pyenv-maths/bin/python 3.12.3",
+    "udcheck398.py": "783d368c34626ad6fe20574d1ecf7a38aea9d2ebb6aef65e9d88785f16262018"
+  },
+  "inputs_sha256": {
+    "<scratch>/scratchpad/top50/full/23-65.g6": "c90a07cd8b4495d5bca46687e8d2c19d43e81ea5dd6b17f7f98eb1a7f3355f0e",
+    "<repo>/research/unit-distance-22/data/forbidden-398.json": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+    "<repo>/research/unit-distance-22/data/tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  },
+  "outputs_sha256": {
+    "<scratch>/scratchpad/top50/full/23-65.certs.jsonl": "46f2d3de06f72e37110daf656a5a7a98fd79554049882fa23160232c0617a145",
+    "<scratch>/scratchpad/top50/full/23-65.keep.g6": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "<scratch>/scratchpad/top50/full/23-65.UNKNOWN.g6": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "<scratch>/scratchpad/top50/full/_prune/23-65/filter.jsonl": "06f78e0920e5fae2248c7d0454d2629e2bd9a6ea7e7711ec00ea3fefbe5719e4",
+    "<scratch>/scratchpad/top50/full/_prune/23-65/survivors.g6": "c90a07cd8b4495d5bca46687e8d2c19d43e81ea5dd6b17f7f98eb1a7f3355f0e"
+  },
+  "counts": {
+    "input": 1,
+    "tu": 0,
+    "survivors": 1,
+    "embedded": 0,
+    "refuted": 1,
+    "unknown": 0,
+    "kept": 0,
+    "pruned": 1
+  },
+  "embedder": {
+    "tries": 24,
+    "max_states": 400,
+    "seed_base": 1,
+    "chunk": 25,
+    "chunks": 1,
+    "graph_timeout_seconds": 1800.0,
+    "chunk_timeouts": 0,
+    "graph_timeouts": []
+  },
+  "jobs": 1,
+  "wall_seconds": {
+    "filter": 0.047270447947084904,
+    "embed": 60.627787839155644,
+    "check": 7.261305617168546,
+    "total": 67.9458117899485
+  },
+  "checker": "ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15",
+  "verified_counts": {
+    "records": 1,
+    "tu": 0,
+    "refuted": 1,
+    "embedded": 0,
+    "unknown": 0,
+    "kept": 0
+  },
+  "mutation": {
+    "unknown_as_pruned": false
+  },
+  "started": "2026-09-26T07:52:13Z",
+  "finished": "2026-09-26T07:53:21Z",
+  "host": "<host>",
+  "exit_status": 0,
+  "problems": []
+}

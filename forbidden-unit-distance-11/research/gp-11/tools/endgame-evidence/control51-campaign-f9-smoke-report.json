@@ -1,0 +1,50 @@
+{
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "claim_authorized": false,
+  "conditional": false,
+  "conditional_minimal": [],
+  "control": "not_a_control",
+  "counts": {
+    "embedded": 1,
+    "refuted": 0,
+    "unknown": 0
+  },
+  "cross_checks": 0,
+  "direct_rejections": 0,
+  "elapsed_seconds": 0.04693478997796774,
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 80940,
+    "nice": 15,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "hosts": false,
+      "path": "<repo>/research/gp-11/tools/endgame-work/control51-checker-smoke/packet-ada8d598e51a0bf0/attempt-0001/check/records.jsonl",
+      "sha256": "a6915ddd38a2524d43d4df7d70eb30cf450b26657ce906736a4855507a984072"
+    }
+  ],
+  "forbidden_limit": 9,
+  "hosts": 0,
+  "input_count": 1,
+  "input_sha256": "fae4bfc454bd04363dcd5222772f2973b1193e1ff6f676e822a427323a677ef9",
+  "kernel_sha256": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+  "minimal": [],
+  "profile": "sample",
+  "reason": "verified",
+  "scope": "certificate-and-run-checks",
+  "status": "ACCEPT",
+  "trusted_data_sha256": {
+    "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  },
+  "unknown_rate": {
+    "budgets": "unknown-budgets.jsonl",
+    "denominator": 1,
+    "numerator": 0
+  }
+}

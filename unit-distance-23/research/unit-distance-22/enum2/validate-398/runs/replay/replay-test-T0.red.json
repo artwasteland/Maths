@@ -1,0 +1,56 @@
+[
+ {
+  "id": "R1",
+  "control": "mutated parent (edge 0-1 flipped, re-canonicalised) against the original production block",
+  "cell": "11-17",
+  "index": 6139,
+  "block_size": 1,
+  "baseline_identical": true,
+  "mutated": "I?O?kql\\_",
+  "only_production": 1,
+  "only_enum2": 10,
+  "went_red": true
+ },
+ {
+  "id": "R2",
+  "control": "one record dropped from the production block",
+  "cell": "11-17",
+  "index": 6139,
+  "block_size": 1,
+  "baseline_identical": true,
+  "only_enum2": 1,
+  "went_red": true
+ },
+ {
+  "id": "R4",
+  "control": "enum2's children of parent i against the block of parent i+1",
+  "cell": "11-17",
+  "index": 6139,
+  "block_size": 1,
+  "baseline_identical": true,
+  "next_block_size": 5,
+  "went_red": true
+ },
+ {
+  "id": "R5a",
+  "control": "one production record replaced by a neighbouring child (another parent's)",
+  "cell": "11-17",
+  "index": 6139,
+  "block_size": 1,
+  "baseline_identical": true,
+  "wrong_equal_count_check": "PASS",
+  "set_check": "FAIL",
+  "went_red": true
+ },
+ {
+  "id": "R5b",
+  "control": "enum2's children minus one record",
+  "cell": "11-17",
+  "index": 6139,
+  "block_size": 1,
+  "baseline_identical": true,
+  "wrong_subset_check": "PASS",
+  "set_check": "FAIL",
+  "went_red": true
+ }
+]

@@ -1,0 +1,43 @@
+{
+  "suggested_packets": [
+    {
+      "id": "A1",
+      "graphs": [
+        "JaICZOo@Wd_",
+        "JSO@]OSDjB?"
+      ],
+      "route": "refutation, with competing embedding search",
+      "common_connected_induced_core": "HGE@[pT",
+      "core_vertices": 9,
+      "core_edges": 13
+    },
+    {
+      "id": "A2",
+      "graphs": [
+        "JoCBkhGIGJ_",
+        "J`C@KHIB^a?"
+      ],
+      "route": "embedding exactification and field representation",
+      "common_connected_induced_core": "HgHGkcx",
+      "core_vertices": 9,
+      "core_edges": 14
+    },
+    {
+      "id": "A3",
+      "graphs": [
+        "J_?gkpAYHb?"
+      ],
+      "route": "degree-28 coordinate proposal and rational-coefficient representation"
+    },
+    {
+      "id": "A4",
+      "graphs": [
+        "JqM??CNGqg_"
+      ],
+      "route": "exactify the retained separated flexible embedding"
+    }
+  ],
+  "independent_certificate_obligations": 6,
+  "measured_throughput": false,
+  "projection_discount_assumed": false
+}

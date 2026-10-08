@@ -1,0 +1,18 @@
+NEW udfilter 6e0771bb0888e193b7790bdd4b34518d5b35b313fd6a15f330f39f8489fd6dcc; BASE b0947a10; ORIG d4ccae3f
+P1 B10: 33162 hosts, orders 10..10; set 74 identical x5 True {'pass': 23165, 'tu': 9997}; set 398 identical True {'pass': 22995, 'tu': 9658, 'forbidden': 509} (8 s)
+P1 known56: 56 hosts, orders 0..21; set 74 identical x5 True {'pass': 56}; set 398 identical True {'pass': 56} (1 s)
+P1 cells: 179437 hosts, orders 10..18; set 74 identical x5 True {'pass': 61415, 'tu': 118022}; set 398 identical True {'pass': 51878, 'tu': 81310, 'forbidden': 46249} (1115 s)
+P1 u22top: 747 hosts, orders 21..22; set 74 identical x5 True {'pass': 743, 'tu': 4}; set 398 identical True {'forbidden': 707, 'pass': 40} (15 s)
+P1 sample-13-23: 20000 hosts, orders 13..13; set 74 identical x5 True {'tu': 11727, 'pass': 8273}; set 398 identical True {'tu': 8690, 'pass': 7276, 'forbidden': 4034} (47 s)
+P2 filter/selfcheck.py on NEW: exit 1; output identical to the recorded one: False
+P3a lifted to 23 vertices, set 74: 3803 hosts, BASE refuses them (exit 2), NEW records equal the originals' in verdict and witness: True {'pass': 1845, 'tu': 1958}
+P3a lifted to 23 vertices, set 398: 3803 hosts, BASE refuses them (exit 2), NEW records equal the originals' in verdict and witness: True {'forbidden': 1447, 'pass': 987, 'tu': 1369}
+P3a lifted to 24 vertices, set 74: 3803 hosts, BASE refuses them (exit 2), NEW records equal the originals' in verdict and witness: True {'pass': 1845, 'tu': 1958}
+P3a lifted to 24 vertices, set 398: 3803 hosts, BASE refuses them (exit 2), NEW records equal the originals' in verdict and witness: True {'forbidden': 1447, 'pass': 987, 'tu': 1369}
+P3b relabelled 23-vertex hosts, set 74: 3803 hosts, verdict classes unchanged: True, witnesses re-verified: 3803/3803
+P3b relabelled 23-vertex hosts, set 398: 3803 hosts, verdict classes unchanged: True, witnesses re-verified: 3803/3803
+P3c realistic 23-vertex hosts, set 398: 1583 hosts {'forbidden': 1583}; matcher32 + Python TU search agree on verdict and index: 1583/1583; witnesses re-verified: 1583/1583
+P3c realistic 23-vertex hosts, set 74: 1583 hosts {'forbidden': 1583}; matcher32 + Python TU search agree on verdict and index: 1583/1583; witnesses re-verified: 1583/1583
+P4 ASAN + UBSan build on every Part-3 host file in both sets (25984 runs of a host): clean and identical
+PROBLEM: P2 selfcheck.py: exit 1, output identical False
+FILTER-LIMIT FAIL (1)

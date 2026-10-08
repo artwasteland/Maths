@@ -1,0 +1,47 @@
+{
+  "extension.py": {
+    "origin": "/tmp/gp11-escalate/superbase.py",
+    "origin_sha256": "696c6170bb457273ccf5b979fafe53d9f3738459d95668c412cc9f68561e00f5",
+    "port_sha256": "747cdd117724ad68db6fae317c4c1b27997cbc29b7a20b867fbfc43dd91e016e"
+  },
+  "generic_escalated.py": {
+    "origin": "research/gp-10/embed/generic_exact.py",
+    "origin_sha256": "bb2182486caf513484d6a4390527f5e27dc9d34a2166a2be6816c07a44974dfa",
+    "port_sha256": "45bf48cd0aba2831b6d3436dcdd6ae0a19a4e851a50cfbea2ed9eeb556473667"
+  },
+  "numeric_branch.py": {
+    "origin": "/tmp/gp11-escalate/numeric_branch.py",
+    "origin_sha256": "48b9847f3bf614f58c47c7dfeb2173b1303158b74aeff3665250dcc917adb72e",
+    "port_sha256": "0795dcc9542e6537efed19600930d413938608aaadee88390bce84bb7cf227d5"
+  },
+  "portfolio.py": {
+    "origin": "/tmp/gp11-escalate/run_stage.py",
+    "origin_sha256": "0c2854875b2f611995dfd4b42df53642952ce7d9725de634cc515e450197904e",
+    "port_sha256": "db770e258359243aa39c572ce81841a08fc57c03c46e99509b08ae9c4f023a47"
+  },
+  "poset.c": {
+    "origin": "research/gp-11/design/prototypes/poset.c",
+    "origin_sha256": "89d5ac63dbfde126e058a34f11404ae317714b0903f8b63f1bafeeb21a13253b",
+    "port_sha256": "0c2fdd6a7c50d19511e43624331de16b1dbc4f167d74e8b8da3e45d5548427c9"
+  },
+  "reduce_exact.py": {
+    "origin": "/tmp/gp11-escalate/reduce_exact.py",
+    "origin_sha256": "dcedc251e41b5455578045e834f0a2dcb43a07302497a05e962a63634774fa05",
+    "port_sha256": "78cb959964f6de895cf78acd1b8be4e4dc9885e09e322a95b9ea12b8f05319c8"
+  },
+  "rigid_system.py": {
+    "origin": "research/gp-11/design/prototypes/rigid_system_order11.py",
+    "origin_sha256": "ea60ca29a1eb8f1e344c4bf1dffce999e1c9f8409926c88f277878182c15ad73",
+    "port_sha256": "39533a3887250af86cdc0e5081d0c1ace3c7f498231b435b556362d5899e3bb7"
+  },
+  "saturated_embed.py": {
+    "origin": "/tmp/gp11-escalate/saturated_embed.py",
+    "origin_sha256": "df92b3bb10b3ea7a7b7bfc97014c5aa839ba9c4fb3455f5454e47d45f8f49cd1",
+    "port_sha256": "0d44303f304c86a4e685ec73f994113c7a328174784863f79379751f45c24757"
+  },
+  "tu.c": {
+    "origin": "research/gp-11/design/prototypes/tu.c",
+    "origin_sha256": "ac3987c31d47c0db6808b0a4ef63a9602a11d382d62dba69f63b827065b17b0e",
+    "port_sha256": "b4d0ed37cc52000c80c8a4cc6ebedb5a0bd593047327f690da97964937f35cd5"
+  }
+}

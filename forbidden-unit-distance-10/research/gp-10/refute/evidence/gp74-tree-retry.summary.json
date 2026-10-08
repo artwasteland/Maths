@@ -1,0 +1,479 @@
+{
+  "suite": "gp74",
+  "method": "tree",
+  "count": 23,
+  "refuted": 13,
+  "unknown": 10,
+  "seconds_per_graph": 12.0,
+  "max_states": 200,
+  "all_sat": false,
+  "total_seconds": 176.95052234083414,
+  "rows": [
+    {
+      "index": 16,
+      "g6": "G[dBG{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 12.021072930190712,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 17,
+      "g6": "Gm__x[",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 9,
+        "initial_rank": 3,
+        "l3_triples": 35,
+        "moves": {
+          "L1a": 2,
+          "L1c": 2,
+          "L2": 2,
+          "L3": 3
+        },
+        "states": 9,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 8.832376576028764,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 18,
+      "g6": "GqGTYw",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 9,
+        "initial_rank": 3,
+        "l3_triples": 31,
+        "moves": {
+          "L1a": 2,
+          "L1c": 2,
+          "L2": 2,
+          "L3": 3
+        },
+        "states": 9,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 5.09287360496819,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 22,
+      "g6": "H_hP`SV",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 4,
+        "l3_triples": 729,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 1.6846263711340725,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 38,
+      "g6": "H?dPdLi",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 3,
+        "l3_triples": 729,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 1.7255862201564014,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 39,
+      "g6": "HGEAXjw",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 2,
+        "l3_triples": 1461,
+        "moves": {
+          "L3": 3
+        },
+        "states": 7,
+        "stops": {
+          "no_move_no_embedding": 4
+        },
+        "method": "tree",
+        "seconds": 3.7856316762045026,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 56,
+      "g6": "Hm__XKZ",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 9,
+        "initial_rank": 4,
+        "l3_triples": 41,
+        "moves": {
+          "L1a": 2,
+          "L1c": 2,
+          "L2": 2,
+          "L3": 3
+        },
+        "states": 9,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 7.729187077842653,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 57,
+      "g6": "HOOo}Rp",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 9,
+        "initial_rank": 4,
+        "l3_triples": 139,
+        "moves": {
+          "L1a": 2,
+          "L1c": 2,
+          "L2": 2,
+          "L3": 3
+        },
+        "states": 9,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 7.18655712204054,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 58,
+      "g6": "Hg?X[rp",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 9,
+        "initial_rank": 4,
+        "l3_triples": 115,
+        "moves": {
+          "L1a": 2,
+          "L1c": 2,
+          "L2": 2,
+          "L3": 3
+        },
+        "states": 9,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 6.914916400797665,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 59,
+      "g6": "H`?NeW{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 12.012612770311534,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 60,
+      "g6": "HqGRSgN",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 9,
+        "initial_rank": 4,
+        "l3_triples": 15,
+        "moves": {
+          "L1a": 2,
+          "L1c": 2,
+          "L2": 2,
+          "L3": 3
+        },
+        "states": 9,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 4.837772028986365,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 61,
+      "g6": "Hp?Gi^w",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 9,
+        "initial_rank": 4,
+        "l3_triples": 125,
+        "moves": {
+          "L1c": 4,
+          "L2": 2,
+          "L3": 3
+        },
+        "states": 9,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 6.208091686945409,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 62,
+      "g6": "Hr?MPgN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 12.022263525053859,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 63,
+      "g6": "Hr_@iWN",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 7,
+        "initial_rank": 4,
+        "l3_triples": 15,
+        "moves": {
+          "L1a": 2,
+          "L1c": 2,
+          "L3": 3
+        },
+        "states": 7,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 4.993185538798571,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 64,
+      "g6": "HkCe`WN",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 9,
+        "initial_rank": 4,
+        "l3_triples": 73,
+        "moves": {
+          "L1a": 2,
+          "L1c": 2,
+          "L2": 2,
+          "L3": 3
+        },
+        "states": 9,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 8.292265524156392,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 65,
+      "g6": "HqGEhW\\",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 9,
+        "initial_rank": 4,
+        "l3_triples": 31,
+        "moves": {
+          "L1a": 2,
+          "L1c": 2,
+          "L2": 2,
+          "L3": 3
+        },
+        "states": 9,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 5.52299624402076,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 66,
+      "g6": "H{O_okN",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 3,
+        "l3_triples": 1185,
+        "moves": {
+          "L1a": 4,
+          "L1b": 2,
+          "L3": 7
+        },
+        "states": 15,
+        "stops": {
+          "contradiction": 6,
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 7.132005772087723,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 67,
+      "g6": "Hp`@iWZ",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 12.016723550856113,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 68,
+      "g6": "H`QBpiL",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 12.015695148147643,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 69,
+      "g6": "H_CfKxw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 12.014651931356639,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 70,
+      "g6": "HpO]@cN",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 7,
+        "initial_rank": 3,
+        "l3_triples": 5,
+        "moves": {
+          "L1a": 2,
+          "L1b": 2,
+          "L3": 3
+        },
+        "states": 7,
+        "stops": {
+          "contradiction": 4
+        },
+        "method": "tree",
+        "seconds": 5.056796940043569,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 71,
+      "g6": "HQ`F_wl",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 13,
+        "initial_rank": 3,
+        "l3_triples": 25,
+        "moves": {
+          "L1a": 4,
+          "L1c": 2,
+          "L2": 2,
+          "L3": 5
+        },
+        "states": 13,
+        "stops": {
+          "contradiction": 6
+        },
+        "method": "tree",
+        "seconds": 8.98214160092175,
+        "limit": 12.0
+      }
+    },
+    {
+      "index": 73,
+      "g6": "H``Axih",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 13,
+        "initial_rank": 3,
+        "l3_triples": 33,
+        "moves": {
+          "L1a": 4,
+          "L1c": 2,
+          "L2": 2,
+          "L3": 5
+        },
+        "states": 13,
+        "stops": {
+          "contradiction": 6
+        },
+        "method": "tree",
+        "seconds": 10.758463643025607,
+        "limit": 12.0
+      }
+    }
+  ],
+  "environment": {
+    "sympy": "1.14.0",
+    "flint": "0.9.0",
+    "SYMPY_GROUND_TYPES": "python"
+  },
+  "argv": [
+    "research/gp-10/refute/controls.py",
+    "--suite",
+    "gp74",
+    "--method",
+    "tree",
+    "--seconds",
+    "12",
+    "--indices",
+    "16,17,18,22,38,39,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,73",
+    "--tag=-retry"
+  ],
+  "source_sha256": {
+    "algebra.py": "18b79b8f9db10df849c946d8dccb6c74f518ffc1e1f0fb7ade79f2bc2689d45a",
+    "gp10refute.py": "02cc3494847704028c5f8baa0dc8e58493f0558cd31bb1e4b98d05a430efac27",
+    "selftest.py": "ec0af9442f1e9ec05153355d151b9db2eba20098f7a9a13b502ec03acb27f6ec",
+    "controls.py": "d4b7dffa1c2435ed9e16e4c355d6d3f67abcc305d634c9216360ba8e770a3e58",
+    "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec"
+  }
+}

@@ -1,0 +1,3 @@
+{"cert": {"end": {"map": [0, 11, 1, 9], "refuted": "C^"}, "steps": [{"gadget": 0, "map": [5, 10, 2, 8, 4, 11], "pair": [10, 11]}, {"gadget": 0, "map": [10, 11, 3, 7, 6, 9], "pair": [11, 9]}], "type": "tu"}, "g6": "K_?G?cks`M^?", "verdict": "refuted"}
+{"cert": {"type": "tree", "witness": {"field": {"interval": [-1, 1], "minpoly": [0, 1]}, "tree": {"A": [[1, -1, 1, -1], [1, -1, -1, 1], [1, 1, -1, -1]], "children": [], "edges": [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]], "move": {"kind": "L1a", "pair": [0, 1]}}}}, "g6": "C~", "verdict": "refuted"}
+{"cert": {"budget": {"seconds": 0}, "reason": "audit fixture, no geometry search"}, "g6": "C^", "verdict": "unknown"}

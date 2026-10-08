@@ -1,0 +1,5 @@
+ACCEPT record Cr verified
+ACCEPT record F`o~_ verified
+ACCEPT record C~ verified
+ACCEPT record A_ verified
+REJECT run coverage

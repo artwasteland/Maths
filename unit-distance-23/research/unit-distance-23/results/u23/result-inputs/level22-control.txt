@@ -1,0 +1,22 @@
+self-test: with Engel graph 1's form removed from the union, missing = [1]
+self-test: Engel graph 0 with the pair (0,1) flipped is not found
+self-test: Engel graph 1 also placed in a second slice is reported
+Engel file: research/unit-distance-22/sources/engel-dataset/engel-22-60.g6 sha256 c85de7632fbf2513e96405295a0afdd4c67ce25de1d8ba56474c1ed8514c01e6
+Engel (22,60) graphs: 35; required (minimum degree >= 4): 14; kept (22,60) graphs in the fleet: 29 distinct, from 1955 slice copies
+  Engel  1 (min degree 4): found in s50of1920
+  Engel  8 (min degree 4): found in s50of1920
+  Engel  9 (min degree 4): found in s50of1920
+  Engel 10 (min degree 4): found in s50of1920
+  Engel 11 (min degree 4): found in s344of1920
+  Engel 12 (min degree 4): found in s1647of1920
+  Engel 13 (min degree 4): found in s344of1920
+  Engel 14 (min degree 4): found in s1647of1920
+  Engel 15 (min degree 4): found in s50of1920
+  Engel 16 (min degree 4): found in s50of1920
+  Engel 18 (min degree 4): found in s50of1920
+  Engel 21 (min degree 4): found in s344of1920
+  Engel 24 (min degree 4): found in s50of1920
+  Engel 34 (min degree 4): found in s50of1920
+kept (22,60) graphs that are not Engel's: 15 (undecided by the filter-only prune)
+kept (22,60) graphs in more than one slice: 0
+LEVEL-22 CONTROL OK: 14 of 14 required graphs found

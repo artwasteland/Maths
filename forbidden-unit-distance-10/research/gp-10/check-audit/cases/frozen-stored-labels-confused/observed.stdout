@@ -1,0 +1,2 @@
+REJECT record EqLw map_not_edge_preserving: R-ptr: (1, 3) -> (1, 4)
+REJECT run records_rejected

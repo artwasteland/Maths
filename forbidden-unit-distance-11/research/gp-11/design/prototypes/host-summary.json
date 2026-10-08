@@ -1,0 +1,15 @@
+{
+  "method": "host",
+  "cap": 1.0,
+  "count": 94,
+  "counts": {
+    "embedded": 17,
+    "unknown": 77
+  },
+  "extra": {},
+  "seconds": 47.506326685193926,
+  "max_rss_kib": 136712,
+  "min_MemAvailable_kib": 4465464,
+  "cpu_self": 48.362598,
+  "cpu_children": 0.001374
+}

@@ -1,0 +1,1368 @@
+{
+  "suite": "gp74",
+  "method": "tree",
+  "count": 74,
+  "refuted": 51,
+  "unknown": 23,
+  "seconds_per_graph": 3.0,
+  "max_states": 200,
+  "total_seconds": 95.36886352906004,
+  "rows": [
+    {
+      "index": 0,
+      "g6": "C~",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.08102439297363162,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 1,
+      "g6": "DFw",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.09087688103318214,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 2,
+      "g6": "EqLw",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.09929696191102266,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 3,
+      "g6": "F@h^_",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.10922166518867016,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 4,
+      "g6": "FqHXw",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 3,
+        "l3_triples": 11,
+        "moves": {
+          "L1c": 2,
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.3330165073275566,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 5,
+      "g6": "FoS~_",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.22574919275939465,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 6,
+      "g6": "G?K]Nc",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.2605226868763566,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 7,
+      "g6": "Gp@Gzo",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.19151998311281204,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 8,
+      "g6": "GsOiho",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.1438973732292652,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 9,
+      "g6": "G@fBJs",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 4,
+        "l3_triples": 13,
+        "moves": {
+          "L1c": 2,
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.6331574697978795,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 10,
+      "g6": "GqHPW{",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 4,
+        "l3_triples": 13,
+        "moves": {
+          "L1c": 2,
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.121520312037319,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 11,
+      "g6": "G@IQV{",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.09355736523866653,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 12,
+      "g6": "GHCML{",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.08890474401414394,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 13,
+      "g6": "G?Nebs",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.0910715558566153,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 14,
+      "g6": "GAJcrs",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.16269985307008028,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 15,
+      "g6": "GdhAXk",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.1747710518538952,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 16,
+      "g6": "G[dBG{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.010294212028384,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 17,
+      "g6": "Gm__x[",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.012160832993686,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 18,
+      "g6": "GqGTYw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.01531133800745,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 19,
+      "g6": "H?GXmRo",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.3430781299248338,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 20,
+      "g6": "H??|Qro",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.19815767789259553,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 21,
+      "g6": "HIGCkX{",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.1843474511988461,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 22,
+      "g6": "H_hP`SV",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 4,
+        "l3_triples": 729,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 1.0462699406780303,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 23,
+      "g6": "HCO_W~q",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.23226275201886892,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 24,
+      "g6": "HgCXSLp",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 2
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.42931301705539227,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 25,
+      "g6": "HAJ?Xfw",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.2802075892686844,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 26,
+      "g6": "HqL@?[V",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.29325671680271626,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 27,
+      "g6": "H?XPdeM",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.13760030129924417,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 28,
+      "g6": "H@EPQ^a",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.16335221892222762,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 29,
+      "g6": "Ho?gqd{",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.1884100427851081,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 30,
+      "g6": "HoO_ol{",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.19381241081282496,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 31,
+      "g6": "HAGW}Ed",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.18182472418993711,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 32,
+      "g6": "HoCYPLp",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 2
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.2607809673063457,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 33,
+      "g6": "H_SsPNo",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 2
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.3639450022019446,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 34,
+      "g6": "H?hPaue",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.13800956308841705,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 35,
+      "g6": "HoCy@TR",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.233332309871912,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 36,
+      "g6": "HIA@Wzw",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.2796381707303226,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 37,
+      "g6": "H_hOpNo",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1b": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.14234143123030663,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 38,
+      "g6": "H?dPdLi",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 3,
+        "l3_triples": 729,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 1.042121334001422,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 39,
+      "g6": "HGEAXjw",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 2,
+        "l3_triples": 1461,
+        "moves": {
+          "L3": 3
+        },
+        "states": 7,
+        "stops": {
+          "no_move_no_embedding": 4
+        },
+        "method": "tree",
+        "seconds": 2.7777885706163943,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 40,
+      "g6": "Ho@PQwz",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 5,
+        "l3_triples": 15,
+        "moves": {
+          "L1c": 2,
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.7739212499000132,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 41,
+      "g6": "H?iRQhr",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 5,
+        "l3_triples": 15,
+        "moves": {
+          "L1c": 2,
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.650833775755018,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 42,
+      "g6": "Hh_EhW\\",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 4,
+        "initial_rank": 4,
+        "l3_triples": 23,
+        "moves": {
+          "L1c": 2,
+          "L2": 1,
+          "L3": 1
+        },
+        "states": 4,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 2.0308157401159406,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 43,
+      "g6": "HSD_YVp",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.2992118061520159,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 44,
+      "g6": "HH_KiXr",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.26789847714826465,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 45,
+      "g6": "H_KQ\\Jp",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 4,
+        "initial_rank": 5,
+        "l3_triples": 67,
+        "moves": {
+          "L1c": 2,
+          "L2": 1,
+          "L3": 1
+        },
+        "states": 4,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 2.0216294899582863,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 46,
+      "g6": "H`QBWyp",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 4,
+        "initial_rank": 4,
+        "l3_triples": 23,
+        "moves": {
+          "L1c": 2,
+          "L2": 1,
+          "L3": 1
+        },
+        "states": 4,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.6543406918644905,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 47,
+      "g6": "HkCeHoN",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 2
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.24524265667423606,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 48,
+      "g6": "H?HVCp|",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 4,
+        "initial_rank": 5,
+        "l3_triples": 17,
+        "moves": {
+          "L1c": 2,
+          "L2": 1,
+          "L3": 1
+        },
+        "states": 4,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 2.129303751979023,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 49,
+      "g6": "H@EMBD|",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.3085021725855768,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 50,
+      "g6": "HH`K_\\r",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.33003168692812324,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 51,
+      "g6": "H@CNEK|",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.208171796053648,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 52,
+      "g6": "H@_maXr",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 4,
+        "initial_rank": 4,
+        "l3_triples": 17,
+        "moves": {
+          "L1c": 2,
+          "L2": 1,
+          "L3": 1
+        },
+        "states": 4,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.4397975513711572,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 53,
+      "g6": "HG_\\aXr",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 4,
+        "initial_rank": 4,
+        "l3_triples": 17,
+        "moves": {
+          "L1c": 2,
+          "L2": 1,
+          "L3": 1
+        },
+        "states": 4,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.792729183100164,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 54,
+      "g6": "HGaqOtr",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 4,
+        "initial_rank": 5,
+        "l3_triples": 17,
+        "moves": {
+          "L1c": 2,
+          "L2": 1,
+          "L3": 1
+        },
+        "states": 4,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.9471199898980558,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 55,
+      "g6": "HHEAG^x",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.1969646899960935,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 56,
+      "g6": "Hm__XKZ",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0100593040697277,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 57,
+      "g6": "HOOo}Rp",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.013697971124202,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 58,
+      "g6": "Hg?X[rp",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0168515318073332,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 59,
+      "g6": "H`?NeW{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0124639673158526,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 60,
+      "g6": "HqGRSgN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0415390050038695,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 61,
+      "g6": "Hp?Gi^w",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.017847705166787,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 62,
+      "g6": "Hr?MPgN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.015704511664808,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 63,
+      "g6": "Hr_@iWN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0105325640179217,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 64,
+      "g6": "HkCe`WN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0119902840815485,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 65,
+      "g6": "HqGEhW\\",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.01469036238268,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 66,
+      "g6": "H{O_okN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.014332107733935,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 67,
+      "g6": "Hp`@iWZ",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0184938739985228,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 68,
+      "g6": "H`QBpiL",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.015853805001825,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 69,
+      "g6": "H_CfKxw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0117227667942643,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 70,
+      "g6": "HpO]@cN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0108893141150475,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 71,
+      "g6": "HQ`F_wl",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0147266178391874,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 72,
+      "g6": "Hr`?XKZ",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 4,
+        "l3_triples": 27,
+        "moves": {
+          "L1c": 2,
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.4787179231643677,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 73,
+      "g6": "H``Axih",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 3.0148012321442366,
+        "limit": 3.0
+      }
+    }
+  ],
+  "environment": {
+    "sympy": "1.14.0",
+    "flint": "0.9.0",
+    "SYMPY_GROUND_TYPES": "python"
+  },
+  "argv": [
+    "research/gp-10/refute/controls.py",
+    "--suite",
+    "gp74",
+    "--method",
+    "tree",
+    "--seconds",
+    "3"
+  ]
+}

@@ -1,0 +1,1507 @@
+{
+  "baseline": "/tmp/gp10-check/round3/baseline",
+  "baseline_checker_sha256": "ca643575c793c20ed716ef696cfef84b39b47e9d4a64a3e1790089074c88de8f",
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "files": [
+    {
+      "kind": "modified",
+      "new_lines": 341,
+      "old_lines": 302,
+      "path": "FORMAT.md",
+      "ranges": [
+        {
+          "new_end": 189,
+          "new_start": 151,
+          "old_end": 150,
+          "old_start": 151,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 106,
+      "old_lines": 87,
+      "path": "PROOFS.md",
+      "ranges": [
+        {
+          "new_end": 106,
+          "new_start": 88,
+          "old_end": 87,
+          "old_start": 88,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 1405,
+      "old_lines": 888,
+      "path": "REPORT.md",
+      "ranges": [
+        {
+          "new_end": 1348,
+          "new_start": 851,
+          "old_end": 850,
+          "old_start": 851,
+          "operation": "insert"
+        },
+        {
+          "new_end": 1368,
+          "new_start": 1350,
+          "old_end": 851,
+          "old_start": 852,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 29,
+      "old_lines": 29,
+      "path": "audit.json",
+      "ranges": [
+        {
+          "new_end": 3,
+          "new_start": 3,
+          "old_end": 3,
+          "old_start": 3,
+          "operation": "replace"
+        },
+        {
+          "new_end": 8,
+          "new_start": 8,
+          "old_end": 8,
+          "old_start": 8,
+          "operation": "replace"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 1,
+      "old_lines": 1,
+      "path": "audit.log",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 1,
+          "old_start": 1,
+          "operation": "replace"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 25,
+      "old_lines": 25,
+      "path": "benchmark.json",
+      "ranges": [
+        {
+          "new_end": 12,
+          "new_start": 12,
+          "old_end": 12,
+          "old_start": 12,
+          "operation": "replace"
+        },
+        {
+          "new_end": 18,
+          "new_start": 17,
+          "old_end": 18,
+          "old_start": 17,
+          "operation": "replace"
+        },
+        {
+          "new_end": 21,
+          "new_start": 21,
+          "old_end": 21,
+          "old_start": 21,
+          "operation": "replace"
+        },
+        {
+          "new_end": 24,
+          "new_start": 24,
+          "old_end": 24,
+          "old_start": 24,
+          "operation": "replace"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 86,
+      "old_lines": 0,
+      "path": "dag_selftest.py",
+      "ranges": [
+        {
+          "new_end": 86,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 999,
+      "old_lines": 0,
+      "path": "fixtures/round3/cases.json",
+      "ranges": [
+        {
+          "new_end": 999,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/constant-last-not-f.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/dag-256-rows.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/dag-257-rows.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/dag-rational-spelling.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/dag-zero-row.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/k23-null-dag.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/k23-real-dag-sturm.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/k4-frame-nonedge.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/k4-isolate-null-dag.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/k4-real-dag-sos.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-boolean-exponent.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-cofactors-list.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-duplicate-term.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-empty-rows.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-extra-cert-field.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-extra-row-field.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-failed-identity.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-float-coefficient.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-forward.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-frame-nonedge.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-huge-index.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-last-not-one.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-leading-zero-index.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-missing-cofactors.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-missing-poly.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-negative-denominator.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-negative-index.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-noncanonical-cofactor.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-noncanonical-poly.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-rows-object.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-self.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-spaced-rational.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-unknown-source.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-wrong-row-poly.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-zero-denominator.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/null-zero-term.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/rational-spelling-invalid.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-boolean-exponent.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-both-proofs.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-cofactors-list.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-dag-constant.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-duplicate-term.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-empty-rows.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-extra-cert-field.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-extra-row-field.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-failed-identity.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-float-coefficient.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-forward.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-frame-nonedge.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-huge-index.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-last-not-f.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-leading-zero-index.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-missing-cofactors.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-missing-f.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-missing-poly.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-missing-proof.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-negative-denominator.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-negative-index.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-noncanonical-cofactor.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-noncanonical-f.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-noncanonical-poly.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-rows-object.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-self.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-spaced-rational.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-unknown-source.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-wrong-row-poly.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-wrong-sturm-variable.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-zero-denominator.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/real-zero-term.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/sos-negative-weight.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/sos-wrong-square.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/sos-zero-constant.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/sos-zero-term.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round3/zero-row-nonzero-poly.json",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 1028,
+      "old_lines": 979,
+      "path": "gp10check.py",
+      "ranges": [
+        {
+          "new_end": 422,
+          "new_start": 419,
+          "old_end": 418,
+          "old_start": 419,
+          "operation": "insert"
+        },
+        {
+          "new_end": 491,
+          "new_start": 449,
+          "old_end": 444,
+          "old_start": 445,
+          "operation": "insert"
+        },
+        {
+          "new_end": 556,
+          "new_start": 555,
+          "old_end": 507,
+          "old_start": 508,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 183,
+      "old_lines": 0,
+      "path": "make_dag_fixtures.py",
+      "ranges": [
+        {
+          "new_end": 183,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 2,
+      "old_lines": 0,
+      "path": "round3-benchmark.log",
+      "ranges": [
+        {
+          "new_end": 2,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "round3-fixture-build.log",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 44,
+      "old_lines": 0,
+      "path": "round3-kernel-selftest.log",
+      "ranges": [
+        {
+          "new_end": 44,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 2792,
+      "old_lines": 0,
+      "path": "round3-regression.json",
+      "ranges": [
+        {
+          "new_end": 2792,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 315,
+      "old_lines": 0,
+      "path": "round3-regression.log",
+      "ranges": [
+        {
+          "new_end": 315,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1507,
+      "old_lines": 0,
+      "path": "round3-review.json",
+      "ranges": [
+        {
+          "new_end": 1507,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "round3-review.log",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 155,
+      "old_lines": 0,
+      "path": "round3-selftest.log",
+      "ranges": [
+        {
+          "new_end": 155,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 24,
+      "old_lines": 0,
+      "path": "round3_regression.py",
+      "ranges": [
+        {
+          "new_end": 24,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 127,
+      "old_lines": 0,
+      "path": "round3_review.py",
+      "ranges": [
+        {
+          "new_end": 127,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 165,
+      "old_lines": 163,
+      "path": "selftest.py",
+      "ranges": [
+        {
+          "new_end": 161,
+          "new_start": 160,
+          "old_end": 159,
+          "old_start": 160,
+          "operation": "insert"
+        }
+      ]
+    }
+  ],
+  "no_em_dash": "PASS",
+  "required_final_lines": {
+    "round3-kernel-selftest.log": "SELFTEST PASS checks=41 positive=18 rejected_mutations=23",
+    "round3-regression.log": "REGRESSION PASS audit=304 new=10 total=314 mutation_links=237",
+    "round3-selftest.log": "SELFTEST PASS checks=154 positive=38 rejected_mutations=116"
+  },
+  "source_review": {
+    "added_functions": [
+      "algebra_dag",
+      "canonical_polynomial",
+      "real_no_zero"
+    ],
+    "changed_functions": [
+      "Checker.verify",
+      "algebra"
+    ],
+    "existing_dispatch_branches": "identical",
+    "identical_functions": 57,
+    "original_functions": 59,
+    "original_real_proof_statements": "identical after extraction",
+    "original_selftest_cases_and_output": "identical",
+    "preserved_historical_files": 151,
+    "unrelated_globals": "identical"
+  },
+  "status": "PASS",
+  "syntax": "PASS"
+}

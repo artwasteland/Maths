@@ -1,0 +1,2018 @@
+{
+ "reference_source_sha256": "b509682789fbcab8250182d7ae8330559910d7c1322b84cf5d18c4f5961a5016",
+ "new_source_sha256": "141e590a798f738489490726f44f0874ced256e65cc9fc387b4a7fe5cb0e6aa5",
+ "candidates": {
+  "new": "784f098418aba9cd76076a524d97b44ac4ce92a84a472d7636d51aaf1ec8bc72",
+  "new-K1": "14b526b8c79c0cf869ab93f784a10b48e4a4be44a8164e207a1759ea6193bfb4",
+  "new-U1": "4c0812dd0a0086037c24938d00abab8705d119b469c65d6ae7e3da525cc068a2"
+ },
+ "rows": [
+  {
+   "cell": "dag dag-18-46_15-34 p398",
+   "parents": 14741,
+   "families": 7026,
+   "sets": 118727,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 15.255023
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 17.122174
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 13.011406
+    }
+   },
+   "instrumented_reference_equals_pinned": true,
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-18-46_15-35 p398",
+   "parents": 975,
+   "families": 550,
+   "sets": 10665,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.310735
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.46633
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.030426
+    }
+   },
+   "instrumented_reference_equals_pinned": true,
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-18-46_15-36 p398",
+   "parents": 52,
+   "families": 36,
+   "sets": 1075,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.304447
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.309818
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.260602
+    }
+   },
+   "instrumented_reference_equals_pinned": true,
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-18-46_15-37 p398",
+   "parents": 2,
+   "families": 2,
+   "sets": 126,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.033023
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.033849
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.018469
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-18-46_16-38 p398",
+   "parents": 4130,
+   "families": 2700,
+   "sets": 68888,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 11.523731
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 13.303466
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 11.472245
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-18-46_16-39 p398",
+   "parents": 222,
+   "families": 187,
+   "sets": 7042,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.241814
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.390282
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.239985
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-18-46_16-40 p398",
+   "parents": 222,
+   "families": 13,
+   "sets": 724,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.097645
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.098809
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.107431
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-18-46_16-41 p398",
+   "parents": 12,
+   "families": 2,
+   "sets": 91,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004572
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004666
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004641
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-18-46_17-42 p398",
+   "parents": 1473,
+   "families": 1157,
+   "sets": 57305,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.671836
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 8.077106
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.697914
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-18-46_17-43 p398",
+   "parents": 1473,
+   "families": 166,
+   "sets": 6235,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.582877
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.609111
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.588372
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-18-46_18-46 p398",
+   "parents": 6941,
+   "families": 145,
+   "sets": 7354,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.91768
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.507261
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.915353
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-22-61_11-19 p398",
+   "parents": 18163,
+   "families": 14150,
+   "sets": 88061,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.656442
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.848217
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.647063
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-22-61_11-20 p398",
+   "parents": 2971,
+   "families": 2823,
+   "sets": 46669,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.680407
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.893199
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.70343
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-22-61_11-21 p398",
+   "parents": 238,
+   "families": 233,
+   "sets": 5546,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.14221
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.153053
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.136039
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-22-61_11-22 p398",
+   "parents": 238,
+   "families": 36,
+   "sets": 640,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.027379
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.02615
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.020902
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-22-61_11-23 p398",
+   "parents": 20,
+   "families": 9,
+   "sets": 48,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005604
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005357
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00553
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "dag dag-22-61_12-23 p398",
+   "parents": 4797,
+   "families": 4687,
+   "sets": 147613,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.896666
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.176612
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.934104
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-22-61_12-24 p398",
+   "parents": 4799,
+   "families": 582,
+   "sets": 12630,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.479912
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.498084
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.43605
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-22-61_12-25 p398",
+   "parents": 370,
+   "families": 129,
+   "sets": 1110,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.085782
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.103533
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.066644
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-22-61_12-26 p398",
+   "parents": 27,
+   "families": 18,
+   "sets": 156,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.031376
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.037581
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.026031
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "dag dag-22-61_12-27 p398",
+   "parents": 2,
+   "families": 2,
+   "sets": 17,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009715
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009656
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009733
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L12 (13,23) free",
+   "parents": 1390,
+   "families": 1189,
+   "sets": 8587,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.246733
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.228888
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.25492
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L12 (13,23) all",
+   "parents": 1450,
+   "families": 1249,
+   "sets": 9256,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.260122
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.227136
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.251372
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L12 (13,24) free",
+   "parents": 390,
+   "families": 374,
+   "sets": 8694,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.147797
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.140177
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.144373
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L12 (13,24) all",
+   "parents": 449,
+   "families": 433,
+   "sets": 9046,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.153891
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.15735
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.157628
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L12 (13,25) free",
+   "parents": 36,
+   "families": 35,
+   "sets": 2166,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.022904
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.024904
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.022753
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L12 (13,25) all",
+   "parents": 50,
+   "families": 49,
+   "sets": 3077,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.031609
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.030746
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.030432
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L12 (13,26) free",
+   "parents": 36,
+   "families": 2,
+   "sets": 2,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00025
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000256
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000253
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L12 (13,26) all",
+   "parents": 50,
+   "families": 3,
+   "sets": 13,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001173
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001188
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001164
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L12 (13,27) free",
+   "parents": 0,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 9e-06
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-06
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 8e-06
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L12 (13,27) all",
+   "parents": 1,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.8e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.9e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.4e-05
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L13 (14,26) free",
+   "parents": 1067,
+   "families": 1026,
+   "sets": 21502,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.503657
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.445129
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.505856
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L13 (14,26) all",
+   "parents": 1212,
+   "families": 1167,
+   "sets": 22115,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.520841
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.475322
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.524514
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L13 (14,27) free",
+   "parents": 209,
+   "families": 208,
+   "sets": 13164,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.139326
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.137279
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.144746
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L13 (14,27) all",
+   "parents": 288,
+   "families": 287,
+   "sets": 16270,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.177782
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.173914
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.175808
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L13 (14,28) free",
+   "parents": 209,
+   "families": 15,
+   "sets": 1563,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.015025
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.014787
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.015119
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L13 (14,28) all",
+   "parents": 288,
+   "families": 20,
+   "sets": 2081,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.02128
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.021313
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.021707
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L13 (14,29) free",
+   "parents": 13,
+   "families": 2,
+   "sets": 2,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000167
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000147
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000145
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L13 (14,29) all",
+   "parents": 18,
+   "families": 3,
+   "sets": 3,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000189
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000213
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000206
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L14 (15,30) free",
+   "parents": 1104,
+   "families": 356,
+   "sets": 41037,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.356984
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.350518
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.351476
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L14 (15,30) all",
+   "parents": 1472,
+   "families": 602,
+   "sets": 65619,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.576414
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.586803
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.578508
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L14 (15,31) free",
+   "parents": 354,
+   "families": 83,
+   "sets": 2205,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.029851
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.040408
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.029264
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L14 (15,31) all",
+   "parents": 616,
+   "families": 133,
+   "sets": 4407,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.059525
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.072417
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.059486
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L14 (15,32) free",
+   "parents": 12,
+   "families": 8,
+   "sets": 90,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.008488
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.013771
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009506
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L14 (15,32) all",
+   "parents": 28,
+   "families": 19,
+   "sets": 101,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009203
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.015299
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00935
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L15 (16,34) free",
+   "parents": 713,
+   "families": 444,
+   "sets": 6875,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.187724
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.363426
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.193291
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L15 (16,34) all",
+   "parents": 1498,
+   "families": 928,
+   "sets": 14822,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.320707
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.497513
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.315243
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L15 (16,35) free",
+   "parents": 21,
+   "families": 19,
+   "sets": 277,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.016489
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.024293
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.017805
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L15 (16,35) all",
+   "parents": 65,
+   "families": 52,
+   "sets": 725,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.026945
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.034428
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.026639
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L15 (16,36) free",
+   "parents": 0,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.1e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-06
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-06
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L15 (16,36) all",
+   "parents": 2,
+   "families": 2,
+   "sets": 15,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.0017
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001718
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001744
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L16 (17,38) free",
+   "parents": 331,
+   "families": 323,
+   "sets": 11616,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.564142
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.7645
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.569891
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L16 (17,38) all",
+   "parents": 1500,
+   "families": 1449,
+   "sets": 25262,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.041456
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.240199
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.039219
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L16 (17,39) free",
+   "parents": 1,
+   "families": 1,
+   "sets": 172,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006182
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006219
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006462
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L16 (17,39) all",
+   "parents": 11,
+   "families": 11,
+   "sets": 266,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.01809
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.018109
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.019857
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L17 (18,42) free",
+   "parents": 80,
+   "families": 80,
+   "sets": 14260,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.367004
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.378838
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.371984
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L17 (18,42) all",
+   "parents": 1500,
+   "families": 1500,
+   "sets": 109863,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.896686
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.914017
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.933909
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L17 (18,43) free",
+   "parents": 0,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-06
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 8e-06
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6e-06
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L17 (18,43) all",
+   "parents": 4,
+   "families": 4,
+   "sets": 1180,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.022464
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.021178
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.021177
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L18 (19,46) free",
+   "parents": 46,
+   "families": 46,
+   "sets": 11525,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.429003
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.426504
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.423613
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L18 (19,46) all",
+   "parents": 1497,
+   "families": 1497,
+   "sets": 345127,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.678887
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.654324
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.662986
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "deep L18 (19,47) free",
+   "parents": 0,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-06
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6e-06
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-06
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L18 (19,47) all",
+   "parents": 3,
+   "families": 3,
+   "sets": 959,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.028825
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.027103
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.026917
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L18 (19,48) free",
+   "parents": 0,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6e-06
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-06
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6e-06
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L18 (19,48) all",
+   "parents": 3,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.2e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.9e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 5e-05
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L19 (20,51) free",
+   "parents": 21,
+   "families": 3,
+   "sets": 3,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001789
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001783
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001848
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L19 (20,51) all",
+   "parents": 854,
+   "families": 188,
+   "sets": 881,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.082482
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.079704
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.079869
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L19 (20,52) free",
+   "parents": 0,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6e-06
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-06
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6e-06
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L19 (20,52) all",
+   "parents": 2,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.2e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.1e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.2e-05
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L20 (21,56) free",
+   "parents": 0,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.2e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-06
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-06
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L20 (21,56) all",
+   "parents": 1,
+   "families": 0,
+   "sets": 0,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.4e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.1e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.4e-05
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L21 (22,61) free",
+   "parents": 40,
+   "families": 24,
+   "sets": 376,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.121412
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.158174
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.124231
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": false
+   }
+  },
+  {
+   "cell": "deep L21 (22,61) all",
+   "parents": 743,
+   "families": 676,
+   "sets": 4011,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.854139
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.892802
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.854822
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  },
+  {
+   "cell": "L21 (22,61) the 743 real parents",
+   "parents": 743,
+   "families": 676,
+   "sets": 4011,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.855455
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.905145
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.863071
+    }
+   },
+   "order_only_mutant": {
+    "output_problems": [],
+    "family_differs": true
+   }
+  }
+ ],
+ "red": {
+  "cells_family_differs": 34,
+  "cells_output_differs": 0
+ },
+ "pass": true,
+ "seconds": 686.3
+}

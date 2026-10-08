@@ -1,0 +1,128 @@
+{
+ "12": {
+  "parent_records": {
+   "skipped": 256,
+   "restricted": 1217,
+   "pattern": 542
+  },
+  "restricted": {
+   "cpu_seconds_median": {
+    "74": 1.711065,
+    "398": 8.648173
+   },
+   "ratio_398_over_74": 5.054263280471519
+  },
+  "pattern": {
+   "cpu_seconds_median": {
+    "74": 0.10561699999999999,
+    "398": 0.284573
+   },
+   "ratio_398_over_74": 2.6943863203840297
+  }
+ },
+ "13": {
+  "parent_records": {
+   "skipped": 296,
+   "restricted": 1285,
+   "pattern": 213
+  },
+  "restricted": {
+   "cpu_seconds_median": {
+    "74": 3.59074,
+    "398": 16.504597
+   },
+   "ratio_398_over_74": 4.5964333257211605
+  },
+  "pattern": {
+   "cpu_seconds_median": {
+    "74": 0.149282,
+    "398": 0.549523
+   },
+   "ratio_398_over_74": 3.681106898353452
+  }
+ },
+ "15": {
+  "parent_records": {
+   "skipped": 598,
+   "restricted": 907,
+   "pattern": 71
+  },
+  "restricted": {
+   "cpu_seconds_median": {
+    "74": 0.597626,
+    "398": 1.299919
+   },
+   "ratio_398_over_74": 2.175137962538444
+  },
+  "pattern": {
+   "cpu_seconds_median": {
+    "74": 0.096494,
+    "398": 0.505393
+   },
+   "ratio_398_over_74": 5.237558811946857
+  }
+ },
+ "16": {
+  "parent_records": {
+   "skipped": 50,
+   "restricted": 1407,
+   "pattern": 61
+  },
+  "restricted": {
+   "cpu_seconds_median": {
+    "74": 4.981292,
+    "398": 7.979542
+   },
+   "ratio_398_over_74": 1.6019020768105947
+  },
+  "pattern": {
+   "cpu_seconds_median": {
+    "74": 0.13225,
+    "398": 0.767046
+   },
+   "ratio_398_over_74": 5.799969754253308
+  }
+ },
+ "17": {
+  "parent_records": {
+   "skipped": 0,
+   "restricted": 1126,
+   "pattern": 377
+  },
+  "restricted": {
+   "cpu_seconds_median": {
+    "74": 10.876683,
+    "398": 9.124887
+   },
+   "ratio_398_over_74": 0.8389402357317943
+  },
+  "pattern": {
+   "cpu_seconds_median": {
+    "74": 1.222702,
+    "398": 7.431959
+   },
+   "ratio_398_over_74": 6.078307715207794
+  }
+ },
+ "18": {
+  "parent_records": {
+   "skipped": 6,
+   "restricted": 532,
+   "pattern": 968
+  },
+  "restricted": {
+   "cpu_seconds_median": {
+    "74": 8.891821,
+    "398": 7.417595
+   },
+   "ratio_398_over_74": 0.8342042647957039
+  },
+  "pattern": {
+   "cpu_seconds_median": {
+    "74": 4.272898,
+    "398": 26.607976999999998
+   },
+   "ratio_398_over_74": 6.227150051323481
+  }
+ }
+}

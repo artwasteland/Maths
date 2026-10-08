@@ -1,0 +1,7 @@
+{
+  "bytes": 26310870,
+  "sha256": "45cd435ed8d388ea082683d249f881f588304889006167f1e0bd317535eeaaae",
+  "name": "unit-distance-23-evidence.tar.zst",
+  "describe": "Immutable run receipts and bulk verification inputs for --audit and --full; quick mode uses the GitHub directory alone.",
+  "researchCommit": "0ff57d1f2f14baf8177e34b8bb54fd4c18d09618"
+}

@@ -1,0 +1,110 @@
+{
+ "g6_decode": {
+  "graphs": 5264,
+  "mismatches": []
+ },
+ "four_cycles": {
+  "graphs": 300,
+  "mismatches": 0
+ },
+ "sympy_reexpansion": [
+  {
+   "g6": "JkGOOKI@^`_",
+   "type": "null",
+   "rows": 0,
+   "vars": 54,
+   "identity_holds": true,
+   "bytes": 313803,
+   "red_control_identity_holds": false
+  },
+  {
+   "g6": "Jk??OKiD^w?",
+   "type": "null",
+   "rows": 0,
+   "vars": 54,
+   "identity_holds": true,
+   "bytes": 313809,
+   "red_control_identity_holds": false
+  },
+  {
+   "g6": "Ji?XcCKAXB_",
+   "type": "real",
+   "rows": 0,
+   "vars": 25,
+   "identity_holds": true,
+   "sos_holds": true,
+   "bytes": 142535,
+   "red_control_identity_holds": false
+  },
+  {
+   "g6": "JAH?\\AQFVB?",
+   "type": "real",
+   "rows": 0,
+   "vars": 54,
+   "identity_holds": true,
+   "univariate": true,
+   "real_roots": 0,
+   "sturm_holds": true,
+   "bytes": 955414,
+   "red_control_identity_holds": false
+  },
+  {
+   "g6": "J`??]Otp`s_",
+   "type": "null-dag",
+   "rows": 11,
+   "vars": 22,
+   "identity_holds": true,
+   "bytes": 117907,
+   "red_control_identity_holds": false
+  },
+  {
+   "g6": "Jg?OtDGHWx?",
+   "type": "null-dag",
+   "rows": 41,
+   "vars": 28,
+   "identity_holds": true,
+   "bytes": 142576,
+   "red_control_identity_holds": false
+  },
+  {
+   "g6": "JCUB?WDGhb_",
+   "type": "real-dag",
+   "rows": 25,
+   "vars": 25,
+   "identity_holds": true,
+   "sos_holds": true,
+   "bytes": 52622,
+   "red_control_identity_holds": false
+  },
+  {
+   "g6": "JoC?I?xHy{?",
+   "type": "real-dag",
+   "rows": 24,
+   "vars": 21,
+   "identity_holds": true,
+   "univariate": true,
+   "real_roots": 0,
+   "sturm_holds": true,
+   "bytes": 119700,
+   "red_control_identity_holds": false
+  }
+ ],
+ "canonical_red_control": {
+  "relabelled": "JSDZUa_gE??",
+  "flagged": true,
+  "maps_back_to_original": true
+ },
+ "canonical_g6": {
+  "graphs": 5264,
+  "non_canonical": [],
+  "non_canonical_count": 0
+ },
+ "F10": {
+  "members": 398,
+  "distinct_canonical_forms": 398,
+  "sha256_sorted_canonical_0_74": "59e7da3d016278b43a1e9f1ac667ec2cdb70e2f7b1c8b12612423d4caec29e81",
+  "sha256_sorted_canonical_74_398": "a899e36cec0f135f253e0c9942d2fecd29280da44189a01d00752e8a5af971b8",
+  "note": "compare the second digest with sha256 of GP-10 L10.g6 (sorted canonical, newline-terminated)"
+ },
+ "all_agree": true
+}

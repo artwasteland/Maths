@@ -1,0 +1,8 @@
+original u22 G3 n=16: retained slice keep files 48/48; actual graph6 union 1; missing slices []
+original u22 G3 n=17: retained slice keep files 48/48; actual graph6 union 8; missing slices []
+original u22 G3 n=18: retained slice keep files 48/48; actual graph6 union 38; missing slices []
+calibration n=16: retained local kept graphs 1, same as actual fleet G3 union True
+calibration n=17: retained local kept graphs 8, same as actual fleet G3 union True
+n=16: distinct fleet G3 kept=1; known=1; missing known=0
+n=17: distinct fleet G3 kept=8; known=6; missing known=0
+n=18: distinct fleet G3 kept=38; known=16; missing known=0

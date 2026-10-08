@@ -1,0 +1,6 @@
+geng: 12005168 graphs on 10 vertices over m = 0..45
+udenum --filter set 398: 105680 graphs; equals brute force True
+udenum --filter set 74: 106189 graphs; equals brute force True
+RED CONTROL went red: set-74 seeds judged against brute398 (differ by 509)
+filter cpu seconds: set 398 18.4, set 74 13.9
+RESULT: PASS

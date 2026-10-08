@@ -1,0 +1,18 @@
+--- enum/run-dag2.py
++++ <scratch>/scratchpad/v398/run-dag2-398/run-dag2.py
+@@ -231,6 +231,7 @@
+         "--manifest", str(manifest), "--shard-id", f"seed-{n}-{m}",
+         *software_args(args, Path(__file__).resolve(), args.geng),
+     ]
++    command += ["--forbidden-set", "398"]  # make-test-run.py: Mode 398
+     if args.resume:
+         command.append("--overwrite")
+     stats_path = outdir / f"{n}-{m}.stats.json"
+@@ -409,6 +410,7 @@
+             "--manifest", str(manifest), "--shard-id", shard_id,
+             *software_args(args, Path(__file__).resolve()),
+         ]
++        command += ["--forbidden-set", "398"]  # make-test-run.py: Mode 398
+         if args.verify_parents:
+             command.append("--verify-parents")
+         if args.resume:

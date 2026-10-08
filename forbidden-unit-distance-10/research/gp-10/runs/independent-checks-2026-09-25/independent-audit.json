@@ -1,0 +1,44 @@
+{
+ "alarms": [],
+ "input": {
+  "B10": 33162,
+  "distinct_iso_classes": 33162,
+  "verdicts": {
+   "embedded": 32653,
+   "refuted": 509
+  }
+ },
+ "minimality": {
+  "recounted_minimal": 324,
+  "refuted_not_minimal": 185,
+  "equals_L10": true,
+  "deletions_missing_from_B10": 0,
+  "L10_pairwise_nonisomorphic": true
+ },
+ "embeddings_and_pointers": {
+  "digits": 120,
+  "exact_embeddings": 3879,
+  "worst_edge_error": "6.16e-99",
+  "smallest_point_gap": "0.00240617",
+  "bad_pointer_chains": 0,
+  "record_types": {
+   "embedded/exact": 3879,
+   "embedded/super": 28774,
+   "refuted/null": 22,
+   "refuted/null-dag": 65,
+   "refuted/real": 24,
+   "refuted/real-dag": 97,
+   "refuted/sub": 185,
+   "refuted/tree": 103,
+   "refuted/tu": 13
+  }
+ },
+ "cross_consistency": {
+  "upset_of_L10_in_B10": 509,
+  "refuted": 509,
+  "upset_equals_refuted": true,
+  "non_refuted_in_upset": 0
+ },
+ "seconds": 122,
+ "verdict": "INDEPENDENT AUDIT PASS"
+}

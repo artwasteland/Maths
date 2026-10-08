@@ -1,0 +1,4502 @@
+[
+  {
+    "g6": "J???N?\\MeK_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 11,
+    "descendants_including_self": 28,
+    "ancestors_including_self": 29
+  },
+  {
+    "g6": "J???[STXNc?",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 12,
+    "descendants_including_self": 40,
+    "ancestors_including_self": 35
+  },
+  {
+    "g6": "J???g\\oiE@_",
+    "edges": 15,
+    "degree2": 6,
+    "direct_children": 2,
+    "direct_parents": 19,
+    "descendants_including_self": 6,
+    "ancestors_including_self": 3482
+  },
+  {
+    "g6": "J??@GmKU^S?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 7,
+    "descendants_including_self": 161,
+    "ancestors_including_self": 21
+  },
+  {
+    "g6": "J??@YYSK]o?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 18,
+    "descendants_including_self": 167,
+    "ancestors_including_self": 78
+  },
+  {
+    "g6": "J??@Z`KdKu?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 7,
+    "descendants_including_self": 273,
+    "ancestors_including_self": 19
+  },
+  {
+    "g6": "J??A@YQFfJ?",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 14,
+    "descendants_including_self": 46,
+    "ancestors_including_self": 27
+  },
+  {
+    "g6": "J??A@gMeNB_",
+    "edges": 17,
+    "degree2": 7,
+    "direct_children": 4,
+    "direct_parents": 6,
+    "descendants_including_self": 12,
+    "ancestors_including_self": 14
+  },
+  {
+    "g6": "J??AGohdN[?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 11,
+    "descendants_including_self": 52,
+    "ancestors_including_self": 21
+  },
+  {
+    "g6": "J??CPPSLUL?",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 30,
+    "descendants_including_self": 25,
+    "ancestors_including_self": 818
+  },
+  {
+    "g6": "J??C`LGFNJ_",
+    "edges": 18,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 1,
+    "descendants_including_self": 90,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J??E?gLNfF?",
+    "edges": 18,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 1,
+    "descendants_including_self": 24,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J??GISocnX?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 11,
+    "descendants_including_self": 51,
+    "ancestors_including_self": 42
+  },
+  {
+    "g6": "J??GaQ_Le^?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 5,
+    "direct_parents": 17,
+    "descendants_including_self": 32,
+    "ancestors_including_self": 55
+  },
+  {
+    "g6": "J??GbGY`no?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 5,
+    "descendants_including_self": 81,
+    "ancestors_including_self": 18
+  },
+  {
+    "g6": "J??GdJCIac?",
+    "edges": 14,
+    "degree2": 5,
+    "direct_children": 3,
+    "direct_parents": 38,
+    "descendants_including_self": 6,
+    "ancestors_including_self": 42212
+  },
+  {
+    "g6": "J??HAaKcz[?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 6,
+    "direct_parents": 21,
+    "descendants_including_self": 39,
+    "ancestors_including_self": 143
+  },
+  {
+    "g6": "J??HO`dcuw?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 25,
+    "descendants_including_self": 109,
+    "ancestors_including_self": 230
+  },
+  {
+    "g6": "J??HQjAk@w_",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 23,
+    "descendants_including_self": 267,
+    "ancestors_including_self": 136
+  },
+  {
+    "g6": "J??HaIKMub_",
+    "edges": 19,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 0,
+    "descendants_including_self": 369,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J??Ha_MhUR?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 20,
+    "descendants_including_self": 81,
+    "ancestors_including_self": 93
+  },
+  {
+    "g6": "J??HcdXXdW_",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 0,
+    "descendants_including_self": 1220,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J??I?MBM^k?",
+    "edges": 18,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 4,
+    "descendants_including_self": 91,
+    "ancestors_including_self": 12
+  },
+  {
+    "g6": "J??I?uRlBW?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 22,
+    "descendants_including_self": 145,
+    "ancestors_including_self": 72
+  },
+  {
+    "g6": "J??I@MoFep?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 16,
+    "descendants_including_self": 141,
+    "ancestors_including_self": 71
+  },
+  {
+    "g6": "J??IHeGLMp?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 5,
+    "descendants_including_self": 144,
+    "ancestors_including_self": 17
+  },
+  {
+    "g6": "J??Kb?K[KN?",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 3,
+    "direct_parents": 24,
+    "descendants_including_self": 8,
+    "ancestors_including_self": 385
+  },
+  {
+    "g6": "J??LBHWc_x_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 18,
+    "descendants_including_self": 179,
+    "ancestors_including_self": 65
+  },
+  {
+    "g6": "J??M?MgTpr?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 1,
+    "descendants_including_self": 199,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J??OGU@YNk_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 10,
+    "descendants_including_self": 24,
+    "ancestors_including_self": 21
+  },
+  {
+    "g6": "J??OUGaBn`?",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 3,
+    "direct_parents": 23,
+    "descendants_including_self": 8,
+    "ancestors_including_self": 435
+  },
+  {
+    "g6": "J??OZ?]iUM?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 0,
+    "descendants_including_self": 134,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J??O\\?TYer_",
+    "edges": 19,
+    "degree2": 3,
+    "direct_children": 13,
+    "direct_parents": 0,
+    "descendants_including_self": 455,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J??OpHBiEX_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 12,
+    "descendants_including_self": 103,
+    "ancestors_including_self": 29
+  },
+  {
+    "g6": "J??PAOVyC\\_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 2,
+    "descendants_including_self": 128,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J??PIUCeJP?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 25,
+    "descendants_including_self": 37,
+    "ancestors_including_self": 351
+  },
+  {
+    "g6": "J??PcLIYKY_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 2,
+    "descendants_including_self": 203,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "J??Q?oeiU\\?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 17,
+    "descendants_including_self": 75,
+    "ancestors_including_self": 36
+  },
+  {
+    "g6": "J??Q@TWhC{_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 14,
+    "descendants_including_self": 150,
+    "ancestors_including_self": 47
+  },
+  {
+    "g6": "J??QGghanE?",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 13,
+    "descendants_including_self": 40,
+    "ancestors_including_self": 65
+  },
+  {
+    "g6": "J??S?peIuY?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 17,
+    "descendants_including_self": 99,
+    "ancestors_including_self": 34
+  },
+  {
+    "g6": "J??W?FoWsU?",
+    "edges": 15,
+    "degree2": 6,
+    "direct_children": 3,
+    "direct_parents": 21,
+    "descendants_including_self": 5,
+    "ancestors_including_self": 2009
+  },
+  {
+    "g6": "J??WmCgWKR_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 21,
+    "descendants_including_self": 67,
+    "ancestors_including_self": 54
+  },
+  {
+    "g6": "J??X?uEWmQ_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 2,
+    "descendants_including_self": 215,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J??XIagQtb_",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 1,
+    "descendants_including_self": 1198,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J??XQ_eqTb?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 4,
+    "descendants_including_self": 477,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "J??Y@EGNMe_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 3,
+    "descendants_including_self": 229,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J??YH_hqcf?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 2,
+    "descendants_including_self": 331,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "J??YSGp[LS?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 28,
+    "descendants_including_self": 286,
+    "ancestors_including_self": 117
+  },
+  {
+    "g6": "J??YXQPW\\k?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 0,
+    "descendants_including_self": 1533,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J??ZT?PPKR_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 15,
+    "descendants_including_self": 145,
+    "ancestors_including_self": 50
+  },
+  {
+    "g6": "J??[AciY[l?",
+    "edges": 19,
+    "degree2": 3,
+    "direct_children": 13,
+    "direct_parents": 1,
+    "descendants_including_self": 764,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J??_GcXqFD_",
+    "edges": 16,
+    "degree2": 6,
+    "direct_children": 4,
+    "direct_parents": 13,
+    "descendants_including_self": 16,
+    "ancestors_including_self": 100
+  },
+  {
+    "g6": "J??_Wu_TMF_",
+    "edges": 18,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 2,
+    "descendants_including_self": 141,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J??__TCmMM?",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 18,
+    "descendants_including_self": 14,
+    "ancestors_including_self": 298
+  },
+  {
+    "g6": "J??__UwZUk_",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 0,
+    "descendants_including_self": 761,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J??_aDKmC]_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 8,
+    "descendants_including_self": 95,
+    "ancestors_including_self": 34
+  },
+  {
+    "g6": "J??_gr@qH[?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 4,
+    "direct_parents": 22,
+    "descendants_including_self": 16,
+    "ancestors_including_self": 365
+  },
+  {
+    "g6": "J??`sXOUlJ?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 0,
+    "descendants_including_self": 944,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J??aPeKs?x_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 24,
+    "descendants_including_self": 196,
+    "ancestors_including_self": 196
+  },
+  {
+    "g6": "J??cOWoS][?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 6,
+    "direct_parents": 29,
+    "descendants_including_self": 33,
+    "ancestors_including_self": 643
+  },
+  {
+    "g6": "J??cQ_[HuR?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 18,
+    "descendants_including_self": 75,
+    "ancestors_including_self": 67
+  },
+  {
+    "g6": "J??c_wiUMI?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 15,
+    "descendants_including_self": 195,
+    "ancestors_including_self": 121
+  },
+  {
+    "g6": "J??g``BaeW?",
+    "edges": 15,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 33,
+    "descendants_including_self": 27,
+    "ancestors_including_self": 6404
+  },
+  {
+    "g6": "J??ge?bEmY_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 2,
+    "descendants_including_self": 86,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J??ge?dEmE_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 9,
+    "descendants_including_self": 30,
+    "ancestors_including_self": 14
+  },
+  {
+    "g6": "J??ge_MEnE?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 1,
+    "descendants_including_self": 237,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J??hq@PeSJ?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 12,
+    "descendants_including_self": 162,
+    "ancestors_including_self": 50
+  },
+  {
+    "g6": "J??hs@HS[i_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 1,
+    "descendants_including_self": 361,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J??k?kiUU`_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 3,
+    "descendants_including_self": 376,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J??kQSSKMF_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 2,
+    "descendants_including_self": 99,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J??kaCWH]R?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 9,
+    "descendants_including_self": 93,
+    "ancestors_including_self": 36
+  },
+  {
+    "g6": "J??l_xGoHb_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 3,
+    "descendants_including_self": 539,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J??o?fHYc[?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 25,
+    "descendants_including_self": 46,
+    "ancestors_including_self": 505
+  },
+  {
+    "g6": "J??qE_MIlo?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 11,
+    "descendants_including_self": 305,
+    "ancestors_including_self": 37
+  },
+  {
+    "g6": "J??s?TWWsZ?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 15,
+    "descendants_including_self": 96,
+    "ancestors_including_self": 71
+  },
+  {
+    "g6": "J??sT`PQhX_",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 0,
+    "descendants_including_self": 1492,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J??uOO@[KJ?",
+    "edges": 15,
+    "degree2": 5,
+    "direct_children": 4,
+    "direct_parents": 30,
+    "descendants_including_self": 7,
+    "ancestors_including_self": 5331
+  },
+  {
+    "g6": "J??yS_`En@?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 20,
+    "descendants_including_self": 316,
+    "ancestors_including_self": 130
+  },
+  {
+    "g6": "J??}?PRISa_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 15,
+    "descendants_including_self": 182,
+    "ancestors_including_self": 53
+  },
+  {
+    "g6": "J?@?KcgEnX?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 16,
+    "descendants_including_self": 70,
+    "ancestors_including_self": 49
+  },
+  {
+    "g6": "J?@?OIBM^k?",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 13,
+    "descendants_including_self": 31,
+    "ancestors_including_self": 38
+  },
+  {
+    "g6": "J?@?WegLUr?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 3,
+    "descendants_including_self": 301,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?@?XTofCf?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 4,
+    "descendants_including_self": 440,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "J?@@?UKF^c?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 27,
+    "descendants_including_self": 53,
+    "ancestors_including_self": 91
+  },
+  {
+    "g6": "J?@@SqKLIe_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 5,
+    "descendants_including_self": 471,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "J?@@_WJkEB_",
+    "edges": 16,
+    "degree2": 6,
+    "direct_children": 4,
+    "direct_parents": 19,
+    "descendants_including_self": 16,
+    "ancestors_including_self": 197
+  },
+  {
+    "g6": "J?@@_YYJUa?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 24,
+    "descendants_including_self": 221,
+    "ancestors_including_self": 118
+  },
+  {
+    "g6": "J?@@_ohpK{?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 9,
+    "direct_parents": 19,
+    "descendants_including_self": 66,
+    "ancestors_including_self": 121
+  },
+  {
+    "g6": "J?@@cGXYC[?",
+    "edges": 15,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 36,
+    "descendants_including_self": 27,
+    "ancestors_including_self": 5817
+  },
+  {
+    "g6": "J?@AsggMLH?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 19,
+    "descendants_including_self": 287,
+    "ancestors_including_self": 72
+  },
+  {
+    "g6": "J?@B?gXiC[_",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 6,
+    "direct_parents": 24,
+    "descendants_including_self": 43,
+    "ancestors_including_self": 325
+  },
+  {
+    "g6": "J?@GOa`KuF?",
+    "edges": 16,
+    "degree2": 6,
+    "direct_children": 5,
+    "direct_parents": 19,
+    "descendants_including_self": 24,
+    "ancestors_including_self": 316
+  },
+  {
+    "g6": "J?@PEQHEhL_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 0,
+    "descendants_including_self": 168,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?@P[q@QH`_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 7,
+    "direct_parents": 4,
+    "descendants_including_self": 116,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "J?@U@Che?Z_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 15,
+    "descendants_including_self": 86,
+    "ancestors_including_self": 21
+  },
+  {
+    "g6": "J?@_oU@[Kx?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 6,
+    "descendants_including_self": 72,
+    "ancestors_including_self": 26
+  },
+  {
+    "g6": "J?@aT?YcOx_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 15,
+    "descendants_including_self": 181,
+    "ancestors_including_self": 35
+  },
+  {
+    "g6": "J?A?GToEvX?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 15,
+    "descendants_including_self": 60,
+    "ancestors_including_self": 62
+  },
+  {
+    "g6": "J?A?PLQMMY?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 14,
+    "descendants_including_self": 66,
+    "ancestors_including_self": 20
+  },
+  {
+    "g6": "J?A?XSuUV_?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 5,
+    "descendants_including_self": 625,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "J?A?]?uQpb_",
+    "edges": 18,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 4,
+    "descendants_including_self": 74,
+    "ancestors_including_self": 16
+  },
+  {
+    "g6": "J?A?_TbFVH_",
+    "edges": 18,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 2,
+    "descendants_including_self": 56,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?A?qcdYK{?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 4,
+    "descendants_including_self": 321,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J?A@GbAQXq_",
+    "edges": 16,
+    "degree2": 6,
+    "direct_children": 4,
+    "direct_parents": 27,
+    "descendants_including_self": 16,
+    "ancestors_including_self": 428
+  },
+  {
+    "g6": "J?A@OHPMuZ?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 2,
+    "descendants_including_self": 86,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?A@OpdTfo?",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 9,
+    "direct_parents": 1,
+    "descendants_including_self": 376,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?A@OteTTo?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 8,
+    "direct_parents": 10,
+    "descendants_including_self": 414,
+    "ancestors_including_self": 52
+  },
+  {
+    "g6": "J?A@`PWpG}?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 6,
+    "direct_parents": 15,
+    "descendants_including_self": 80,
+    "ancestors_including_self": 73
+  },
+  {
+    "g6": "J?A@iHHMCp_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 20,
+    "descendants_including_self": 130,
+    "ancestors_including_self": 52
+  },
+  {
+    "g6": "J?AB?YoUX{?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 5,
+    "descendants_including_self": 642,
+    "ancestors_including_self": 31
+  },
+  {
+    "g6": "J?AB?gYYSZ?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 6,
+    "descendants_including_self": 44,
+    "ancestors_including_self": 26
+  },
+  {
+    "g6": "J?AB?s[JMe_",
+    "edges": 19,
+    "degree2": 3,
+    "direct_children": 13,
+    "direct_parents": 2,
+    "descendants_including_self": 840,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?AJ?po`pr?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 2,
+    "descendants_including_self": 529,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "J?APQ_iB]e?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 3,
+    "descendants_including_self": 154,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J?A_P_YO}Y?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 15,
+    "descendants_including_self": 122,
+    "ancestors_including_self": 44
+  },
+  {
+    "g6": "J?A_ooaO]W_",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 28,
+    "descendants_including_self": 45,
+    "ancestors_including_self": 604
+  },
+  {
+    "g6": "J?A`PpUcQS_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 4,
+    "descendants_including_self": 771,
+    "ancestors_including_self": 16
+  },
+  {
+    "g6": "J?B?OkbYKs?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 18,
+    "descendants_including_self": 124,
+    "ancestors_including_self": 216
+  },
+  {
+    "g6": "J?C?G^oWcW_",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 15,
+    "descendants_including_self": 26,
+    "ancestors_including_self": 171
+  },
+  {
+    "g6": "J?C?GeKWvH_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 10,
+    "descendants_including_self": 55,
+    "ancestors_including_self": 28
+  },
+  {
+    "g6": "J?C?HbGJmM?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 13,
+    "descendants_including_self": 44,
+    "ancestors_including_self": 63
+  },
+  {
+    "g6": "J?C?KHh[c]_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 0,
+    "descendants_including_self": 115,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?C?eQFHjW_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 3,
+    "descendants_including_self": 203,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?C?gOdovX?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 10,
+    "descendants_including_self": 72,
+    "ancestors_including_self": 20
+  },
+  {
+    "g6": "J?C?p@D`vW?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 6,
+    "direct_parents": 24,
+    "descendants_including_self": 16,
+    "ancestors_including_self": 514
+  },
+  {
+    "g6": "J?C@E?FR\\d?",
+    "edges": 17,
+    "degree2": 6,
+    "direct_children": 5,
+    "direct_parents": 16,
+    "descendants_including_self": 31,
+    "ancestors_including_self": 49
+  },
+  {
+    "g6": "J?C@GI`UU[_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 12,
+    "descendants_including_self": 44,
+    "ancestors_including_self": 38
+  },
+  {
+    "g6": "J?C@KOeU]M?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 1,
+    "descendants_including_self": 91,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?C@KROTX]?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 3,
+    "descendants_including_self": 225,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J?C@cKdRMs?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 4,
+    "descendants_including_self": 385,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J?C@dHKo_x_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 15,
+    "descendants_including_self": 186,
+    "ancestors_including_self": 34
+  },
+  {
+    "g6": "J?CA@KMdNq?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 3,
+    "descendants_including_self": 269,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J?CA\\OsP^c?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 0,
+    "descendants_including_self": 1948,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?CBCgkBme?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 6,
+    "descendants_including_self": 378,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J?CC_NKXPU_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 0,
+    "descendants_including_self": 239,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?CG?]RXf_?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 13,
+    "descendants_including_self": 105,
+    "ancestors_including_self": 60
+  },
+  {
+    "g6": "J?CGCDQH~w?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 4,
+    "descendants_including_self": 177,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "J?CG[_e[V@?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 10,
+    "direct_parents": 21,
+    "descendants_including_self": 141,
+    "ancestors_including_self": 131
+  },
+  {
+    "g6": "J?CHBIQFnE?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 0,
+    "descendants_including_self": 1135,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?CHOiBXMa?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 17,
+    "descendants_including_self": 168,
+    "ancestors_including_self": 88
+  },
+  {
+    "g6": "J?CHhP@`M_?",
+    "edges": 15,
+    "degree2": 3,
+    "direct_children": 9,
+    "direct_parents": 36,
+    "descendants_including_self": 30,
+    "ancestors_including_self": 6409
+  },
+  {
+    "g6": "J?CI@?FcvH?",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 17,
+    "descendants_including_self": 27,
+    "ancestors_including_self": 358
+  },
+  {
+    "g6": "J?CIL?xPvc?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 1,
+    "descendants_including_self": 1758,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?CJ?MoB]e?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 4,
+    "descendants_including_self": 267,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "J?CJCWSKn@?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 12,
+    "descendants_including_self": 233,
+    "ancestors_including_self": 68
+  },
+  {
+    "g6": "J?CLA@DK{]?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 3,
+    "descendants_including_self": 225,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J?COG]BYNC?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 8,
+    "descendants_including_self": 98,
+    "ancestors_including_self": 16
+  },
+  {
+    "g6": "J?COKUoWjW_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 8,
+    "descendants_including_self": 564,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "J?COPCdoeW?",
+    "edges": 15,
+    "degree2": 4,
+    "direct_children": 4,
+    "direct_parents": 27,
+    "descendants_including_self": 10,
+    "ancestors_including_self": 3647
+  },
+  {
+    "g6": "J?COPHAwC~_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 7,
+    "direct_parents": 2,
+    "descendants_including_self": 153,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?COS?bP^[?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 16,
+    "descendants_including_self": 63,
+    "ancestors_including_self": 61
+  },
+  {
+    "g6": "J?CW@Sfoe__",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 6,
+    "direct_parents": 10,
+    "descendants_including_self": 44,
+    "ancestors_including_self": 36
+  },
+  {
+    "g6": "J?CXQECG]B_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 20,
+    "descendants_including_self": 84,
+    "ancestors_including_self": 42
+  },
+  {
+    "g6": "J?CYE?bJLc?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 10,
+    "direct_parents": 13,
+    "descendants_including_self": 144,
+    "ancestors_including_self": 69
+  },
+  {
+    "g6": "J?C_CLIP|s?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 2,
+    "descendants_including_self": 190,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?C_KT_Skx?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 13,
+    "descendants_including_self": 163,
+    "ancestors_including_self": 41
+  },
+  {
+    "g6": "J?C_`NAQ[{?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 4,
+    "descendants_including_self": 290,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "J?Ca?weana?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 5,
+    "descendants_including_self": 431,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "J?CaCELMqj?",
+    "edges": 19,
+    "degree2": 3,
+    "direct_children": 13,
+    "direct_parents": 2,
+    "descendants_including_self": 812,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?CaGiHImE?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 16,
+    "descendants_including_self": 145,
+    "ancestors_including_self": 66
+  },
+  {
+    "g6": "J?CaOscdMB?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 8,
+    "direct_parents": 21,
+    "descendants_including_self": 64,
+    "ancestors_including_self": 74
+  },
+  {
+    "g6": "J?CaSOdcYk_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 5,
+    "descendants_including_self": 205,
+    "ancestors_including_self": 30
+  },
+  {
+    "g6": "J?CcACdE}w?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 9,
+    "direct_parents": 9,
+    "descendants_including_self": 119,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "J?CcY?TwPr?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 2,
+    "descendants_including_self": 581,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?CgAFOg_}_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 20,
+    "descendants_including_self": 182,
+    "ancestors_including_self": 74
+  },
+  {
+    "g6": "J?Co?TA_^[?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 19,
+    "descendants_including_self": 32,
+    "ancestors_including_self": 208
+  },
+  {
+    "g6": "J?CqHQG?}`_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 6,
+    "descendants_including_self": 190,
+    "ancestors_including_self": 15
+  },
+  {
+    "g6": "J?D?`EKhIU_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 8,
+    "descendants_including_self": 129,
+    "ancestors_including_self": 26
+  },
+  {
+    "g6": "J?D@?FgFSM_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 25,
+    "descendants_including_self": 67,
+    "ancestors_including_self": 60
+  },
+  {
+    "g6": "J?D@?NOaxy?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 3,
+    "descendants_including_self": 421,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J?D@?eHJmi?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 6,
+    "descendants_including_self": 253,
+    "ancestors_including_self": 20
+  },
+  {
+    "g6": "J?D@C`hFcM_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 2,
+    "descendants_including_self": 256,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J?D@HC[eVB?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 12,
+    "direct_parents": 4,
+    "descendants_including_self": 257,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "J?DAHIPIcV_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 3,
+    "descendants_including_self": 191,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J?DDAOXLdH?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 20,
+    "descendants_including_self": 268,
+    "ancestors_including_self": 130
+  },
+  {
+    "g6": "J?DDP_\\pR[?",
+    "edges": 20,
+    "degree2": 1,
+    "direct_children": 18,
+    "direct_parents": 1,
+    "descendants_including_self": 4551,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?DHC?BK]|?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 9,
+    "direct_parents": 2,
+    "descendants_including_self": 191,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?DKC`aGrw_",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 4,
+    "descendants_including_self": 684,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "J?DM?WqG[a_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 17,
+    "descendants_including_self": 195,
+    "ancestors_including_self": 179
+  },
+  {
+    "g6": "J?DOPCb`mQ?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 17,
+    "descendants_including_self": 119,
+    "ancestors_including_self": 44
+  },
+  {
+    "g6": "J?DSASgKlH?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 15,
+    "descendants_including_self": 278,
+    "ancestors_including_self": 86
+  },
+  {
+    "g6": "J?DY@QaKuF?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 3,
+    "descendants_including_self": 1952,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "J?D_XEPuFB?",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 19,
+    "direct_parents": 0,
+    "descendants_including_self": 2830,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?DcQGpEd@_",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 9,
+    "direct_parents": 15,
+    "descendants_including_self": 120,
+    "ancestors_including_self": 116
+  },
+  {
+    "g6": "J?E@A_ibai?",
+    "edges": 16,
+    "degree2": 3,
+    "direct_children": 5,
+    "direct_parents": 31,
+    "descendants_including_self": 29,
+    "ancestors_including_self": 947
+  },
+  {
+    "g6": "J?EAHH_Esp?",
+    "edges": 16,
+    "degree2": 3,
+    "direct_children": 6,
+    "direct_parents": 16,
+    "descendants_including_self": 31,
+    "ancestors_including_self": 360
+  },
+  {
+    "g6": "J?EDA?KSxZ?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 13,
+    "descendants_including_self": 92,
+    "ancestors_including_self": 94
+  },
+  {
+    "g6": "J?ELOhDWja?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 1,
+    "descendants_including_self": 2323,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?F?X?pO{]?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 2,
+    "descendants_including_self": 336,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?F@?swPlE?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 12,
+    "direct_parents": 15,
+    "descendants_including_self": 369,
+    "ancestors_including_self": 34
+  },
+  {
+    "g6": "J?G?GvRRdg_",
+    "edges": 19,
+    "degree2": 3,
+    "direct_children": 13,
+    "direct_parents": 1,
+    "descendants_including_self": 786,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?G?[?TSVK_",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 23,
+    "descendants_including_self": 24,
+    "ancestors_including_self": 310
+  },
+  {
+    "g6": "J?G?_N@FfW?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 5,
+    "direct_parents": 16,
+    "descendants_including_self": 16,
+    "ancestors_including_self": 192
+  },
+  {
+    "g6": "J?G?g]D[Ms_",
+    "edges": 19,
+    "degree2": 3,
+    "direct_children": 13,
+    "direct_parents": 0,
+    "descendants_including_self": 653,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?G?hcLpMs?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 2,
+    "descendants_including_self": 326,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "J?G@K_\\Ree?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 2,
+    "descendants_including_self": 387,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?GAGmGLMp?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 11,
+    "descendants_including_self": 157,
+    "ancestors_including_self": 32
+  },
+  {
+    "g6": "J?GCG_WPVF_",
+    "edges": 16,
+    "degree2": 6,
+    "direct_children": 4,
+    "direct_parents": 12,
+    "descendants_including_self": 16,
+    "ancestors_including_self": 56
+  },
+  {
+    "g6": "J?GGaCFdNo?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 24,
+    "descendants_including_self": 130,
+    "ancestors_including_self": 161
+  },
+  {
+    "g6": "J?GOGlHolS_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 5,
+    "descendants_including_self": 92,
+    "ancestors_including_self": 26
+  },
+  {
+    "g6": "J?GOICNkUs?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 3,
+    "descendants_including_self": 384,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J?GOMCW@nP_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 10,
+    "descendants_including_self": 60,
+    "ancestors_including_self": 21
+  },
+  {
+    "g6": "J?GOSPRhQL_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 3,
+    "descendants_including_self": 186,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J?GOaIIWsZ?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 32,
+    "descendants_including_self": 109,
+    "ancestors_including_self": 217
+  },
+  {
+    "g6": "J?GOhpI`mI?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 0,
+    "descendants_including_self": 385,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?GP?LWosz?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 1,
+    "descendants_including_self": 399,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?GQKSS[LP?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 14,
+    "descendants_including_self": 211,
+    "ancestors_including_self": 83
+  },
+  {
+    "g6": "J?GTQgoQKH_",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 7,
+    "direct_parents": 6,
+    "descendants_including_self": 147,
+    "ancestors_including_self": 65
+  },
+  {
+    "g6": "J?GU@`LkO\\_",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 10,
+    "direct_parents": 3,
+    "descendants_including_self": 809,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "J?GXOmKO~__",
+    "edges": 20,
+    "degree2": 2,
+    "direct_children": 10,
+    "direct_parents": 2,
+    "descendants_including_self": 1587,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?GY?ob`me?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 3,
+    "descendants_including_self": 384,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J?G[I_h[eF?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 3,
+    "descendants_including_self": 1996,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J?G\\?DHD]e?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 5,
+    "descendants_including_self": 420,
+    "ancestors_including_self": 20
+  },
+  {
+    "g6": "J?GacHKC{q_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 2,
+    "descendants_including_self": 409,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?Gc?tOD}X?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 1,
+    "descendants_including_self": 371,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?GcOGPS][_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 6,
+    "direct_parents": 16,
+    "descendants_including_self": 51,
+    "ancestors_including_self": 41
+  },
+  {
+    "g6": "J?H?gQKcZE_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 7,
+    "descendants_including_self": 104,
+    "ancestors_including_self": 26
+  },
+  {
+    "g6": "J?H?gTOg[X?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 22,
+    "descendants_including_self": 45,
+    "ancestors_including_self": 268
+  },
+  {
+    "g6": "J?H?gUPZF`?",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 10,
+    "descendants_including_self": 760,
+    "ancestors_including_self": 14
+  },
+  {
+    "g6": "J?H@iQ@DKp_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 17,
+    "descendants_including_self": 186,
+    "ancestors_including_self": 75
+  },
+  {
+    "g6": "J?HAT_SElH?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 34,
+    "descendants_including_self": 292,
+    "ancestors_including_self": 422
+  },
+  {
+    "g6": "J?HKACXKlg?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 12,
+    "descendants_including_self": 297,
+    "ancestors_including_self": 87
+  },
+  {
+    "g6": "J?HP?CJcUJ_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 8,
+    "descendants_including_self": 32,
+    "ancestors_including_self": 12
+  },
+  {
+    "g6": "J?HcQ_P_gx_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 10,
+    "descendants_including_self": 179,
+    "ancestors_including_self": 32
+  },
+  {
+    "g6": "J?I?xdcQKa_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 1,
+    "descendants_including_self": 557,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?IB?gXBme?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 4,
+    "descendants_including_self": 443,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J?J?_DgD[U?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 29,
+    "descendants_including_self": 36,
+    "ancestors_including_self": 830
+  },
+  {
+    "g6": "J?K?Gf?H]L?",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 17,
+    "descendants_including_self": 24,
+    "ancestors_including_self": 328
+  },
+  {
+    "g6": "J?K?gH@_~W?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 33,
+    "descendants_including_self": 42,
+    "ancestors_including_self": 784
+  },
+  {
+    "g6": "J?KAGgi`Ub_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 2,
+    "descendants_including_self": 299,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?KCIHQhPr?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 2,
+    "descendants_including_self": 526,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "J?KEJ?TbNa?",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 19,
+    "direct_parents": 1,
+    "descendants_including_self": 3130,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?L?CLQHdp_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 2,
+    "descendants_including_self": 515,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?LC?N_Cwy_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 1,
+    "descendants_including_self": 412,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?MDQKTSJG_",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 7,
+    "descendants_including_self": 2563,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "J?MF@HDSgy?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 0,
+    "descendants_including_self": 2191,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?MQ?C`pGV?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 26,
+    "descendants_including_self": 64,
+    "ancestors_including_self": 753
+  },
+  {
+    "g6": "J?M_@eEQie?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 9,
+    "descendants_including_self": 629,
+    "ancestors_including_self": 15
+  },
+  {
+    "g6": "J?NA_C`@\\o_",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 17,
+    "descendants_including_self": 260,
+    "ancestors_including_self": 79
+  },
+  {
+    "g6": "J?O@?_K`v`?",
+    "edges": 14,
+    "degree2": 8,
+    "direct_children": 1,
+    "direct_parents": 25,
+    "descendants_including_self": 2,
+    "ancestors_including_self": 13287
+  },
+  {
+    "g6": "J?OGhaAW[J_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 12,
+    "descendants_including_self": 97,
+    "ancestors_including_self": 19
+  },
+  {
+    "g6": "J?OOM?JkX\\?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 1,
+    "descendants_including_self": 261,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?O_OMOC~X?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 5,
+    "direct_parents": 22,
+    "descendants_including_self": 37,
+    "ancestors_including_self": 111
+  },
+  {
+    "g6": "J?O__MW_zW?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 6,
+    "direct_parents": 33,
+    "descendants_including_self": 27,
+    "ancestors_including_self": 1208
+  },
+  {
+    "g6": "J?Od?oFsHy?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 5,
+    "descendants_including_self": 724,
+    "ancestors_including_self": 30
+  },
+  {
+    "g6": "J?Q@?kQYKX?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 6,
+    "direct_parents": 26,
+    "descendants_including_self": 40,
+    "ancestors_including_self": 508
+  },
+  {
+    "g6": "J?Q@E?FEXd_",
+    "edges": 17,
+    "degree2": 6,
+    "direct_children": 6,
+    "direct_parents": 7,
+    "descendants_including_self": 57,
+    "ancestors_including_self": 29
+  },
+  {
+    "g6": "J?QOJCgCkp_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 17,
+    "descendants_including_self": 164,
+    "ancestors_including_self": 65
+  },
+  {
+    "g6": "J?QO`CrQtW?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 12,
+    "direct_parents": 1,
+    "descendants_including_self": 432,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?Qs?SpUbF?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 0,
+    "descendants_including_self": 2418,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?S?GabXS{?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 23,
+    "descendants_including_self": 118,
+    "ancestors_including_self": 138
+  },
+  {
+    "g6": "J?S@?Ks`uR?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 9,
+    "descendants_including_self": 131,
+    "ancestors_including_self": 48
+  },
+  {
+    "g6": "J?S@cHEgXy?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 3,
+    "descendants_including_self": 598,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J?S_GEPwO~?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 1,
+    "descendants_including_self": 383,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?SaD?P@k{_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 11,
+    "descendants_including_self": 165,
+    "ancestors_including_self": 33
+  },
+  {
+    "g6": "J?ShK?oO{b_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 2,
+    "descendants_including_self": 378,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?T@CCs`pr?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 4,
+    "descendants_including_self": 609,
+    "ancestors_including_self": 9
+  },
+  {
+    "g6": "J?U?HD`Dfo_",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 4,
+    "descendants_including_self": 694,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "J?Uo@F??wT_",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 24,
+    "descendants_including_self": 44,
+    "ancestors_including_self": 467
+  },
+  {
+    "g6": "J?WHe?Td`N?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 4,
+    "descendants_including_self": 1784,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J?WPKDSeVB?",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 19,
+    "direct_parents": 3,
+    "descendants_including_self": 2761,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?_?h`cQsZ?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 15,
+    "descendants_including_self": 92,
+    "ancestors_including_self": 60
+  },
+  {
+    "g6": "J?_BI_Ll@r?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 1,
+    "descendants_including_self": 641,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?_GHD@Cng_",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 17,
+    "descendants_including_self": 16,
+    "ancestors_including_self": 187
+  },
+  {
+    "g6": "J?_HaaCOxJ_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 9,
+    "descendants_including_self": 59,
+    "ancestors_including_self": 26
+  },
+  {
+    "g6": "J?_O@PBp`k?",
+    "edges": 15,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 32,
+    "descendants_including_self": 12,
+    "ancestors_including_self": 5307
+  },
+  {
+    "g6": "J?_OO_dOvD_",
+    "edges": 16,
+    "degree2": 6,
+    "direct_children": 4,
+    "direct_parents": 17,
+    "descendants_including_self": 16,
+    "ancestors_including_self": 155
+  },
+  {
+    "g6": "J?_PBC[Pku?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 2,
+    "descendants_including_self": 271,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?_Q?WbKm]?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 3,
+    "descendants_including_self": 197,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "J?_RGODK]R?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 15,
+    "descendants_including_self": 100,
+    "ancestors_including_self": 22
+  },
+  {
+    "g6": "J?_YAC`KK[?",
+    "edges": 15,
+    "degree2": 4,
+    "direct_children": 4,
+    "direct_parents": 37,
+    "descendants_including_self": 13,
+    "ancestors_including_self": 7733
+  },
+  {
+    "g6": "J?__g`HHvp?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 12,
+    "direct_parents": 1,
+    "descendants_including_self": 208,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?_i?cVKUO_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 20,
+    "descendants_including_self": 168,
+    "ancestors_including_self": 69
+  },
+  {
+    "g6": "J?_x_CXO]A_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 11,
+    "descendants_including_self": 201,
+    "ancestors_including_self": 26
+  },
+  {
+    "g6": "J?`?GSo[CF?",
+    "edges": 14,
+    "degree2": 6,
+    "direct_children": 2,
+    "direct_parents": 29,
+    "descendants_including_self": 4,
+    "ancestors_including_self": 18793
+  },
+  {
+    "g6": "J?`?X_eS[u?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 5,
+    "descendants_including_self": 345,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J?`@G_hSsz?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 1,
+    "descendants_including_self": 331,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J?`HaAGDXF_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 9,
+    "descendants_including_self": 98,
+    "ancestors_including_self": 66
+  },
+  {
+    "g6": "J?`Ic_`Hhp?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 10,
+    "descendants_including_self": 295,
+    "ancestors_including_self": 46
+  },
+  {
+    "g6": "J?`KbCWHH`_",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 8,
+    "direct_parents": 11,
+    "descendants_including_self": 182,
+    "ancestors_including_self": 48
+  },
+  {
+    "g6": "J?c?bGaPKL_",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 19,
+    "descendants_including_self": 48,
+    "ancestors_including_self": 226
+  },
+  {
+    "g6": "J?cHGc`PMb_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 0,
+    "descendants_including_self": 391,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?d?Gd`Hlq?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 11,
+    "direct_parents": 2,
+    "descendants_including_self": 321,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J?d?H?PG}\\_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 0,
+    "descendants_including_self": 110,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J?oGHCsCu`_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 14,
+    "descendants_including_self": 110,
+    "ancestors_including_self": 75
+  },
+  {
+    "g6": "J?p@?_bD[]?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 11,
+    "descendants_including_self": 73,
+    "ancestors_including_self": 51
+  },
+  {
+    "g6": "J@??M?lE}M?",
+    "edges": 18,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 2,
+    "descendants_including_self": 44,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "J@??MPeFdq_",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 1,
+    "descendants_including_self": 633,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J@??TCMTMI_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 17,
+    "descendants_including_self": 55,
+    "ancestors_including_self": 84
+  },
+  {
+    "g6": "J@??p]ERN__",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 1,
+    "descendants_including_self": 1227,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J@?APaDRL{?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 11,
+    "direct_parents": 3,
+    "descendants_including_self": 177,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J@?CQG[WsN?",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 12,
+    "descendants_including_self": 94,
+    "ancestors_including_self": 55
+  },
+  {
+    "g6": "J@?GHQOO}{?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 13,
+    "descendants_including_self": 146,
+    "ancestors_including_self": 38
+  },
+  {
+    "g6": "J@?GIAgCu]_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 11,
+    "descendants_including_self": 76,
+    "ancestors_including_self": 22
+  },
+  {
+    "g6": "J@?GOdD`fO?",
+    "edges": 15,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 36,
+    "descendants_including_self": 27,
+    "ancestors_including_self": 7097
+  },
+  {
+    "g6": "J@?GS`BXSL?",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 22,
+    "descendants_including_self": 52,
+    "ancestors_including_self": 304
+  },
+  {
+    "g6": "J@?GhxIheP?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 4,
+    "descendants_including_self": 1764,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "J@?HATUbda?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 4,
+    "descendants_including_self": 645,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "J@?IGeHxBp?",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 8,
+    "descendants_including_self": 807,
+    "ancestors_including_self": 36
+  },
+  {
+    "g6": "J@?KIocYKd?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 12,
+    "direct_parents": 16,
+    "descendants_including_self": 228,
+    "ancestors_including_self": 46
+  },
+  {
+    "g6": "J@?OAUEJeR?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 9,
+    "descendants_including_self": 92,
+    "ancestors_including_self": 28
+  },
+  {
+    "g6": "J@?YUGoAl@_",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 22,
+    "descendants_including_self": 278,
+    "ancestors_including_self": 115
+  },
+  {
+    "g6": "J@?[@?BQ]L_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 11,
+    "descendants_including_self": 69,
+    "ancestors_including_self": 19
+  },
+  {
+    "g6": "J@?gSCTQmE?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 9,
+    "descendants_including_self": 142,
+    "ancestors_including_self": 52
+  },
+  {
+    "g6": "J@@?OqwXcM_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 1,
+    "descendants_including_self": 391,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J@@?aGiaS[_",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 4,
+    "direct_parents": 20,
+    "descendants_including_self": 16,
+    "ancestors_including_self": 528
+  },
+  {
+    "g6": "J@@G?CJcvH?",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 20,
+    "descendants_including_self": 19,
+    "ancestors_including_self": 317
+  },
+  {
+    "g6": "J@@I?q_K{\\?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 1,
+    "descendants_including_self": 540,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J@@_SC[oov?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 0,
+    "descendants_including_self": 418,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J@A?WTseRE?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 5,
+    "descendants_including_self": 578,
+    "ancestors_including_self": 9
+  },
+  {
+    "g6": "J@A?xQeQQa_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 12,
+    "direct_parents": 0,
+    "descendants_including_self": 317,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J@A@WpFQT__",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 5,
+    "descendants_including_self": 621,
+    "ancestors_including_self": 31
+  },
+  {
+    "g6": "J@AAGlHaHS_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 16,
+    "descendants_including_self": 192,
+    "ancestors_including_self": 57
+  },
+  {
+    "g6": "J@AAHBGEW]_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 9,
+    "descendants_including_self": 72,
+    "ancestors_including_self": 38
+  },
+  {
+    "g6": "J@AJAOWK[L?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 12,
+    "direct_parents": 17,
+    "descendants_including_self": 218,
+    "ancestors_including_self": 83
+  },
+  {
+    "g6": "J@A_GdXarS?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 3,
+    "descendants_including_self": 719,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J@C?@KMoeH_",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 17,
+    "descendants_including_self": 26,
+    "ancestors_including_self": 361
+  },
+  {
+    "g6": "J@CAIOdfDD?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 29,
+    "descendants_including_self": 268,
+    "ancestors_including_self": 194
+  },
+  {
+    "g6": "J@CAWIDYTb?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 3,
+    "descendants_including_self": 584,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "J@CGIF@NdF?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 2,
+    "descendants_including_self": 566,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J@CQIOghKF?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 7,
+    "descendants_including_self": 289,
+    "ancestors_including_self": 22
+  },
+  {
+    "g6": "J@CSIOHXLD?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 12,
+    "direct_parents": 21,
+    "descendants_including_self": 228,
+    "ancestors_including_self": 157
+  },
+  {
+    "g6": "J@D?GSBbN`?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 14,
+    "descendants_including_self": 138,
+    "ancestors_including_self": 74
+  },
+  {
+    "g6": "J@D?HUC_iP_",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 22,
+    "descendants_including_self": 47,
+    "ancestors_including_self": 622
+  },
+  {
+    "g6": "J@D?Poe`mE?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 4,
+    "descendants_including_self": 534,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J@EAACMgZy?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 0,
+    "descendants_including_self": 1691,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J@EB?OL@}e?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 2,
+    "descendants_including_self": 481,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J@G?GgJpep?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 9,
+    "descendants_including_self": 109,
+    "ancestors_including_self": 46
+  },
+  {
+    "g6": "J@GAI?]bTa?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 17,
+    "descendants_including_self": 294,
+    "ancestors_including_self": 66
+  },
+  {
+    "g6": "J@GAS?T@}w?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 15,
+    "descendants_including_self": 192,
+    "ancestors_including_self": 99
+  },
+  {
+    "g6": "J@GIAGRfDD?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 16,
+    "descendants_including_self": 255,
+    "ancestors_including_self": 42
+  },
+  {
+    "g6": "J@H?aIIB|e?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 3,
+    "descendants_including_self": 710,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J@KGK?UO~A?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 11,
+    "direct_parents": 22,
+    "descendants_including_self": 97,
+    "ancestors_including_self": 109
+  },
+  {
+    "g6": "J@O?pIDp_v?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 3,
+    "descendants_including_self": 519,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J@OCGodPku?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 4,
+    "descendants_including_self": 452,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "J@OGeGEgzp?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 2,
+    "descendants_including_self": 1671,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J@OH?aB@uw_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 9,
+    "direct_parents": 14,
+    "descendants_including_self": 107,
+    "ancestors_including_self": 38
+  },
+  {
+    "g6": "J@OOSCdBme?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 4,
+    "descendants_including_self": 422,
+    "ancestors_including_self": 9
+  },
+  {
+    "g6": "J@OW@CB_mX_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 14,
+    "descendants_including_self": 115,
+    "ancestors_including_self": 50
+  },
+  {
+    "g6": "J@Oo?KZyEE_",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 2,
+    "descendants_including_self": 1549,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J@P?HaBB|s?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 2,
+    "descendants_including_self": 975,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J@P?OMo_pw_",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 8,
+    "direct_parents": 6,
+    "descendants_including_self": 107,
+    "ancestors_including_self": 21
+  },
+  {
+    "g6": "J@Q?`GjDuS_",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 2,
+    "descendants_including_self": 1442,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J@QH?pB`zk?",
+    "edges": 20,
+    "degree2": 1,
+    "direct_children": 18,
+    "direct_parents": 2,
+    "descendants_including_self": 5081,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "J@_?oKwP^G_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 4,
+    "descendants_including_self": 486,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "J@_@I@DEsx?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 9,
+    "direct_parents": 24,
+    "descendants_including_self": 104,
+    "ancestors_including_self": 152
+  },
+  {
+    "g6": "J@_GHDO@}p?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 28,
+    "descendants_including_self": 151,
+    "ancestors_including_self": 121
+  },
+  {
+    "g6": "J@`CG`@IG]?",
+    "edges": 15,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 36,
+    "descendants_including_self": 38,
+    "ancestors_including_self": 6139
+  },
+  {
+    "g6": "J@`G@DBchy?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 23,
+    "descendants_including_self": 620,
+    "ancestors_including_self": 47
+  },
+  {
+    "g6": "J@c?JEERB`_",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 4,
+    "descendants_including_self": 824,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "J@o?@KQPK[?",
+    "edges": 15,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 35,
+    "descendants_including_self": 32,
+    "ancestors_including_self": 7328
+  },
+  {
+    "g6": "JA??`YGHm[?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 14,
+    "descendants_including_self": 37,
+    "ancestors_including_self": 116
+  },
+  {
+    "g6": "JA?@CGKEn]?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 7,
+    "direct_parents": 8,
+    "descendants_including_self": 47,
+    "ancestors_including_self": 21
+  },
+  {
+    "g6": "JA?@WQDLUr?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 1,
+    "descendants_including_self": 276,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "JA?GJ?Bk[\\?",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 11,
+    "descendants_including_self": 32,
+    "ancestors_including_self": 31
+  },
+  {
+    "g6": "JA?GhA`QsZ?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 11,
+    "descendants_including_self": 86,
+    "ancestors_including_self": 44
+  },
+  {
+    "g6": "JA?HGqEMVB?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 5,
+    "descendants_including_self": 589,
+    "ancestors_including_self": 14
+  },
+  {
+    "g6": "JA?KGT`l@r?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 2,
+    "descendants_including_self": 678,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "JA?_CSeEmY?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 16,
+    "descendants_including_self": 83,
+    "ancestors_including_self": 63
+  },
+  {
+    "g6": "JA?g_OBo\\K?",
+    "edges": 15,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 40,
+    "descendants_including_self": 20,
+    "ancestors_including_self": 9948
+  },
+  {
+    "g6": "JA?k@EISOz_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 9,
+    "direct_parents": 1,
+    "descendants_including_self": 158,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "JAG?HUETCp_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 7,
+    "direct_parents": 22,
+    "descendants_including_self": 52,
+    "ancestors_including_self": 122
+  },
+  {
+    "g6": "JAG?K?FEVK?",
+    "edges": 15,
+    "degree2": 5,
+    "direct_children": 3,
+    "direct_parents": 16,
+    "descendants_including_self": 5,
+    "ancestors_including_self": 1769
+  },
+  {
+    "g6": "JAG@OgFbMe?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 3,
+    "descendants_including_self": 230,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "JAGGCSeDme?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 3,
+    "descendants_including_self": 328,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "JAGGgF@hPr?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 5,
+    "descendants_including_self": 690,
+    "ancestors_including_self": 17
+  },
+  {
+    "g6": "JAGOCKiBme?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 8,
+    "direct_parents": 3,
+    "descendants_including_self": 147,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "JAGOGEBIUW_",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 6,
+    "direct_parents": 30,
+    "descendants_including_self": 26,
+    "ancestors_including_self": 580
+  },
+  {
+    "g6": "JAGOZAEeVB?",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 13,
+    "direct_parents": 0,
+    "descendants_including_self": 1864,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "JAGSOGJH^a?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 4,
+    "descendants_including_self": 572,
+    "ancestors_including_self": 9
+  },
+  {
+    "g6": "JAH@COFc_x_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 8,
+    "descendants_including_self": 201,
+    "ancestors_including_self": 18
+  },
+  {
+    "g6": "JAI?ICgC{x?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 8,
+    "direct_parents": 22,
+    "descendants_including_self": 96,
+    "ancestors_including_self": 84
+  },
+  {
+    "g6": "JAL@?SD`kb?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 16,
+    "descendants_including_self": 255,
+    "ancestors_including_self": 142
+  },
+  {
+    "g6": "JA_G?L`Kc[_",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 6,
+    "direct_parents": 30,
+    "descendants_including_self": 24,
+    "ancestors_including_self": 955
+  },
+  {
+    "g6": "JA_POCdP[u?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 2,
+    "descendants_including_self": 339,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "JA__?CfEuY?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 14,
+    "descendants_including_self": 63,
+    "ancestors_including_self": 81
+  },
+  {
+    "g6": "JA_c@?{Pou_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 3,
+    "descendants_including_self": 627,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "JA_gd?BPjp?",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 11,
+    "descendants_including_self": 826,
+    "ancestors_including_self": 26
+  },
+  {
+    "g6": "JC??R?mDuY_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 11,
+    "direct_parents": 4,
+    "descendants_including_self": 253,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "JC??wODW^W?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 5,
+    "direct_parents": 14,
+    "descendants_including_self": 22,
+    "ancestors_including_self": 233
+  },
+  {
+    "g6": "JC?G@CVRfQ?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 17,
+    "descendants_including_self": 103,
+    "ancestors_including_self": 155
+  },
+  {
+    "g6": "JC?GO`DGvL_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 4,
+    "direct_parents": 2,
+    "descendants_including_self": 34,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "JC?H@`BBmY?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 12,
+    "descendants_including_self": 86,
+    "ancestors_including_self": 52
+  },
+  {
+    "g6": "JC?PIR_AW[_",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 30,
+    "descendants_including_self": 63,
+    "ancestors_including_self": 894
+  },
+  {
+    "g6": "JC@H?CXWsx_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 9,
+    "direct_parents": 2,
+    "descendants_including_self": 192,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "JC@H?Wqoov?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 2,
+    "descendants_including_self": 404,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "JCD?GEKIZE_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 14,
+    "descendants_including_self": 66,
+    "ancestors_including_self": 41
+  },
+  {
+    "g6": "JCGHaH@`jp?",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 9,
+    "descendants_including_self": 830,
+    "ancestors_including_self": 16
+  },
+  {
+    "g6": "JCGO?NGOx[?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 34,
+    "descendants_including_self": 35,
+    "ancestors_including_self": 1114
+  },
+  {
+    "g6": "JCGQ?KJZDb?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 5,
+    "descendants_including_self": 586,
+    "ancestors_including_self": 18
+  },
+  {
+    "g6": "JCH@I?X_ox_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 13,
+    "descendants_including_self": 212,
+    "ancestors_including_self": 66
+  },
+  {
+    "g6": "JCKIGG`?}`_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 21,
+    "descendants_including_self": 169,
+    "ancestors_including_self": 49
+  },
+  {
+    "g6": "JCOGBCcCk{_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 19,
+    "descendants_including_self": 128,
+    "ancestors_including_self": 93
+  },
+  {
+    "g6": "JCO_?KAMMB_",
+    "edges": 15,
+    "degree2": 7,
+    "direct_children": 4,
+    "direct_parents": 17,
+    "descendants_including_self": 10,
+    "ancestors_including_self": 512
+  },
+  {
+    "g6": "JCOaGSo`Xr?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 2,
+    "descendants_including_self": 720,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "JCPh?CP?{p_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 9,
+    "direct_parents": 19,
+    "descendants_including_self": 121,
+    "ancestors_including_self": 66
+  },
+  {
+    "g6": "JC_iAC`FGf_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 4,
+    "descendants_including_self": 289,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "JD??G\\gPdp_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 9,
+    "direct_parents": 1,
+    "descendants_including_self": 194,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "JD?AP?{pO]_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 4,
+    "descendants_including_self": 536,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "JD?D?TDRHy?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 7,
+    "descendants_including_self": 383,
+    "ancestors_including_self": 25
+  },
+  {
+    "g6": "JE??HOeQS{?",
+    "edges": 16,
+    "degree2": 3,
+    "direct_children": 8,
+    "direct_parents": 27,
+    "descendants_including_self": 55,
+    "ancestors_including_self": 785
+  },
+  {
+    "g6": "JED?OSeH^E?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 12,
+    "direct_parents": 4,
+    "descendants_including_self": 1357,
+    "ancestors_including_self": 9
+  },
+  {
+    "g6": "JG??KWYLep?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 13,
+    "descendants_including_self": 192,
+    "ancestors_including_self": 30
+  },
+  {
+    "g6": "JG??gQHLUN?",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 10,
+    "descendants_including_self": 48,
+    "ancestors_including_self": 29
+  },
+  {
+    "g6": "JG??potpK[_",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 0,
+    "descendants_including_self": 1203,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "JG?GCcqbiy?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 11,
+    "descendants_including_self": 279,
+    "ancestors_including_self": 26
+  },
+  {
+    "g6": "JG?Ga_dasL_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 10,
+    "descendants_including_self": 98,
+    "ancestors_including_self": 47
+  },
+  {
+    "g6": "JG?Gg_Jg]I_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 8,
+    "descendants_including_self": 58,
+    "ancestors_including_self": 26
+  },
+  {
+    "g6": "JG?GiAGkW^?",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 11,
+    "descendants_including_self": 81,
+    "ancestors_including_self": 21
+  },
+  {
+    "g6": "JG?GkDWJTb?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 4,
+    "descendants_including_self": 558,
+    "ancestors_including_self": 9
+  },
+  {
+    "g6": "JG?K?qPLi]?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 13,
+    "direct_parents": 10,
+    "descendants_including_self": 492,
+    "ancestors_including_self": 13
+  },
+  {
+    "g6": "JG?O@eKq_\\?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 24,
+    "descendants_including_self": 63,
+    "ancestors_including_self": 726
+  },
+  {
+    "g6": "JG?WS_eEvF?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 3,
+    "descendants_including_self": 1082,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "JG?X?cJ`]o?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 7,
+    "direct_parents": 9,
+    "descendants_including_self": 154,
+    "ancestors_including_self": 55
+  },
+  {
+    "g6": "JG?XCoMO|k?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 15,
+    "direct_parents": 4,
+    "descendants_including_self": 1713,
+    "ancestors_including_self": 16
+  },
+  {
+    "g6": "JG?icQUIQa_",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 6,
+    "descendants_including_self": 843,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "JGAG@CYSsz?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 8,
+    "descendants_including_self": 263,
+    "ancestors_including_self": 11
+  },
+  {
+    "g6": "JGC?GiAJup?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 16,
+    "descendants_including_self": 140,
+    "ancestors_including_self": 58
+  },
+  {
+    "g6": "JGC?KqFKaW_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 5,
+    "direct_parents": 6,
+    "descendants_including_self": 69,
+    "ancestors_including_self": 90
+  },
+  {
+    "g6": "JGC?aKMgsX_",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 11,
+    "direct_parents": 7,
+    "descendants_including_self": 365,
+    "ancestors_including_self": 18
+  },
+  {
+    "g6": "JGC?kPdBvc?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 15,
+    "direct_parents": 0,
+    "descendants_including_self": 1358,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "JGCAHGQa\\w?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 14,
+    "descendants_including_self": 224,
+    "ancestors_including_self": 49
+  },
+  {
+    "g6": "JGCHcIOBIE_",
+    "edges": 16,
+    "degree2": 3,
+    "direct_children": 10,
+    "direct_parents": 21,
+    "descendants_including_self": 84,
+    "ancestors_including_self": 485
+  },
+  {
+    "g6": "JGCS_QFHQQ_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 10,
+    "descendants_including_self": 172,
+    "ancestors_including_self": 47
+  },
+  {
+    "g6": "JGC`SqESQH_",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 8,
+    "descendants_including_self": 949,
+    "ancestors_including_self": 12
+  },
+  {
+    "g6": "JGCa?WZccI_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 18,
+    "descendants_including_self": 212,
+    "ancestors_including_self": 131
+  },
+  {
+    "g6": "JGDC?ch@{w_",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 13,
+    "direct_parents": 14,
+    "descendants_including_self": 634,
+    "ancestors_including_self": 71
+  },
+  {
+    "g6": "JGE?Gd?IKN_",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 27,
+    "descendants_including_self": 29,
+    "ancestors_including_self": 411
+  },
+  {
+    "g6": "JGGC?KTUcx?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 13,
+    "descendants_including_self": 148,
+    "ancestors_including_self": 29
+  },
+  {
+    "g6": "JGGOAMAFKT?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 8,
+    "direct_parents": 28,
+    "descendants_including_self": 40,
+    "ancestors_including_self": 758
+  },
+  {
+    "g6": "JG_O_OBH]L?",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 22,
+    "descendants_including_self": 49,
+    "ancestors_including_self": 731
+  },
+  {
+    "g6": "JG`??kYHlq?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 5,
+    "descendants_including_self": 549,
+    "ancestors_including_self": 16
+  },
+  {
+    "g6": "JH?GIOR`lq?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 3,
+    "descendants_including_self": 536,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "JH?GKDFeRo_",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 0,
+    "descendants_including_self": 1530,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "JH@?K_JBlq?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 2,
+    "descendants_including_self": 516,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "JHAGACQA\\{?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 11,
+    "direct_parents": 18,
+    "descendants_including_self": 165,
+    "ancestors_including_self": 54
+  },
+  {
+    "g6": "JH_?GCRRTx_",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 0,
+    "descendants_including_self": 889,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "JI?WCCIG|w?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 24,
+    "descendants_including_self": 228,
+    "ancestors_including_self": 81
+  },
+  {
+    "g6": "JJaCGOXHaB_",
+    "edges": 18,
+    "degree2": 0,
+    "direct_children": 15,
+    "direct_parents": 3,
+    "descendants_including_self": 615,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "JK?O?SFIeX_",
+    "edges": 17,
+    "degree2": 4,
+    "direct_children": 10,
+    "direct_parents": 11,
+    "descendants_including_self": 127,
+    "ancestors_including_self": 47
+  },
+  {
+    "g6": "JK?YOGJgPb_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 3,
+    "descendants_including_self": 790,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "JK@?oGJH\\q?",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 13,
+    "direct_parents": 4,
+    "descendants_including_self": 501,
+    "ancestors_including_self": 10
+  },
+  {
+    "g6": "JK_@jSKDM@_",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 19,
+    "direct_parents": 0,
+    "descendants_including_self": 2603,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "JK_CrHoBGM_",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 17,
+    "direct_parents": 3,
+    "descendants_including_self": 1566,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "JO??WHPMuZ?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 11,
+    "direct_parents": 8,
+    "descendants_including_self": 224,
+    "ancestors_including_self": 18
+  },
+  {
+    "g6": "JO??Xb?PWt_",
+    "edges": 16,
+    "degree2": 6,
+    "direct_children": 5,
+    "direct_parents": 21,
+    "descendants_including_self": 28,
+    "ancestors_including_self": 312
+  },
+  {
+    "g6": "JO??y_cQ[J_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 6,
+    "descendants_including_self": 52,
+    "ancestors_including_self": 9
+  },
+  {
+    "g6": "JO?GO_RXUK_",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 5,
+    "direct_parents": 21,
+    "descendants_including_self": 20,
+    "ancestors_including_self": 191
+  },
+  {
+    "g6": "JO?ggTPuFB?",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 19,
+    "direct_parents": 3,
+    "descendants_including_self": 3032,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "JOC?Y?FLUr?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 13,
+    "direct_parents": 7,
+    "descendants_including_self": 416,
+    "ancestors_including_self": 18
+  },
+  {
+    "g6": "JOC@GC{pQq_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 12,
+    "direct_parents": 3,
+    "descendants_including_self": 319,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "JOCOB@Eb_V?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 19,
+    "descendants_including_self": 83,
+    "ancestors_including_self": 408
+  },
+  {
+    "g6": "JOO?_kwRLK_",
+    "edges": 18,
+    "degree2": 2,
+    "direct_children": 12,
+    "direct_parents": 7,
+    "descendants_including_self": 285,
+    "ancestors_including_self": 24
+  },
+  {
+    "g6": "JOO?godBme?",
+    "edges": 18,
+    "degree2": 3,
+    "direct_children": 13,
+    "direct_parents": 12,
+    "descendants_including_self": 570,
+    "ancestors_including_self": 15
+  },
+  {
+    "g6": "JQ?GP_Bp?L_",
+    "edges": 15,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 22,
+    "descendants_including_self": 17,
+    "ancestors_including_self": 4425
+  },
+  {
+    "g6": "JW?I@wYDm[?",
+    "edges": 20,
+    "degree2": 1,
+    "direct_children": 13,
+    "direct_parents": 2,
+    "descendants_including_self": 3767,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "J_?@PGTUcx?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 11,
+    "descendants_including_self": 241,
+    "ancestors_including_self": 33
+  },
+  {
+    "g6": "J_?I@C[K{]?",
+    "edges": 18,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 6,
+    "descendants_including_self": 187,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "J_?Ib?ff@q_",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 0,
+    "descendants_including_self": 1950,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J_?XWorQTG_",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 16,
+    "direct_parents": 8,
+    "descendants_including_self": 1811,
+    "ancestors_including_self": 28
+  },
+  {
+    "g6": "J_?Xb?HBl`?",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 11,
+    "descendants_including_self": 295,
+    "ancestors_including_self": 36
+  },
+  {
+    "g6": "J_@@@cXbjw?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 4,
+    "descendants_including_self": 1737,
+    "ancestors_including_self": 15
+  },
+  {
+    "g6": "J_@H?cuqPq_",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 0,
+    "descendants_including_self": 1432,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "J_C@?]o@iW_",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 20,
+    "descendants_including_self": 68,
+    "ancestors_including_self": 465
+  },
+  {
+    "g6": "J_C@HgwQKK_",
+    "edges": 17,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 11,
+    "descendants_including_self": 254,
+    "ancestors_including_self": 33
+  },
+  {
+    "g6": "J_CB?KdE\\{?",
+    "edges": 19,
+    "degree2": 2,
+    "direct_children": 14,
+    "direct_parents": 5,
+    "descendants_including_self": 1045,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "J_CHHDSeVB?",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 19,
+    "direct_parents": 1,
+    "descendants_including_self": 2539,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J_C_lPBR@`_",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 1,
+    "descendants_including_self": 881,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J_DH??P_xM?",
+    "edges": 15,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 34,
+    "descendants_including_self": 21,
+    "ancestors_including_self": 6980
+  },
+  {
+    "g6": "J_G?oMSXRp_",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 1,
+    "descendants_including_self": 2006,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J_GGHCPSkx?",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 12,
+    "direct_parents": 11,
+    "descendants_including_self": 211,
+    "ancestors_including_self": 61
+  },
+  {
+    "g6": "J_GOGOPWkF?",
+    "edges": 15,
+    "degree2": 6,
+    "direct_children": 6,
+    "direct_parents": 31,
+    "descendants_including_self": 19,
+    "ancestors_including_self": 3111
+  },
+  {
+    "g6": "J_OXOCp`R__",
+    "edges": 17,
+    "degree2": 1,
+    "direct_children": 15,
+    "direct_parents": 15,
+    "descendants_including_self": 334,
+    "ancestors_including_self": 52
+  },
+  {
+    "g6": "J_WO?KWG{L?",
+    "edges": 16,
+    "degree2": 4,
+    "direct_children": 9,
+    "direct_parents": 18,
+    "descendants_including_self": 76,
+    "ancestors_including_self": 269
+  },
+  {
+    "g6": "J`??YSTJNc?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 2,
+    "descendants_including_self": 1743,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "J`?@SXoTG]_",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 1,
+    "descendants_including_self": 1767,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "J`?CQKkFF_?",
+    "edges": 17,
+    "degree2": 0,
+    "direct_children": 9,
+    "direct_parents": 10,
+    "descendants_including_self": 195,
+    "ancestors_including_self": 112
+  },
+  {
+    "g6": "J`?_o?J`QI_",
+    "edges": 15,
+    "degree2": 5,
+    "direct_children": 4,
+    "direct_parents": 21,
+    "descendants_including_self": 14,
+    "ancestors_including_self": 2161
+  },
+  {
+    "g6": "J`I@GgLSqT_",
+    "edges": 20,
+    "degree2": 1,
+    "direct_children": 11,
+    "direct_parents": 3,
+    "descendants_including_self": 3750,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "J`O_GKPAkp_",
+    "edges": 17,
+    "degree2": 3,
+    "direct_children": 11,
+    "direct_parents": 13,
+    "descendants_including_self": 196,
+    "ancestors_including_self": 46
+  },
+  {
+    "g6": "J`QChSSQHB_",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 19,
+    "direct_parents": 1,
+    "descendants_including_self": 3052,
+    "ancestors_including_self": 2
+  },
+  {
+    "g6": "JaC_GUDIf`_",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 19,
+    "direct_parents": 0,
+    "descendants_including_self": 2387,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "JaICZOo@Wd_",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 19,
+    "direct_parents": 0,
+    "descendants_including_self": 2893,
+    "ancestors_including_self": 1
+  },
+  {
+    "g6": "JdX@C?JDOL_",
+    "edges": 18,
+    "degree2": 0,
+    "direct_children": 18,
+    "direct_parents": 14,
+    "descendants_including_self": 1193,
+    "ancestors_including_self": 29
+  },
+  {
+    "g6": "Jg??OCTJSk?",
+    "edges": 15,
+    "degree2": 5,
+    "direct_children": 7,
+    "direct_parents": 28,
+    "descendants_including_self": 20,
+    "ancestors_including_self": 3295
+  },
+  {
+    "g6": "Jg??gqLJbe?",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 17,
+    "direct_parents": 3,
+    "descendants_including_self": 1988,
+    "ancestors_including_self": 4
+  },
+  {
+    "g6": "Jg?G@_RBcN_",
+    "edges": 17,
+    "degree2": 5,
+    "direct_children": 6,
+    "direct_parents": 14,
+    "descendants_including_self": 61,
+    "ancestors_including_self": 31
+  },
+  {
+    "g6": "Jg?GLdEM?p_",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 4,
+    "descendants_including_self": 938,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "Jg?WPAP?wM_",
+    "edges": 16,
+    "degree2": 5,
+    "direct_children": 8,
+    "direct_parents": 19,
+    "descendants_including_self": 73,
+    "ancestors_including_self": 238
+  },
+  {
+    "g6": "JgE_G|_CgT_",
+    "edges": 19,
+    "degree2": 1,
+    "direct_children": 13,
+    "direct_parents": 4,
+    "descendants_including_self": 1461,
+    "ancestors_including_self": 6
+  },
+  {
+    "g6": "JgHOGSP_ho_",
+    "edges": 17,
+    "degree2": 1,
+    "direct_children": 15,
+    "direct_parents": 26,
+    "descendants_including_self": 361,
+    "ancestors_including_self": 186
+  },
+  {
+    "g6": "JhGGCHBCw{?",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 9,
+    "descendants_including_self": 990,
+    "ancestors_including_self": 24
+  },
+  {
+    "g6": "Ji?HD?MCwy?",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 14,
+    "direct_parents": 5,
+    "descendants_including_self": 623,
+    "ancestors_including_self": 9
+  },
+  {
+    "g6": "Jk?CZOMDHa_",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 19,
+    "direct_parents": 2,
+    "descendants_including_self": 2297,
+    "ancestors_including_self": 3
+  },
+  {
+    "g6": "JoCBkhGIGJ_",
+    "edges": 19,
+    "degree2": 0,
+    "direct_children": 14,
+    "direct_parents": 4,
+    "descendants_including_self": 1752,
+    "ancestors_including_self": 7
+  },
+  {
+    "g6": "JoC_?CZPrw?",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 12,
+    "direct_parents": 3,
+    "descendants_including_self": 285,
+    "ancestors_including_self": 5
+  },
+  {
+    "g6": "JoCaW_XGYI_",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 6,
+    "descendants_including_self": 827,
+    "ancestors_including_self": 8
+  },
+  {
+    "g6": "JoD@O_FKYY?",
+    "edges": 18,
+    "degree2": 1,
+    "direct_children": 16,
+    "direct_parents": 7,
+    "descendants_including_self": 1069,
+    "ancestors_including_self": 12
+  },
+  {
+    "g6": "JsO_W_RBR@_",
+    "edges": 18,
+    "degree2": 0,
+    "direct_children": 13,
+    "direct_parents": 6,
+    "descendants_including_self": 627,
+    "ancestors_including_self": 14
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "mutation_path": [
+      "minimal"
+    ],
+    "negative": {
+      "minimal": []
+    },
+    "positive": {
+      "minimal": [
+        "C~"
+      ]
+    },
+    "profile": "B4p",
+    "reason": "control_minimal_list"
+  },
+  {
+    "mutation_path": [
+      "minimal"
+    ],
+    "negative": {
+      "minimal": []
+    },
+    "positive": {
+      "minimal": [
+        "DFw"
+      ]
+    },
+    "profile": "B5p",
+    "reason": "control_minimal_list"
+  },
+  {
+    "mutation_path": [
+      "minimal"
+    ],
+    "negative": {
+      "minimal": []
+    },
+    "positive": {
+      "minimal": [
+        "EqLw"
+      ]
+    },
+    "profile": "B6p",
+    "reason": "control_minimal_list"
+  },
+  {
+    "mutation_path": [
+      "minimal"
+    ],
+    "negative": {
+      "minimal": [
+        "F@h^_",
+        "FqHXw"
+      ]
+    },
+    "positive": {
+      "minimal": [
+        "F@h^_",
+        "FqHXw",
+        "FoS~_"
+      ]
+    },
+    "profile": "B7p",
+    "reason": "control_minimal_list"
+  }
+]

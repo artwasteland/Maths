@@ -1,0 +1,12 @@
+{
+  "reason": "certificate term budget",
+  "terms": 446203,
+  "g6": "HGEAXjw",
+  "frame": [
+    0,
+    8
+  ],
+  "seconds": 4.353796985000372,
+  "limit": 55.0,
+  "verdict": "unknown"
+}

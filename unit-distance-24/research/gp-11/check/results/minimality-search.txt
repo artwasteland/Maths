@@ -1,0 +1,18 @@
+J??_iPWgT{? embedded
+J?@H@QQCuw_ embedded
+J?@PD?YAuw_ embedded
+J?CI`H__[{_ embedded
+J?EPQF?GXw_ embedded
+J?KcK@POrw? embedded
+J?PPcEGGXw_ embedded
+J?T@KaAGXw_ embedded
+J?`@@GYCuw_ embedded
+J@AcQDOAXw_ embedded
+J@CaIAH_pw_ embedded
+JCCIB?c?{{_ embedded
+JKCG?L@Gk{_ embedded
+JOCIIAOGW}_ embedded
+J`?GIOQgH}? embedded
+J`?G`AIPP}? embedded
+FIXTURE SEARCH {'embedded': 16, 'refuted': 1, 'unknown': 0}
+RESOURCE min_MemAvailable_kib=5691396 exit=0

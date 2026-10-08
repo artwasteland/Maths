@@ -1,0 +1,23 @@
+{
+  "archive_sha256": "485069e250ecff9ac6f1a2aa0690c28cc8a3fe0479a786b229f88cf7fc8d2a6e",
+  "files": {
+    "common.py": "9bfac024de4d5ab873f02553e32f235f7210b71730def6e2eed5ec4ca9c3f744",
+    "drive.py": "798931cde8d00ee15478539c9a417a10bb561baecdc19e11adeac95fdd807d01",
+    "export.py": "1f5d572752f7671aa451abccd17a4dabc944e75871ecb35a9fc8cc7175c821e3",
+    "extension.py": "747cdd117724ad68db6fae317c4c1b27997cbc29b7a20b867fbfc43dd91e016e",
+    "generic_escalated.py": "45bf48cd0aba2831b6d3436dcdd6ae0a19a4e851a50cfbea2ed9eeb556473667",
+    "numeric_branch.py": "0795dcc9542e6537efed19600930d413938608aaadee88390bce84bb7cf227d5",
+    "portfolio.py": "eaaf8bf6abcb178ad9e75cb1b0dab398b9119cd1e9674f15847a069a03d574ab",
+    "poset.c": "0c2fdd6a7c50d19511e43624331de16b1dbc4f167d74e8b8da3e45d5548427c9",
+    "poset.py": "e01142852e755e9be1d8d66369693c6369dcc5823a70927f53d1db59cd40ccb8",
+    "preflight.py": "eabae8155df1114c160248199717f7789a7d501cd942b3a976e1240726baf57e",
+    "reduce_exact.py": "78cb959964f6de895cf78acd1b8be4e4dc9885e09e322a95b9ea12b8f05319c8",
+    "rigid_system.py": "39533a3887250af86cdc0e5081d0c1ace3c7f498231b435b556362d5899e3bb7",
+    "saturated_embed.py": "0d44303f304c86a4e685ec73f994113c7a328174784863f79379751f45c24757",
+    "stages.py": "ff36d2a4d1d8c92cc49d2fb3370ee45277f6288d4ffc7d1d6f2d5dd69d1637c3",
+    "store.py": "cb1d2a919ddee7816e29119ba9a2e11a0b76378e794235bdb1cd0705e996b898",
+    "tu.c": "b4d0ed37cc52000c80c8a4cc6ebedb5a0bd593047327f690da97964937f35cd5",
+    "tu.py": "c37ee0c0ce58af3841952391282352924cd2aaceb4696609ca603d2273663cb5"
+  },
+  "purpose": "Exact hardened runtime used by the fresh 500-graph validation and hardening controls, before the subsequent imported-history deduplication fix."
+}

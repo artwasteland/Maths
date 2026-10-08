@@ -1,0 +1,110 @@
+{
+  "checks": [
+    {
+      "control": "coincident points with exact edges",
+      "positive": "accepted",
+      "mutation": "distinctness:0,2:zero"
+    },
+    {
+      "control": "coordinate coefficient",
+      "positive": "accepted",
+      "mutation": "edge:0,1"
+    },
+    {
+      "control": "sign interval",
+      "positive": "accepted",
+      "mutation": "sign_change"
+    },
+    {
+      "control": "distinctness at selected root of reducible polynomial",
+      "positive": "accepted",
+      "mutation": "distinctness:0,1:interval"
+    },
+    {
+      "control": "complex field",
+      "positive": "accepted",
+      "mutation": "sign_change"
+    },
+    {
+      "control": "non-induced host map",
+      "positive": [
+        1,
+        0,
+        2
+      ],
+      "mutation": "host_map:noninjective"
+    },
+    {
+      "control": "non-induced host map",
+      "positive": [
+        1,
+        0,
+        2
+      ],
+      "mutation": "host_map:edge:0,1"
+    },
+    {
+      "control": "worker crash",
+      "positive": "embedded",
+      "mutation": "worker_crash"
+    },
+    {
+      "control": "worker timeout",
+      "positive": "embedded",
+      "mutation": "timeout"
+    },
+    {
+      "control": "worker exception",
+      "positive": "embedded",
+      "mutation": "method_exception:RuntimeError:injected"
+    },
+    {
+      "control": "deterministic search and node budget",
+      "positive": "identical certificates",
+      "mutation": "node_cap"
+    },
+    {
+      "control": "resume after partial last record",
+      "positive": "unchanged on resume",
+      "mutation": "fragment removed"
+    },
+    {
+      "control": "unknown projection on resume",
+      "positive": "matches output",
+      "mutation": "stale projection repaired"
+    },
+    {
+      "control": "numeric convergence does not certify",
+      "numeric": {
+        "residual": 0.0,
+        "restarts": 1,
+        "minimum_distance": 1e-08,
+        "penalty": false
+      },
+      "exact_refusal": "distinctness:2,3:zero",
+      "positive": "accepted",
+      "mutation": "distinctness:0,4:zero"
+    },
+    {
+      "control": "production constructive",
+      "positive": "embedded",
+      "mutation": "edge:0,1"
+    },
+    {
+      "control": "production host",
+      "positive": "embedded",
+      "mutation": "edge:0,1"
+    },
+    {
+      "control": "production numeric",
+      "positive": "embedded",
+      "mutation": "edge:0,1"
+    },
+    {
+      "control": "CLI continues after worker crash",
+      "positive": "same input passed earlier",
+      "mutation": "worker_crash followed by embedded"
+    }
+  ],
+  "passed": 18
+}

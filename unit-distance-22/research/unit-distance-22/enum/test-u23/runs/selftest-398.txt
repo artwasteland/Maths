@@ -1,0 +1,44 @@
+PASS setup: udfilter -s 398 calls host A forbidden with member 74: {"index": 74, "map": [0, 2, 1, 3, 4, 5, 6, 7, 8, 9]}
+PASS setup: udfilter -s 398 calls host B forbidden with member 397: {"index": 397, "map": [0, 1, 3, 2, 4, 5, 6, 7, 8, 9]}
+PASS setup: udfilter -s 398 calls host C forbidden with member 0: {"index": 0, "map": [1, 2, 3, 4]}
+PASS setup: udfilter -s 398 calls host D forbidden with member 200: {"index": 200, "map": [18, 13, 14, 12, 20, 16, 17, 19, 21, 22]}
+PASS setup: a tu host: {"g6": "J??@_?H@WY?", "verdict": "tu", "witness": {"index": 0, "map": [8, 4, 10, 7, 9, 5], "pair": [1, 5]}}
+PASS accept: udcheck398 host A (member 74): exit 0: ACCEPT certificates records=1 forbidden=1 tu=0 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS accept: udcheck398 host B (member 397): exit 0: ACCEPT certificates records=1 forbidden=1 tu=0 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS accept: udcheck398 host C (member 0): exit 0: ACCEPT certificates records=1 forbidden=1 tu=0 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS accept: udcheck398 host D (member 200): exit 0: ACCEPT certificates records=1 forbidden=1 tu=0 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS accept: udcheck398 forbidden + tu + unknown records in one file: exit 0: ACCEPT certificates records=3 forbidden=1 tu=1 embedded=0 refuted=0 unknown=1 proof_nodes=0
+PASS accept: udcheck.py (set 74) host C (member 0): exit 0: ACCEPT certificates records=1 forbidden=1 tu=0 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS accept: udcheck398 host D with --expect-n 23: exit 0: ACCEPT certificates records=1 forbidden=1 tu=0 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS accept: verify-witness -s 398 host A: exit 0 (want 0) 
+PASS accept: verify-witness -s 398 host B: exit 0 (want 0) 
+PASS accept: verify-witness -s 398 host C: exit 0 (want 0) 
+PASS accept: verify-witness -s 398 host D: exit 0 (want 0) 
+PASS accept: verify-witness (set 74) host C: exit 0 (want 0) 
+PASS accept: verify-witness --forbidden-set 398 host A: exit 0 (want 0) 
+PASS accept: verify-witness -s 398 on a tu witness: exit 0 (want 0) 
+PASS accept: verify-witness (set 74) on the same tu witness: exit 0 (want 0) 
+PASS R1 reject: udcheck398 host A (member 74) cited as member 75: exit 1: REJECT: <scratch>/scratchpad/tmp/st398-hyvv1rl_/certs.jsonl:1.witness: pattern edge 0 maps to absent edge (0, 7)
+PASS R1 reject: verify-witness -s 398 host A cited as member 75: exit 1 (want 1) 
+PASS R1 reject: udcheck398 host A (member 74) cited as member 73: exit 1: REJECT: <scratch>/scratchpad/tmp/st398-l64jqnuq/certs.jsonl:1.witness.map: expected map array of length 9
+PASS R1 reject: verify-witness -s 398 host A cited as member 73: exit 1 (want 1) 
+PASS R1 reject: udcheck398 host A (member 74) cited as member 0: exit 1: REJECT: <scratch>/scratchpad/tmp/st398-bom0sfwu/certs.jsonl:1.witness.map: expected map array of length 4
+PASS R1 reject: verify-witness -s 398 host A cited as member 0: exit 1 (want 1) 
+PASS R1 reject: udcheck398 host A (member 74) cited as member 397: exit 1: REJECT: <scratch>/scratchpad/tmp/st398-3_sg8t3j/certs.jsonl:1.witness: pattern edge 0 maps to absent edge (0, 2)
+PASS R1 reject: verify-witness -s 398 host A cited as member 397: exit 1 (want 1) 
+PASS R1 reject: host A cited as each of the 397 other members (in-process): wrongly decided: []
+PASS R2 reject: udcheck398 non-injective map: exit 1: REJECT: <scratch>/scratchpad/tmp/st398-fz4c7m92/certs.jsonl:1.witness.map: map is not injective
+PASS R2 reject: verify-witness -s 398 non-injective map: exit 1 (want 1) 
+PASS R3 reject: udcheck.py (set 74) host A citing member 74: exit 1: REJECT: <scratch>/scratchpad/tmp/st398-ifgqm_c_/certs.jsonl:1.witness.index: out of range
+PASS R3 reject: verify-witness (set 74) host A citing member 74: exit 1 (want 1) 
+PASS R3 reject: udcheck.py (set 74) host B citing member 397: exit 1: REJECT: <scratch>/scratchpad/tmp/st398-mxswk6ib/certs.jsonl:1.witness.index: out of range
+PASS R3 reject: verify-witness (set 74) host B citing member 397: exit 1 (want 1) 
+PASS R3 reject: udcheck.py (set 74) host D citing member 200: exit 1: REJECT: <scratch>/scratchpad/tmp/st398-loaygpco/certs.jsonl:1.witness.index: out of range
+PASS R3 reject: verify-witness (set 74) host D citing member 200: exit 1 (want 1) 
+PASS R3 reject: verify-witness -s 74 host A citing member 74: exit 1 (want 1) 
+PASS R4 reject: udcheck398 with forbidden-398.json plus one byte: exit 1: REJECT: <scratch>/scratchpad/tmp/st398-data-v7jv2rzu/r4/data/forbidden-398.json has sha256 8e77c57031985682c363ce6eeb3a74703a46c903bed716afc2e5ab3d2c51dda6, 
+PASS R5 reject: udcheck398 when forbidden-74.json no longer prefixes the 398: exit 1: REJECT: the first 74 entries of forbidden-398.json are not forbidden-74.json's 74
+PASS R6 refuse: udcheck398 with udcheck.py changed by one byte: exit 2: REJECT: <scratch>/scratchpad/tmp/st398-data-v7jv2rzu/r6/check/udcheck.py has sha256 72eabe2afb815226ea4b62da1b5b9dc506256a1888cd7ebb33715849d87ee635, not the
+PASS R7 refuse: verify-witness -s 398 with forbidden-398.json plus one byte: exit 2 (want 2) verify-witness.py: data/forbidden-398.json is not the pinned file
+PASS R7 refuse: verify-witness -s 399: exit 2 (want 2) usage: verify-witness.py [-s 74|398] GRAPH6 [WITNESS_JSON]
+SELFTEST-398 PASS: 43 passed, 0 failed

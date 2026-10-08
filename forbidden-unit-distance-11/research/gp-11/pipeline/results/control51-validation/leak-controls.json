@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "name": "GP10_B10",
+      "exit": 2,
+      "stdout": "REFUSED leak_guard:answer_source <repo>/research/gp-10/cloud/lean3/records.jsonl.gz; search_started=false",
+      "state_created": false
+    },
+    {
+      "name": "B11_embedding_index",
+      "exit": 2,
+      "stdout": "REFUSED leak_guard:answer_source <repo>/research/gp-11/embed/index.py; search_started=false",
+      "state_created": false
+    },
+    {
+      "name": "handmade_ten",
+      "exit": 2,
+      "stdout": "REFUSED leak_guard:answer_order handmade-ten.jsonl:1 order=10 maximum=9; search_started=false",
+      "state_created": false
+    },
+    {
+      "name": "mixed_late_ten",
+      "exit": 2,
+      "stdout": "REFUSED leak_guard:answer_order mixed.jsonl:2 order=10 maximum=9; search_started=false",
+      "state_created": false
+    },
+    {
+      "name": "hidden_ten_pointer",
+      "exit": 2,
+      "stdout": "REFUSED leak_guard:answer_order hidden-pointer.jsonl:1 order=10 maximum=9; search_started=false",
+      "state_created": false
+    },
+    {
+      "name": "symlink_to_B10",
+      "exit": 2,
+      "stdout": "REFUSED leak_guard:answer_source <repo>/research/gp-10/cloud/lean3/records.jsonl.gz; search_started=false",
+      "state_created": false
+    },
+    {
+      "name": "opaque_index",
+      "exit": 2,
+      "stdout": "REFUSED leak_guard:source_format 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte; search_started=false",
+      "state_created": false
+    },
+    {
+      "name": "duplicate_key",
+      "exit": 2,
+      "stdout": "REFUSED leak_guard:duplicate_json_key g6; search_started=false",
+      "state_created": false
+    },
+    {
+      "name": "withheld_F10",
+      "exit": 2,
+      "stdout": "REFUSED leak_guard:answer_source <repo>/research/unit-distance-22/data/forbidden-398.json; search_started=false",
+      "state_created": false
+    },
+    {
+      "name": "B11_poset_index",
+      "exit": 2,
+      "stdout": "REFUSED leak_guard:answer_source /tmp/gp11-pipeline-index; search_started=false",
+      "state_created": false
+    },
+    {
+      "name": "runtime_read",
+      "stdout": "REFUSED leak_guard:runtime_read <repo>/research/gp-10/cloud/lean3/records.jsonl.gz; search_started=true"
+    },
+    {
+      "name": "runtime_read",
+      "stdout": "REFUSED leak_guard:runtime_read /tmp/control51-guard-final/handmade-ten.jsonl; search_started=true"
+    }
+  ],
+  "positive": "ACCEPT leak_guard sources_validated search_started=false"
+}

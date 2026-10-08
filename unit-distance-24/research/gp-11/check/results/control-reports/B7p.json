@@ -1,0 +1,72 @@
+{
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "claim_authorized": false,
+  "conditional": false,
+  "conditional_minimal": [],
+  "control": {
+    "minimal_members": 3,
+    "status": "PASS"
+  },
+  "counts": {
+    "embedded": 56,
+    "refuted": 4,
+    "unknown": 0
+  },
+  "cross_checks": 0,
+  "direct_rejections": 0,
+  "elapsed_seconds": 0.2993776290677488,
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 80308,
+    "nice": 15,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "hosts": false,
+      "path": "/tmp/gp11-job-a-controls/tree/controls/B7p/records.jsonl",
+      "sha256": "ebcf43a6fb60e6a10db8425d407b0714fdab8532ef62d7998fec7fc827fd96ec"
+    }
+  ],
+  "forbidden_limit": 6,
+  "hosts": 0,
+  "input_count": 60,
+  "input_sha256": "34ca62c47fa56bc7f66b7eaf193b17012b1be6e8492481ee217352e5408479ce",
+  "kernel_sha256": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+  "minimal": [
+    "F@h^_",
+    "FoS~_",
+    "FqHXw"
+  ],
+  "minimal_count": 3,
+  "minimal_file": "L7.g6",
+  "nonminimal_count": 1,
+  "profile": "B7p",
+  "profile_sources": {
+    "research/gp-10/check/gp10check.py": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "research/gp-11/CONTRACT.md": "dc4ea1bb1df5fc2011772724003799623778ebc694778965201fd18a4697ab21",
+    "research/gp-11/PROOFS.md": "b8b090aea7dd7dfa89f4c2468e029c5e69b351d3098d3ca0cf35568b397da22b",
+    "research/gp-11/check/gp11check.py": "9c5b82b4a72b1b5e90bc9ae35e63aafd002eec24c0cd4398f5a24a5ca3da2736",
+    "research/gp-11/check/selftest.py": "f26b986ff776d8bb4f23379bf7b5bf80ecb3b80d6a742c0a6f0786d26f48cee1",
+    "research/gp-11/tools/write_result.py": "77f44a4d2ebd9c67c44a67d0f890e2d6624bb6eba5c557500f0523889d6edfe2",
+    "research/unit-distance-22/check/udcheck.py": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+    "research/unit-distance-22/data/forbidden-398.json": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+    "research/unit-distance-22/data/forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "research/unit-distance-22/data/tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  },
+  "reason": "verified",
+  "scope": "certificate-and-run-checks",
+  "status": "ACCEPT",
+  "trusted_data_sha256": {
+    "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  },
+  "unknown_rate": {
+    "budgets": "unknown-budgets.jsonl",
+    "denominator": 60,
+    "numerator": 0
+  }
+}

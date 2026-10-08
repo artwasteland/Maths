@@ -1,0 +1,320 @@
+[
+  {
+    "file": "c4.json",
+    "kind": "record",
+    "name": "c4",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "triangle.json",
+    "kind": "record",
+    "name": "triangle",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "moser.json",
+    "kind": "record",
+    "name": "moser",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "coordinate-perturbed.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "coords",
+      0,
+      0,
+      0
+    ],
+    "name": "coordinate-perturbed",
+    "positive": "c4.json",
+    "reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "file": "collision-edges-fine.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "coords",
+      3
+    ],
+    "name": "collision-edges-fine",
+    "positive": "c4.json",
+    "reason": "exact_collision",
+    "status": "REJECT"
+  },
+  {
+    "file": "interval-no-sign.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "field",
+      "interval"
+    ],
+    "name": "interval-no-sign",
+    "positive": "triangle.json",
+    "reason": "interval_sign_change",
+    "status": "REJECT"
+  },
+  {
+    "file": "unknown-record-field.json",
+    "kind": "record",
+    "mutation_path": [
+      "unexpected"
+    ],
+    "name": "unknown-record-field",
+    "positive": "c4.json",
+    "reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "file": "verdict-tu.json",
+    "kind": "record",
+    "mutation_path": [
+      "verdict"
+    ],
+    "name": "verdict-tu",
+    "positive": "c4.json",
+    "reason": "verdict_allowlist",
+    "status": "REJECT"
+  },
+  {
+    "file": "verdict-pass.json",
+    "kind": "record",
+    "mutation_path": [
+      "verdict"
+    ],
+    "name": "verdict-pass",
+    "positive": "c4.json",
+    "reason": "verdict_allowlist",
+    "status": "REJECT"
+  },
+  {
+    "file": "verdict-forbidden.json",
+    "kind": "record",
+    "mutation_path": [
+      "verdict"
+    ],
+    "name": "verdict-forbidden",
+    "positive": "c4.json",
+    "reason": "verdict_allowlist",
+    "status": "REJECT"
+  },
+  {
+    "file": "k4-tree.json",
+    "kind": "record",
+    "name": "k4-tree",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "tree-collision-pair.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "witness",
+      "tree",
+      "move",
+      "pair"
+    ],
+    "name": "tree-collision-pair",
+    "positive": "k4-tree.json",
+    "reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "file": "k23-tree.json",
+    "kind": "record",
+    "name": "k23-tree",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "k4-isolate-null.json",
+    "kind": "record",
+    "name": "k4-isolate-null",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "frame-nonedge.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "frame"
+    ],
+    "name": "frame-nonedge",
+    "positive": "k4-isolate-null.json",
+    "reason": "frame_not_edge",
+    "status": "REJECT"
+  },
+  {
+    "file": "extra-nonedge-generator.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "system"
+    ],
+    "name": "extra-nonedge-generator",
+    "positive": "k4-isolate-null.json",
+    "reason": "system_mismatch",
+    "status": "REJECT"
+  },
+  {
+    "file": "cofactor-coefficient.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "cofactors",
+      "e:1,3",
+      0,
+      0
+    ],
+    "name": "cofactor-coefficient",
+    "positive": "k4-isolate-null.json",
+    "reason": "cofactor_identity",
+    "status": "REJECT"
+  },
+  {
+    "file": "k4-real-sos.json",
+    "kind": "record",
+    "name": "k4-real-sos",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "sos-zero-constant.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "sos",
+      "c"
+    ],
+    "name": "sos-zero-constant",
+    "positive": "k4-real-sos.json",
+    "reason": "sos_constant_positive",
+    "status": "REJECT"
+  },
+  {
+    "file": "sos-negative-weight.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "sos",
+      "squares",
+      0,
+      0
+    ],
+    "name": "sos-negative-weight",
+    "positive": "k4-real-sos.json",
+    "reason": "sos_weight_positive",
+    "status": "REJECT"
+  },
+  {
+    "file": "sos-wrong-square.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "sos",
+      "squares",
+      0,
+      1
+    ],
+    "name": "sos-wrong-square",
+    "positive": "k4-real-sos.json",
+    "reason": "sos_identity",
+    "status": "REJECT"
+  },
+  {
+    "file": "k4-real-sturm.json",
+    "kind": "record",
+    "name": "k4-real-sturm",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "sturm-wrong-variable.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "sturm"
+    ],
+    "name": "sturm-wrong-variable",
+    "positive": "k4-real-sturm.json",
+    "reason": "sturm_multivariate",
+    "status": "REJECT"
+  },
+  {
+    "file": "k23-saturated-null.json",
+    "kind": "record",
+    "name": "k23-saturated-null",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "saturation-cofactor.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "cofactors",
+      "s:3,4"
+    ],
+    "name": "saturation-cofactor",
+    "positive": "k23-saturated-null.json",
+    "reason": "cofactor_identity",
+    "status": "REJECT"
+  },
+  {
+    "file": "tu-chain.json",
+    "kind": "record",
+    "name": "tu-chain",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "tu-final-edge.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "end",
+      "map"
+    ],
+    "name": "tu-final-edge",
+    "positive": "tu-chain.json",
+    "reason": "map_not_edge_preserving",
+    "status": "REJECT"
+  },
+  {
+    "file": "tu-future-edge.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "steps"
+    ],
+    "name": "tu-future-edge",
+    "positive": "tu-chain.json",
+    "reason": "map_not_edge_preserving",
+    "status": "REJECT"
+  },
+  {
+    "file": "tu-already-edge.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "steps"
+    ],
+    "name": "tu-already-edge",
+    "positive": "tu-chain.json",
+    "reason": "tu_pair_already_edge",
+    "status": "REJECT"
+  },
+  {
+    "file": "tu-wrong-pair.json",
+    "kind": "record",
+    "mutation_path": [
+      "cert",
+      "steps",
+      0,
+      "pair"
+    ],
+    "name": "tu-wrong-pair",
+    "positive": "tu-chain.json",
+    "reason": "tu_distinguished_pair",
+    "status": "REJECT"
+  }
+]

@@ -1,0 +1,5 @@
+ACCEPT record Bw verified
+ACCEPT record C~ verified
+REJECT record A_ pointer_target_not_accepted_embedded
+REJECT record A? pointer_target_not_accepted_embedded
+REJECT run records_rejected

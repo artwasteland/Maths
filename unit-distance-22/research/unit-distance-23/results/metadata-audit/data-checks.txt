@@ -1,0 +1,9 @@
+control22 copies 1920 indices 1920 missing [] keep_records 0 distinct_g6 0 hash_or_count_mismatches 0
+calibration copies 1920 indices 1920 missing [] keep_records 10 distinct_g6 10 hash_or_count_mismatches 0
+level22 copies 1955 distinct_g6 29 in_multiple_slices 0 hash_or_count_mismatches 0
+known22 graphs 35 min_degree_at_least_4 14 indices [1, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 21, 24, 34]
+u22_original_target slice_files 48 indices 48 raw_records 4 nonempty [('s15of48', 2), ('s38of48', 2)] manifest_mismatches [] equals_all4 True
+D4 canonical_file 18689 unique 18689 witnesses 18689 exact_coverage True
+D4 fresh_labelled_extensions 29925
+GP10 frozen_input_count 33162 unique 33162 hash_match True L10_count 324 unique 324 report_list_equal True minimality_rows 509 statuses {'minimal': 324, 'not_minimal': 185} derived_minimal_list_equal True
+GP10 edge_histogram {15: 4, 16: 126, 17: 191, 18: 3} min_degree {2: 124, 3: 200} max_degree {3: 1, 4: 145, 5: 145, 6: 30, 7: 3}

@@ -1,0 +1,3 @@
+known22 canonical membership: 14 of 14; extra graphs: 15
+known21 canonical membership: 5 of 5; canonical distinct calibration: 10
+D4 regenerated canonical set: 18689; stored: 18689; missing: 0; extra: 0

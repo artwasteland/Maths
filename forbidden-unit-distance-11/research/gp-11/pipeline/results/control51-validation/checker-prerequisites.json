@@ -1,0 +1,90 @@
+{
+  "B4p": {
+    "counts": {
+      "embedded": 2,
+      "refuted": 1,
+      "unknown": 0
+    },
+    "direct_rejections": 0,
+    "elapsed_seconds": 0.8830062579363585,
+    "profile": "B4p",
+    "status": "ACCEPT"
+  },
+  "B5p": {
+    "counts": {
+      "embedded": 3,
+      "refuted": 4,
+      "unknown": 0
+    },
+    "direct_rejections": 0,
+    "elapsed_seconds": 0.8210357590578496,
+    "profile": "B5p",
+    "status": "ACCEPT"
+  },
+  "B6p": {
+    "counts": {
+      "embedded": 14,
+      "refuted": 2,
+      "unknown": 0
+    },
+    "direct_rejections": 0,
+    "elapsed_seconds": 0.3951240498572588,
+    "profile": "B6p",
+    "status": "ACCEPT"
+  },
+  "B7p": {
+    "counts": {
+      "embedded": 56,
+      "refuted": 4,
+      "unknown": 0
+    },
+    "direct_rejections": 0,
+    "elapsed_seconds": 2.115489198360592,
+    "profile": "B7p",
+    "status": "ACCEPT"
+  },
+  "B8p": {
+    "counts": {
+      "embedded": 366,
+      "refuted": 17,
+      "unknown": 0
+    },
+    "direct_rejections": 0,
+    "elapsed_seconds": 10.44030180433765,
+    "profile": "B8p",
+    "status": "ACCEPT"
+  },
+  "B9p": {
+    "counts": {
+      "embedded": 2984,
+      "refuted": 101,
+      "unknown": 0
+    },
+    "direct_rejections": 0,
+    "elapsed_seconds": 1511.3992629069835,
+    "profile": "B9p",
+    "status": "ACCEPT"
+  },
+  "named": {
+    "counts": {
+      "embedded": 4,
+      "refuted": 1,
+      "unknown": 0
+    },
+    "direct_rejections": 0,
+    "elapsed_seconds": 0.0864134943112731,
+    "profile": "named",
+    "status": "ACCEPT"
+  },
+  "regressions": {
+    "counts": {
+      "embedded": 1,
+      "refuted": 7,
+      "unknown": 0
+    },
+    "direct_rejections": 0,
+    "elapsed_seconds": 0.7689021369442344,
+    "profile": "regressions",
+    "status": "ACCEPT"
+  }
+}

@@ -1,0 +1,2 @@
+REJECT record Cr rational: expected an exact rational string
+REJECT run records_rejected

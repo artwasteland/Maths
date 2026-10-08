@@ -1,0 +1,4583 @@
+[
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "existing-c4",
+    "note": "Copied checker fixture, replayed independently through the full run path.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "existing-triangle",
+    "note": "Copied checker fixture, replayed independently through the full run path.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "existing-moser",
+    "note": "Copied checker fixture, replayed independently through the full run path.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "existing-coordinate-perturbed",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        3
+      ],
+      "scope": "record"
+    },
+    "name": "existing-collision-edges-fine",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "exact_collision",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "field",
+        "interval"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-interval-no-sign",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-triangle",
+    "reason": "records_rejected",
+    "record_reason": "interval_sign_change",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "unexpected"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-unknown-record-field",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "verdict"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-verdict-tu",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "verdict_allowlist",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "verdict"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-verdict-pass",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "verdict_allowlist",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "verdict"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-verdict-forbidden",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "verdict_allowlist",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "existing-k4-tree",
+    "note": "Copied checker fixture, replayed independently through the full run path.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "witness",
+        "tree",
+        "move",
+        "pair"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-tree-collision-pair",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-k4-tree",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree.move.pair: invalid distinct vertices",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "existing-k23-tree",
+    "note": "Copied checker fixture, replayed independently through the full run path.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "existing-k4-isolate-null",
+    "note": "Copied checker fixture, replayed independently through the full run path.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "frame"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-frame-nonedge",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "frame_not_edge",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "system"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-extra-nonedge-generator",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "system_mismatch",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "cofactors",
+        "e:1,3",
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "existing-cofactor-coefficient",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "cofactor_identity",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "existing-k4-real-sos",
+    "note": "Copied checker fixture, replayed independently through the full run path.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sos",
+        "c"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-sos-zero-constant",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-k4-real-sos",
+    "reason": "records_rejected",
+    "record_reason": "sos_constant_positive",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sos",
+        "squares",
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "existing-sos-negative-weight",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-k4-real-sos",
+    "reason": "records_rejected",
+    "record_reason": "sos_weight_positive",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sos",
+        "squares",
+        0,
+        1
+      ],
+      "scope": "record"
+    },
+    "name": "existing-sos-wrong-square",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-k4-real-sos",
+    "reason": "records_rejected",
+    "record_reason": "sos_identity",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "existing-k4-real-sturm",
+    "note": "Copied checker fixture, replayed independently through the full run path.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sturm"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-sturm-wrong-variable",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-k4-real-sturm",
+    "reason": "records_rejected",
+    "record_reason": "sturm_multivariate",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "existing-k23-saturated-null",
+    "note": "Copied checker fixture, replayed independently through the full run path.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "cofactors",
+        "s:3,4"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-saturation-cofactor",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-k23-saturated-null",
+    "reason": "records_rejected",
+    "record_reason": "cofactor_identity",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "existing-tu-chain",
+    "note": "Copied checker fixture, replayed independently through the full run path.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "end",
+        "map"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-tu-final-edge",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-tu-chain",
+    "reason": "records_rejected",
+    "record_reason": "map_not_edge_preserving",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "steps"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-tu-future-edge",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-tu-chain",
+    "reason": "records_rejected",
+    "record_reason": "map_not_edge_preserving",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "steps"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-tu-already-edge",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-tu-chain",
+    "reason": "records_rejected",
+    "record_reason": "tu_pair_already_edge",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "steps",
+        0,
+        "pair"
+      ],
+      "scope": "record"
+    },
+    "name": "existing-tu-wrong-pair",
+    "note": "Copied checker mutation with its declared positive and single changed field.",
+    "parent": "existing-tu-chain",
+    "reason": "records_rejected",
+    "record_reason": "tu_distinguished_pair",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "run-pointers",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "run-mixed",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "run-unknown",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "run-refutation-pointer",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "run-frozen-pointer",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "run-tu-refuted-pointer",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "run-minimality",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "run-conditional-minimality",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "run-pointer-noninjective",
+    "note": "",
+    "parent": "run-pointers",
+    "reason": "records_rejected",
+    "record_reason": "map_not_injective",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "run-pointer-cycle",
+    "note": "",
+    "parent": "run-pointers",
+    "reason": "records_rejected",
+    "record_reason": "pointer_cycle",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "hosts.jsonl",
+      "scope": "file"
+    },
+    "name": "run-pointer-missing",
+    "note": "",
+    "parent": "run-pointers",
+    "reason": "records_rejected",
+    "record_reason": "pointer_target_missing",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "run-coverage-missing",
+    "note": "",
+    "parent": "run-mixed",
+    "reason": "coverage",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "run-coverage-extra",
+    "note": "",
+    "parent": "run-mixed",
+    "reason": "coverage",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "run-coverage-duplicate",
+    "note": "",
+    "parent": "run-mixed",
+    "reason": "duplicate_record",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "run-verdict-conflict",
+    "note": "",
+    "parent": "run-mixed",
+    "reason": "embedded_refuted_conflict",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "UNKNOWN.g6",
+      "scope": "file"
+    },
+    "name": "run-unknown-missing",
+    "note": "",
+    "parent": "run-unknown",
+    "reason": "unknown_exactness",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "UNKNOWN.g6",
+      "scope": "file"
+    },
+    "name": "run-unknown-extra",
+    "note": "",
+    "parent": "run-mixed",
+    "reason": "unknown_exactness",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "claim.g6",
+      "scope": "file"
+    },
+    "name": "run-minimality-false-claim",
+    "note": "",
+    "parent": "run-minimality",
+    "reason": "minimality_claim_refuted_deletion",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "run.json",
+      "scope": "file"
+    },
+    "name": "run-withheld-index",
+    "note": "",
+    "parent": "run-frozen-pointer",
+    "reason": "records_rejected",
+    "record_reason": "forbidden_not_in_force",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "cross.jsonl",
+      "scope": "file"
+    },
+    "name": "run-cross-check-wrong-verdict",
+    "note": "",
+    "parent": "run-mixed",
+    "reason": "cross_check_records",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "UNKNOWN.g6",
+      "scope": "file"
+    },
+    "name": "run-conditional-unknown-missing",
+    "note": "",
+    "parent": "run-conditional-minimality",
+    "reason": "unknown_exactness",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "zero-denominator",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "signed-denominator",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "rational-space",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "rational-decimal",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "rational-float",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "rational-bool",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "rational-plus",
+    "note": "Alternate exact spelling of zero is valid.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "rational-plus-red",
+    "note": "",
+    "parent": "rational-plus",
+    "reason": "records_rejected",
+    "record_reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "rational-negative-zero",
+    "note": "Alternate exact spelling of zero is valid.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "rational-negative-zero-red",
+    "note": "",
+    "parent": "rational-negative-zero",
+    "reason": "records_rejected",
+    "record_reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "rational-leading-zeroes",
+    "note": "Alternate exact spelling of zero is valid.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "rational-leading-zeroes-red",
+    "note": "",
+    "parent": "rational-leading-zeroes",
+    "reason": "records_rejected",
+    "record_reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "field",
+        "minpoly"
+      ],
+      "scope": "record"
+    },
+    "name": "minpoly-constant",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "minpoly",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "field",
+        "minpoly"
+      ],
+      "scope": "record"
+    },
+    "name": "minpoly-zero",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "minpoly",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "field",
+        "minpoly"
+      ],
+      "scope": "record"
+    },
+    "name": "minpoly-leading-zero",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "minpoly",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "field",
+        "minpoly"
+      ],
+      "scope": "record"
+    },
+    "name": "minpoly-boolean",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "minpoly",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "field",
+        "interval"
+      ],
+      "scope": "record"
+    },
+    "name": "endpoint-root",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "interval_sign_change",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "field",
+        "interval"
+      ],
+      "scope": "record"
+    },
+    "name": "interval-reversed",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "interval_sign_change",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords"
+      ],
+      "scope": "record"
+    },
+    "name": "coordinate-missing-vertex",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "coordinate_count",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords"
+      ],
+      "scope": "record"
+    },
+    "name": "coordinate-extra-vertex",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "coordinate_count",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "coordinate-not-reduced",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "coordinate_degree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "coordinate-not-pair",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "coordinate_shape",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords"
+      ],
+      "scope": "record"
+    },
+    "name": "coordinate-wrong-labels",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "large-rational",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        1,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "large-rational-collision",
+    "note": "",
+    "parent": "large-rational",
+    "reason": "records_rejected",
+    "record_reason": "exact_collision",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "multiple-roots",
+    "note": "Sign change and common certified distinctness suffice; irreducibility and root uniqueness are not required.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        3
+      ],
+      "scope": "record"
+    },
+    "name": "multiple-roots-collision",
+    "note": "",
+    "parent": "multiple-roots",
+    "reason": "records_rejected",
+    "record_reason": "exact_collision",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "repeated-root-odd",
+    "note": "Sign change and common certified distinctness suffice; irreducibility and root uniqueness are not required.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        3
+      ],
+      "scope": "record"
+    },
+    "name": "repeated-root-odd-collision",
+    "note": "",
+    "parent": "repeated-root-odd",
+    "reason": "records_rejected",
+    "record_reason": "exact_collision",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "repeated-root-mixed",
+    "note": "Sign change and common certified distinctness suffice; irreducibility and root uniqueness are not required.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        3
+      ],
+      "scope": "record"
+    },
+    "name": "repeated-root-mixed-collision",
+    "note": "",
+    "parent": "repeated-root-mixed",
+    "reason": "records_rejected",
+    "record_reason": "exact_collision",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "shared-root",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords"
+      ],
+      "scope": "record"
+    },
+    "name": "shared-root-trap",
+    "note": "",
+    "parent": "shared-root",
+    "reason": "records_rejected",
+    "record_reason": "exact_collision",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "interval-refinement",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        1,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "interval-refinement-red",
+    "note": "",
+    "parent": "interval-refinement",
+    "reason": "records_rejected",
+    "record_reason": "exact_collision",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-K4",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "edgeless-4",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "edgeless-5",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "edgeless-6",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "edgeless-7",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "edgeless-8",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "edgeless-9",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-00",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-4",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-01",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-5",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-02",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-6",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-03",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-7",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-04",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-7",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-05",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-7",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-06",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-07",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-08",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-09",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-10",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-11",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-12",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-13",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-14",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-15",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-16",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-17",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-18",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-8",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-19",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-20",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-21",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-22",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-23",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-24",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-25",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-26",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-27",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-28",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-29",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-30",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-31",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-32",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-33",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-34",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-35",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-36",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-37",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-38",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-39",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-40",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-41",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-42",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-43",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-44",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-45",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-46",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-47",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-48",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-49",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-50",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-51",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-52",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-53",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-54",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-55",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-56",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-57",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-58",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-59",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-60",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-61",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-62",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-63",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-64",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-65",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-66",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-67",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-68",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-69",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-70",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-71",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-72",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "embed-forbidden-73",
+    "note": "Retarget a genuine distinct rational embedding by changing only g6. This checks graph binding, not a search for embeddings.",
+    "parent": "edgeless-9",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "tree-k4-isolates-4",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "tree-k4-isolates-7",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "tree-k4-isolates-10",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "refute-UDG-C4",
+    "note": "Known UDG named in the brief; a same-order forbidden graph tree must not certify this graph.",
+    "parent": "tree-k4-isolates-4",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree.edges: inconsistent with the parent move",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "refute-UDG-Moser",
+    "note": "Known UDG named in the brief; a same-order forbidden graph tree must not certify this graph.",
+    "parent": "tree-k4-isolates-7",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree.edges: inconsistent with the parent move",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "refute-UDG-Petersen",
+    "note": "Known UDG named in the brief; a same-order forbidden graph tree must not certify this graph.",
+    "parent": "tree-k4-isolates-10",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree.edges: inconsistent with the parent move",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "refute-UDG-pentagonal_prism",
+    "note": "Known UDG named in the brief; a same-order forbidden graph tree must not certify this graph.",
+    "parent": "tree-k4-isolates-10",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree.edges: inconsistent with the parent move",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "g6"
+      ],
+      "scope": "record"
+    },
+    "name": "refute-UDG-extremal",
+    "note": "Known UDG named in the brief; a same-order forbidden graph tree must not certify this graph.",
+    "parent": "tree-k4-isolates-10",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree.edges: inconsistent with the parent move",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "witness",
+        "tree",
+        "edges"
+      ],
+      "scope": "record"
+    },
+    "name": "tree-root-edges",
+    "note": "",
+    "parent": "existing-k4-tree",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree.edges: inconsistent with the parent move",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "witness",
+        "tree",
+        "A"
+      ],
+      "scope": "record"
+    },
+    "name": "tree-root-rowspace",
+    "note": "",
+    "parent": "existing-k4-tree",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree.A: row space is inconsistent with the claimed constraints",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "witness",
+        "field",
+        "minpoly"
+      ],
+      "scope": "record"
+    },
+    "name": "tree-reducible-field",
+    "note": "",
+    "parent": "existing-k4-tree",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.field.minpoly: polynomial is reducible over Q",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "witness",
+        "field",
+        "interval"
+      ],
+      "scope": "record"
+    },
+    "name": "tree-endpoint-root",
+    "note": "",
+    "parent": "existing-k4-tree",
+    "reason": "records_rejected",
+    "record_detail": "tree: isolating interval endpoint is a root",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "witness",
+        "tree",
+        "children"
+      ],
+      "scope": "record"
+    },
+    "name": "tree-leaf-children",
+    "note": "",
+    "parent": "existing-k4-tree",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree: L1a contradiction must be a leaf",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "witness",
+        "tree",
+        "move",
+        "kind"
+      ],
+      "scope": "record"
+    },
+    "name": "tree-forged-move",
+    "note": "",
+    "parent": "existing-k4-tree",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree.move.kind: unsupported move 'accept'",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "cofactors"
+      ],
+      "scope": "record"
+    },
+    "name": "cofactor-unexpected-key",
+    "note": "",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "cofactor_generator",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "system"
+      ],
+      "scope": "record"
+    },
+    "name": "system-renamed-generator",
+    "note": "",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "system_mismatch",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "system"
+      ],
+      "scope": "record"
+    },
+    "name": "system-pinned-third-point",
+    "note": "",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "system_mismatch",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "system",
+        "e:1,3"
+      ],
+      "scope": "record"
+    },
+    "name": "system-changed-polynomial",
+    "note": "",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "system_mismatch",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "cofactors",
+        "e:1,3"
+      ],
+      "scope": "record"
+    },
+    "name": "sparse-duplicate-monomial",
+    "note": "",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "sparse_duplicate_monomial",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "cofactors",
+        "e:1,3",
+        0,
+        1,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "sparse-negative-exponent",
+    "note": "",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "sparse_exponents",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "cofactors",
+        "e:1,3",
+        0,
+        1,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "sparse-boolean-exponent",
+    "note": "",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "sparse_exponents",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "cofactors",
+        "e:1,3",
+        0,
+        1
+      ],
+      "scope": "record"
+    },
+    "name": "sparse-extra-variable",
+    "note": "",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "sparse_exponents",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sat"
+      ],
+      "scope": "record"
+    },
+    "name": "saturation-repeated",
+    "note": "",
+    "parent": "existing-k23-saturated-null",
+    "reason": "records_rejected",
+    "record_reason": "sat_duplicate",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sat",
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "saturation-reversed",
+    "note": "",
+    "parent": "existing-k23-saturated-null",
+    "reason": "records_rejected",
+    "record_reason": "sat_pair_order",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sat",
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "saturation-self-pair",
+    "note": "",
+    "parent": "existing-k23-saturated-null",
+    "reason": "records_rejected",
+    "record_reason": "pair",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sat",
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "saturation-out-of-range",
+    "note": "",
+    "parent": "existing-k23-saturated-null",
+    "reason": "records_rejected",
+    "record_reason": "pair",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sat"
+      ],
+      "scope": "record"
+    },
+    "name": "saturation-variable-order",
+    "note": "",
+    "parent": "existing-k23-saturated-null",
+    "reason": "records_rejected",
+    "record_reason": "system_mismatch",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "saturation-adjacent",
+    "note": "Saturating an edge is redundant and mathematically valid.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sat"
+      ],
+      "scope": "record"
+    },
+    "name": "saturation-adjacent-red",
+    "note": "",
+    "parent": "saturation-adjacent",
+    "reason": "records_rejected",
+    "record_reason": "sat_duplicate",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "real-saturation-variable",
+    "note": "Multiply a verified null identity by t_0^2+1; every saturation variable is real.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sturm"
+      ],
+      "scope": "record"
+    },
+    "name": "real-saturation-variable-red",
+    "note": "",
+    "parent": "real-saturation-variable",
+    "reason": "records_rejected",
+    "record_reason": "sturm_multivariate",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sturm"
+      ],
+      "scope": "record"
+    },
+    "name": "real-nonexistent-variable",
+    "note": "",
+    "parent": "real-saturation-variable",
+    "reason": "records_rejected",
+    "record_reason": "sturm_variable",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sos",
+        "squares",
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "sos-zero-weight",
+    "note": "",
+    "parent": "existing-k4-real-sos",
+    "reason": "records_rejected",
+    "record_reason": "sos_weight_positive",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sos",
+        "c"
+      ],
+      "scope": "record"
+    },
+    "name": "sos-negative-constant",
+    "note": "",
+    "parent": "existing-k4-real-sos",
+    "reason": "records_rejected",
+    "record_reason": "sos_constant_positive",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "sturm"
+      ],
+      "scope": "record"
+    },
+    "name": "real-both-proof-types",
+    "note": "",
+    "parent": "existing-k4-real-sos",
+    "reason": "records_rejected",
+    "record_reason": "real_proof_choice",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "pointer-negative",
+    "note": "",
+    "parent": "run-pointers",
+    "reason": "records_rejected",
+    "record_reason": "map_range",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "pointer-too-large",
+    "note": "",
+    "parent": "run-pointers",
+    "reason": "records_rejected",
+    "record_reason": "map_range",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "pointer-boolean",
+    "note": "",
+    "parent": "run-pointers",
+    "reason": "records_rejected",
+    "record_reason": "map_range",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "pointer-direction",
+    "note": "",
+    "parent": "run-pointers",
+    "reason": "records_rejected",
+    "record_reason": "map_length",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "refutation-pointer-direction",
+    "note": "",
+    "parent": "run-refutation-pointer",
+    "reason": "records_rejected",
+    "record_reason": "map_length",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "frozen-index-mismatch",
+    "note": "",
+    "parent": "run-frozen-pointer",
+    "reason": "records_rejected",
+    "record_reason": "forbidden_index_graph",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "frozen-index-negative",
+    "note": "",
+    "parent": "run-frozen-pointer",
+    "reason": "records_rejected",
+    "record_reason": "forbidden_not_in_force",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "frozen-index-out-of-range",
+    "note": "",
+    "parent": "run-frozen-pointer",
+    "reason": "records_rejected",
+    "record_reason": "forbidden_not_in_force",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "frozen-index-boolean",
+    "note": "",
+    "parent": "run-frozen-pointer",
+    "reason": "records_rejected",
+    "record_reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "pointer-chain",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "pointer-chain-through-unknown",
+    "note": "One pointer g6 field targets an already declared unknown. Both downstream pointers must reject.",
+    "parent": "pointer-chain",
+    "reason": "records_rejected",
+    "record_reason": "pointer_target_not_accepted_embedded",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "refutation-chain",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "refutation-chain-through-unknown",
+    "note": "",
+    "parent": "refutation-chain",
+    "reason": "records_rejected",
+    "record_reason": "pointer_target_not_accepted_refuted",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "steps",
+        0,
+        "map"
+      ],
+      "scope": "record"
+    },
+    "name": "tu-map-repeated",
+    "note": "",
+    "parent": "existing-tu-chain",
+    "reason": "records_rejected",
+    "record_reason": "map_not_injective",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "steps",
+        0,
+        "map"
+      ],
+      "scope": "record"
+    },
+    "name": "tu-map-outside",
+    "note": "",
+    "parent": "existing-tu-chain",
+    "reason": "records_rejected",
+    "record_reason": "map_range",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "steps",
+        0,
+        "gadget"
+      ],
+      "scope": "record"
+    },
+    "name": "tu-gadget-negative",
+    "note": "",
+    "parent": "existing-tu-chain",
+    "reason": "records_rejected",
+    "record_reason": "gadget_index",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "steps"
+      ],
+      "scope": "record"
+    },
+    "name": "tu-no-steps",
+    "note": "",
+    "parent": "existing-tu-chain",
+    "reason": "records_rejected",
+    "record_reason": "tu_steps",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "end"
+      ],
+      "scope": "record"
+    },
+    "name": "tu-no-terminal-proof",
+    "note": "",
+    "parent": "existing-tu-chain",
+    "reason": "records_rejected",
+    "record_reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "end",
+        "forbidden"
+      ],
+      "scope": "record"
+    },
+    "name": "tu-terminal-index",
+    "note": "",
+    "parent": "existing-tu-chain",
+    "reason": "records_rejected",
+    "record_reason": "forbidden_not_in_force",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "claim.g6",
+      "scope": "file"
+    },
+    "name": "minimality-omitted-minimal",
+    "note": "",
+    "parent": "run-minimality",
+    "reason": "minimality_claim_mismatch",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "run.json",
+      "scope": "file"
+    },
+    "name": "conditional-minimality-omitted",
+    "note": "",
+    "parent": "run-conditional-minimality",
+    "reason": "minimality_claim_mismatch",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "run.json",
+      "scope": "file"
+    },
+    "name": "input-wrong-hash",
+    "note": "",
+    "parent": "run-mixed",
+    "reason": "input_hash",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "empty-record-stream",
+    "note": "",
+    "parent": "run-mixed",
+    "reason": "coverage",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "records-no-final-newline",
+    "note": "",
+    "parent": "run-mixed",
+    "reason": "line_format",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "records-blank-line",
+    "note": "",
+    "parent": "run-mixed",
+    "reason": "line_format",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "run.json",
+      "scope": "file"
+    },
+    "name": "unknown-file-absent",
+    "note": "",
+    "parent": "run-unknown",
+    "reason": "unknown_file_missing",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "duplicate-json-key",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "duplicate_json_key",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "duplicate-generator-key",
+    "note": "",
+    "parent": "existing-k4-isolate-null",
+    "reason": "records_rejected",
+    "record_reason": "duplicate_json_key",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "json-nan",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "json_constant",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "coverage-noncanonical-record",
+    "note": "",
+    "parent": "existing-c4",
+    "reason": "records_rejected",
+    "record_reason": "noncanonical_g6",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "control-sample-B4p",
+    "note": "Complete frozen input coverage, declared unknowns, sample only.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "run.json",
+      "scope": "file"
+    },
+    "name": "unsupported-B4p",
+    "note": "Contract amendment requires this profile. Rejection is a reproduced implementation gap, not a soundness exploit.",
+    "parent": "control-sample-B4p",
+    "reason": "profile",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "control-sample-B5p",
+    "note": "Complete frozen input coverage, declared unknowns, sample only.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "run.json",
+      "scope": "file"
+    },
+    "name": "unsupported-B5p",
+    "note": "Contract amendment requires this profile. Rejection is a reproduced implementation gap, not a soundness exploit.",
+    "parent": "control-sample-B5p",
+    "reason": "profile",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "control-sample-B6p",
+    "note": "Complete frozen input coverage, declared unknowns, sample only.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "run.json",
+      "scope": "file"
+    },
+    "name": "unsupported-B6p",
+    "note": "Contract amendment requires this profile. Rejection is a reproduced implementation gap, not a soundness exploit.",
+    "parent": "control-sample-B6p",
+    "reason": "profile",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "control-sample-B7p",
+    "note": "Complete frozen input coverage, declared unknowns, sample only.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "run.json",
+      "scope": "file"
+    },
+    "name": "unsupported-B7p",
+    "note": "Contract amendment requires this profile. Rejection is a reproduced implementation gap, not a soundness exploit.",
+    "parent": "control-sample-B7p",
+    "reason": "profile",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "frozen-canonical-labels",
+    "note": "F9 index 2; R-ptr maps use canonical graph labels.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "map"
+      ],
+      "scope": "record"
+    },
+    "name": "frozen-stored-labels-confused",
+    "note": "",
+    "parent": "frozen-canonical-labels",
+    "reason": "records_rejected",
+    "record_reason": "map_not_edge_preserving",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "tu-frozen-stored-labels",
+    "note": "F9 index 2; TU end maps use stored JSON labels.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "end",
+        "map"
+      ],
+      "scope": "record"
+    },
+    "name": "tu-frozen-canonical-labels-confused",
+    "note": "",
+    "parent": "tu-frozen-stored-labels",
+    "reason": "records_rejected",
+    "record_reason": "map_not_edge_preserving",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "tu-pointer-with-unknown",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "tu-target-unknown",
+    "note": "",
+    "parent": "tu-pointer-with-unknown",
+    "reason": "records_rejected",
+    "record_reason": "pointer_target_not_accepted_refuted",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "derive-k4-disabled",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "run.json",
+      "scope": "file"
+    },
+    "name": "derive-requires-deletion",
+    "note": "",
+    "parent": "derive-k4-disabled",
+    "reason": "minimality_deletion_missing",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "derive-k4-complete",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "claim.g6",
+      "scope": "file"
+    },
+    "name": "derive-k4-omitted",
+    "note": "",
+    "parent": "derive-k4-complete",
+    "reason": "minimality_claim_mismatch",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "block-forbidden-baseline",
+    "note": "",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "run.json",
+      "scope": "file"
+    },
+    "name": "block-forbidden-shortcut",
+    "note": "",
+    "parent": "block-forbidden-baseline",
+    "reason": "block_forbidden",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": null,
+    "name": "real-constant",
+    "note": "A nonzero constant has no real zero although it involves no variable.",
+    "parent": null,
+    "reason": "verified",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "f"
+      ],
+      "scope": "record"
+    },
+    "name": "real-constant-zero-target",
+    "note": "",
+    "parent": "real-constant",
+    "reason": "records_rejected",
+    "record_reason": "cofactor_identity",
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive--3-1",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--3-1-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--3-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--3-1-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--3-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive--3-2",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--3-2-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--3-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--3-2-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--3-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive--2-1",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--2-1-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--2-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--2-1-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--2-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive--2-2",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--2-2-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--2-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--2-2-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--2-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive--1-1",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--1-1-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--1-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--1-1-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--1-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive--1-2",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--1-2-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--1-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive--1-2-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive--1-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive-0-1",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-0-1-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-0-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-0-1-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-0-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive-0-2",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-0-2-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-0-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-0-2-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-0-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive-1-1",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-1-1-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-1-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-1-1-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-1-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive-1-2",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-1-2-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-1-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-1-2-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-1-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive-2-1",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-2-1-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-2-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-2-1-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-2-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive-2-2",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-2-2-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-2-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-2-2-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-2-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive-3-1",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-3-1-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-3-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-3-1-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-3-1",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-positive-3-2",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-3-2-two-roots",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-3-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-positive-3-2-repeated-root",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-positive-3-2",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-repeated-complex",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": 2,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-quartic-real",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-repeated-complex",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 1,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-quartic-repeated-real",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-repeated-complex",
+    "reason": "returned",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "count": 0,
+    "kind": "sturm",
+    "mutation": null,
+    "name": "sturm-constant",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": null,
+    "reason": "returned",
+    "record_reason": null,
+    "status": "ACCEPT"
+  },
+  {
+    "count": null,
+    "kind": "sturm",
+    "mutation": {
+      "file": "polynomial.json",
+      "path": [
+        0
+      ],
+      "scope": "polynomial"
+    },
+    "name": "sturm-zero",
+    "note": "Helper return value, not a full run ACCEPT. Root count is known from explicit quadratic factors.",
+    "parent": "sturm-constant",
+    "reason": "sturm_zero_polynomial",
+    "record_reason": null,
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "coords",
+        0,
+        0,
+        0
+      ],
+      "scope": "record"
+    },
+    "name": "moser-coordinate-red",
+    "note": "",
+    "parent": "existing-moser",
+    "reason": "records_rejected",
+    "record_reason": "edge_equation",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "path": [
+        "cert",
+        "witness",
+        "tree",
+        "move",
+        "pair"
+      ],
+      "scope": "record"
+    },
+    "name": "k23-tree-collision-red",
+    "note": "",
+    "parent": "existing-k23-tree",
+    "reason": "records_rejected",
+    "record_detail": "tree: R-tree.tree.move.pair: invalid distinct vertices",
+    "record_reason": "tree",
+    "status": "REJECT"
+  },
+  {
+    "kind": "run",
+    "mutation": {
+      "file": "records.jsonl",
+      "scope": "file"
+    },
+    "name": "tu-refuted-pointer-map-red",
+    "note": "",
+    "parent": "run-tu-refuted-pointer",
+    "reason": "records_rejected",
+    "record_reason": "map_not_injective",
+    "status": "REJECT"
+  }
+]

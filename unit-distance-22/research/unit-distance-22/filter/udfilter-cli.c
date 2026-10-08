@@ -13,21 +13,34 @@ static void json_string(const char *s) {
 }
 
 static void usage(const char *name) {
-    fprintf(stderr, "usage: %s [-f forbidden-74.g6] [-t tu-gadgets.json] < graph6\n", name);
+    fprintf(stderr, "usage: %s [-s 74|398] [-f forbidden.json] [-t tu-gadgets.json] < graph6\n"
+                    "  -s, --forbidden-set  74 (default, ../data/forbidden-74.json) or 398\n"
+                    "                       (../data/forbidden-398.json, pinned by sha256)\n", name);
 }
 
 int main(int argc, char **argv) {
-    const char *forbidden = "../data/forbidden-74.json";
+    const char *forbidden = NULL;
     const char *tu = "../data/tu-gadgets.json";
+    int forbidden_set = UDF_FORBIDDEN_SET_74;
     char line[4096], error[256];
-    udf_database db;
+    static udf_database db;
     int i;
     for (i = 1; i < argc; i++) {
         if (strcmp(argv[i], "-f") == 0 && i + 1 < argc) forbidden = argv[++i];
         else if (strcmp(argv[i], "-t") == 0 && i + 1 < argc) tu = argv[++i];
+        else if ((strcmp(argv[i], "-s") == 0 || strcmp(argv[i], "--forbidden-set") == 0) &&
+                 i + 1 < argc) {
+            const char *value = argv[++i];
+            if (strcmp(value, "74") == 0) forbidden_set = UDF_FORBIDDEN_SET_74;
+            else if (strcmp(value, "398") == 0) forbidden_set = UDF_FORBIDDEN_SET_398;
+            else { usage(argv[0]); return 2; }
+        }
         else { usage(argv[0]); return 2; }
     }
-    if (!udf_database_load(&db, forbidden, tu, error, sizeof(error))) {
+    if (forbidden == NULL)
+        forbidden = forbidden_set == UDF_FORBIDDEN_SET_398 ? "../data/forbidden-398.json"
+                                                           : "../data/forbidden-74.json";
+    if (!udf_database_load_set(&db, forbidden, tu, forbidden_set, error, sizeof(error))) {
         fprintf(stderr, "udfilter: %s\n", error);
         return 2;
     }

@@ -1,0 +1,182 @@
+research/gp-10/embed/round4.py:13:SOURCE=Path('<scratch>/scratchpad/cand')
+research/gp-10/refute/round3_report.py:14: assert final['b10_membership']['sha256']==frozen['B10.g6']
+research/gp-10/refute/round3_report.py:52:Both runs exited 0. The retained GP library now has **74/74** refutations
+research/gp-10/refute/round3_report.py:53:with an empty list in force (`checker-GP74`, {controls['GP74']['seconds']:.3f}
+research/gp-10/refute/round3_report.py:54:seconds). The forbidden-containing B9p control sample now has **101/101**
+research/gp-10/refute/round3_report.py:55:refutations with F8 in force (`checker-B9p-forbidden`,
+research/gp-10/refute/round3_report.py:56:{controls['B9p-forbidden']['seconds']:.3f} seconds). Both exact final lines are
+research/gp-10/refute/round3_report.py:60:The actual proof library is `evidence/round3/GP74.refuted.jsonl`.
+research/gp-10/refute/round3_report.py:65:isomorphism classes, all present in frozen `data/B10.g6`. Their edge-count
+research/gp-10/refute/round3_report.py:107:unknown, in {final['combined_check']['seconds']:.3f} seconds. F9, all 74 graphs,
+research/gp-10/refute/round3_report.py:251:original frozen input hashes and B10 checksum, parses every module Python
+research/gp-10/refute/round3_report.py:262:  the requested bounded pass, not a complete classification of B10.
+research/gp-10/refute/round3_report.py:266:  reduction: this module checked B10 membership and isomorphism distinctness,
+research/gp-10/refute/round3_report.py:288:  not rediscovered from scratch in this round. The GP74 and B9p closure runs
+research/gp-10/refute/round3_report.py:290:  all-B10 gate run was performed by this module.
+research/gp-10/drive/driver.py:551:    full_list_path = Path(__file__).resolve().parents[2] / 'unit-distance-22' / 'data' / 'forbidden-74.json'
+research/gp-10/drive/driver.py:555:        raise ValueError('forbidden list must be a prefix of forbidden-74.json (amendment 4)')
+research/gp-10/drive/driver.py:783:    parser.add_argument('--profile', choices=('sample', 'B10'), default='sample')
+research/gp-10/embed/make_report.py:23:      'Counts below come from `measure.py prepare`, the method commands linked in the next table, and [the audit command](COMMANDS.md#audit). The maximal file and the prescribed random sample were used in full for the first lattice pass. Every line of B9p was exercised. Later circle and numeric stages used deterministic samples of unresolved inputs. This is a development measurement, with no full B10 classification claim.','',
+research/gp-10/embed/make_report.py:28:    b9=audit['samples']['B9p']['classes']
+research/gp-10/embed/make_report.py:30:        u=c['total']-c['embedded'];lines.append(f"| B9p: {name} | {c['total']} | {c['embedded']} | {u} | {100*u/c['total']:.2f}% |")
+research/gp-10/embed/make_report.py:91:      '- The union covers only the measured input sets. No completeness claim for B10, minimal forbidden list, or full control-pipeline PASS follows from this report.',''])
+research/gp-10/refute/round4.py:36:    ignored.append({'path':str(p),'line':number,'text':line[:200],'reason':'outside_frozen_B10_or_unparsed'});continue
+research/gp-10/refute/round4.py:79: codes=codes_input();b10=set((ROOT/'research/gp-10/data/B10.g6').read_text().splitlines())
+research/gp-10/refute/round4.py:86:  (R4/'preparation.json').write_text(json.dumps({'input_sha256':hashlib.sha256(FRONTIER.read_bytes()).hexdigest(),'count':len(codes),'edge_counts':dict(collections.Counter(len(decode(g)[1]) for g in codes)),'known_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'known_records':len(list(records(source))),'b10_sha256':hashlib.sha256((ROOT/'research/gp-10/data/B10.g6').read_bytes()).hexdigest(),'source_sha256':source_hashes()},indent=2)+'\n')
+research/gp-10/refute/round4.py:152:  forbidden=patterns(json.loads((UD/'data/forbidden-74.json').read_text()));forbidden_canonical()
+research/gp-10/drive/seeds.py:38:    lengths = {0: 0, 1: 4, 2: 5, 3: 6, 6: 7, 19: 8, 74: 9}
+research/gp-10/check/gp10check.py:44:FROZEN_ORDERS = {**CONTROL_ORDERS, "B10": 10}
+research/gp-10/check/gp10check.py:511:        raw = read_json(TRUSTED / "data/forbidden-74.json")
+research/gp-10/check/gp10check.py:513:        need(len(self.forbidden) == 74, "trusted_data", "forbidden count")
+research/gp-10/check/gp10check.py:716:            need(profile == "B10" or not ({"controls", "predictions"} & set(m)), "profile_override")
+research/gp-10/check/gp10check.py:728:                                 "trusted_data_sha256": {name: digest(TRUSTED / "data" / name) for name in ("forbidden-74.json", "tu-gadgets.json")}})
+research/gp-10/check/gp10check.py:732:            if profile == "B10":
+research/gp-10/check/gp10check.py:775:        keys(controls, {*CONTROL_ORDERS, "named", "regressions"}, where="B10 controls")
+research/gp-10/check/gp10check.py:943:                need(4 <= g.n <= 10 and nx.is_biconnected(g.nx()), "minimality_graph_class", code)
+research/gp-10/check/gp10check.py:985:            if profile == "B9p":
+research/gp-10/drive/stub_producers.py:30:    source = Path(__file__).resolve().parents[1] / ".." / "unit-distance-22" / "data" / "forbidden-74.g6"
+research/gp-10/embed/round2_finish.py:44:    assert {s: summary[s]['requested'] for s in SAMPLES} == {'maximal': 1202, 'B9p': 88, 'uniform500': 47}
+research/gp-10/embed/round2_finish.py:133:              'The stated cohorts are the requested research samples; no additional full-B10 solve was run. '
+research/gp-10/check/benchmark.py:2:"""Synthetic, all-unknown streaming benchmark using every frozen B10 graph."""
+research/gp-10/check/benchmark.py:17:    frozen=ck.GP/"data/B10.g6"
+research/gp-10/check/benchmark.py:42:    # The accepted sample differs in exactly its profile; a B10 report needs controls first.
+research/gp-10/check/benchmark.py:43:    manifest=ck.read_json(run/"run.json");manifest["profile"]="B10"
+research/gp-10/check/benchmark.py:48:    print("PASS one-field B10 profile mutation: REJECT controls_required")
+research/gp-10/drive/audit_round2.py:16:    frozen = Path(__file__).resolve().parents[2] / 'unit-distance-22' / 'data' / 'forbidden-74.g6'
+research/gp-10/drive/audit_round2.py:18:    for label in ('B8p-F7', 'B9p-F8'):
+research/gp-10/check/selftest.py:144:    for profile in ("B8p","B9p"):
+research/gp-10/check/selftest.py:145:        n={"B8p":8,"B9p":9}[profile]
+research/gp-10/drive/audit_round3.py:27:    assert len(inputs) == len(set(inputs)) == 33162
+research/gp-10/refute/round2_report.py:75:  a,b=methods['B8p-'+method],methods['B9p-'+method]
+research/gp-10/refute/round2_report.py:82: for key,limit in [('retry_records',0),('GP74',0),('B8p',7),('B9p',8),('B8p-replay',7),('B9p-replay',8)]:
+research/gp-10/refute/round2_report.py:88:B8p forbidden controls, 100/101 B9p forbidden controls, and 73/74 GP graphs**.
+research/gp-10/refute/round2_report.py:89:Index 39, `HGEAXjw`, remains unknown. The complete B9p and GP74 requirements
+research/gp-10/refute/round2_report.py:153:`round2.py prepare` scanned all 383 B8p and 3085 B9p inputs with this
+research/gp-10/refute/round2_report.py:163:| Method | Seconds per graph | B8p success | B8p seconds | B9p success | B9p seconds |
+research/gp-10/refute/round2_report.py:177:| Method | B8p | B9p |
+research/gp-10/refute/round2_report.py:179:"""+ '\n'.join(f"| {m} | {audit['B8p']['fresh_cumulative_by_certificate_type'][m]}/17 | {audit['B9p']['fresh_cumulative_by_certificate_type'][m]}/101 |" for m in ['tu','tree','null','real'])+"""
+research/gp-10/refute/round2_report.py:194:processing totals were """+f"""{audit['B8p-replay']['graph_seconds']:.3f} and {audit['B9p-replay']['graph_seconds']:.3f} seconds; these exclude
+research/gp-10/refute/round2_report.py:198:certificates, all independently accepted in `checker-GP74-final`. A match
+research/gp-10/refute/round2_report.py:213:paths and counts are in `control-method-results.json`. The final GP74,
+research/gp-10/refute/round2_report.py:214:fresh B8p and fresh B9p maximum record sizes are """+f"""{audit['GP74']['max_line_bytes']},
+research/gp-10/refute/round2_report.py:215:{audit['B8p']['max_line_bytes']}, and {audit['B9p']['max_line_bytes']} bytes, respectively.
+research/gp-10/refute/round2_report.py:271:The eight initial sweeps used `round2.py sweep --suite B8p|B9p --method
+research/gp-10/refute/round2_report.py:273:the table's limits and prefix 6 for B8p or 19 for B9p. Their summary files
+research/gp-10/refute/round2_report.py:276:`round2/B8p.g6` or `round2/B9p.g6`, `--methods reuse,tu --time-limit 2.5`,
+research/gp-10/refute/round2_report.py:280:`B9p-replay.jsonl`. Module-relative paths in this paragraph are prefixed by
+research/gp-10/refute/round2_report.py:302:  requested all-101 B9p control and all-74 GP coverage are incomplete.
+research/gp-10/refute/round2_report.py:321:  search can still expose untested paths. No B10 run, minimality pipeline,
+research/gp-10/refute/round2_tests.py:16: full=patterns(json.loads((UD/'data/forbidden-74.json').read_text()));validate_forbidden(full[:19]);bad=full[:19];bad[0]=full[1]
+research/gp-10/refute/round2_tests.py:23: rec=next(r for r in records(R/'B9p-tu.jsonl') if r['verdict']=='refuted' and r['cert']['type']=='tu');verify_tu(rec['g6'],rec['cert'],full[:19],{})
+research/gp-10/embed/final_audit.py:42:    labels=json.loads((RESULTS/'B9p'/'labels.json').read_text())
+research/gp-10/embed/final_audit.py:43:    bad=[r['g6'] for r in read_records(RESULTS/'B9p'/'records.jsonl') if r['verdict']=='embedded' and labels[r['g6']]=='forbidden']
+research/gp-10/drive/test_seeds.py:20:F9 = MODULE.parents[1] / 'unit-distance-22' / 'data' / 'forbidden-74.json'
+research/gp-10/drive/test_seeds.py:206:    def test_B10_manifest_cannot_bypass_controls_and_sample_derives(self):
+research/gp-10/drive/test_seeds.py:209:        write_manifests(directory, MODULE.parent / 'data/B10.g6', 9, profile='B10')
+research/gp-10/drive/run_b10.py:1:"""B10 entry point with predictions, bounded parallelism, and resume."""
+research/gp-10/drive/run_b10.py:20:DEFAULT_INPUT = ROOT / "data" / "B10.g6"
+research/gp-10/drive/run_b10.py:38:        "# GP-10 B10 predictions\n\n"
+research/gp-10/refute/run_focused_controls.py:9: ["--suite","gp74","--method","tree","--seconds","40","--indices","59,67,69","--tag=-deep"],
+research/gp-10/refute/run_focused_controls.py:10: ["--suite","gp74","--method","real","--seconds","15","--indices","4,9,10,18","--tag=-focused"],
+research/gp-10/refute/run_focused_controls.py:11: ["--suite","gp74","--method","real","--seconds","20","--indices","17","--extra-sat","3","7","--tag=-extra"],
+research/gp-10/refute/run_focused_controls.py:13: ["--suite","gp74","--method","real","--seconds","10","--indices","22,38,39,66","--all-sat","--tag=-stalls"],
+research/gp-10/drive/runfiles.py:11:    frozen = Path(__file__).resolve().parents[1] / 'data' / 'B10.g6'
+research/gp-10/drive/runfiles.py:21:    elif profile == 'B10':
+research/gp-10/drive/runfiles.py:23:            raise ValueError('B10 profile requires the frozen full B10 input and F9 in force')
+research/gp-10/drive/runfiles.py:24:        primary = {**common, 'profile': 'B10'}
+research/gp-10/drive/runfiles.py:30:        # B10 gate will reject until real accepted control directories exist.
+research/gp-10/drive/runfiles.py:32:        raise ValueError('assembly profiles are sample or B10')
+research/gp-10/drive/controls.py:20:FORBIDDEN_JSON = ROOT.parent / "unit-distance-22" / "data" / "forbidden-74.json"
+research/gp-10/drive/controls.py:21:FORBIDDEN_G6 = ROOT.parent / "unit-distance-22" / "data" / "forbidden-74.g6"
+research/gp-10/drive/controls.py:156:            'for the outstanding evidence. This run does not authorize B10.\n')
+research/gp-10/drive/controls.py:179:        jobs.append(("B9p-F8", ROOT / "data" / "B9p.g6", 9))
+research/gp-10/refute/wrong_frame_control.py:42:    for u,v in itertools.combinations(range(10),2):
+research/gp-10/embed/rigid_system.py:31:    """Greedy rank in the (2,3)-sparsity matroid, all subsets checked, n <= 10."""
+research/gp-10/embed/rigid_system.py:46:    if n < 2 or n > 10 or not edges: raise ValueError('rigidity:unsupported_graph')
+research/gp-10/drive/assemble_b10.py:21:CAND = Path('<scratch>/scratchpad/cand')
+research/gp-10/drive/assemble_b10.py:61:        '# Round 3 B10 assembly predictions\n\n'
+research/gp-10/drive/assemble_b10.py:63:        '- Input: 33162 graphs.\n- Predicted embedded: 30000.\n'
+research/gp-10/drive/assemble_b10.py:67:        'then one official sample-profile check over the full B10 input with F9 and derive true. '
+research/gp-10/drive/assemble_b10.py:69:        '- B10-profile acceptance is gated on genuine replayable controls. They are not fabricated here.\n')
+research/gp-10/drive/assemble_b10.py:70:    forbidden = GP.parent / 'unit-distance-22/data/forbidden-74.json'
+research/gp-10/drive/assemble_b10.py:71:    argv = ['--input', str(GP / 'data/B10.g6'), '--run-dir', str(run),
+research/gp-10/drive/assemble_b10.py:73:            '--processes', '1', '--validate-seeds', '--no-producers', '--profile', 'B10', '--derive']
+research/gp-10/drive/assemble_b10.py:85:    print(json.dumps({'event': 'full-B10-sample-check-start', 'derive': True, 'forbidden_limit': 9,
+research/gp-10/drive/assemble_b10.py:115:              'input_sha256': hashlib.sha256((GP / 'data/B10.g6').read_bytes()).hexdigest(),
+research/gp-10/drive/assemble_b10.py:117:              'B10_profile_checked': False,
+research/gp-10/drive/assemble_b10.py:118:              'B10_profile_note': 'Draft manifest only: genuine replayable controls still required.'}
+research/gp-10/tools/lean_assemble.py:1:"""Memory-lean B10 assembler: the driver's --no-producers assembly without holding certificates in memory.
+research/gp-10/tools/lean_assemble.py:3:usage: python lean_assemble.py B10.g6 POSET.json OUT_DIR SEED.jsonl[.gz] ...
+research/gp-10/refute/candidate_batches.py:87:  forbidden=patterns(json.loads((UD/'data/forbidden-74.json').read_text()));forbidden_canonical()
+research/gp-10/refute/round3.py:14:SOURCE=Path('<scratch>/scratchpad/cand')
+research/gp-10/refute/controls.py:22:    gpraw=(UD/"data/forbidden-74.g6").read_text().splitlines()
+research/gp-10/refute/controls.py:24:    forbidden=patterns(json.loads((UD/"data/forbidden-74.json").read_text()))
+research/gp-10/refute/controls.py:25:    assert len(gp)==len(forbidden)==74
+research/gp-10/refute/controls.py:35:    candidates=(ROOT/"research/gp-10/data/B9p.g6").read_text().splitlines()
+research/gp-10/refute/controls.py:45:    suites={"gp74":gp,"amp":amp,"named":namedcodes,"b9":selected}
+research/gp-10/refute/controls.py:53:              [UD/"data/forbidden-74.g6",UD/"data/forbidden-74.json",UD/"data/tu-gadgets.json",
+research/gp-10/refute/controls.py:54:               UD/"sources/amp/anc/graph6.txt",ROOT/"research/gp-10/data/B9p.g6"]}}
+research/gp-10/refute/controls.py:62:    parser.add_argument("--suite",choices=["gp74","amp","named","b9"])
+research/gp-10/refute/controls.py:99:    soundness_forbidden=patterns(json.loads((UD/"data/forbidden-74.json").read_text()))
+research/gp-10/refute/graphs.py:59:    full = patterns(json.loads((UD / "data/forbidden-74.json").read_text()))
+research/gp-10/refute/graphs.py:61:        raise ValueError("forbidden list must be a prefix of forbidden-74.json")
+research/gp-10/refute/graphs.py:69:        _F9_CANONICAL = canonical((UD / "data/forbidden-74.g6").read_text().splitlines())
+research/gp-10/refute/selftest.py:45:    codes=(MODULE/"fixtures/gp74.g6").read_text().splitlines()
+research/gp-10/refute/selftest.py:133:    trace=amp_core.SearchTrace();budget=amp_core.SearchBudget(10,0,None,trace)
+research/gp-10/refute/round4_tests.py:35:  obj['g6']=gp[0];p.write_text(json.dumps(obj)+'\n');hints,meta=read_hints({gp[1]});assert not hints and meta['ignored_lines'][0]['reason']=='outside_frozen_B10_or_unparsed'
+research/gp-10/refute/round4_tests.py:42: result={'status':'PASS','lens_positive':positive,'lens_one_constant_mutation':negative,'official_checks':official,'hint_mutation_reason':'outside_frozen_B10_or_unparsed','safe_controls':safe,'source_sha256':source_hashes()}
+research/gp-10/refute/round3_controls.py:7: for name,old,limit in [('GP74','checker-GP74-round2',0),('B9p-forbidden','checker-B9p-final',8)]:
+research/gp-10/refute/round3_controls.py:10:  if name=='GP74':
+research/gp-10/refute/round3_controls.py:11:   with (R/'GP74.refuted.jsonl').open('w') as f:
+research/gp-10/refute/round3_controls.py:14: codes,tree,emb,snap=snapshot();assert set(codes)<=set((ROOT/'research/gp-10/data/B10.g6').read_text().splitlines())
+research/gp-10/refute/audit_sample.py:16:forbidden=[nx.Graph(edges) for edges in json.loads((UD/"data/forbidden-74.json").read_text())]
+research/gp-10/refute/round2.py:23:    full=json.loads((UD/"data/forbidden-74.json").read_text())
+research/gp-10/refute/round2.py:27:    for suite in ["B8p","B9p"]:
+research/gp-10/refute/round2.py:48:    full=patterns(json.loads((UD/"data/forbidden-74.json").read_text()))
+research/gp-10/refute/round2.py:50:    known={r["g6"]:True for r in records(MODULE/"evidence/GP74.refuted.jsonl")} if a.known else {}
+research/gp-10/refute/round2.py:84:        library={r["g6"]:r for r in records(MODULE/"evidence/GP74.refuted.jsonl")}
+research/gp-10/refute/round2.py:100:    p.add_argument("--suite",choices=["stalls","B8p","B9p"],default="stalls")
+research/gp-10/refute/round2_audit.py:16: result['GP74']=checked('checker-GP74-round2',[MODULE/'evidence/GP74.combined.jsonl',*retries],0)
+research/gp-10/refute/round2_audit.py:17: for suite,limit in [('B8p',7),('B9p',8)]:
+research/gp-10/refute/audit_report.py:22:gp=(F/"gp74.g6").read_text().splitlines()
+research/gp-10/refute/audit_report.py:26:for code,edges in zip(gp,json.loads((UD/"data/forbidden-74.json").read_text())):
+research/gp-10/refute/audit_report.py:61:            if summary["suite"]=="gp74":
+research/gp-10/refute/audit_report.py:90:cli_path=E/"cli-gp74.jsonl"
+research/gp-10/refute/audit_report.py:94:assert (E/"cli-gp74.UNKNOWN.g6").read_text().splitlines()==cli_unknown
+research/gp-10/refute/audit_report.py:96:assert len((E/"cli-gp74.jsonl.timings.jsonl").read_text().splitlines())==len(gp)
+research/gp-10/refute/audit_report.py:102:            proofs[rec["g6"]]=(rec,"cli-gp74")
+research/gp-10/refute/audit_report.py:122:              for name,s in summaries.items() if s["suite"]=="gp74" and any(row["g6"]==code for row in s["rows"])]
+research/gp-10/refute/audit_report.py:125:with (E/"GP74.combined.jsonl").open("w") as out:
+research/gp-10/refute/audit_report.py:128:(E/"GP74.UNKNOWN.g6").write_text("\n".join(unknown)+("\n" if unknown else ""))
+research/gp-10/refute/audit_report.py:129:with (E/"GP74.refuted.jsonl").open("w") as out:
+research/gp-10/refute/audit_report.py:135:    sys.argv=[str(MODULE/"export_checker.py"),str(E/"GP74.combined.jsonl"),"--out-dir",str(E/"checker-sample")]
+research/gp-10/refute/audit_report.py:172: f"Implemented the requested producer and all four certificate methods. The saved control runs refute {len(proofs)} of {len(gp)} GP graphs and leave {len(unknown)} unknown ({len(unknown)/len(gp):.1%}). The all-GP coverage control is therefore NOT satisfied. No GP-10 classification claim is made, and no B10 production run was started.","",
+research/gp-10/refute/audit_report.py:187:    s=summaries["gp74-"+method]
+research/gp-10/refute/audit_report.py:193:    if s["suite"]=="gp74" and name not in {"gp74-"+m for m in method_codes}:
+research/gp-10/refute/audit_report.py:196: "All designated real-only regressions, JSON indices 4, 9, 10, 17, 18, have R-real records. Index 17 used the explicit extra saturation pair `[3,7]` in canonical labels, as recorded in `gp74-real-extra.summary.json`. This was a targeted mathematical choice, not a producer lookup keyed to that graph. Other focused cases used the default four-cycle-diagonal saturation set.","",
+research/gp-10/refute/audit_report.py:197: f"`GP74.combined.jsonl` contains exactly {len(gp)} records, choosing the smallest existing verified record when one was found. `GP74.UNKNOWN.g6` lists its {len(unknown)} unresolved graphs exactly. This union uses different budgets and is not a single default-budget producer run.","",
+research/gp-10/refute/audit_report.py:199:retry=summaries["gp74-tree-retry"]
+research/gp-10/refute/audit_report.py:217: f"The actual default CLI run used a {json.loads((E/'cli-gp74.jsonl.meta.json').read_text())['seconds']:g}-second graph budget and produced {len(cli)} records: "+", ".join(f"{n} {v}" for v,n in sorted(Counter(r['verdict'] for r in cli).items()))+f". Its unknown rate was {len(cli_unknown)/len(cli):.1%}. The UNKNOWN file was exact. Re-running the same command resumed every record without changing output bytes or duplicating timing rows. A separate CLI run with `--refuted` emitted a TU chain to a validated known tree record.","",
+research/gp-10/refute/audit_report.py:227: "research/gp-10/refute/controls.py --suite gp74 --method tree --seconds 3",
+research/gp-10/refute/audit_report.py:228: "research/gp-10/refute/controls.py --suite gp74 --method null --seconds 3",
+research/gp-10/refute/audit_report.py:229: "research/gp-10/refute/controls.py --suite gp74 --method real --seconds 3",
+research/gp-10/refute/audit_report.py:230: "research/gp-10/refute/controls.py --suite gp74 --method tree --seconds 12 --indices 16,17,18,22,38,39,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,73 --tag=-retry",
+research/gp-10/refute/audit_report.py:231: "research/gp-10/refute/controls.py --suite gp74 --method null --seconds 10 --indices 16,22,38,39,59,66,67,68,69 --all-sat --tag=-all-sat",
+research/gp-10/refute/audit_report.py:240: "research/gp-10/refute/gp10refute.py research/gp-10/refute/fixtures/gp74.g6 --out research/gp-10/refute/evidence/cli-gp74.jsonl --unknown research/gp-10/refute/evidence/cli-gp74.UNKNOWN.g6 --time-limit 3 --forbidden research/gp-10/refute/fixtures/empty.json",
+research/gp-10/refute/audit_report.py:242: "research/gp-10/refute/export_checker.py research/gp-10/refute/evidence/GP74.combined.jsonl --out-dir research/gp-10/refute/evidence/checker-sample",
+research/gp-10/refute/audit_report.py:248: "- The named unresolved graphs still prevent the required complete GP coverage control. No full B10 run, full B8/B9 pipeline control, minimality derivation, or GP-10 gate acceptance was exercised.",
+research/gp-10/refute/round3_finish.py:39: remaining=set(codes);b10=ROOT/'research/gp-10/data/B10.g6'
+research/gp-10/refute/round3_finish.py:44: assert not remaining,'candidate outside frozen B10'
+research/gp-10/embed/curve_exact.py:42:                cert,checked=isolated(convert,min(10,left()));row.update(checked)
+research/gp-10/embed/round2.py:18:SAMPLES = ('maximal', 'B9p', 'uniform500')
+research/gp-10/embed/round2.py:33:    labels = json.loads((RESULTS / 'B9p/labels.json').read_text())
+research/gp-10/embed/round2.py:40:        if sample == 'B9p': codes = [c for c in codes if labels[c] == 'F9_free']
+research/gp-10/refute/run_small_controls.py:11:jobs=[("gp74","tu",0.5)]
+research/gp-10/embed/measure.py:18:REFERENCE=Path('<scratch>/scratchpad')
+research/gp-10/embed/measure.py:19:SAMPLES=('maximal','uniform500','B9p','named')
+research/gp-10/embed/measure.py:38:    sources={'maximal':REFERENCE/'poset/maximal.g6','uniform500':DATA/'B10.g6','B9p':DATA/'B9p.g6'}
+research/gp-10/embed/measure.py:54:    forbidden=json.loads((HERE.parents[1]/'unit-distance-22/data/forbidden-74.json').read_text())
+research/gp-10/embed/measure.py:67:    for code in (RESULTS/'B9p'/'input.g6').read_text().splitlines():
+research/gp-10/embed/measure.py:79:    write_json(RESULTS/'B9p'/'labels.json',labels);write_json(RESULTS/'B9p'/'forbidden-witnesses.json',witnesses)
+research/gp-10/embed/measure.py:108:    labels=json.loads((folder/'labels.json').read_text()) if sample=='B9p' else {}
+research/gp-10/embed/measure.py:147:    if sample=='B9p':

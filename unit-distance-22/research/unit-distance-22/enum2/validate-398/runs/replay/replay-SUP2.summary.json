@@ -1,0 +1,742 @@
+{
+ "tool": "enum2/replay-398.py",
+ "tool_sha256": "d57827ea83e49baa72c241dd28cf64484f1cd92cddb14373714275d34493d35f",
+ "enum2_sha256": "d967fc9024cda647c01bca95d6d6d9e2b6b0c24539d288c0ee1ee669faffa54e",
+ "forbidden_set": "74",
+ "forbidden_sha256": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+ "run_dirs": [
+  "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46"
+ ],
+ "seed": "20260926",
+ "fraction": 0.05,
+ "min_per_shard": 2,
+ "whole_max": 40,
+ "max_per_shard": null,
+ "levels": "",
+ "host": "<host>",
+ "workers": 1,
+ "sampled_parents": 5641,
+ "processed_parents": 2849,
+ "production_children_compared": 4739,
+ "enum2_children_compared": 4739,
+ "mismatching_parents": 0,
+ "unreplayable_cells": [],
+ "seconds_per_sampled_parent": {
+  "count": 5641,
+  "mean": 0.009,
+  "median": 0.0001,
+  "p90": 0.0308,
+  "max": 0.1477,
+  "total": 50.8
+ },
+ "seconds_per_processed_parent": {
+  "count": 2849,
+  "mean": 0.0178,
+  "median": 0.0068,
+  "p90": 0.0534,
+  "max": 0.1477,
+  "total": 50.8
+ },
+ "per_level": [
+  {
+   "n": 11,
+   "cells": 5,
+   "parents": 22552,
+   "sampled": 1149,
+   "processed": 924,
+   "production_children": 3215,
+   "enum2_children": 3215,
+   "mismatches": 0,
+   "enum2_seconds": 2.84,
+   "fraction_sampled": 0.050949
+  },
+  {
+   "n": 12,
+   "cells": 5,
+   "parents": 12673,
+   "sampled": 663,
+   "processed": 373,
+   "production_children": 741,
+   "enum2_children": 741,
+   "mismatches": 0,
+   "enum2_seconds": 5.28,
+   "fraction_sampled": 0.052316
+  },
+  {
+   "n": 13,
+   "cells": 4,
+   "parents": 18622,
+   "sampled": 940,
+   "processed": 355,
+   "production_children": 242,
+   "enum2_children": 242,
+   "mismatches": 0,
+   "enum2_seconds": 3.0,
+   "fraction_sampled": 0.050478
+  },
+  {
+   "n": 14,
+   "cells": 3,
+   "parents": 4469,
+   "sampled": 242,
+   "processed": 143,
+   "production_children": 43,
+   "enum2_children": 43,
+   "mismatches": 0,
+   "enum2_seconds": 2.9,
+   "fraction_sampled": 0.054151
+  },
+  {
+   "n": 15,
+   "cells": 4,
+   "parents": 21875,
+   "sampled": 1097,
+   "processed": 656,
+   "production_children": 356,
+   "enum2_children": 356,
+   "mismatches": 0,
+   "enum2_seconds": 17.51,
+   "fraction_sampled": 0.050149
+  },
+  {
+   "n": 16,
+   "cells": 4,
+   "parents": 6690,
+   "sampled": 348,
+   "processed": 245,
+   "production_children": 128,
+   "enum2_children": 128,
+   "mismatches": 0,
+   "enum2_seconds": 11.05,
+   "fraction_sampled": 0.052018
+  },
+  {
+   "n": 17,
+   "cells": 2,
+   "parents": 4320,
+   "sampled": 216,
+   "processed": 104,
+   "production_children": 11,
+   "enum2_children": 11,
+   "mismatches": 0,
+   "enum2_seconds": 6.07,
+   "fraction_sampled": 0.05
+  },
+  {
+   "n": 18,
+   "cells": 1,
+   "parents": 19708,
+   "sampled": 986,
+   "processed": 49,
+   "production_children": 3,
+   "enum2_children": 3,
+   "mismatches": 0,
+   "enum2_seconds": 2.19,
+   "fraction_sampled": 0.05003
+  }
+ ],
+ "per_cell": [
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "11-19",
+   "n": 11,
+   "m": 19,
+   "sampled": 936,
+   "processed": 742,
+   "production_children": 2868,
+   "enum2_children": 2868,
+   "mismatches": 0,
+   "enum2_seconds": 1.67,
+   "d_values": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "parents_in_cell": 18705,
+   "strata": 2,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "11-20",
+   "n": 11,
+   "m": 20,
+   "sampled": 167,
+   "processed": 158,
+   "production_children": 327,
+   "enum2_children": 327,
+   "mismatches": 0,
+   "enum2_seconds": 0.93,
+   "d_values": [
+    1,
+    2,
+    3
+   ],
+   "parents_in_cell": 3333,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "11-21",
+   "n": 11,
+   "m": 21,
+   "sampled": 13,
+   "processed": 12,
+   "production_children": 16,
+   "enum2_children": 16,
+   "mismatches": 0,
+   "enum2_seconds": 0.12,
+   "d_values": [
+    2,
+    3
+   ],
+   "parents_in_cell": 247,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "11-22",
+   "n": 11,
+   "m": 22,
+   "sampled": 13,
+   "processed": 3,
+   "production_children": 2,
+   "enum2_children": 2,
+   "mismatches": 0,
+   "enum2_seconds": 0.02,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 247,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "11-23",
+   "n": 11,
+   "m": 23,
+   "sampled": 20,
+   "processed": 9,
+   "production_children": 2,
+   "enum2_children": 2,
+   "mismatches": 0,
+   "enum2_seconds": 0.1,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 20,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "12-23",
+   "n": 12,
+   "m": 23,
+   "sampled": 307,
+   "processed": 303,
+   "production_children": 650,
+   "enum2_children": 650,
+   "mismatches": 0,
+   "enum2_seconds": 4.59,
+   "d_values": [
+    1,
+    2,
+    3
+   ],
+   "parents_in_cell": 6127,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "12-24",
+   "n": 12,
+   "m": 24,
+   "sampled": 307,
+   "processed": 39,
+   "production_children": 82,
+   "enum2_children": 82,
+   "mismatches": 0,
+   "enum2_seconds": 0.31,
+   "d_values": [
+    2,
+    3,
+    4
+   ],
+   "parents_in_cell": 6127,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "12-25",
+   "n": 12,
+   "m": 25,
+   "sampled": 20,
+   "processed": 11,
+   "production_children": 2,
+   "enum2_children": 2,
+   "mismatches": 0,
+   "enum2_seconds": 0.07,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 390,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "12-26",
+   "n": 12,
+   "m": 26,
+   "sampled": 27,
+   "processed": 18,
+   "production_children": 6,
+   "enum2_children": 6,
+   "mismatches": 0,
+   "enum2_seconds": 0.26,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 27,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "12-27",
+   "n": 12,
+   "m": 27,
+   "sampled": 2,
+   "processed": 2,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.05,
+   "d_values": [
+    4
+   ],
+   "parents_in_cell": 2,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "13-27",
+   "n": 13,
+   "m": 27,
+   "sampled": 871,
+   "processed": 308,
+   "production_children": 233,
+   "enum2_children": 233,
+   "mismatches": 0,
+   "enum2_seconds": 2.41,
+   "d_values": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "parents_in_cell": 17405,
+   "strata": 2,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "13-28",
+   "n": 13,
+   "m": 28,
+   "sampled": 57,
+   "processed": 36,
+   "production_children": 6,
+   "enum2_children": 6,
+   "mismatches": 0,
+   "enum2_seconds": 0.32,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 1122,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "13-29",
+   "n": 13,
+   "m": 29,
+   "sampled": 5,
+   "processed": 4,
+   "production_children": 2,
+   "enum2_children": 2,
+   "mismatches": 0,
+   "enum2_seconds": 0.06,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 88,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "13-30",
+   "n": 13,
+   "m": 30,
+   "sampled": 7,
+   "processed": 7,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.21,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 7,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "14-31",
+   "n": 14,
+   "m": 31,
+   "sampled": 208,
+   "processed": 118,
+   "production_children": 41,
+   "enum2_children": 41,
+   "mismatches": 0,
+   "enum2_seconds": 2.13,
+   "d_values": [
+    2,
+    3,
+    4
+   ],
+   "parents_in_cell": 4159,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "14-32",
+   "n": 14,
+   "m": 32,
+   "sampled": 15,
+   "processed": 10,
+   "production_children": 0,
+   "enum2_children": 0,
+   "mismatches": 0,
+   "enum2_seconds": 0.24,
+   "d_values": [
+    4
+   ],
+   "parents_in_cell": 291,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "14-33",
+   "n": 14,
+   "m": 33,
+   "sampled": 19,
+   "processed": 15,
+   "production_children": 2,
+   "enum2_children": 2,
+   "mismatches": 0,
+   "enum2_seconds": 0.53,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 19,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "15-34",
+   "n": 15,
+   "m": 34,
+   "sampled": 1033,
+   "processed": 617,
+   "production_children": 349,
+   "enum2_children": 349,
+   "mismatches": 0,
+   "enum2_seconds": 16.17,
+   "d_values": [
+    2,
+    3,
+    4
+   ],
+   "parents_in_cell": 20654,
+   "strata": 3,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "15-35",
+   "n": 15,
+   "m": 35,
+   "sampled": 59,
+   "processed": 36,
+   "production_children": 6,
+   "enum2_children": 6,
+   "mismatches": 0,
+   "enum2_seconds": 1.12,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 1162,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "15-36",
+   "n": 15,
+   "m": 36,
+   "sampled": 3,
+   "processed": 1,
+   "production_children": 0,
+   "enum2_children": 0,
+   "mismatches": 0,
+   "enum2_seconds": 0.08,
+   "d_values": [
+    4
+   ],
+   "parents_in_cell": 57,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "15-37",
+   "n": 15,
+   "m": 37,
+   "sampled": 2,
+   "processed": 2,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.14,
+   "d_values": [
+    4
+   ],
+   "parents_in_cell": 2,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "16-38",
+   "n": 16,
+   "m": 38,
+   "sampled": 308,
+   "processed": 232,
+   "production_children": 120,
+   "enum2_children": 120,
+   "mismatches": 0,
+   "enum2_seconds": 10.31,
+   "d_values": [
+    2,
+    3,
+    4
+   ],
+   "parents_in_cell": 6150,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "16-39",
+   "n": 16,
+   "m": 39,
+   "sampled": 14,
+   "processed": 11,
+   "production_children": 7,
+   "enum2_children": 7,
+   "mismatches": 0,
+   "enum2_seconds": 0.66,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 264,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "16-40",
+   "n": 16,
+   "m": 40,
+   "sampled": 14,
+   "processed": 0,
+   "production_children": 0,
+   "enum2_children": 0,
+   "mismatches": 0,
+   "enum2_seconds": 0.0,
+   "d_values": [
+    5
+   ],
+   "parents_in_cell": 264,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "16-41",
+   "n": 16,
+   "m": 41,
+   "sampled": 12,
+   "processed": 2,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.08,
+   "d_values": [
+    4,
+    5
+   ],
+   "parents_in_cell": 12,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "17-42",
+   "n": 17,
+   "m": 42,
+   "sampled": 108,
+   "processed": 97,
+   "production_children": 7,
+   "enum2_children": 7,
+   "mismatches": 0,
+   "enum2_seconds": 5.79,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 2160,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "17-43",
+   "n": 17,
+   "m": 43,
+   "sampled": 108,
+   "processed": 7,
+   "production_children": 4,
+   "enum2_children": 4,
+   "mismatches": 0,
+   "enum2_seconds": 0.28,
+   "d_values": [
+    3,
+    4,
+    5
+   ],
+   "parents_in_cell": 2160,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<repo>/.claude/worktrees/agent-a9506bda1b6756f86/research/unit-distance-22/enum/out-sup/dag-18-46",
+   "cell": "18-46",
+   "n": 18,
+   "m": 46,
+   "sampled": 986,
+   "processed": 49,
+   "production_children": 3,
+   "enum2_children": 3,
+   "mismatches": 0,
+   "enum2_seconds": 2.19,
+   "d_values": [
+    3,
+    4,
+    5
+   ],
+   "parents_in_cell": 19708,
+   "strata": 2,
+   "stratum": "shards"
+  }
+ ],
+ "seeds": [],
+ "wall_seconds": 93.2,
+ "all_identical": true,
+ "stages": [],
+ "stages_checked": 0,
+ "stages_ok": true,
+ "red_controls": [
+  {
+   "id": "R1",
+   "control": "mutated parent (edge 0-1 flipped, re-canonicalised) against the original production block",
+   "cell": "11-19",
+   "index": 1769,
+   "block_size": 2,
+   "baseline_identical": true,
+   "mutated": "I??@W}w\\?",
+   "only_production": 2,
+   "only_enum2": 0,
+   "went_red": true
+  },
+  {
+   "id": "R2",
+   "control": "one record dropped from the production block",
+   "cell": "11-19",
+   "index": 1769,
+   "block_size": 2,
+   "baseline_identical": true,
+   "only_enum2": 1,
+   "went_red": true
+  },
+  {
+   "id": "R4",
+   "control": "enum2's children of parent i against the block of parent i+1",
+   "cell": "11-19",
+   "index": 1769,
+   "block_size": 2,
+   "baseline_identical": true,
+   "next_block_size": 1,
+   "went_red": true
+  },
+  {
+   "id": "R5a",
+   "control": "one production record replaced by a neighbouring child (another parent's)",
+   "cell": "11-19",
+   "index": 1769,
+   "block_size": 2,
+   "baseline_identical": true,
+   "wrong_equal_count_check": "PASS",
+   "set_check": "FAIL",
+   "went_red": true
+  },
+  {
+   "id": "R5b",
+   "control": "enum2's children minus one record",
+   "cell": "11-19",
+   "index": 1769,
+   "block_size": 2,
+   "baseline_identical": true,
+   "wrong_subset_check": "PASS",
+   "set_check": "FAIL",
+   "went_red": true
+  }
+ ],
+ "red_all": true
+}

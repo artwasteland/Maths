@@ -1,0 +1,449 @@
+GP-11 lean assembly report
+2026-10-01, <repo>
+
+The following is the retained round-1 report. Its source line numbers and
+source hashes refer to that checkpoint. The round-2 extension is below it.
+
+Added files
+  research/gp-11/tools/lean_assemble11.py
+  research/gp-11/tools/test_lean_assemble11.py
+  research/gp-11/tools/lean_assemble11_REPORT.txt
+  research/gp-11/tools/lean_assemble11_VALIDATION.json
+
+Only new files were written in the repository. No git command was run.
+The validation JSON is the command register for this report: every test child
+has its exact shell command, exit code, output tail, wall time and peak RSS.
+Checker entries additionally retain the actual report counts and receipt hashes.
+Full generated runs and logs remain under the /tmp directories named there.
+
+Frozen checker findings
+  research/gp-10/check/gp10check.py:836-841 rejects a second record for a graph:
+  duplicate_record for agreement, embedded_refuted_conflict for disagreement.
+  The assembler collapses agreeing alternatives and aborts on disagreement,
+  naming the graph, both seed paths and both physical line numbers. This scan
+  includes outside-input claims and precedes certificate-shape filtering.
+
+  gp10check.py:38-42,124-143,739-743,821-859 loads at most 128 records / 8 MiB
+  raw per chunk, releases decoded certificates, and stores state in SQLite with
+  an 8 MiB cache. Its per-line cap is 8,388,608 bytes INCLUDING the newline.
+  Oversized lines are drained in bounded pieces, skipped once, and hashed as
+  consumed seed bytes. Unparseable records and malformed headers are counted
+  as skipped lines, not mathematical claims.
+
+  Complete graph-dependency inventory from Checker.verify():
+    gp10check.py:536-544  embedded super -> cert.g6, required embedded.
+    gp10check.py:557-566  refuted sub WITHOUT index -> cert.g6, required refuted.
+    gp10check.py:583-593  refuted tu with end.refuted -> that graph, refuted.
+  There is at most one graph dependency per record. Indexed sub (562-565) and
+  TU end.forbidden (585-588) use the in-force forbidden library, not records.
+  Unknown (529-533), exact (537-538), tree (545-552), null/real (553-554), and
+  null-dag/real-dag (555-556) have no graph-record dependency. Algebraic DAG
+  row references are internal to one certificate. Unknown types fail closed.
+
+  gp10check.py:867-894 uses an on-disk topological queue. Missing targets give
+  pointer_target_missing. A target must have status ACCEPT AND the same verdict
+  (883-886), not merely claim it. Residual cycles give pointer_cycle (890-892).
+  This tool checks only structural prerequisites. It never verifies or promises
+  target acceptance; the frozen checker remains responsible for every proof.
+
+  gp10check.py:813-816,844-846 permits outside-input records only in the separate
+  hosts stream, and only embedded exact certificates, with no input overlap.
+  Coverage at 896-905 requires non-host records to equal INPUT exactly, including
+  unknown records. unknowns() at 907-919 requires the exact sorted UNKNOWN list.
+  The B11 wrapper inherits these methods and calls them unchanged at
+  research/gp-11/check/gp11check.py:176,253-257. Sample runs delegate at 181-191.
+
+Outside-input result
+  The real bundles have four ten-vertex refuted support graphs outside the
+  requested input: I@?kQfK{O, Ig?oGuI]G, IgCWSLaKW, Im?hS?RBW.
+  Their direct refutations CANNOT be carried as B11 hosts. Adding them as normal
+  records would violate coverage. The tool preserves the requested input and
+  omits the four dependent TU decisions when no eligible alternative exists:
+    J@?_iVGbF__ -> Ig?oGuI]G
+    J@CIHEDuFB? -> I@?kQfK{O
+    Jk?AkoLHHS_ -> Im?hS?RBW
+    Jq?AXY`DGs_ -> IgCWSLaKW
+  Both priority orders therefore have 1,979 embedded, 15 refuted and 6 UNKNOWN,
+  with zero hosts. Four UNKNOWNs are this coverage incompatibility; two remain
+  unresolved across the seeds. Bundle replay had enlarged its own sample input
+  to include support graphs. A frozen B11 run cannot do that.
+  Needed outside exact embeddings go in hosts.jsonl. Outside embedding pointers
+  cannot be hosts either; an exact alternative is needed. Unused hosts are omitted.
+
+Design and use
+  Priority is SEED order, then physical file order; unknown never wins. Gzip
+  streams are decoded once. An immutable scratch spool holds admitted candidate
+  bytes, with alternative offsets in SQLite and compact graph metadata in RAM.
+  Original compressed seed bytes are SHA-256 hashed below decompression, including
+  skipped lines. Bundle summary.json is never read. One file handle is consumed
+  at a time. Scratch disk can grow to the total admitted candidate bytes; use
+  --scratch to choose its parent. No symbolic algebra or producer is imported.
+
+  Reverse reachability from direct records finds every graph with a structurally
+  grounded alternative. Choose its earliest usable record. Detect selected cycles
+  iteratively. For each cycle, try members in input order and alternatives in seed
+  order, searching for a simple path to a root that avoids the cycle. Apply the
+  whole escape path only after finding it. This also handles alternatives whose
+  targets need replacement. Unrooted cycles and their dependents become UNKNOWN.
+  The repair stack contains IDs, not live SQLite cursors. Events stream from SQLite
+  into assembly.json. Its unresolved events describe seed selection before any
+  optional propagation, which can subsequently decide such a graph.
+
+  --propagate is opt-in; --no-propagate explicitly disables it. It reads and hashes
+  the pipeline index's 19-byte parent/child/11-label rows and both adjacency
+  directions, without importing the pipeline. Format/map orientation:
+  research/gp-11/pipeline/poset.py:7,32-37,70-78. Embedded records propagate down
+  via super; refuted records propagate up via sub. New pointers refer to already
+  selected records. Propagation stays within INPUT, using exact outside hosts
+  where available. It does not traverse through new outside-input pointer records.
+  Both directions and their actual maps were tested with the frozen checker.
+
+  records.jsonl contains selected decisions in INPUT order. UNKNOWN.g6 contains
+  the complement in INPUT order. unknown-records.jsonl supplies explicit unknown
+  records with assembly-only budgets; hosts.jsonl contains needed exact hosts.
+  All four files exist even when empty. assembly.json includes input and seed
+  hashes, counts by verdict/source, skip reasons, replacements, broken cycles,
+  unresolved dependencies, payload hashes, and these required manifest fields:
+    "records": ["records.jsonl", "unknown-records.jsonl"],
+    "hosts": "hosts.jsonl", "unknown": "UNKNOWN.g6"
+  Its run_fields also supplies input and input_sha256. The caller adds profile,
+  controls and predictions. A manifest's own digest cannot be stored inside its
+  own bytes; assembly.json.sha256 hashes assembly.json. The checksum receipt
+  itself is not recursively self-hashed. All certificate/list outputs are hashed.
+  Output is staged and published only on success, into a new or empty directory.
+
+  --check re-reads the physical streams, checks uniqueness, input order, exact-only
+  hosts, dependency presence/verdict, cycles, line limits, and both UNKNOWN files.
+  It does not trust reported counts or check geometry, canonical labels, maps or
+  algebra. It prints STRUCTURE OK / STRUCTURE ERROR, never checker verdict lines.
+  --input defaults to frozen B11.g6 in BOTH modes; specify it for sample checks.
+
+  GP-10 precedent was read first. research/gp-10/tools/lean_assemble.py:1-12 states
+  offset-only first-record assembly plus cover propagation. LABNOTES.md:82-91
+  records comparison to the driver: zero verdict differences over 33,162 graphs,
+  identical UNKNOWN, but 1,183 different pointer neighbours. This implementation
+  adds contradiction detection, support eligibility and alternative/cycle repair.
+  It does not claim driver equivalence. pipeline/REPORT.txt:198-212 explains the
+  measured serial coordinator cost of 60.39 machine-hours at B11 scale.
+
+Validation
+  Exact commands and tails for every invocation are in lean_assemble11_VALIDATION.json.
+  All heavy commands used nice -n 10, the pinned Python, SYMPY_GROUND_TYPES=python,
+  and tools/guard.py. The guard applies a stricter 1,024,000,000-byte address-space
+  ceiling, single-thread settings and the 1.5 GiB global available-memory floor.
+  /usr/bin/time measures the child command, not the harness's half-second polling.
+
+  Positive: the actual 2,000-graph input, four probe shards plus desktop, in both
+  priority orders. Input is unchanged. File lines and verdicts are independently
+  counted; the frozen GP-11 wrapper's sample replay must print ACCEPT run verified
+  and report those exact counts, zero direct rejections and conditional=true.
+  No seed summary counts are used. Per-record byte hashes additionally establish
+  first-decided priority and independently derive each selected source's counts.
+
+  Red 1: second disagreeing decided claim. Exit 2, contradiction with both sources,
+  no published output. Red 2: real TU/sub cross-seed cycle. Raw replay fails at
+  pointer_cycle; no-anchor assembly omits both graphs; later direct alternatives
+  repair it with one replacement. Both repaired/UNKNOWN runs replay successfully.
+  Red 3: real TU target absent everywhere. Raw replay fails pointer_target_missing;
+  the dependent record is omitted and the partial result replays. Red 4: valid JSON
+  padded to cap+1. Raw replay fails record_limit; assembly counts one skipped line
+  and retains the next physical record. After EACH red, the unchanged real input
+  is assembled afresh and replays with two refuted, zero unknown graphs.
+
+  Additional controls: actual sub-index leaf; actual exact outside host; forbidden
+  outside refutation; both cover directions; same-verdict priority; wrong-verdict
+  fallback; escape through alternatives outside a cycle; a 4,096-graph repair fixture;
+  64 deterministic small candidate graphs against an exhaustive simple-path oracle;
+  gzip checksums; malformed JSON, duplicate keys, NaN, blank/unterminated records;
+  exact-cap inclusion; recovery after multiple-cap oversized lines; structural
+  mutations for duplicates, missing/wrong targets, cycles, ordering, both UNKNOWN
+  streams and oversized output. The structural fixtures have no proof bodies and
+  are never passed to the checker.
+
+  Scale uses all 448,708 real B11 graph strings with synthetic certificate tags
+  and dependencies only: two long chains, 224,354 embedded, 219,867 refuted and
+  4,487 UNKNOWN. No proof checker is run on this artificial data.
+
+  Measured commands (wall seconds, peak RSS KiB):
+    probe-first assembly                0.90       27436
+    probe-first structural check        0.29       23972
+    probe-first frozen replay         534.98       95984
+    desktop-first assembly              1.97       26772
+    desktop-first structural check      0.49       24384
+    desktop-first frozen replay       701.97       95704
+    448,708-graph assembly              88.45      122532
+    448,708-graph structural check      31.20      107344
+  Scale peaks are 119.7 MiB and 104.8 MiB, well below 1 GB. The largest measured
+  child command across all tests used 122,532 KiB. Timings reflect this shared
+  desktop under the required niceness; they are not production I/O projections.
+
+  Exact full-suite launch, from the repository root:
+    nice -n 10 <repo>/pyenv-gp10/bin/python -B research/gp-11/tools/guard.py -- <repo>/pyenv-gp10/bin/python -B research/gp-11/tools/test_lean_assemble11.py --suite all --output /tmp/gp11-lean11-validation-v1 --index /tmp/gp11-index
+  Actual final output tail:
+    PASS scale 448708 graphs; synthetic certificates were not sent to the checker
+    PASS suite=all commands=82 results=/tmp/gp11-lean11-validation-v1/results.json
+    RESOURCE min_MemAvailable_kib=3465700 exit=0
+
+  The cycle escape stack was hardened while that run was in progress. The final
+  unit suite passed 30 commands plus the 64 in-process oracle cases. The final
+  red suite passed 37 commands, including all four fresh real positive replays.
+  A final priority suite passed four commands: both reassemblies match every
+  payload hash from the successful frozen replays, and the checker stream
+  receipts are rehashed. Its per-record hashes also confirm first-decided source
+  priority. Final reassemblies took 1.70 s / 27,404 KiB and 2.13 s / 26,684 KiB.
+  The scale measurement used the final assembler. Exact commands, actual tails,
+  source hashes and frozen reports for all 153 child invocations are retained in
+  lean_assemble11_VALIDATION.json. Use a fresh output directory when repeating.
+
+  Own-rule red tails in the final run, with complete commands in that register:
+    red1-contradiction: ASSEMBLY ERROR contradiction J??@gzGx@r?: refuted at
+      seed[0] /tmp/gp11-lean11-red-final/red-original.jsonl:1; embedded at
+      seed[1] /tmp/gp11-lean11-red-final/disagreeing.jsonl:1
+    red2-raw-cycle-checker: REJECT record J??@gzGx@r? pointer_cycle
+      REJECT record J?GHe_MpHm? pointer_cycle
+      REJECT run records_rejected
+    red3-raw-missing-checker: REJECT record J??@gzGx@r? pointer_target_missing
+      REJECT run records_rejected
+    red4-raw-limit-checker: REJECT run record_limit
+  Each corresponding redN-positive-after-checker ended ACCEPT run verified and
+  reported {"embedded":0,"refuted":2,"unknown":0}, direct_rejections=0.
+  Both full sample replays ended ACCEPT run verified and reported
+  {"embedded":1979,"refuted":15,"unknown":6}, direct_rejections=0,
+  conditional=true. All expected tool errors exit 2; raw checker reds exit 1.
+
+Limits
+  No full B11 proof run, controls replay, minimality derivation or G3 claim was
+  attempted. Sample success is conditional and is not a classification. Complete
+  final certificate checking, mathematical acceptance, index maps and canonicality
+  remain obligations of the frozen checker. Scale measures structural workloads,
+  not the I/O volume of an actual population certificate corpus.
+
+Round 2: opt-in outside endpoint rewriting
+
+Scope and changes
+  Only the same four files above were changed. No git command was run. Frozen
+  checkers, pipeline files, seeds and live state were not edited. Tests and
+  generated artifacts are new files below /tmp. The round-1 evidence is retained
+  in lean_assemble11_VALIDATION.json; round2 contains the new command register.
+
+  lean_assemble11.py:259 adds OutsideEnds; :293 bounds and caches containment
+  search; :343 composes the two allowed endpoint maps. :491 reads live state
+  using SQLite URI mode=ro, query_only and a read transaction. :593 rewrites
+  candidates after all seed verdicts have been scanned. :693 computes the
+  original and rewritten dependency reachability. :778 streams outputs and
+  rewrite receipts. :971 adds --rewrite-outside-ends and --forbidden-limit.
+  test_lean_assemble11.py:205 adds suite rewrite; :325 adds the live-append
+  snapshot fixture; :368 adds suite population. Tests inspect physical records,
+  dependency metadata and frozen checker results, not seed summary totals.
+
+Frozen profile and label facts
+  research/gp-11/check/gp11check.py:125-138 constructs exactly F10: the original
+  74 patterns followed by 324 ten-vertex patterns in forbidden-398.json order.
+  The stored graph is Graph(1 + max vertex, stored edges). It obtains canonical
+  graph6 codes using the frozen base.canonical_many / nauty-labelg, not a new
+  canonicalizer. :222 fixes the B11 forbidden limit to 10; :236 uses Checker(10).
+  The forbidden data hash is
+    8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c.
+
+  research/gp-10/check/gp10check.py:517-522 enforces each index and order limit.
+  :557-566 requires an indexed sub pointer's g6 to equal forbidden_codes[idx]
+  and maps from decode(cert.g6), hence CANONICAL labels. :583-588 maps a TU
+  forbidden end from in_force(idx), hence STORED labels. :212-220 checks map
+  length, range, injectivity and preservation of every source edge.
+  research/gp-11/check/FORMAT.md:7-8 explicitly states the label distinction.
+
+  Legacy sample cannot accept these ten-vertex F10 rewrites. The wrapper
+  delegates sample to GP-10 at gp11check.py:181-192. gp10check.py:509 rejects a
+  limit above 9 and :511 loads only forbidden-74.json. This is a format limit,
+  not an assembler exception. A literal sample run on exactly the 2,000 graphs
+  with limit 10 was run and rejected at forbidden_limit. A four-record sample
+  with limit 9 was separately rejected at forbidden_not_in_force.
+
+  The supported subset replay is fixture11, limit 10, derive false, exactly
+  the 2,000 original input codes, no hosts field and no outside support records.
+  At gp11check.py:245-257 it uses the same load_input, load_records, resolve,
+  coverage and unknowns methods as B11. coverage is the exact equality of
+  non-host records and input at gp10check.py:896-905. Refuted supports cannot
+  be hosts because :844-846 requires exact embedded records. fixture11 scope
+  is fixture-only (:239-240). It does not run B11's full-input, provenance,
+  controls or minimality gates and is not a B11 classification result.
+
+Rewrite design
+  Only an unindexed refuted sub pointer or a refuted TU end.refuted with an
+  outside target that has a refuted seed claim is eligible. Unknown, embedded,
+  indexed, direct and inside-input records retain their original bytes.
+  Alternatives keep their original candidate IDs and seed/file priority.
+  Each distinct D is searched once. Necessary vertex, edge and sorted-degree
+  filters skip impossible patterns without reordering F10. VF2 visits sorted
+  labels/edges. The FIRST matching original index wins. Search is limited to
+  2,000,000 feasibility attempts per D, order 64 and 10,000 cached targets.
+  A bound is reported as a bound, never as a claim that D is F10-free.
+
+  For TU the new map is m[phi[j]] in stored pattern order. For indexed sub the
+  checker supplies the canonical code; an exact isomorphism from that decoded
+  canonical graph to the stored pattern recovers the label correspondence.
+  The checker exposes no nauty permutation. This is not another canonicalizer:
+  any isomorphism to the frozen canonical graph differs only by an automorphism
+  and gives an equally valid edge map. The map is m[phi[canonical_to_stored[j]]].
+  The sub fixture deliberately uses F10 index 2, whose stored/canonical labels
+  differ, and the frozen checker judges the resulting pointer.
+
+  in_force(idx) is called before replacement; an unavailable index aborts before
+  output publication. No match prints REWRITE UNRESOLVED, records the reason,
+  and leaves the original unresolved dependency for the existing selection
+  logic. The graph stays UNKNOWN unless another usable candidate exists.
+  assembly.json records graph, D, idx, phi, rule, source, candidate ID, original
+  and rewritten line SHA-256 (newline included), and whether it was selected.
+  Indexed sub receipts also include the canonical code and label conversion.
+  All candidate rewrites are recorded, including unused agreeing alternatives.
+  Outside refuted support records remain omitted. --check is still structural.
+
+Live-state snapshot and memory
+  The state directory is accepted as a positional SEED. accepted JOIN blobs
+  metadata is copied under one read transaction into scratch SQLite and an
+  output seed-0-snapshot.jsonl. The transaction then closes before containment
+  search. No Store object, writer lock, database backup or checkpoint is used.
+  The original certificates.jsonl is opened rb. Each accepted row is checked
+  against its stored g6/verdict/dep, blob size and SHA; selected blobs are read
+  again and rehashed when written. Original certificate bytes never enter the
+  scratch spool; only rewritten lines do. A fixture appends a committed record
+  after capture and proves it is excluded while the original output still
+  passes the frozen checker. The fixture also asserts an empty initial spool.
+
+  State receipts contain the logical metadata SHA, capture time, max seq, row
+  count, origins, and SHA of the committed certificate prefix [0, bytes).
+  Appends beyond that prefix are permitted. No whole-file hash is claimed for
+  the changing live SQLite/WAL files. The metadata sidecar is an output file
+  with its own hash. All other output hashes and the detached assembly.json
+  checksum follow round 1. Per-graph state remains IDs, verdicts, dependencies
+  and offsets; certificates are not held in an in-memory population list.
+
+Commands, outcomes and measured results
+  Every exact child command, exit code, output tail, relevant rejection lines,
+  log hash, wall time and peak RSS is in lean_assemble11_VALIDATION.json under
+  round2.runs. This includes all unit and red regression commands, not just the
+  new rewrite checks. Frozen reports and consumed-file hashes are retained
+  where the report still exists at its run path. Later positive replays of a
+  reused fixture are not attributed to earlier rejected runs.
+
+  Top-level invocations, from <repo>, were:
+    nice -n 10 <repo>/pyenv-gp10/bin/python -B research/gp-11/tools/guard.py -- /usr/bin/time -f 'wall_seconds=%e peak_rss_kib=%M' -o /tmp/gp11-lean11-rewrite-v3.time <repo>/pyenv-gp10/bin/python -B research/gp-11/tools/test_lean_assemble11.py --suite rewrite --output /tmp/gp11-lean11-rewrite-v3 > /tmp/gp11-lean11-rewrite-v3.log 2>&1
+    nice -n 10 <repo>/pyenv-gp10/bin/python -B research/gp-11/tools/guard.py -- /usr/bin/time -f 'wall_seconds=%e peak_rss_kib=%M' -o /tmp/gp11-lean11-population-v2.time <repo>/pyenv-gp10/bin/python -B research/gp-11/tools/test_lean_assemble11.py --suite population --output /tmp/gp11-lean11-population-v2 > /tmp/gp11-lean11-population-v2.log 2>&1
+    nice -n 10 <repo>/pyenv-gp10/bin/python -B research/gp-11/tools/guard.py -- /usr/bin/time -f 'wall_seconds=%e peak_rss_kib=%M' -o /tmp/gp11-lean11-unit-v2.time <repo>/pyenv-gp10/bin/python -B research/gp-11/tools/test_lean_assemble11.py --suite unit --output /tmp/gp11-lean11-unit-v2 > /tmp/gp11-lean11-unit-v2.log 2>&1
+    nice -n 10 <repo>/pyenv-gp10/bin/python -B research/gp-11/tools/guard.py -- /usr/bin/time -f 'wall_seconds=%e peak_rss_kib=%M' -o /tmp/gp11-lean11-red-v2.time <repo>/pyenv-gp10/bin/python -B research/gp-11/tools/test_lean_assemble11.py --suite red --output /tmp/gp11-lean11-red-v2 > /tmp/gp11-lean11-red-v2.log 2>&1
+  Guard sets SYMPY_GROUND_TYPES=python, single-threaded numerical libraries,
+  niceness and its address-space and available-memory limits for every child.
+
+  New controls, with command-register labels and actual distinguishing output:
+    rewrite-four-checker:
+      ACCEPT run verified; counts embedded=0 refuted=4 unknown=0, hosts=0.
+      The four real TU records now use indices 307, 133, 342 and 314 respectively:
+      J@?_iVGbF__, J@CIHEDuFB?, Jk?AkoLHHS_, Jq?AXY`DGs_.
+    rewrite-map-red-checker:
+      REJECT record J@?_iVGbF__ map_not_injective: TU forbidden end
+      REJECT run records_rejected
+      One map entry was replaced by the next entry. Exactly one direct rejection.
+      rewrite-map-real-after: ACCEPT run verified, refuted=4 unknown=0.
+    rewrite-limit-red:
+      ASSEMBLY ERROR rewrite_forbidden_not_in_force: D=Ig?oGuI]G idx=307 limit=9
+      Exit 2; output directory absent. No rewritten output was published.
+      rewrite-limit-real-after: ACCEPT run verified, refuted=4 unknown=0.
+    rewrite-empty-red:
+      REWRITE UNRESOLVED ... D=I???????? reason=rewrite_no_F10_member
+      ASSEMBLY WRITTEN ... refuted=0 unknown=1 rewrite_failures=1
+      The false support describes ten isolated vertices. It and its dependent
+      are absent from records.jsonl; UNKNOWN contains precisely the dependent.
+      rewrite-empty-unknown-checker: ACCEPT run verified, refuted=0 unknown=1.
+      rewrite-empty-real-after: ACCEPT run verified, refuted=4 unknown=0.
+    rewrite-sub-checker:
+      ACCEPT run verified; refuted=1 unknown=0 hosts=0.
+      Stored-label pattern index 2, canonical code EqLw, conversion [5,1,4,2,3,0].
+    rewrite-state-snapshot-checker:
+      ACCEPT run verified; refuted=4 unknown=0 hosts=0. Late append excluded.
+    rewrite-legacy-index-red:
+      REJECT record Jq?AXY`DGs_ forbidden_not_in_force: 314
+      REJECT run records_rejected
+      rewrite-legacy-real-after: ACCEPT run verified under fixture11.
+    rewrite-2000-legacy-limit-red:
+      REJECT run forbidden_limit
+      The immediate subsequent fixture11 replay uses the same exact 2,000 input.
+
+  Priority replays, each with exactly 2,000 inputs and no hosts in the manifest:
+    Probe first: ACCEPT run verified; embedded=1979 refuted=19 unknown=2.
+    Desktop first: ACCEPT run verified; embedded=1979 refuted=19 unknown=2.
+  Both assemblies independently count those verdicts from their written lines.
+  They record eight candidate rewrites, four selected. The other four are
+  agreeing alternatives. The tests compare unchanged selected bytes with the
+  first decided source and compare each rewritten line with its receipt hashes.
+  The two remaining unknowns make each fixture result conditional.
+
+  Timings (wall seconds, peak RSS KiB):
+    probe-first assembly       5.54       55,144
+    probe-first structural     0.16       24,916
+    probe-first checker      372.20       98,140
+    desktop-first assembly     8.16       55,152
+    desktop-first structural   0.26       25,588
+    desktop-first checker    338.67       98,080
+    population assembly     516.96      170,836
+    population --check       19.79      113,180
+    population whole suite  547.10      182,820
+    regression unit suite    25.52       79,780
+    regression red suite     31.86       79,964
+  No command approached 1.5 GB. The largest measured figure above is under
+  179 MiB, including the population test harness's independent metadata audit.
+
+Population result, structural only
+  The fixed snapshot completed capture at 2026-10-01T02:08:45Z, with max seq and
+  accepted row count both 434,978. Metadata capture took 13.891 seconds. Of these,
+  179 outside refuted rows had origin gp10_endpoint; none was written as support.
+  The immutable certificate prefix was 373,148,198 bytes, SHA-256
+    7900da58ba693b3cae04492bcc016d10d83124a0aeb798ddf9c088fb886e70e4.
+  Metadata SHA-256:
+    a1289576b657930063bc16a35eba339e151d62d6b2ce55104f9c946da4fddcbb.
+
+  All 807 TU dependencies on 179 distinct outside graphs were rewritten and
+  selected, with zero failures or search-bound hits. The chosen indices span
+  82 through 396, all in force at limit 10. There were 628 cache hits, 27,283
+  patterns excluded by necessary prefilters, 16,299 VF2 searches and 67,836,938
+  feasibility attempts in total. The support certificate file was read in place.
+
+  Without rewriting, the same snapshot's dependency reachability gives
+    embedded 431,476; refuted 2,205; UNKNOWN 15,027.
+  With rewriting, actual output records and UNKNOWN lines give
+    embedded 431,476; refuted 3,323; UNKNOWN 13,909; hosts 0.
+  Thus 1,118 decisions were restored: 807 direct dependents and 311 downstream
+  dependents. The test independently derives the lost dependency closure from
+  the saved state metadata, without consulting assembler reachability or maps.
+  Actual tail:
+    STRUCTURE OK {"embedded":431476,"hosts":0,"input":448708,"refuted":3323,"seconds":19.689,"unknown":13909}
+    PASS suite=population commands=2 results=/tmp/gp11-lean11-population-v2/results.json
+  Outputs and all 807 rewrite receipts are in
+    /tmp/gp11-lean11-population-v2/population/.
+  This snapshot predates later live-writer progress. No population certificate
+  was sent to the proof checker, as requested.
+
+Regression and development record
+  The updated tool passes the original unit suite (30 commands plus its 64
+  in-process independent reachability oracles) and original red suite (37
+  commands). Every original red is followed by a fresh frozen positive replay.
+  The new rewrite suite passes 25 commands and the population suite passes two:
+    PASS suite=rewrite commands=25 results=/tmp/gp11-lean11-rewrite-v3/results.json
+    PASS suite=unit commands=30 results=/tmp/gp11-lean11-unit-v2/results.json
+    PASS suite=red commands=37 results=/tmp/gp11-lean11-red-v2/results.json
+  There are 94 successful-suite child commands in the round-2 register, with
+  expected rejections counted as passing red controls.
+  Original no-rewrite behavior and cycle/alternative selection remain covered.
+  The first rewrite-suite attempt stopped at a fixture assertion: the selected
+  ten-vertex example already had canonical stored labels. It was replaced by
+  the frozen index-2 example to actually exercise a nonidentity conversion.
+  That development run, and the preliminary desktop-only assembly smoke test,
+  are retained separately in the validation JSON. No producer map was validated
+  by asserting the producer's own monomorphism search succeeds on it.
+
+Not done or limited
+  A legacy sample ACCEPT with these F10 indices is impossible under the frozen
+  interface. The supported fixture11 replay is explicitly distinguished above.
+  Full B11 controls, F10 provenance replay, full-population proof checking,
+  minimality and publication were not attempted. The final B11 checker remains
+  the only judge of a population proof. Search bounds can conservatively leave
+  future inputs UNKNOWN; every such case is reported rather than silently used.

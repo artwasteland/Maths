@@ -1,0 +1,33 @@
+networkx 3.7; L10.g6 sha256 a899e36cec0f135f253e0c9942d2fecd29280da44189a01d00752e8a5af971b8
+unmutated input: 0 failures (must be 0)
+mutation [one edge of entry 200 moved]: RED as required; failing checks ['C4 last-324', 'C7 antichain', 'C8 patterns', 'C9 hashes']
+    C4 last-324: JSON entry 200 is not the graph6 labelling of L10 line 126 (IG_PIqM{O)
+    C7 antichain: entry 1 is a subgraph of entry 200
+    C8 patterns: size distribution {2: 252, 3: 2472, 4: 921, 5: 192, 6: 34, 7: 4} total 3875
+mutation [entries 100 and 101 swapped]: RED as required; failing checks ['C4 last-324', 'C9 hashes']
+    C4 last-324: JSON entry 100 is not the graph6 labelling of L10 line 26 (I?Ee@liV?)
+    C4 last-324: JSON entry 101 is not the graph6 labelling of L10 line 27 (I?ErSPPwW)
+    C9 hashes: forbidden-398.json sha256 a1baf4d9e23dd65f602f3faa12a2ae24d97d3332809e56e02f122340d83ffd97 != pinned 8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c
+mutation [an edge dropped from entry 5 (of the 74)]: RED as required; failing checks ['C3 first-74', 'C5 composition', 'C7 antichain', 'C8 patterns', 'C9 hashes']
+    C3 first-74: JSON entry 5 differs from forbidden-74.json entry 5
+    C3 first-74: JSON entry 5 is not isomorphic to g6 line 5
+    C5 composition: 74-part composition {(4, 6): 1, (5, 6): 1, (6, 9): 1, (7, 10): 2, (7, 11): 1, (8, 12): 3, (8, 13): 10, (9, 13): 2, (9, 14): 19, (9, 15): 34}
+mutation [g6 lines 80 and 81 swapped]: RED as required; failing checks ['C4 last-324', 'C9 hashes']
+    C4 last-324: g6 line 80 is not L10 line 6
+    C4 last-324: g6 line 81 is not L10 line 7
+    C9 hashes: forbidden-398.g6 sha256 0ab993ecda4e7af10aac81bf8d6df9f755c04e059d2cd5237a9d2468cf9256cc != pinned 91d5810c4d7b02d97afec7dfe2a2a5629f2075439100aa8eae6b60dca4ff4381
+mutation [entry 301 replaced by a relabelled copy of entry 300]: RED as required; failing checks ['C4 last-324', 'C5 composition', 'C6 non-isomorphic', 'C8 patterns', 'C9 hashes']
+    C4 last-324: JSON entry 301 is not the graph6 labelling of L10 line 227 (Ibb?P?NKw)
+    C5 composition: 324-part composition {(10, 16): 127, (10, 15): 4, (10, 17): 190, (10, 18): 3}
+    C6 non-isomorphic: entries 300 and 301 are isomorphic
+mutation [entry 74 replaced by entry 80 plus one edge]: RED as required; failing checks ['C4 last-324', 'C7 antichain', 'C8 patterns', 'C9 hashes']
+    C4 last-324: JSON entry 74 is not the graph6 labelling of L10 line 0 (I??OzIJ}?)
+    C7 antichain: entry 3 is a subgraph of entry 74
+    C7 antichain: entry 80 is a subgraph of entry 74
+mutation [an edge added to entry 250]: RED as required; failing checks ['C4 last-324', 'C5 composition', 'C7 antichain', 'C8 patterns', 'C9 hashes']
+    C4 last-324: JSON entry 250 is not the graph6 labelling of L10 line 176 (I_CHbIF}?)
+    C5 composition: 324-part composition {(10, 16): 126, (10, 15): 4, (10, 17): 190, (10, 18): 4}
+    C7 antichain: entry 2 is a subgraph of entry 250
+mutation [trailing newline appended to the JSON]: RED as required; failing checks ['C9 hashes']
+    C9 hashes: forbidden-398.json sha256 8e77c57031985682c363ce6eeb3a74703a46c903bed716afc2e5ab3d2c51dda6 != pinned 8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c
+self-test: 8 of 8 mutations turned the targeted checks red

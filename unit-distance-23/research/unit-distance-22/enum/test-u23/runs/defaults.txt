@@ -1,0 +1,38 @@
+A out-22/dag-22-61-f12: stopped at the first seed; reach.json: = recorded True, = baseline True; run-config.json: = recorded True, = baseline True
+A out-prune/dag-17-43-prune16: stopped at the first seed; reach.json: = recorded True, = baseline True; run-config.json: = recorded False, = baseline True; (run-config.json recorded by an older run-dag2.py: the baseline differs from it too)
+A out-prune/dag-18-46-reach: stopped at the first seed; reach.json: = recorded True, = baseline True; run-config.json: = recorded False, = baseline True; (run-config.json recorded by an older run-dag2.py: the baseline differs from it too)
+A out-prune/dag-18-46-k4: stopped at the first seed; reach.json: = recorded True, = baseline True; run-config.json: = recorded False, = baseline True; (run-config.json recorded by an older run-dag2.py: the baseline differs from it too)
+A results/u22/s0of48 (w1): stopped at the first seed; reach.json: = recorded True, = baseline True; run-config.json: = recorded True, = baseline True
+B: u(23) reach table (Mode 398, root k 5, u-bar(22) = 60) against the (22,61) run's:
+  n=10 u23 14..20 (7 cells)   u22 14..20 (7 cells)
+  n=11 u23 17..23 (7 cells)   u22 17..23 (7 cells)
+  n=12 u23 20..27 (8 cells)   u22 20..27 (8 cells)
+  n=13 u23 23..30 (8 cells)   u22 23..30 (8 cells)
+  n=14 u23 26..33 (8 cells)   u22 26..33 (8 cells)
+  n=15 u23 29..37 (9 cells)   u22 30..37 (8 cells)
+  n=16 u23 33..41 (9 cells)   u22 34..41 (8 cells)
+  n=17 u23 37..43 (7 cells)   u22 38..43 (6 cells)
+  n=18 u23 41..46 (6 cells)   u22 42..46 (5 cells)
+  n=19 u23 45..50 (6 cells)   u22 46..49 (4 cells)   <- also 1 edge wider at the dense end
+  n=20 u23 50..53 (4 cells)   u22 51..52 (2 cells)   <- also 1 edge wider at the dense end
+  n=21 u23 55..56 (2 cells)   u22 56..56 (1 cells)
+  n=22 u23 60..60 (1 cells)   u22 61..61 (1 cells)
+  n=23 u23 65..65 (1 cells)
+B: table by level: {"19": {"45": 4, "46": 3, "47": 3, "48": 2, "49": 2, "50": 2}, "20": {"50": 4, "51": 3, "52": 3, "53": 2}, "21": {"55": 4, "56": 3}, "22": {"60": 4}, "23": {"65": 5}}
+B: Schade windows 19..23: [[45, 50], [50, 54], [55, 57], [60, 60], [65, 65]]
+C u-bar not lowered: refused: ValueError: --ubar 22=62: may only lower the built-in u-bar(22) = 62
+C u-bar raised: refused: ValueError: --ubar 22=63: may only lower the built-in u-bar(22) = 62
+C below the known lower bound u(22) >= 60: refused: ValueError: --ubar 22=59: below the best known lower bound u(22) >= 60, which a known unit-distance graph attains
+C n <= 21 is exact (AMP): refused: ValueError: --ubar 21=56: below the best known lower bound u(21) >= 57, which a known unit-distance graph attains
+C no built-in u-bar(24): refused: ValueError: --ubar 24=70: there is no built-in u-bar(24)
+C malformed: refused: ValueError: --ubar '22': expected N=M with integers N and M
+C twice: refused: ValueError: --ubar gives u-bar(22) twice
+C no justification: refused: ValueError: --ubar needs a non-empty --ubar-justification
+C blank justification: refused: ValueError: --ubar needs a non-empty --ubar-justification
+C justification without --ubar: refused: ValueError: --ubar-justification was given without --ubar
+C --ubar without --reach: refused: ValueError: --ubar needs --reach (the override is recorded in reach.json)
+C set 398 with the 74 file: refused: ValueError: --forbidden-set 398 needs the pinned forbidden-398.json (sha256 8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c); <repo>
+C seed mutation outside set 398: refused: ValueError: --mutation-seeds-74 is a control for --forbidden-set 398 runs
+C set 75: exit 2: run-dag2.py: error: argument --forbidden-set: invalid choice: 75 (choose from 74, 398)
+C resume a set-74 directory in set 398: refused: RuntimeError: run-config.json differs from this run's options; refusing to resume
+DEFAULTS PASS

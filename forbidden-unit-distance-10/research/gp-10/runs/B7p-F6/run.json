@@ -1,0 +1,9 @@
+{
+ "profile": "B7p",
+ "input": "../../data/B7p.g6",
+ "input_sha256": "34ca62c47fa56bc7f66b7eaf193b17012b1be6e8492481ee217352e5408479ce",
+ "records": [
+  "records.jsonl"
+ ],
+ "unknown": "UNKNOWN.g6"
+}

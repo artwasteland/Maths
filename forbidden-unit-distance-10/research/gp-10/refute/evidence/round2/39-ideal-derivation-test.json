@@ -1,0 +1,10 @@
+{
+  "status": "local prototype only, not official acceptance",
+  "rows": 14,
+  "bytes": 1677101,
+  "seconds": 3.3194570238702,
+  "one_coefficient_mutation": "proposal identity at row 0",
+  "argv": [
+    "research/gp-10/refute/round2_proposal.py"
+  ]
+}

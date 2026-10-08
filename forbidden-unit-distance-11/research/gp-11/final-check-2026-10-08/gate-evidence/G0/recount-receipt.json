@@ -1,0 +1,1494 @@
+{
+  "anchor": {
+    "OEIS": "https://oeis.org/A002218/b002218.txt",
+    "command": [
+      "nauty-geng",
+      "-Cu",
+      "11"
+    ],
+    "count": 900969091,
+    "exit_code": 0,
+    "expected": 900969091,
+    "geng_cpu_seconds": 363.86,
+    "geng_stderr": ">A nauty-geng -Cd2D10 n=11 e=11-55\n>Z 900969091 graphs generated in 363.86 sec\n",
+    "min_MemAvailable_kib": 5344504,
+    "peak_scratch_bytes": 35,
+    "status": "ACCEPT",
+    "wall_seconds": 365.524299
+  },
+  "census": {
+    "chunk_size": 1000000,
+    "chunks": 69,
+    "counts": {
+      "input": 68232100,
+      "pass": 294516,
+      "removed": 67783392,
+      "survivors": 448708,
+      "tu": 154192
+    },
+    "equality": {
+      "actual_count": 448708,
+      "actual_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+      "expected_count": 448708,
+      "expected_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+      "status": "ACCEPT"
+    },
+    "input_sha256": "a3450c81997ff983f25902026b2967f3d451a8ff46a87e856f908504882fe791",
+    "status": "ACCEPT"
+  },
+  "controls": {
+    "results": [
+      {
+        "exact_message": "REJECT: line 1: map is not injective",
+        "mutation": "map[1] := map[0] in first real witness",
+        "name": "red-injectivity",
+        "restored_lists": {
+          "actual_count": 448708,
+          "actual_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+          "expected_count": 448708,
+          "expected_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+          "status": "ACCEPT"
+        },
+        "restored_replay": {
+          "input": 1000000,
+          "input_sha256": "5a177615558a987e3cdb2214fb8b785e6fda7b5e56be9fe45c80a65f7d911243",
+          "replayed": 975688,
+          "status": "ACCEPT",
+          "survivors": 24312,
+          "survivors_sha256": "05ef5b1e85ff42ae60deb1d69a7f1a2140bdd201d027d9309b685c03e2f89712",
+          "union_sha256": "5a177615558a987e3cdb2214fb8b785e6fda7b5e56be9fe45c80a65f7d911243",
+          "wall_seconds": 10.088525,
+          "witness_sha256": "c6cdfbb014eb80d899e7ca79ad64dca02ddd3db3c6090ed5b8f7e3874e1a7516"
+        },
+        "status": "PASS"
+      },
+      {
+        "exact_message": "REJECT: coverage: input 1 occurs in neither output class",
+        "mutation": {
+          "omitted_host": "J??????~~~?",
+          "removed_from": "witnesses"
+        },
+        "name": "red-coverage",
+        "restored_lists": {
+          "actual_count": 448708,
+          "actual_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+          "expected_count": 448708,
+          "expected_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+          "status": "ACCEPT"
+        },
+        "restored_replay": {
+          "input": 1000000,
+          "input_sha256": "5a177615558a987e3cdb2214fb8b785e6fda7b5e56be9fe45c80a65f7d911243",
+          "replayed": 975688,
+          "status": "ACCEPT",
+          "survivors": 24312,
+          "survivors_sha256": "05ef5b1e85ff42ae60deb1d69a7f1a2140bdd201d027d9309b685c03e2f89712",
+          "union_sha256": "5a177615558a987e3cdb2214fb8b785e6fda7b5e56be9fe45c80a65f7d911243",
+          "wall_seconds": 10.52065,
+          "witness_sha256": "c6cdfbb014eb80d899e7ca79ad64dca02ddd3db3c6090ed5b8f7e3874e1a7516"
+        },
+        "status": "PASS"
+      },
+      {
+        "exact_message": "REJECT: list equality: canonical survivor bytes differ",
+        "mutation": {
+          "count_preserved": 448708,
+          "method": "add one missing edge, labelg defaults, re-sort",
+          "original": "J????Kwrfa?",
+          "replacement": "J?@g?_BenE?"
+        },
+        "name": "red-list-equality",
+        "restored_lists": {
+          "actual_count": 448708,
+          "actual_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+          "expected_count": 448708,
+          "expected_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+          "status": "ACCEPT"
+        },
+        "restored_replay": {
+          "input": 1000000,
+          "input_sha256": "5a177615558a987e3cdb2214fb8b785e6fda7b5e56be9fe45c80a65f7d911243",
+          "replayed": 975688,
+          "status": "ACCEPT",
+          "survivors": 24312,
+          "survivors_sha256": "05ef5b1e85ff42ae60deb1d69a7f1a2140bdd201d027d9309b685c03e2f89712",
+          "union_sha256": "5a177615558a987e3cdb2214fb8b785e6fda7b5e56be9fe45c80a65f7d911243",
+          "wall_seconds": 11.707793,
+          "witness_sha256": "c6cdfbb014eb80d899e7ca79ad64dca02ddd3db3c6090ed5b8f7e3874e1a7516"
+        },
+        "status": "PASS"
+      }
+    ],
+    "status": "PASS"
+  },
+  "frozen_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+  "gate": "G0",
+  "independent": {
+    "counts": {
+      "drop_index": -1,
+      "input_graphs": 68232100,
+      "max_pattern_n": 10,
+      "patterns": 398,
+      "removed": 67783392,
+      "survivors": 448708
+    },
+    "equality": {
+      "actual_count": 448708,
+      "actual_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+      "expected_count": 448708,
+      "expected_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+      "status": "ACCEPT"
+    },
+    "status": "ACCEPT"
+  },
+  "independent_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+  "lower": [
+    {
+      "counts": {
+        "drop_index": -1,
+        "input_graphs": 3,
+        "max_pattern_n": 3,
+        "patterns": 398,
+        "removed": 0,
+        "survivors": 3
+      },
+      "equality": {
+        "actual_count": 3,
+        "actual_sha256": "db1441296b09fed03d9b68808408ee3c9825128b2eb006712290b1030610ff06",
+        "expected_count": 3,
+        "expected_sha256": "db1441296b09fed03d9b68808408ee3c9825128b2eb006712290b1030610ff06",
+        "status": "ACCEPT"
+      },
+      "name": "B4p",
+      "timing": {
+        "command": [
+          "/tmp/gp11-freeze/matcher",
+          "--patterns",
+          "/tmp/gp11-freeze/F10.g6",
+          "--max-pattern-n",
+          "3",
+          "--survivors",
+          "/tmp/gp11-freeze/B4p.raw.g6",
+          "--summary",
+          "/tmp/gp11-freeze/B4p.summary"
+        ],
+        "exit_code": 0,
+        "min_MemAvailable_kib": 5404316,
+        "peak_scratch_bytes": 68058,
+        "wall_seconds": 0.004674
+      }
+    },
+    {
+      "counts": {
+        "drop_index": -1,
+        "input_graphs": 10,
+        "max_pattern_n": 4,
+        "patterns": 398,
+        "removed": 3,
+        "survivors": 7
+      },
+      "equality": {
+        "actual_count": 7,
+        "actual_sha256": "d78012ff3a91c9cd07b2f49da7cc3ca4e78c714f905000df76efacf48da7e4e7",
+        "expected_count": 7,
+        "expected_sha256": "d78012ff3a91c9cd07b2f49da7cc3ca4e78c714f905000df76efacf48da7e4e7",
+        "status": "ACCEPT"
+      },
+      "name": "B5p",
+      "timing": {
+        "command": [
+          "/tmp/gp11-freeze/matcher",
+          "--patterns",
+          "/tmp/gp11-freeze/F10.g6",
+          "--max-pattern-n",
+          "4",
+          "--survivors",
+          "/tmp/gp11-freeze/B5p.raw.g6",
+          "--summary",
+          "/tmp/gp11-freeze/B5p.summary"
+        ],
+        "exit_code": 0,
+        "min_MemAvailable_kib": 5397092,
+        "peak_scratch_bytes": 69860,
+        "wall_seconds": 0.004773
+      }
+    },
+    {
+      "counts": {
+        "drop_index": -1,
+        "input_graphs": 56,
+        "max_pattern_n": 5,
+        "patterns": 398,
+        "removed": 40,
+        "survivors": 16
+      },
+      "equality": {
+        "actual_count": 16,
+        "actual_sha256": "88faa0132572f37c390c45abbca9281489f0f7006a16300e86bba5a94ca08d7a",
+        "expected_count": 16,
+        "expected_sha256": "88faa0132572f37c390c45abbca9281489f0f7006a16300e86bba5a94ca08d7a",
+        "status": "ACCEPT"
+      },
+      "name": "B6p",
+      "timing": {
+        "command": [
+          "/tmp/gp11-freeze/matcher",
+          "--patterns",
+          "/tmp/gp11-freeze/F10.g6",
+          "--max-pattern-n",
+          "5",
+          "--survivors",
+          "/tmp/gp11-freeze/B6p.raw.g6",
+          "--summary",
+          "/tmp/gp11-freeze/B6p.summary"
+        ],
+        "exit_code": 0,
+        "min_MemAvailable_kib": 5394844,
+        "peak_scratch_bytes": 71930,
+        "wall_seconds": 0.004663
+      }
+    },
+    {
+      "counts": {
+        "drop_index": -1,
+        "input_graphs": 468,
+        "max_pattern_n": 6,
+        "patterns": 398,
+        "removed": 408,
+        "survivors": 60
+      },
+      "equality": {
+        "actual_count": 60,
+        "actual_sha256": "34ca62c47fa56bc7f66b7eaf193b17012b1be6e8492481ee217352e5408479ce",
+        "expected_count": 60,
+        "expected_sha256": "34ca62c47fa56bc7f66b7eaf193b17012b1be6e8492481ee217352e5408479ce",
+        "status": "ACCEPT"
+      },
+      "name": "B7p",
+      "timing": {
+        "command": [
+          "/tmp/gp11-freeze/matcher",
+          "--patterns",
+          "/tmp/gp11-freeze/F10.g6",
+          "--max-pattern-n",
+          "6",
+          "--survivors",
+          "/tmp/gp11-freeze/B7p.raw.g6",
+          "--summary",
+          "/tmp/gp11-freeze/B7p.summary"
+        ],
+        "exit_code": 0,
+        "min_MemAvailable_kib": 5393296,
+        "peak_scratch_bytes": 76451,
+        "wall_seconds": 0.005449
+      }
+    },
+    {
+      "counts": {
+        "drop_index": -1,
+        "input_graphs": 7123,
+        "max_pattern_n": 7,
+        "patterns": 398,
+        "removed": 6740,
+        "survivors": 383
+      },
+      "equality": {
+        "actual_count": 383,
+        "actual_sha256": "3a93e6dc1de6b8ac84494982a9e1bb7966c086505d59b08bd281ad0f30ba13bd",
+        "expected_count": 383,
+        "expected_sha256": "3a93e6dc1de6b8ac84494982a9e1bb7966c086505d59b08bd281ad0f30ba13bd",
+        "status": "ACCEPT"
+      },
+      "name": "B8p",
+      "timing": {
+        "command": [
+          "/tmp/gp11-freeze/matcher",
+          "--patterns",
+          "/tmp/gp11-freeze/F10.g6",
+          "--max-pattern-n",
+          "7",
+          "--survivors",
+          "/tmp/gp11-freeze/B8p.raw.g6",
+          "--summary",
+          "/tmp/gp11-freeze/B8p.summary"
+        ],
+        "exit_code": 0,
+        "min_MemAvailable_kib": 5392092,
+        "peak_scratch_bytes": 126342,
+        "wall_seconds": 0.036541
+      }
+    },
+    {
+      "counts": {
+        "drop_index": -1,
+        "input_graphs": 7123,
+        "max_pattern_n": 9,
+        "patterns": 398,
+        "removed": 6757,
+        "survivors": 366
+      },
+      "name": "B8-F9",
+      "timing": {
+        "command": [
+          "/tmp/gp11-freeze/matcher",
+          "--patterns",
+          "/tmp/gp11-freeze/F10.g6",
+          "--max-pattern-n",
+          "9",
+          "--survivors",
+          "/tmp/gp11-freeze/B8-F9.raw.g6",
+          "--summary",
+          "/tmp/gp11-freeze/B8-F9.summary"
+        ],
+        "exit_code": 0,
+        "min_MemAvailable_kib": 5384172,
+        "peak_scratch_bytes": 135915,
+        "wall_seconds": 0.068293
+      }
+    },
+    {
+      "counts": {
+        "drop_index": -1,
+        "input_graphs": 194066,
+        "max_pattern_n": 8,
+        "patterns": 398,
+        "removed": 190981,
+        "survivors": 3085
+      },
+      "equality": {
+        "actual_count": 3085,
+        "actual_sha256": "7dc5ec4dd9ecc339cc39d38fb3b567b0e9a2b97a52c9408c79eb1b54d8801b3c",
+        "expected_count": 3085,
+        "expected_sha256": "7dc5ec4dd9ecc339cc39d38fb3b567b0e9a2b97a52c9408c79eb1b54d8801b3c",
+        "status": "ACCEPT"
+      },
+      "name": "B9p",
+      "timing": {
+        "command": [
+          "/tmp/gp11-freeze/matcher",
+          "--patterns",
+          "/tmp/gp11-freeze/F10.g6",
+          "--max-pattern-n",
+          "8",
+          "--survivors",
+          "/tmp/gp11-freeze/B9p.raw.g6",
+          "--summary",
+          "/tmp/gp11-freeze/B9p.summary"
+        ],
+        "exit_code": 0,
+        "min_MemAvailable_kib": 5372532,
+        "peak_scratch_bytes": 1658305,
+        "wall_seconds": 0.821905
+      }
+    },
+    {
+      "counts": {
+        "drop_index": -1,
+        "input_graphs": 194066,
+        "max_pattern_n": 9,
+        "patterns": 398,
+        "removed": 191082,
+        "survivors": 2984
+      },
+      "name": "B9-F9",
+      "timing": {
+        "command": [
+          "/tmp/gp11-freeze/matcher",
+          "--patterns",
+          "/tmp/gp11-freeze/F10.g6",
+          "--max-pattern-n",
+          "9",
+          "--survivors",
+          "/tmp/gp11-freeze/B9-F9.raw.g6",
+          "--summary",
+          "/tmp/gp11-freeze/B9-F9.summary"
+        ],
+        "exit_code": 0,
+        "min_MemAvailable_kib": 5372340,
+        "peak_scratch_bytes": 1737986,
+        "wall_seconds": 1.223608
+      }
+    },
+    {
+      "counts": {
+        "drop_index": -1,
+        "input_graphs": 9743542,
+        "max_pattern_n": 9,
+        "patterns": 398,
+        "removed": 9710380,
+        "survivors": 33162
+      },
+      "equality": {
+        "actual_count": 33162,
+        "actual_sha256": "3cec678af7e0f2dec59b5f362e6d18e3fcb993ee94b701a8da8280529bd1321f",
+        "expected_count": 33162,
+        "expected_sha256": "3cec678af7e0f2dec59b5f362e6d18e3fcb993ee94b701a8da8280529bd1321f",
+        "status": "ACCEPT"
+      },
+      "name": "B10",
+      "timing": {
+        "command": [
+          "/tmp/gp11-freeze/matcher",
+          "--patterns",
+          "/tmp/gp11-freeze/F10.g6",
+          "--max-pattern-n",
+          "9",
+          "--survivors",
+          "/tmp/gp11-freeze/B10.raw.g6",
+          "--summary",
+          "/tmp/gp11-freeze/B10.summary"
+        ],
+        "exit_code": 0,
+        "min_MemAvailable_kib": 5389152,
+        "peak_scratch_bytes": 97952745,
+        "wall_seconds": 37.585631
+      }
+    },
+    {
+      "host": "<host>",
+      "name": "noninduced",
+      "replay": {
+        "input": 1,
+        "input_sha256": "2b40aad54778937515ac8b9852141dddee7f730069f81685cfc866adb4bc4db2",
+        "replayed": 1,
+        "status": "ACCEPT",
+        "survivors": 0,
+        "survivors_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "union_sha256": "2b40aad54778937515ac8b9852141dddee7f730069f81685cfc866adb4bc4db2",
+        "wall_seconds": 0.000199,
+        "witness_sha256": "1d602b876661978147af0208f0d48fd52da985ae4087f6553fcd4ca56ad233e6"
+      }
+    }
+  ],
+  "provenance": {
+    "F10_g6_sha256": "2d9434973207c27530217632061f6067957949576a7a4a19bdca4e7caeb821d6",
+    "JSON_graph6_member_order_matches": true,
+    "executables": {
+      "cc": {
+        "path": "/usr/bin/cc",
+        "sha256": "1b99826121ae6682a634e5efe09bd3e3df58ce58e0b28f849114ab5b89139c26"
+      },
+      "filter": {
+        "path": "/tmp/gp11-freeze/filter",
+        "sha256": "12f98a019e168f7799b0c225ba8887088fbf051f078a2aabd2d62101f1db3ffc"
+      },
+      "matcher": {
+        "path": "/tmp/gp11-freeze/matcher",
+        "sha256": "5bf7ff1c7d45ff83d2e7dec7b8f987b9a8c42ef7fdeff0e2b9c03edbc7a8171f"
+      },
+      "nauty-geng": {
+        "path": "/usr/bin/nauty-geng",
+        "sha256": "9730b53764bdb28ecd2fdf755fafbc76992050f39e5ea19bb7d91433a26583e9"
+      },
+      "nauty-labelg": {
+        "path": "/usr/bin/nauty-labelg",
+        "sha256": "96e973e3a13442c6f626012b6b1059ef88e750aff284be6bfc6cd77ee7f185bf"
+      },
+      "sort": {
+        "path": "/usr/bin/sort",
+        "sha256": "0052ad741146f4c344e61a9606b37209df7113ae9d569c620d1640e176d982d3"
+      }
+    },
+    "patterns": 398,
+    "prefix_matches_GP74": true,
+    "sources": {
+      "research/gp-10/data/B10.g6": "3cec678af7e0f2dec59b5f362e6d18e3fcb993ee94b701a8da8280529bd1321f",
+      "research/gp-10/data/B4p.g6": "db1441296b09fed03d9b68808408ee3c9825128b2eb006712290b1030610ff06",
+      "research/gp-10/data/B5p.g6": "d78012ff3a91c9cd07b2f49da7cc3ca4e78c714f905000df76efacf48da7e4e7",
+      "research/gp-10/data/B6p.g6": "88faa0132572f37c390c45abbca9281489f0f7006a16300e86bba5a94ca08d7a",
+      "research/gp-10/data/B7p.g6": "34ca62c47fa56bc7f66b7eaf193b17012b1be6e8492481ee217352e5408479ce",
+      "research/gp-10/data/B8p.g6": "3a93e6dc1de6b8ac84494982a9e1bb7966c086505d59b08bd281ad0f30ba13bd",
+      "research/gp-10/data/B9p.g6": "7dc5ec4dd9ecc339cc39d38fb3b567b0e9a2b97a52c9408c79eb1b54d8801b3c",
+      "research/gp-10/recount/matcher.c": "fdf6a4d9455bf764718649c4e0f4ccf4bca9031d6b773ad3a7ae2dc705f1ea2a",
+      "research/gp-10/recount/verify_witness.py": "2cf6cfe41237a1b881bffaff40ab2e3513bb09bd3afb5dc0a3af38fe2c6f128b",
+      "research/gp-10/runs/B10-final-2026-09-25/L10.g6": "a899e36cec0f135f253e0c9942d2fecd29280da44189a01d00752e8a5af971b8",
+      "research/gp-10/runs/B10-final-2026-09-25/report.json": "75944f59754b0f9c251cbd374df93cd389ad2586f34bb409d4b6a71b04917f33",
+      "research/gp-11/recount/controls.py": "d846c4f2d6cbe47117475117fd74e017f5d7f7f6d5fb034961f1376851cbe876",
+      "research/gp-11/recount/filter.c": "ff63b97c28d2bba49ce31d88b407640328bc02769296da134178ec6786bb0ed8",
+      "research/gp-11/recount/guard.py": "5264ba868d7fb15dd1c306a4091b82102510700bdbe1b11f2dee09de8631c7af",
+      "research/gp-11/recount/matcher.c": "3226a1f54bf6b008235b45fa42189d824d3e984c901353530d29470ee9c60d36",
+      "research/gp-11/recount/run_recount.py": "e6885028e94a21345f1424803f3710f40109b0250a77f1780f1b7bf0170d2310",
+      "research/gp-11/recount/verify.py": "540ded16a51bcfada873e8f0a40b285885731e071a5ba141ce1aed7578682df8",
+      "research/unit-distance-22/data/forbidden-398.g6": "91d5810c4d7b02d97afec7dfe2a2a5629f2075439100aa8eae6b60dca4ff4381",
+      "research/unit-distance-22/data/forbidden-398.json": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+      "research/unit-distance-22/data/forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+      "research/unit-distance-22/data/tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629",
+      "research/unit-distance-22/filter/udfilter.c": "a71e11670e5ff4a031a8d0c4fbbee48ad586da169e9a684a2c1febe704f859be",
+      "research/unit-distance-22/filter/udfilter.h": "50da40e67e1d4ab92daa8d62537a5d51a3428ed000eac59fdb682aedaffc22d1"
+    },
+    "status": "ACCEPT",
+    "suffix_matches_checker_L10": true,
+    "versions": {
+      "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "nauty": "nauty\t2.8.8+ds-5",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+    }
+  },
+  "replay": {
+    "chunks": 69,
+    "chunks_sha256": "2732d1c37aee1477343c87302df63b9a9769f467008f11d113ff55bf69553756",
+    "filter_wall_seconds": 440.012217,
+    "guarded_wall_seconds": 577.101702,
+    "input": 68232100,
+    "replayed": 67783392,
+    "survivors": 448708,
+    "wall_seconds": 569.823719
+  },
+  "resources": {
+    "heavy_processes_at_once": 1,
+    "min_MemAvailable_kib": 3915352,
+    "peak_scratch_bytes": 918522861
+  },
+  "scope": "input freeze and recount only",
+  "status": "PASS",
+  "timings": {
+    "B10-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-10/data/B10.g6",
+        "/tmp/gp11-freeze/B10.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5407724,
+      "peak_scratch_bytes": 98620903,
+      "wall_seconds": 1.323541
+    },
+    "B10-generate.time.json": {
+      "command": [
+        "nauty-geng",
+        "-C",
+        "10"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5370172,
+      "peak_scratch_bytes": 94364662,
+      "wall_seconds": 6.904573
+    },
+    "B10-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5408552,
+      "peak_scratch_bytes": 97957235,
+      "wall_seconds": 0.118234
+    },
+    "B10-sort.time.json": {
+      "command": [
+        "sort",
+        "--parallel=1",
+        "-S",
+        "64M",
+        "-T",
+        "/tmp/gp11-freeze",
+        "/tmp/gp11-freeze/B10.canon.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5408832,
+      "peak_scratch_bytes": 98289022,
+      "wall_seconds": 0.020605
+    },
+    "B10.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--max-pattern-n",
+        "9",
+        "--survivors",
+        "/tmp/gp11-freeze/B10.raw.g6",
+        "--summary",
+        "/tmp/gp11-freeze/B10.summary"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5389152,
+      "peak_scratch_bytes": 97952745,
+      "wall_seconds": 37.585631
+    },
+    "B4p-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-10/data/B4p.g6",
+        "/tmp/gp11-freeze/B4p.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5403628,
+      "peak_scratch_bytes": 69021,
+      "wall_seconds": 0.117283
+    },
+    "B4p-generate.time.json": {
+      "command": [
+        "nauty-geng",
+        "-C",
+        "4"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5404316,
+      "peak_scratch_bytes": 67878,
+      "wall_seconds": 0.003694
+    },
+    "B4p-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5404316,
+      "peak_scratch_bytes": 68590,
+      "wall_seconds": 0.003449
+    },
+    "B4p-sort.time.json": {
+      "command": [
+        "sort",
+        "--parallel=1",
+        "-S",
+        "64M",
+        "-T",
+        "/tmp/gp11-freeze",
+        "/tmp/gp11-freeze/B4p.canon.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5404144,
+      "peak_scratch_bytes": 68754,
+      "wall_seconds": 0.004811
+    },
+    "B4p.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--max-pattern-n",
+        "3",
+        "--survivors",
+        "/tmp/gp11-freeze/B4p.raw.g6",
+        "--summary",
+        "/tmp/gp11-freeze/B4p.summary"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5404316,
+      "peak_scratch_bytes": 68058,
+      "wall_seconds": 0.004674
+    },
+    "B5p-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-10/data/B5p.g6",
+        "/tmp/gp11-freeze/B5p.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5394844,
+      "peak_scratch_bytes": 70882,
+      "wall_seconds": 0.117666
+    },
+    "B5p-generate.time.json": {
+      "command": [
+        "nauty-geng",
+        "-C",
+        "5"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5398640,
+      "peak_scratch_bytes": 69649,
+      "wall_seconds": 0.003806
+    },
+    "B5p-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5397092,
+      "peak_scratch_bytes": 70432,
+      "wall_seconds": 0.003786
+    },
+    "B5p-sort.time.json": {
+      "command": [
+        "sort",
+        "--parallel=1",
+        "-S",
+        "64M",
+        "-T",
+        "/tmp/gp11-freeze",
+        "/tmp/gp11-freeze/B5p.canon.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5396908,
+      "peak_scratch_bytes": 70596,
+      "wall_seconds": 0.004577
+    },
+    "B5p.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--max-pattern-n",
+        "4",
+        "--survivors",
+        "/tmp/gp11-freeze/B5p.raw.g6",
+        "--summary",
+        "/tmp/gp11-freeze/B5p.summary"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5397092,
+      "peak_scratch_bytes": 69860,
+      "wall_seconds": 0.004773
+    },
+    "B6p-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-10/data/B6p.g6",
+        "/tmp/gp11-freeze/B6p.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5393812,
+      "peak_scratch_bytes": 73112,
+      "wall_seconds": 0.118006
+    },
+    "B6p-generate.time.json": {
+      "command": [
+        "nauty-geng",
+        "-C",
+        "6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5394844,
+      "peak_scratch_bytes": 71444,
+      "wall_seconds": 0.003837
+    },
+    "B6p-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5394844,
+      "peak_scratch_bytes": 72610,
+      "wall_seconds": 0.004177
+    },
+    "B6p-sort.time.json": {
+      "command": [
+        "sort",
+        "--parallel=1",
+        "-S",
+        "64M",
+        "-T",
+        "/tmp/gp11-freeze",
+        "/tmp/gp11-freeze/B6p.canon.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5394844,
+      "peak_scratch_bytes": 72774,
+      "wall_seconds": 0.004057
+    },
+    "B6p.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--max-pattern-n",
+        "5",
+        "--survivors",
+        "/tmp/gp11-freeze/B6p.raw.g6",
+        "--summary",
+        "/tmp/gp11-freeze/B6p.summary"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5394844,
+      "peak_scratch_bytes": 71930,
+      "wall_seconds": 0.004663
+    },
+    "B7p-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-10/data/B7p.g6",
+        "/tmp/gp11-freeze/B7p.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5392264,
+      "peak_scratch_bytes": 78477,
+      "wall_seconds": 0.118535
+    },
+    "B7p-generate.time.json": {
+      "command": [
+        "nauty-geng",
+        "-C",
+        "7"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5393812,
+      "peak_scratch_bytes": 73436,
+      "wall_seconds": 0.005281
+    },
+    "B7p-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5393296,
+      "peak_scratch_bytes": 77695,
+      "wall_seconds": 0.004375
+    },
+    "B7p-sort.time.json": {
+      "command": [
+        "sort",
+        "--parallel=1",
+        "-S",
+        "64M",
+        "-T",
+        "/tmp/gp11-freeze",
+        "/tmp/gp11-freeze/B7p.canon.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5392264,
+      "peak_scratch_bytes": 77859,
+      "wall_seconds": 0.004347
+    },
+    "B7p.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--max-pattern-n",
+        "6",
+        "--survivors",
+        "/tmp/gp11-freeze/B7p.raw.g6",
+        "--summary",
+        "/tmp/gp11-freeze/B7p.summary"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5393296,
+      "peak_scratch_bytes": 76451,
+      "wall_seconds": 0.005449
+    },
+    "B8-F9.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--max-pattern-n",
+        "9",
+        "--survivors",
+        "/tmp/gp11-freeze/B8-F9.raw.g6",
+        "--summary",
+        "/tmp/gp11-freeze/B8-F9.summary"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5384172,
+      "peak_scratch_bytes": 135915,
+      "wall_seconds": 0.068293
+    },
+    "B8p-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-10/data/B8p.g6",
+        "/tmp/gp11-freeze/B8p.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5390724,
+      "peak_scratch_bytes": 135340,
+      "wall_seconds": 0.118666
+    },
+    "B8p-generate.time.json": {
+      "command": [
+        "nauty-geng",
+        "-C",
+        "8"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5392264,
+      "peak_scratch_bytes": 76273,
+      "wall_seconds": 0.020153
+    },
+    "B8p-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5391576,
+      "peak_scratch_bytes": 129554,
+      "wall_seconds": 0.004826
+    },
+    "B8p-sort.time.json": {
+      "command": [
+        "sort",
+        "--parallel=1",
+        "-S",
+        "64M",
+        "-T",
+        "/tmp/gp11-freeze",
+        "/tmp/gp11-freeze/B8p.canon.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5391220,
+      "peak_scratch_bytes": 135081,
+      "wall_seconds": 0.004782
+    },
+    "B8p.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--max-pattern-n",
+        "7",
+        "--survivors",
+        "/tmp/gp11-freeze/B8p.raw.g6",
+        "--summary",
+        "/tmp/gp11-freeze/B8p.summary"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5392092,
+      "peak_scratch_bytes": 126342,
+      "wall_seconds": 0.036541
+    },
+    "B9-F9.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--max-pattern-n",
+        "9",
+        "--survivors",
+        "/tmp/gp11-freeze/B9-F9.raw.g6",
+        "--summary",
+        "/tmp/gp11-freeze/B9-F9.summary"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5372340,
+      "peak_scratch_bytes": 1737986,
+      "wall_seconds": 1.223608
+    },
+    "B9p-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-10/data/B9p.g6",
+        "/tmp/gp11-freeze/B9p.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5372308,
+      "peak_scratch_bytes": 1716928,
+      "wall_seconds": 0.169275
+    },
+    "B9p-generate.time.json": {
+      "command": [
+        "nauty-geng",
+        "-C",
+        "9"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5384192,
+      "peak_scratch_bytes": 89183,
+      "wall_seconds": 0.270748
+    },
+    "B9p-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5372308,
+      "peak_scratch_bytes": 1667143,
+      "wall_seconds": 0.01262
+    },
+    "B9p-sort.time.json": {
+      "command": [
+        "sort",
+        "--parallel=1",
+        "-S",
+        "64M",
+        "-T",
+        "/tmp/gp11-freeze",
+        "/tmp/gp11-freeze/B9p.canon.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5372308,
+      "peak_scratch_bytes": 1716668,
+      "wall_seconds": 0.006224
+    },
+    "B9p.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--max-pattern-n",
+        "8",
+        "--survivors",
+        "/tmp/gp11-freeze/B9p.raw.g6",
+        "--summary",
+        "/tmp/gp11-freeze/B9p.summary"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5372532,
+      "peak_scratch_bytes": 1658305,
+      "wall_seconds": 0.821905
+    },
+    "chunk-filter.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/filter",
+        "<repo>/research/unit-distance-22/data/forbidden-398.json",
+        "<repo>/research/unit-distance-22/data/tu-gadgets.json",
+        "/tmp/gp11-freeze/current.survivors.g6",
+        "/tmp/gp11-freeze/current.witnesses.tsv"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5296288,
+      "peak_scratch_bytes": 868677307,
+      "wall_seconds": 1.481152
+    },
+    "chunk-replay.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "replay",
+        "--patterns",
+        "<repo>/research/unit-distance-22/data/forbidden-398.json",
+        "--inputs",
+        "/tmp/gp11-freeze/current.inputs.g6",
+        "--survivors",
+        "/tmp/gp11-freeze/current.survivors.g6",
+        "--witnesses",
+        "/tmp/gp11-freeze/current.witnesses.tsv",
+        "--order",
+        "11"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5283296,
+      "peak_scratch_bytes": 870505055,
+      "wall_seconds": 2.336316
+    },
+    "compile-independent.time.json": {
+      "command": [
+        "cc",
+        "-O3",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "<repo>/research/gp-11/recount/matcher.c",
+        "-lz",
+        "-o",
+        "/tmp/gp11-freeze/matcher"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5391552,
+      "peak_scratch_bytes": 251,
+      "wall_seconds": 0.667736
+    },
+    "compile-primary.time.json": {
+      "command": [
+        "cc",
+        "-O3",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "-I",
+        "<repo>/research/unit-distance-22/filter",
+        "<repo>/research/gp-11/recount/filter.c",
+        "<repo>/research/unit-distance-22/filter/udfilter.c",
+        "-o",
+        "/tmp/gp11-freeze/filter"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5389120,
+      "peak_scratch_bytes": 21536,
+      "wall_seconds": 0.717666
+    },
+    "control-baseline-lists.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-11/data/B11.g6",
+        "/tmp/gp11-freeze/independent.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5059400,
+      "peak_scratch_bytes": 894307631,
+      "wall_seconds": 22.373947
+    },
+    "control-baseline-replay.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "replay",
+        "--patterns",
+        "<repo>/research/unit-distance-22/data/forbidden-398.json",
+        "--inputs",
+        "/tmp/gp11-freeze/control.inputs.g6",
+        "--survivors",
+        "/tmp/gp11-freeze/control.survivors.g6",
+        "--witnesses",
+        "/tmp/gp11-freeze/control.witnesses.tsv",
+        "--order",
+        "11"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 4989072,
+      "peak_scratch_bytes": 894306628,
+      "wall_seconds": 13.33046
+    },
+    "final-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-11/data/B11.g6",
+        "/tmp/gp11-freeze/independent.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5069504,
+      "peak_scratch_bytes": 894317089,
+      "wall_seconds": 39.56959
+    },
+    "final-primary-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-11/data/B11.g6",
+        "/tmp/gp11-freeze/primary.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 4862012,
+      "peak_scratch_bytes": 894317924,
+      "wall_seconds": 52.446893
+    },
+    "generate11.time.json": {
+      "command": [
+        "nauty-geng",
+        "-Ck",
+        "11",
+        "11:24"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5362976,
+      "peak_scratch_bytes": 818335578,
+      "wall_seconds": 77.756851
+    },
+    "independent-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-11/data/B11.g6",
+        "/tmp/gp11-freeze/independent.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5521336,
+      "peak_scratch_bytes": 888919718,
+      "wall_seconds": 21.697491
+    },
+    "independent-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5626956,
+      "peak_scratch_bytes": 883364496,
+      "wall_seconds": 1.096059
+    },
+    "independent-sort.time.json": {
+      "command": [
+        "sort",
+        "--parallel=1",
+        "-S",
+        "64M",
+        "-T",
+        "/tmp/gp11-freeze",
+        "/tmp/gp11-freeze/independent.canon.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5628192,
+      "peak_scratch_bytes": 883534952,
+      "wall_seconds": 0.273702
+    },
+    "independent.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--max-pattern-n",
+        "10",
+        "--survivors",
+        "/tmp/gp11-freeze/independent.raw.g6",
+        "--summary",
+        "/tmp/gp11-freeze/independent.summary"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 3915352,
+      "peak_scratch_bytes": 878147358,
+      "wall_seconds": 1587.491871
+    },
+    "label-round-trip.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5088068,
+      "peak_scratch_bytes": 893750070,
+      "wall_seconds": 1.128854
+    },
+    "nauty-version.time.json": {
+      "command": [
+        "dpkg-query",
+        "-W",
+        "nauty"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5384876,
+      "peak_scratch_bytes": 63718,
+      "wall_seconds": 0.034692
+    },
+    "noninduced-replay.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "replay",
+        "--patterns",
+        "<repo>/research/unit-distance-22/data/forbidden-398.json",
+        "--inputs",
+        "/tmp/gp11-freeze/noninduced.inputs.g6",
+        "--survivors",
+        "/tmp/gp11-freeze/noninduced.survivors.g6",
+        "--witnesses",
+        "/tmp/gp11-freeze/noninduced.witnesses.tsv",
+        "--order",
+        "5"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5393308,
+      "peak_scratch_bytes": 1186550,
+      "wall_seconds": 0.118592
+    },
+    "noninduced.time.json": {
+      "command": [
+        "/tmp/gp11-freeze/matcher",
+        "--patterns",
+        "/tmp/gp11-freeze/F10.g6",
+        "--survivors",
+        "/tmp/gp11-freeze/noninduced.survivors.g6",
+        "--witness",
+        "/tmp/gp11-freeze/noninduced.witnesses.gz"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5393188,
+      "peak_scratch_bytes": 1186068,
+      "wall_seconds": 0.005024
+    },
+    "patterns-g6-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5384876,
+      "peak_scratch_bytes": 59753,
+      "wall_seconds": 0.003818
+    },
+    "patterns-json-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5385052,
+      "peak_scratch_bytes": 55788,
+      "wall_seconds": 0.006169
+    },
+    "primary-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-11/data/B11.g6",
+        "/tmp/gp11-freeze/primary.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5156012,
+      "peak_scratch_bytes": 872751607,
+      "wall_seconds": 21.467305
+    },
+    "primary-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5285712,
+      "peak_scratch_bytes": 867253733,
+      "wall_seconds": 1.047159
+    },
+    "primary-sort.time.json": {
+      "command": [
+        "sort",
+        "--parallel=1",
+        "-S",
+        "64M",
+        "-T",
+        "/tmp/gp11-freeze",
+        "/tmp/gp11-freeze/primary.canon.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5285176,
+      "peak_scratch_bytes": 867366845,
+      "wall_seconds": 0.270927
+    },
+    "producer-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "/tmp/gp11-freeze/primary.sorted.g6",
+        "/tmp/gp11-freeze/independent.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5088068,
+      "peak_scratch_bytes": 888920554,
+      "wall_seconds": 22.288976
+    },
+    "red-coverage-restored-lists.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-11/data/B11.g6",
+        "/tmp/gp11-freeze/independent.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 4958036,
+      "peak_scratch_bytes": 918522861,
+      "wall_seconds": 27.951955
+    },
+    "red-coverage-restored-replay.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "replay",
+        "--patterns",
+        "<repo>/research/unit-distance-22/data/forbidden-398.json",
+        "--inputs",
+        "/tmp/gp11-freeze/control.inputs.g6",
+        "--survivors",
+        "/tmp/gp11-freeze/control.survivors.g6",
+        "--witnesses",
+        "/tmp/gp11-freeze/control.witnesses.tsv",
+        "--order",
+        "11"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5153796,
+      "peak_scratch_bytes": 918521858,
+      "wall_seconds": 10.650414
+    },
+    "red-injectivity-restored-lists.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-11/data/B11.g6",
+        "/tmp/gp11-freeze/independent.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5143724,
+      "peak_scratch_bytes": 918521233,
+      "wall_seconds": 21.379125
+    },
+    "red-injectivity-restored-replay.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "replay",
+        "--patterns",
+        "<repo>/research/unit-distance-22/data/forbidden-398.json",
+        "--inputs",
+        "/tmp/gp11-freeze/control.inputs.g6",
+        "--survivors",
+        "/tmp/gp11-freeze/control.survivors.g6",
+        "--witnesses",
+        "/tmp/gp11-freeze/control.witnesses.tsv",
+        "--order",
+        "11"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5091808,
+      "peak_scratch_bytes": 918520229,
+      "wall_seconds": 10.215949
+    },
+    "red-list-equality-restored-lists.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "<repo>/research/gp-11/data/B11.g6",
+        "/tmp/gp11-freeze/independent.sorted.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 4335872,
+      "peak_scratch_bytes": 899697258,
+      "wall_seconds": 34.590178
+    },
+    "red-list-equality-restored-replay.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "replay",
+        "--patterns",
+        "<repo>/research/unit-distance-22/data/forbidden-398.json",
+        "--inputs",
+        "/tmp/gp11-freeze/control.inputs.g6",
+        "--survivors",
+        "/tmp/gp11-freeze/control.survivors.g6",
+        "--witnesses",
+        "/tmp/gp11-freeze/control.witnesses.tsv",
+        "--order",
+        "11"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 5001696,
+      "peak_scratch_bytes": 899696254,
+      "wall_seconds": 11.827801
+    },
+    "red-list-labelg.time.json": {
+      "command": [
+        "nauty-labelg",
+        "-q"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 4975516,
+      "peak_scratch_bytes": 894311691,
+      "wall_seconds": 0.009719
+    },
+    "round-trip-equality.time.json": {
+      "command": [
+        "/usr/bin/python3",
+        "<repo>/research/gp-11/recount/verify.py",
+        "compare",
+        "/tmp/gp11-freeze/independent.sorted.g6",
+        "/tmp/gp11-freeze/round-trip.g6"
+      ],
+      "exit_code": 0,
+      "min_MemAvailable_kib": 4857132,
+      "peak_scratch_bytes": 894305550,
+      "wall_seconds": 24.834248
+    }
+  }
+}

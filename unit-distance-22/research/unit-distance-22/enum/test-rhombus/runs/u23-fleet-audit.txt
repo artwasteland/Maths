@@ -1,0 +1,78 @@
+932 slice result directories from 62 workers under <scratch>/scratchpad/fleet/results
+{"mode": "summary-only", "runs": 932, "audited": 932, "pinned": {"target": [23, 65], "seed": 10, "slices": [12, 1920]}, "required": ["g4", "hashes"], "fleets": [{"target": [23, 65], "slice_level": 12, "slice_count": 1920, "summaries": 932, "slice_indices": 926, "missing_slices": 994, "prefix_files_hashed": 70, "prefix_files_identical_in": 932, "g4_results": {"PASS": 932}, "slice_partition": {"20": {"stage_file": 1384579, "slices_recording": 922, "sum": 665295, "present_slices_without_a_share": [579, 606, 1354, 1773]}, "21": {"stage_file": 476585, "slices_recording": 922, "sum": 229177, "present_slices_without_a_share": [579, 606, 1354, 1773]}, "22": {"stage_file": 51819, "slices_recording": 922, "sum": 24721, "present_slices_without_a_share": [579, 606, 1354, 1773]}, "23": {"stage_file": 3011, "slices_recording": 922, "sum": 1455, "present_slices_without_a_share": [579, 606, 1354, 1773]}, "24": {"stage_file": 198, "slices_recording": 922, "sum": 87, "present_slices_without_a_share": [579, 606, 1354, 1773]}, "25": {"stage_file": 25, "slices_recording": 922, "sum": 11, "present_slices_without_a_share": [579, 606, 1354, 1773]}, "26": {"stage_file": 2, "slices_recording": 922, "sum": 2, "present_slices_without_a_share": [579, 606, 1354, 1773]}, "27": {"stage_file": 1, "slices_recording": 922, "sum": 0, "present_slices_without_a_share": [579, 606, 1354, 1773]}}, "prefix_cells": 15, "prefix_cells_with_parents_recorded": 15, "cells_recovered_from_history": 0, "target_cell": {"children": 1, "kept": 1, "slices_with_children": [50]}}], "problems": 1, "unresolved": 73}
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (13, 23) with 1008 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (13, 24) with 294 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (13, 25) with 32 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (13, 26) with 32 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (13, 27) with 5 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (14, 26) with 8225 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (14, 27) with 1503 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (14, 28) with 1507 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (14, 29) with 192 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (14, 30) with 4 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (15, 29) with 62202 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (15, 30) with 72389 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (15, 31) with 10192 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (15, 32) with 514 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (15, 33) with 5 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (16, 33) with 357470 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (16, 34) with 60517 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (16, 35) with 2234 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (16, 36) with 8 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (17, 37) with 378292 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (17, 38) with 15461 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (17, 39) with 26 parents, and no copy of the slice records its parents
+UNRESOLVED: f04-dam5h4/s579of1920: G4 replayed (18, 41) with 156440 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (13, 23) with 1021 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (13, 24) with 279 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (13, 25) with 21 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (13, 26) with 21 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (13, 27) with 1 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (14, 26) with 7627 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (14, 27) with 1133 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (14, 28) with 1133 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (14, 29) with 67 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (15, 29) with 54673 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (15, 30) with 61440 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (15, 31) with 6767 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (15, 32) with 148 parents, and no copy of the slice records its parents
+UNRESOLVED: f31-mtewf0/s606of1920: G4 replayed (16, 33) with 293330 parents, and no copy of the slice records its parents
+UNRESOLVED: f11-bqjl8k/s1354of1920: G4 replayed (13, 23) with 957 parents, and no copy of the slice records its parents
+UNRESOLVED: f11-bqjl8k/s1354of1920: G4 replayed (13, 24) with 292 parents, and no copy of the slice records its parents
+UNRESOLVED: f11-bqjl8k/s1354of1920: G4 replayed (13, 25) with 21 parents, and no copy of the slice records its parents
+UNRESOLVED: f11-bqjl8k/s1354of1920: G4 replayed (13, 26) with 21 parents, and no copy of the slice records its parents
+UNRESOLVED: f11-bqjl8k/s1354of1920: G4 replayed (13, 27) with 1 parents, and no copy of the slice records its parents
+UNRESOLVED: f11-bqjl8k/s1354of1920: G4 replayed (14, 26) with 7631 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (13, 23) with 959 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (13, 24) with 289 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (13, 25) with 26 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (13, 26) with 26 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (13, 27) with 1 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (13, 28) with 1 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (14, 26) with 7404 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (14, 27) with 1035 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (14, 28) with 1055 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (14, 29) with 63 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (14, 30) with 20 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (14, 31) with 1 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (15, 29) with 46956 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (15, 30) with 52017 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (15, 31) with 5092 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (15, 32) with 528 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (15, 33) with 31 parents, and no copy of the slice records its parents
+UNRESOLVED: f46-s4mdou/s1773of1920: G4 replayed (16, 33) with 237264 parents, and no copy of the slice records its parents
+UNRESOLVED: slice 579: 42 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 8, 14: 8, 15: 9, 16: 9, 17: 7, 18: 1})
+UNRESOLVED: slice 606: 26 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 8, 14: 8, 15: 9, 16: 1})
+UNRESOLVED: slice 1354: 9 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 8, 14: 1})
+UNRESOLVED: slice 1773: 26 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 8, 14: 8, 15: 9, 16: 1})
+UNRESOLVED: fleet (23,65): slices [579, 606, 1354, 1773] record no share of (12,20)
+UNRESOLVED: fleet (23,65): slices [579, 606, 1354, 1773] record no share of (12,21)
+UNRESOLVED: fleet (23,65): slices [579, 606, 1354, 1773] record no share of (12,22)
+UNRESOLVED: fleet (23,65): slices [579, 606, 1354, 1773] record no share of (12,23)
+UNRESOLVED: fleet (23,65): slices [579, 606, 1354, 1773] record no share of (12,24)
+UNRESOLVED: fleet (23,65): slices [579, 606, 1354, 1773] record no share of (12,25)
+UNRESOLVED: fleet (23,65): slices [579, 606, 1354, 1773] record no share of (12,26)
+UNRESOLVED: fleet (23,65): slices [579, 606, 1354, 1773] record no share of (12,27)
+PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 994 slices have no summary ([58, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80] ...)
+COVERAGE (summary only) FAIL (1 problems, 73 unresolved)
+CHAIN FAIL (1 problems)

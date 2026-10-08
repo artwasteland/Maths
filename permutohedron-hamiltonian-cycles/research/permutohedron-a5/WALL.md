@@ -84,11 +84,14 @@ count varints widen):
 | model A, high | 2 × 10¹¹ | ~16 TB | ~2.5–5 TB | weeks on a fat node |
 | model B | 10¹³ | — | hundreds of TB | supercomputer scale |
 
-The right reference class is the **6-cube Hamiltonian-cycle enumeration** (Deza &
-Shklyar 2010, arXiv:1003.4391 — H₆ = 14,754,666,508,334,433,250,560, which settled a
-Knuth TAOCP problem and superseded years of estimates): a dedicated research
+The right reference class is the **6-cube Hamiltonian-cycle enumeration** (H. Haanpää
+and P. R. J. Östergård, "Counting Hamiltonian cycles in bipartite graphs", Math. Comp.
+83 (2014) 979-995, doi:10.1090/S0025-5718-2013-02741-X: H₆ = 35,838,213,722,570,883,870,720
+undirected cycles, OEIS A066037, which settled Knuth's TAOCP problem; it superseded the
+2010 figure of Deza and Shklyar, arXiv:1003.4391, which OEIS flags as possibly in error,
+and which this file quoted until 2026-09-28): a dedicated research
 computation, not a rented VM. a(5) ≈ 1.1 × 10²¹ (the SIS estimate, which this
-measurement does not disturb) is one order below H₆, and its DP is of comparable
+measurement does not disturb) is about 30 times smaller than H₆, and its DP is of comparable
 scale.
 
 ## What was wrong with the old estimate, precisely

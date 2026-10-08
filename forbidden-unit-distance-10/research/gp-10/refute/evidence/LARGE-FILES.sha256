@@ -1,0 +1,34 @@
+38ccb96723c899ae89ccab4bbb0cd91b3171dfefb187cee94a636e838c3a67b1  evidence/checker-sample/records.jsonl  10472830 bytes
+71cfff47dd60a090c672042455bbcc462c436c9f6f0249dfa9ad1011666a5137  evidence/cli-gp74.jsonl  5809452 bytes
+38ccb96723c899ae89ccab4bbb0cd91b3171dfefb187cee94a636e838c3a67b1  evidence/GP74.combined.jsonl  10472830 bytes
+373410de50fc04bbd802fb9b17f8c3f0724be6c2aac89734be048f9b344ba5fb  evidence/gp74-null-all-sat.jsonl  5079014 bytes
+40b702f1869eba9dce7247b4c2e407180db72b6b61d63561b6680e8c10e46793  evidence/gp74-null.jsonl  2905850 bytes
+3e132531622727569278542d6dc3dc58d693e00004bd55a7012e02c592c69bcd  evidence/gp74-real-extra.jsonl  9559729 bytes
+1f1a8486588903f9b6343163b6a993f6b4a06d14e473fa28756582b6b27c6147  evidence/gp74-real-focused.jsonl  10326813 bytes
+29b0b9e300ffb9b893739022ed7b8983bd4e187e7113f265ac1734f3cf433835  evidence/gp74-real.jsonl  17813632 bytes
+30bce251c457ce8e0b345187af530c126cb10419fbaf483ccf00695580a5b259  evidence/GP74.refuted.jsonl  10469366 bytes
+d5cabddc1a0d5f124a60c27815e0bf8d6662b7af481de8e3a7fe28c51a796baf  evidence/round2/B8p-fresh-candidates.jsonl  5625300 bytes
+eeb5e0d5e03ab5e591fc572eddf44816ccd62e88ce60f861746e411d2af2bf26  evidence/round2/B8p-null.jsonl  2349848 bytes
+6a96cec172c1b577ca5778e590bf2b44df3dff10dff984d51d2803985d435506  evidence/round2/B8p-real.jsonl  2763162 bytes
+450bfdb583b516d1b0df0271882ddeeee7f07880adf556e74a949506480ad756  evidence/round2/B9p-fresh-candidates.jsonl  28804849 bytes
+8ec02cc04f39b243bb7cf1e1e2cbd973d7ffdd4a7c82ed4e8d6863cd12cea8d0  evidence/round2/B9p-real.jsonl  18298691 bytes
+aae80ec9fc42212cc2e8ca72f69130862d99a276f4d02169558f9c08057bdece  evidence/round2/B9p-replay.jsonl  12129687 bytes
+eeb5e0d5e03ab5e591fc572eddf44816ccd62e88ce60f861746e411d2af2bf26  evidence/round2/checker-B8p-null/records.jsonl  2349848 bytes
+6a96cec172c1b577ca5778e590bf2b44df3dff10dff984d51d2803985d435506  evidence/round2/checker-B8p-real/records.jsonl  2763162 bytes
+88debf6d38d9ad7e8ae9cdeabdcc88cf7bdac027995201ee84150a96124da379  evidence/round2/checker-B9p-final/records.jsonl  15889174 bytes
+8ec02cc04f39b243bb7cf1e1e2cbd973d7ffdd4a7c82ed4e8d6863cd12cea8d0  evidence/round2/checker-B9p-real/records.jsonl  18298691 bytes
+aae80ec9fc42212cc2e8ca72f69130862d99a276f4d02169558f9c08057bdece  evidence/round2/checker-B9p-replay/records.jsonl  12129687 bytes
+d13c7cadba6233b6f1196b5e0afbb39248a1ca39bd4b8bf23df9cee48275761a  evidence/round2/checker-focused-retries/records.jsonl  9158350 bytes
+0a551f4ea98737968f6af578f82d2902a97870b244e45de01ee858667aeb5ea4  evidence/round2/checker-GP74-final/records.jsonl  12563659 bytes
+c90d531fc235fa3291cc8b28bc251142acad72c03e6e0bf13fa700d8ef443f63  evidence/round2/checker-GP74-round2/records.jsonl  11276473 bytes
+5afc130aa126ac7964c1338929b8b1f1429be01c9e01a5c305077e6695fc88ab  evidence/round2/checker-stall66/records.jsonl  2806632 bytes
+3515b6c84fa45ef555e0ee952182195eaead79dc2c54e97be7912da021b6268a  evidence/round2/checker-stalls-first2/records.jsonl  2403832 bytes
+396a113e46c4d62fe598ab5dcc3b15e2620316cae14859339d81ef55815134fa  evidence/round2/controls-null-retry10.jsonl  3862393 bytes
+5afc130aa126ac7964c1338929b8b1f1429be01c9e01a5c305077e6695fc88ab  evidence/round2/final-stall66.jsonl  2806632 bytes
+738e36f23205f8568959d5df12cae51a1c3b2c665645324fc436818d132a9d94  evidence/round2/GP73.refuted.jsonl  12562871 bytes
+d128018eb336b1dcc53d70239f5a0681019be59350ee28c215323b1786a4379c  evidence/round2/stalls-66-centroid-factored-homogeneous.jsonl  39690648 bytes
+5afc130aa126ac7964c1338929b8b1f1429be01c9e01a5c305077e6695fc88ab  evidence/round2/stalls-66-centroid-homogeneous8.jsonl  2806632 bytes
+7386a80d3de8b26aeebcd97d35a814dbaa08aa7890860b095efc65f4ce211c1c  evidence/round2/stalls-66-centroid.jsonl  22521082 bytes
+# Evidence files over 2 MB are kept out of git (they would stay in main's history forever). The originals
+# remain in the builder worktree ~/aw-codex-gp10-refute/research/gp-10/refute/ on <host> and are
+# reproducible from the commands in ../REPORT.md; their sha256s are above.

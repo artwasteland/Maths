@@ -1,0 +1,867 @@
+{
+  "suite": "gp74",
+  "method": "tu",
+  "count": 74,
+  "refuted": 0,
+  "unknown": 74,
+  "seconds_per_graph": 0.5,
+  "max_states": 200,
+  "all_sat": false,
+  "total_seconds": 10.331631350331008,
+  "rows": [
+    {
+      "index": 0,
+      "g6": "C~",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.0072030299343168736,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 1,
+      "g6": "DFw",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.007538370322436094,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 2,
+      "g6": "EqLw",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011953867971897125,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 3,
+      "g6": "F@h^_",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.22525752568617463,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 4,
+      "g6": "FqHXw",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.012195566669106483,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 5,
+      "g6": "FoS~_",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.012194124981760979,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 6,
+      "g6": "G?K]Nc",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.012304498348385096,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 7,
+      "g6": "Gp@Gzo",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.017418179661035538,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 8,
+      "g6": "GsOiho",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01218377985060215,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 9,
+      "g6": "G@fBJs",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.012148269917815924,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 10,
+      "g6": "GqHPW{",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.012456514872610569,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 11,
+      "g6": "G@IQV{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5095100170001388,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 12,
+      "g6": "GHCML{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.507943389005959,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 13,
+      "g6": "G?Nebs",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5088975941762328,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 14,
+      "g6": "GAJcrs",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5069326385855675,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 15,
+      "g6": "GdhAXk",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5093286680057645,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 16,
+      "g6": "G[dBG{",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.019701323937624693,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 17,
+      "g6": "Gm__x[",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02120711700990796,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 18,
+      "g6": "GqGTYw",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.013590658083558083,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 19,
+      "g6": "H?GXmRo",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.0128404232673347,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 20,
+      "g6": "H??|Qro",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.10540426289662719,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 21,
+      "g6": "HIGCkX{",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02278328314423561,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 22,
+      "g6": "H_hP`SV",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.013838427141308784,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 23,
+      "g6": "HCO_W~q",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.50912029389292,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 24,
+      "g6": "HgCXSLp",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.03360108798369765,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 25,
+      "g6": "HAJ?Xfw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5106465737335384,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 26,
+      "g6": "HqL@?[V",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5121643012389541,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 27,
+      "g6": "H?XPdeM",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5107465572655201,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 28,
+      "g6": "H@EPQ^a",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5081532266922295,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 29,
+      "g6": "Ho?gqd{",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.033043405041098595,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 30,
+      "g6": "HoO_ol{",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.03339712368324399,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 31,
+      "g6": "HAGW}Ed",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5057660080492496,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 32,
+      "g6": "HoCYPLp",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02736589638516307,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 33,
+      "g6": "H_SsPNo",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.029760857112705708,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 34,
+      "g6": "H?hPaue",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5052753752097487,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 35,
+      "g6": "HoCy@TR",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02823473559692502,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 36,
+      "g6": "HIA@Wzw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5098812659271061,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 37,
+      "g6": "H_hOpNo",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011856055818498135,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 38,
+      "g6": "H?dPdLi",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011840146966278553,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 39,
+      "g6": "HGEAXjw",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01211095741018653,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 40,
+      "g6": "Ho@PQwz",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011904628947377205,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 41,
+      "g6": "H?iRQhr",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.021192382089793682,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 42,
+      "g6": "Hh_EhW\\",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01773727498948574,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 43,
+      "g6": "HSD_YVp",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02227100171148777,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 44,
+      "g6": "HH_KiXr",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5090434802696109,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 45,
+      "g6": "H_KQ\\Jp",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.017213740851730108,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 46,
+      "g6": "H`QBWyp",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.012006580363959074,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 47,
+      "g6": "HkCeHoN",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011826375033706427,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 48,
+      "g6": "H?HVCp|",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.016998447943478823,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 49,
+      "g6": "H@EMBD|",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5072810025885701,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 50,
+      "g6": "HH`K_\\r",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5076447227038443,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 51,
+      "g6": "H@CNEK|",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.017695120070129633,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 52,
+      "g6": "H@_maXr",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.024187162052839994,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 53,
+      "g6": "HG_\\aXr",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02061596093699336,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 54,
+      "g6": "HGaqOtr",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.022039933130145073,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 55,
+      "g6": "HHEAG^x",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tu",
+        "seconds": 0.5069652339443564,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 56,
+      "g6": "Hm__XKZ",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.012150474358350039,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 57,
+      "g6": "HOOo}Rp",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011873465031385422,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 58,
+      "g6": "Hg?X[rp",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011735547799617052,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 59,
+      "g6": "H`?NeW{",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.012255510780960321,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 60,
+      "g6": "HqGRSgN",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011963941156864166,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 61,
+      "g6": "Hp?Gi^w",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.013387803919613361,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 62,
+      "g6": "Hr?MPgN",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011863764375448227,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 63,
+      "g6": "Hr_@iWN",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.012021273840218782,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 64,
+      "g6": "HkCe`WN",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.017657944932579994,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 65,
+      "g6": "HqGEhW\\",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018159411381930113,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 66,
+      "g6": "H{O_okN",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01816649129614234,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 67,
+      "g6": "Hp`@iWZ",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01747445110231638,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 68,
+      "g6": "H`QBpiL",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01359204901382327,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 69,
+      "g6": "H_CfKxw",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.017742237076163292,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 70,
+      "g6": "HpO]@cN",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.012017725966870785,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 71,
+      "g6": "HQ`F_wl",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011723047122359276,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 72,
+      "g6": "Hr`?XKZ",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011823227629065514,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 73,
+      "g6": "H``Axih",
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.011737240944057703,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    }
+  ],
+  "environment": {
+    "sympy": "1.14.0",
+    "flint": "0.9.0",
+    "SYMPY_GROUND_TYPES": "python"
+  },
+  "argv": [
+    "controls.py",
+    "--suite",
+    "gp74",
+    "--method",
+    "tu",
+    "--seconds",
+    "0.5"
+  ],
+  "source_sha256": {
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "algebra.py": "18b79b8f9db10df849c946d8dccb6c74f518ffc1e1f0fb7ade79f2bc2689d45a",
+    "gp10refute.py": "5854a63a6eb23bac3e62b3c4583a2ba7ebca9215f79f7636741cdc6458601787",
+    "selftest.py": "2a5063ccaa7d616e1abca9bf649ead0587dee91d4611f410e77fa22cba8c9b9d",
+    "controls.py": "7fd29fb7dae2a33efc9f12b2b83ae2d65fe2031c1bdc8d5dbeb4d35c7a6f8f6b",
+    "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec"
+  }
+}

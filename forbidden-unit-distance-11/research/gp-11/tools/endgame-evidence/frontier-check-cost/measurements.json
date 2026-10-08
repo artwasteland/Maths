@@ -1,0 +1,182 @@
+[
+  {
+    "bytes": 779918,
+    "certificate_sha256": "4366b26756ce60135399fc3530fe01ff92c3d5b0124c5d306d1ec20a888a1f1c",
+    "certificate_type": "exact",
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "command": [
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/guard.py",
+      "--",
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/measure_check_cost.py",
+      "--worker",
+      "<repo>/research/gp-11/tools/endgame-evidence/frontier-check-cost/case-000",
+      "--exact-only"
+    ],
+    "details": {
+      "interval_bisections": 0
+    },
+    "environment": {
+      "SYMPY_GROUND_TYPES": "python",
+      "executable": "<repo>/pyenv-gp10/bin/python",
+      "flint": "0.9.0",
+      "max_rss_kib": 78564,
+      "nice": 15,
+      "python": "3.12.3",
+      "sympy": "1.14.0"
+    },
+    "exit": 0,
+    "field_degree": 72,
+    "g6": "Jk?CX[WDJ@_",
+    "peak_child_rss_kib": 47348,
+    "peak_self_rss_kib": 84452,
+    "profile_sha256": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+    "scope": "E-exact arithmetic only; NOT a run ACCEPT",
+    "scratch_relocation": "<repo>/research/gp-11/tools/endgame-evidence/frontier-check-cost/case-000/scratch",
+    "source": "<repo>/research/gp-11/tools/endgame-work/cost-inputs/case-000.jsonl",
+    "status": "ARITHMETIC_PASS",
+    "timed_out": false,
+    "timeout_seconds": 900,
+    "verification_seconds": 54.08384316600859,
+    "wall_seconds": 55.08540120907128,
+    "worker_seconds": 54.51783654373139
+  },
+  {
+    "bytes": 1066813,
+    "certificate_sha256": "4f29e9e2511d0de8d199f668fbf011505e26d9933716534e64e9d4f761e24f46",
+    "certificate_type": "exact",
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "command": [
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/guard.py",
+      "--",
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/measure_check_cost.py",
+      "--worker",
+      "<repo>/research/gp-11/tools/endgame-evidence/frontier-check-cost/case-001",
+      "--exact-only"
+    ],
+    "details": {
+      "interval_bisections": 0
+    },
+    "environment": {
+      "SYMPY_GROUND_TYPES": "python",
+      "executable": "<repo>/pyenv-gp10/bin/python",
+      "flint": "0.9.0",
+      "max_rss_kib": 79368,
+      "nice": 15,
+      "python": "3.12.3",
+      "sympy": "1.14.0"
+    },
+    "exit": 0,
+    "field_degree": 56,
+    "g6": "JrHK??FEOF_",
+    "peak_child_rss_kib": 48352,
+    "peak_self_rss_kib": 87688,
+    "profile_sha256": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+    "scope": "E-exact arithmetic only; NOT a run ACCEPT",
+    "scratch_relocation": "<repo>/research/gp-11/tools/endgame-evidence/frontier-check-cost/case-001/scratch",
+    "source": "<repo>/research/gp-11/tools/endgame-work/cost-inputs/case-001.jsonl",
+    "status": "ARITHMETIC_PASS",
+    "timed_out": false,
+    "timeout_seconds": 900,
+    "verification_seconds": 54.94888478377834,
+    "wall_seconds": 56.111989446915686,
+    "worker_seconds": 55.442492865026
+  },
+  {
+    "bytes": 3196760,
+    "certificate_sha256": "57103419d81dd0e12abbac2369c12419f094f65d5cec857140494baf5557081a",
+    "certificate_type": "exact",
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "command": [
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/guard.py",
+      "--",
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/measure_check_cost.py",
+      "--worker",
+      "<repo>/research/gp-11/tools/endgame-evidence/frontier-check-cost/case-002",
+      "--exact-only"
+    ],
+    "details": {
+      "interval_bisections": 0
+    },
+    "environment": {
+      "SYMPY_GROUND_TYPES": "python",
+      "executable": "<repo>/pyenv-gp10/bin/python",
+      "flint": "0.9.0",
+      "max_rss_kib": 83176,
+      "nice": 15,
+      "python": "3.12.3",
+      "sympy": "1.14.0"
+    },
+    "exit": 0,
+    "field_degree": 26,
+    "g6": "JdZ@??FEOF_",
+    "peak_child_rss_kib": 54372,
+    "peak_self_rss_kib": 105448,
+    "profile_sha256": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+    "scope": "E-exact arithmetic only; NOT a run ACCEPT",
+    "scratch_relocation": "<repo>/research/gp-11/tools/endgame-evidence/frontier-check-cost/case-002/scratch",
+    "source": "<repo>/research/gp-11/tools/endgame-work/cost-inputs/case-002.jsonl",
+    "status": "ARITHMETIC_PASS",
+    "timed_out": false,
+    "timeout_seconds": 900,
+    "verification_seconds": 240.96719754766673,
+    "wall_seconds": 241.67807726282626,
+    "worker_seconds": 241.4536390970461
+  },
+  {
+    "bytes": 843916,
+    "certificate_sha256": "5fcf0ea3e8bc5863b183dd36a035598cabb65e34063345a8f79975260ef8f6ac",
+    "certificate_type": "exact",
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "command": [
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/guard.py",
+      "--",
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/measure_check_cost.py",
+      "--worker",
+      "<repo>/research/gp-11/tools/endgame-evidence/frontier-check-cost/case-003",
+      "--exact-only"
+    ],
+    "details": {
+      "interval_bisections": 0
+    },
+    "environment": {
+      "SYMPY_GROUND_TYPES": "python",
+      "executable": "<repo>/pyenv-gp10/bin/python",
+      "flint": "0.9.0",
+      "max_rss_kib": 78832,
+      "nice": 15,
+      "python": "3.12.3",
+      "sympy": "1.14.0"
+    },
+    "exit": 0,
+    "field_degree": 60,
+    "g6": "I`dcA?rBo",
+    "peak_child_rss_kib": 47576,
+    "peak_self_rss_kib": 84720,
+    "profile_sha256": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+    "scope": "E-exact arithmetic only; NOT a run ACCEPT",
+    "scratch_relocation": "<repo>/research/gp-11/tools/endgame-evidence/frontier-check-cost/case-003/scratch",
+    "source": "<repo>/research/gp-11/tools/endgame-work/cost-inputs/case-003.jsonl",
+    "status": "ARITHMETIC_PASS",
+    "timed_out": false,
+    "timeout_seconds": 900,
+    "verification_seconds": 39.097296581137925,
+    "wall_seconds": 40.09374856809154,
+    "worker_seconds": 39.50511104427278
+  }
+]

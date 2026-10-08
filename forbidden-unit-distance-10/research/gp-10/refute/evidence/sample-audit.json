@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "count": 500,
+  "comparisons": 16585,
+  "seconds": 84.286229880061,
+  "argv": [
+    "research/gp-10/refute/audit_sample.py"
+  ]
+}

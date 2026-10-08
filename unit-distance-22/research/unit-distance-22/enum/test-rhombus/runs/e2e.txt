@@ -1,0 +1,149 @@
+scratch tree <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/tree/research/unit-distance-22: new scripts prune.py fcb6665398fd, run-dag2.py 0c6fb31243ab; landed (81ff2c66e) prune.py 50d5a28e5857, run-dag2.py c804b1192ef3; the rhombus checker is check/udcheck_rhombus.py (sha256 06db27ec337e, the real one)
+I (16,41) mode 398 base scripts: exit 0 after 15 s
+I (16,41) mode 398 new scripts: exit 0 after 16 s
+I (16,41) mode 398: {"files": 488, "only_base": [], "only_new": [], "byte_identical": 277, "json_equal_after_normalising": 211, "different": [], "normalised": {"<run-dag2.py sha256>": 242, "started": 266, "finished": 266, "wall_seconds": 384, "cpu_seconds": 200, "max_rss_kib": 200, "<prune.py sha256>": 24, "geng_wall_seconds": 28, "filter_wall_seconds": 28, "step_wall_seconds": 24}, "hashes_of_equivalent_files_renamed": 838}
+I (16,41) mode 74 base scripts: exit 0 after 11 s
+I (16,41) mode 74 new scripts: exit 0 after 10 s
+I (16,41) mode 74: {"files": 351, "only_base": [], "only_new": [], "byte_identical": 230, "json_equal_after_normalising": 121, "different": [], "normalised": {"<run-dag2.py sha256>": 132, "started": 156, "finished": 156, "wall_seconds": 164, "cpu_seconds": 60, "max_rss_kib": 60, "<prune.py sha256>": 24, "geng_wall_seconds": 28, "filter_wall_seconds": 28, "step_wall_seconds": 24}, "hashes_of_equivalent_files_renamed": 588}
+IR a keep file one line short (12-24.keep.g6): reported True; also reported: []
+IR a keep file one line short, and its manifest's hash of it updated (12-24.keep.g6): reported True; also reported: ['12-24.prune.manifest.json']
+IR a tu certificate turned unknown, and its manifest's hash of it updated (12-24.certs.jsonl): reported True; also reported: ['12-24.prune.manifest.json']
+IR a new key in a prune manifest (12-24.prune.manifest.json): reported True; also reported: []
+IR a changed count in a prune manifest (12-24.prune.manifest.json): reported True; also reported: []
+C c-16-41-f398: exit 0 after 15 s
+C c-16-41-f398: top keep 16-41: 1 graphs; known (16,41) graphs present 1/1
+C c-16-41-f398-rh: exit 0 after 16 s
+C c-16-41-f398-rh: top keep 16-41: 1 graphs; known (16,41) graphs present 1/1
+C c-16-41-f398-tri: exit 0 after 16 s
+C c-16-41-f398-tri: top keep 16-41: 1 graphs; known (16,41) graphs present 1/1
+    12-24: plain keep 91; rhombus keep 90 (rhombus_tu 1, rhombus_refuted 0, silent 0); triangles keep 74 (tri_tu 17, tri_refuted 0, silent 0); tri <= rh <= plain True
+    12-25: plain keep 25; rhombus keep 25 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 25 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    12-26: plain keep 2; rhombus keep 2 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 2 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    12-27: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-28: plain keep 26; rhombus keep 26 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 24 (tri_tu 1, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-29: plain keep 6; rhombus keep 6 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 6 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-30: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    14-32: plain keep 10; rhombus keep 9 (rhombus_tu 1, rhombus_refuted 0, silent 0); triangles keep 9 (tri_tu 1, tri_refuted 0, silent 0); tri <= rh <= plain True
+    14-33: plain keep 2; rhombus keep 2 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 2 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    15-36: plain keep 2; rhombus keep 2 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 2 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    15-37: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    16-41: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+C c-16-41-f398: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-16-41-f398", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files": 12, "parent_files": 16, "shar
+C c-16-41-f398-rh: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-16-41-f398-rh", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files": 12, "parent_files": 16, "s
+C c-16-41-f398-tri: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-16-41-f398-tri", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files": 12, "parent_files": 16, "
+C c-16-41-f74: exit 0 after 10 s
+C c-16-41-f74: top keep 16-41: 1 graphs; known (16,41) graphs present 1/1
+C c-16-41-f74-rh: exit 0 after 11 s
+C c-16-41-f74-rh: top keep 16-41: 1 graphs; known (16,41) graphs present 1/1
+C c-16-41-f74-tri: exit 0 after 11 s
+C c-16-41-f74-tri: top keep 16-41: 1 graphs; known (16,41) graphs present 1/1
+    12-24: plain keep 121; rhombus keep 114 (rhombus_tu 3, rhombus_refuted 4, silent 0); triangles keep 91 (tri_tu 26, tri_refuted 4, silent 0); tri <= rh <= plain True
+    12-25: plain keep 26; rhombus keep 26 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 25 (tri_tu 1, tri_refuted 0, silent 0); tri <= rh <= plain True
+    12-26: plain keep 2; rhombus keep 2 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 2 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    12-27: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-28: plain keep 29; rhombus keep 29 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 27 (tri_tu 1, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-29: plain keep 6; rhombus keep 6 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 6 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-30: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    14-32: plain keep 11; rhombus keep 10 (rhombus_tu 1, rhombus_refuted 0, silent 0); triangles keep 10 (tri_tu 1, tri_refuted 0, silent 0); tri <= rh <= plain True
+    14-33: plain keep 2; rhombus keep 2 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 2 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    15-36: plain keep 2; rhombus keep 2 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 2 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    15-37: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    16-41: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+C c-16-41-f74: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-16-41-f74", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files": 12, "parent_files": 16, "shard
+C c-16-41-f74-rh: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-16-41-f74-rh", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files": 12, "parent_files": 16, "sh
+C c-16-41-f74-tri: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-16-41-f74-tri", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files": 12, "parent_files": 16, "s
+C c-17-43-f74: exit 0 after 104 s
+C c-17-43-f74: top keep 17-43: 8 graphs; known (17,43) graphs present 7/7
+C c-17-43-f74-rh: exit 0 after 106 s
+C c-17-43-f74-rh: top keep 17-43: 8 graphs; known (17,43) graphs present 7/7
+C c-17-43-f74-tri: exit 0 after 106 s
+C c-17-43-f74-tri: top keep 17-43: 8 graphs; known (17,43) graphs present 7/7
+    12-22: plain keep 35105; rhombus keep 29696 (rhombus_tu 4184, rhombus_refuted 1225, silent 0); triangles keep 23650 (tri_tu 9968, tri_refuted 1487, silent 0); tri <= rh <= plain True
+    12-23: plain keep 4369; rhombus keep 4071 (rhombus_tu 202, rhombus_refuted 96, silent 0); triangles keep 3592 (tri_tu 646, tri_refuted 131, silent 0); tri <= rh <= plain True
+    12-24: plain keep 241; rhombus keep 234 (rhombus_tu 3, rhombus_refuted 4, silent 0); triangles keep 206 (tri_tu 31, tri_refuted 4, silent 0); tri <= rh <= plain True
+    12-25: plain keep 26; rhombus keep 26 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 25 (tri_tu 1, tri_refuted 0, silent 0); tri <= rh <= plain True
+    12-26: plain keep 2; rhombus keep 2 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 2 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    12-27: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-26: plain keep 8098; rhombus keep 6827 (rhombus_tu 436, rhombus_refuted 193, silent 0); triangles keep 5424 (tri_tu 894, tri_refuted 215, silent 0); tri <= rh <= plain True
+    13-27: plain keep 655; rhombus keep 643 (rhombus_tu 3, rhombus_refuted 2, silent 0); triangles keep 558 (tri_tu 31, tri_refuted 3, silent 0); tri <= rh <= plain True
+    13-28: plain keep 61; rhombus keep 61 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 57 (tri_tu 3, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-29: plain keep 6; rhombus keep 6 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 6 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-30: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    14-30: plain keep 1429; rhombus keep 1288 (rhombus_tu 64, rhombus_refuted 50, silent 0); triangles keep 971 (tri_tu 142, tri_refuted 50, silent 0); tri <= rh <= plain True
+    14-31: plain keep 185; rhombus keep 180 (rhombus_tu 3, rhombus_refuted 2, silent 0); triangles keep 160 (tri_tu 12, tri_refuted 3, silent 0); tri <= rh <= plain True
+    14-32: plain keep 25; rhombus keep 24 (rhombus_tu 1, rhombus_refuted 0, silent 0); triangles keep 24 (tri_tu 1, tri_refuted 0, silent 0); tri <= rh <= plain True
+    14-33: plain keep 2; rhombus keep 2 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 2 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    15-34: plain keep 461; rhombus keep 419 (rhombus_tu 17, rhombus_refuted 16, silent 0); triangles keep 316 (tri_tu 39, tri_refuted 19, silent 0); tri <= rh <= plain True
+    15-35: plain keep 50; rhombus keep 46 (rhombus_tu 3, rhombus_refuted 0, silent 0); triangles keep 41 (tri_tu 5, tri_refuted 1, silent 0); tri <= rh <= plain True
+    15-36: plain keep 3; rhombus keep 3 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 3 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    15-37: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    16-38: plain keep 12; rhombus keep 9 (rhombus_tu 2, rhombus_refuted 0, silent 0); triangles keep 9 (tri_tu 1, tri_refuted 0, silent 0); tri <= rh <= plain True
+    16-39: plain keep 8; rhombus keep 8 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 7 (tri_tu 0, tri_refuted 1, silent 0); tri <= rh <= plain True
+    16-40: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    16-41: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    17-43: plain keep 8; rhombus keep 8 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 8 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+C c-17-43-f74: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-17-43-f74", "target": [17, 43], "levels_inspected": 34, "reach_files": 34, "keep_files": 24, "parent_files": 29, "shard
+C c-17-43-f74-rh: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-17-43-f74-rh", "target": [17, 43], "levels_inspected": 34, "reach_files": 34, "keep_files": 24, "parent_files": 29, "sh
+C c-17-43-f74-tri: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-17-43-f74-tri", "target": [17, 43], "levels_inspected": 34, "reach_files": 34, "keep_files": 24, "parent_files": 29, "s
+C c-18-46-f74: exit 0 after 414 s
+C c-18-46-f74: top keep 18-46: 38 graphs; known (18,46) graphs present 16/16
+C c-18-46-f74-rh: exit 0 after 392 s
+C c-18-46-f74-rh: top keep 18-46: 35 graphs; known (18,46) graphs present 16/16
+C c-18-46-f74-tri: exit 0 after 355 s
+C c-18-46-f74-tri: top keep 18-46: 35 graphs; known (18,46) graphs present 16/16
+    12-22: plain keep 83419; rhombus keep 74430 (rhombus_tu 6860, rhombus_refuted 2129, silent 0); triangles keep 63015 (tri_tu 17829, tri_refuted 2575, silent 0); tri <= rh <= plain True
+    12-23: plain keep 4369; rhombus keep 4071 (rhombus_tu 202, rhombus_refuted 96, silent 0); triangles keep 3592 (tri_tu 646, tri_refuted 131, silent 0); tri <= rh <= plain True
+    12-24: plain keep 250; rhombus keep 243 (rhombus_tu 3, rhombus_refuted 4, silent 0); triangles keep 215 (tri_tu 31, tri_refuted 4, silent 0); tri <= rh <= plain True
+    12-25: plain keep 26; rhombus keep 26 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 25 (tri_tu 1, tri_refuted 0, silent 0); tri <= rh <= plain True
+    12-26: plain keep 2; rhombus keep 2 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 2 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    12-27: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-25: plain keep 202186; rhombus keep 155781 (rhombus_tu 18201, rhombus_refuted 4732, silent 0); triangles keep 114587 (tri_tu 30873, tri_refuted 4821, silent 0); tri <= rh <= plain True
+    13-26: plain keep 12532; rhombus keep 11057 (rhombus_tu 502, rhombus_refuted 199, silent 0); triangles keep 8988 (tri_tu 1127, tri_refuted 221, silent 0); tri <= rh <= plain True
+    13-27: plain keep 655; rhombus keep 643 (rhombus_tu 3, rhombus_refuted 2, silent 0); triangles keep 558 (tri_tu 31, tri_refuted 3, silent 0); tri <= rh <= plain True
+    13-28: plain keep 63; rhombus keep 63 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 59 (tri_tu 3, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-29: plain keep 6; rhombus keep 6 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 6 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    13-30: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    14-29: plain keep 39251; rhombus keep 30085 (rhombus_tu 2972, rhombus_refuted 1142, silent 0); triangles keep 20971 (tri_tu 5003, tri_refuted 1174, silent 0); tri <= rh <= plain True
+    14-30: plain keep 2591; rhombus keep 2421 (rhombus_tu 91, rhombus_refuted 52, silent 0); triangles keep 1999 (tri_tu 216, tri_refuted 52, silent 0); tri <= rh <= plain True
+    14-31: plain keep 185; rhombus keep 180 (rhombus_tu 3, rhombus_refuted 2, silent 0); triangles keep 160 (tri_tu 12, tri_refuted 3, silent 0); tri <= rh <= plain True
+    14-32: plain keep 25; rhombus keep 24 (rhombus_tu 1, rhombus_refuted 0, silent 0); triangles keep 24 (tri_tu 1, tri_refuted 0, silent 0); tri <= rh <= plain True
+    14-33: plain keep 2; rhombus keep 2 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 2 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    15-33: plain keep 9551; rhombus keep 7871 (rhombus_tu 690, rhombus_refuted 299, silent 0); triangles keep 5458 (tri_tu 1114, tri_refuted 319, silent 0); tri <= rh <= plain True
+    15-34: plain keep 913; rhombus keep 840 (rhombus_tu 35, rhombus_refuted 18, silent 0); triangles keep 731 (tri_tu 63, tri_refuted 21, silent 0); tri <= rh <= plain True
+    15-35: plain keep 78; rhombus keep 74 (rhombus_tu 3, rhombus_refuted 0, silent 0); triangles keep 69 (tri_tu 5, tri_refuted 1, silent 0); tri <= rh <= plain True
+    15-36: plain keep 3; rhombus keep 3 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 3 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    15-37: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    16-37: plain keep 3897; rhombus keep 3116 (rhombus_tu 315, rhombus_refuted 148, silent 0); triangles keep 2215 (tri_tu 439, tri_refuted 161, silent 0); tri <= rh <= plain True
+    16-38: plain keep 238; rhombus keep 216 (rhombus_tu 7, rhombus_refuted 5, silent 0); triangles keep 184 (tri_tu 18, tri_refuted 7, silent 0); tri <= rh <= plain True
+    16-39: plain keep 17; rhombus keep 17 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 16 (tri_tu 0, tri_refuted 1, silent 0); tri <= rh <= plain True
+    16-40: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    16-41: plain keep 1; rhombus keep 1 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 1 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    17-41: plain keep 150; rhombus keep 94 (rhombus_tu 11, rhombus_refuted 14, silent 0); triangles keep 45 (tri_tu 20, tri_refuted 9, silent 0); tri <= rh <= plain True
+    17-42: plain keep 73; rhombus keep 70 (rhombus_tu 3, rhombus_refuted 0, silent 0); triangles keep 65 (tri_tu 4, tri_refuted 0, silent 0); tri <= rh <= plain True
+    17-43: plain keep 8; rhombus keep 8 (rhombus_tu 0, rhombus_refuted 0, silent 0); triangles keep 8 (tri_tu 0, tri_refuted 0, silent 0); tri <= rh <= plain True
+    18-46: plain keep 38; rhombus keep 35 (rhombus_tu 2, rhombus_refuted 1, silent 0); triangles keep 35 (tri_tu 2, tri_refuted 1, silent 0); tri <= rh <= plain True
+C c-18-46-f74: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-18-46-f74", "target": [18, 46], "levels_inspected": 41, "reach_files": 41, "keep_files": 31, "parent_files": 36, "shard
+C c-18-46-f74-rh: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-18-46-f74-rh", "target": [18, 46], "levels_inspected": 41, "reach_files": 41, "keep_files": 31, "parent_files": 36, "sh
+C c-18-46-f74-tri: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-18-46-f74-tri", "target": [18, 46], "levels_inspected": 41, "reach_files": 41, "keep_files": 31, "parent_files": 36, "s
+R R1 12-22.certs.jsonl line 3 coefficient changed: verify-chain exit 1: CHAIN FAIL (2 problems); ['PROBLEM: 12-22.certs.jsonl: hash differs from the prune manifest', 'PROBLEM: 12-22.certs.jsonl: udcheck did not accept: REJECT: <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-17-43-f74-rh/12-22.certs.jsonl:3.witness.rhombus: rule 6: su']
+R R2 12-22.prune.manifest.json without its rhombus flag: verify-chain exit 1: CHAIN FAIL (1 problems); ["PROBLEM: 12-22.prune.manifest.json: rhombus setting None is not the run's True"]
+R3 prune.py with a corrupting prover wrapper: exit 1; manifest exit_status 1; problems ['udcheck REJECTED the certificates: REJECT: <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/red-r3/12-22.certs.jsonl:3.witness.rhombus: r
+R4 --rhombus without --prune: exit 2: run-dag2.py: --rhombus runs inside the prune step and needs --prune; directory made False
+R4 --resume of a no-rhombus directory with --rhombus: exit 2: run-dag2.py: run-config.json differs from this run's options; refusing to resume; files touched 0
+R R5 the rhombus flag removed from 54 manifests (no --check): verify-chain exit 1: CHAIN FAIL (11 problems); 11 problems; e.g. PROBLEM: 12-22.certs.jsonl: 5409 record(s) carry a 'rhombus' witness (first K@?GM?j`Qc~@) but the run's manifests do not record --rhombus: refused
+R R5 the rhombus flag removed from 54 manifests (--check): verify-chain exit 1: CHAIN FAIL (22 problems); 22 problems; e.g. PROBLEM: 12-22.certs.jsonl: 5409 record(s) carry a 'rhombus' witness (first K@?GM?j`Qc~@) but the run's manifests do not record --rhombus: refused
+R R6 a rhombus witness renamed tri in 12-22.certs.jsonl (no --check): verify-chain exit 1: CHAIN FAIL (2 problems); 2 problems; e.g. PROBLEM: 12-22.certs.jsonl: 1 record(s) carry a 'tri' witness (first K@?GM?j`Qc~@) but the run's manifests do not record --triangles: refused
+R R6 a rhombus witness renamed tri in 12-22.certs.jsonl (--check): verify-chain exit 1: CHAIN FAIL (3 problems); 3 problems; e.g. PROBLEM: 12-22.certs.jsonl: 1 record(s) carry a 'tri' witness (first K@?GM?j`Qc~@) but the run's manifests do not record --triangles: refused
+R R7 a rhombus witness planted in the plain run's 12-22.certs.jsonl (no --check): verify-chain exit 1: CHAIN FAIL (2 problems); 2 problems; e.g. PROBLEM: 12-22.certs.jsonl: 1 record(s) carry a 'rhombus' witness (first K???]EgTHw]H) but the run's manifests do not record --rhombus: refused
+R R7 a rhombus witness planted in the plain run's 12-22.certs.jsonl (--check): verify-chain exit 1: CHAIN FAIL (3 problems); 3 problems; e.g. PROBLEM: 12-22.certs.jsonl: 1 record(s) carry a 'rhombus' witness (first K???]EgTHw]H) but the run's manifests do not record --rhombus: refused
+R8 prune.py with a prover that passes 2 detections silently: exit 0; rhombus_silent_passes 2 (counts 2); kept 29698 = the real run's 29696 + 2; warning on stderr True; checker ACCEPT certificates records=92923 forbidden=0 tu=62001 embedded=0 refuted=1224 unknown=29698 proof_nodes=0 rhombus_tu=41
+R9 prune.py --rhombus at target (18, 45): exit 2: prune.py: target (18,45) lies below the proved bound u(18) <= 46; TU pruning is not justified; files written []
+R9 prune.py --rhombus at target (13, 30): exit 2: prune.py: no proved upper bound on u(13); TU pruning is not justified; files written []
+R R9 run-summary.json target lowered to (17,42) (no --check): verify-chain exit 1: CHAIN FAIL (48 problems); 48 problems; e.g. PROBLEM: 12-22.prune.manifest.json: tu records prune only at a target (N, M) with M >= u(N) proved; (17,42) is below the proved bound 43
+R R9 run-summary.json target lowered to (17,42) (--check): verify-chain exit 1: CHAIN FAIL (48 problems); 48 problems; e.g. PROBLEM: 12-22.prune.manifest.json: tu records prune only at a target (N, M) with M >= u(N) proved; (17,42) is below the proved bound 43
+R R10 a rhombus witness in the triangles run's 12-22.certs.jsonl (no --check): verify-chain exit 1: CHAIN FAIL (2 problems); 2 problems; e.g. PROBLEM: 12-22.certs.jsonl: 1 record(s) carry a 'rhombus' witness (first K@?GM?j`Qc~@) but the run's manifests do not record --rhombus: refused
+R R10 a rhombus witness in the triangles run's 12-22.certs.jsonl (--check): verify-chain exit 1: CHAIN FAIL (2 problems); 2 problems; e.g. PROBLEM: 12-22.certs.jsonl: 1 record(s) carry a 'rhombus' witness (first K@?GM?j`Qc~@) but the run's manifests do not record --rhombus: refused
+R11 run-dag2.py --rhombus --triangles: exit 2: run-dag2.py: at most one linear rule per run, not ['rhombus', 'triangles'] (--triangles implies the rhombus rule); directory made False
+R11 prune.py --rhombus --triangles: exit 2: prune.py: at most one linear rule per prune step, not ['rhombus', 'triangles']; files written []
+wall seconds: {"16-41 mode 398 base": 15.1, "16-41 mode 398 new": 15.5, "16-41 mode 74 base": 10.6, "16-41 mode 74 new": 10.4, "c-16-41-f398": 14.8, "c-16-41-f398-rh": 15.8, "c-16-41-f398-tri": 15.8, "c-16-41-f74": 10.4, "c-16-41-f74-rh": 11.3, "c-16-41-f74-tri": 11.4, "c-17-43-f74": 103.7, "c-17-43-f74-rh": 106.2, "c-17-43-f74-tri": 105.8, "c-18-46-f74": 414.1, "c-18-46-f74-rh": 391.9, "c-18-46-f74-tri": 354.9}
+E2E PASS

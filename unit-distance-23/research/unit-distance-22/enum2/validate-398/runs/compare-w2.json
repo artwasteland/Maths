@@ -1,0 +1,8 @@
+{
+ "entries_single_process": 194,
+ "entries_two_workers": 194,
+ "differences": 0,
+ "differences_first": [],
+ "red_control_perturbed_entry_detected": true,
+ "pass": true
+}

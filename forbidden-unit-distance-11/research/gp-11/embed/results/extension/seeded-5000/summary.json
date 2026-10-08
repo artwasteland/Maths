@@ -1,0 +1,79 @@
+{
+  "artifacts": {
+    "UNKNOWN.g6": {
+      "bytes": 5592,
+      "sha256": "3b6260a14621b31994aa9a38bc99b0c076db61f31e524494c95ad3cd99510ff1"
+    },
+    "checker-report.json": {
+      "bytes": 1485,
+      "sha256": "abc7a06b79fe3535a9b658912b2f100b4ec9f4bf93ad3de80c5e0439215faea3"
+    },
+    "input.g6": {
+      "bytes": 60000,
+      "sha256": "f3a783b22fb9e1f18eddc65584dff31b33238a7bbc87a9b8b9c2ddfbe28e2d12"
+    },
+    "records.jsonl.gz": {
+      "bytes": 2395957,
+      "sha256": "365116cf6a8b1ffc4e138d15e9c86f814dd13bd0410fde8dc331813dc72a9239"
+    },
+    "run.json": {
+      "bytes": 218,
+      "sha256": "ecc124c3bd6941598c71d7678d2e0644420a9660fed3f78c17a21893edad186e"
+    },
+    "timings.jsonl.gz": {
+      "bytes": 408333,
+      "sha256": "110f4fa3d0a67aad330ca729dea6a0458661bc96c393c77633796f3e6b504607"
+    }
+  },
+  "attempt_reasons": {
+    "attempt_timeout": 149,
+    "base_not_biconnected": 1111,
+    "embedded": 4534,
+    "extension:collision": 892,
+    "extension:far": 194,
+    "graph_timeout": 52
+  },
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "checker_status": "ACCEPT",
+  "completed": true,
+  "count": 5000,
+  "counts": {
+    "embedded": 4534,
+    "unknown": 466
+  },
+  "field_degrees": {
+    "2": 23,
+    "4": 3084,
+    "6": 1,
+    "8": 958,
+    "10": 348,
+    "12": 57,
+    "16": 62,
+    "18": 1
+  },
+  "graph_cpu_seconds": 860.5497639999994,
+  "graph_seconds": 918.3092772602104,
+  "graphs_with_attempted_nonbiconnected_base": {
+    "embedded": 412,
+    "unknown": 175
+  },
+  "max_child_rss_kib": 167904,
+  "max_rss_kib": 167904,
+  "max_seconds": 3.050723123829812,
+  "mean_seconds": 0.18366185545204208,
+  "median_seconds": 0.049339821096509695,
+  "min_MemAvailable_kib": 4122672,
+  "online_check_seconds": 366.28903562622145,
+  "p95_seconds": 0.6148333558812737,
+  "replay_cpu_seconds": 349.139589,
+  "replay_seconds": 385.4994861520827,
+  "setup_seconds": 26.510566509794444,
+  "unknown_reasons": {
+    "base_not_biconnected": 69,
+    "extension:collision": 63,
+    "extension:far": 30,
+    "graph_timeout": 52,
+    "no_degree_two_vertex": 128,
+    "placements_exhausted": 124
+  }
+}

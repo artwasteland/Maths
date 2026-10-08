@@ -1,0 +1,3 @@
+ACCEPT record DFw verified
+ACCEPT record DF{ verified
+REJECT run minimality_claim_mismatch

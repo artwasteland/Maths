@@ -1,0 +1,9 @@
+{
+ "profile": "B6p",
+ "input": "../../data/B6p.g6",
+ "input_sha256": "88faa0132572f37c390c45abbca9281489f0f7006a16300e86bba5a94ca08d7a",
+ "records": [
+  "records.jsonl"
+ ],
+ "unknown": "UNKNOWN.g6"
+}

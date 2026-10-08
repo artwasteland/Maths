@@ -1,0 +1,39 @@
+{
+  "executable": "<repo>/pyenv-gp10/bin/python",
+  "executables": {
+    "Singular": {
+      "path": "/usr/bin/Singular",
+      "sha256": "90ab699b7a28486944a167e797d7c8dd38f8f949960b93ee7a6d08ff1c7c46f4"
+    },
+    "cc": {
+      "path": "/usr/bin/cc",
+      "sha256": "1b99826121ae6682a634e5efe09bd3e3df58ce58e0b28f849114ab5b89139c26"
+    },
+    "gp": {
+      "path": "/usr/bin/gp",
+      "sha256": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec"
+    },
+    "ld": {
+      "path": "/usr/bin/ld",
+      "sha256": "e9ceb054c12207970f2726dfc07e9a66b411602748628baf27399f02a9bbb31b"
+    },
+    "msolve": {
+      "path": "/usr/bin/msolve",
+      "sha256": "c2722288d22c3a1eab00c0b818d0204d4a98104d059b2fd4ecb7343e8ef759fa"
+    },
+    "nauty-labelg": {
+      "path": "/usr/bin/nauty-labelg",
+      "sha256": "96e973e3a13442c6f626012b6b1059ef88e750aff284be6bfc6cd77ee7f185bf"
+    }
+  },
+  "packages": {
+    "mpmath": "1.3.0",
+    "networkx": "3.7",
+    "numpy": "2.5.3",
+    "pynauty": "2.8.8.1",
+    "python-flint": "0.9.0",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0"
+  },
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+}

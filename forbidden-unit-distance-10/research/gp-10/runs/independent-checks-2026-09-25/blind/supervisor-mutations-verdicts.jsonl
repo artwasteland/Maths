@@ -1,0 +1,5 @@
+{"g6": "I??OzIJ}?", "type": "tree", "verdict": "REJECT", "reason": "tree node root: A contains a row that is not implied by the proved constraints", "seconds": 0.001}
+{"g6": "I??gpb@~_", "type": "null", "verdict": "REJECT", "reason": "null: sum(cofactor * generator) != 1", "seconds": 1.242}
+{"g6": "I?CtQrCwW", "type": "real-dag", "verdict": "REJECT", "reason": "real-dag: sum(cofactor * generator) != f", "seconds": 0.498}
+{"g6": "I?CYKMqYO", "type": "tu", "verdict": "REJECT", "reason": "tu step 0: map must be a list of length 7", "seconds": 0.0}
+{"g6": "I?GO]C{{O", "type": "real", "verdict": "REJECT", "reason": "frame: 7-8 is not an edge", "seconds": 0.237}

@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "official_runs": [
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-real-positive",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 0,
+      "final_line": "ACCEPT run verified",
+      "seconds": 0.8412603996694088,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+    },
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-generated-null",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 0,
+      "final_line": "ACCEPT run verified",
+      "seconds": 0.09562044776976109,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+      "producer_detail": {
+        "basis_size": 1,
+        "helper_rows": 8,
+        "sat_pairs": 4,
+        "positive_targets": 1,
+        "dag_rows": 2,
+        "method": "dag",
+        "seconds": 0.07691549276933074,
+        "limit": 5
+      }
+    },
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-null-row-coefficient",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 1,
+      "final_line": "REJECT run records_rejected",
+      "seconds": 0.2249068939127028,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+      "expected_reason": "dag_row_identity"
+    },
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-null-self-reference",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 1,
+      "final_line": "REJECT run records_rejected",
+      "seconds": 0.17319917911663651,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+      "expected_reason": "dag_reference_order"
+    },
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-null-term-order",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 1,
+      "final_line": "REJECT run records_rejected",
+      "seconds": 0.20727842906489968,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+      "expected_reason": "sparse_noncanonical"
+    },
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-real-sos-zero",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 1,
+      "final_line": "REJECT run records_rejected",
+      "seconds": 0.4038155539892614,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+      "expected_reason": "sos_constant_positive"
+    }
+  ],
+  "safe_dag_controls": [
+    {
+      "name": "prism",
+      "g6": "Is?HGtcU?",
+      "detail": {
+        "method": "dag",
+        "seconds": 1.0019102967344224,
+        "limit": 1,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "name": "petersen",
+      "g6": "IsP@OkWHG",
+      "detail": {
+        "method": "dag",
+        "seconds": 1.0020185420289636,
+        "limit": 1,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "name": "spindle",
+      "g6": "F`o~_",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 15,
+        "helper_rows": 12,
+        "sat_pairs": 2,
+        "positive_targets": 0,
+        "method": "dag",
+        "seconds": 0.049110709223896265,
+        "limit": 1
+      }
+    }
+  ],
+  "source_sha256": {
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "round3_tests.py": "1a938b62c5da1ef1e81fe9e1960495c26536d124d8dde75137ed6583732d8c6d",
+    "round2_retry.py": "1efefa1c624d7bd9915beca2c924837881f07ec7bfe2d75658942f9e4f189562",
+    "audit_report.py": "fcd3646d501e8f806406321b75ddc874d1798b066e0311aef06f2138f92c1a6b",
+    "algebra.py": "7eef402691dac497fc2d682b5411f83f2d83347b00b6c0e08d69f243dc153411",
+    "dag.py": "98db0d70b0257b4fbbe9b944661d5eb4f5b1bba815484941d8fec9139035d69d",
+    "round2.py": "0b0357965c96d2c8e62dee1071067518e5c1eb2664153231a8c2fd0eb2905009",
+    "export_checker.py": "612182fba410aee4e33c12f96b2d12b54f0272350f08b6d1ef7d6e271706eccd",
+    "stall_search.py": "778394aca8e8c4b0bc88a8a24f7f402c50996f9c3c90f1fa9df274370eb3d682",
+    "centroid66.py": "93193ea7da062366148fe2664bd50b939235be2b704dd88932a8089808c9239a",
+    "gp10refute.py": "d4ec07639e0565182e621deb37cc48d639f19ad9e455ddc5648a560c9a188ace",
+    "round2_proposal.py": "f78cc92723e90246bdd7d83fb85f6e9ab1ba870cb1c680372e8917b680bee071",
+    "circle_helpers.py": "c24d242cc6cecfa94884559eafb8e08f86daaea361d5c6da78edb7470132e583",
+    "selftest.py": "f05d97dbbe243b41ab11ad91d3fcb9a389200224c5a7c9c4beb2360363cf55b3",
+    "controls.py": "26717ed7fbfe69f275705d10cc652952156a0333b0a626bf29677d19d314086a",
+    "round2_audit.py": "c3c143f7ea665f4397c0d9f5bef11f9a10b594559990b5a9a58f2c5152f72f63",
+    "audit_sample.py": "6b3434eaa669033ef325249c81667a26726f6b6a5db446c8f702c6fce0181f3e",
+    "graphs.py": "29249a6942f9099a89cceb148fcfd2f266e99d545a70d33570abc392ae7b9f1f",
+    "round3.py": "e8720694eb224c6ab7d70a75f4488cc07a33b1b48e03038cd243a8ccd2fe3eea",
+    "null39.py": "2e45a033a125748cf0a93cc00829cde1a6d66d994940a61309ea75732f825486",
+    "wrong_frame_control.py": "660fbf6071be92b0fa7ecdfa936129cb28d39cf6f8348c4a865b0d014a0aa4ca",
+    "analytic39.py": "6f884147207d6d3ae0c4d4a19afedb717fc359aea3fbb91998bcd3f83ccbd103",
+    "ideal_derivation.py": "78dd201353ff8168f3d8985e4c0e809fb1f4a749e58c02af871214ad40b44da7",
+    "run_focused_controls.py": "4cc11b5f664c10105664fc573bf94c10e2768d6fff189e0010e9afdfad0a62be",
+    "quotient39.py": "b2500a4c765c50fd00e86bdf041403e1268d10f00f87cb986bac5e4ffda83afa",
+    "round2_tests.py": "9dad346c632e1db1b5481ff85a27b256dd4d4e725e3e80f7575949540af71d86",
+    "round2_report.py": "31b24b177f410e7bca04320b00add545b30f872464b5825c2f50597a16af21fb",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec",
+    "factored_lift.py": "d09c66885c8f6dab657ddeb1c9f84349cad5bc7d5a41cba956d304f5712ce987",
+    "real_radical.py": "4b3fb214bdb2c6d0bb2f177445d7f9bf531237ac8d052b4f45453ae928a8f817",
+    "cofactor_reduce.py": "68834b0162711f269090e4eb8749a6d1c12a02f08f56ff6ec438cc28d0fa6d2f"
+  }
+}

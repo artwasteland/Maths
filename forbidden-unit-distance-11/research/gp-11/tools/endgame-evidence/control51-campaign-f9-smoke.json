@@ -1,0 +1,28 @@
+{
+  "accepted": {
+    "bytes": 144,
+    "check_log_sha256": "4600790ff4526dae7138f7efefdba6c803c71051e0ca98662146d94afa29f86b",
+    "checker_exit": 0,
+    "field_degree": 1,
+    "g6": "A_",
+    "min_available_kib": 5693708,
+    "peak_checker_rss_kib": 81368,
+    "reason": "verified",
+    "record_sha256": "a6915ddd38a2524d43d4df7d70eb30cf450b26657ce906736a4855507a984072",
+    "report_sha256": "cb5c092e7e96c9eb120bbb904df5451562de4432a4e3ea7ddeada079d285d24f",
+    "scope": "independent one-record F9 replay",
+    "status": "ACCEPTED",
+    "verdict": "embedded",
+    "wall_seconds": 1.0070526110939682
+  },
+  "isolation": "private filesystem and /tmp; shared network namespace solely because outer sandbox blocks NETLINK_ROUTE",
+  "malformed_replacement": {
+    "peak_checker_rss_kib": 0,
+    "reason": "assigned_graph_record_required",
+    "scope": "independent one-record F9 replay",
+    "status": "UNRESOLVED",
+    "wall_seconds": 0.0015039597637951374
+  },
+  "scope": "two-vertex synthetic certificate; no control graph solved, no Codex, no auth, no network requests",
+  "stale_report_removed": true
+}

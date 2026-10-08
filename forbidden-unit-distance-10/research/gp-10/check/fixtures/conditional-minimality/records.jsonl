@@ -1,0 +1,2 @@
+{"g6":"DF{","verdict":"refuted","cert":{"type":"tree","witness":{"field":{"minpoly":[0,1],"interval":[-1,1]},"tree":{"edges":[[0,3],[0,4],[1,3],[1,4],[2,3],[2,4],[3,4]],"A":[[1,1,0,-1,-1],[1,0,1,-1,-1],[0,1,1,-1,-1]],"move":{"kind":"L1a","pair":[0,2]},"children":[]}}}}
+{"g6":"DFw","verdict":"unknown","cert":{"reason":"conditional fixture, no search","budget":{"seconds":0}}}

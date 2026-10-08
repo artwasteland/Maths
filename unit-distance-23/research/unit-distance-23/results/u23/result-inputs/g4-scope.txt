@@ -1,0 +1,2 @@
+G4-SCOPE COPIES (23,65): 1955 copies, sha256 15fdb9599e746e6751af9da2bd4df01390ff44fbe83c6977ee377ddea665a946
+G4-SCOPE OK: 101 of 101 full-mode replays and 1854 of 1854 slice-mode replays in their mode's scope; 0 problem(s)

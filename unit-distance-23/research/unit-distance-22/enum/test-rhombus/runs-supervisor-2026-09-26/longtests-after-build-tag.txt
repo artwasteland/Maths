@@ -1,0 +1,13 @@
+== triangle suite 10:14:45
+    prototype rhombus=hidden-edge triangle=-                   -> udtriangle tu      root-leaf x91
+    prototype rhombus=none        triangle=closed              -> udtriangle tu      split     x11
+
+ALL STEPS PASSED
+== rhombus full suite 10:15:47
+E2E PASS
+== filterset
+FILTERSET PASS
+== runbook-rh
+RUNBOOK-RULES PASS
+ALL RHOMBUS TESTS PASSED
+ALL LONG TESTS DONE 10:57:01

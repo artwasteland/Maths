@@ -1,0 +1,93 @@
+[
+  {
+    "changed_file": "records.jsonl",
+    "name": "pointer-noninjective",
+    "positive": "pointers",
+    "reason": "records_rejected",
+    "record_reason": "map_not_injective"
+  },
+  {
+    "changed_file": "records.jsonl",
+    "name": "pointer-cycle",
+    "positive": "pointers",
+    "reason": "records_rejected",
+    "record_reason": "pointer_cycle"
+  },
+  {
+    "changed_file": "hosts.jsonl",
+    "name": "pointer-missing",
+    "positive": "pointers",
+    "reason": "records_rejected",
+    "record_reason": "pointer_target_missing"
+  },
+  {
+    "changed_file": "records.jsonl",
+    "name": "coverage-missing",
+    "positive": "mixed",
+    "reason": "coverage",
+    "record_reason": null
+  },
+  {
+    "changed_file": "records.jsonl",
+    "name": "coverage-extra",
+    "positive": "mixed",
+    "reason": "coverage",
+    "record_reason": null
+  },
+  {
+    "changed_file": "records.jsonl",
+    "name": "coverage-duplicate",
+    "positive": "mixed",
+    "reason": "duplicate_record",
+    "record_reason": null
+  },
+  {
+    "changed_file": "records.jsonl",
+    "name": "verdict-conflict",
+    "positive": "mixed",
+    "reason": "embedded_refuted_conflict",
+    "record_reason": null
+  },
+  {
+    "changed_file": "UNKNOWN.g6",
+    "name": "unknown-missing",
+    "positive": "unknown",
+    "reason": "unknown_exactness",
+    "record_reason": null
+  },
+  {
+    "changed_file": "UNKNOWN.g6",
+    "name": "unknown-extra",
+    "positive": "mixed",
+    "reason": "unknown_exactness",
+    "record_reason": null
+  },
+  {
+    "changed_file": "claim.g6",
+    "name": "minimality-false-claim",
+    "positive": "minimality",
+    "reason": "minimality_claim_refuted_deletion",
+    "record_reason": null
+  },
+  {
+    "changed_file": "run.json",
+    "name": "withheld-index",
+    "positive": "frozen-pointer",
+    "reason": "records_rejected",
+    "record_reason": "forbidden_not_in_force"
+  },
+  {
+    "changed_file": "cross.jsonl",
+    "name": "cross-check-wrong-verdict",
+    "positive": "mixed",
+    "reason": "cross_check_records",
+    "record_reason": null
+  },
+  {
+    "changed_file": "UNKNOWN.g6",
+    "name": "conditional-unknown-missing",
+    "positive": "conditional-minimality",
+    "reason": "unknown_exactness",
+    "record_reason": null
+  }
+]

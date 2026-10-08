@@ -1,0 +1,29 @@
+[
+  {
+    "sample": "maximal",
+    "pilot_size": 20,
+    "hits": 9,
+    "seconds": 1.4177994867786765,
+    "node_cap": 1500,
+    "predicted_embedded": 1137,
+    "predicted_seconds": 179.06807518014685
+  },
+  {
+    "sample": "uniform500",
+    "pilot_size": 20,
+    "hits": 18,
+    "seconds": 0.3262094110250473,
+    "node_cap": 1500,
+    "predicted_embedded": 450,
+    "predicted_seconds": 8.155235275626183
+  },
+  {
+    "sample": "B9p",
+    "pilot_size": 20,
+    "hits": 19,
+    "seconds": 0.11242501018568873,
+    "node_cap": 1500,
+    "predicted_embedded": 2931,
+    "predicted_seconds": 17.341557821142487
+  }
+]

@@ -1,0 +1,4075 @@
+{
+ "budget_per_member": 16384,
+ "iterations": 120,
+ "edge_tol": 1e-10,
+ "gap_min": 0.0001,
+ "seed": 20260925,
+ "genuine_rule": "50-digit Gauss-Newton refinement: residual < 1e-35 and gap > 1e-6",
+ "members_with_near_misses": 29,
+ "members": 162,
+ "members_with_numeric_embedding": [],
+ "controls_minus_edge": {
+  "tested": 162,
+  "found": 162
+ },
+ "controls_lookalike": {
+  "tested": 162,
+  "found": 162
+ },
+ "by_edges": {
+  "15": {
+   "members": 2,
+   "member_hits": 0,
+   "minus_edge": {
+    "tested": 2,
+    "found": 2
+   },
+   "lookalike": {
+    "tested": 2,
+    "found": 2
+   }
+  },
+  "16": {
+   "members": 59,
+   "member_hits": 0,
+   "minus_edge": {
+    "tested": 59,
+    "found": 59
+   },
+   "lookalike": {
+    "tested": 59,
+    "found": 59
+   }
+  },
+  "17": {
+   "members": 100,
+   "member_hits": 0,
+   "minus_edge": {
+    "tested": 100,
+    "found": 100
+   },
+   "lookalike": {
+    "tested": 100,
+    "found": 100
+   }
+  },
+  "18": {
+   "members": 1,
+   "member_hits": 0,
+   "minus_edge": {
+    "tested": 1,
+    "found": 1
+   },
+   "lookalike": {
+    "tested": 1,
+    "found": 1
+   }
+  }
+ },
+ "seconds": 2823,
+ "rows": [
+  {
+   "g6": "I??XUC{{O",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?_R_XdmO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I??gpb@~_",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@@CP_L~_",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I??pOvK{O",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "3.07e-11",
+    "8.96e-14",
+    "2.9e-11"
+   ],
+   "minus_edge": {
+    "edge": [
+     2,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IBA?xOLwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?@OpUk{O",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IAA@oWl{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?AAhWZ}?",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IOAPYPPEw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?CKGxb{G",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?caS_VXW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?CYKMqYO",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?S@HmMt?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?CbOiL{O",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IC?J?\\smO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?CtQrCwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "2.13e-12",
+    "2.08e-12",
+    "2.09e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     7,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_COZIb}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?DHGupw_",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@I@kXQQW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?DP]QowW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "5.79e-12",
+    "5.81e-12",
+    "5.84e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     8,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?CtQZOwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?EHf@bVG",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGCIfAdFg",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?ERPrCwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_OX@eM{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?ErSPPwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     8,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IOKQM?N{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?GO]C{{O",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@?KaXemO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?GWZER{?",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@@HWuPwG",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?H[`fGwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.98e-12",
+    "1.94e-12",
+    "1.95e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     1,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?LChZOwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?I]Q_pwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`?OZQM{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?L?HuUw_",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@CbKXQaW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?LU`QDwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGEPSTSwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?OTPjK{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     7,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGOPKqM{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?OpSfK{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IAEaPEL{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?P@hqidO",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     6,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?@PPyYw_",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?Q@`yiT_",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?A`qiiUO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?_y`fGwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`?OXVK{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?`LA_uMW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@GQAYidg",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?l@Glo_w",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     4
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@IoSTQOw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I?pP@eM{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`?G]Gr}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@?O]Omso",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGE@KXQEw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@?kQfK{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@_RQIL{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@@JSaL{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGCHkZOwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@@RSQL{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.02e-12",
+    "1.03e-12",
+    "1.03e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     1,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@?ZUAL{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@ANAGX]G",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 1,
+   "near_miss_gaps": [
+    "1.15e-16"
+   ],
+   "minus_edge": {
+    "edge": [
+     1,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@FAPED]G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@A_q\\gcg",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.58e-11",
+    "1.21e-12",
+    "1.42e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     3,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?U@HlaeG",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@CGNBANg",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     8,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?C_sLc}G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@D?\\FK{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.44e-12",
+    "1.5e-12",
+    "1.44e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     0,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_GPOnK{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@EAZAL{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_?XPfK{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@GCi\\SbG",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?CG|Hds_",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@P@OmeeO",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IA`_X_Zgo",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@QP?tFi_",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@DH?uFw_",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@`BOiL{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.36e-12",
+    "1.35e-12",
+    "1.85e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     0,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_C_uGf}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I@hO`DJ`o",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     6,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I??WzEh{?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IA?HtJK{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.55e-12",
+    "1.28e-12",
+    "1.57e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     2,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IgC@GyM{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IA?kPfK{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ig?WPeF}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IACcPNK{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IQCaOML{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IAI?gXb}?",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_@`Oc\\}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IAMSQCdwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     7,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IoC?Ikm}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IAh?HKyco",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?F?xd`iG",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IBA?XVK{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@_iAeM{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "ICCiF@bFg",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@GO]BF]O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "ID?JQIL{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.33e-12",
+    "2.08e-12",
+    "1.3e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     1,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGEPKTWwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "ID@aOUL{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.08e-12",
+    "1.1e-12",
+    "1.08e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     0,
+     3
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGAPsXWwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IG?TOzK{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.79e-12",
+    "1.85e-12",
+    "2.02e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     0,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IWEQOgJwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IGCKhZOwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?IRQaL{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 1
+   }
+  },
+  {
+   "g6": "IGCXSNOwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IoCOQKf}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IGC]cGhwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGE@kXWwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IGDPSiIwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGDL_YPwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IGE?lPE]W",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_?XQck{W",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IGEHGvOwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_CgeCf}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IGEH_vCwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IOOPOnK{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 1
+   }
+  },
+  {
+   "g6": "IGESQgiwW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     2
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGaJ_oTwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IGICqGT]W",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     2
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IAGOZAF}O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IGSsCCN{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     4
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`D@KON{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IG_XQGR{G",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 23,
+   "near_miss_gaps": [
+    "1.84e-13",
+    "1.1e-13",
+    "5.76e-13"
+   ],
+   "minus_edge": {
+    "edge": [
+     4,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?Ba`UW]G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IG`GhCX{G",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "8.86e-13",
+    "5.71e-13",
+    "2.1e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     4,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IA_HqGd{G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IGoOHeM{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     6,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IC`PQWqwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IHA?[pE]W",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     8,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@GO]@F}O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IHCCGXF}O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IAOHlAD]W",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IHE?ICN}G",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGCOPNE}G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IIGG_MFmO",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IA?gcTemO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IIj?c?jDw",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     6,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ir?GOGzpo",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IK_AXiL[_",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "2.18e-12",
+    "2.17e-12",
+    "2.17e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     4,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`?JWyooW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IK`@?WR~_",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IqGO?KJ~_",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IMh@K?RBW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     4
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "ItPG?CrBo",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IO?ZQaL{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.79e-12",
+    "1.79e-12",
+    "1.8e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     3,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_C?|Hd}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IQ?H_^C}G",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I__PQKs}G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IQOH_MD}G",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 1
+   },
+   "lookalike": {
+    "g6": "Ih?OO]E}G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IQ_AhW\\w_",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I``?z_dag",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IRr??CfEo",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     4
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`aJA_iDW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IWCAWiL{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.82e-11",
+    "1.58e-12",
+    "1.53e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     7,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IG_y_eHwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IWEKa@bFW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ir`?GOrBw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IYE?{H`Aw",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.57e-12",
+    "1.59e-12",
+    "1.57e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     3,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Is?IXXQKW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I[C?GTF~?",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.3e-12",
+    "1.3e-12",
+    "1.33e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     5,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IQGOGVB~?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I[O@]_TBg",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     2
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IsO?yWdKg",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I[OBKgLEg",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     8,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Iq_@wXDKW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_?Xd`hR_",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ii?PSoLHg",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_?pShI}?",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Iq?GXCT}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_AQPgiMW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?CQPMd}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_CPJQM{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGAROqL{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_CfClKMG",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     6,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IYECWh`Aw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_G?}Gt}?",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?C]dPcwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_GP|`KoW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.58e-13",
+    "3.32e-14",
+    "5.67e-14"
+   ],
+   "minus_edge": {
+    "edge": [
+     0,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I{?GotEHW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_I?X`R~?",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.13e-12",
+    "1.88e-12",
+    "1.11e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     3,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IqGOOKF}G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_O_hqM{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.74e-12",
+    "1.69e-12",
+    "1.42e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     3,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGDPSqEwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 2
+   }
+  },
+  {
+   "g6": "I_YP?cjDo",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@U`_LBaW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_`?pGr~?",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`?H_ZB~?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I_hTA_hDg",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IoEHa@FMO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I`?M@cN~?",
+   "edges": 18,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@@_uQM{o",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I`CaOML{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGDTOqDwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I`GOSLF}?",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`K?IMM{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I`O?Wmc}G",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IC_HaLc}G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I`Q?zOUgW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     8,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IhEE_WdAw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I`QBWgpaW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IY_@[oTPg",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I`QBgoLgW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ibg@gZ@@w",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I`Z?c?NKo",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     7,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IdHaS?RBW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I`_AhW\\w_",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IoC@yqcPW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I`_DYosPW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.31e-13",
+    "5.45e-14",
+    "1.21e-13"
+   ],
+   "minus_edge": {
+    "edge": [
+     5,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IqGSIShDg",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I``?zGqaW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     8,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I``BWgpaW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "I``@jGYaW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.72e-12",
+    "1.72e-12",
+    "1.72e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     0,
+     1
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I``BgWpaW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Ia?H_]c}G",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`IaGlIEW",
+    "kind": "same_edges",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IaC_\\?N{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?HKhrOwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IaYPC?VIo",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     7,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IkS`K?RBW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IbQ_S?fEw",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IoDH?ebVG",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Ibb?P?NKw",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "ITPKA?jDw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 2
+   }
+  },
+  {
+   "g6": "Ig?GLpqF_",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IhGG]?TCw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Ig?g_uF}?",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     6,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`OGcKf}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 2
+   }
+  },
+  {
+   "g6": "Ig?oGuI]G",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_GPOlK{G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Ig?osPbFO",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ih?_[pEEW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IgAOOse]G",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     6,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ig?_WyQ]G",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IgCHcDdFO",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     4
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?DP\\BH[O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IgC_GUR~?",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?L@SMR\\G",
+    "kind": "same_edges",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IgKOKCN{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     4
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I@oOJEM{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Ih?GoMD}G",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     6,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?D@rI[wo",
+    "kind": "same_edges",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Ih?_kTKEW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGCO\\JB]?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IhC_[HBEW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "2.42e-12",
+    "1.28e-12",
+    "1.33e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     7,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Io?OXT[[O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IhEChHHAw",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     1
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IsO_yOdCw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IhEEOgdAw",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "2.34e-12",
+    "2.34e-12",
+    "2.3e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     0,
+     1
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IqQ@`SUBW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Ih_@wXDcW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`?NE_mFO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Ii?HSgMKW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IH?GKvE]?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IiCPCSFJG",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     4
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ig?G{`dMO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IkC@GWN{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGCk_^OwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IkIaO_RBW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     7,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "It?GY@FMO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IkL@K?RBW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGeca@bFO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Il`@OgJ@w",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IsO_olIHW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Io?OPlM}?",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGScgiHwW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Io?YpGhSW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     6
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IhC?MGyBo",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Io?i_oxPo",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ii?Wl?JIW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Io@POWR]?",
+   "edges": 15,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     4,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I_Aq@SY]?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IoCHIaF]?",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IaYPC?NKo",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IoCOPLE}G",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IC?m@pM[o",
+    "kind": "same_edges",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IoCWaSeWW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     7,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IiCPKOFIW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IoCi?wbSg",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     8,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IGDPSqEWW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IoD@oghPW",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     5
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ii?_sgJJG",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IoDPS@LKo",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IWESQ@FMO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IoGQGoN{O",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?DRTAL{O",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IoH@?kZV?",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ig?gcdiFO",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IoM?i@FMW",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     8,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IwCO[@XHw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IoSo?FbFo",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IoDPS@TIw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Ip?AWgL]G",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     3,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I?JAP_V}?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IpO@mGLEg",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     8,
+     9
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IYECgX`Aw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Iq?DQgmFO",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     1,
+     7
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I[QApGLCw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Iq?G`KM}G",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     1
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IACHNAM[o",
+    "kind": "same_edges",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IqGOGQfUo",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     5,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IQr@?_fEw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IqGQSGfEo",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IpOBWWTcW",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IqGW?EfUo",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`hQC?jDw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IqI@gXHCw",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "1.95e-12",
+    "1.96e-12",
+    "1.98e-12"
+   ],
+   "minus_edge": {
+    "edge": [
+     0,
+     2
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I`de@_FAw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Iq_@Z_TBg",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     4
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Ir?GyOd_w",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IrQG?CfEo",
+   "edges": 16,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "ITPKA?jDo",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Ir`?X_FAw",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     2
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IJaCgX`Aw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "Is?@WxcU?",
+   "edges": 15,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     0,
+     1
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "Is@@WoXX?",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "IsOa_sLHg",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 24,
+   "near_miss_gaps": [
+    "2.23e-11",
+    "1.56e-12",
+    "2.21e-11"
+   ],
+   "minus_edge": {
+    "edge": [
+     7,
+     8
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "I``@piHPg",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  },
+  {
+   "g6": "ItP?OGrBw",
+   "edges": 17,
+   "starts": 16384,
+   "hits": 0,
+   "near_misses": 0,
+   "near_miss_gaps": [],
+   "minus_edge": {
+    "edge": [
+     2,
+     3
+    ],
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   },
+   "lookalike": {
+    "g6": "IaU`C?fEw",
+    "kind": "same_degrees",
+    "found": true,
+    "starts": 2048,
+    "near_misses": 0
+   }
+  }
+ ],
+ "verdict": "NO EMBEDDING FOUND for any of the 162 members"
+}

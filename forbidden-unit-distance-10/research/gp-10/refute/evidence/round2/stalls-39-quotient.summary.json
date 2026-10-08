@@ -1,0 +1,6 @@
+{
+  "limit": 55.0,
+  "verdict": "unknown",
+  "reason": "TimeoutExpired: Command '['Singular', '-q', '/tmp/gp10-refute/cas-3sqb5uju/input.sing']' timed out after 55.0 seconds",
+  "seconds": 55.057841228786856
+}

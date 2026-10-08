@@ -1,0 +1,52 @@
+{
+  "head": "e857daef1c3e35b20777ce6b6bb1f1dccf727c02",
+  "base": "2b3c4d9dd0",
+  "diff_stat": "",
+  "files": {
+    "research/unit-distance-22/enum/verify-chain-u24.py": {
+      "2b3c4d9dd0": "a231bfc384702231f57fc21461b4c700ec8eed842bceb981076963c79d2cc86a",
+      "HEAD": "a231bfc384702231f57fc21461b4c700ec8eed842bceb981076963c79d2cc86a",
+      "working_file": "a231bfc384702231f57fc21461b4c700ec8eed842bceb981076963c79d2cc86a"
+    },
+    "research/unit-distance-24/tools/receipt_audit.py": {
+      "2b3c4d9dd0": "a8323318b2040a62bfb45501d153cc87b83cb616a8cd3ed897c7e8ed9a57847e",
+      "HEAD": "a8323318b2040a62bfb45501d153cc87b83cb616a8cd3ed897c7e8ed9a57847e",
+      "working_file": "a8323318b2040a62bfb45501d153cc87b83cb616a8cd3ed897c7e8ed9a57847e"
+    },
+    "research/unit-distance-24/tools/evidence.py": {
+      "2b3c4d9dd0": "97a862c524c893db3e87f591d42ef2f946d3f9289d922c124b1c2957bff39498",
+      "HEAD": "97a862c524c893db3e87f591d42ef2f946d3f9289d922c124b1c2957bff39498",
+      "working_file": "97a862c524c893db3e87f591d42ef2f946d3f9289d922c124b1c2957bff39498"
+    },
+    "research/unit-distance-24/tools/worker.py": {
+      "2b3c4d9dd0": "5106004b0b4ea184369dc9ee5aaf6994b73358676bf99215848a4cb624126760",
+      "HEAD": "5106004b0b4ea184369dc9ee5aaf6994b73358676bf99215848a4cb624126760",
+      "working_file": "5106004b0b4ea184369dc9ee5aaf6994b73358676bf99215848a4cb624126760"
+    },
+    "research/unit-distance-24/tools/known_graphs.py": {
+      "2b3c4d9dd0": "5124c5ce12efd49c445265c84637cb9053a26fc6d6b00b5c50ec3e64140070d2",
+      "HEAD": "5124c5ce12efd49c445265c84637cb9053a26fc6d6b00b5c50ec3e64140070d2",
+      "working_file": "5124c5ce12efd49c445265c84637cb9053a26fc6d6b00b5c50ec3e64140070d2"
+    },
+    "research/unit-distance-24/tools/rereview_controls.py": {
+      "2b3c4d9dd0": "270449613f43c929d87a4cfbfbbb8a07fbf6a27b003133d1a504719184b9efa5",
+      "HEAD": "270449613f43c929d87a4cfbfbbb8a07fbf6a27b003133d1a504719184b9efa5",
+      "working_file": "270449613f43c929d87a4cfbfbbb8a07fbf6a27b003133d1a504719184b9efa5"
+    },
+    "research/unit-distance-24/tools/review3_controls.py": {
+      "2b3c4d9dd0": "241cff95385ba2373348a04f0684c3ba90be1594609b7213353dee591bc58fb7",
+      "HEAD": "241cff95385ba2373348a04f0684c3ba90be1594609b7213353dee591bc58fb7",
+      "working_file": "241cff95385ba2373348a04f0684c3ba90be1594609b7213353dee591bc58fb7"
+    },
+    "research/unit-distance-24/tools/test_worker.py": {
+      "2b3c4d9dd0": "95d21eb3c6bfc56c2024bfbf7c938ffd1d3a44a06d2d7c97bc8877970d2b6e53",
+      "HEAD": "95d21eb3c6bfc56c2024bfbf7c938ffd1d3a44a06d2d7c97bc8877970d2b6e53",
+      "working_file": "95d21eb3c6bfc56c2024bfbf7c938ffd1d3a44a06d2d7c97bc8877970d2b6e53"
+    },
+    "research/unit-distance-24/tools/test_certificate24.py": {
+      "2b3c4d9dd0": "785dbfe8cb8dd63f7974a7894260d889a31b0940e440eaf5eaa534957c0c4da4",
+      "HEAD": "785dbfe8cb8dd63f7974a7894260d889a31b0940e440eaf5eaa534957c0c4da4",
+      "working_file": "785dbfe8cb8dd63f7974a7894260d889a31b0940e440eaf5eaa534957c0c4da4"
+    }
+  }
+}

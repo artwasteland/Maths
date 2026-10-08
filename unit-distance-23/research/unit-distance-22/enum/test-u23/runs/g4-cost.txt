@@ -1,0 +1,114 @@
+g4-cost.py on 2026-09-26 (<host>, nice 10, shared box), the G4 integrator for u(23).
+
+measure: g4-cost.py measure --descent <supervisor scratch>/rh65/w3 --out g4-cost.json
+  parents: the supervisor's sampled descent through the (23,65) Mode-398 tree (d-<n>-<m>.parents.g6, TU-kept and
+  reach-filtered), filtered by filter/udtriangle to its "pass" graphs; 40 per cell, seed 20260926; level 20 from the
+  descent's (19,45) parents grown by udenum and kept as the fleet keeps them. enum2 s/parent is replay-398.py's own pool
+  task (children + parent check); udenum s/parent is the fast Mode-398 binary on the same parents.
+model: g4-cost.py model --cost g4-cost.json --slice <s240>:880 --slice <s1200>:465
+  run-summary.json of pilot 3's worker r2 (branch claude/answering-alexeev-u22-cloud-u23-r2-q986ej,
+  research/unit-distance-23/results/u23/23-65-L12-tri-pf74/s{240,1200}of1920/run-summary.json): the fleet's pipeline
+  (--triangles, --prune-filter-set 74, Mode 398, the fast udenum, slice level 12). The slices' wall times above the
+  prefix are from the verify manifests pushed with them: s240 from the end of level 12's verification (00:26:00Z) to
+  the end of level 23's (00:40:40Z), 880 s; s1200 (prefix hard-linked) from s240's commit (00:40:41Z) to its level-23
+  verification (00:48:26Z), 465 s.
+
+== measure
+{"cell": "13-23", "timed": 40, "processed": 35, "children": 140, "enum2_mean": 0.02575, "enum2_max": 0.50245, "udenum_per_parent": 0.00017, "udenum_children": 140, "ratio": 153.76724, "parents_in_file": 18293, "drawn": 160, "tri_pass": 139}
+{"cell": "13-24", "timed": 40, "processed": 34, "children": 238, "enum2_mean": 0.03593, "enum2_max": 0.14574, "udenum_per_parent": 0.00031, "udenum_children": 238, "ratio": 117.10596, "parents_in_file": 5296, "drawn": 160, "tri_pass": 135}
+{"cell": "13-25", "timed": 40, "processed": 39, "children": 94, "enum2_mean": 0.07782, "enum2_max": 0.17735, "udenum_per_parent": 0.00094, "udenum_children": 94, "ratio": 82.4657, "parents_in_file": 555, "drawn": 160, "tri_pass": 132}
+{"cell": "13-26", "timed": 40, "processed": 2, "children": 0, "enum2_mean": 0.01169, "enum2_max": 0.08858, "udenum_per_parent": 4e-05, "udenum_children": 0, "ratio": 293.06744, "parents_in_file": 555, "drawn": 160, "tri_pass": 136}
+{"cell": "13-27", "timed": 34, "processed": 7, "children": 2, "enum2_mean": 0.02544, "enum2_max": 0.20959, "udenum_per_parent": 0.0001, "udenum_children": 2, "ratio": 260.34178, "parents_in_file": 37, "drawn": 37, "tri_pass": 34}
+{"cell": "13-28", "timed": 1, "processed": 1, "children": 0, "enum2_mean": 0.02429, "enum2_max": 0.02429, "udenum_per_parent": 4e-05, "udenum_children": 0, "ratio": 607.3528, "parents_in_file": 1, "drawn": 1, "tri_pass": 1}
+{"cell": "14-26", "timed": 40, "processed": 36, "children": 226, "enum2_mean": 0.02969, "enum2_max": 0.12786, "udenum_per_parent": 0.00049, "udenum_children": 226, "ratio": 60.14506, "parents_in_file": 7901, "drawn": 160, "tri_pass": 135}
+{"cell": "14-27", "timed": 40, "processed": 39, "children": 229, "enum2_mean": 0.10992, "enum2_max": 0.25204, "udenum_per_parent": 0.00076, "udenum_children": 229, "ratio": 143.87776, "parents_in_file": 1356, "drawn": 160, "tri_pass": 124}
+{"cell": "14-28", "timed": 40, "processed": 5, "children": 26, "enum2_mean": 0.02823, "enum2_max": 0.2449, "udenum_per_parent": 0.00021, "udenum_children": 26, "ratio": 133.92399, "parents_in_file": 1365, "drawn": 160, "tri_pass": 121}
+{"cell": "14-29", "timed": 40, "processed": 11, "children": 60, "enum2_mean": 0.03771, "enum2_max": 0.21929, "udenum_per_parent": 0.00026, "udenum_children": 60, "ratio": 142.57319, "parents_in_file": 99, "drawn": 99, "tri_pass": 84}
+{"cell": "14-30", "timed": 9, "processed": 3, "children": 1, "enum2_mean": 0.06946, "enum2_max": 0.29997, "udenum_per_parent": 0.00076, "udenum_children": 1, "ratio": 91.24967, "parents_in_file": 9, "drawn": 9, "tri_pass": 9}
+{"cell": "14-31", "timed": 1, "processed": 1, "children": 0, "enum2_mean": 0.06115, "enum2_max": 0.06115, "udenum_per_parent": 5e-05, "udenum_children": 0, "ratio": 1329.32057, "parents_in_file": 1, "drawn": 1, "tri_pass": 1}
+{"cell": "15-29", "timed": 40, "processed": 39, "children": 317, "enum2_mean": 0.12503, "enum2_max": 0.31607, "udenum_per_parent": 0.00081, "udenum_children": 317, "ratio": 154.0915, "parents_in_file": 8796, "drawn": 160, "tri_pass": 108}
+{"cell": "15-30", "timed": 40, "processed": 4, "children": 8, "enum2_mean": 0.02651, "enum2_max": 0.29148, "udenum_per_parent": 0.00015, "udenum_children": 8, "ratio": 178.60904, "parents_in_file": 9996, "drawn": 160, "tri_pass": 107}
+{"cell": "15-31", "timed": 40, "processed": 10, "children": 3, "enum2_mean": 0.0244, "enum2_max": 0.15488, "udenum_per_parent": 9e-05, "udenum_children": 3, "ratio": 267.45319, "parents_in_file": 1203, "drawn": 160, "tri_pass": 108}
+{"cell": "15-32", "timed": 40, "processed": 10, "children": 3, "enum2_mean": 0.04779, "enum2_max": 0.30475, "udenum_per_parent": 0.00024, "udenum_children": 3, "ratio": 196.81163, "parents_in_file": 77, "drawn": 77, "tri_pass": 56}
+{"cell": "15-33", "timed": 4, "processed": 2, "children": 0, "enum2_mean": 0.12968, "enum2_max": 0.39896, "udenum_per_parent": 0.00141, "udenum_children": 0, "ratio": 91.76046, "parents_in_file": 4, "drawn": 4, "tri_pass": 4}
+{"cell": "15-34", "timed": 1, "processed": 1, "children": 0, "enum2_mean": 0.03926, "enum2_max": 0.03926, "udenum_per_parent": 5e-05, "udenum_children": 0, "ratio": 801.23008, "parents_in_file": 1, "drawn": 1, "tri_pass": 1}
+{"cell": "16-33", "timed": 40, "processed": 12, "children": 21, "enum2_mean": 0.05958, "enum2_max": 0.45283, "udenum_per_parent": 0.00076, "udenum_children": 21, "ratio": 78.83354, "parents_in_file": 14886, "drawn": 160, "tri_pass": 92}
+{"cell": "16-34", "timed": 40, "processed": 13, "children": 38, "enum2_mean": 0.04961, "enum2_max": 0.56488, "udenum_per_parent": 0.00017, "udenum_children": 38, "ratio": 290.24537, "parents_in_file": 2734, "drawn": 160, "tri_pass": 85}
+{"cell": "16-35", "timed": 40, "processed": 21, "children": 6, "enum2_mean": 0.08249, "enum2_max": 0.49554, "udenum_per_parent": 0.00195, "udenum_children": 6, "ratio": 42.2113, "parents_in_file": 114, "drawn": 114, "tri_pass": 62}
+{"cell": "16-36", "timed": 11, "processed": 0, "children": 0, "enum2_mean": 0.04347, "enum2_max": 0.05668, "udenum_per_parent": 1e-05, "udenum_children": 0, "ratio": 5033.13461, "parents_in_file": 13, "drawn": 13, "tri_pass": 11}
+{"cell": "17-37", "timed": 40, "processed": 35, "children": 90, "enum2_mean": 0.1544, "enum2_max": 0.67576, "udenum_per_parent": 0.00089, "udenum_children": 90, "ratio": 173.89881, "parents_in_file": 27321, "drawn": 160, "tri_pass": 52}
+{"cell": "17-38", "timed": 40, "processed": 12, "children": 1, "enum2_mean": 0.10462, "enum2_max": 1.09331, "udenum_per_parent": 0.00032, "udenum_children": 1, "ratio": 327.19185, "parents_in_file": 1064, "drawn": 160, "tri_pass": 76}
+{"cell": "17-39", "timed": 6, "processed": 4, "children": 0, "enum2_mean": 0.06018, "enum2_max": 0.08556, "udenum_per_parent": 6e-05, "udenum_children": 0, "ratio": 930.59856, "parents_in_file": 8, "drawn": 8, "tri_pass": 6}
+{"cell": "18-41", "timed": 26, "processed": 23, "children": 9, "enum2_mean": 0.29464, "enum2_max": 0.98698, "udenum_per_parent": 0.00215, "udenum_children": 9, "ratio": 136.72817, "parents_in_file": 11034, "drawn": 160, "tri_pass": 26}
+{"cell": "18-42", "timed": 23, "processed": 20, "children": 0, "enum2_mean": 0.2769, "enum2_max": 1.04403, "udenum_per_parent": 0.00225, "udenum_children": 0, "ratio": 123.17803, "parents_in_file": 71, "drawn": 71, "tri_pass": 23}
+{"cell": "19-45", "timed": 17, "processed": 16, "children": 3, "enum2_mean": 0.85129, "enum2_max": 1.68075, "udenum_per_parent": 0.00526, "udenum_children": 3, "ratio": 161.93428, "parents_in_file": 2059, "drawn": 160, "tri_pass": 17}
+{"cell": "19-46", "timed": 0, "processed": 0, "children": 0, "enum2_mean": null, "enum2_max": null, "udenum_per_parent": null, "udenum_children": null, "parents_in_file": 8, "drawn": 8, "tri_pass": 0}
+{"cell": "20-50", "timed": 11, "processed": 0, "children": 0, "enum2_mean": 0.07947, "enum2_max": 0.09489, "udenum_per_parent": 1e-05, "udenum_children": 0, "ratio": 6993.75849, "parents_in_file": 11, "drawn": 411, "tri_pass": 11}
+{"cell": "20-51", "timed": 11, "processed": 0, "children": 0, "enum2_mean": 0.07999, "enum2_max": 0.09625, "udenum_per_parent": 1e-05, "udenum_children": 0, "ratio": 6928.18958, "parents_in_file": 11, "drawn": 411, "tri_pass": 11}
+exit 0 after 90 s
+
+== model
+  cell timed processed enum2 s/parent udenum s/parent   ratio
+ 13-23    40        35         0.0257         0.00017     154
+ 13-24    40        34         0.0359         0.00031     117
+ 13-25    40        39         0.0778         0.00094      82
+ 13-26    40         2         0.0117         0.00004     293
+ 13-27    34         7         0.0254         0.00010     260
+ 14-26    40        36         0.0297         0.00049      60
+ 14-27    40        39         0.1099         0.00076     144
+ 14-28    40         5         0.0282         0.00021     134
+ 14-29    40        11         0.0377         0.00026     143
+ 14-30     9         3         0.0695         0.00076      91
+ 15-29    40        39         0.1250         0.00081     154
+ 15-30    40         4         0.0265         0.00015     179
+ 15-31    40        10         0.0244         0.00009     267
+ 15-32    40        10         0.0478         0.00024     197
+ 16-33    40        12         0.0596         0.00076      79
+ 16-34    40        13         0.0496         0.00017     290
+ 16-35    40        21         0.0825         0.00195      42
+ 16-36    11         0         0.0435         0.00001    5033
+ 17-37    40        35         0.1544         0.00089     174
+ 17-38    40        12         0.1046         0.00032     327
+ 17-39     6         4         0.0602         0.00006     931
+ 18-41    26        23         0.2946         0.00215     137
+ 18-42    23        20         0.2769         0.00225     123
+ 19-45    17        16         0.8513         0.00526     162
+ 20-50    11         0         0.0795         0.00001    6994
+ 20-51    11         0         0.0800         0.00001    6928
+
+<scratch>/scratchpad/pilot3/r2-s240-run-summary.json: slice [12, 240, 1920], 61 cells above level 12, 1046730 parents, 880 s above the prefix; this machine is 1.15x the worker's udenum time per parent (median of 14 cells: 0.00, 0.28, 0.76, 0.89, 0.95, 0.96, 0.98, 1.15, 1.16, 1.20, 1.28, 1.54, 1.73, 4.40)
+  whole-max 400 fraction 0.005  sampled  6782  enum2   1334 core-s here  replay  301-354  s = 34.2-40.2% of the slice   top levels (core-s) [(19, 617), (17, 290), (18, 205)]
+  whole-max 400 fraction 0.003  sampled  4691  enum2   1059 core-s here  replay  242-285  s = 27.4-32.4% of the slice   top levels (core-s) [(19, 600), (17, 175), (18, 126)]
+  whole-max 400 fraction 0.002  sampled  3648  enum2    922 core-s here  replay  212-250  s = 24.1-28.5% of the slice   top levels (core-s) [(19, 592), (17, 117), (18, 86)]
+  whole-max 400 fraction 0.001  sampled  2604  enum2    784 core-s here  replay  182-216  s = 20.7-24.5% of the slice   top levels (core-s) [(19, 583), (17, 60), (18, 47)]
+  whole-max 200 fraction 0.005  sampled  5555  enum2    758 core-s here  replay  176-210  s = 20.0-23.8% of the slice   top levels (core-s) [(17, 290), (18, 205), (16, 108)]
+  whole-max 200 fraction 0.003  sampled  3464  enum2    483 core-s here  replay  117-141  s = 13.3-16.0% of the slice   top levels (core-s) [(17, 175), (18, 126), (16, 65)]
+  whole-max 200 fraction 0.002  sampled  2421  enum2    346 core-s here  replay   87-106  s =  9.9-12.1% of the slice   top levels (core-s) [(17, 117), (18, 86), (19, 51)]
+  whole-max 200 fraction 0.001  sampled  1377  enum2    208 core-s here  replay   57-72   s =  6.5-8.2 % of the slice   top levels (core-s) [(17, 60), (18, 47), (19, 43)]
+  whole-max 100 fraction 0.005  sampled  5436  enum2    754 core-s here  replay  175-208  s = 19.9-23.7% of the slice   top levels (core-s) [(17, 290), (18, 205), (16, 108)]
+  whole-max 100 fraction 0.003  sampled  3345  enum2    479 core-s here  replay  116-140  s = 13.2-15.9% of the slice   top levels (core-s) [(17, 175), (18, 126), (16, 65)]
+  whole-max 100 fraction 0.002  sampled  2302  enum2    341 core-s here  replay   86-105  s =  9.8-12.0% of the slice   top levels (core-s) [(17, 117), (18, 86), (19, 51)]
+  whole-max 100 fraction 0.001  sampled  1258  enum2    204 core-s here  replay   56-71   s =  6.4-8.1 % of the slice   top levels (core-s) [(17, 60), (18, 47), (19, 43)]
+  whole-max  50 fraction 0.005  sampled  5436  enum2    754 core-s here  replay  175-208  s = 19.9-23.7% of the slice   top levels (core-s) [(17, 290), (18, 205), (16, 108)]
+  whole-max  50 fraction 0.003  sampled  3345  enum2    479 core-s here  replay  116-140  s = 13.2-15.9% of the slice   top levels (core-s) [(17, 175), (18, 126), (16, 65)]
+  whole-max  50 fraction 0.002  sampled  2302  enum2    341 core-s here  replay   86-105  s =  9.8-12.0% of the slice   top levels (core-s) [(17, 117), (18, 86), (19, 51)]
+  whole-max  50 fraction 0.001  sampled  1258  enum2    204 core-s here  replay   56-71   s =  6.4-8.1 % of the slice   top levels (core-s) [(17, 60), (18, 47), (19, 43)]
+
+<scratch>/scratchpad/pilot3/r2-s1200-run-summary.json: slice [12, 1200, 1920], 61 cells above level 12, 632750 parents, 465 s above the prefix; this machine is 1.28x the worker's udenum time per parent (median of 12 cells: 0.31, 1.00, 1.05, 1.12, 1.18, 1.18, 1.28, 1.29, 1.50, 1.65, 1.78, 1.90)
+  whole-max 400 fraction 0.005  sampled  4602  enum2    506 core-s here  replay  111-146  s = 23.9-31.5% of the slice   top levels (core-s) [(17, 159), (18, 112), (16, 92)]
+  whole-max 400 fraction 0.003  sampled  3339  enum2    366 core-s here  replay   84-111  s = 18.0-24.0% of the slice   top levels (core-s) [(17, 96), (18, 89), (16, 60)]
+  whole-max 400 fraction 0.002  sampled  2707  enum2    296 core-s here  replay   70-94   s = 15.0-20.2% of the slice   top levels (core-s) [(18, 78), (17, 64), (16, 44)]
+  whole-max 400 fraction 0.001  sampled  2078  enum2    226 core-s here  replay   56-76   s = 12.1-16.4% of the slice   top levels (core-s) [(18, 66), (17, 32), (19, 31)]
+  whole-max 200 fraction 0.005  sampled  3533  enum2    446 core-s here  replay   99-131  s = 21.3-28.3% of the slice   top levels (core-s) [(17, 159), (18, 112), (16, 80)]
+  whole-max 200 fraction 0.003  sampled  2270  enum2    306 core-s here  replay   72-96   s = 15.5-20.7% of the slice   top levels (core-s) [(17, 96), (18, 89), (16, 48)]
+  whole-max 200 fraction 0.002  sampled  1638  enum2    236 core-s here  replay   58-79   s = 12.5-17.0% of the slice   top levels (core-s) [(18, 78), (17, 64), (19, 35)]
+  whole-max 200 fraction 0.001  sampled  1009  enum2    166 core-s here  replay   44-61   s =  9.6-13.2% of the slice   top levels (core-s) [(18, 66), (17, 32), (19, 31)]
+  whole-max 100 fraction 0.005  sampled  3340  enum2    392 core-s here  replay   89-118  s = 19.1-25.4% of the slice   top levels (core-s) [(17, 159), (16, 80), (18, 59)]
+  whole-max 100 fraction 0.003  sampled  2077  enum2    252 core-s here  replay   61-83   s = 13.2-17.9% of the slice   top levels (core-s) [(17, 96), (16, 48), (19, 38)]
+  whole-max 100 fraction 0.002  sampled  1445  enum2    182 core-s here  replay   48-66   s = 10.3-14.1% of the slice   top levels (core-s) [(17, 64), (19, 35), (16, 32)]
+  whole-max 100 fraction 0.001  sampled   816  enum2    112 core-s here  replay   34-48   s =  7.3-10.3% of the slice   top levels (core-s) [(17, 32), (19, 31), (16, 16)]
+  whole-max  50 fraction 0.005  sampled  3274  enum2    390 core-s here  replay   88-117  s = 19.0-25.3% of the slice   top levels (core-s) [(17, 159), (16, 80), (18, 59)]
+  whole-max  50 fraction 0.003  sampled  2011  enum2    250 core-s here  replay   61-82   s = 13.1-17.7% of the slice   top levels (core-s) [(17, 96), (16, 48), (19, 38)]
+  whole-max  50 fraction 0.002  sampled  1379  enum2    180 core-s here  replay   47-65   s = 10.2-14.0% of the slice   top levels (core-s) [(17, 64), (19, 35), (16, 32)]
+  whole-max  50 fraction 0.001  sampled   750  enum2    110 core-s here  replay   34-47   s =  7.2-10.2% of the slice   top levels (core-s) [(17, 32), (19, 31), (16, 16)]
+exit 0 after 0 s

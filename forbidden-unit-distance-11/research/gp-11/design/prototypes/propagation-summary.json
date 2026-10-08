@@ -1,0 +1,58 @@
+{
+  "methods": {
+    "lattice": {
+      "direct_E": 406,
+      "direct_R": 0,
+      "closure_E": 40989,
+      "closure_R": 0
+    },
+    "host": {
+      "direct_E": 17,
+      "direct_R": 0,
+      "closure_E": 8501,
+      "closure_R": 0
+    },
+    "numeric": {
+      "direct_E": 2,
+      "direct_R": 0,
+      "closure_E": 57,
+      "closure_R": 0
+    },
+    "extension": {
+      "direct_E": 445,
+      "direct_R": 0,
+      "closure_E": 45133,
+      "closure_R": 0
+    },
+    "tree": {
+      "direct_E": 0,
+      "direct_R": 6,
+      "closure_E": 0,
+      "closure_R": 23
+    },
+    "tu": {
+      "direct_E": 0,
+      "direct_R": 8,
+      "closure_E": 0,
+      "closure_R": 28
+    },
+    "msolve": {
+      "direct_E": 2,
+      "direct_R": 0,
+      "closure_E": 2049,
+      "closure_R": 0
+    }
+  },
+  "direct_E": 479,
+  "direct_R": 8,
+  "closure_E": 49557,
+  "closure_R": 28,
+  "sample_E": 479,
+  "sample_R": 8,
+  "sample_unknown": 13,
+  "seconds": 3.724946663249284,
+  "max_rss_kib": 213008,
+  "min_MemAvailable_kib": 5725396,
+  "cpu_self": 3.894657,
+  "cpu_children": 0.0
+}

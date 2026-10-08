@@ -1,0 +1,4 @@
+{"cert": {"g6": "A_", "map": [0, 1], "type": "super"}, "g6": "A?", "verdict": "embedded"}
+{"cert": {"g6": "C~", "map": [0, 1], "type": "super"}, "g6": "A_", "verdict": "embedded"}
+{"cert": {"coords": [[["0", "0"], ["0", "0"]], [["1", "0"], ["0", "0"]], [["1/2", "0"], ["0", "1/2"]]], "field": {"interval": ["1", "2"], "minpoly": [-3, 0, 1]}, "type": "exact"}, "g6": "Bw", "verdict": "embedded"}
+{"cert": {"budget": {"seconds": 0}, "reason": "audit fixture, no geometry search"}, "g6": "C~", "verdict": "unknown"}

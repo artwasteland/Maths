@@ -1,0 +1,142 @@
+{
+ "note": "From-scratch re-runs on the u24 VM (vm-queue2/vm-queue3, fresh clone per tag, tree-kill supervisor), pushed to GitHub by the collector; each receipt is in the branch at the commit given.",
+ "schema": "u24-fresh-copies-v1",
+ "tags": {
+  "vmr1": {
+   "branch": "claude/answering-alexeev-u22-cloud-u24-vmr1",
+   "commit": "758e066266554fea6644fd37e0107dafdba11d26",
+   "slices": {
+    "1069": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1069of1920-vmr1.txt",
+     "receipt_sha256": "b64ff8db091aaa9c8b6efa54bff6a82dff7920d71d2f878545889041b500a2f2",
+     "structure_sha256": "bf87896ed10fd9caf521f4c1127af764968b99df9194c59ee5499c28d8713bae"
+    },
+    "239": {
+     "receipt": "research/unit-distance-24/results/u24/check/s239of1920-vmr1.txt",
+     "receipt_sha256": "79af88d1f7d9760e8487819692190c99eec4f107ab85c9a6fc07886b21f12001",
+     "structure_sha256": "cea15319365b90f0500b9c314e512e25b971a9d827732c5339794f1f5db7e819"
+    },
+    "830": {
+     "receipt": "research/unit-distance-24/results/u24/check/s830of1920-vmr1.txt",
+     "receipt_sha256": "f3603ab21a370146f331c22ec3450a0dab2d2039671a7d149f1e308f4d6e6ddc",
+     "structure_sha256": "7ac3d6dfbc860f3b17bbee85426d8966b8a967d9f083b89a59a328b90daba34f"
+    }
+   }
+  },
+  "vmr2": {
+   "branch": "claude/answering-alexeev-u22-cloud-u24-vmr2",
+   "commit": "f7b54f4c012ec3e6bc32fd0a592989a27696c547",
+   "slices": {
+    "1352": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1352of1920-vmr2.txt",
+     "receipt_sha256": "0eb42a53e6a086235962f5e46bfc3051e66adb077090081c5b020622b4374f26",
+     "structure_sha256": "74b4f3c02fd07e1df4210e76d707567ae276a9a5f00cb669ba3e3502122fc496"
+    },
+    "1641": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1641of1920-vmr2.txt",
+     "receipt_sha256": "dc3a6fffc9f72727cb2935d083a6d5b0dd72bb8c0307d5e8abd9603eefe7f582",
+     "structure_sha256": "70346013e4b4a6218293d753a6d6ebe3a28078ccd45969888f3fbb483b242289"
+    }
+   }
+  },
+  "vmr3": {
+   "branch": "claude/answering-alexeev-u22-cloud-u24-vmr3",
+   "commit": "13c7e29e3c58a16ec7c2622e7f977a5c85b792f9",
+   "slices": {
+    "1209": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1209of1920-vmr3.txt",
+     "receipt_sha256": "5cc0b7e7c919a16781aa9fbe606c3b9bfefef4bbb05708ba47e3a2a6cbc20c22",
+     "structure_sha256": "78e68f24ff9fd4d29f74def6b54f46a6be15c0d44fd6c3ac6fed0ba2dee764f1"
+    },
+    "1474": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1474of1920-vmr3.txt",
+     "receipt_sha256": "15332ee11afea43bdd8d40dd2388da110c224537ebec4967bea726cf0872c5bc",
+     "structure_sha256": "ea7e583e12d289ab8979c2dec4cb3aa2f311d96946f619f757331c91ac1a226c"
+    },
+    "272": {
+     "receipt": "research/unit-distance-24/results/u24/check/s272of1920-vmr3.txt",
+     "receipt_sha256": "ee611b09e1d1d11b7c4ba43b4bbe5aec85a8e125ba859501e6ae31eee0508c38",
+     "structure_sha256": "ea4c89ba749c52cd374bd8ef98db4fc8cadada25b287a2a374b0caa29587a842"
+    },
+    "406": {
+     "receipt": "research/unit-distance-24/results/u24/check/s406of1920-vmr3.txt",
+     "receipt_sha256": "5a808c81f33ece96866f0c26d6234a0df0622e50bdff91f70298167d5fa1299d",
+     "structure_sha256": "cff50ceb269ee25ed474923bbe061abbd51caf735e5ec03163ab75fdd3390e62"
+    }
+   }
+  },
+  "vmr4": {
+   "branch": "claude/answering-alexeev-u22-cloud-u24-vmr4",
+   "commit": "eadbcd67104fd06af5665cef29e9877dd1483aca",
+   "slices": {
+    "1721": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1721of1920-vmr4.txt",
+     "receipt_sha256": "347858209d4f14fbf4a5aa7dab5e8742061fd1f59b6092308d6e2df200e3f410",
+     "structure_sha256": "ce55effe5eec1a6d480e555b0b09cd2f04032b960e3e9c42134b68a73a5b0900"
+    },
+    "1814": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1814of1920-vmr4.txt",
+     "receipt_sha256": "a3d3195d2fc860bcb2f56cf6c14af84ebfc320a592cc55c8f47212723631ac3e",
+     "structure_sha256": "b97627e9bbadce815515ff928542616af4963bc97a406997c26d2e12102c35b0"
+    },
+    "466": {
+     "receipt": "research/unit-distance-24/results/u24/check/s466of1920-vmr4.txt",
+     "receipt_sha256": "09c08e731978a78646c4c3122534a8e623644847f0ebf6376f223c8bfd416209",
+     "structure_sha256": "37e04b223becb61c20513aee909cef689887d53082e43f77c7437ce402ab4926"
+    },
+    "997": {
+     "receipt": "research/unit-distance-24/results/u24/check/s997of1920-vmr4.txt",
+     "receipt_sha256": "0c500b036fe0f8cb853c6c7bf45ee43f883e0436131e65b9e4950ad5d899e077",
+     "structure_sha256": "eccee7f6885d2b7bb9f43114b685d2ec524e0537bea72ceb8c21a646e3dd0a80"
+    }
+   }
+  },
+  "vmr5": {
+   "branch": "claude/answering-alexeev-u22-cloud-u24-vmr5",
+   "commit": "a231a1c8f4053fffe197917d530aa17bf15dc7b2",
+   "slices": {
+    "1183": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1183of1920-vmr5.txt",
+     "receipt_sha256": "c87b3c6f76288a1594bfd38c186fe6f3f2f9d4660e7acfad615a8dcd7d575aaa",
+     "structure_sha256": "b74dcf08e8bb633f46b589d8ced0e8900b0834919a10ae8c58b2ea4c8f5c49fe"
+    },
+    "1260": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1260of1920-vmr5.txt",
+     "receipt_sha256": "8b2f31b6b589289908ade05c5a22a31d64d17574cf23aebc51185e52340e7968",
+     "structure_sha256": "6663e3c92f9ee2a1ec0d62be22f8d0fb31f1f532654a8771408f195cce968293"
+    },
+    "1371": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1371of1920-vmr5.txt",
+     "receipt_sha256": "d9c7d9e50cb233f5755b0800b9ef48367ed4fd7f8443259d3fce0e4258423c7c",
+     "structure_sha256": "0baddb5a14543a2526b96620d5c4148cbe07ac5ef8d997ee996e6862bcc8cbcf"
+    },
+    "1639": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1639of1920-vmr5.txt",
+     "receipt_sha256": "83e20188caa01d7e0ffe4f2f771430eab8efe500db3236f0acfa758b3b56730d",
+     "structure_sha256": "8c4a45d55b98803ced8f29585a5990a0571cb40b24529e67791c28f8b120917c"
+    },
+    "1651": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1651of1920-vmr5.txt",
+     "receipt_sha256": "697280edb7a4bf7edb468a2125d5e11f877cd80f65dc7e1ffd2d263fbb791a12",
+     "structure_sha256": "efdc6067cc60f2d4401fceeefd87c9ff2184c94f4ef43a8e7a06048f4cd889d3"
+    },
+    "276": {
+     "receipt": "research/unit-distance-24/results/u24/check/s276of1920-vmr5.txt",
+     "receipt_sha256": "48f8d887ff9f7c01e94e4a06972292f791c9ebc20dfd5273883c8d38816abd05",
+     "structure_sha256": "562c01dc8b02693b28e34daf0693fba5bf41a373651b74a47ba939105401a5c6"
+    }
+   }
+  },
+  "vmr6": {
+   "branch": "claude/answering-alexeev-u22-cloud-u24-vmr6",
+   "commit": "65435e38a27144b1792a118aa56a83ea7f03bb59",
+   "slices": {
+    "1270": {
+     "receipt": "research/unit-distance-24/results/u24/check/s1270of1920-vmr6.txt",
+     "receipt_sha256": "574c753ff036090c77425fb75fe06d11710b992cdd5172a2fb3f6531a104e953",
+     "structure_sha256": "b84c3a491e0845201b856e7b85f95e1808383794678e680612530afeb4ab78a3"
+    }
+   }
+  }
+ }
+}

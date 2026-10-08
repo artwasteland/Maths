@@ -1,0 +1,3 @@
+fleet: copies 1955, derived verdicts {'PASS': 1955}, modes {'full': 101, 'slice': 1854}, full copies with red outcomes 101, slice-stage records 15640, verdict or slice-stage errors 0
+control22: copies 1920, derived verdicts {'PASS': 1920}, modes {'full': 10, 'slice': 1910}, full copies with red outcomes 10, slice-stage records 15360, verdict or slice-stage errors 0
+calibration: copies 1920, derived verdicts {'PASS': 1920}, modes {'full': 1, 'slice': 1919}, full copies with red outcomes 1, slice-stage records 13440, verdict or slice-stage errors 0

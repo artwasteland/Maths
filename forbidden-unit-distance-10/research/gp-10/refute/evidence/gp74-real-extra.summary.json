@@ -1,0 +1,64 @@
+{
+  "suite": "gp74",
+  "method": "real",
+  "count": 1,
+  "refuted": 1,
+  "unknown": 0,
+  "seconds_per_graph": 20.0,
+  "max_states": 200,
+  "all_sat": false,
+  "extra_sat": [
+    [
+      3,
+      7
+    ]
+  ],
+  "total_seconds": 7.023193005938083,
+  "rows": [
+    {
+      "index": 17,
+      "g6": "Gm__x[",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 20,
+        "helper_rows": 6,
+        "sat_pairs": 5,
+        "method": "real",
+        "seconds": 6.579042945988476,
+        "limit": 20.0,
+        "forbidden_in_force": 0
+      }
+    }
+  ],
+  "environment": {
+    "sympy": "1.14.0",
+    "flint": "0.9.0",
+    "SYMPY_GROUND_TYPES": "python"
+  },
+  "argv": [
+    "controls.py",
+    "--suite",
+    "gp74",
+    "--method",
+    "real",
+    "--seconds",
+    "20",
+    "--indices",
+    "17",
+    "--extra-sat",
+    "3",
+    "7",
+    "--tag=-extra"
+  ],
+  "source_sha256": {
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "algebra.py": "f69b94f426105ed513e6f8a509c369c81249b28ddbb45b312eee3dc30750f87c",
+    "gp10refute.py": "50d851358b91dbbc6cd6ac1ae8a5b8f110d7b59803d43eecf395ea8769a4e573",
+    "selftest.py": "628f5e6964f2fb4443f1b3d1bda1f9fa22161737b05c0f005bc154dd2821f620",
+    "controls.py": "26717ed7fbfe69f275705d10cc652952156a0333b0a626bf29677d19d314086a",
+    "audit_sample.py": "6b3434eaa669033ef325249c81667a26726f6b6a5db446c8f702c6fce0181f3e",
+    "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63",
+    "run_focused_controls.py": "4cc11b5f664c10105664fc573bf94c10e2768d6fff189e0010e9afdfad0a62be",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec"
+  }
+}

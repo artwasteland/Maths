@@ -1,0 +1,23 @@
+{
+ "alarms": [],
+ "input": {
+  "B10": 33162,
+  "distinct_iso_classes": 33162,
+  "verdicts": {
+   "embedded": 32653,
+   "refuted": 509
+  }
+ },
+ "vf2_spot": {
+  "densest_embedded_scanned": 100,
+  "of_embedded": 32653,
+  "edge_range": [
+   18,
+   20
+  ],
+  "pairs_tested": 10595,
+  "hits": 0
+ },
+ "seconds": 477,
+ "verdict": "INDEPENDENT AUDIT PASS"
+}

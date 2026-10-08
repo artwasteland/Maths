@@ -1,0 +1,11 @@
+{
+  "derive": true,
+  "forbidden_limit": 0,
+  "input": "input.g6",
+  "input_sha256": "a9c63db1ea095a519f946e6d81c6b62556b2e2971fd408f593777eb9b54f8ad2",
+  "minimal_claim": "claim.g6",
+  "profile": "sample",
+  "records": [
+    "records.jsonl"
+  ]
+}

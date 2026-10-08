@@ -1,0 +1,390 @@
+{
+ "software": {
+  "enum2.py": "d967fc9024cda647c01bca95d6d6d9e2b6b0c24539d288c0ee1ee669faffa54e",
+  "udenum": "a99b130ab5ad0386265c429b78cf3c4a4c708e1d5dd6e222bec14a4596c16a84",
+  "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+  "forbidden-398.json": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+  "python": "3.12.3",
+  "pynauty": "2.8.8.1"
+ },
+ "replay-398.py": "d57827ea83e49baa72c241dd28cf64484f1cd92cddb14373714275d34493d35f",
+ "tests": {
+  "T0 Mode 74, original u(22) run, levels 11-12": {
+   "exit": 0,
+   "expected": "PASS",
+   "as_expected": true,
+   "sampled_parents": 476,
+   "processed_parents": 364,
+   "production_children_compared": 2543,
+   "enum2_children_compared": 2543,
+   "mismatching_parents": 0,
+   "all_identical": true,
+   "red_all": true,
+   "seconds_per_sampled_parent": {
+    "count": 476,
+    "mean": 0.0033,
+    "median": 0.002,
+    "p90": 0.0072,
+    "max": 0.0398,
+    "total": 1.6
+   },
+   "seconds_per_processed_parent": {
+    "count": 364,
+    "mean": 0.0042,
+    "median": 0.0032,
+    "p90": 0.0086,
+    "max": 0.0398,
+    "total": 1.5
+   },
+   "wall_seconds": 17.3,
+   "unreplayable_cells": [],
+   "seeds": [],
+   "tail": "2 6 mismatching 0 enum2 0.3s\ncell dag-22-61-f12/12-27: parents 2 sampled 2 (new 2) processed 2 production 1 enum2 1 mismatching 0 enum2 0.1s\nRED CONTROL went red: {\"id\": \"R1\", \"control\": \"mutated parent (edge 0-1 flipped, re-canonicalised) against the original production block\", \"cell\": \"11-17\", \"index\": 6139, \"block_size\": 1, \"baseline_identical\": true, \"mutated\": \"I?O?kql\\\\_\", \"only_production\": 1, \"only_enum2\": 10, \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R2\", \"control\": \"one record dropped from the production block\", \"cell\": \"11-17\", \"index\": 6139, \"block_size\": 1, \"baseline_identical\": true, \"only_enum2\": 1, \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R4\", \"control\": \"enum2's children of parent i against the block of parent i+1\", \"cell\": \"11-17\", \"index\": 6139, \"block_size\": 1, \"baseline_identical\": true, \"next_block_size\": 5, \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R5a\", \"control\": \"one production record replaced by a neighbouring child (another parent's)\", \"cell\": \"11-17\", \"index\": 6139, \"block_size\": 1, \"baseline_identical\": true, \"wrong_equal_count_check\": \"PASS\", \"set_check\": \"FAIL\", \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R5b\", \"control\": \"enum2's children minus one record\", \"cell\": \"11-17\", \"index\": 6139, \"block_size\": 1, \"baseline_identical\": true, \"wrong_subset_check\": \"PASS\", \"set_check\": \"FAIL\", \"went_red\": true}\nsampled 476 parents (364 processed), 2543 production children compared, 0 mismatching, 0 unreplayable cells; RESULT: PASS\n"
+  },
+  "T1 Mode 398, run A": {
+   "exit": 0,
+   "expected": "PASS",
+   "as_expected": true,
+   "sampled_parents": 194,
+   "processed_parents": 143,
+   "production_children_compared": 53,
+   "enum2_children_compared": 53,
+   "mismatching_parents": 0,
+   "all_identical": true,
+   "red_all": true,
+   "seconds_per_sampled_parent": {
+    "count": 194,
+    "mean": 0.0445,
+    "median": 0.0112,
+    "p90": 0.1605,
+    "max": 0.4105,
+    "total": 8.6
+   },
+   "seconds_per_processed_parent": {
+    "count": 143,
+    "mean": 0.0604,
+    "median": 0.0288,
+    "p90": 0.1759,
+    "max": 0.4105,
+    "total": 8.6
+   },
+   "wall_seconds": 33.9,
+   "unreplayable_cells": [],
+   "seeds": [
+    {
+     "cell": "1-0",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "2-1",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "3-3",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "4-5",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "5-7",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "6-9",
+     "records": 4,
+     "sampled": 3,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "7-12",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "8-14",
+     "records": 3,
+     "sampled": 3,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "9-18",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "10-17",
+     "records": 2733,
+     "sampled": 55,
+     "full_identical": true,
+     "identical": true
+    },
+    {
+     "cell": "10-18",
+     "records": 218,
+     "sampled": 5,
+     "full_identical": true,
+     "identical": true
+    },
+    {
+     "cell": "10-19",
+     "records": 19,
+     "sampled": 3,
+     "full_identical": true,
+     "identical": true
+    },
+    {
+     "cell": "10-20",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": true,
+     "identical": true
+    }
+   ],
+   "tail": "0\", \"index\": 139, \"block_size\": 1, \"baseline_identical\": true, \"mutated\": \"I?IOyZ`[g\", \"only_production\": 1, \"only_enum2\": 12, \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R2\", \"control\": \"one record dropped from the production block\", \"cell\": \"11-20\", \"index\": 139, \"block_size\": 1, \"baseline_identical\": true, \"only_enum2\": 1, \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R4\", \"control\": \"enum2's children of parent i against the block of parent i+1\", \"cell\": \"11-20\", \"index\": 139, \"block_size\": 1, \"baseline_identical\": true, \"next_block_size\": 0, \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R5a\", \"control\": \"one production record replaced by a neighbouring child (another parent's)\", \"cell\": \"11-20\", \"index\": 139, \"block_size\": 1, \"baseline_identical\": true, \"wrong_equal_count_check\": \"PASS\", \"set_check\": \"FAIL\", \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R5b\", \"control\": \"enum2's children minus one record\", \"cell\": \"11-20\", \"index\": 139, \"block_size\": 1, \"baseline_identical\": true, \"wrong_subset_check\": \"PASS\", \"set_check\": \"FAIL\", \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R3\", \"control\": \"enum2 without member 395 (one of the 324) against the production block\", \"cell\": \"11-20\", \"index\": 129, \"production_children\": 0, \"enum2_children_without_member\": 1, \"extra\": 1, \"missing\": 0, \"extras_contain_exactly_that_member\": true, \"went_red\": true}\nsampled 194 parents (143 processed), 53 production children compared, 0 mismatching, 0 unreplayable cells; RESULT: PASS\n"
+  },
+  "T2 Mode 398, run B (sliced)": {
+   "exit": 0,
+   "expected": "PASS",
+   "as_expected": true,
+   "sampled_parents": 162,
+   "processed_parents": 121,
+   "production_children_compared": 47,
+   "enum2_children_compared": 47,
+   "mismatching_parents": 0,
+   "all_identical": true,
+   "red_all": true,
+   "seconds_per_sampled_parent": {
+    "count": 162,
+    "mean": 0.0379,
+    "median": 0.0102,
+    "p90": 0.0954,
+    "max": 0.3915,
+    "total": 6.1
+   },
+   "seconds_per_processed_parent": {
+    "count": 121,
+    "mean": 0.0507,
+    "median": 0.0244,
+    "p90": 0.1311,
+    "max": 0.3915,
+    "total": 6.1
+   },
+   "wall_seconds": 9.2,
+   "unreplayable_cells": [],
+   "seeds": [
+    {
+     "cell": "1-0",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "2-1",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "3-3",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "4-5",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "5-7",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "6-9",
+     "records": 4,
+     "sampled": 3,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "7-12",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "8-14",
+     "records": 3,
+     "sampled": 3,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "9-18",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "10-17",
+     "records": 2733,
+     "sampled": 55,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "10-18",
+     "records": 218,
+     "sampled": 5,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "10-19",
+     "records": 19,
+     "sampled": 3,
+     "full_identical": null,
+     "identical": true
+    },
+    {
+     "cell": "10-20",
+     "records": 1,
+     "sampled": 1,
+     "full_identical": null,
+     "identical": true
+    }
+   ],
+   "tail": "\", \"index\": 408, \"block_size\": 2, \"baseline_identical\": true, \"mutated\": \"I_Q?hS|{_\", \"only_production\": 2, \"only_enum2\": 18, \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R2\", \"control\": \"one record dropped from the production block\", \"cell\": \"11-20\", \"index\": 408, \"block_size\": 2, \"baseline_identical\": true, \"only_enum2\": 1, \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R4\", \"control\": \"enum2's children of parent i against the block of parent i+1\", \"cell\": \"11-20\", \"index\": 408, \"block_size\": 2, \"baseline_identical\": true, \"next_block_size\": 0, \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R5a\", \"control\": \"one production record replaced by a neighbouring child (another parent's)\", \"cell\": \"11-20\", \"index\": 408, \"block_size\": 2, \"baseline_identical\": true, \"wrong_equal_count_check\": \"PASS\", \"set_check\": \"FAIL\", \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R5b\", \"control\": \"enum2's children minus one record\", \"cell\": \"11-20\", \"index\": 408, \"block_size\": 2, \"baseline_identical\": true, \"wrong_subset_check\": \"PASS\", \"set_check\": \"FAIL\", \"went_red\": true}\nRED CONTROL went red: {\"id\": \"R3\", \"control\": \"enum2 without member 311 (one of the 324) against the production block\", \"cell\": \"11-20\", \"index\": 1509, \"production_children\": 0, \"enum2_children_without_member\": 1, \"extra\": 1, \"missing\": 0, \"extras_contain_exactly_that_member\": true, \"went_red\": true}\nsampled 162 parents (121 processed), 47 production children compared, 0 mismatching, 0 unreplayable cells; RESULT: PASS\n"
+  },
+  "T3 one child of parent 2153 deleted from 11-20 (manifests rewritten)": {
+   "exit": 1,
+   "expected": "FAIL",
+   "as_expected": true,
+   "sampled_parents": 53,
+   "processed_parents": 52,
+   "production_children_compared": 19,
+   "enum2_children_compared": 20,
+   "mismatching_parents": 1,
+   "all_identical": false,
+   "red_all": null,
+   "seconds_per_sampled_parent": {
+    "count": 53,
+    "mean": 0.0206,
+    "median": 0.0097,
+    "p90": 0.0359,
+    "max": 0.2868,
+    "total": 1.1
+   },
+   "seconds_per_processed_parent": {
+    "count": 52,
+    "mean": 0.021,
+    "median": 0.0111,
+    "p90": 0.0359,
+    "max": 0.2868,
+    "total": 1.1
+   },
+   "wall_seconds": 1.3,
+   "unreplayable_cells": [],
+   "seeds": [],
+   "tail": "cell A-16-41/11-20: parents 2631 sampled 53 (new 53) processed 52 production 19 enum2 20 mismatching 1 enum2 1.1s\nsampled 53 parents (52 processed), 19 production children compared, 1 mismatching, 0 unreplayable cells; RESULT: FAIL\n",
+   "deleted_child": "JM??wX`hcR_"
+  },
+  "T4 a Mode-74 child rejected by the 398 added to the block of parent 2153 in 11-20 (manifests rewritten)": {
+   "exit": 1,
+   "expected": "FAIL",
+   "as_expected": true,
+   "sampled_parents": 53,
+   "processed_parents": 52,
+   "production_children_compared": 21,
+   "enum2_children_compared": 20,
+   "mismatching_parents": 1,
+   "all_identical": false,
+   "red_all": null,
+   "seconds_per_sampled_parent": {
+    "count": 53,
+    "mean": 0.0205,
+    "median": 0.0097,
+    "p90": 0.0393,
+    "max": 0.2816,
+    "total": 1.1
+   },
+   "seconds_per_processed_parent": {
+    "count": 52,
+    "mean": 0.0209,
+    "median": 0.0111,
+    "p90": 0.0393,
+    "max": 0.2816,
+    "total": 1.1
+   },
+   "wall_seconds": 1.3,
+   "unreplayable_cells": [],
+   "seeds": [],
+   "tail": "cell A-16-41/11-20: parents 2631 sampled 53 (new 53) processed 52 production 21 enum2 20 mismatching 1 enum2 1.1s\nsampled 53 parents (52 processed), 21 production children compared, 1 mismatching, 0 unreplayable cells; RESULT: FAIL\n"
+  },
+  "T5 one parent source record of 11-20 changed, manifests untouched": {
+   "exit": 1,
+   "expected": "FAIL",
+   "as_expected": true,
+   "sampled_parents": 0,
+   "processed_parents": 0,
+   "production_children_compared": 0,
+   "enum2_children_compared": 0,
+   "mismatching_parents": 0,
+   "all_identical": false,
+   "red_all": null,
+   "seconds_per_sampled_parent": null,
+   "seconds_per_processed_parent": null,
+   "wall_seconds": 0.0,
+   "unreplayable_cells": [
+    "11-20"
+   ],
+   "seeds": [],
+   "tail": "cell A-16-41/11-20: NOT REPLAYABLE ['parent source <scratch>/scratchpad/v398/replay-test/T5-run/A-16-41/10-17.reach.g6 not found with sha256 49e0a661e315a6b885531a3632a941d186c06e50746e73de3c3158abe23ea613']\nsampled 0 parents (0 processed), 0 production children compared, 0 mismatching, 1 unreplayable cells; RESULT: FAIL\n"
+  }
+ },
+ "tamper_target": {
+  "cell": "11-20",
+  "index": 2153,
+  "record": "I_QpWdHKW",
+  "block": [
+   523,
+   525
+  ],
+  "where": "cell file",
+  "spurious_child": "J@c@kHHXMM?"
+ },
+ "pass": true
+}

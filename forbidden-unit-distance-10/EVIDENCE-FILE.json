@@ -1,0 +1,7 @@
+{
+  "bytes": 37380596,
+  "sha256": "71a3de2e94ba53d34fe352fcacf7f84aac0a7a7dcbeb61fe58b78e6dbc4b8ffd",
+  "name": "forbidden-unit-distance-10-evidence.tar.zst",
+  "describe": "Immutable run receipts and bulk verification inputs for --audit and --full; quick mode uses the GitHub directory alone.",
+  "researchCommit": "0ff57d1f2f14baf8177e34b8bb54fd4c18d09618"
+}

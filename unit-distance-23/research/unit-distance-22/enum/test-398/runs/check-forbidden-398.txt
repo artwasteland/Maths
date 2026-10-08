@@ -1,0 +1,7 @@
+<repo>/pyenv-gp10/lib/python3.12/site-packages/networkx/algorithms/graph_hashing.py:211: UserWarning: The hashes produced for graphs without node or edge attributes changed in v3.5 due to a bugfix (see documentation).
+  node_labels = _init_node_labels(G, edge_attr, node_attr)
+networkx 3.7; L10.g6 sha256 a899e36cec0f135f253e0c9942d2fecd29280da44189a01d00752e8a5af971b8
+forbidden-398.json sha256 8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c
+forbidden-398.g6   sha256 91d5810c4d7b02d97afec7dfe2a2a5629f2075439100aa8eae6b60dca4ff4381
+C1..C9 all pass: 398 entries; 74 verbatim and isomorphic to their graph6; 324 identical to their L10 graph6 labelling; pairwise non-isomorphic; an antichain under the subgraph order; pattern sizes {2: 251, 3: 2474, 4: 920, 5: 192, 6: 34, 7: 4} = 3875
+RESULT: PASS

@@ -1,0 +1,13 @@
+{
+ "records": "<repo>/runs/supervisor-mutations/interval-off-root.jsonl",
+ "bytes": 56556,
+ "sha256": "792b950ed06a78d5bd92b84189441196b0afa45ae8749197fea3707e499938ce",
+ "lines": 1,
+ "verdicts": {
+  "refuted": 1
+ },
+ "refuted_indexed": 1,
+ "duplicate_g6": 0,
+ "duplicates": [],
+ "seconds": 0.0
+}

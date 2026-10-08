@@ -1,0 +1,45 @@
+PASS K4 L1a refutation: exit=0: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=1
+PASS K4 one-byte pair corruption: exit=1: REJECT: <repo>/research/unit-distance-22/check/fixtures/k4-refuted-corrupt.jsonl:1.witness.tree.move.pair: invalid distinct vertices
+PASS default (22,61) gate on K4: exit=1: REJECT: <repo>/research/unit-distance-22/check/fixtures/k4-refuted.jsonl:1: expected 22 vertices, got 4
+PASS L0 root row-space mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/root-a-bad.jsonl:1.witness.tree.A: row space is inconsistent with the claimed constraints
+PASS Moser exact embedding: exit=0: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=1 refuted=0 unknown=0 proof_nodes=0
+PASS Moser one-byte coordinate corruption: exit=1: REJECT: <repo>/research/unit-distance-22/check/fixtures/moser-embedded-corrupt.jsonl:1.witness: edge (0,1) does not have squared distance 1
+PASS exact embedding collision mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/embedding-collision.jsonl:1.witness: points 0 and 6 collide
+PASS planted forbidden witness: exit=0: ACCEPT certificates records=1 forbidden=1 tu=0 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS forbidden one-byte map corruption: exit=1: REJECT: <repo>/research/unit-distance-22/check/fixtures/planted-forbidden-corrupt.jsonl:1.witness.map: map is not injective
+PASS forbidden edge-preservation mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/forbidden-absent-edge.jsonl:1.witness: pattern edge 0 maps to absent edge (0, 1)
+PASS L1b exact forced ratio: exit=0: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=1
+PASS L1b unit-modulus mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/l1b-bad.jsonl:1.witness.tree: L1b omega has unit modulus
+PASS L2 forced edge and child contradiction: exit=0: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=2
+PASS L2 modulus mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/l2-bad.jsonl:1.witness.tree: L2 ratio is not a consequence of A
+PASS L2 child graph mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/l2-child-bad.jsonl:1.witness.tree.children[0].edges: inconsistent with the parent move
+PASS L3 two-branch Lemma 4 split: exit=0: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=3
+PASS L3 discriminant mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/l3-bad.jsonl:1.witness.tree: L3 d does not square to the recomputed discriminant
+PASS L3 branch row-space mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/l3-branch-bad.jsonl:1.witness.tree.children[1].A: row space is inconsistent with the claimed constraints
+PASS L1c nonnegative discriminant from genuine L3 node: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/l1c-nonnegative.jsonl:1.witness.tree: L1c discriminant is not negative at the selected real root
+PASS L1c n=17 negative-Heron refutation: exit=0: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15
+PASS L1c row-space mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/l1c-relation-bad.jsonl:1.witness.tree.children[0].children[0].children[0]: L1c three-edge relation is not a consequence of A
+PASS L1c zero-coefficient mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/l1c-zero-bad.jsonl:1.witness.tree.children[0].children[0].children[0]: L1c coefficients a,b,c must each be nonzero
+PASS L1c child mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/l1c-child-bad.jsonl:1.witness.tree.children[0].children[0].children[0]: L1c contradiction must be a leaf
+PASS TU gadget index 0: exit=0: ACCEPT certificates records=1 forbidden=0 tu=1 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS TU gadget index 1: exit=0: ACCEPT certificates records=1 forbidden=0 tu=1 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS TU gadget index 2: exit=0: ACCEPT certificates records=1 forbidden=0 tu=1 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS TU gadget index 3: exit=0: ACCEPT certificates records=1 forbidden=0 tu=1 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS TU gadget index 4: exit=0: ACCEPT certificates records=1 forbidden=0 tu=1 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS TU gadget index 5: exit=0: ACCEPT certificates records=1 forbidden=0 tu=1 embedded=0 refuted=0 unknown=0 proof_nodes=0
+PASS TU distinguished-pair mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/tu-bad.jsonl:1.witness.pair: is not the mapped distinguished gadget pair
+PASS noncanonical graph6 mutation: exit=1: REJECT: g6: graph6 record 1 is not nauty-labelg canonical
+PASS unknown exact listing: exit=0: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=0 unknown=1 proof_nodes=0
+PASS unknown one-byte listing corruption: exit=1: REJECT: UNKNOWN.g6 does not exactly list unknown certificate records in order
+PASS default (22,61) positive gate and graph-list match: exit=0: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=0 unknown=1 proof_nodes=0
+PASS graph-list mismatch: exit=1: REJECT: certificate graph6 records do not exactly equal the supplied graph list in order
+PASS manifest hashes and exact range tiling: exit=0: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=1
+PASS compressed manifest record counting: exit=0: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=1
+PASS manifest overlap mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/parent.g6: shard ranges have a gap or overlap before /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/manifests-bad/s1.json, expected 1, got 0
+PASS manifest one-byte input-hash mutation: exit=1: REJECT: /tmp/gp10-check/kernel-selftest/selftest-2_u5ny5j/manifests-hash-bad/s0.json.inputs_sha256: parent file hash mismatch
+PASS PROOFS.md identities and exact coordinate models
+PASS PROOFS.md coefficient mutation: rejected: proof gadget 0 rhombus identity is false
+SELFTEST PASS checks=41 positive=18 rejected_mutations=23
+KERNEL EXACT REASONS PASS rejections=23 restored_positive_invocations=17
+KERNEL WRITTEN PROOF MODELS RESTORED
+RESOURCE min_MemAvailable_kib=4598184 exit=0

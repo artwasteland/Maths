@@ -1,0 +1,28 @@
+{
+  "bytes": 843916,
+  "certificate_sha256": "5fcf0ea3e8bc5863b183dd36a035598cabb65e34063345a8f79975260ef8f6ac",
+  "certificate_type": "exact",
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "details": {
+    "interval_bisections": 0
+  },
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 78832,
+    "nice": 15,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "field_degree": 60,
+  "g6": "I`dcA?rBo",
+  "peak_child_rss_kib": 47576,
+  "peak_self_rss_kib": 84720,
+  "profile_sha256": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+  "scope": "E-exact arithmetic only; NOT a run ACCEPT",
+  "scratch_relocation": "<repo>/research/gp-11/tools/endgame-evidence/frontier-check-cost/case-003/scratch",
+  "status": "ARITHMETIC_PASS",
+  "verification_seconds": 39.097296581137925,
+  "worker_seconds": 39.50511104427278
+}

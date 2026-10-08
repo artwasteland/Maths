@@ -1,0 +1,101 @@
+{"attempts":[{"limit":1.24999886052683,"method":"reuse","reason":"checked prior certificate","seconds":0.011442936025559902}],"g6":"H??|Qro"}
+{"attempts":[{"limit":1.249999169493094,"method":"reuse","reason":"no checked prior certificate","seconds":2.387911081314087e-06},{"limit":2.4999916572123766,"method":"tu","seconds":0.0298933619633317}],"g6":"H??|Qrp"}
+{"attempts":[{"limit":1.2499993189703673,"method":"reuse","reason":"no checked prior certificate","seconds":1.6740523278713226e-06},{"limit":2.4999933098442852,"method":"tu","seconds":0.026017508003860712}],"g6":"H?Ahqvo"}
+{"attempts":[{"limit":1.2499993816018105,"method":"reuse","reason":"no checked prior certificate","seconds":1.6647391021251678e-06},{"limit":2.499993549194187,"method":"tu","seconds":0.02089410414919257}],"g6":"H?Aiprp"}
+{"attempts":[{"limit":1.2499992863740772,"method":"reuse","reason":"no checked prior certificate","seconds":1.9529834389686584e-06},{"limit":2.499992650002241,"method":"tu","seconds":0.020882508251816034}],"g6":"H?ChuJp"}
+{"attempts":[{"limit":1.24999929103069,"method":"reuse","reason":"no checked prior certificate","seconds":1.8724240362644196e-06},{"limit":2.4999928092584014,"method":"tu","seconds":0.03115145117044449}],"g6":"H?CnE`|"}
+{"attempts":[{"limit":1.2499992719385773,"method":"reuse","reason":"checked prior certificate","seconds":0.02549703000113368}],"g6":"H?GXmRo"}
+{"attempts":[{"limit":1.2499991822987795,"method":"reuse","reason":"checked prior certificate","seconds":0.08378370897844434}],"g6":"H?HVCp|"}
+{"attempts":[{"limit":1.2499993885867298,"method":"reuse","reason":"no checked prior certificate","seconds":1.855660229921341e-06},{"limit":2.4999933154322207,"method":"tu","seconds":0.021254270803183317}],"g6":"H?KLIno"}
+{"attempts":[{"limit":1.2499993685632944,"method":"reuse","reason":"checked prior certificate","seconds":0.010648597031831741}],"g6":"H?XPdeM"}
+{"attempts":[{"limit":1.249999355059117,"method":"reuse","reason":"checked prior certificate","seconds":0.2633316060528159}],"g6":"H?dPdLi"}
+{"attempts":[{"limit":1.2499991736840457,"method":"reuse","reason":"checked prior certificate","seconds":0.008202244993299246}],"g6":"H?hPaue"}
+{"attempts":[{"limit":1.2499991934746504,"method":"reuse","reason":"checked prior certificate","seconds":0.05652230838313699}],"g6":"H?iRQhr"}
+{"attempts":[{"limit":1.2499992984812707,"method":"reuse","reason":"no checked prior certificate","seconds":2.370215952396393e-06},{"limit":2.499992467928678,"method":"tu","seconds":0.021174730733036995}],"g6":"H@?XuVc"}
+{"attempts":[{"limit":1.2499992849770933,"method":"reuse","reason":"checked prior certificate","seconds":0.03271010285243392}],"g6":"H@CNEK|"}
+{"attempts":[{"limit":1.2499993101228029,"method":"reuse","reason":"no checked prior certificate","seconds":2.0461156964302063e-06},{"limit":2.499992525205016,"method":"tu","seconds":0.02611823007464409}],"g6":"H@Dc]Rp"}
+{"attempts":[{"limit":1.2499993098899722,"method":"reuse","reason":"checked prior certificate","seconds":0.029468257445842028}],"g6":"H@EMBD|"}
+{"attempts":[{"limit":1.2499994509853423,"method":"reuse","reason":"checked prior certificate","seconds":0.014249519910663366}],"g6":"H@EPQ^a"}
+{"attempts":[{"limit":1.2499992684461176,"method":"reuse","reason":"no checked prior certificate","seconds":1.7639249563217163e-06},{"limit":2.499993068166077,"method":"tu","seconds":0.026420373935252428}],"g6":"H@Q_o~a"}
+{"attempts":[{"limit":1.2499991925433278,"method":"reuse","reason":"checked prior certificate","seconds":0.0786291309632361}],"g6":"H@_maXr"}
+{"attempts":[{"limit":1.2499991666991264,"method":"reuse","reason":"no checked prior certificate","seconds":2.791639417409897e-06},{"limit":2.499991570133716,"method":"tu","seconds":0.028586670756340027}],"g6":"H@dPPNB"}
+{"attempts":[{"limit":1.2499990588985384,"method":"reuse","reason":"no checked prior certificate","seconds":2.435874193906784e-06},{"limit":2.4999910020269454,"method":"tu","seconds":0.028596054762601852}],"g6":"H@hO]Fp"}
+{"attempts":[{"limit":1.2499993084929883,"method":"reuse","reason":"no checked prior certificate","seconds":2.726912498474121e-06},{"limit":2.4999919389374554,"method":"tu","seconds":0.03827155102044344}],"g6":"H@hUDTV"}
+{"attempts":[{"limit":1.249999207444489,"method":"reuse","reason":"checked prior certificate","seconds":0.028974035754799843}],"g6":"HAGW}Ed"}
+{"attempts":[{"limit":1.2499993641395122,"method":"reuse","reason":"checked prior certificate","seconds":0.01867982093244791}],"g6":"HAJ?Xfw"}
+{"attempts":[{"limit":1.249999126419425,"method":"reuse","reason":"no checked prior certificate","seconds":2.583954483270645e-06},{"limit":2.4999909889884293,"method":"tu","seconds":0.026239543687552214}],"g6":"HBAkqTd"}
+{"attempts":[{"limit":1.2499993729870766,"method":"reuse","reason":"checked prior certificate","seconds":0.022067558951675892}],"g6":"HCO_W~q"}
+{"attempts":[{"limit":1.249999393010512,"method":"reuse","reason":"no checked prior certificate","seconds":2.1150335669517517e-06},{"limit":2.499993298202753,"method":"tu","seconds":0.025754772126674652}],"g6":"HGEAXjw"}
+{"attempts":[{"limit":1.249999393010512,"method":"reuse","reason":"checked prior certificate","seconds":0.0733354757539928}],"g6":"HG_\\aXr"}
+{"attempts":[{"limit":1.2499989026691765,"method":"reuse","reason":"checked prior certificate","seconds":0.07494935300201178}],"g6":"HGaqOtr"}
+{"attempts":[{"limit":1.249999447958544,"method":"reuse","reason":"checked prior certificate","seconds":0.029027040116488934}],"g6":"HHEAG^x"}
+{"attempts":[{"limit":1.2499993534293026,"method":"reuse","reason":"checked prior certificate","seconds":0.02617271477356553}],"g6":"HH_KiXr"}
+{"attempts":[{"limit":1.2499993639066815,"method":"reuse","reason":"checked prior certificate","seconds":0.03722896333783865}],"g6":"HH`K_\\r"}
+{"attempts":[{"limit":1.2499989341013134,"method":"reuse","reason":"checked prior certificate","seconds":0.042013335041701794}],"g6":"HIA@Wzw"}
+{"attempts":[{"limit":1.2499993944074959,"method":"reuse","reason":"no checked prior certificate","seconds":2.1993182599544525e-06},{"limit":2.4999925177544355,"method":"tu","seconds":0.02854151278734207}],"g6":"HIAkotd"}
+{"attempts":[{"limit":1.249999345978722,"method":"reuse","reason":"checked prior certificate","seconds":0.021659481804817915}],"g6":"HIGCkX{"}
+{"attempts":[{"limit":1.2499990644864738,"method":"reuse","reason":"no checked prior certificate","seconds":2.998393028974533e-06},{"limit":2.499989811796695,"method":"tu","seconds":0.028954337816685438}],"g6":"HIGO[^q"}
+{"attempts":[{"limit":1.2499986861366779,"method":"reuse","reason":"no checked prior certificate","seconds":3.7159770727157593e-06},{"limit":2.4999878350645304,"method":"tu","seconds":0.031964884139597416}],"g6":"HIe@G\\r"}
+{"attempts":[{"limit":1.249998876126483,"method":"reuse","reason":"no checked prior certificate","seconds":2.45729461312294e-06},{"limit":2.499990597832948,"method":"tu","seconds":0.03198942309245467}],"g6":"HMi?g\\b"}
+{"attempts":[{"limit":1.2499990905635059,"method":"reuse","reason":"no checked prior certificate","seconds":2.266373485326767e-06},{"limit":2.4999917708337307,"method":"tu","seconds":0.02654377929866314}],"g6":"HOKQ]Jp"}
+{"attempts":[{"limit":1.2499993001110852,"method":"reuse","reason":"no checked prior certificate","seconds":2.1080486476421356e-06},{"limit":2.4999925242736936,"method":"tu","seconds":0.027341864071786404}],"g6":"HOLO]Fp"}
+{"attempts":[{"limit":1.2499993103556335,"method":"reuse","reason":"checked prior certificate","seconds":0.24156885407865047}],"g6":"HOOo}Rp"}
+{"attempts":[{"limit":1.2499994160607457,"method":"reuse","reason":"checked prior certificate","seconds":0.31272137025371194}],"g6":"HQ`F_wl"}
+{"attempts":[{"limit":1.2499994069803506,"method":"reuse","reason":"checked prior certificate","seconds":0.025380386039614677}],"g6":"HSD_YVp"}
+{"attempts":[{"limit":1.2499990076757967,"method":"reuse","reason":"no checked prior certificate","seconds":2.5490298867225647e-06},{"limit":2.499990586191416,"method":"tu","seconds":0.0337154408916831}],"g6":"HY_EhW\\"}
+{"attempts":[{"limit":1.249999328982085,"method":"reuse","reason":"no checked prior certificate","seconds":2.196989953517914e-06},{"limit":2.4999927151948214,"method":"tu","seconds":0.03667199006304145}],"g6":"H]`?Wsf"}
+{"attempts":[{"limit":1.2499993089586496,"method":"reuse","reason":"checked prior certificate","seconds":0.8592930156737566}],"g6":"H_CfKxw"}
+{"attempts":[{"limit":1.2499991464428604,"method":"reuse","reason":"no checked prior certificate","seconds":2.561137080192566e-06},{"limit":2.4999911189079285,"method":"tu","seconds":0.02355734398588538}],"g6":"H_HPc\\w"}
+{"attempts":[{"limit":1.2499993713572621,"method":"reuse","reason":"checked prior certificate","seconds":0.08171902922913432}],"g6":"H_KQ\\Jp"}
+{"attempts":[{"limit":1.2499989420175552,"method":"reuse","reason":"no checked prior certificate","seconds":2.626795321702957e-06},{"limit":2.4999907556921244,"method":"tu","seconds":0.026279566809535027}],"g6":"H_ScXjp"}
+{"attempts":[{"limit":1.2499989995267242,"method":"reuse","reason":"checked prior certificate","seconds":0.05638912320137024}],"g6":"H_SsPNo"}
+{"attempts":[{"limit":1.2499993254896253,"method":"reuse","reason":"no checked prior certificate","seconds":2.3329630494117737e-06},{"limit":2.4999924418516457,"method":"tu","seconds":0.021411236841231585}],"g6":"H_WXKdp"}
+{"attempts":[{"limit":1.249999348539859,"method":"reuse","reason":"checked prior certificate","seconds":0.00813286006450653}],"g6":"H_hOpNo"}
+{"attempts":[{"limit":1.2499992807861418,"method":"reuse","reason":"no checked prior certificate","seconds":1.9650906324386597e-06},{"limit":2.499992867000401,"method":"tu","seconds":0.021303477231413126}],"g6":"H_hP_^o"}
+{"attempts":[{"limit":1.2499993059318513,"method":"reuse","reason":"checked prior certificate","seconds":0.08952749613672495}],"g6":"H_hP`SV"}
+{"attempts":[{"limit":1.249998786021024,"method":"reuse","reason":"no checked prior certificate","seconds":3.4710392355918884e-06},{"limit":2.4999881186522543,"method":"tu","seconds":0.023666441906243563}],"g6":"H_oohVo"}
+{"attempts":[{"limit":1.2499991359654814,"method":"reuse","reason":"checked prior certificate","seconds":0.565536807756871}],"g6":"H`?NeW{"}
+{"attempts":[{"limit":1.2499992814846337,"method":"reuse","reason":"no checked prior certificate","seconds":2.3408792912960052e-06},{"limit":2.499992181081325,"method":"tu","seconds":0.021425277926027775}],"g6":"H`@ItGx"}
+{"attempts":[{"limit":1.2499993673991412,"method":"reuse","reason":"no checked prior certificate","seconds":1.843087375164032e-06},{"limit":2.4999936297535896,"method":"tu","seconds":0.026652058586478233}],"g6":"H`QAxih"}
+{"attempts":[{"limit":1.2499992321245372,"method":"reuse","reason":"checked prior certificate","seconds":0.0678306189365685}],"g6":"H`QBWyp"}
+{"attempts":[{"limit":1.249999372055754,"method":"reuse","reason":"no checked prior certificate","seconds":1.9669532775878906e-06},{"limit":2.499993089120835,"method":"tu","seconds":0.026462340261787176}],"g6":"H`QBgyh"}
+{"attempts":[{"limit":1.2499991005752236,"method":"reuse","reason":"no checked prior certificate","seconds":2.4437904357910156e-06},{"limit":2.4999913619831204,"method":"tu","seconds":0.02670818381011486}],"g6":"H`QBhqL"}
+{"attempts":[{"limit":1.2499992274679244,"method":"reuse","reason":"checked prior certificate","seconds":0.6924275471828878}],"g6":"H`QBpiL"}
+{"attempts":[{"limit":1.2499989341013134,"method":"reuse","reason":"checked prior certificate","seconds":0.311024549882859}],"g6":"H``Axih"}
+{"attempts":[{"limit":1.2499991219956428,"method":"reuse","reason":"no checked prior certificate","seconds":2.4763867259025574e-06},{"limit":2.499990544747561,"method":"tu","seconds":0.031651999801397324}],"g6":"H``Bgyh"}
+{"attempts":[{"limit":1.2499988924246281,"method":"reuse","reason":"no checked prior certificate","seconds":3.160908818244934e-06},{"limit":2.4999896329827607,"method":"tu","seconds":0.02689578104764223}],"g6":"Hdh?YKr"}
+{"attempts":[{"limit":1.2499991890508682,"method":"reuse","reason":"no checked prior certificate","seconds":2.3283064365386963e-06},{"limit":2.4999920683912933,"method":"tu","seconds":0.023511203937232494}],"g6":"Hg?G|hw"}
+{"attempts":[{"limit":1.24999936693348,"method":"reuse","reason":"checked prior certificate","seconds":0.24192509287968278}],"g6":"Hg?X[rp"}
+{"attempts":[{"limit":1.2499992353841662,"method":"reuse","reason":"checked prior certificate","seconds":0.047427400946617126}],"g6":"HgCXSLp"}
+{"attempts":[{"limit":1.2499989275820553,"method":"reuse","reason":"no checked prior certificate","seconds":2.8209760785102844e-06},{"limit":2.4999900381080806,"method":"tu","seconds":0.03276087995618582}],"g6":"HgCo[Vp"}
+{"attempts":[{"limit":1.2499994086101651,"method":"reuse","reason":"no checked prior certificate","seconds":2.0279549062252045e-06},{"limit":2.49999299319461,"method":"tu","seconds":0.03240051865577698}],"g6":"HgDGlCx"}
+{"attempts":[{"limit":1.2499993063975126,"method":"reuse","reason":"checked prior certificate","seconds":0.08312508603557944}],"g6":"Hh_EhW\\"}
+{"attempts":[{"limit":1.2499993555247784,"method":"reuse","reason":"no checked prior certificate","seconds":2.620276063680649e-06},{"limit":2.4999922239221632,"method":"tu","seconds":0.03677103528752923}],"g6":"Hh_Gg\\r"}
+{"attempts":[{"limit":1.2499988779891282,"method":"reuse","reason":"no checked prior certificate","seconds":3.6191195249557495e-06},{"limit":2.499988615978509,"method":"tu","seconds":0.027117174118757248}],"g6":"HkCbcWN"}
+{"attempts":[{"limit":1.2499993806704879,"method":"reuse","reason":"checked prior certificate","seconds":0.04089652793481946}],"g6":"HkCeHoN"}
+{"attempts":[{"limit":1.2499988118652254,"method":"reuse","reason":"checked prior certificate","seconds":0.25626526726409793}],"g6":"HkCe`WN"}
+{"attempts":[{"limit":1.249999370193109,"method":"reuse","reason":"no checked prior certificate","seconds":1.9208528101444244e-06},{"limit":2.4999926602467895,"method":"tu","seconds":0.031844465993344784}],"g6":"HkM?Wlb"}
+{"attempts":[{"limit":1.249999154591933,"method":"reuse","reason":"checked prior certificate","seconds":0.2165946988388896}],"g6":"Hm__XKZ"}
+{"attempts":[{"limit":1.249999194405973,"method":"reuse","reason":"checked prior certificate","seconds":0.020908044185489416}],"g6":"Ho?gqd{"}
+{"attempts":[{"limit":1.2499993240926415,"method":"reuse","reason":"no checked prior certificate","seconds":2.37906351685524e-06},{"limit":2.4999922858551145,"method":"tu","seconds":0.03182083321735263}],"g6":"Ho@PO~w"}
+{"attempts":[{"limit":1.2499992083758116,"method":"reuse","reason":"checked prior certificate","seconds":0.06065383134409785}],"g6":"Ho@PQwz"}
+{"attempts":[{"limit":1.2499991685617715,"method":"reuse","reason":"checked prior certificate","seconds":0.04046791885048151}],"g6":"HoCYPLp"}
+{"attempts":[{"limit":1.2499986544717103,"method":"reuse","reason":"checked prior certificate","seconds":0.021520102862268686}],"g6":"HoCy@TR"}
+{"attempts":[{"limit":1.2499992728698999,"method":"reuse","reason":"checked prior certificate","seconds":0.02029843581840396}],"g6":"HoO_ol{"}
+{"attempts":[{"limit":1.2499993559904397,"method":"reuse","reason":"checked prior certificate","seconds":0.21813527820631862}],"g6":"Hp?Gi^w"}
+{"attempts":[{"limit":1.2499991143122315,"method":"reuse","reason":"checked prior certificate","seconds":0.15997249027714133}],"g6":"HpO]@cN"}
+{"attempts":[{"limit":1.2499991951044649,"method":"reuse","reason":"checked prior certificate","seconds":0.6123268119990826}],"g6":"Hp`@iWZ"}
+{"attempts":[{"limit":1.2499993743840605,"method":"reuse","reason":"no checked prior certificate","seconds":2.7171336114406586e-06},{"limit":2.4999914369545877,"method":"tu","seconds":0.03191101597622037}],"g6":"HqG?g^{"}
+{"attempts":[{"limit":1.249999250518158,"method":"reuse","reason":"checked prior certificate","seconds":0.24309112690389156}],"g6":"HqGEhW\\"}
+{"attempts":[{"limit":1.2499993024393916,"method":"reuse","reason":"no checked prior certificate","seconds":2.209097146987915e-06},{"limit":2.4999918341636658,"method":"tu","seconds":0.03233225177973509}],"g6":"HqGOW^p"}
+{"attempts":[{"limit":1.2499991615768522,"method":"reuse","reason":"no checked prior certificate","seconds":2.7120113372802734e-06},{"limit":2.499991270247847,"method":"tu","seconds":0.027834555134177208}],"g6":"HqGRKoN"}
+{"attempts":[{"limit":1.249999339459464,"method":"reuse","reason":"checked prior certificate","seconds":0.2864115792326629}],"g6":"HqGRSgN"}
+{"attempts":[{"limit":1.2499991168733686,"method":"reuse","reason":"no checked prior certificate","seconds":2.8172507882118225e-06},{"limit":2.499990534968674,"method":"tu","seconds":0.04198764776811004}],"g6":"HqHPOkN"}
+{"attempts":[{"limit":1.2499989632051438,"method":"reuse","reason":"no checked prior certificate","seconds":3.077089786529541e-06},{"limit":2.4999896520748734,"method":"tu","seconds":0.028840927872806787}],"g6":"HqIAXgZ"}
+{"attempts":[{"limit":1.2499990335199982,"method":"reuse","reason":"no checked prior certificate","seconds":2.157408744096756e-06},{"limit":2.4999919119291008,"method":"tu","seconds":0.026483497116714716}],"g6":"HqIAhWZ"}
+{"attempts":[{"limit":1.2499992027878761,"method":"reuse","reason":"checked prior certificate","seconds":0.02109662303701043}],"g6":"HqL@?[V"}
+{"attempts":[{"limit":1.2499992060475051,"method":"reuse","reason":"checked prior certificate","seconds":0.3832928049378097}],"g6":"Hr?MPgN"}
+{"attempts":[{"limit":1.2499992968514562,"method":"reuse","reason":"checked prior certificate","seconds":0.14370129071176052}],"g6":"Hr_@iWN"}
+{"attempts":[{"limit":1.249999210005626,"method":"reuse","reason":"no checked prior certificate","seconds":2.705957740545273e-06},{"limit":2.499990771058947,"method":"tu","seconds":0.03243196289986372}],"g6":"Hr`?Wkj"}
+{"attempts":[{"limit":1.249999306164682,"method":"reuse","reason":"checked prior certificate","seconds":0.04259157879278064}],"g6":"Hr`?XKZ"}
+{"attempts":[{"limit":1.2499993708916008,"method":"reuse","reason":"checked prior certificate","seconds":0.45259438641369343}],"g6":"H{O_okN"}

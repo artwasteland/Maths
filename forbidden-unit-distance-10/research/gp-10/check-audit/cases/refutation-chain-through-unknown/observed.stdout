@@ -1,0 +1,4 @@
+ACCEPT record C~ verified
+ACCEPT record C^ verified
+REJECT record DJ[ pointer_target_not_accepted_refuted
+REJECT run records_rejected

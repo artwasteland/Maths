@@ -1,0 +1,19 @@
+{
+  "record": "packet-e38aa6135774612c.record.jsonl",
+  "source_g6": "JGD@CYQTPT?",
+  "target_g6": "W@iiac_CA?O?GICD@C_HH?U?AWM@SE?i?GAh@?dWABT?OIr",
+  "indexing": "zero-based",
+  "map_H_to_G": [
+    0,
+    2,
+    3,
+    20,
+    22,
+    8,
+    9,
+    18,
+    19,
+    12,
+    13
+  ]
+}

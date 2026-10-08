@@ -1,0 +1,17 @@
+{"attempts":[{"limit":1.2499988058116287,"method":"reuse","reason":"checked prior certificate","seconds":0.017859325744211674}],"g6":"G?K]Nc"}
+{"attempts":[{"limit":1.2499991110526025,"method":"reuse","reason":"checked prior certificate","seconds":0.018262306693941355}],"g6":"G?Nebs"}
+{"attempts":[{"limit":1.2499994649551809,"method":"reuse","reason":"checked prior certificate","seconds":0.009404273238033056}],"g6":"G@IQV{"}
+{"attempts":[{"limit":1.2499994640238583,"method":"reuse","reason":"checked prior certificate","seconds":0.03909197775647044}],"g6":"G@fBJs"}
+{"attempts":[{"limit":1.2499993660021573,"method":"reuse","reason":"checked prior certificate","seconds":0.020368559285998344}],"g6":"GAJcrs"}
+{"attempts":[{"limit":1.249999280553311,"method":"reuse","reason":"checked prior certificate","seconds":0.009037138894200325}],"g6":"GHCML{"}
+{"attempts":[{"limit":1.2499994658865035,"method":"reuse","reason":"checked prior certificate","seconds":0.0669621517881751}],"g6":"G[dBG{"}
+{"attempts":[{"limit":1.2499993324745446,"method":"reuse","reason":"checked prior certificate","seconds":0.02752352086827159}],"g6":"GdhAXk"}
+{"attempts":[{"limit":1.249999396968633,"method":"reuse","reason":"checked prior certificate","seconds":0.13866380089893937}],"g6":"Gm__x["}
+{"attempts":[{"limit":1.249999403487891,"method":"reuse","reason":"no checked prior certificate","seconds":1.9040890038013458e-06},{"limit":2.4999932711943984,"method":"tu","seconds":0.029446993954479694}],"g6":"GoDPV{"}
+{"attempts":[{"limit":1.2499993091914803,"method":"reuse","reason":"checked prior certificate","seconds":0.020814821124076843}],"g6":"Gp@Gzo"}
+{"attempts":[{"limit":1.2499993133824319,"method":"reuse","reason":"no checked prior certificate","seconds":8.279923349618912e-06},{"limit":2.4999853200279176,"method":"tu","seconds":0.023474215995520353}],"g6":"Gq?g~o"}
+{"attempts":[{"limit":1.2499991750810295,"method":"reuse","reason":"checked prior certificate","seconds":0.15138554060831666}],"g6":"GqGTYw"}
+{"attempts":[{"limit":1.2499994514510036,"method":"reuse","reason":"no checked prior certificate","seconds":1.957640051841736e-06},{"limit":2.499993421137333,"method":"tu","seconds":0.021200777031481266}],"g6":"GqGUXw"}
+{"attempts":[{"limit":1.2499992758966982,"method":"reuse","reason":"checked prior certificate","seconds":0.04623523307964206}],"g6":"GqHPW{"}
+{"attempts":[{"limit":1.249999386491254,"method":"reuse","reason":"no checked prior certificate","seconds":1.9548460841178894e-06},{"limit":2.499993246048689,"method":"tu","seconds":0.021214875858277082}],"g6":"Gr`?x["}
+{"attempts":[{"limit":1.249999402789399,"method":"reuse","reason":"checked prior certificate","seconds":0.00948702497407794}],"g6":"GsOiho"}

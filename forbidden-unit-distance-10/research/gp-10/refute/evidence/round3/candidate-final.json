@@ -1,0 +1,763 @@
+{
+  "status": "COMPLETE bounded candidate pass",
+  "finished_utc": "2026-09-24T01:09:31.191124+00:00",
+  "candidate_status": {
+    "candidate_count": 1515,
+    "tree_completed": 1515,
+    "external_refuted": 98,
+    "external_embedded": 290,
+    "processed": 1144,
+    "new_refuted": 7,
+    "current_eligible": 1127,
+    "unprocessed": 0,
+    "pending_tree": 0,
+    "still_undecided": 1120,
+    "processed_later_embedded": 17,
+    "per_method_attempts": {
+      "tu": 1144,
+      "null": 22,
+      "real": 22,
+      "portfolio": 1115,
+      "tree": 71
+    },
+    "per_method_seconds": {
+      "tu": 112.63135824119672,
+      "null": 43.07414058083668,
+      "real": 43.44985229661688,
+      "portfolio": 1476.8929292368703,
+      "tree": 534.4271119991317
+    },
+    "new_certificate_types": {
+      "tu": 5,
+      "tree": 2
+    },
+    "batch_search_seconds": 2221.896284976974,
+    "batch_check_seconds": 5.182138950563967,
+    "snapshot": {
+      "candidate_sha256": "6def4c94c7640241cf629a56b76a53b76bbd1952d80b9a6b78ac6b664bcb4946",
+      "tree": {
+        "path": "<scratch>/scratchpad/cand/tree5.jsonl",
+        "snapshot_bytes": 651694,
+        "consumed_bytes": 651694,
+        "sha256": "4096cafbc8ccbca3e1ecde6157ff29c057156add64dc608eaf21f9ba85cd3412",
+        "verdicts": {
+          "unknown": 1417,
+          "refuted": 98
+        }
+      },
+      "embed": {
+        "path": "<scratch>/scratchpad/cand/emb.jsonl",
+        "snapshot_bytes": 1701025,
+        "consumed_bytes": 1701025,
+        "sha256": "e36d08d24e14b6e2d8af22597c4310db57aa5d090df97d3a835f836954ca49ae",
+        "verdicts": {
+          "embedded": 290,
+          "unknown": 1225
+        }
+      },
+      "tree_configuration": {
+        "all_sat": false,
+        "extra_sat": [],
+        "forbidden_sha256": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+        "input_sha256": "6def4c94c7640241cf629a56b76a53b76bbd1952d80b9a6b78ac6b664bcb4946",
+        "known_sha256": null,
+        "methods": [
+          "tree"
+        ],
+        "seconds": 5.0,
+        "source_sha256": {
+          "algebra.py": "395d7109e25c880fd22d150af5ff7e4a305be4337fb918354092fa4caa27bf93",
+          "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec",
+          "gp10refute.py": "50d851358b91dbbc6cd6ac1ae8a5b8f110d7b59803d43eecf395ea8769a4e573",
+          "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63"
+        },
+        "states": 200
+      }
+    },
+    "batches": [
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0001",
+        "records": 22,
+        "refuted": 0,
+        "search_seconds": 87.57933761738241,
+        "seconds": 0.10906716296449304,
+        "dependency_records": null,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0002",
+        "records": 30,
+        "refuted": 0,
+        "search_seconds": 35.18470004480332,
+        "seconds": 0.09956820402294397,
+        "dependency_records": null,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0003",
+        "records": 4,
+        "refuted": 0,
+        "search_seconds": 4.071238414850086,
+        "seconds": 0.07158023118972778,
+        "dependency_records": null,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0004",
+        "records": 1,
+        "refuted": 0,
+        "search_seconds": 5.084542037453502,
+        "seconds": 0.33258575526997447,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0005",
+        "records": 40,
+        "refuted": 0,
+        "search_seconds": 35.24589538248256,
+        "seconds": 0.07751998724415898,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0006",
+        "records": 39,
+        "refuted": 0,
+        "search_seconds": 37.48128487588838,
+        "seconds": 0.07989523699507117,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0007",
+        "records": 40,
+        "refuted": 0,
+        "search_seconds": 26.355267398059368,
+        "seconds": 0.07973349466919899,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0008",
+        "records": 40,
+        "refuted": 0,
+        "search_seconds": 50.33450937690213,
+        "seconds": 0.07908099703490734,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0009",
+        "records": 40,
+        "refuted": 0,
+        "search_seconds": 48.5394956311211,
+        "seconds": 0.08373543014749885,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0010",
+        "records": 20,
+        "refuted": 0,
+        "search_seconds": 198.56950467918068,
+        "seconds": 0.10220213187858462,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0011",
+        "records": 39,
+        "refuted": 0,
+        "search_seconds": 54.46983880130574,
+        "seconds": 0.08058920176699758,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0012",
+        "records": 40,
+        "refuted": 0,
+        "search_seconds": 47.05306361382827,
+        "seconds": 0.14044366404414177,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0013",
+        "records": 34,
+        "refuted": 0,
+        "search_seconds": 70.37290636077523,
+        "seconds": 0.12010837299749255,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0014",
+        "records": 34,
+        "refuted": 0,
+        "search_seconds": 73.31484341574833,
+        "seconds": 0.08117300318554044,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0015",
+        "records": 40,
+        "refuted": 1,
+        "search_seconds": 41.083865272812545,
+        "seconds": 0.1535356300882995,
+        "dependency_records": 0,
+        "method_counts": {
+          "tu": 1
+        },
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0016",
+        "records": 39,
+        "refuted": 0,
+        "search_seconds": 30.074239160399884,
+        "seconds": 0.11159888189285994,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0017",
+        "records": 40,
+        "refuted": 0,
+        "search_seconds": 20.99788600578904,
+        "seconds": 0.074138468131423,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0018",
+        "records": 39,
+        "refuted": 0,
+        "search_seconds": 46.24119817605242,
+        "seconds": 0.11116435378789902,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0019",
+        "records": 37,
+        "refuted": 0,
+        "search_seconds": 67.04624189296737,
+        "seconds": 0.07646364299580455,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0020",
+        "records": 30,
+        "refuted": 0,
+        "search_seconds": 91.39568433072418,
+        "seconds": 0.08444257127121091,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0021",
+        "records": 40,
+        "refuted": 0,
+        "search_seconds": 61.96175174694508,
+        "seconds": 0.1392540456727147,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0022",
+        "records": 40,
+        "refuted": 0,
+        "search_seconds": 72.34490690007806,
+        "seconds": 0.23853773903101683,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0023",
+        "records": 40,
+        "refuted": 1,
+        "search_seconds": 41.91992293763906,
+        "seconds": 0.07673396170139313,
+        "dependency_records": 0,
+        "method_counts": {
+          "tu": 1
+        },
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0024",
+        "records": 40,
+        "refuted": 1,
+        "search_seconds": 49.45684504695237,
+        "seconds": 0.18122229212895036,
+        "dependency_records": 0,
+        "method_counts": {
+          "tu": 1
+        },
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0025",
+        "records": 39,
+        "refuted": 1,
+        "search_seconds": 55.47040176205337,
+        "seconds": 0.16162072401493788,
+        "dependency_records": 0,
+        "method_counts": {
+          "tu": 1
+        },
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0026",
+        "records": 37,
+        "refuted": 0,
+        "search_seconds": 33.6455920371227,
+        "seconds": 0.09220639988780022,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0027",
+        "records": 32,
+        "refuted": 0,
+        "search_seconds": 111.96716846665367,
+        "seconds": 0.10438594594597816,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0028",
+        "records": 38,
+        "refuted": 0,
+        "search_seconds": 52.58289224235341,
+        "seconds": 0.10506055690348148,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0029",
+        "records": 32,
+        "refuted": 0,
+        "search_seconds": 99.94341817498207,
+        "seconds": 0.10030424874275923,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0030",
+        "records": 28,
+        "refuted": 0,
+        "search_seconds": 106.84223220916465,
+        "seconds": 0.10867492016404867,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0031",
+        "records": 36,
+        "refuted": 0,
+        "search_seconds": 131.35677725402638,
+        "seconds": 0.14252700190991163,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0032",
+        "records": 34,
+        "refuted": 0,
+        "search_seconds": 119.5065028402023,
+        "seconds": 0.08098564203828573,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0033",
+        "records": 40,
+        "refuted": 0,
+        "search_seconds": 81.6325171967037,
+        "seconds": 0.07600232120603323,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0034",
+        "records": 4,
+        "refuted": 0,
+        "search_seconds": 13.710706033743918,
+        "seconds": 0.06496602669358253,
+        "dependency_records": 0,
+        "method_counts": {},
+        "final_line": "ACCEPT run verified"
+      },
+      {
+        "directory": "/tmp/gp10-refute/cand/batch-0035",
+        "records": 16,
+        "refuted": 3,
+        "search_seconds": 119.05910763982683,
+        "seconds": 1.361030702944845,
+        "dependency_records": 0,
+        "method_counts": {
+          "tu": 1,
+          "tree": 2
+        },
+        "final_line": "ACCEPT run verified"
+      }
+    ]
+  },
+  "combined_check": {
+    "directory": "/tmp/gp10-refute/cand/checker-final",
+    "records": 1225,
+    "refuted": 105,
+    "forbidden_limit": 9,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "seconds": 11.404889746103436,
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+  },
+  "new_refutations": [
+    {
+      "g6": "I?ERPrCwW",
+      "edges": 17,
+      "type": "tu",
+      "terminal": {
+        "forbidden": 17,
+        "map": [
+          5,
+          7,
+          1,
+          0,
+          4,
+          3,
+          9,
+          8
+        ]
+      },
+      "steps": [
+        {
+          "gadget": 0,
+          "map": [
+            7,
+            4,
+            6,
+            2,
+            9,
+            1
+          ],
+          "pair": [
+            1,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "g6": "I?P@hqidO",
+      "edges": 16,
+      "type": "tu",
+      "terminal": {
+        "forbidden": 38,
+        "map": [
+          7,
+          1,
+          0,
+          6,
+          4,
+          9,
+          8,
+          5,
+          3
+        ]
+      },
+      "steps": [
+        {
+          "gadget": 0,
+          "map": [
+            6,
+            3,
+            7,
+            2,
+            8,
+            4
+          ],
+          "pair": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "g6": "I?_y`fGwW",
+      "edges": 17,
+      "type": "tree",
+      "terminal": null,
+      "steps": null
+    },
+    {
+      "g6": "I@P@OmeeO",
+      "edges": 16,
+      "type": "tu",
+      "terminal": {
+        "forbidden": 38,
+        "map": [
+          3,
+          1,
+          0,
+          6,
+          5,
+          9,
+          8,
+          4,
+          7
+        ]
+      },
+      "steps": [
+        {
+          "gadget": 0,
+          "map": [
+            2,
+            3,
+            7,
+            6,
+            8,
+            5
+          ],
+          "pair": [
+            3,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "g6": "I@hO`DJ`o",
+      "edges": 16,
+      "type": "tu",
+      "terminal": {
+        "forbidden": 38,
+        "map": [
+          7,
+          1,
+          0,
+          3,
+          8,
+          9,
+          4,
+          5,
+          6
+        ]
+      },
+      "steps": [
+        {
+          "gadget": 0,
+          "map": [
+            6,
+            3,
+            2,
+            7,
+            8,
+            4
+          ],
+          "pair": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "g6": "IAh?HKyco",
+      "edges": 16,
+      "type": "tu",
+      "terminal": {
+        "forbidden": 38,
+        "map": [
+          8,
+          1,
+          0,
+          7,
+          3,
+          4,
+          9,
+          5,
+          2
+        ]
+      },
+      "steps": [
+        {
+          "gadget": 0,
+          "map": [
+            7,
+            2,
+            8,
+            6,
+            9,
+            3
+          ],
+          "pair": [
+            2,
+            3
+          ]
+        },
+        {
+          "gadget": 5,
+          "map": [
+            2,
+            7,
+            3,
+            9,
+            6,
+            8,
+            4,
+            5
+          ],
+          "pair": [
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "g6": "I`Q?zOUgW",
+      "edges": 17,
+      "type": "tree",
+      "terminal": null,
+      "steps": null
+    }
+  ],
+  "candidate_edge_counts": {
+    "15": 67,
+    "16": 1424,
+    "17": 24
+  },
+  "processed_edge_counts": {
+    "15": 57,
+    "16": 1071,
+    "17": 16
+  },
+  "unknown_edge_counts": {
+    "16": 1067,
+    "15": 40,
+    "17": 13
+  },
+  "method_reasons": {
+    "tu": {
+      "completed": 1140,
+      "Deadline: graph time limit": 4
+    },
+    "null": {
+      "Deadline: graph time limit": 17,
+      "no certifiable target in Groebner basis": 5
+    },
+    "real": {
+      "Deadline: graph time limit": 17,
+      "no certifiable target in Groebner basis": 5
+    },
+    "portfolio": {
+      "no certifiable target in Groebner basis": 974,
+      "Deadline: graph time limit": 141
+    },
+    "tree": {
+      "completed": 63,
+      "Deadline: graph time limit": 8
+    }
+  },
+  "last_stages": {
+    "targets:0": 754,
+    "preprocessed": 104,
+    "basis": 3
+  },
+  "all_sat_pilot": [
+    {
+      "directory": "/tmp/gp10-refute/cand/batch-0010",
+      "records": 20,
+      "search_seconds": 198.56950467918068
+    }
+  ],
+  "batch_count": 35,
+  "maximum_allocated_batch_seconds": 238.5,
+  "max_accepted_record_bytes": 1677103,
+  "b10_membership": {
+    "path": "<repo>/research/gp-10/data/B10.g6",
+    "lines": 33162,
+    "sha256": "3cec678af7e0f2dec59b5f362e6d18e3fcb993ee94b701a8da8280529bd1321f",
+    "all_candidates_present": true
+  },
+  "canonical_distinct_candidates": 1515,
+  "source_sha256": {
+    "collision_tests.py": "619ea209ba553047fdcb47769fb0d41a009f963ebfe08332e419f37e7438ee6e",
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "round3_tests.py": "1a938b62c5da1ef1e81fe9e1960495c26536d124d8dde75137ed6583732d8c6d",
+    "round2_retry.py": "1efefa1c624d7bd9915beca2c924837881f07ec7bfe2d75658942f9e4f189562",
+    "round3_finish.py": "efa06999409f9826a2a798c71ed90c50d96a4539d373b63eb272201273fe254d",
+    "audit_report.py": "fcd3646d501e8f806406321b75ddc874d1798b066e0311aef06f2138f92c1a6b",
+    "algebra.py": "4b499f6e6a97b2fa19619ff91f93c500a182855b4df956dd30b6e1f43de075cc",
+    "dag.py": "1301dd3d802b3b1467042b7f32330dafbc59990b5721642161f9e7732f1e58fe",
+    "round2.py": "0b0357965c96d2c8e62dee1071067518e5c1eb2664153231a8c2fd0eb2905009",
+    "export_checker.py": "612182fba410aee4e33c12f96b2d12b54f0272350f08b6d1ef7d6e271706eccd",
+    "stall_search.py": "778394aca8e8c4b0bc88a8a24f7f402c50996f9c3c90f1fa9df274370eb3d682",
+    "candidate_status.py": "b1b2290a727451deaae9b926bf7be62141a87c245c1c510161a3f4be29537872",
+    "centroid66.py": "93193ea7da062366148fe2664bd50b939235be2b704dd88932a8089808c9239a",
+    "gp10refute.py": "a71b9c1d00f27253c19723d6227d5fc86e595889f996ed7115d48c638f18acf1",
+    "round2_proposal.py": "f78cc92723e90246bdd7d83fb85f6e9ab1ba870cb1c680372e8917b680bee071",
+    "circle_helpers.py": "c24d242cc6cecfa94884559eafb8e08f86daaea361d5c6da78edb7470132e583",
+    "round3_extra_tests.py": "4e5225a9320ee6e4b6266fbba5eaffe06450a6594e5282c5592b3d71999f72c6",
+    "selftest.py": "f05d97dbbe243b41ab11ad91d3fcb9a389200224c5a7c9c4beb2360363cf55b3",
+    "controls.py": "26717ed7fbfe69f275705d10cc652952156a0333b0a626bf29677d19d314086a",
+    "round2_audit.py": "c3c143f7ea665f4397c0d9f5bef11f9a10b594559990b5a9a58f2c5152f72f63",
+    "audit_sample.py": "6b3434eaa669033ef325249c81667a26726f6b6a5db446c8f702c6fce0181f3e",
+    "round3_controls.py": "a3301c8d9eb1d774589f384ef4e45d3d49b441931353a7942791707681b89fd5",
+    "graphs.py": "29249a6942f9099a89cceb148fcfd2f266e99d545a70d33570abc392ae7b9f1f",
+    "quadratic_tests.py": "5bf5fc4ba07a13fa43a84cb03b15658305037c616636148a458d081fcbace80d",
+    "round3.py": "e8720694eb224c6ab7d70a75f4488cc07a33b1b48e03038cd243a8ccd2fe3eea",
+    "null39.py": "2e45a033a125748cf0a93cc00829cde1a6d66d994940a61309ea75732f825486",
+    "quadratic_sos.py": "5099ed4a5b31e9384094520b40d86f5862c0ea9fc3528c31debf35e6554f73a6",
+    "candidate_batches.py": "2d6ed5aba3e66402bff7c5273acb3977b6cdfffec8cdab2c0702d00f9221eda8",
+    "wrong_frame_control.py": "660fbf6071be92b0fa7ecdfa936129cb28d39cf6f8348c4a865b0d014a0aa4ca",
+    "analytic39.py": "6f884147207d6d3ae0c4d4a19afedb717fc359aea3fbb91998bcd3f83ccbd103",
+    "ideal_derivation.py": "78dd201353ff8168f3d8985e4c0e809fb1f4a749e58c02af871214ad40b44da7",
+    "run_focused_controls.py": "4cc11b5f664c10105664fc573bf94c10e2768d6fff189e0010e9afdfad0a62be",
+    "quotient39.py": "b2500a4c765c50fd00e86bdf041403e1268d10f00f87cb986bac5e4ffda83afa",
+    "round2_tests.py": "9dad346c632e1db1b5481ff85a27b256dd4d4e725e3e80f7575949540af71d86",
+    "round2_report.py": "31b24b177f410e7bca04320b00add545b30f872464b5825c2f50597a16af21fb",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec",
+    "factored_lift.py": "d09c66885c8f6dab657ddeb1c9f84349cad5bc7d5a41cba956d304f5712ce987",
+    "real_radical.py": "4b3fb214bdb2c6d0bb2f177445d7f9bf531237ac8d052b4f45453ae928a8f817",
+    "cofactor_reduce.py": "68834b0162711f269090e4eb8749a6d1c12a02f08f56ff6ec438cc28d0fa6d2f"
+  }
+}

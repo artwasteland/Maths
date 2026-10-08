@@ -1,0 +1,21 @@
+{
+  "input_sha256": "d00de9d6cd2ac8afdc7aed26b93c060ac63bd84c22927c92bc3ecb6e70b22eb3",
+  "count": 702,
+  "edge_counts": {
+    "16": 545,
+    "17": 153,
+    "15": 4
+  },
+  "known_sha256": "d91eba2b04208d26f9be6667e6416de7784e76c4adb3513996aa72b466dcffb4",
+  "known_records": 105,
+  "b10_sha256": "3cec678af7e0f2dec59b5f362e6d18e3fcb993ee94b701a8da8280529bd1321f",
+  "source_sha256": {
+    "round4.py": "7bb68675aa2c3a0a2f55c28dded2180a491094f5abfd81a1f26c0aea3bcbab2a",
+    "gp10refute.py": "a71b9c1d00f27253c19723d6227d5fc86e595889f996ed7115d48c638f18acf1",
+    "graphs.py": "29249a6942f9099a89cceb148fcfd2f266e99d545a70d33570abc392ae7b9f1f",
+    "algebra.py": "055b9d6220de0e58000720e5d17dc4aec4cc16da8b88e255d1c3cb6641236570",
+    "dag.py": "1301dd3d802b3b1467042b7f32330dafbc59990b5721642161f9e7732f1e58fe",
+    "quadratic_sos.py": "7f6815248265d25c044f07f27f19ae7c3ab396ac2ac9758d5851e7c7f8edf229",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec"
+  }
+}

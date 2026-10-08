@@ -1,0 +1,26 @@
+{
+  "terms": 795173,
+  "reason": "ValueError: certificate term budget",
+  "g6": "H{O_okN",
+  "frame": [
+    3,
+    6
+  ],
+  "seconds": 14.366925364360213,
+  "limit": 55.0,
+  "stages": [
+    {
+      "stage": "reduced:12",
+      "seconds": 0.001935034990310669
+    },
+    {
+      "stage": "lift:True",
+      "seconds": 5.162456353195012
+    },
+    {
+      "stage": "terms:795173",
+      "seconds": 14.366690997034311
+    }
+  ],
+  "verdict": "unknown"
+}

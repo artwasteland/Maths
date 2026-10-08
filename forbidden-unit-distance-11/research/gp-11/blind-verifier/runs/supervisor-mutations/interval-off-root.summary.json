@@ -1,0 +1,84 @@
+{
+ "verifier": "<repo>/verify_refutations11.py",
+ "verifier_sha256": "bdb7051f48463586e1b3d65938b3fe101fb5e7b9f956c037724c7c46def1f41f",
+ "flint": "0.9.0",
+ "python": "3.12.3",
+ "SYMPY_GROUND_TYPES": "python",
+ "records_meta": {
+  "records": "<repo>/runs/supervisor-mutations/interval-off-root.jsonl",
+  "bytes": 56556,
+  "sha256": "792b950ed06a78d5bd92b84189441196b0afa45ae8749197fea3707e499938ce",
+  "lines": 1,
+  "verdicts": {
+   "refuted": 1
+  },
+  "refuted_indexed": 1,
+  "duplicate_g6": 0,
+  "duplicates": [],
+  "seconds": 0.0
+ },
+ "mode": "full",
+ "indexed_refuted": 1,
+ "results": 1,
+ "missing": 0,
+ "missing_first": [],
+ "extra_results": 0,
+ "duplicate_results": 0,
+ "coverage_complete": true,
+ "totals": {
+  "ACCEPT": 0,
+  "REJECT": 1,
+  "UNSUPPORTED": 0
+ },
+ "by_type_and_verdict": {
+  "tree/REJECT": 1
+ },
+ "not_accepted": [
+  {
+   "i": 0,
+   "line": 1,
+   "g6": "JQ`@HKYE]W?",
+   "type": "tree",
+   "verdict": "REJECT",
+   "reason": "field: minpoly has no strict sign change on the interval"
+  }
+ ],
+ "direct_F10_premises": {},
+ "accepted_by_premise_chain": {
+  "none (self-contained)": 0,
+  "GP theorem only": 0,
+  "uses GP-10 result": 0
+ },
+ "cpu_seconds_total": 0.0,
+ "wall_seconds_sum": 0.0,
+ "max_wall_seconds": 0.02,
+ "max_peak_rss_mb": 56.1,
+ "by_type_time": {
+  "tree": {
+   "n": 1,
+   "cpu_seconds": 0.01,
+   "max_wall": 0.02,
+   "max_rss_mb": 56.1,
+   "bytes": 56556
+  }
+ },
+ "slowest_10": [
+  {
+   "g6": "JQ`@HKYE]W?",
+   "type": "tree",
+   "bytes": 56556,
+   "wall_seconds": 0.02,
+   "peak_rss_mb": 56.1
+  }
+ ],
+ "largest_rss_10": [
+  {
+   "g6": "JQ`@HKYE]W?",
+   "type": "tree",
+   "bytes": 56556,
+   "wall_seconds": 0.02,
+   "peak_rss_mb": 56.1
+  }
+ ],
+ "status": "NOT ALL ACCEPT (see not_accepted)"
+}

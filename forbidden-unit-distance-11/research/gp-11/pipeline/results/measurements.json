@@ -1,0 +1,117 @@
+{
+  "architect-500-final": {
+    "assigned": 500,
+    "checker_status": "ACCEPT",
+    "counts": {
+      "embedded": 490,
+      "refuted": 8,
+      "unknown": 2
+    },
+    "decided": 498,
+    "ideal_four_core_worker_hours": 139.16734299750448,
+    "minimum_available_kib": 4374304,
+    "parent_max_rss_kib": 440560,
+    "payload_bytes": 1132592,
+    "replay_seconds": 46.538416620809585,
+    "serial_population_replay_hours": 11.601199913939015,
+    "supporting_records": 2,
+    "wall_seconds": 2233.0889344117604
+  },
+  "architect-500-release": {
+    "assigned": 500,
+    "checker_status": "ACCEPT",
+    "counts": {
+      "embedded": 490,
+      "refuted": 8,
+      "unknown": 2
+    },
+    "decided": 498,
+    "ideal_four_core_worker_hours": 123.37429729369033,
+    "minimum_available_kib": 3739232,
+    "parent_max_rss_kib": 416976,
+    "payload_bytes": 1122084,
+    "replay_seconds": 45.337813672143966,
+    "serial_population_replay_hours": 11.301910942889096,
+    "supporting_records": 2,
+    "wall_seconds": 1979.6726167453453
+  },
+  "coordinator-2000": {
+    "checker_status": "ACCEPT",
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "final_replay_seconds": 236.47419451922178,
+    "minimum_available_kib": 5057572,
+    "parent_max_rss_kib": 392780,
+    "payload_bytes": 3036295,
+    "serial_coordinator_four_core_machine_hours": 60.38666937946885,
+    "status": "PASS",
+    "unchanged_known_certificates": 2000,
+    "unchanged_unknown_frontier": true,
+    "unknown_stage_histories": {
+      "JSO@]OSDjB?": 26,
+      "J_?gkpAYHb?": 26,
+      "J`C@KHIB^a?": 26,
+      "JqM??CNGqg_": 26
+    },
+    "wall_seconds": 968.9687269497663
+  },
+  "cost_model": {
+    "assumptions": [
+      "Ideal four-lane worker utilization on the measured toolchain.",
+      "Worker time includes final sample replay and export.",
+      "Coordinator intake separately replays each shard, checks imported proofs, and replays its export.",
+      "One repeat search round is shown as an explicit scenario; analyst work is excluded.",
+      "Global propagation savings and cloud hardware differences are unmeasured."
+    ],
+    "coordinator_machine_hours_per_round": 60.38666937946885,
+    "coordinator_replay_formula": "sample_replay_seconds * 448708 / (sample_count * 3600)",
+    "coordinator_total_formula": "coordinator_wall_seconds * 448708 / (sample_count * 3600)",
+    "first_round_machine_hours": 166.74659292616926,
+    "one_repeat_round_total_machine_hours": 260.71795970459243,
+    "planning_budget_first_round_machine_hours": 200,
+    "planning_budget_with_one_repeat_round_machine_hours": 315,
+    "planning_margin": "About 20 percent, rounded; a planning assumption, not a measured bound.",
+    "population": 448708,
+    "worker_formula": "sample_wall_seconds * 448708 / (sample_count * 4 * 3600)",
+    "worker_machine_hours": 106.3599235467004
+  },
+  "escalation-2000": {
+    "assigned": 2000,
+    "checker_status": "ACCEPT",
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "decided": 1996,
+    "ideal_four_core_worker_hours": 106.3599235467004,
+    "minimum_available_kib": 3775812,
+    "parent_max_rss_kib": 508616,
+    "payload_bytes": 6023172,
+    "replay_seconds": 239.7552768420428,
+    "serial_population_replay_hours": 14.941682050172131,
+    "supporting_records": 4,
+    "wall_seconds": 6826.635134976357
+  },
+  "repeat_round_scenario": {
+    "assumptions": [
+      "One fresh round on the projected surviving frontier.",
+      "No additional decisions from cross-shard propagation are assumed.",
+      "The same mean cost as the four measured survivors is assumed; this is not a measured repeat round.",
+      "Only frontier records are distributed to workers; full population checking stays with the coordinator."
+    ],
+    "attempt_seconds_per_survivor": [
+      384.3409526948817,
+      614.9075959012844,
+      547.0319978301413,
+      609.3290818617679
+    ],
+    "ideal_four_core_search_hours": 33.58469739895437,
+    "mean_attempt_seconds": 538.9024070720188,
+    "measured_unknowns": 4,
+    "population_unknown_projection": 897.416
+  }
+}

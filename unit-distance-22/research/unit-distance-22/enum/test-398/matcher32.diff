@@ -1,0 +1,142 @@
+4c4
+<  * A host has at most 10 vertices and a pattern has at most 9 vertices.
+---
+>  * A host has at most 31 vertices (widened copy, see below) and a pattern at most 31.
+17c17
+< #define MAXN 10
+---
+> #define MAXN 31
+24c24
+<     uint16_t adj[MAXN];
+---
+>     uint32_t adj[MAXN];
+32,33c32,33
+<     const uint16_t *host_adj;
+<     uint16_t candidate_base[MAXN];
+---
+>     const uint32_t *host_adj;
+>     uint32_t candidate_base[MAXN];
+35c35
+<     uint16_t used_hosts;
+---
+>     uint32_t used_hosts;
+38c38
+< static uint64_t popcount16(uint16_t x) {
+---
+> static uint64_t popcount32(uint32_t x) {
+41c41
+<         x &= (uint16_t)(x - 1U);
+---
+>         x &= (uint32_t)(x - 1U);
+47,48c47,48
+< static int next_set_bit(uint16_t *bits) {
+<     uint16_t value = *bits;
+---
+> static int next_set_bit(uint32_t *bits) {
+>     uint32_t value = *bits;
+58c58
+<     *bits = (uint16_t)(*bits & (uint16_t)~(1U << bit));
+---
+>     *bits = (uint32_t)(*bits & (uint32_t)~(1U << bit));
+62c62
+< static void clear_graph(uint16_t adj[MAXN]) {
+---
+> static void clear_graph(uint32_t adj[MAXN]) {
+70c70
+< static int decode_graph6(const char *line, int *out_n, uint16_t out_adj[MAXN]) {
+---
+> static int decode_graph6(const char *line, int *out_n, uint32_t out_adj[MAXN]) {
+114,115c114,115
+<                             out_adj[low] |= (uint16_t)(1U << j);
+<                             out_adj[j] |= (uint16_t)(1U << low);
+---
+>                             out_adj[low] |= (uint32_t)(1U << j);
+>                             out_adj[j] |= (uint32_t)(1U << low);
+129c129
+<     uint16_t adj[MAXN];
+---
+>     uint32_t adj[MAXN];
+144c144
+<         pattern->degree[i] = (int)popcount16(adj[i]);
+---
+>         pattern->degree[i] = (int)popcount32(adj[i]);
+151c151
+< static int choose_pattern_vertex(const Search *search, uint16_t assigned, uint16_t *out_candidates) {
+---
+> static int choose_pattern_vertex(const Search *search, uint32_t assigned, uint32_t *out_candidates) {
+153c153
+<     uint16_t best_candidates = 0;
+---
+>     uint32_t best_candidates = 0;
+160c160
+<         uint16_t candidates;
+---
+>         uint32_t candidates;
+163c163
+<         if ((assigned & (uint16_t)(1U << p)) != 0U) {
+---
+>         if ((assigned & (uint32_t)(1U << p)) != 0U) {
+166c166
+<         candidates = search->candidate_base[p] & (uint16_t)~search->used_hosts;
+---
+>         candidates = search->candidate_base[p] & (uint32_t)~search->used_hosts;
+168,169c168,169
+<             if ((assigned & (uint16_t)(1U << q)) != 0U &&
+<                 (pattern->adj[p] & (uint16_t)(1U << q)) != 0U) {
+---
+>             if ((assigned & (uint32_t)(1U << q)) != 0U &&
+>                 (pattern->adj[p] & (uint32_t)(1U << q)) != 0U) {
+174,175c174,175
+<         if (popcount16(candidates) < best_count ||
+<             (popcount16(candidates) == best_count &&
+---
+>         if (popcount32(candidates) < best_count ||
+>             (popcount32(candidates) == best_count &&
+177c177
+<             best_count = popcount16(candidates);
+---
+>             best_count = popcount32(candidates);
+187c187
+< static int search_match(Search *search, uint16_t assigned) {
+---
+> static int search_match(Search *search, uint32_t assigned) {
+189c189
+<     uint16_t candidates;
+---
+>     uint32_t candidates;
+193c193
+<     if (assigned == (uint16_t)((1U << pattern->n) - 1U)) {
+---
+>     if (assigned == (uint32_t)((1U << pattern->n) - 1U)) {
+202,203c202,203
+<         search->used_hosts |= (uint16_t)(1U << h);
+<         if (search_match(search, (uint16_t)(assigned | (uint16_t)(1U << p)))) {
+---
+>         search->used_hosts |= (uint32_t)(1U << h);
+>         if (search_match(search, (uint32_t)(assigned | (uint32_t)(1U << p)))) {
+206c206
+<         search->used_hosts &= (uint16_t)~(uint16_t)(1U << h);
+---
+>         search->used_hosts &= (uint32_t)~(uint32_t)(1U << h);
+212c212
+< static int pattern_matches(const Pattern *pattern, int host_n, const uint16_t host_adj[MAXN], int out_map[MAXN]) {
+---
+> static int pattern_matches(const Pattern *pattern, int host_n, const uint32_t host_adj[MAXN], int out_map[MAXN]) {
+223c223
+<         int degree = (int)popcount16(host_adj[i]);
+---
+>         int degree = (int)popcount32(host_adj[i]);
+245c245
+<         uint16_t candidates = 0;
+---
+>         uint32_t candidates = 0;
+247,248c247,248
+<             if ((int)popcount16(host_adj[h]) >= pattern->degree[i]) {
+<                 candidates |= (uint16_t)(1U << h);
+---
+>             if ((int)popcount32(host_adj[h]) >= pattern->degree[i]) {
+>                 candidates |= (uint32_t)(1U << h);
+399c399
+<         uint16_t host_adj[MAXN];
+---
+>         uint32_t host_adj[MAXN];

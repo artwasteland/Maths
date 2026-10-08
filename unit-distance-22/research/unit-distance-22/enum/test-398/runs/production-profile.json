@@ -1,0 +1,188 @@
+{
+ "s0of48": {
+  "12": {
+   "parents": 94313,
+   "children": 24887430,
+   "udenum_shard_wall": 6.370532118991832,
+   "prune_wall": 52.17205302699949
+  },
+  "13": {
+   "parents": 525856,
+   "children": 2156374,
+   "udenum_shard_wall": 652.923644388,
+   "prune_wall": 216.66757262399915
+  },
+  "14": {
+   "parents": 2157511,
+   "children": 7120046,
+   "udenum_shard_wall": 1487.6191492919897,
+   "prune_wall": 877.0627684189931
+  },
+  "15": {
+   "parents": 4921265,
+   "children": 5701083,
+   "udenum_shard_wall": 1937.858348741025,
+   "prune_wall": 843.6190495179981
+  },
+  "16": {
+   "parents": 3648811,
+   "children": 2281688,
+   "udenum_shard_wall": 7413.716279961976,
+   "prune_wall": 440.30255096099427
+  },
+  "17": {
+   "parents": 1388493,
+   "children": 1567653,
+   "udenum_shard_wall": 6678.672158043984,
+   "prune_wall": 386.3283987929972
+  },
+  "18": {
+   "parents": 1043786,
+   "children": 287082,
+   "udenum_shard_wall": 4259.246376128987,
+   "prune_wall": 78.19601452699499
+  },
+  "19": {
+   "parents": 151497,
+   "children": 9453,
+   "udenum_shard_wall": 196.0995920539899,
+   "prune_wall": 3.194257066999853
+  },
+  "20": {
+   "parents": 4881,
+   "children": 90,
+   "udenum_shard_wall": 2.9979082249992643,
+   "prune_wall": 0.11584086600123555
+  },
+  "21": {
+   "parents": 52,
+   "children": 0,
+   "udenum_shard_wall": 0.04453336799997487,
+   "prune_wall": 0.0679261770019366
+  }
+ },
+ "s15of48": {
+  "12": {
+   "parents": 0,
+   "children": 24887430,
+   "udenum_shard_wall": 0.0,
+   "prune_wall": 0.0
+  },
+  "13": {
+   "parents": 526291,
+   "children": 2159785,
+   "udenum_shard_wall": 783.6933455899853,
+   "prune_wall": 2017.9383296700107
+  },
+  "14": {
+   "parents": 2157601,
+   "children": 7221202,
+   "udenum_shard_wall": 1753.0331513039418,
+   "prune_wall": 9032.238270693997
+  },
+  "15": {
+   "parents": 4984286,
+   "children": 5398105,
+   "udenum_shard_wall": 2289.489083442153,
+   "prune_wall": 10128.569530531022
+  },
+  "16": {
+   "parents": 3501962,
+   "children": 2915022,
+   "udenum_shard_wall": 8392.223196038904,
+   "prune_wall": 8125.918425269003
+  },
+  "17": {
+   "parents": 1774021,
+   "children": 1733924,
+   "udenum_shard_wall": 7922.654994399039,
+   "prune_wall": 6778.685234164004
+  },
+  "18": {
+   "parents": 1013829,
+   "children": 401019,
+   "udenum_shard_wall": 8623.099452792972,
+   "prune_wall": 1648.1536232890212
+  },
+  "19": {
+   "parents": 191277,
+   "children": 3216,
+   "udenum_shard_wall": 53.580164912040345,
+   "prune_wall": 18.09529621200636
+  },
+  "20": {
+   "parents": 1668,
+   "children": 20,
+   "udenum_shard_wall": 1.2270824000006542,
+   "prune_wall": 0.23031764999905135
+  },
+  "21": {
+   "parents": 9,
+   "children": 2,
+   "udenum_shard_wall": 0.08659842998895328,
+   "prune_wall": 0.10658209098619409
+  }
+ },
+ "s38of48": {
+  "12": {
+   "parents": 0,
+   "children": 24887430,
+   "udenum_shard_wall": 0.0,
+   "prune_wall": 0.0
+  },
+  "13": {
+   "parents": 525917,
+   "children": 2155163,
+   "udenum_shard_wall": 792.365412337007,
+   "prune_wall": 259.7584054789986
+  },
+  "14": {
+   "parents": 2160286,
+   "children": 7117337,
+   "udenum_shard_wall": 1790.245777881988,
+   "prune_wall": 1040.4660883179895
+  },
+  "15": {
+   "parents": 4934104,
+   "children": 5641381,
+   "udenum_shard_wall": 2320.5658228979155,
+   "prune_wall": 1017.6144139719981
+  },
+  "16": {
+   "parents": 3666055,
+   "children": 2772258,
+   "udenum_shard_wall": 8917.81070033498,
+   "prune_wall": 670.5901507369927
+  },
+  "17": {
+   "parents": 1648392,
+   "children": 1151267,
+   "udenum_shard_wall": 8509.857857702977,
+   "prune_wall": 377.11705559399707
+  },
+  "18": {
+   "parents": 631002,
+   "children": 239744,
+   "udenum_shard_wall": 5237.3244535190315,
+   "prune_wall": 73.03462236600171
+  },
+  "19": {
+   "parents": 109830,
+   "children": 1664,
+   "udenum_shard_wall": 34.93297465600335,
+   "prune_wall": 0.841854679005337
+  },
+  "20": {
+   "parents": 754,
+   "children": 52,
+   "udenum_shard_wall": 0.7921107719957945,
+   "prune_wall": 0.10815197600459214
+  },
+  "21": {
+   "parents": 20,
+   "children": 2,
+   "udenum_shard_wall": 0.013606203996459953,
+   "prune_wall": 0.0814538890044787
+  }
+ }
+}

@@ -1,0 +1,7 @@
+PASS integration positive: ACCEPT exact eleven-vertex fixture
+PASS integration controls invoked by B11: REJECT controls_required
+PASS integration wrong external digest: REJECT frozen_input_hash
+PASS integration missing external digest: REJECT b11_hash_required
+PASS integration originals restored: same ACCEPT and counts
+B11 GATE INTEGRATION PASS
+RESOURCE min_MemAvailable_kib=4891380 exit=0

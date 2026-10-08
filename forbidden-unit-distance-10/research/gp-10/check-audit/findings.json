@@ -1,0 +1,48 @@
+[
+  {
+    "evidence": [
+      "unsupported-B4p",
+      "unsupported-B5p",
+      "unsupported-B6p",
+      "unsupported-B7p"
+    ],
+    "explanation": "Each complete frozen family is accepted as a declared-unknown sample, then changing only profile to its required control name yields REJECT run profile. The allowlist, frozen-family logic, minimal output logic and minimal-list comparison only support the older control profiles. B10 controls() requires exactly B8p, B9p, named and regressions, so it also fails to enforce the newly required smaller controls. This is one underlying amendment-coverage defect, not separate findings for each name. A full B10 acceptance without these controls was not constructed.",
+    "id": "MAJOR-1",
+    "locations": "gp10check.py:598-603, 661-680, 700, 720-734, 753-755, 885-887, 924-937",
+    "recommendation": "Implement the smaller profiles, their frozen hashes, in-force lists, exact minimal comparisons and unknown prohibition. Require accepted replays of all smaller control runs before B10.",
+    "requirement": "CONTRACT Section 10 amendment 1 requires control 7.0 on B4p, B5p, B6p and B7p. Amendment 2 explicitly calls for these checker profiles to be extended.",
+    "severity": "MAJOR",
+    "title": "Required smaller control profiles and the B10 control gate are missing"
+  },
+  {
+    "evidence": [
+      "signed-denominator",
+      "rational-space",
+      "rational-plus",
+      "rational-negative-zero",
+      "rational-leading-zeroes"
+    ],
+    "explanation": "The equivalent spelling 0/-1 is rejected as rational, as is surrounding whitespace, while a leading numerator sign and leading zeroes are allowed. Canonical rational strings remain usable. This is a harmless syntax restriction, not a mathematical false rejection for a normalized certificate and not a soundness defect.",
+    "id": "MINOR-1",
+    "locations": "gp10check.py:67-73",
+    "recommendation": "Document denominator positivity and whitespace exclusion in the contract or require producers to normalize rational strings.",
+    "requirement": "CONTRACT Section 3.1 describes exact rational strings. FORMAT.md adds a more restrictive wire grammar.",
+    "severity": "MINOR",
+    "title": "Rational spelling is narrower than the contract's rational-string description"
+  },
+  {
+    "evidence": [
+      "real-constant",
+      "real-constant-zero-target",
+      "sturm-constant",
+      "sturm-zero"
+    ],
+    "explanation": "A constant identity with f=1 is accepted when an existing variable is named. It involves no variable, but cannot vanish at any real point, so the same contradiction proof is valid. The zero polynomial is rejected. This is a sound extension of the literal wording.",
+    "id": "MINOR-2",
+    "locations": "gp10check.py:280-285, 418-429",
+    "recommendation": "Say that f is constant nonzero or univariate with no real root in the contract.",
+    "requirement": "CONTRACT Section 3.2 R-real says f involves one variable; FORMAT.md explicitly permits a nonzero constant.",
+    "severity": "MINOR",
+    "title": "The Sturm branch accepts a nonzero constant as well as a univariate polynomial"
+  }
+]

@@ -70,7 +70,7 @@
   },
   "started": "2026-09-05T14:31:37Z",
   "finished": "2026-09-05T14:31:37Z",
-  "host": "vm",
+  "host": "<host>",
   "exit_status": 0,
   "problems": []
 }

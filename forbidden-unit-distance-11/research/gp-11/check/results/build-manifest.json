@@ -1,0 +1,135 @@
+{
+  "created_utc": "2026-09-30T17:24:11.205429+00:00",
+  "files": {
+    "research/gp-11/CONTRACT.md": "dc4ea1bb1df5fc2011772724003799623778ebc694778965201fd18a4697ab21",
+    "research/gp-11/LABNOTES.md": "64360f3fc27b57b5b9d476ebcffb3aec61ede7bc431a61fb5c1a8036c9c59b4b",
+    "research/gp-11/PROOFS.md": "b8b090aea7dd7dfa89f4c2468e029c5e69b351d3098d3ca0cf35568b397da22b",
+    "research/gp-11/check/CLOUD-RUNBOOK.md": "3170270ca31234ffbd1e4a48556c24125ddb856cc59020b84ac8b386fd5ae69c",
+    "research/gp-11/check/FORMAT.md": "4d3fe3f70a9ce84a7c58216e977dba58fcdff25ee0ffd6b26d1e34cc44519d0e",
+    "research/gp-11/check/REPORT.md": "ce54c23bbe61a1736b12efabc4e7b8959d4b218775029540ca1f1afbe457c11c",
+    "research/gp-11/check/fixtures/README.md": "621d3b313300f6ee749644ec22dc9455b67488dde06ec1eefdb7ca11c8c776fb",
+    "research/gp-11/check/fixtures/lattice11.json": "556253af90c1c5ee25da4d1000bc40543e502e77f250f077ea849d3b0746b63c",
+    "research/gp-11/check/fixtures/minimality11.jsonl": "d7139aedc1f3a413372d101e470859171a41e2c2682b9998845d331872cfd8be",
+    "research/gp-11/check/fixtures/named11/UNKNOWN.g6": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/gp-11/check/fixtures/named11/input.g6": "9cc850a8c6b406c368809cb76c2cb9e51d257fc72cdb4a11fd165e63b5e0f2db",
+    "research/gp-11/check/fixtures/named11/provenance.json": "cca6c5ebace31847b043520b3894a9f9f892061d84bad1277e1573204fdc4882",
+    "research/gp-11/check/fixtures/named11/records.jsonl": "caaf35bab765efdabd778a4273b68fabc4fe1b8140cc29914d5d2ea78540ece1",
+    "research/gp-11/check/fixtures/named11/run.json": "39e2ccd504be424eb4c6fdf05c9b74db111defa84f6a12c43586996864d137a1",
+    "research/gp-11/check/fixtures/named11/search-stats.jsonl": "50fcadab368ceab65df1b5488763b9b6d23551d6785e97d32ac39be85c00fb0e",
+    "research/gp-11/check/fixtures/named11/search.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "research/gp-11/check/fixtures/tree11.json": "9fdeed2a34c811d04fe3c56f9fe1f67fd2fe1c37ba8f73761376005f932a07e8",
+    "research/gp-11/check/fixtures/tu11.json": "a04124c99fce4f63cfc8e160ad481c3dcbd51a375008717ad036eaff06cccfee",
+    "research/gp-11/check/gate_integration.py": "f6c65aebbd0264b4e6ee6709c807320f3af5695880512a8b9588282649e7a517",
+    "research/gp-11/check/gp11check.py": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+    "research/gp-11/check/kernel-rejections.json": "64d15c190ce3fb3e3da4196d8a24550232d721baaa3336446a83361c12416949",
+    "research/gp-11/check/kernel_reasons.py": "dbfb08ad81b14fee006eae626369cf774f250c5d0695a2369f56bee653033bd0",
+    "research/gp-11/check/regression.py": "531cc6f6424b6ed61a2274f08091845bc7941f09ece44cfd46304936cacf5df1",
+    "research/gp-11/check/results/README.md": "68066535dfcf9ea4c324de45b4e12d8f1be23c2b50439e59111603b941b296eb",
+    "research/gp-11/check/results/control-reports/B4p.json": "52b832751d7d9e0418f59f368c66751cef3bab7499095e422f8afb8113931f42",
+    "research/gp-11/check/results/control-reports/B5p.json": "5b684014ab8617b4e4c44cc4ec2f54f0e97deec0450929d6fbfa98263c454b1d",
+    "research/gp-11/check/results/control-reports/B6p.json": "3cb50c695d601ff9e8b3b6ed7c4809c0038f2e09a240e7a71052e59a797dc12a",
+    "research/gp-11/check/results/control-reports/B7p.json": "290b65f508874b3fb0346532ae3452241fd4b0e895b6261b58bd453372c9c095",
+    "research/gp-11/check/results/control-reports/B8p.json": "8670f103c5574c80de979112b77004a420bcc406bcbc6c7fc464261bbe1c6878",
+    "research/gp-11/check/results/control-reports/B9p.json": "10001703b9f6bfda77612bb0570108970f6d97367f72ee3f6881bd8edb1ca14c",
+    "research/gp-11/check/results/control-reports/named.json": "2cd0b9b21f586d66e90606e4039c24cf0ce5bf51f803692252ef2b4ef26b5880",
+    "research/gp-11/check/results/control-reports/named11.json": "57e08d9c4905dc47733e3b5e88d6a426b5751d37cf372cee26e2487726ba701e",
+    "research/gp-11/check/results/control-reports/regressions.json": "da89fdd2ba4df65f3f9a2de1260b74c3a7affb62f0061704247a3cb616ddc45a",
+    "research/gp-11/check/results/gate-integration.txt": "ce0b0860f74cf45cdf7abfc5406b9792d6db143cc1ec20b02ffc0ebf3b7f2cd9",
+    "research/gp-11/check/results/gp10-regression.txt": "0c60566c5dc4f8857f85602b3f0dbda68d6327f9bd5460e0372206fffdf69d0a",
+    "research/gp-11/check/results/gp11-selftest.txt": "191d26b4e56cb4d2ca6e3342923f8aabdc7bf8a3430fee2ca7faeb2ebc00eb5b",
+    "research/gp-11/check/results/kernel-selftest.txt": "b40cba72a0ecb683ad2d3d716dffd32c0647c14c4912063c13ad99e2c6ae7d0e",
+    "research/gp-11/check/results/minimality-search.txt": "8e84fabda54595409d31795ff745627632df957aa8d29f62f9478cd3bdee9d38",
+    "research/gp-11/check/results/small-controls.txt": "ba656e05cbffaace0ba912b2ebac7443b814c1302cca3ebc1badaa568c57ae9b",
+    "research/gp-11/check/selftest.py": "6cfa561fb4fe73bbf05762e0d4dea30a47446fbf16940ac40aa45e9fbfb83691",
+    "research/gp-11/tools/guard.py": "9721b456c26f982fd9cc7ccd47eed6d382de71c512f3789fbc0a4defaea3913d",
+    "research/gp-11/tools/make_minimality_fixture.py": "e57e5f5e7a35bd77838d525ad170241438c4c109297f16a1eaa4f13d6063a805",
+    "research/gp-11/tools/prepare_controls.py": "b4a6134d6e66b241e65ea6b1310922d5e7f8053a395b6360f22ea0257eaa7448",
+    "research/gp-11/tools/small_controls.py": "76f97a5caff6ba16dc246d368f14a76c21504f6696164c1d9f28743c9ff3c005",
+    "research/gp-11/tools/write_result.py": "736ae0a31fe7ada02fb31a02908161aa105333d3d20ecc319f48b57760bbfcb0"
+  },
+  "frozen_sources": {
+    "research/gp-10/check/gp10check.py": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "research/unit-distance-22/check/udcheck.py": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+    "research/unit-distance-22/data/forbidden-398.json": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+    "research/unit-distance-22/data/forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "research/unit-distance-22/data/tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629",
+    "research/unit-distance-22/sources/amp/anc/graph6.txt": "4f7da8729d4818712e8718daabce29fb7f423cd7abec07eb195f0a04d6601a49"
+  },
+  "full_B10_replayed_locally": false,
+  "full_B11_replayed": false,
+  "interpreter": "<repo>/pyenv-gp10/bin/python",
+  "one_heavy_process_at_a_time": true,
+  "outstanding": [
+    "Dedicated cloud B10 replay",
+    "G0 B11 freeze/recount from job B",
+    "Coordinator commits selftests and pre-run predictions",
+    "Outside G5 review",
+    "Full B11 certificate replay and publication gates"
+  ],
+  "packages": {
+    "networkx": "3.7",
+    "python-flint": "0.9.0",
+    "sympy": "1.14.0"
+  },
+  "profile_sources": {
+    "research/gp-10/check/gp10check.py": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "research/gp-11/CONTRACT.md": "dc4ea1bb1df5fc2011772724003799623778ebc694778965201fd18a4697ab21",
+    "research/gp-11/PROOFS.md": "b8b090aea7dd7dfa89f4c2468e029c5e69b351d3098d3ca0cf35568b397da22b",
+    "research/gp-11/check/gp11check.py": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+    "research/gp-11/check/selftest.py": "6cfa561fb4fe73bbf05762e0d4dea30a47446fbf16940ac40aa45e9fbfb83691",
+    "research/gp-11/tools/write_result.py": "736ae0a31fe7ada02fb31a02908161aa105333d3d20ecc319f48b57760bbfcb0",
+    "research/unit-distance-22/check/udcheck.py": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+    "research/unit-distance-22/data/forbidden-398.json": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+    "research/unit-distance-22/data/forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "research/unit-distance-22/data/tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629",
+    "research/unit-distance-22/sources/amp/anc/graph6.txt": "4f7da8729d4818712e8718daabce29fb7f423cd7abec07eb195f0a04d6601a49"
+  },
+  "publication_gates_claimed_closed": [],
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "resource_floor_kib": 1572864,
+  "state_changing_git_commands_run": false,
+  "test_runs": {
+    "gate-integration": {
+      "log": "research/gp-11/check/results/gate-integration.txt",
+      "min_MemAvailable_kib": 4891380,
+      "reproduction_command": "<repo>/pyenv-gp10/bin/python research/gp-11/tools/guard.py -- <repo>/pyenv-gp10/bin/python research/gp-11/check/gate_integration.py",
+      "source_stage": "final sources",
+      "verdict": "B11 GATE INTEGRATION PASS"
+    },
+    "gp10-regression": {
+      "log": "research/gp-11/check/results/gp10-regression.txt",
+      "min_MemAvailable_kib": 4752228,
+      "reproduction_command": "<repo>/pyenv-gp10/bin/python research/gp-11/tools/guard.py -- <repo>/pyenv-gp10/bin/python research/gp-11/check/regression.py",
+      "source_stage": "final sources",
+      "verdict": "SELFTEST PASS checks=154 positive=38 rejected_mutations=116"
+    },
+    "gp11-selftest": {
+      "log": "research/gp-11/check/results/gp11-selftest.txt",
+      "min_MemAvailable_kib": 3968396,
+      "reproduction_command": "<repo>/pyenv-gp10/bin/python research/gp-11/tools/guard.py -- <repo>/pyenv-gp10/bin/python research/gp-11/check/selftest.py",
+      "source_stage": "final sources",
+      "verdict": "GP11 SELFTEST PASS checks=72 rejected_mutations=49"
+    },
+    "kernel-selftest": {
+      "log": "research/gp-11/check/results/kernel-selftest.txt",
+      "min_MemAvailable_kib": 4598184,
+      "reproduction_command": "<repo>/pyenv-gp10/bin/python research/gp-11/tools/guard.py -- <repo>/pyenv-gp10/bin/python research/gp-11/check/kernel_reasons.py",
+      "source_stage": "final sources",
+      "verdict": "KERNEL EXACT REASONS PASS rejections=23 restored_positive_invocations=17"
+    },
+    "minimality-search": {
+      "log": "research/gp-11/check/results/minimality-search.txt",
+      "min_MemAvailable_kib": 5691396,
+      "reproduction_command": "<repo>/pyenv-gp10/bin/python research/gp-11/tools/guard.py -- <repo>/pyenv-gp10/bin/python research/gp-11/check/../tools/make_minimality_fixture.py /tmp/gp11-minimality11.jsonl",
+      "source_stage": "during build; retained control reports record their actual source hashes",
+      "verdict": "FIXTURE SEARCH {'embedded': 16, 'refuted': 1, 'unknown': 0}"
+    },
+    "small-controls": {
+      "log": "research/gp-11/check/results/small-controls.txt",
+      "min_MemAvailable_kib": 5033632,
+      "reproduction_command": "<repo>/pyenv-gp10/bin/python research/gp-11/tools/guard.py -- <repo>/pyenv-gp10/bin/python research/gp-11/check/../tools/small_controls.py /tmp/gp11-job-a-controls/tree",
+      "source_stage": "during build; retained control reports record their actual source hashes",
+      "verdict": "SMALL CONTROLS PASS; B10 control not executed"
+    }
+  }
+}

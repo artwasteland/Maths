@@ -1,0 +1,1826 @@
+{
+ "cells": [
+  "L12 (13,23) 398-free",
+  "L16 (17,38) 398-free",
+  "L17 (18,42) all",
+  "L14 (15,30) all",
+  "L18 (19,46) 398-free",
+  "L21 (22,61) the 743 real parents",
+  "--filter the members with n=4 m=6",
+  "--filter the members with n=5 m=6",
+  "--filter the members with n=6 m=9",
+  "--filter the members with n=7 m=10",
+  "--filter the members with n=7 m=11",
+  "--filter the members with n=8 m=12",
+  "--filter the members with n=8 m=13",
+  "--filter the members with n=9 m=13",
+  "--filter the members with n=9 m=14",
+  "--filter the members with n=9 m=15",
+  "--filter the members with n=10 m=15",
+  "--filter the members with n=10 m=16",
+  "--filter the members with n=10 m=17",
+  "--filter the members with n=10 m=18"
+ ],
+ "baseline": {
+  "L12 (13,23) 398-free": "identical",
+  "L16 (17,38) 398-free": "identical",
+  "L17 (18,42) all": "identical",
+  "L14 (15,30) all": "identical",
+  "L18 (19,46) 398-free": "identical",
+  "L21 (22,61) the 743 real parents": "identical",
+  "--filter the members with n=4 m=6": "identical",
+  "--filter the members with n=5 m=6": "identical",
+  "--filter the members with n=6 m=9": "identical",
+  "--filter the members with n=7 m=10": "identical",
+  "--filter the members with n=7 m=11": "identical",
+  "--filter the members with n=8 m=12": "identical",
+  "--filter the members with n=8 m=13": "identical",
+  "--filter the members with n=9 m=13": "identical",
+  "--filter the members with n=9 m=14": "identical",
+  "--filter the members with n=9 m=15": "identical",
+  "--filter the members with n=10 m=15": "identical",
+  "--filter the members with n=10 m=16": "identical",
+  "--filter the members with n=10 m=17": "identical",
+  "--filter the members with n=10 m=18": "identical"
+ },
+ "mutants": [
+  {
+   "mutant": "role-0",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 2,
+   "differences": [
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "counter bad_sets: 109863 vs 109899"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 65669",
+      "counter neighbourhood_orbit_reps: 16570 vs 16579",
+      "counter neighbourhoods_bad: 125392 vs 125383"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "role-208",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 5,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 6117",
+      "counter neighbourhood_orbit_reps: 26662 vs 29982",
+      "counter neighbourhoods_bad: 10222 vs 6865"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "counter bad_sets: 11616 vs 13073",
+      "counter neighbourhood_orbit_reps: 223 vs 229",
+      "counter neighbourhoods_bad: 67913 vs 67907",
+      "counter child_orbit_rejected: 158 vs 164"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 149387",
+      "counter neighbourhood_orbit_reps: 163 vs 209",
+      "counter neighbourhoods_bad: 1170451 vs 1170405"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 94106",
+      "counter neighbourhood_orbit_reps: 16570 vs 22450",
+      "counter neighbourhoods_bad: 125392 vs 119487"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11525 vs 13485",
+      "counter neighbourhood_orbit_reps: 89 vs 93",
+      "counter neighbourhoods_bad: 100204 vs 100200"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "role-209",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 2,
+   "differences": [
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "counter bad_sets: 109863 vs 109860"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "counter bad_sets: 65619 vs 65615",
+      "counter neighbourhood_orbit_reps: 16570 vs 16574",
+      "counter neighbourhoods_bad: 125392 vs 125388",
+      "counter child_orbit_rejected: 12424 vs 12428"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "role-2335",
+   "must_go_red": false,
+   "went_red": false,
+   "cells_differing": 0,
+   "differences": [],
+   "refusals": []
+  },
+  {
+   "mutant": "role-3000",
+   "must_go_red": false,
+   "went_red": false,
+   "cells_differing": 0,
+   "differences": [],
+   "refusals": []
+  },
+  {
+   "mutant": "role-T-208",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 5,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 7928",
+      "counter neighbourhood_orbit_reps: 26662 vs 27786",
+      "counter neighbourhoods_bad: 10222 vs 9080"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 12739",
+      "counter neighbourhood_orbit_reps: 223 vs 293",
+      "counter neighbourhoods_bad: 67913 vs 67843"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 110199",
+      "counter neighbourhood_orbit_reps: 163 vs 170",
+      "counter neighbourhoods_bad: 1170451 vs 1170444"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 65756",
+      "counter neighbourhood_orbit_reps: 16570 vs 17237",
+      "counter neighbourhoods_bad: 125392 vs 124723"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "counter bad_sets: 11525 vs 11536",
+      "counter neighbourhood_orbit_reps: 89 vs 91",
+      "counter neighbourhoods_bad: 100204 vs 100201",
+      "counter child_orbit_rejected: 77 vs 79"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "role-T-2333",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 5,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 8148",
+      "counter neighbourhood_orbit_reps: 26662 vs 27095",
+      "counter neighbourhoods_bad: 10222 vs 9783"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 11544",
+      "counter neighbourhood_orbit_reps: 223 vs 264",
+      "counter neighbourhoods_bad: 67913 vs 67872"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 109815",
+      "counter neighbourhood_orbit_reps: 163 vs 168",
+      "counter neighbourhoods_bad: 1170451 vs 1170446"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 65277",
+      "counter neighbourhood_orbit_reps: 16570 vs 16904",
+      "counter neighbourhoods_bad: 125392 vs 125050"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "counter neighbourhood_orbit_reps: 89 vs 91",
+      "counter neighbourhoods_bad: 100204 vs 100201",
+      "counter child_orbit_rejected: 77 vs 79"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "role-T-209",
+   "must_go_red": false,
+   "went_red": false,
+   "cells_differing": 0,
+   "differences": [],
+   "refusals": []
+  },
+  {
+   "mutant": "role-T-2335",
+   "must_go_red": false,
+   "went_red": false,
+   "cells_differing": 0,
+   "differences": [],
+   "refusals": []
+  },
+  {
+   "mutant": "rooted-always",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 6,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 7915",
+      "counter neighbourhood_orbit_reps: 26662 vs 27328",
+      "counter neighbourhoods_bad: 10222 vs 9550"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 11347",
+      "counter neighbourhood_orbit_reps: 223 vs 643",
+      "counter neighbourhoods_bad: 67913 vs 67493"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 109787",
+      "counter neighbourhood_orbit_reps: 163 vs 248",
+      "counter neighbourhoods_bad: 1170451 vs 1170365"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 65011",
+      "counter neighbourhood_orbit_reps: 16570 vs 17178",
+      "counter neighbourhoods_bad: 125392 vs 124784"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11525 vs 11490",
+      "counter neighbourhood_orbit_reps: 89 vs 123",
+      "counter neighbourhoods_bad: 100204 vs 100160"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "counter bad_sets: 4011 vs 4010"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "one-per-F (guard kept)",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 20,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=4 m=6",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=5 m=6",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=6 m=9",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=10",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=11",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=12",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=13",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=13",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=14",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=15",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=15",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=16",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=17",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=18",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    }
+   ],
+   "refusals": [
+    "udenum: forbidden set 398: the Aut(F)-orbit classes of the deletion patterns do not match the pinned statistics"
+   ]
+  },
+  {
+   "mutant": "one-per-F (orbit guard removed)",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 20,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=4 m=6",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=5 m=6",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=6 m=9",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=10",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=11",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=12",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=13",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=13",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=14",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=15",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=15",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=16",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=17",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=18",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    }
+   ],
+   "refusals": [
+    "udenum: forbidden set 398: the isomorphism classes of the pattern graphs do not match the pinned statistics"
+   ]
+  },
+  {
+   "mutant": "one-per-F (both pinned guards removed)",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 6,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 6501",
+      "counter neighbourhood_orbit_reps: 26662 vs 28707",
+      "counter neighbourhoods_bad: 10222 vs 8136"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 7492",
+      "counter neighbourhood_orbit_reps: 223 vs 8812",
+      "counter neighbourhoods_bad: 67913 vs 59276"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 54717",
+      "counter neighbourhood_orbit_reps: 163 vs 36789",
+      "counter neighbourhoods_bad: 1170451 vs 1133741"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 19932",
+      "counter neighbourhood_orbit_reps: 16570 vs 62130",
+      "counter neighbourhoods_bad: 125392 vs 79433"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11525 vs 6296",
+      "counter neighbourhood_orbit_reps: 89 vs 3196",
+      "counter neighbourhoods_bad: 100204 vs 96865"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 4011 vs 3379",
+      "counter neighbourhood_orbit_reps: 0 vs 5",
+      "counter neighbourhoods_bad: 333688 vs 333683"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "no-proof",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 3,
+   "differences": [
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 161213",
+      "counter neighbourhood_orbit_reps: 163 vs 498",
+      "counter neighbourhoods_bad: 1170451 vs 1170116"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 68610",
+      "counter neighbourhood_orbit_reps: 16570 vs 18571",
+      "counter neighbourhoods_bad: 125392 vs 123382"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "counter bad_sets: 4011 vs 6772"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "early-exit",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 6,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "counter bad_sets: 4011 vs 4357"
+     ]
+    }
+   ],
+   "refusals": [
+    "udenum: automorphism left the neighbourhood domain"
+   ]
+  },
+  {
+   "mutant": "tri+1",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 20,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 3363",
+      "counter neighbourhood_orbit_reps: 26662 vs 32978",
+      "counter neighbourhoods_bad: 10222 vs 3798"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 12253",
+      "counter neighbourhood_orbit_reps: 223 vs 20011",
+      "counter neighbourhoods_bad: 67913 vs 48093"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 146459",
+      "counter neighbourhood_orbit_reps: 163 vs 136601",
+      "counter neighbourhoods_bad: 1170451 vs 1034004"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 19718",
+      "counter neighbourhood_orbit_reps: 16570 vs 88147",
+      "counter neighbourhoods_bad: 125392 vs 53461"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11525 vs 9801",
+      "counter neighbourhood_orbit_reps: 89 vs 1945",
+      "counter neighbourhoods_bad: 100204 vs 98327"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 4011 vs 4584",
+      "counter neighbourhood_orbit_reps: 0 vs 103",
+      "counter neighbourhoods_bad: 333688 vs 333520"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=4 m=6",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=5 m=6",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=6 m=9",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=10",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=11",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 2 vs 0",
+      "counter children_written: 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=12",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 3 vs 0",
+      "counter children_written: 0 vs 3"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=13",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 10 vs 0",
+      "counter children_written: 0 vs 10"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=13",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 2 vs 0",
+      "counter children_written: 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=14",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 19 vs 0",
+      "counter children_written: 0 vs 19"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=15",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 34 vs 0",
+      "counter children_written: 0 vs 34"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=15",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 4 vs 0",
+      "counter children_written: 0 vs 4"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=16",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 126 vs 0",
+      "counter children_written: 0 vs 126"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=17",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 191 vs 0",
+      "counter children_written: 0 vs 191"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=18",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 3 vs 0",
+      "counter children_written: 0 vs 3"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "sq+1",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 20,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 2651",
+      "counter neighbourhood_orbit_reps: 26662 vs 33968",
+      "counter neighbourhoods_bad: 10222 vs 2789"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 15967",
+      "counter neighbourhood_orbit_reps: 223 vs 3215",
+      "counter neighbourhoods_bad: 67913 vs 64914"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 129754",
+      "counter neighbourhood_orbit_reps: 163 vs 5706",
+      "counter neighbourhoods_bad: 1170451 vs 1164838"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 41986",
+      "counter neighbourhood_orbit_reps: 16570 vs 70119",
+      "counter neighbourhoods_bad: 125392 vs 71541"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11525 vs 11593",
+      "counter neighbourhood_orbit_reps: 89 vs 327",
+      "counter neighbourhoods_bad: 100204 vs 99961"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "counter bad_sets: 4011 vs 4034"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=4 m=6",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=5 m=6",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=6 m=9",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=10",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=11",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 2 vs 0",
+      "counter children_written: 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=12",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 3 vs 0",
+      "counter children_written: 0 vs 3"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=13",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 10 vs 0",
+      "counter children_written: 0 vs 10"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=13",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 2 vs 0",
+      "counter children_written: 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=14",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 19 vs 0",
+      "counter children_written: 0 vs 19"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=15",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 34 vs 0",
+      "counter children_written: 0 vs 34"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=15",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 4 vs 0",
+      "counter children_written: 0 vs 4"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=16",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 126 vs 0",
+      "counter children_written: 0 vs 126"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=17",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 191 vs 0",
+      "counter children_written: 0 vs 191"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=18",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 3 vs 0",
+      "counter children_written: 0 vs 3"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "pair+1",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 20,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 1",
+      "counter neighbourhood_orbit_reps: 26662 vs 36704",
+      "counter neighbourhoods_bad: 10222 vs 1"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 25",
+      "counter neighbourhood_orbit_reps: 223 vs 67782",
+      "counter neighbourhoods_bad: 67913 vs 61"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 1557",
+      "counter neighbourhood_orbit_reps: 163 vs 1163714",
+      "counter neighbourhoods_bad: 1170451 vs 5223"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 65",
+      "counter neighbourhood_orbit_reps: 16570 vs 141237",
+      "counter neighbourhoods_bad: 125392 vs 65"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11525 vs 657",
+      "counter neighbourhood_orbit_reps: 89 vs 87556",
+      "counter neighbourhoods_bad: 100204 vs 2743"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 4011 vs 2442",
+      "counter neighbourhood_orbit_reps: 0 vs 189398",
+      "counter neighbourhoods_bad: 333688 vs 45827"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=4 m=6",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=5 m=6",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=6 m=9",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=10",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=11",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 2 vs 0",
+      "counter children_written: 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=12",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 3 vs 0",
+      "counter children_written: 0 vs 3"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=13",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 10 vs 0",
+      "counter children_written: 0 vs 10"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=13",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 2 vs 0",
+      "counter children_written: 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=14",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 19 vs 0",
+      "counter children_written: 0 vs 19"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=15",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 34 vs 0",
+      "counter children_written: 0 vs 34"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=15",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 4 vs 0",
+      "counter children_written: 0 vs 4"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=16",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 126 vs 0",
+      "counter children_written: 0 vs 126"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=17",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 191 vs 0",
+      "counter children_written: 0 vs 191"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=18",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 3 vs 0",
+      "counter children_written: 0 vs 3"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "T-size-1",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 5,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 5261",
+      "counter neighbourhood_orbit_reps: 26662 vs 29945",
+      "counter neighbourhoods_bad: 10222 vs 6896"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 9794",
+      "counter neighbourhood_orbit_reps: 223 vs 2045",
+      "counter neighbourhoods_bad: 67913 vs 66091"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 109744",
+      "counter neighbourhood_orbit_reps: 163 vs 278",
+      "counter neighbourhoods_bad: 1170451 vs 1170332"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 59267",
+      "counter neighbourhood_orbit_reps: 16570 vs 22879",
+      "counter neighbourhoods_bad: 125392 vs 119040"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11525 vs 11420",
+      "counter neighbourhood_orbit_reps: 89 vs 157",
+      "counter neighbourhoods_bad: 100204 vs 100099"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "class-by-n (guard kept)",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 20,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=4 m=6",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=5 m=6",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=6 m=9",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=10",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=7 m=11",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=12",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=8 m=13",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=13",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=14",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=9 m=15",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=15",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=16",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=17",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=10 m=18",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    }
+   ],
+   "refusals": [
+    "udenum: forbidden set 398: the isomorphism classes of the pattern graphs do not match the pinned statistics"
+   ]
+  },
+  {
+   "mutant": "class-by-n (guard removed)",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 6,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 6671",
+      "counter neighbourhood_orbit_reps: 26662 vs 28560",
+      "counter neighbourhoods_bad: 10222 vs 8282"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 6655",
+      "counter neighbourhood_orbit_reps: 223 vs 12382",
+      "counter neighbourhoods_bad: 67913 vs 55688"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 42357",
+      "counter neighbourhood_orbit_reps: 163 vs 91554",
+      "counter neighbourhoods_bad: 1170451 vs 1078798"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 19558",
+      "counter neighbourhood_orbit_reps: 16570 vs 65694",
+      "counter neighbourhoods_bad: 125392 vs 75958"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11525 vs 4947",
+      "counter neighbourhood_orbit_reps: 89 vs 7149",
+      "counter neighbourhoods_bad: 100204 vs 92454"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 4011 vs 2232",
+      "counter neighbourhood_orbit_reps: 0 vs 110",
+      "counter neighbourhoods_bad: 333688 vs 333443"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "uncovered-count-1 (self-check kept)",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 4,
+   "differences": [
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    }
+   ],
+   "refusals": [
+    "udenum: forbidden set 398: uncovered set count does not match the family"
+   ]
+  },
+  {
+   "mutant": "uncovered-count-1 (self-check removed)",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 4,
+   "differences": [
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "counter bad_sets: 11616 vs 11614",
+      "counter neighbourhood_orbit_reps: 223 vs 225",
+      "counter neighbourhoods_bad: 67913 vs 67911",
+      "counter child_orbit_rejected: 158 vs 160"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 109839",
+      "counter neighbourhood_orbit_reps: 163 vs 187",
+      "counter neighbourhoods_bad: 1170451 vs 1170427"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "counter bad_sets: 11525 vs 11523",
+      "counter neighbourhood_orbit_reps: 89 vs 91",
+      "counter neighbourhoods_bad: 100204 vs 100202",
+      "counter child_orbit_rejected: 77 vs 79"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "counter bad_sets: 4011 vs 4009"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "direct-test-into-not-onto",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 4,
+   "differences": [
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 11636",
+      "counter neighbourhood_orbit_reps: 223 vs 203",
+      "counter neighbourhoods_bad: 67913 vs 67933"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 109994",
+      "counter neighbourhood_orbit_reps: 163 vs 69",
+      "counter neighbourhoods_bad: 1170451 vs 1170545"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 65620",
+      "counter neighbourhood_orbit_reps: 16570 vs 16569",
+      "counter neighbourhoods_bad: 125392 vs 125393"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11525 vs 11574",
+      "counter neighbourhood_orbit_reps: 89 vs 40",
+      "counter neighbourhoods_bad: 100204 vs 100253"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "direct-test-drops-single-image",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 5,
+   "differences": [
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11616 vs 11603",
+      "counter neighbourhood_orbit_reps: 223 vs 236",
+      "counter neighbourhoods_bad: 67913 vs 67900"
+     ]
+    },
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 109761",
+      "counter neighbourhood_orbit_reps: 163 vs 215",
+      "counter neighbourhoods_bad: 1170451 vs 1170399"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 65612",
+      "counter neighbourhood_orbit_reps: 16570 vs 16577",
+      "counter neighbourhoods_bad: 125392 vs 125385"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 11525 vs 11516",
+      "counter neighbourhood_orbit_reps: 89 vs 98",
+      "counter neighbourhoods_bad: 100204 vs 100195"
+     ]
+    },
+    {
+     "cell": "L21 (22,61) the 743 real parents",
+     "problems": [
+      "counter bad_sets: 4011 vs 4009"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "direct-test-stops-at-first-image",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 3,
+   "differences": [
+    {
+     "cell": "L17 (18,42) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 109863 vs 109808",
+      "counter neighbourhood_orbit_reps: 163 vs 169",
+      "counter neighbourhoods_bad: 1170451 vs 1170445"
+     ]
+    },
+    {
+     "cell": "L14 (15,30) all",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 65619 vs 65615",
+      "counter neighbourhood_orbit_reps: 16570 vs 16574",
+      "counter neighbourhoods_bad: 125392 vs 125388"
+     ]
+    },
+    {
+     "cell": "L18 (19,46) 398-free",
+     "problems": [
+      "exit status 0 vs 2"
+     ]
+    }
+   ],
+   "refusals": [
+    "udenum: automorphism left the neighbourhood domain"
+   ]
+  },
+  {
+   "mutant": "direct-test-list-order (order only)",
+   "must_go_red": false,
+   "went_red": false,
+   "cells_differing": 0,
+   "differences": [],
+   "refusals": []
+  },
+  {
+   "mutant": "cf-skip-0",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 3,
+   "differences": [
+    {
+     "cell": "L12 (13,23) 398-free",
+     "problems": [
+      "output bytes differ",
+      "counter bad_sets: 8587 vs 8586",
+      "counter neighbourhood_orbit_reps: 26662 vs 26663",
+      "counter neighbourhoods_bad: 10222 vs 10221"
+     ]
+    },
+    {
+     "cell": "L16 (17,38) 398-free",
+     "problems": [
+      "counter bad_sets: 11616 vs 11615",
+      "counter neighbourhood_orbit_reps: 223 vs 224",
+      "counter neighbourhoods_bad: 67913 vs 67912",
+      "counter child_orbit_rejected: 158 vs 159"
+     ]
+    },
+    {
+     "cell": "--filter the members with n=4 m=6",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 1 vs 0",
+      "counter children_written: 0 vs 1"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "cf-skip-74",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 1,
+   "differences": [
+    {
+     "cell": "--filter the members with n=10 m=16",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 126 vs 125",
+      "counter children_written: 0 vs 1"
+     ]
+    }
+   ],
+   "refusals": []
+  },
+  {
+   "mutant": "cf-skip-397",
+   "must_go_red": true,
+   "went_red": true,
+   "cells_differing": 1,
+   "differences": [
+    {
+     "cell": "--filter the members with n=10 m=17",
+     "problems": [
+      "output bytes differ",
+      "counter neighbourhoods_bad: 191 vs 190",
+      "counter children_written: 0 vs 1"
+     ]
+    }
+   ],
+   "refusals": []
+  }
+ ],
+ "wrong_checks": [
+  {
+   "planted": "two children swapped",
+   "cell": "L12 (13,23) 398-free",
+   "count_check_passes": true,
+   "set_check_passes": true,
+   "byte_check_passes": false
+  },
+  {
+   "planted": "the first child replaced by a copy of the second",
+   "cell": "L12 (13,23) 398-free",
+   "count_check_passes": true,
+   "set_check_passes": false,
+   "byte_check_passes": false
+  }
+ ],
+ "pass": true
+}

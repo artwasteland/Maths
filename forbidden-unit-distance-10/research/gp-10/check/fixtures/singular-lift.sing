@@ -1,0 +1,8 @@
+ring r=0,(x_1,y_1,x_2,y_2,x_3,y_3,t_0,t_1,t_2,t_3),dp;
+short=0;
+ideal I=x_3^2 - 2*x_3 + y_3^2,x_1^2 - 2*x_1*x_3 + x_3^2 + y_1^2 - 2*y_1*y_3 + y_3^2 - 1,x_1^2 + y_1^2 - 1,x_2^2 - 2*x_2*x_3 + x_3^2 + y_2^2 - 2*y_2*y_3 + y_3^2 - 1,x_2^2 + y_2^2 - 1,t_0*x_3^2 + t_0*y_3^2 - 1,t_1*x_2^2 - 2*t_1*x_2 + t_1*y_2^2 + t_1 - 1,t_2*x_1^2 - 2*t_2*x_1 + t_2*y_1^2 + t_2 - 1,t_3*x_1^2 - 2*t_3*x_1*x_2 + t_3*x_2^2 + t_3*y_1^2 - 2*t_3*y_1*y_2 + t_3*y_2^2 - 1;
+matrix L=lift(I,ideal(1));
+matrix V=matrix(I)*L;
+if(V[1,1]==1){print("LIFT_IDENTITY_OK");}else{print("LIFT_IDENTITY_NO");}
+for(int i=1;i<=nrows(L);i++){print("COFACTOR "+string(i)+":"+string(L[i,1]));}
+quit;

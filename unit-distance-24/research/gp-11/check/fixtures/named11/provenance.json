@@ -1,0 +1,10 @@
+{
+  "J`GWDeNYak_": {
+    "evidence": "gp10embed.py without host method; search.txt and search-stats.jsonl; command=['<repo>/pyenv-gp10/bin/python', '<repo>/research/gp-10/embed/gp10embed.py', '/tmp/gp11-job-a-controls/tree/controls/named11/input.g6', '--out', '/tmp/gp11-job-a-controls/tree/controls/named11/records.jsonl', '--unknown', '/tmp/gp11-job-a-controls/tree/controls/named11/UNKNOWN.g6', '--stats', '/tmp/gp11-job-a-controls/tree/controls/named11/search-stats.jsonl', '--methods', 'lattice18,lattice36,lattice30,constructive,numeric', '--time-limit', '20', '--node-cap', '200000']",
+    "method": "general-search"
+  },
+  "J`GhcpJdQL_": {
+    "evidence": "gp10embed.py without host method; search.txt and search-stats.jsonl; command=['<repo>/pyenv-gp10/bin/python', '<repo>/research/gp-10/embed/gp10embed.py', '/tmp/gp11-job-a-controls/tree/controls/named11/input.g6', '--out', '/tmp/gp11-job-a-controls/tree/controls/named11/records.jsonl', '--unknown', '/tmp/gp11-job-a-controls/tree/controls/named11/UNKNOWN.g6', '--stats', '/tmp/gp11-job-a-controls/tree/controls/named11/search-stats.jsonl', '--methods', 'lattice18,lattice36,lattice30,constructive,numeric', '--time-limit', '20', '--node-cap', '200000']",
+    "method": "general-search"
+  }
+}

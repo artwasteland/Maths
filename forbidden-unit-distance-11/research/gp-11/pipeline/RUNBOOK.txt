@@ -1,0 +1,341 @@
+GP-11 certificate pipeline
+
+Purpose
+
+Produce independently checked sample-profile certificate shards and an exact
+UNKNOWN frontier. A worker ACCEPT is a certificate and coverage receipt.
+The coordinator must still satisfy CONTRACT.md's controls, B11 profile,
+minimality, review, and publication gates. This driver never reports L11.
+The frozen GP-10 checker and its kernel are unchanged.
+
+Environment
+
+Use the existing ~/tools/pyenv-gp10 environment and the reviewed repository.
+Required Python packages are already used by GP-10: python-flint, NetworkX,
+pynauty, NumPy, SciPy, SymPy, and mpmath.
+Required executables are cc, ld, nauty-labelg 2.8.8, gp, Singular, and msolve.
+The existing pinned msolve wrapper builds its small-input binary in scratch.
+The pipeline compiles GP-10's deterministic seed shim before exact search.
+No solver result is accepted without an ordinary frozen-checker certificate.
+Provision a worker from the GP-10 environment, including nauty development
+headers and libnauty, before assigning research work. FREEZE.txt in gp-10
+and pipeline/results/environment.json record the Python package versions.
+The latter also records the executable hashes used for these measurements.
+In particular /usr/bin/msolve must match GP-10's pinned binary hash;
+preflight refuses another binary rather than applying its patch blindly.
+No installation or network access occurs during a pipeline run.
+
+Run from the repository root. Substitute the worker's Python path if needed.
+The builder performs no git state changes. Git commands below are instructions
+for the explicitly assigned cloud worker and coordinating session.
+
+Local resources
+
+Default to ONE pipeline invocation on the owner's desktop.
+At most TWO may run concurrently when the shared memory floor permits.
+It performs one search or check at a time, with at most one native/forked
+compute child. The supervising memory thread is not a compute worker.
+Numerical libraries and msolve use one thread. Niceness is 15.
+Each process inherits a 2,048,000,000-byte address-space limit.
+MemAvailable is sampled every 0.1 seconds; below 1,572,864 KiB (1.5 GiB),
+native descendants are stopped and the journal is retained for resumption.
+Exit 75 means stopped, not a completed shard. No completed result is exported.
+The uncommitted task remains leased in SQLite and is requeued on resume.
+
+Index, once per worker
+
+  PY=~/tools/pyenv-gp10/bin/python
+  "$PY" -B research/gp-11/pipeline/drive.py preflight --scratch /tmp/gp11-preflight
+  "$PY" -B research/gp-11/pipeline/drive.py build \
+    --index /tmp/gp11-index --validate
+
+This builds the complete 4,721,083-relation B11 deletion order and both
+adjacency directions. Graph IDs are zero-based lines of frozen B11.g6.
+Each relation stores the canonical child's eleven labels in parent labels.
+The shared index is read-only after completion, hash-checked at every open.
+Concurrent builds take an exclusive lock. An interrupted build is restarted.
+The validation reproduces all one-edge neighbours for the architect's 500
+graphs with GP-10's independent Python graph routines, and checks every map
+and reverse relation in that sample. Compiled binaries are local scratch.
+
+Local population cheap pass
+
+  "$PY" -B research/gp-11/pipeline/drive.py run \
+    --index /tmp/gp11-index --state /tmp/gp11-cheap-population \
+    --output /tmp/gp11-cheap-population-result --policy cheap
+
+This assigns all 448,708 graphs and stops after TU, extension, alternative
+bases, and propagation. It still exports and replays a record for every graph.
+If the memory guard prevents a full pass, use a fresh state and add
+--sample 20000 --seed 20261004. A sampled result is labelled by its assignment
+manifest and must never be described as complete population coverage.
+
+A completed population cheap bundle can also be the predecessor for the
+frontier-allocation workflow below. Run the full policy on its remaining input
+and merge those returns with the cheap bundle. This reuses global propagation
+before cloud search. The cost estimate below conservatively uses shards started
+from empty state; it does not subtract unmeasured savings from this option.
+
+One cloud shard, end to end
+
+Assign each shard index in 0..255 to exactly one worker.
+The assignment is SHA256(graph6)'s first eight bytes, big endian, modulo 256.
+Seeds depend only on graph6. Splitting a shard never changes a graph's seed.
+Expect about 1,753 assigned graphs per shard.
+The coordinator supplies one reviewed pipeline commit and a unique return
+branch for each worker. All workers start from that same reviewed source.
+Create the worker's return branch before starting its jobs; do not pull source
+changes into a running or resumable state. These branch operations belong to
+the cloud worker, not this builder's detached review worktree.
+
+  PY=~/tools/pyenv-gp10/bin/python
+  shard=0
+  "$PY" -B research/gp-11/pipeline/drive.py run \
+    --index /tmp/gp11-index \
+    --state /tmp/gp11-shard-000 \
+    --output research/gp-11/pipeline/cloud/shard-000 \
+    --shard-count 256 --shard-index "$shard" --policy full
+
+Repeat the exact command with --resume after interruption.
+The state directory must survive; it is not part of the push.
+Do not change source, input bytes, budgets, intake files, or shard selection
+on resume. Those are bound by job.json. Use a fresh state for a changed job.
+An exclusive advisory lock prevents concurrent writers to one state.
+Only sources, hashes, budgets, and graph IDs go into the portable job manifest;
+local intake paths identify the original inputs and need not exist for replay.
+
+The policy is in stages.py, in this order:
+  TU closure, with every negative endpoint independently checked.
+  Degree-two extension (3 s), then alternative one-edge B10 bases (3 s).
+  Lattice18 (0.5 s / 20,000 nodes), host search (1 s / 20,000 nodes).
+  Tree (1 s / 1,200 states), all-pairs null and real (3 s each).
+  Order-eleven framed/pinned exact search (20 s), all-pairs portfolio (10 s).
+  Longer extension and multistart/both-circle numeric search (60 s each).
+  Branch exactification (30 s), framed/pinned exact search (120 s).
+  Alternative bases (60 s), selected-saturation exact search (180 s).
+  Saved-output exactification (180 s search and 180 s independent checking).
+  Tree (60 s / 100,000 states), targeted real (60 s).
+  All-pairs null and real (60 s each), numerical pins (120 s).
+  Factor-guided targeted real/FGLM (180 s).
+
+The usual independent per-record check cap is 60 s.
+Final sample-profile replay has no per-certificate time cap.
+Graph timeouts, solver errors, rejected/oversized proposals, unavailable bases,
+and exhausted searches leave explicit UNKNOWN records with budgets and reasons.
+A negative pinned system is never a refutation.
+The escalation measurement's one-off 360/600 s final probes are not the default
+uniform cloud policy. They returned no accepted extra decisions in that study.
+The uniform policy removes the measurement's global admission cutoffs, which
+were specific to its wall-time deadline; every remaining graph gets a turn.
+
+Propagation drains after every accepted decision, before the next task.
+Embedded seeds propagate down; refuted seeds propagate up.
+The walk can pass through B11 graphs assigned to other shards.
+Only checked pointers become decisions in this shard. Every pointer maps
+directly to its accepted seed, avoiding long proof dependency chains.
+TU forcing without an endpoint remains UNKNOWN. Searches on forced closures
+pull embeddings back to the input labels, or emit a checked R-tu dependency.
+
+Four-core cloud workers
+
+On a 15 GB worker, run up to FOUR invocations for distinct shard indices.
+Each invocation has its own /tmp state and output directory; all share the
+read-only index. Do not use this four-way launcher on the owner's machine.
+Keep at least 1.5 GiB available RAM and a few GB free disk throughout.
+The per-process limits plus the global memory floor apply on the cloud too.
+Example for four assigned indices, after building the index:
+
+  export PY=~/tools/pyenv-gp10/bin/python
+  seq 0 3 | xargs -P 4 -I '{}' bash -c '
+    n="$1"
+    label=$(printf "%03d" "$n")
+    "$PY" -B research/gp-11/pipeline/drive.py run \
+      --index /tmp/gp11-index --state "/tmp/gp11-shard-$label" \
+      --output "research/gp-11/pipeline/cloud/shard-$label" \
+      --shard-count 256 --shard-index "$n" --policy full --resume
+  ' _ '{}'
+
+--resume also initializes a new empty state, so this launcher is restartable.
+Use the same reviewed toolchain and sources for all workers.
+If interrupted by worker lifetime limits, push only an explicitly marked
+partial checkpoint or keep the worker alive; a result without completed=true
+must never be returned as a completed shard. The normal git return contains
+only the small completed result directory, not SQLite, CAS scratch or indexes.
+
+Check before pushing
+
+  "$PY" -B research/gp-11/pipeline/drive.py replay \
+    research/gp-11/pipeline/cloud/shard-000 \
+    --index /tmp/gp11-index --scratch /tmp/gp11-replay
+
+Require summary.json: completed=true, checker_status=ACCEPT, push_ready=true.
+The returned result includes:
+  assigned.g6             exactly the assigned B11 graphs, without support rows
+  input.g6                assigned graphs plus the complete dependency closure
+  records.jsonl.gz        ordinary checker-format records, deterministic gzip
+  UNKNOWN.g6              exactly the undecided assigned graphs
+  attempts.jsonl.gz       each attempted stage's ordinary record and budget
+  frontier.jsonl.gz       edges, degrees, TU closure, outcomes, numeric evidence
+  packets.jsonl.gz        groups sharing connected induced 9- or 10-vertex cores
+  job.json                frozen sources, selection, budgets, intake hashes
+  run.json                sample-profile manifest for decompressed records
+  checker-report.json     actual frozen-checker replay report
+  checker.log.gz          per-record replay outcomes
+  summary.json            portable artifact hashes, assigned counts, payload size
+  metrics.json            operational timing/memory diagnostics
+
+Each packet contains at most five independent certificate obligations.
+Core sharing does not assert equal verdicts. Singleton obligations are retained.
+The frontier and packets are streamed; their grouping index stays in local SQLite.
+
+Limit each push to 45,000,000 bytes of results, leaving margin below 50 MB.
+The exporter sets push_ready=false if the result is larger.
+Split shard s of modulus 256 into s and s+256 of modulus 512, in fresh states,
+and return those halves instead. Record the replacement explicitly.
+Repeat this split if necessary. Do not drop large records to meet the limit.
+Only after replay and the payload check does the authorized cloud worker:
+
+  git add research/gp-11/pipeline/cloud/shard-000
+  git commit -m "GP-11 checked certificate shard 000"
+  git push
+
+Coordinator intake and cross-shard propagation
+
+Fetch worker returns into separate review refs/worktrees and inspect their
+diffs. Collect the completed directories under one run tree. Recheck every
+bundle; a producer's receipt or verdict is not trusted on intake.
+Pass one --bundle argument per returned directory, including any split halves.
+
+  "$PY" -B research/gp-11/pipeline/drive.py run \
+    --index /tmp/gp11-index --state /tmp/gp11-merge \
+    --output /tmp/gp11-merged --policy cheap \
+    --require-complete-union \
+    --bundle research/gp-11/pipeline/cloud/shard-000 \
+    --bundle research/gp-11/pipeline/cloud/shard-001
+
+The example shows two bundle arguments; supply ALL shards for an actual merge.
+--require-complete-union checks exact B11 coverage and disjoint assignments.
+Dependency overlaps are allowed; assignment overlaps are rejected.
+Every returned proof is replayed before import. Import orders dependencies
+topologically, aborts conflicts, and propagates across the full B11 order.
+It retains alternative proofs until their dependencies are available; choosing
+the shortest proof independently for every graph can create a dependency cycle.
+The cheap pass then rebuilds TU obligations for the remaining graphs and uses
+checked closure endpoints learned from other shards, followed by extension and
+alternative bases. Use --intake-only for an import/replay audit without this pass.
+The coordinator's global result may exceed one push; retain it locally or
+export disjoint shards with its checked record stream as an intake source.
+
+Re-run the portfolio on what cross-shard propagation leaves, in NEW states.
+Prepare a small allocation from the completed coordinator result:
+
+  "$PY" -B research/gp-11/pipeline/coordinator/rounds.py prepare \
+    /tmp/gp11-merged research/gp-11/pipeline/cloud/round2-input
+
+This copies only UNKNOWN records and their full histories, together with the
+exact remaining input and an allocation manifest. It makes no certificate
+acceptance decision. The preceding driver merge supplied the checked frontier.
+Return this small allocation through git for the next workers to fetch.
+If its count is zero, there is no next search round.
+For about 900 survivors, use 64 shards (about 14 graphs apiece):
+
+  "$PY" -B research/gp-11/pipeline/drive.py run \
+    --index /tmp/gp11-index --state /tmp/gp11-round2-000 \
+    --output research/gp-11/pipeline/cloud/round2-000 \
+    --input research/gp-11/pipeline/cloud/round2-input/input.g6 \
+    --records research/gp-11/pipeline/cloud/round2-input/unknown-records.jsonl.gz \
+    --shard-count 64 --shard-index 0 --policy full
+
+The preceding coordinator already propagated all accepted first-round proofs.
+These workers search only that remaining frontier and retain its prior budgets.
+Sending the entire population bundle to every worker would repeat a large
+serial check and import on every worker; the small allocation avoids that cost.
+Use fewer shards for a small frontier so every assigned shard is nonempty.
+After normal worker replay and git returns, verify the exact round assignments:
+
+  "$PY" -B research/gp-11/pipeline/coordinator/rounds.py coverage \
+    research/gp-11/pipeline/cloud/round2-input \
+    research/gp-11/pipeline/cloud/round2-000 \
+    research/gp-11/pipeline/cloud/round2-001
+
+Supply ALL returned round shards. This checks disjoint complete coverage of
+the allocated frontier and binds the returned bytes; it is not a proof checker.
+Then perform the ordinary independent certificate intake in another fresh state:
+
+  "$PY" -B research/gp-11/pipeline/drive.py run \
+    --index /tmp/gp11-index --state /tmp/gp11-merge-round2 \
+    --output /tmp/gp11-merged-round2 --policy cheap \
+    --bundle /tmp/gp11-merged \
+    --bundle research/gp-11/pipeline/cloud/round2-000 \
+    --bundle research/gp-11/pipeline/cloud/round2-001
+
+Again supply ALL round shards. Their assignments intentionally overlap the
+previous population bundle, so do not use --require-complete-union here.
+The frontier coverage command checks this round; the prior checked population
+bundle supplies all earlier decisions. Every imported proof is checked again.
+An unchanged UNKNOWN remains explicit with both rounds' histories.
+Inherited attempts retain their provenance and appear once when both an
+ancestor bundle and a worker carrying that history are imported.
+Use frontier.jsonl.gz and packets.jsonl.gz for analyst assignments.
+Never concatenate random samples as if they were population shards.
+
+Journal and determinism
+
+certificates.jsonl is append-only. SQLite stores each record's offset, byte
+length, SHA256, dependency and accepted verdict. Fsync precedes a reference's
+transaction commit. A crash can leave an unreferenced tail; resume truncates
+that tail and hashes every referenced record before replaying accepted seeds.
+Leases are explicit. Expired leases requeue once; stale completion tokens fail.
+The exclusive state lock permits requeueing an interrupted local owner safely.
+Committed certificates are retained, not searched again. In-flight work retries.
+
+Task ordering, graph seeds, maps, exported record ordering, and gzip headers
+are deterministic. Successful attempts with the same completed search path
+produce identical certificate bytes. Wall-clock cutoffs can alter timeout
+outcomes under different hardware/load; no claim of identical search outcomes
+across such changes is made. Crash testing compares certificate records,
+coverage, UNKNOWN, attempts, frontier and packets; operational timing and the
+checker's temporary-path receipts naturally differ.
+
+Controls and measurements
+
+  "$PY" -B research/gp-11/pipeline/test_pipeline.py \
+    --index /tmp/gp11-index --output /tmp/gp11-controls
+  "$PY" -B research/gp-11/pipeline/test_resume.py \
+    --index /tmp/gp11-index --output /tmp/gp11-resume-control
+  "$PY" -B research/gp-11/pipeline/test_reuse.py \
+    --index /tmp/gp11-index --output /tmp/gp11-reuse-control
+  "$PY" -B research/gp-11/pipeline/test_merge.py \
+    --index /tmp/gp11-index --controls /tmp/gp11-controls \
+    --output /tmp/gp11-merge-control
+  "$PY" -B research/gp-11/pipeline/test_failures.py \
+    --index /tmp/gp11-index --controls /tmp/gp11-controls \
+    --output /tmp/gp11-failure-control
+  "$PY" -B research/gp-11/pipeline/test_merge_cycles.py \
+    --index /tmp/gp11-index --output /tmp/gp11-cycle-control
+  "$PY" -B research/gp-11/pipeline/test_rounds.py \
+    --index /tmp/gp11-index --merge /tmp/gp11-merge-control \
+    --output /tmp/gp11-round-control
+  "$PY" -B research/gp-11/pipeline/test_history.py \
+    --index /tmp/gp11-index --output /tmp/gp11-history-control
+
+Run controls in fresh directories. A failed control stops rollout.
+REPORT.txt records the measured sample counts, cheap population run, red-rule
+messages, and four-core machine-hour estimate. All sample ACCEPTs remain
+conditional and do not replace the contract's complete B10 or named controls.
+
+Cloud cost planning
+
+The measured 2,000-graph worker run projects to 106.36 ideal four-core
+machine-hours over B11. The separately measured serial coordinator adds 60.39
+machine-hours, including its independent checks and cheap propagation pass.
+Plan about 200 machine-hours for that first wave and coordinator, including
+roughly 20 percent margin over the 166.75-hour linear estimate.
+
+If one fresh repeat wave has about 897 survivors and their measured mean
+538.90-second attempt cost, add 33.58 ideal search hours and another coordinator
+pass. The total scenario is 260.72 ideal machine-hours; plan about 315.
+That scenario uses the small frontier allocation above. Analyst work and further
+waves are excluded. These estimates assume the measured toolchain and ideal
+four-lane worker utilization; cloud throughput and tail behavior are unmeasured.
+REPORT.txt and results/measurements.json give the evidence and formulas.

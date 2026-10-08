@@ -1,0 +1,19 @@
+positive controls: 56 known graphs, 32653 embedded B10 graphs (correct prover flags 9712 of them, all tu); agreement samples 3000 graphs
+mutant 1: flags 51 of 56 known graphs and 32645 of 32653 B10 graphs ({'refuted': 32561, 'tu': 135}); false flags 32695, of which the dev replay accepts 0; all certificates: accepted 1, rejected 32695; certificate failures 0
+   e.g. DR{ (refuted): DR{: cycle 1 [0, 2, 4, 3]: 30 is not an edge
+   agreement-style comparison on 3000 sample graphs: verdict classes differ on 2670
+   prune.py --rhombus --udrhombus <mutant 1>: exit 2: exeev-u22/research/unit-distance-22/enum/test-rhombus/bin/udrhombus-mutant-1 is a red-control build (mutant 1)
+mutant 2: flags 53 of 56 known graphs and 32653 of 32653 B10 graphs ({'refuted': 32706}); false flags 32706, of which the dev replay accepts 0; all certificates: accepted 0, rejected 32706; certificate failures 0
+   e.g. Bw (refuted): Bw: cycle 0 [0, 2, 1, 2] has a repeated vertex
+   agreement-style comparison on 3000 sample graphs: verdict classes differ on 2670
+   prune.py --rhombus --udrhombus <mutant 2>: exit 2: exeev-u22/research/unit-distance-22/enum/test-rhombus/bin/udrhombus-mutant-2 is a red-control build (mutant 2)
+mutant 3: flags 0 of 56 known graphs and 9712 of 32653 B10 graphs ({'tu': 9712}); false flags 0, of which the dev replay accepts 0; all certificates: accepted 0, rejected 9712; certificate failures 0
+   agreement-style comparison on 3000 sample graphs: verdict classes differ on 0
+   prune.py --rhombus --udrhombus <mutant 3>: exit 2: exeev-u22/research/unit-distance-22/enum/test-rhombus/bin/udrhombus-mutant-3 is a red-control build (mutant 3)
+mutant 4: flags 52 of 56 known graphs and 25593 of 32653 B10 graphs ({'tu': 21455, 'refuted': 4190}); false flags 18319, of which the dev replay accepts 0; all certificates: accepted 553, rejected 25092; certificate failures 0
+   e.g. C^ (tu): C^: sum of l_j r(C_j) is [1, 1, -1, -1], not s times the target [1, -1, 1, -1]
+   agreement-style comparison on 3000 sample graphs: verdict classes differ on 2349
+   prune.py --rhombus --udrhombus <mutant 4>: exit 2: exeev-u22/research/unit-distance-22/enum/test-rhombus/bin/udrhombus-mutant-4 is a red-control build (mutant 4)
+mutant 5 on known56: flags 0; certificate_failures 0 (self_check 0); the correct prover's detections 0
+mutant 5 on B10: flags 0; certificate_failures 9712 (self_check 9712); the correct prover's detections 9712
+MUTANTS PASS

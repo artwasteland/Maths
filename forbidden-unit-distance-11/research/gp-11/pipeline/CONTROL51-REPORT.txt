@@ -1,0 +1,170 @@
+GP-11 control 5.1 builder report, 2026-10-01
+
+The B10 producer driver, leak guard, checker-side assembly and cloud worker are built.
+No git command was run. Every original file covered by the initial snapshot is unchanged:
+443 files, including both checker directories and all existing pipeline files.
+No existing source was order-parameterized. The conditional B11 before/after test requirement
+therefore did not apply; no B11 producer run was made. Original-file SHA256 evidence is in
+results/control51-validation/original-file-identity.json and protected-originals-before.json.
+The existing B11 source-hash glob sees newly added Python files. Old B11 state should be
+resumed from its original source snapshot; its mathematical producer code is unchanged.
+
+Files added
+
+control_b10.py: selection, fresh/resumed jobs, resource supervision, producer execution.
+control_b10_guard.py: pre-search source screening and a runtime read boundary.
+control_b10_runtime.py: F9-only checker injection, n=10 propagation/TU, fresh B9 bases,
+  extension/rebase adapters and the 2*n-3-rank framed solver boundary.
+control_b10_native.c: graph-only B10 deletion index and F9-only TU engine.
+control_b10_bundle.py: independent GP11 sample replay, exact disjoint assembly,
+  dependency-grounded proof selection, UNKNOWN overlays and checker controls.
+test_control_b10.py, test_control_b10_adapters.py, test_control_b10_workflow.py:
+  own-rule red tests, adapter regressions and real shard/resume/assembly checks.
+CONTROL51-RUNBOOK.txt and this report.
+coordination/cloud-workers/control51-worker.sh: four cloud lanes, retained resumable
+  state, independent sample replay, 45 MB return cap and exit codes 0/7/8/2.
+results/control51-sample200/, control51-final-cheap200/, control51-validation/,
+  control51-sample200-sources.tar.gz, control51-checker-prerequisites.tar.gz.
+pipeline/cloud/control51-local-smoke-000 and its -replay sibling: one-graph script test.
+
+Withheld-answer boundary
+
+The producer consumes only frozen B10 graph strings, the original forbidden-74.json
+(sha256 ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a),
+the frozen TU gadgets, reviewed code, and its private state. The F9 JSON is not reordered
+or relabelled. F10 and the old ten-vertex records/indexes never enter producer decisions.
+Default jobs use no external embedding file. Nine-vertex bases are generated on demand
+by general lattice search on the current graph deletion, and checked exactly before use.
+The host stage records no eligible host under the at-most-nine restriction. It does not
+read GP-10 cached host coordinates. All 23 stage names, ordering and budgets are retained.
+Ordinary exact/pointer/TU/tree/algebra certificates are checked under F9 before reuse.
+The full graph-only index has 274194 relations; independent graph operations checked
+1632 relations for the selected 200 parents, including maps and reverse adjacency.
+
+Optional --bases inputs are fully screened before search imports or state creation.
+Known historical paths and directories are refused. Every graph reference and coordinate
+array must have order at most nine, all rows must be direct exact embeddings, and duplicate
+JSON keys, malformed streams and oversized input are refused. Symlinks are resolved first.
+The Python audit hook blocks accidental reads of repository/prior scratch data outside
+the allowed files and private job. This is a reviewed-code leak guard, not an OS security
+sandbox or proof of the ancestry of arbitrary external lower-order coordinates.
+The mandatory red fixtures create no run/state. The handmade order-ten fixture is itself
+a valid exact embedding of ten distinct rational points, checked before testing refusal.
+
+Exact mandatory red-control output:
+  REFUSED leak_guard:answer_source <repo>/research/gp-10/cloud/lean3/records.jsonl.gz; search_started=false
+  REFUSED leak_guard:answer_order handmade-ten.jsonl:1 order=10 maximum=9; search_started=false
+  REFUSED leak_guard:answer_source /tmp/gp11-pipeline-index; search_started=false
+All 12 boundary controls passed, including mixed streams, hidden pointers, symlinks,
+opaque files, duplicate keys, F10 input and the late read backstop. The lower-order
+positive returned: ACCEPT leak_guard sources_validated search_started=false
+
+Measured full sample
+
+Seed 20261001, 200 graphs selected uniformly from the 33162 frozen B10 lines.
+Producer wall time: 2005.999815 seconds (33.43 minutes).
+Additional GP11 sample replay: 6.472502 seconds.
+Checker report: profile sample, status ACCEPT, embedded 196, refuted 3, unknown 1,
+direct_rejections 0, conditional true. The run has exactly 200 records, no support rows.
+UNKNOWN: IkLPC?FAw. Frontier/packet and all 23 budgets are retained in the bundle.
+Peak sampled process-tree RSS: 489468 KiB (478.00 MiB).
+Parent maximum RSS: 210784 KiB; minimum MemAvailable: 3451468 KiB.
+Heavy commands used nice -n 10, tools/guard.py, the pinned interpreter and
+SYMPY_GROUND_TYPES=python. The guard gives actual niceness 19 with this outer nice call.
+A separate small checker workflow overlapped part of the sample under an additional
+600000000-byte address-space cap. Its B9 checker peaked at a small fraction of that cap.
+No resource stop occurred. Desktop contention is one source of forecast uncertainty.
+The 33-minute sample was not quick, so the optional 1000-graph expansion was not run.
+
+Stage                  attempts  direct E  direct R  decisions incl propagation  wall seconds
+tu                          200         0         3                            3         1.639
+extension                   170       140         0                          167        22.727
+rebase                       30         8         0                            8        29.641
+lattice                      22         2         0                            2         3.672
+host                         20         0         0                            0         0.136
+tree                         20         0         0                            0        18.668
+null                         20         0         0                            0        53.973
+real                         20         0         0                            0        54.521
+msolve                       20         1         0                            1        77.939
+portfolio                    19         0         0                            0       178.569
+esc-extension                19         0         0                            0         5.707
+esc-numeric                  19        11         0                           11       576.747
+esc-branch                    8         0         0                            0        31.578
+esc-msolve                    8         2         0                            2       469.619
+esc-rebase                    6         0         0                            0        16.094
+esc-saturated                 5         4         0                            5        70.088
+esc-saved                     1         0         0                            0         0.038
+esc-tree                      1         0         0                            0         5.944
+esc-targeted                  1         0         0                            0        59.638
+esc-null                      1         0         0                            0        59.887
+esc-real                      1         0         0                            0        59.840
+esc-pins                      1         0         0                            0        18.932
+esc-components                1         0         0                            0       179.674
+Wall seconds include warmup, independent checks and propagation within each stage.
+metrics.json also records proposal/attempt seconds separately. Remaining total time
+includes index validation, export and final frozen sample replay.
+
+Final-source validation and reproducibility
+
+The full measurement is bound to its exact job.json sources, retained in the source tar.
+While it ran, only new files were hardened: stream-format/duplicate-key refusal, manifest
+and lock handling for initialization/export resume, explicit gadget/algorithm pins, the
+scheduler scan of newly accepted seeds, and a rebase candidate correction. A cycle loses
+biconnectivity on vertex deletion but regains it after adding the missing end edge; those
+alternative bases are now visited. Tests prove this and the n=10/11 framed dimensions.
+This is an explicit revision distinction, not a claim that the final source had the exact
+full-sample timing above. Final sources reran the SAME 200 graphs through the cheap policy:
+176 embedded, 3 refuted, 21 UNKNOWN in 45.454656 seconds, with GP11 sample replay ACCEPT.
+All 179 final cheap decisions agree with the full sample. The final cheap run did not
+resolve the full sample's one UNKNOWN. The full policy was not rerun on the final revision.
+Resuming that final-source 200-graph job preserved all seven mathematical artifacts byte
+for byte. Its second invocation timing is operational and is not the 45-second fresh time.
+The earlier two-shard 12-graph workflow also passed real resume/replay/assembly tests,
+missing/duplicate assignment and corruption reds, and refused to complete a sample as B10.
+The cloud script ran locally on one graph with CONTROL51_JOBS=1 and CONTROL51_PUSH=0:
+exit 0, one checked embedding, no unknowns, no commit or push. Bash syntax passed.
+
+Checker prerequisites
+
+All eight required B10 prerequisites were materialized with portable relative input paths
+and replayed successfully by the GP11 profile: B4p..B9p, named and regressions.
+Their total checker time was 1526.910 seconds; B9p alone was 1511.399.
+The complete tree, reports and logs are in control51-checker-prerequisites.tar.gz.
+These historical prerequisites, including named order-ten certificates, are checker-side
+only. They were not bases. No old root B10 records were extracted. The final B10 checker
+replays these prerequisites again. Their replay does not newly run GP11 lower-order producers.
+
+Cloud runbook and estimated cost
+
+CONTROL51-RUNBOOK.txt supplies apt/pip setup, 128 hash shards on four-core/15 GB workers,
+resume and return commands, splitting oversized shards, exact union assembly and overlays.
+Assembly requires every frozen B10 string exactly once in the assignment union. It then
+writes one B10 run, replays records and prepares the controls tree. Completion is an
+explicit unchanged gp11check.py B10_RUN --require-complete-b10 invocation.
+Ideal first-wave worker cost: (2005.999815 + 6.472502) * 33162 / (200 * 4 * 3600)
+  = 23.173 four-core machine-hours.
+Small serial intake extrapolation: 3.546448 * 33162 / (12 * 3600) = 2.722 machine-hours.
+This sparse 12-graph intake sample is only a planning approximation. The documented
+workflow also creates/checks the eight prerequisites, performs an ordinary complete-input
+B10 replay during assembly, and repeats with the explicit completeness flag. Using the
+historical 3156 seconds per full B10 replay, including that replay's nested controls:
+  coordinator scenario = 4.900 hours; first wave plus coordinator = 28.073.
+Plan about 40 four-core machine-hours for that wave and coordinator, EXCLUDING residue
+and analyst work. Multiply by the applicable hourly worker price; no rate was supplied.
+The forecast is desktop-derived, assumes good four-lane utilization, and is not measured
+cloud throughput. Proof sizes, shard tails and the final rebase change can alter costs.
+One UNKNOWN in 200 projects very roughly to 165.8 survivors, with substantial sampling uncertainty.
+The one survivor used 630.989 proposal seconds; an identical repeat of that projected residue
+would consume about 7.266 extra ideal worker hours, with no expected
+benefit from merely repeating identical deterministic search. Review stronger producers
+or analyst certificates under the same withheld-answer boundary, return new checked
+bundles, assemble disjoint UNKNOWN overlays and rerun the complete profile.
+
+Not done and limits
+
+No full B10 producer or complete B10 checker was run on the desktop. No cloud rollout
+was executed. No new B10 COMPLETE PASS is claimed. The one sample UNKNOWN is unresolved.
+No currency bill, completion probability or final full-run residue count is established.
+Only the checker's own PASS B10 COMPLETE derived=324 line together with its B10 report
+(unknown 0, conditional false, direct_rejections 0 and exact derived-list comparison)
+can close control 5.1. A producer count, sample ACCEPT, or historical checker replay cannot.

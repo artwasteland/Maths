@@ -1,0 +1,14 @@
+{
+  "cycle_rebase": {
+    "eligible_B9_bases": 10,
+    "status": "PASS"
+  },
+  "msolve_order_10": {
+    "k": 7,
+    "status": "PASS"
+  },
+  "msolve_order_11": {
+    "k": 8,
+    "status": "PASS"
+  }
+}

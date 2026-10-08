@@ -1,0 +1,23 @@
+{
+  "checker_status": "ACCEPT",
+  "counts": {
+    "embedded": 1977,
+    "refuted": 19,
+    "unknown": 4
+  },
+  "final_replay_seconds": 236.47419451922178,
+  "minimum_available_kib": 5057572,
+  "parent_max_rss_kib": 392780,
+  "payload_bytes": 3036295,
+  "serial_coordinator_four_core_machine_hours": 60.38666937946885,
+  "status": "PASS",
+  "unchanged_known_certificates": 2000,
+  "unchanged_unknown_frontier": true,
+  "unknown_stage_histories": {
+    "JSO@]OSDjB?": 26,
+    "J_?gkpAYHb?": 26,
+    "J`C@KHIB^a?": 26,
+    "JqM??CNGqg_": 26
+  },
+  "wall_seconds": 968.9687269497663
+}

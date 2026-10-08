@@ -1,0 +1,27 @@
+{
+  "censored": false,
+  "command": [
+    "<repo>/pyenv-gp10/bin/python",
+    "-B",
+    "<repo>/b11-endgame/B11-final-1/source/research/gp-11/tools/guard.py",
+    "--",
+    "<repo>/pyenv-gp10/bin/python",
+    "-B",
+    "<repo>/b11-endgame/B11-final-1/source/research/gp-11/check/gp11check.py",
+    "<repo>/b11-endgame/B11-final-1",
+    "--b11-sha256",
+    "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f"
+  ],
+  "exit": 0,
+  "memory_floor_events": 0,
+  "min_available_kib": 60857068,
+  "peak_process_rss_kib": 509100,
+  "reason": "completed",
+  "sampled_peak_tree_rss_kib": 712496,
+  "sampled_scratch_high_water_bytes": 120688920,
+  "sampled_tree_cpu_seconds": 104802.47,
+  "sampling": "250 ms RSS/CPU, 1 s logical scratch bytes; lower bounds, exited children may be missed",
+  "system_cpu_seconds": 164.71,
+  "user_cpu_seconds": 104912.28,
+  "wall_seconds": 105408.82285383999
+}

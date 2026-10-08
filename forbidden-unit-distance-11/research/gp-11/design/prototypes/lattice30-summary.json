@@ -1,0 +1,14 @@
+{
+  "method": "lattice30",
+  "cap": 0.5,
+  "count": 94,
+  "counts": {
+    "unknown": 94
+  },
+  "extra": {},
+  "seconds": 29.448464726097882,
+  "max_rss_kib": 213024,
+  "min_MemAvailable_kib": 4111028,
+  "cpu_self": 30.023871,
+  "cpu_children": 0.0011099999999999999
+}

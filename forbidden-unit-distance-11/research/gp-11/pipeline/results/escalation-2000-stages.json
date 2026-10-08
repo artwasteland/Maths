@@ -1,0 +1,462 @@
+[
+  {
+    "counts": {
+      "embedded": 0,
+      "refuted": 0,
+      "unknown": 2000
+    },
+    "eligible": 2000,
+    "event": "stage_start",
+    "stage": "tu"
+  },
+  {
+    "attempted": 2000,
+    "counts": {
+      "embedded": 0,
+      "refuted": 13,
+      "unknown": 1987
+    },
+    "event": "stage_complete",
+    "stage": "tu"
+  },
+  {
+    "counts": {
+      "embedded": 0,
+      "refuted": 13,
+      "unknown": 1987
+    },
+    "eligible": 1987,
+    "event": "stage_start",
+    "stage": "extension"
+  },
+  {
+    "attempted": 1566,
+    "counts": {
+      "embedded": 1839,
+      "refuted": 13,
+      "unknown": 148
+    },
+    "event": "stage_complete",
+    "stage": "extension"
+  },
+  {
+    "counts": {
+      "embedded": 1839,
+      "refuted": 13,
+      "unknown": 148
+    },
+    "eligible": 148,
+    "event": "stage_start",
+    "stage": "rebase"
+  },
+  {
+    "attempted": 148,
+    "counts": {
+      "embedded": 1908,
+      "refuted": 13,
+      "unknown": 79
+    },
+    "event": "stage_complete",
+    "stage": "rebase"
+  },
+  {
+    "counts": {
+      "embedded": 1908,
+      "refuted": 13,
+      "unknown": 79
+    },
+    "eligible": 79,
+    "event": "stage_start",
+    "stage": "lattice"
+  },
+  {
+    "attempted": 77,
+    "counts": {
+      "embedded": 1936,
+      "refuted": 13,
+      "unknown": 51
+    },
+    "event": "stage_complete",
+    "stage": "lattice"
+  },
+  {
+    "counts": {
+      "embedded": 1936,
+      "refuted": 13,
+      "unknown": 51
+    },
+    "eligible": 51,
+    "event": "stage_start",
+    "stage": "host"
+  },
+  {
+    "attempted": 51,
+    "counts": {
+      "embedded": 1939,
+      "refuted": 13,
+      "unknown": 48
+    },
+    "event": "stage_complete",
+    "stage": "host"
+  },
+  {
+    "counts": {
+      "embedded": 1939,
+      "refuted": 13,
+      "unknown": 48
+    },
+    "eligible": 48,
+    "event": "stage_start",
+    "stage": "tree"
+  },
+  {
+    "attempted": 48,
+    "counts": {
+      "embedded": 1939,
+      "refuted": 15,
+      "unknown": 46
+    },
+    "event": "stage_complete",
+    "stage": "tree"
+  },
+  {
+    "counts": {
+      "embedded": 1939,
+      "refuted": 15,
+      "unknown": 46
+    },
+    "eligible": 46,
+    "event": "stage_start",
+    "stage": "null"
+  },
+  {
+    "attempted": 46,
+    "counts": {
+      "embedded": 1939,
+      "refuted": 15,
+      "unknown": 46
+    },
+    "event": "stage_complete",
+    "stage": "null"
+  },
+  {
+    "counts": {
+      "embedded": 1939,
+      "refuted": 15,
+      "unknown": 46
+    },
+    "eligible": 46,
+    "event": "stage_start",
+    "stage": "real"
+  },
+  {
+    "attempted": 46,
+    "counts": {
+      "embedded": 1939,
+      "refuted": 15,
+      "unknown": 46
+    },
+    "event": "stage_complete",
+    "stage": "real"
+  },
+  {
+    "counts": {
+      "embedded": 1939,
+      "refuted": 15,
+      "unknown": 46
+    },
+    "eligible": 46,
+    "event": "stage_start",
+    "stage": "msolve"
+  },
+  {
+    "attempted": 46,
+    "counts": {
+      "embedded": 1944,
+      "refuted": 15,
+      "unknown": 41
+    },
+    "event": "stage_complete",
+    "stage": "msolve"
+  },
+  {
+    "counts": {
+      "embedded": 1944,
+      "refuted": 15,
+      "unknown": 41
+    },
+    "eligible": 41,
+    "event": "stage_start",
+    "stage": "portfolio"
+  },
+  {
+    "attempted": 41,
+    "counts": {
+      "embedded": 1944,
+      "refuted": 15,
+      "unknown": 41
+    },
+    "event": "stage_complete",
+    "stage": "portfolio"
+  },
+  {
+    "counts": {
+      "embedded": 1944,
+      "refuted": 15,
+      "unknown": 41
+    },
+    "eligible": 41,
+    "event": "stage_start",
+    "stage": "esc-extension"
+  },
+  {
+    "attempted": 41,
+    "counts": {
+      "embedded": 1949,
+      "refuted": 15,
+      "unknown": 36
+    },
+    "event": "stage_complete",
+    "stage": "esc-extension"
+  },
+  {
+    "counts": {
+      "embedded": 1949,
+      "refuted": 15,
+      "unknown": 36
+    },
+    "eligible": 36,
+    "event": "stage_start",
+    "stage": "esc-numeric"
+  },
+  {
+    "attempted": 36,
+    "counts": {
+      "embedded": 1955,
+      "refuted": 15,
+      "unknown": 30
+    },
+    "event": "stage_complete",
+    "stage": "esc-numeric"
+  },
+  {
+    "counts": {
+      "embedded": 1955,
+      "refuted": 15,
+      "unknown": 30
+    },
+    "eligible": 30,
+    "event": "stage_start",
+    "stage": "esc-branch"
+  },
+  {
+    "attempted": 30,
+    "counts": {
+      "embedded": 1955,
+      "refuted": 15,
+      "unknown": 30
+    },
+    "event": "stage_complete",
+    "stage": "esc-branch"
+  },
+  {
+    "counts": {
+      "embedded": 1955,
+      "refuted": 15,
+      "unknown": 30
+    },
+    "eligible": 30,
+    "event": "stage_start",
+    "stage": "esc-msolve"
+  },
+  {
+    "attempted": 30,
+    "counts": {
+      "embedded": 1958,
+      "refuted": 15,
+      "unknown": 27
+    },
+    "event": "stage_complete",
+    "stage": "esc-msolve"
+  },
+  {
+    "counts": {
+      "embedded": 1958,
+      "refuted": 15,
+      "unknown": 27
+    },
+    "eligible": 27,
+    "event": "stage_start",
+    "stage": "esc-rebase"
+  },
+  {
+    "attempted": 27,
+    "counts": {
+      "embedded": 1958,
+      "refuted": 15,
+      "unknown": 27
+    },
+    "event": "stage_complete",
+    "stage": "esc-rebase"
+  },
+  {
+    "counts": {
+      "embedded": 1958,
+      "refuted": 15,
+      "unknown": 27
+    },
+    "eligible": 27,
+    "event": "stage_start",
+    "stage": "esc-saturated"
+  },
+  {
+    "attempted": 27,
+    "counts": {
+      "embedded": 1977,
+      "refuted": 15,
+      "unknown": 8
+    },
+    "event": "stage_complete",
+    "stage": "esc-saturated"
+  },
+  {
+    "counts": {
+      "embedded": 1977,
+      "refuted": 15,
+      "unknown": 8
+    },
+    "eligible": 8,
+    "event": "stage_start",
+    "stage": "esc-saved"
+  },
+  {
+    "attempted": 8,
+    "counts": {
+      "embedded": 1977,
+      "refuted": 15,
+      "unknown": 8
+    },
+    "event": "stage_complete",
+    "stage": "esc-saved"
+  },
+  {
+    "counts": {
+      "embedded": 1977,
+      "refuted": 15,
+      "unknown": 8
+    },
+    "eligible": 8,
+    "event": "stage_start",
+    "stage": "esc-tree"
+  },
+  {
+    "attempted": 8,
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "event": "stage_complete",
+    "stage": "esc-tree"
+  },
+  {
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "eligible": 4,
+    "event": "stage_start",
+    "stage": "esc-targeted"
+  },
+  {
+    "attempted": 4,
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "event": "stage_complete",
+    "stage": "esc-targeted"
+  },
+  {
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "eligible": 4,
+    "event": "stage_start",
+    "stage": "esc-null"
+  },
+  {
+    "attempted": 4,
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "event": "stage_complete",
+    "stage": "esc-null"
+  },
+  {
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "eligible": 4,
+    "event": "stage_start",
+    "stage": "esc-real"
+  },
+  {
+    "attempted": 4,
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "event": "stage_complete",
+    "stage": "esc-real"
+  },
+  {
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "eligible": 4,
+    "event": "stage_start",
+    "stage": "esc-pins"
+  },
+  {
+    "attempted": 4,
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "event": "stage_complete",
+    "stage": "esc-pins"
+  },
+  {
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "eligible": 4,
+    "event": "stage_start",
+    "stage": "esc-components"
+  },
+  {
+    "attempted": 4,
+    "counts": {
+      "embedded": 1977,
+      "refuted": 19,
+      "unknown": 4
+    },
+    "event": "stage_complete",
+    "stage": "esc-components"
+  }
+]

@@ -1,0 +1,2 @@
+REJECT record DJ[ schema: integer must be an integer
+REJECT run records_rejected

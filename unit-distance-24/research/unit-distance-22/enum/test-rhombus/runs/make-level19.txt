@@ -1,0 +1,7 @@
+(19,45): 8695 parents, 4769 children, k = 4: 4769 after reach; udenum cpu 128.22253
+(19,46): 41 parents, 34 children, k = 3: 34 after reach; udenum cpu 0.517781
+(19,47): no parent file <scratch>/scratchpad/rh65/w1/d-19-47.parents.g6
+(19,48): no parent file <scratch>/scratchpad/rh65/w1/d-19-48.parents.g6
+(19,49): no parent file <scratch>/scratchpad/rh65/w1/d-19-49.parents.g6
+(19,50): no parent file <scratch>/scratchpad/rh65/w1/d-19-50.parents.g6
+level 19: 4803 children, 4803 after reach, 2333 TU-kept (descent log: 4803 written, 2333 kept); sample of 1500 written to samples/w1-measure-19.g6

@@ -1,0 +1,28 @@
+{
+  "files_sha256": {
+    "research/gp-10/check/gp10check.py": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "research/gp-10/drive/graph6.py": "2903d82757c302e057efe93a2a1aa328567ed62bdb1eba8d268c6616319a96f3",
+    "research/gp-11/embed/.gitignore": "5a40d15b99cdab1f8564570fe9cfe66eb8ed6a2b30dc6cfc1354bf7ec1e9ef51",
+    "research/gp-11/embed/EXTEND-REPORT.txt": "d3069fc60d16b91f2b25b1bba50dac00070ed70a435247c790c2df39d7d8d33c",
+    "research/gp-11/embed/EXTEND-RUNBOOK.txt": "c7cabe38fe43b68dcc79e86308389e10955052439bbaa6034d7935c8f52be781",
+    "research/gp-11/embed/extend.py": "879c37a147b3bd28ed51d975ed63f76124ed9af25aea72564a8e4e8538bccb40",
+    "research/gp-11/embed/extend_run.py": "9e1c16e78416890d96474d5e92a15c5cf4d82a3af82ecbc7eb76e1fb53fdd2e7",
+    "research/gp-11/embed/extension.gp": "125b56a9f77811a601666e589bf72c73ced1f6d71cc57d86e117606a77fcdc7d",
+    "research/gp-11/embed/index.py": "90d8595249be4eee109a274fecf52709eb3e7cb468164c919f0bdd8b50d825ea",
+    "research/gp-11/embed/measure_extension.py": "eab0e5063edff697922009c7a120d84cc34247f8685c71af7a1f3f17883c30f2",
+    "research/gp-11/embed/results/extension/controls.log": "e0d65f0b366cb313983a31a06cd731adb6c245fdcd0962d63190540d433c7ccb",
+    "research/gp-11/embed/results/extension/environment.json": "5f8a6b70d7fb5254beee21b8b287a466e218d00b08d129446cd6fa940abaf600",
+    "research/gp-11/embed/results/extension/measurements.json": "dc0316c92fe06375a92c4c972bfda9586cd29aa9df9608dcea96f04ef05ac99d",
+    "research/gp-11/embed/results/extension/stream-controls.log": "fad41f1cbfff95f2989d16c3ab418cfab049b215c07c4218d571f24abf67b8bc",
+    "research/gp-11/embed/test_extend.py": "a6999923afd4038c7f8ae851f99730be69ee1ca873c496dd88c79567e777dde1",
+    "research/gp-11/embed/test_extend_stream.py": "74e249903fffcad5aec372f9b91f43e4d41a5e8d9c9f05c7ac4b68952ad87105"
+  },
+  "validation": {
+    "both_draws_reconstructed": true,
+    "both_payloads_under_45_mb": true,
+    "both_samples_frozen_checker_accept": true,
+    "core_test_groups": 9,
+    "source_hashes_match_both_jobs": true,
+    "stream_test_groups": 1
+  }
+}

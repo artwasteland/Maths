@@ -1,0 +1,1 @@
+{"accepted_endpoint_propagated_after_parent_failure":true,"failed_task_record":"checker:MemoryError","initial_memory_floor_exit":75,"next_decided_task_skipped":true,"oversized_valid_json":"record_size_cap","positive_after":"ACCEPT","raw_unknown_reason_and_budget_preserved":true,"status":"PASS"}

@@ -1,0 +1,2267 @@
+{
+ "about": {
+  "tool": "research/unit-distance-23/tools/write_result.py",
+  "tool_sha256": "dff9f63df919cf2774e9d512da12925df8c9df97b90c4e604c6a035ed61ddf30",
+  "generated_utc": "2026-09-28T23:53:17Z",
+  "note": "every value of RESULT-u23.md, with its source; decision, lint: this generator's outputs, recomputed from the values on every render"
+ },
+ "sources": {
+  "aggregate": {
+   "command": "/usr/bin/python3 <repo>/research/unit-distance-23/tools/aggregate_fleet.py --root <scratch>/scratchpad/fleet/results --self-check --out <repo>/research/unit-distance-23/results/u23/result-inputs/aggregate.json",
+   "cwd": ".",
+   "exit": 0,
+   "stdout": "research/unit-distance-23/results/u23/result-inputs/aggregate.md",
+   "started_utc": "2026-09-28T23:17:11Z",
+   "seconds": 41.4,
+   "json_path": "research/unit-distance-23/results/u23/result-inputs/aggregate.json",
+   "sha256": "c3db272baa6582c89393928db0a194a3d9a69826006a854301bf03504db71e05"
+  },
+  "top_level_check": {
+   "command": "/usr/bin/python3 <repo>/research/unit-distance-23/tools/top_level_check.py <scratch>/scratchpad/fleet/results --self-test",
+   "cwd": ".",
+   "exit": 0,
+   "stdout": "research/unit-distance-23/results/u23/result-inputs/top-level-check.txt",
+   "started_utc": "2026-09-28T23:17:53Z",
+   "seconds": 13.8,
+   "sha256": "be53a38ea98187d0bd0459c250c918165bdf2f6fb2c256d41b283894ed8d850c"
+  },
+  "blind_check": {
+   "command": "/usr/bin/python3 <repo>/research/unit-distance-23/tools/blind_check.py",
+   "cwd": ".",
+   "exit": 0,
+   "stdout": "research/unit-distance-23/results/u23/result-inputs/blind-check.txt",
+   "started_utc": "2026-09-28T23:52:53Z",
+   "seconds": 1.4,
+   "sha256": "6c18f4243ccd85a52db6f9ec0a65e32852fe5a300b9a2f6e917f8e47dd2e21cc"
+  },
+  "level22_control": {
+   "command": "/usr/bin/python3 <repo>/research/unit-distance-23/tools/level22_control.py <scratch>/scratchpad/fleet/results --self-test",
+   "cwd": ".",
+   "exit": 0,
+   "stdout": "research/unit-distance-23/results/u23/result-inputs/level22-control.txt",
+   "started_utc": "2026-09-28T23:18:07Z",
+   "seconds": 0.1,
+   "sha256": "a772dbdd7dc41ce681c672390467c41e006c998b7703344dea5e8e3559ac2e94"
+  },
+  "verify_sample": {
+   "command": "/usr/bin/python3 <repo>/research/unit-distance-23/tools/verify_sample.py --verify-root <scratch>/scratchpad/fleet/verify-results --root <scratch>/scratchpad/fleet/results",
+   "cwd": ".",
+   "exit": 0,
+   "stdout": "research/unit-distance-23/results/u23/result-inputs/verify-sample.txt",
+   "started_utc": "2026-09-28T23:18:07Z",
+   "seconds": 18.7,
+   "sha256": "f4f15a63d569537e5d4fb68aef3926998a53da6fec46bb7eebaa51915d330136"
+  },
+  "audit": {
+   "command": "/usr/bin/python3 <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/fleet-audit.py --root <scratch>/scratchpad/fleet/results",
+   "cwd": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180",
+   "exit": 3,
+   "stdout": "research/unit-distance-23/results/u23/result-inputs/fleet-audit.txt",
+   "started_utc": "2026-09-28T23:52:54Z",
+   "seconds": 21.3,
+   "sha256": "14603299d8c127d4476e5a32a8edec520dffc405ebd549ce20e7aef5af311570",
+   "worktree": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180",
+   "worktree_head": "34f0dcb9ba7c980c9931b1374a8a57a8f762edd0",
+   "worktree_branch": "claude/answering-alexeev-u22-g5",
+   "worktree_dirty": "",
+   "fleet_audit_sha256": "5b6cf12702e959d141fed43ea37b08602ab5567673bb0b4063f774981794a372",
+   "verify_chain_sha256": "d253338569dedb41740cdb4774a6a361f6498f036787a52c3f985caca5d6ddd8"
+  },
+  "control22": {
+   "command": "/usr/bin/python3 <repo>/research/unit-distance-23/tools/target_check.py --root <scratch>/scratchpad/control22-snap-20260927T133144 --target 22 61 --root-k 5 --no-ubar --expect-empty --self-test",
+   "cwd": ".",
+   "exit": 0,
+   "stdout": "research/unit-distance-23/results/u23/result-inputs/control22-check.txt",
+   "started_utc": "2026-09-28T23:18:25Z",
+   "seconds": 886.4,
+   "sha256": "213c769bdac01f899f115a37b6063f1d9c780b6c0664d8378163c85da25f7b66"
+  },
+  "calib2157": {
+   "command": "/usr/bin/python3 <repo>/research/unit-distance-23/tools/target_check.py --root <scratch>/scratchpad/calib-snap --target 21 57 --sub calib-21-57 --root-k 3 --known <repo>/research/unit-distance-22/sources/engel-dataset/engel-21-57.g6 --self-test",
+   "cwd": ".",
+   "exit": 0,
+   "stdout": "research/unit-distance-23/results/u23/result-inputs/calib2157-check.txt",
+   "started_utc": "2026-09-28T23:33:12Z",
+   "seconds": 719.1,
+   "sha256": "33f1d3b15854ce5905993749fd9e29a39d279d169e960acac44d089f539f53ac"
+  },
+  "verify_all": {
+   "command": "/usr/bin/python3 <repo>/research/unit-distance-23/tools/verify_sample.py --all --verify-root <scratch>/scratchpad/verify-all-snap-20260928T113031 --root <scratch>/scratchpad/fleet/results",
+   "cwd": ".",
+   "exit": 0,
+   "stdout": "research/unit-distance-23/results/u23/result-inputs/verify-all.txt",
+   "started_utc": "2026-09-28T23:45:11Z",
+   "seconds": 354.1,
+   "sha256": "22e09404ef282689a689e1b95e3110532aadf5cf7b423ca332cf3a32dc11e224"
+  },
+  "g4_scope": {
+   "command": "/usr/bin/python3 <repo>/research/unit-distance-23/tools/target_check.py --root <scratch>/scratchpad/fleet/results --target 23 65 --root-k 5 --scope-only",
+   "cwd": ".",
+   "exit": 0,
+   "stdout": "research/unit-distance-23/results/u23/result-inputs/g4-scope.txt",
+   "started_utc": "2026-09-28T23:51:05Z",
+   "seconds": 107.1,
+   "sha256": "d6fb19f99bc1bb7d1e952d31bde1cb052aa582ffc37b12d95ea03520cb46e00c",
+   "expected_copies": [
+    1955,
+    "15fdb9599e746e6751af9da2bd4df01390ff44fbe83c6977ee377ddea665a946"
+   ],
+   "root_labels": [
+    1955,
+    "3aa6c257292258283acb540e6f3532dddbd6512fc24ddb8f98dfbf1db04a1029"
+   ]
+  },
+  "g5": {
+   "ref": "origin/claude/answering-alexeev-u22-g5",
+   "commit": "34f0dcb9ba7c980c9931b1374a8a57a8f762edd0",
+   "round9_path": "research/unit-distance-23/results/g5-cross-model-2026-09-26/G5-round9-read-gpt-6-astra.md",
+   "closure_path": "research/unit-distance-23/results/g5-cross-model-2026-09-26/G5-closure-read-gpt-6-astra.md"
+  },
+  "contract": {
+   "path": "research/unit-distance-23/CONTRACT.md",
+   "sha256": "f837180d3535c4c14a190965a929b867f1c14ab3bd388d9b93f36ad6ef407bee"
+  },
+  "jobs": {
+   "path": "coordination/cloud-workers/JOBS.md",
+   "sha256": "21f0fba907a61f22822ef78d88ec1357aa7a3450f050a58fdb947378f492de1b"
+  },
+  "records": {
+   "50": "research/unit-distance-23/results/u23/top-level/s50of1920"
+  },
+  "root": {
+   "path": "<scratch>/scratchpad/fleet/results",
+   "before": {
+    "files": 7820,
+    "sha256": "81e046a9d3efda0ced27a158fe2bf7442ad73f41005b081bd6477500d005ce3f",
+    "utc": "2026-09-28T23:17:11Z"
+   },
+   "after": {
+    "files": 7820,
+    "sha256": "81e046a9d3efda0ced27a158fe2bf7442ad73f41005b081bd6477500d005ce3f",
+    "utc": "2026-09-28T23:53:17Z"
+   }
+  },
+  "repo": {
+   "head": "7d3c47693cf2d4a6e556c83b85fe2d9f6a1ab977",
+   "branch": "claude/answering-alexeev-u22",
+   "tools_sha256": {
+    "write_result.py": "dff9f63df919cf2774e9d512da12925df8c9df97b90c4e604c6a035ed61ddf30",
+    "aggregate_fleet.py": "4691dd2c0f4615e623dfbd8e85d2afe6942c352e901d414b74be38cdafde0865",
+    "top_level_check.py": "d71029d513c8f1c78df18768c6b6c1dc982436acdc5ccca95f5ddd5587cd2f9a",
+    "level22_control.py": "802712c40ebfff1127bd5e4e2d8948f56b102be855b494445f991b0428a3fc0d",
+    "verify_sample.py": "01583cad06975c0ddf8ad5c14069b0e9a8f6cf8ba3dbc1935318cedd4d440454",
+    "fleet_status.py": "aaba36e122ac4f92c6d3999ce716b38c13f75db6c6e37390de9fcf2e14e25d36"
+   },
+   "tools_dirty": ""
+  }
+ },
+ "constants": {
+  "point6_sample_percent": {
+   "value": "2.5",
+   "from": "the supervisor's statement of the pending options for GPT's point 6 (a parameter of a proposal, not a tool output)"
+  },
+  "control22_cell": {
+   "value": "(22,61)",
+   "from": "CONTRACT Section 4.1, the (22,61) tree again (JOBS.md, u23-control22)"
+  },
+  "control22_root_k": {
+   "value": "5",
+   "from": "Lemma D4, the (22,61) root minimum degree (run-dag2.py ROOT_K_LEMMAS)"
+  },
+  "calib_cell": {
+   "value": "(21,57)",
+   "from": "CONTRACT Section 4.3, the (21,57) calibration (JOBS.md, u23-calib2157)"
+  },
+  "calib_root_k": {
+   "value": "3",
+   "from": "Schade's bound at (21,57): 57 - u-bar(20) = 57 - 54"
+  },
+  "calib_known": {
+   "value": "five",
+   "from": "engel-21-57.g6: AMP's extremal (21,57) graphs, five of them"
+  }
+ },
+ "v": {
+  "plan.kind": {
+   "value": "23-65-L12-tri-pf74",
+   "from": "aggregate.json: plan.kind"
+  },
+  "plan.slices": {
+   "value": 1920,
+   "from": "aggregate.json: plan.slices"
+  },
+  "plan.workers": {
+   "value": 96,
+   "from": "aggregate.json: plan.workers"
+  },
+  "plan.slice_level": {
+   "value": 12,
+   "from": "aggregate.json: plan.slice_level"
+  },
+  "plan.target": {
+   "value": [
+    23,
+    65
+   ],
+   "from": "aggregate.json: plan.target"
+  },
+  "plan.slices_per_worker": {
+   "value": 20,
+   "from": "plan.slices // plan.workers"
+  },
+  "agg.generated_utc": {
+   "value": "2026-09-28T23:17:53Z",
+   "from": "aggregate.json: generated_utc"
+  },
+  "agg.root": {
+   "value": "<scratch>/scratchpad/fleet/results",
+   "from": "aggregate.json: root"
+  },
+  "agg.final": {
+   "value": true,
+   "from": "aggregate.json: final"
+  },
+  "agg.problems": {
+   "value": [],
+   "from": "aggregate.json: problems"
+  },
+  "agg.exit": {
+   "value": 0,
+   "from": "the aggregate_fleet.py run's exit status"
+  },
+  "agg.self_check": {
+   "value": [
+    {
+     "check": "coverage",
+     "ok": true,
+     "what": "complete 1,920 + missing 0 = 1,920, each of 0..1,919 once"
+    },
+    {
+     "check": "cell_partition",
+     "ok": true,
+     "what": "kept + pruned = children - reach-dropped in all 117,120 cells above level 12 of 1,920 slices (reach dropped 0 there, per run-summary.json)"
+    },
+    {
+     "check": "pruned_by_kind",
+     "ok": true,
+     "what": "pruned = tu + tri_tu + tri_refuted + refuted in every such cell"
+    },
+    {
+     "check": "counts_vs_summary",
+     "ok": true,
+     "what": "counts.json = run-summary.json (children and prune counts, every cell) in 1,920 chosen copies"
+    },
+    {
+     "check": "counts_vs_files",
+     "ok": true,
+     "what": "36,480 record counts of the shipped level files (hashes.json, the target's keep file, the prune manifests' counts and verified_counts) = counts.json"
+    },
+    {
+     "check": "totals",
+     "ok": true,
+     "what": "every count summed per slice = per cell = per level (13 keys), and the target cell"
+    },
+    {
+     "check": "copies_agree",
+     "ok": true,
+     "what": "the 35 slices with several complete copies: every copy's counts.json rows, shipped level files and kept graphs identical"
+    },
+    {
+     "check": "fleet_status",
+     "ok": true,
+     "what": "fleet_status.py's slice_record and selection over the same 1,955 directories: 1,920 slices done, target cell kept 1; per chosen copy the target cell's kept, timing, resumed cells and replay verdict"
+    }
+   ],
+   "from": "aggregate.json: self_check"
+  },
+  "run.seed_n": {
+   "value": 10,
+   "from": "aggregate.json: provenance.run_options.run_summary.seed_n"
+  },
+  "run.root_k": {
+   "value": 5,
+   "from": "aggregate.json: provenance.run_options.run_summary.reach.root_k"
+  },
+  "run.reach_levels": {
+   "value": {
+    "10": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "11": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "12": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27
+    ],
+    "13": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "14": [
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33
+    ],
+    "15": [
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37
+    ],
+    "16": [
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41
+    ],
+    "17": [
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43
+    ],
+    "18": [
+     41,
+     42,
+     43,
+     44,
+     45,
+     46
+    ],
+    "19": [
+     45,
+     46,
+     47,
+     48,
+     49,
+     50
+    ],
+    "20": [
+     50,
+     51,
+     52,
+     53
+    ],
+    "21": [
+     55,
+     56
+    ],
+    "22": [
+     60
+    ],
+    "23": [
+     65
+    ]
+   },
+   "from": "aggregate.json: provenance.run_options.run_summary.reach.levels"
+  },
+  "run.prune_from": {
+   "value": 12,
+   "from": "aggregate.json: provenance.run_options.run_summary.prune.prune_from"
+  },
+  "run.prune_filter_only": {
+   "value": true,
+   "from": "aggregate.json: ...run_summary.prune.prune_filter_only"
+  },
+  "run.forbidden_set": {
+   "value": 398,
+   "from": "aggregate.json: provenance.run_options.run_summary.forbidden_set"
+  },
+  "run.prune_filter_set": {
+   "value": 74,
+   "from": "aggregate.json: provenance.run_options.run_summary.prune_filter_set"
+  },
+  "run.triangles": {
+   "value": true,
+   "from": "aggregate.json: provenance.run_options.run_summary.triangles"
+  },
+  "run.verify_stages": {
+   "value": true,
+   "from": "aggregate.json: provenance.run_options.run_summary.verify_stages"
+  },
+  "run.ubar22": {
+   "value": 60,
+   "from": "aggregate.json: provenance.run_options.run_summary.ubar_override.22.value"
+  },
+  "run.ubar22_builtin": {
+   "value": 62,
+   "from": "aggregate.json: provenance.run_options.run_summary.ubar_override.22.builtin"
+  },
+  "run.prune_tries": {
+   "value": 0,
+   "from": "aggregate.json: provenance.run_options.run_config.prune_tries"
+  },
+  "cov.complete": {
+   "value": 1920,
+   "from": "aggregate.json: coverage.complete"
+  },
+  "cov.missing": {
+   "value": 0,
+   "from": "aggregate.json: coverage.missing"
+  },
+  "cov.missing_slices": {
+   "value": [],
+   "from": "aggregate.json: coverage.missing_slices"
+  },
+  "cov.missing_ranges": {
+   "value": "",
+   "from": "ranges of coverage.missing_slices"
+  },
+  "cov.missing_by_owner": {
+   "value": {},
+   "from": "aggregate.json: coverage.missing_by_plan_owner"
+  },
+  "cov.every_copy_resumed": {
+   "value": [],
+   "from": "aggregate.json: coverage.every_copy_resumed"
+  },
+  "cov.copies_read": {
+   "value": 1955,
+   "from": "aggregate.json: coverage.copies_read"
+  },
+  "cov.copies_skipped": {
+   "value": 0,
+   "from": "len(aggregate.json: coverage.copies_skipped)"
+  },
+  "cov.copies_misfiled": {
+   "value": 0,
+   "from": "len(aggregate.json: coverage.copies_misfiled)"
+  },
+  "cov.copies_unfinished": {
+   "value": 0,
+   "from": "len(aggregate.json: coverage.copies_unfinished)"
+  },
+  "cov.several": {
+   "value": 35,
+   "from": "len(aggregate.json: coverage.several_copies)"
+  },
+  "cov.several_agree": {
+   "value": true,
+   "from": "aggregate.json: coverage.several_copies_agree"
+  },
+  "cov.first_complete": {
+   "value": 0,
+   "from": "min of the slices not in coverage.missing_slices"
+  },
+  "cov.rerun_slices": {
+   "value": [
+    94,
+    253,
+    263,
+    282,
+    453,
+    472,
+    534,
+    579,
+    600,
+    606,
+    835,
+    1227,
+    1354,
+    1405,
+    1735,
+    1773
+   ],
+   "from": "aggregate.json: slices[i]: a copy with resumed_cells > 0, the chosen copy with none"
+  },
+  "cov.rerun_workers": {
+   "value": {
+    "f100-b704du": 4,
+    "f97-t4t9v7": 4,
+    "f98-lqpsag": 4,
+    "f99-wsyxyj": 3
+   },
+   "from": "aggregate.json: provenance.copies_outside_plan_owner"
+  },
+  "cov.refired_tags": {
+   "value": 9,
+   "from": "len(aggregate.json: provenance.worker_tags_with_several_dirs)"
+  },
+  "cov.worker_dirs": {
+   "value": 109,
+   "from": "len(aggregate.json: provenance.workers)"
+  },
+  "cov.worker_dirs_with_copies": {
+   "value": 101,
+   "from": "aggregate.json: provenance.worker_dirs_with_copies"
+  },
+  "tree.kinds": {
+   "value": [
+    "tu",
+    "tri_tu",
+    "tri_refuted",
+    "refuted"
+   ],
+   "from": "aggregate.json: tree.kinds"
+  },
+  "tree.levels": {
+   "value": [
+    {
+     "n": 13,
+     "window": "23..30",
+     "cells_are_window": true,
+     "cells": 8,
+     "children": 17770330,
+     "kept": 14227296,
+     "pruned": 3543034,
+     "by_kind": {
+      "tu": 2649736,
+      "tri_tu": 877724,
+      "tri_refuted": 15574,
+      "refuted": 0
+     },
+     "pct_pruned": 19.9
+    },
+    {
+     "n": 14,
+     "window": "26..33",
+     "cells_are_window": true,
+     "cells": 8,
+     "children": 149368305,
+     "kept": 111094819,
+     "pruned": 38273486,
+     "by_kind": {
+      "tu": 26673717,
+      "tri_tu": 11240806,
+      "tri_refuted": 358963,
+      "refuted": 0
+     },
+     "pct_pruned": 25.6
+    },
+    {
+     "n": 15,
+     "window": "29..37",
+     "cells_are_window": true,
+     "cells": 9,
+     "children": 842594946,
+     "kept": 492690622,
+     "pruned": 349904324,
+     "by_kind": {
+      "tu": 214552374,
+      "tri_tu": 127976366,
+      "tri_refuted": 7375584,
+      "refuted": 0
+     },
+     "pct_pruned": 41.5
+    },
+    {
+     "n": 16,
+     "window": "33..41",
+     "cells_are_window": true,
+     "cells": 9,
+     "children": 1058712809,
+     "kept": 580930642,
+     "pruned": 477782167,
+     "by_kind": {
+      "tu": 251563636,
+      "tri_tu": 211707116,
+      "tri_refuted": 14511415,
+      "refuted": 0
+     },
+     "pct_pruned": 45.1
+    },
+    {
+     "n": 17,
+     "window": "37..43",
+     "cells_are_window": true,
+     "cells": 7,
+     "children": 430213696,
+     "kept": 213648700,
+     "pruned": 216564996,
+     "by_kind": {
+      "tu": 106789432,
+      "tri_tu": 101641378,
+      "tri_refuted": 8134186,
+      "refuted": 0
+     },
+     "pct_pruned": 50.3
+    },
+    {
+     "n": 18,
+     "window": "41..46",
+     "cells_are_window": true,
+     "cells": 6,
+     "children": 148671082,
+     "kept": 69977653,
+     "pruned": 78693429,
+     "by_kind": {
+      "tu": 40355890,
+      "tri_tu": 35233396,
+      "tri_refuted": 3104143,
+      "refuted": 0
+     },
+     "pct_pruned": 52.9
+    },
+    {
+     "n": 19,
+     "window": "45..50",
+     "cells_are_window": true,
+     "cells": 6,
+     "children": 11975593,
+     "kept": 4368436,
+     "pruned": 7607157,
+     "by_kind": {
+      "tu": 3456001,
+      "tri_tu": 3738733,
+      "tri_refuted": 412423,
+      "refuted": 0
+     },
+     "pct_pruned": 63.5
+    },
+    {
+     "n": 20,
+     "window": "50..53",
+     "cells_are_window": true,
+     "cells": 4,
+     "children": 154347,
+     "kept": 75745,
+     "pruned": 78602,
+     "by_kind": {
+      "tu": 38816,
+      "tri_tu": 35515,
+      "tri_refuted": 4271,
+      "refuted": 0
+     },
+     "pct_pruned": 50.9
+    },
+    {
+     "n": 21,
+     "window": "55..56",
+     "cells_are_window": true,
+     "cells": 2,
+     "children": 2026,
+     "kept": 1320,
+     "pruned": 706,
+     "by_kind": {
+      "tu": 360,
+      "tri_tu": 308,
+      "tri_refuted": 38,
+      "refuted": 0
+     },
+     "pct_pruned": 34.8
+    },
+    {
+     "n": 22,
+     "window": "60",
+     "cells_are_window": true,
+     "cells": 1,
+     "children": 30,
+     "kept": 29,
+     "pruned": 1,
+     "by_kind": {
+      "tu": 0,
+      "tri_tu": 0,
+      "tri_refuted": 1,
+      "refuted": 0
+     },
+     "pct_pruned": 3.3
+    },
+    {
+     "n": 23,
+     "window": "65",
+     "cells_are_window": true,
+     "cells": 1,
+     "children": 1,
+     "kept": 1,
+     "pruned": 0,
+     "by_kind": {
+      "tu": 0,
+      "tri_tu": 0,
+      "tri_refuted": 0,
+      "refuted": 0
+     },
+     "pct_pruned": 0.0
+    }
+   ],
+   "from": "aggregate.json: tree.levels (window: run.reach_levels; pct_pruned = 100 * pruned / children)"
+  },
+  "tree.other_totals": {
+   "value": {
+    "input": 2659463165,
+    "survivors": 2013383203,
+    "tri_silent_passes": 0,
+    "tri_survivors": 1487015263,
+    "embedded": 0,
+    "unknown": 1487015263
+   },
+   "from": "aggregate.json: tree.levels[].counts summed, the keys that are not prune verdicts"
+  },
+  "tree.reach_dropped": {
+   "value": 0,
+   "from": "aggregate.json: tree.levels[].reach_dropped summed"
+  },
+  "top.children": {
+   "value": 1,
+   "from": "aggregate.json: top_level.children"
+  },
+  "top.kept": {
+   "value": 1,
+   "from": "aggregate.json: top_level.kept"
+  },
+  "top.pruned": {
+   "value": 0,
+   "from": "aggregate.json: top_level.pruned"
+  },
+  "top.slices_with_children": {
+   "value": [
+    50
+   ],
+   "from": "aggregate.json: top_level.slices_with_children"
+  },
+  "top.records": {
+   "value": [
+    50
+   ],
+   "from": "aggregate.json: top_level.records"
+  },
+  "top.kept_without_record": {
+   "value": [],
+   "from": "aggregate.json: top_level.kept_without_record"
+  },
+  "top.records_dir": {
+   "value": "research/unit-distance-23/results/u23/top-level",
+   "from": "aggregate.json: top_level.records_dir"
+  },
+  "top.slices_kept": {
+   "value": {
+    "50": 1
+   },
+   "from": "aggregate.json: top_level.slices_kept"
+  },
+  "top.kept_graphs": {
+   "value": {
+    "50": [
+     "V?_QPIGD@AGOoHKE_o?Q??HK?WqH@PO_m@CWCaHN_?F_"
+    ]
+   },
+   "from": "aggregate.json: top_level.kept_graphs"
+  },
+  "tlc_agg.verdict": {
+   "value": "TOP-LEVEL OK: 1 slice(s) with kept graphs, 1 cop(ies), 0 problem(s)",
+   "from": "aggregate.json: top_level.top_level_check.verdict"
+  },
+  "tlc_agg.exit": {
+   "value": 0,
+   "from": "aggregate.json: top_level.top_level_check.exit"
+  },
+  "tlc.lines": {
+   "value": [
+    "s50: 1 kept graph(s) in 1 copy; udcheck.py: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15",
+    "s50: 1 kept graph(s) in 1 copy; udcheck398.py: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15",
+    "s50: self-test: udcheck.py rejects a tampered certificate: REJECT: /tmp/tmpwv2mw5uf/23-65.certs.jsonl:1.witness.tree.A: row space is inconsistent with the claimed constraints",
+    "s50: self-test: udcheck398.py rejects a tampered certificate: REJECT: /tmp/tmpwv2mw5uf/23-65.certs.jsonl:1.witness.tree.A: row space is inconsistent with the claimed constraints",
+    "TOP-LEVEL OK: 1 slice(s) with kept graphs, 1 cop(ies), 0 problem(s)"
+   ],
+   "from": "top-level-check.txt: every line"
+  },
+  "tlc.verdict": {
+   "value": "TOP-LEVEL OK: 1 slice(s) with kept graphs, 1 cop(ies), 0 problem(s)",
+   "from": "top-level-check.txt: the TOP-LEVEL line"
+  },
+  "tlc.word": {
+   "value": "OK",
+   "from": "top-level-check.txt: the TOP-LEVEL line's word"
+  },
+  "tlc.slices": {
+   "value": 1,
+   "from": "top-level-check.txt: the TOP-LEVEL line's slices"
+  },
+  "tlc.copies": {
+   "value": 1,
+   "from": "top-level-check.txt: the TOP-LEVEL line's copies"
+  },
+  "tlc.problem_count": {
+   "value": 0,
+   "from": "top-level-check.txt: the TOP-LEVEL line's problem_count"
+  },
+  "tlc.accept": {
+   "value": [
+    {
+     "slice": 50,
+     "graphs": 1,
+     "copies": 1,
+     "checker": "udcheck.py",
+     "line": "ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15"
+    },
+    {
+     "slice": 50,
+     "graphs": 1,
+     "copies": 1,
+     "checker": "udcheck398.py",
+     "line": "ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15"
+    }
+   ],
+   "from": "top-level-check.txt: the per-checker lines"
+  },
+  "tlc.tamper_rejected": {
+   "value": 2,
+   "from": "top-level-check.txt: count of self-test rejects"
+  },
+  "tlc.tamper_no_reason": {
+   "value": 0,
+   "from": "top-level-check.txt: count of self-test rejects with nothing after the colon"
+  },
+  "tlc.tamper_accepted": {
+   "value": 0,
+   "from": "top-level-check.txt: count of self-test accepts"
+  },
+  "tlc.problems": {
+   "value": [],
+   "from": "top-level-check.txt: PROBLEM lines"
+  },
+  "tlc.exit": {
+   "value": 0,
+   "from": "the top_level_check.py run's exit status"
+  },
+  "l22.lines": {
+   "value": [
+    "self-test: with Engel graph 1's form removed from the union, missing = [1]",
+    "self-test: Engel graph 0 with the pair (0,1) flipped is not found",
+    "self-test: Engel graph 1 also placed in a second slice is reported",
+    "Engel file: research/unit-distance-22/sources/engel-dataset/engel-22-60.g6 sha256 c85de7632fbf2513e96405295a0afdd4c67ce25de1d8ba56474c1ed8514c01e6",
+    "Engel (22,60) graphs: 35; required (minimum degree >= 4): 14; kept (22,60) graphs in the fleet: 29 distinct, from 1955 slice copies",
+    "  Engel  1 (min degree 4): found in s50of1920",
+    "  Engel  8 (min degree 4): found in s50of1920",
+    "  Engel  9 (min degree 4): found in s50of1920",
+    "  Engel 10 (min degree 4): found in s50of1920",
+    "  Engel 11 (min degree 4): found in s344of1920",
+    "  Engel 12 (min degree 4): found in s1647of1920",
+    "  Engel 13 (min degree 4): found in s344of1920",
+    "  Engel 14 (min degree 4): found in s1647of1920",
+    "  Engel 15 (min degree 4): found in s50of1920",
+    "  Engel 16 (min degree 4): found in s50of1920",
+    "  Engel 18 (min degree 4): found in s50of1920",
+    "  Engel 21 (min degree 4): found in s344of1920",
+    "  Engel 24 (min degree 4): found in s50of1920",
+    "  Engel 34 (min degree 4): found in s50of1920",
+    "kept (22,60) graphs that are not Engel's: 15 (undecided by the filter-only prune)",
+    "kept (22,60) graphs in more than one slice: 0",
+    "LEVEL-22 CONTROL OK: 14 of 14 required graphs found"
+   ],
+   "from": "level22-control.txt: every line"
+  },
+  "l22.verdict": {
+   "value": "LEVEL-22 CONTROL OK: 14 of 14 required graphs found",
+   "from": "level22-control.txt: the LEVEL-22 CONTROL line"
+  },
+  "l22.word": {
+   "value": "OK",
+   "from": "level22-control.txt: the LEVEL-22 CONTROL line's verdict"
+  },
+  "l22.found": {
+   "value": 14,
+   "from": "level22-control.txt: the LEVEL-22 CONTROL line's found"
+  },
+  "l22.required": {
+   "value": 14,
+   "from": "level22-control.txt: the LEVEL-22 CONTROL line's required"
+  },
+  "l22.cell": {
+   "value": [
+    22,
+    60
+   ],
+   "from": "level22-control.txt: the Engel line's cell"
+  },
+  "l22.engel": {
+   "value": 35,
+   "from": "level22-control.txt: the Engel line's graph count"
+  },
+  "l22.min_degree": {
+   "value": 4,
+   "from": "level22-control.txt: the Engel line's minimum degree"
+  },
+  "l22.required_head": {
+   "value": 14,
+   "from": "level22-control.txt: the Engel line's required count"
+  },
+  "l22.kept_distinct": {
+   "value": 29,
+   "from": "level22-control.txt: the Engel line's distinct kept graphs"
+  },
+  "l22.copies": {
+   "value": 1955,
+   "from": "level22-control.txt: the Engel line's slice copies"
+  },
+  "l22.rows": {
+   "value": [
+    {
+     "index": 1,
+     "min_degree": 4,
+     "slices": [
+      "s50of1920"
+     ]
+    },
+    {
+     "index": 8,
+     "min_degree": 4,
+     "slices": [
+      "s50of1920"
+     ]
+    },
+    {
+     "index": 9,
+     "min_degree": 4,
+     "slices": [
+      "s50of1920"
+     ]
+    },
+    {
+     "index": 10,
+     "min_degree": 4,
+     "slices": [
+      "s50of1920"
+     ]
+    },
+    {
+     "index": 11,
+     "min_degree": 4,
+     "slices": [
+      "s344of1920"
+     ]
+    },
+    {
+     "index": 12,
+     "min_degree": 4,
+     "slices": [
+      "s1647of1920"
+     ]
+    },
+    {
+     "index": 13,
+     "min_degree": 4,
+     "slices": [
+      "s344of1920"
+     ]
+    },
+    {
+     "index": 14,
+     "min_degree": 4,
+     "slices": [
+      "s1647of1920"
+     ]
+    },
+    {
+     "index": 15,
+     "min_degree": 4,
+     "slices": [
+      "s50of1920"
+     ]
+    },
+    {
+     "index": 16,
+     "min_degree": 4,
+     "slices": [
+      "s50of1920"
+     ]
+    },
+    {
+     "index": 18,
+     "min_degree": 4,
+     "slices": [
+      "s50of1920"
+     ]
+    },
+    {
+     "index": 21,
+     "min_degree": 4,
+     "slices": [
+      "s344of1920"
+     ]
+    },
+    {
+     "index": 24,
+     "min_degree": 4,
+     "slices": [
+      "s50of1920"
+     ]
+    },
+    {
+     "index": 34,
+     "min_degree": 4,
+     "slices": [
+      "s50of1920"
+     ]
+    }
+   ],
+   "from": "level22-control.txt: the per-graph lines"
+  },
+  "l22.engel_file": {
+   "value": "research/unit-distance-22/sources/engel-dataset/engel-22-60.g6",
+   "from": "level22-control.txt: the Engel file line's path"
+  },
+  "l22.engel_sha256": {
+   "value": "c85de7632fbf2513e96405295a0afdd4c67ce25de1d8ba56474c1ed8514c01e6",
+   "from": "level22-control.txt: the Engel file line's sha256"
+  },
+  "l22.not_engel": {
+   "value": 15,
+   "from": "level22-control.txt: the not-Engel's line"
+  },
+  "l22.dup": {
+   "value": 0,
+   "from": "level22-control.txt: the more-than-one-slice line"
+  },
+  "l22.selftest_removed": {
+   "value": 1,
+   "from": "level22-control.txt: the self-test's removal line: the graph removed"
+  },
+  "l22.selftest_missing": {
+   "value": [
+    1
+   ],
+   "from": "level22-control.txt: the self-test's removal line: what it then reports missing"
+  },
+  "l22.selftest_flipped_found": {
+   "value": false,
+   "from": "level22-control.txt: the self-test's flipped-edge line (found: true)"
+  },
+  "l22.selftest_dup_reported": {
+   "value": true,
+   "from": "level22-control.txt: the self-test's second-slice line (reported: true)"
+  },
+  "l22.problems": {
+   "value": [],
+   "from": "level22-control.txt: PROBLEM lines"
+  },
+  "l22.exit": {
+   "value": 0,
+   "from": "the level22_control.py run's exit status"
+  },
+  "vs.verdict": {
+   "value": "VERIFY-SAMPLE OK: 63 of 63 planned slices verified (15 restarted, 48 random, seed 20260927; 9 of 10 workers' first slices checked whole, the rest from level 13 with the prefix compared), 0 problem(s)",
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line"
+  },
+  "vs.word": {
+   "value": "OK",
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line's verdict"
+  },
+  "vs.verified": {
+   "value": 63,
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line: slices verified"
+  },
+  "vs.planned": {
+   "value": 63,
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line: planned"
+  },
+  "vs.restarted": {
+   "value": 15,
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line: restarted slices planned"
+  },
+  "vs.random": {
+   "value": 48,
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line: random slices planned"
+  },
+  "vs.seed": {
+   "value": 20260927,
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line: seed"
+  },
+  "vs.whole": {
+   "value": 9,
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line: first slices checked whole"
+  },
+  "vs.workers": {
+   "value": 10,
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line: workers"
+  },
+  "vs.from_level": {
+   "value": 13,
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line: level"
+  },
+  "vs.problem_count": {
+   "value": 0,
+   "from": "verify-sample.txt: the VERIFY-SAMPLE line: problems"
+  },
+  "vs.verified_restarted": {
+   "value": [
+    94,
+    253,
+    263,
+    282,
+    453,
+    472,
+    534,
+    579,
+    606,
+    835,
+    1227,
+    1354,
+    1405,
+    1735,
+    1773
+   ],
+   "from": "verify-sample.txt: the per-slice lines: restarted slices verified"
+  },
+  "vs.verified_random": {
+   "value": [
+    14,
+    25,
+    113,
+    144,
+    145,
+    147,
+    159,
+    219,
+    231,
+    242,
+    247,
+    276,
+    295,
+    382,
+    405,
+    422,
+    495,
+    526,
+    586,
+    608,
+    645,
+    650,
+    728,
+    749,
+    838,
+    878,
+    885,
+    963,
+    1006,
+    1023,
+    1043,
+    1076,
+    1112,
+    1270,
+    1282,
+    1295,
+    1315,
+    1372,
+    1408,
+    1566,
+    1593,
+    1623,
+    1707,
+    1808,
+    1835,
+    1859,
+    1870,
+    1918
+   ],
+   "from": "verify-sample.txt: the per-slice lines: random slices verified"
+  },
+  "vs.not_verified": {
+   "value": [],
+   "from": "verify-sample.txt: the per-slice lines: slices not verified"
+  },
+  "vs.missing_only": {
+   "value": [],
+   "from": "verify-sample.txt: slices not verified whose only problems are a missing check output or copy"
+  },
+  "vs.not_verified_workers": {
+   "value": [],
+   "from": "verify-sample.txt: the per-slice lines: the workers of the slices not verified"
+  },
+  "vs.failed_problems": {
+   "value": [],
+   "from": "verify-sample.txt: PROBLEM lines other than a missing check output or copy"
+  },
+  "vs.exit": {
+   "value": 0,
+   "from": "the verify_sample.py run's exit status"
+  },
+  "vs.accounted": {
+   "value": {
+    "exact": true,
+    "dup": [],
+    "absent": 0,
+    "extra": 0,
+    "wrong": [],
+    "ok_rows": 63,
+    "not_rows": 0,
+    "whole_rows": 9,
+    "whole_wrong": [],
+    "bad_ok": [],
+    "bad_ok_count": 0,
+    "lean_rows": 0,
+    "skip_rows": 1,
+    "skip_wrong": [],
+    "wrong_copy": [],
+    "first_not_whole": [],
+    "planned_workers": 10,
+    "plan_seed": 20260927,
+    "plan_restarted": 15,
+    "plan_random": 48,
+    "stray": [],
+    "stray_count": 0,
+    "unexplained": []
+   },
+   "from": "verify-sample.txt: the per-slice rows and PROBLEM lines against the sample's plan (JOBS.md, as verify_sample.py reads it)"
+  },
+  "c22.verdict": {
+   "value": "TARGET-CHECK OK: (22,61): 1920 of 1920 slices complete, G4 PASS 1920; 0 failing, 0 missing; kept at (22,61): 0 distinct graph(s)",
+   "from": "control22: the TARGET-CHECK line"
+  },
+  "c22.word": {
+   "value": "OK",
+   "from": "control22: the TARGET-CHECK line's verdict"
+  },
+  "c22.cell": {
+   "value": [
+    22,
+    61
+   ],
+   "from": "control22: the TARGET-CHECK line's cell"
+  },
+  "c22.complete": {
+   "value": 1920,
+   "from": "control22: the TARGET-CHECK line: complete slices"
+  },
+  "c22.slices": {
+   "value": 1920,
+   "from": "control22: the TARGET-CHECK line: slices"
+  },
+  "c22.g4_pass": {
+   "value": 1920,
+   "from": "control22: the TARGET-CHECK line: G4 PASS"
+  },
+  "c22.failing": {
+   "value": 0,
+   "from": "control22: the TARGET-CHECK line: slices failing"
+  },
+  "c22.missing": {
+   "value": 0,
+   "from": "control22: the TARGET-CHECK line: slices missing"
+  },
+  "c22.parameters": {
+   "value": "target (22,61), root minimum degree 5, u-bar override refused, top level empty, known none; checker target_check.py sha256 1716d48763cc2e908fb99f0402432800702182ee3dbc4ddc3e80cedeb3505e2d; audit verify-chain.py sha256 d253338569dedb41740cdb4774a6a361f6498f036787a52c3f985caca5d6ddd8",
+   "from": "control22: the parameters line: what the check required"
+  },
+  "c22.audit": {
+   "value": "COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares",
+   "from": "control22: the AUDIT line: verify-chain.py --summary-only's COVERAGE line"
+  },
+  "c22.kept": {
+   "value": 0,
+   "from": "control22: the TARGET-CHECK line: distinct graphs kept"
+  },
+  "c22.found": {
+   "value": null,
+   "from": "control22: the TARGET-CHECK line: known graphs kept"
+  },
+  "c22.known": {
+   "value": null,
+   "from": "control22: the TARGET-CHECK line: known"
+  },
+  "c22.selftest": {
+   "value": "SELF-TEST passed: 79 of 79 red controls caught",
+   "from": "control22: the SELF-TEST line"
+  },
+  "c22.selftest_ok": {
+   "value": true,
+   "from": "control22: the SELF-TEST line says passed"
+  },
+  "c22.problems": {
+   "value": [],
+   "from": "control22: PROBLEM lines"
+  },
+  "c22.lines": {
+   "value": [
+    "ok   self-test, s0's R4 with a next block of -1 records (G5 round 23, finding 6): s0: a full G4 replay whose red controls ['R4'] are not red by their own recorded outcome",
+    "ok   self-test, s0's partly sampled cell 11-17 comparing 163221 children, more than it holds (finding 5): s0: a full G4 replay whose cells ['11-17'] compare more children than they hold",
+    "ok   self-test, s0's R1 with only_enum2 -1 (G5 round 24, finding 3): s0: a full G4 replay whose red controls ['R1'] are not red by their own recorded outcome",
+    "ok   self-test, s0's R4 whose next block holds more children than its cell: s0: a full G4 replay whose red controls ['R4'] do not act on its own replayed cells and parents",
+    "ok   self-test, s0's sampled red controls on parent 0, which the policy did not draw: s0: a full G4 replay whose red controls ['R1', 'R2', 'R4', 'R5a', 'R5b'] act on a parent the policy did not draw",
+    "ok   self-test, s0's seed check that says it could not be replayed (finding 4): s0: a full G4 replay whose seed checks of ['1-0'] did not pass in their details",
+    "ok   self-test, s0's seed records naming another run: s0: a full G4 replay whose rows or stage records name another run: ['dag-23-65-L12-tri-pf74-s1of1920']",
+    "ok   self-test, s27's cell 16-34 comparing 0 children, fewer than its fully drawn shards' 1 (finding 2): s27: a slice G4 replay whose row of 16-34 compares 0 children, fewer than the 1 of its fully drawn shards",
+    "ok   self-test, s0's fully sampled cell 11-23 comparing no children (finding 6): s0: a full G4 replay whose fully sampled cells ['11-23'] compare fewer children than the audit records",
+    "ok   self-test, s19's 21-56.manifest.json whose parent digest is not its one nonempty source's (finding 4): s19: 21-56.manifest.json is not a clean success bound to the copy's files: exit 0",
+    "ok   self-test, s0 keeping a graph: the top level keeps 1 graph(s) at (22,61); the control needs none",
+    "SELF-TEST passed: 79 of 79 red controls caught",
+    "AUDIT: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares",
+    "TARGET-CHECK OK: (22,61): 1920 of 1920 slices complete, G4 PASS 1920; 0 failing, 0 missing; kept at (22,61): 0 distinct graph(s)"
+   ],
+   "from": "control22: the last lines"
+  },
+  "c22.missing_listed": {
+   "value": 0,
+   "from": "control22: the MISSING line's count"
+  },
+  "c22.exit": {
+   "value": 0,
+   "from": "the target_check.py run's exit status (control22)"
+  },
+  "cal.verdict": {
+   "value": "TARGET-CHECK OK: (21,57): 1920 of 1920 slices complete, G4 PASS 1920; 0 failing, 0 missing; kept at (21,57): 10 distinct graph(s); known: 5 of 5 kept",
+   "from": "calib2157: the TARGET-CHECK line"
+  },
+  "cal.word": {
+   "value": "OK",
+   "from": "calib2157: the TARGET-CHECK line's verdict"
+  },
+  "cal.cell": {
+   "value": [
+    21,
+    57
+   ],
+   "from": "calib2157: the TARGET-CHECK line's cell"
+  },
+  "cal.complete": {
+   "value": 1920,
+   "from": "calib2157: the TARGET-CHECK line: complete slices"
+  },
+  "cal.slices": {
+   "value": 1920,
+   "from": "calib2157: the TARGET-CHECK line: slices"
+  },
+  "cal.g4_pass": {
+   "value": 1920,
+   "from": "calib2157: the TARGET-CHECK line: G4 PASS"
+  },
+  "cal.failing": {
+   "value": 0,
+   "from": "calib2157: the TARGET-CHECK line: slices failing"
+  },
+  "cal.missing": {
+   "value": 0,
+   "from": "calib2157: the TARGET-CHECK line: slices missing"
+  },
+  "cal.parameters": {
+   "value": "target (21,57), root minimum degree 3, u-bar override the fleet 22=60 only, top level holding the known graphs, known engel-21-57.g6 sha256 06f0d779a598292e6be4e2758097d7e0a1c2364fc348cda7d197751ed2a98aff (5 graphs); checker target_check.py sha256 1716d48763cc2e908fb99f0402432800702182ee3dbc4ddc3e80cedeb3505e2d; audit verify-chain.py sha256 d253338569dedb41740cdb4774a6a361f6498f036787a52c3f985caca5d6ddd8",
+   "from": "calib2157: the parameters line: what the check required"
+  },
+  "cal.audit": {
+   "value": "COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares",
+   "from": "calib2157: the AUDIT line: verify-chain.py --summary-only's COVERAGE line"
+  },
+  "cal.kept": {
+   "value": 10,
+   "from": "calib2157: the TARGET-CHECK line: distinct graphs kept"
+  },
+  "cal.found": {
+   "value": 5,
+   "from": "calib2157: the TARGET-CHECK line: known graphs kept"
+  },
+  "cal.known": {
+   "value": 5,
+   "from": "calib2157: the TARGET-CHECK line: known"
+  },
+  "cal.selftest": {
+   "value": "SELF-TEST passed: 78 of 78 red controls caught",
+   "from": "calib2157: the SELF-TEST line"
+  },
+  "cal.selftest_ok": {
+   "value": true,
+   "from": "calib2157: the SELF-TEST line says passed"
+  },
+  "cal.problems": {
+   "value": [],
+   "from": "calib2157: PROBLEM lines"
+  },
+  "cal.lines": {
+   "value": [
+    "ok   self-test, s0's R4 with a next block of -1 records (G5 round 23, finding 6): s0: a full G4 replay whose red controls ['R4'] are not red by their own recorded outcome",
+    "ok   self-test, s0's partly sampled cell 11-18 comparing 174372 children, more than it holds (finding 5): s0: a full G4 replay whose cells ['11-18'] compare more children than they hold",
+    "ok   self-test, s0's R1 with only_enum2 -1 (G5 round 24, finding 3): s0: a full G4 replay whose red controls ['R1'] are not red by their own recorded outcome",
+    "ok   self-test, s0's R4 whose next block holds more children than its cell: s0: a full G4 replay whose red controls ['R4'] do not act on its own replayed cells and parents",
+    "ok   self-test, s0's sampled red controls on parent 0, which the policy did not draw: s0: a full G4 replay whose red controls ['R1', 'R2', 'R4', 'R5a', 'R5b'] act on a parent the policy did not draw",
+    "ok   self-test, s0's seed check that says it could not be replayed (finding 4): s0: a full G4 replay whose seed checks of ['1-0'] did not pass in their details",
+    "ok   self-test, s0's seed records naming another run: s0: a full G4 replay whose rows or stage records name another run: ['dag-23-65-L12-tri-pf74-s1of1920']",
+    "n/a  self-test, finding 2's control: no complete copy has a partly sampled cell with a shard drawn in full, so the lower bound has nothing to check in this data (not counted)",
+    "ok   self-test, s0's fully sampled cell 11-23 comparing no children (finding 6): s0: a full G4 replay whose fully sampled cells ['11-23'] compare fewer children than the audit records",
+    "ok   self-test, s19's 20-52.manifest.json whose parent digest is not its one nonempty source's (finding 4): s19: 20-52.manifest.json is not a clean success bound to the copy's files: exit 0",
+    "ok   self-test, known graph 0 (kept) dropped from every keep, every slice in: known graph(s) [0] of 5 not kept at (21,57)",
+    "SELF-TEST passed: 78 of 78 red controls caught",
+    "AUDIT: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares",
+    "TARGET-CHECK OK: (21,57): 1920 of 1920 slices complete, G4 PASS 1920; 0 failing, 0 missing; kept at (21,57): 10 distinct graph(s); known: 5 of 5 kept"
+   ],
+   "from": "calib2157: the last lines"
+  },
+  "cal.missing_listed": {
+   "value": 0,
+   "from": "calib2157: the MISSING line's count"
+  },
+  "cal.exit": {
+   "value": 0,
+   "from": "the target_check.py run's exit status (calib2157)"
+  },
+  "g4.scope_verdict": {
+   "value": "G4-SCOPE OK: 101 of 101 full-mode replays and 1854 of 1854 slice-mode replays in their mode's scope; 0 problem(s)",
+   "from": "g4-scope.txt: the G4-SCOPE line"
+  },
+  "g4.scope_copies": {
+   "value": [
+    1955,
+    "15fdb9599e746e6751af9da2bd4df01390ff44fbe83c6977ee377ddea665a946"
+   ],
+   "from": "g4-scope.txt: the G4-SCOPE COPIES line, for (23,65)"
+  },
+  "g4.agg_copies": {
+   "value": [
+    1955,
+    "15fdb9599e746e6751af9da2bd4df01390ff44fbe83c6977ee377ddea665a946"
+   ],
+   "from": "the credited root's copies, recomputed (target_check.copies_lines: label, target, mode, evidence digests)"
+  },
+  "g4.root_labels": {
+   "value": [
+    1955,
+    "3aa6c257292258283acb540e6f3532dddbd6512fc24ddb8f98dfbf1db04a1029"
+   ],
+   "from": "the credited root's copies, by worker and slice"
+  },
+  "g4.agg_labels": {
+   "value": [
+    1955,
+    "3aa6c257292258283acb540e6f3532dddbd6512fc24ddb8f98dfbf1db04a1029"
+   ],
+   "from": "aggregate.json: slices.*.copies: the aggregate's own copies, by worker and slice"
+  },
+  "g4.scope_exit": {
+   "value": 0,
+   "from": "the target_check.py --scope-only run's exit status"
+  },
+  "va.verdict": {
+   "value": "VERIFY-ALL OK: 1920 of 1920 slices re-run and verified (48 tasks; 48 first slices checked whole, the rest from level 13 with the prefix compared; every prefix the prefix of a whole check; 6 by the memory-bounded verify-chain-lean.py after the G5 check was killed for memory), 0 problem(s)",
+   "from": "verify-all.txt: the VERIFY-ALL line"
+  },
+  "va.word": {
+   "value": "OK",
+   "from": "verify-all.txt: the VERIFY-ALL line's verdict"
+  },
+  "va.verified": {
+   "value": 1920,
+   "from": "verify-all.txt: the VERIFY-ALL line: slices verified"
+  },
+  "va.planned": {
+   "value": 1920,
+   "from": "verify-all.txt: the VERIFY-ALL line: planned"
+  },
+  "va.tasks": {
+   "value": 48,
+   "from": "verify-all.txt: the VERIFY-ALL line: tasks"
+  },
+  "va.whole": {
+   "value": 48,
+   "from": "verify-all.txt: the VERIFY-ALL line: first slices checked whole"
+  },
+  "va.failed_problems": {
+   "value": [],
+   "from": "verify-all.txt: PROBLEM lines other than a missing output or copy"
+  },
+  "va.missing": {
+   "value": 0,
+   "from": "verify-all.txt: PROBLEM lines of a missing output or copy"
+  },
+  "va.problems_count": {
+   "value": 0,
+   "from": "verify-all.txt: the VERIFY-ALL line: its problem count"
+  },
+  "va.problem_lines": {
+   "value": 0,
+   "from": "verify-all.txt: the number of PROBLEM lines"
+  },
+  "va.lean": {
+   "value": 6,
+   "from": "verify-all.txt: the VERIFY-ALL line: slices checked by verify-chain-lean.py after a G5 memory kill"
+  },
+  "va.not_verified": {
+   "value": 0,
+   "from": "verify-all.txt: the per-slice lines that say NOT verified"
+  },
+  "va.expected_tasks": {
+   "value": 48,
+   "from": "coordination/cloud-workers/u23-verify-all-claude-plan.json: its workers"
+  },
+  "va.exit": {
+   "value": 0,
+   "from": "the verify_sample.py --all run's exit status"
+  },
+  "va.accounted": {
+   "value": {
+    "exact": true,
+    "dup": [],
+    "absent": 0,
+    "extra": 0,
+    "wrong": [],
+    "ok_rows": 1920,
+    "not_rows": 0,
+    "whole_rows": 48,
+    "whole_wrong": [],
+    "bad_ok": [],
+    "bad_ok_count": 0,
+    "lean_rows": 6,
+    "skip_rows": 0,
+    "skip_wrong": [],
+    "wrong_copy": [],
+    "first_not_whole": [],
+    "planned_workers": 48,
+    "plan_seed": null,
+    "plan_restarted": 0,
+    "plan_random": 0,
+    "stray": [],
+    "stray_count": 0,
+    "unexplained": []
+   },
+   "from": "verify-all.txt: the per-slice rows and PROBLEM lines against the plan (u23-verify-all-claude-plan.json)"
+  },
+  "blind.lines": {
+   "value": [
+    "verifier: research/unit-distance-23/blind-verifier/verify_tree.py sha256 1bafc054ee736f4c7275a7ccb0a747bd2839ce7fefc3b5e04858265d1b015f67",
+    "s50of1920/23-65.g6 graph 0 V?_QPIGD@AGOoHKE_o?Q??HK?WqH@PO_m@CWCaHN_?F_ certs 46f2d3de06f72e37110daf656a5a7a98fd79554049882fa23160232c0617a145: ACCEPT (exit 0)",
+    "  (a) one entry of the root's A changed: REJECT root.A: row space does not equal all graph 4-cycle rhombus rows (exit 1)",
+    "  (b) one child subtree of the root removed: REJECT root: L3 requires 2 children; found 1 (exit 1)",
+    "  (c) the root move's first coefficient changed: REJECT root.move: ax+by+cz is not in A row space (exit 1)",
+    "  (d) the graph with the root move's first edge removed: REJECT root.edges: does not equal input graph (missing=[], extra=[(0, 4)]) (exit 1)",
+    "  (e) the field's interval moved off its root: REJECT field.interval: expected exactly one real root, found 0 (exit 1)",
+    "  (f) the last L3 split's d changed: REJECT root.children[1].children[1].move: L3 d squared does not equal the Heron discriminant (exit 1)",
+    "  (g) the first L1b leaf's omega changed: REJECT root.children[0].children[0].children[0].move: L1b x-omega*y is not in A row space (exit 1)",
+    "BLIND-CHECK OK: 1 of 1 top-level certificates accepted by the blind verifier (verify_tree.py sha256 1bafc054ee736f4c); 7 of 7 tampered inputs rejected"
+   ],
+   "from": "blind-check.txt: every line"
+  },
+  "blind.verdict": {
+   "value": "BLIND-CHECK OK: 1 of 1 top-level certificates accepted by the blind verifier (verify_tree.py sha256 1bafc054ee736f4c); 7 of 7 tampered inputs rejected",
+   "from": "blind-check.txt: the BLIND-CHECK line"
+  },
+  "blind.word": {
+   "value": "OK",
+   "from": "blind-check.txt: the BLIND-CHECK line's verdict"
+  },
+  "blind.accepted": {
+   "value": 1,
+   "from": "blind-check.txt: the BLIND-CHECK line: accepted"
+  },
+  "blind.total": {
+   "value": 1,
+   "from": "blind-check.txt: the BLIND-CHECK line: certificates"
+  },
+  "blind.verifier_sha256": {
+   "value": "1bafc054ee736f4c",
+   "from": "blind-check.txt: the BLIND-CHECK line: sha256"
+  },
+  "blind.rejected": {
+   "value": 7,
+   "from": "blind-check.txt: the BLIND-CHECK line: tampered inputs rejected"
+  },
+  "blind.tried": {
+   "value": 7,
+   "from": "blind-check.txt: the BLIND-CHECK line: tampered inputs tried"
+  },
+  "blind.problems": {
+   "value": [],
+   "from": "blind-check.txt: PROBLEM lines"
+  },
+  "blind.accepted_graphs": {
+   "value": [
+    [
+     50,
+     "V?_QPIGD@AGOoHKE_o?Q??HK?WqH@PO_m@CWCaHN_?F_",
+     "46f2d3de06f72e37110daf656a5a7a98fd79554049882fa23160232c0617a145"
+    ]
+   ],
+   "from": "blind-check.txt: the per-graph ACCEPT lines: slice and graph6"
+  },
+  "blind.exit": {
+   "value": 0,
+   "from": "the blind_check.py run's exit status"
+  },
+  "rec.red_control": {
+   "value": {
+    "50": "REJECT: tampered.certs.jsonl:1.witness.tree.A: row space is inconsistent with the claimed constraints"
+   },
+   "from": "results/u23/top-level/s<i>of<C>/CHECK.txt: the REJECT line of its red control"
+  },
+  "rec.prune": {
+   "value": {
+    "50": {
+     "counts": {
+      "input": 1,
+      "tu": 0,
+      "survivors": 1,
+      "embedded": 0,
+      "refuted": 1,
+      "unknown": 0,
+      "kept": 0,
+      "pruned": 1
+     },
+     "checker": "ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15"
+    }
+   },
+   "from": "results/u23/top-level/s<i>of<C>/23-65.prune.manifest.json: counts, checker"
+  },
+  "top.records_certs_sha256": {
+   "value": {
+    "50": "46f2d3de06f72e37110daf656a5a7a98fd79554049882fa23160232c0617a145"
+   },
+   "from": "results/u23/top-level/s<i>of<C>/23-65.certs.jsonl: sha256 (the file the checkers replay)"
+  },
+  "g4.verdicts": {
+   "value": {
+    "PASS": 1920
+   },
+   "from": "aggregate.json: replays.verdicts"
+  },
+  "g4.modes": {
+   "value": {
+    "full": 99,
+    "slice": 1821
+   },
+   "from": "aggregate.json: replays.modes"
+  },
+  "g4.full_mode_red_all": {
+   "value": 99,
+   "from": "aggregate.json: replays.full_mode_red_all"
+  },
+  "g4.totals": {
+   "value": {
+    "sampled_parents": 2237909,
+    "processed_parents": 1374989,
+    "production_children_compared": 3576629,
+    "mismatching_parents": 0,
+    "stages_checked": 131946
+   },
+   "from": "aggregate.json: replays.totals"
+  },
+  "g4.not_pass_or_empty": {
+   "value": {},
+   "from": "aggregate.json: replays.not_pass_or_empty"
+  },
+  "g4.other_copies_not_pass_or_empty": {
+   "value": [],
+   "from": "aggregate.json: replays.other_copies_not_pass_or_empty"
+  },
+  "g4.runbook_differs": {
+   "value": 0,
+   "from": "len(aggregate.json: replays.runbook_verdict_differs)"
+  },
+  "cost.slices_timed": {
+   "value": 1920,
+   "from": "aggregate.json: cost.slices_timed"
+  },
+  "cost.excluded": {
+   "value": 0,
+   "from": "aggregate.json: cost.len slices_excluded_resumed"
+  },
+  "cost.seconds": {
+   "value": 1304030.4,
+   "from": "aggregate.json: cost.seconds_total"
+  },
+  "cost.hours": {
+   "value": 362.23,
+   "from": "aggregate.json: cost.hours_total"
+  },
+  "cost.median": {
+   "value": 556.75,
+   "from": "aggregate.json: cost.per_slice.median"
+  },
+  "cost.p90": {
+   "value": 987.4,
+   "from": "aggregate.json: cost.per_slice.p90"
+  },
+  "cost.max": {
+   "value": 13270.6,
+   "from": "aggregate.json: cost.per_slice.max"
+  },
+  "cost.heaviest": {
+   "value": [
+    {
+     "slice": 344,
+     "worker": "f57-w2xriy",
+     "seconds": 13270.6
+    },
+    {
+     "slice": 1535,
+     "worker": "f96-fi9jlf",
+     "seconds": 11289.4
+    },
+    {
+     "slice": 50,
+     "worker": "f51-2h4ksy",
+     "seconds": 9734.2
+    },
+    {
+     "slice": 1082,
+     "worker": "f27-ldx6e0",
+     "seconds": 9594.1
+    },
+    {
+     "slice": 1651,
+     "worker": "f20-bvpkkh",
+     "seconds": 8559.4
+    }
+   ],
+   "from": "aggregate.json: cost.heaviest"
+  },
+  "cost.run_dag2_s": {
+   "value": 1468404,
+   "from": "aggregate.json: cost.runbook_clocks.run_dag2_wall_seconds"
+  },
+  "cost.replay_s": {
+   "value": 89973,
+   "from": "aggregate.json: cost.runbook_clocks.replay_wall_seconds"
+  },
+  "cost.clock_copies": {
+   "value": 1920,
+   "from": "aggregate.json: cost.runbook_clocks.copies"
+  },
+  "cost.partial": {
+   "value": 0,
+   "from": "aggregate.json: cost.len cells_with_a_resumed_step_the_rule_times"
+  },
+  "prov.prefix_files": {
+   "value": 70,
+   "from": "aggregate.json: provenance.prefix.files"
+  },
+  "prov.prefix_copies": {
+   "value": 1955,
+   "from": "aggregate.json: provenance.prefix.copies"
+  },
+  "prov.prefix_agree": {
+   "value": true,
+   "from": "aggregate.json: provenance.prefix.agree"
+  },
+  "prov.software": {
+   "value": {
+    "enum2.py": [
+     "d967fc90"
+    ],
+    "exact_verify.py": [
+     "ab55ce77"
+    ],
+    "prune.py": [
+     "b4858cab"
+    ],
+    "python": [
+     "/usr/local/bin/python3 3.11.15"
+    ],
+    "replay-398.py": [
+     "2c81ae65"
+    ],
+    "run-dag2.py": [
+     "0c6fb312"
+    ],
+    "udcheck.py": [
+     "63b7f1b5"
+    ],
+    "udcheck398.py": [
+     "783d368c"
+    ],
+    "udcheck_rhombus.py": [
+     "06db27ec"
+    ],
+    "udembed.py": [
+     "75886c63"
+    ],
+    "udenum": [
+     "84adaddf"
+    ],
+    "udfilter": [
+     "6e0771bb"
+    ],
+    "udtriangle": [
+     "0ca59908"
+    ]
+   },
+   "from": "aggregate.json: provenance.software (first 8 hex digits)"
+  },
+  "prov.inputs": {
+   "value": {
+    "forbidden": [
+     "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c"
+    ],
+    "forbidden-398.json": [
+     "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c"
+    ],
+    "forbidden-74.json": [
+     "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a"
+    ],
+    "reach.json": [
+     "1c6b2437d0d3a5b084027908570b5d4ef6c2d99b7c8d2e47fc44246c45ff9a0e"
+    ],
+    "tu-gadgets.json": [
+     "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+    ]
+   },
+   "from": "aggregate.json: provenance.inputs"
+  },
+  "prov.software_all_same": {
+   "value": true,
+   "from": "aggregate.json: provenance.software_all_same"
+  },
+  "prov.run_options_identical": {
+   "value": true,
+   "from": "aggregate.json: provenance.run_options_identical"
+  },
+  "prov.verify_manifests": {
+   "value": 162265,
+   "from": "aggregate.json: provenance.verify_manifests_read"
+  },
+  "audit.header": {
+   "value": "1955 slice result directories from 101 workers under <scratch>/scratchpad/fleet/results",
+   "from": "fleet-audit.txt: line 1"
+  },
+  "audit.runs": {
+   "value": 1955,
+   "from": "fleet-audit.txt: report.runs"
+  },
+  "audit.audited": {
+   "value": 1955,
+   "from": "fleet-audit.txt: report.audited"
+  },
+  "audit.pinned": {
+   "value": {
+    "target": [
+     23,
+     65
+    ],
+    "seed": 10,
+    "slices": [
+     12,
+     1920
+    ]
+   },
+   "from": "fleet-audit.txt: report.pinned"
+  },
+  "audit.required": {
+   "value": [
+    "g4",
+    "hashes"
+   ],
+   "from": "fleet-audit.txt: report.required"
+  },
+  "audit.problems": {
+   "value": 0,
+   "from": "fleet-audit.txt: report.problems"
+  },
+  "audit.unresolved": {
+   "value": 0,
+   "from": "fleet-audit.txt: report.unresolved"
+  },
+  "audit.summaries": {
+   "value": 1955,
+   "from": "fleet-audit.txt: report.fleets[0].summaries"
+  },
+  "audit.slice_indices": {
+   "value": 1920,
+   "from": "fleet-audit.txt: report.fleets[0].slice_indices"
+  },
+  "audit.missing_slices": {
+   "value": 0,
+   "from": "fleet-audit.txt: report.fleets[0].missing_slices"
+  },
+  "audit.prefix_files_hashed": {
+   "value": 70,
+   "from": "fleet-audit.txt: report.fleets[0].prefix_files_hashed"
+  },
+  "audit.prefix_files_identical_in": {
+   "value": 1955,
+   "from": "fleet-audit.txt: report.fleets[0].prefix_files_identical_in"
+  },
+  "audit.g4_results": {
+   "value": {
+    "PASS": 1955
+   },
+   "from": "fleet-audit.txt: report.fleets[0].g4_results"
+  },
+  "audit.slice_partition": {
+   "value": {
+    "20": {
+     "stage_file": 1384579,
+     "slices_recording": 1920,
+     "sum": 1384579
+    },
+    "21": {
+     "stage_file": 476585,
+     "slices_recording": 1920,
+     "sum": 476585
+    },
+    "22": {
+     "stage_file": 51819,
+     "slices_recording": 1920,
+     "sum": 51819
+    },
+    "23": {
+     "stage_file": 3011,
+     "slices_recording": 1920,
+     "sum": 3011
+    },
+    "24": {
+     "stage_file": 198,
+     "slices_recording": 1920,
+     "sum": 198
+    },
+    "25": {
+     "stage_file": 25,
+     "slices_recording": 1920,
+     "sum": 25
+    },
+    "26": {
+     "stage_file": 2,
+     "slices_recording": 1920,
+     "sum": 2
+    },
+    "27": {
+     "stage_file": 1,
+     "slices_recording": 1920,
+     "sum": 1
+    }
+   },
+   "from": "fleet-audit.txt: report.fleets[0].slice_partition"
+  },
+  "audit.prefix_cells": {
+   "value": 15,
+   "from": "fleet-audit.txt: report.fleets[0].prefix_cells"
+  },
+  "audit.prefix_cells_with_parents_recorded": {
+   "value": 15,
+   "from": "fleet-audit.txt: report.fleets[0].prefix_cells_with_parents_recorded"
+  },
+  "audit.cells_recovered_from_history": {
+   "value": 0,
+   "from": "fleet-audit.txt: report.fleets[0].cells_recovered_from_history"
+  },
+  "audit.target_cell": {
+   "value": {
+    "children": 1,
+    "kept": 1,
+    "slices_with_children": [
+     50
+    ]
+   },
+   "from": "fleet-audit.txt: report.fleets[0].target_cell"
+  },
+  "audit.slice_count": {
+   "value": 1920,
+   "from": "fleet-audit.txt: report.fleets[0].slice_count"
+  },
+  "audit.slice_level": {
+   "value": 12,
+   "from": "fleet-audit.txt: report.fleets[0].slice_level"
+  },
+  "audit.target": {
+   "value": [
+    23,
+    65
+   ],
+   "from": "fleet-audit.txt: report.fleets[0].target"
+  },
+  "audit.unresolved_lines": {
+   "value": [],
+   "from": "fleet-audit.txt: UNRESOLVED lines"
+  },
+  "audit.problem_lines": {
+   "value": [],
+   "from": "fleet-audit.txt: PROBLEM lines"
+  },
+  "audit.coverage_line": {
+   "value": "COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares",
+   "from": "fleet-audit.txt: the COVERAGE line"
+  },
+  "audit.chain_line": {
+   "value": "CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)",
+   "from": "fleet-audit.txt: the CHAIN line"
+  },
+  "audit.word": {
+   "value": "OK",
+   "from": "fleet-audit.txt: the COVERAGE line's verdict"
+  },
+  "audit.unresolved_slices": {
+   "value": [],
+   "from": "fleet-audit.txt: the slices the UNRESOLVED lines name"
+  },
+  "audit.exit_expected": {
+   "value": 3,
+   "from": "fleet-audit.txt: the exit status verify-chain.py gives that verdict"
+  },
+  "audit.exit": {
+   "value": 3,
+   "from": "the fleet-audit.py run's exit status (none: a saved output)"
+  },
+  "audit.worktree_head": {
+   "value": "34f0dcb9ba7c980c9931b1374a8a57a8f762edd0",
+   "from": "the audit worktree (worktree_head)"
+  },
+  "audit.worktree_branch": {
+   "value": "claude/answering-alexeev-u22-g5",
+   "from": "the audit worktree (worktree_branch)"
+  },
+  "audit.worktree_dirty": {
+   "value": "",
+   "from": "the audit worktree (worktree_dirty)"
+  },
+  "audit.fleet_audit_sha256": {
+   "value": "5b6cf12702e959d141fed43ea37b08602ab5567673bb0b4063f774981794a372",
+   "from": "the audit worktree (fleet_audit_sha256)"
+  },
+  "audit.verify_chain_sha256": {
+   "value": "d253338569dedb41740cdb4774a6a361f6498f036787a52c3f985caca5d6ddd8",
+   "from": "the audit worktree (verify_chain_sha256)"
+  },
+  "snap.before": {
+   "value": {
+    "files": 7820,
+    "sha256": "81e046a9d3efda0ced27a158fe2bf7442ad73f41005b081bd6477500d005ce3f",
+    "utc": "2026-09-28T23:17:11Z"
+   },
+   "from": "the fleet root's fingerprint before the tools ran"
+  },
+  "snap.after": {
+   "value": {
+    "files": 7820,
+    "sha256": "81e046a9d3efda0ced27a158fe2bf7442ad73f41005b081bd6477500d005ce3f",
+    "utc": "2026-09-28T23:53:17Z"
+   },
+   "from": "the fleet root's fingerprint after the tools ran"
+  },
+  "g5.verdict": {
+   "value": "G5: CLOSED",
+   "from": "research/unit-distance-23/results/g5-cross-model-2026-09-26/G5-round9-read-gpt-6-astra.md: its last line"
+  },
+  "g5.commit": {
+   "value": "34f0dcb9ba7c980c9931b1374a8a57a8f762edd0",
+   "from": "git rev-parse origin/claude/answering-alexeev-u22-g5"
+  },
+  "g5.ref": {
+   "value": "origin/claude/answering-alexeev-u22-g5",
+   "from": "--g5-ref"
+  },
+  "g5.latest_round": {
+   "value": 26,
+   "from": "the highest G5-roundN-read file in research/unit-distance-23/results/g5-cross-model-2026-09-26"
+  },
+  "g5.latest_path": {
+   "value": "research/unit-distance-23/results/g5-cross-model-2026-09-26/G5-round26-read-gpt-6-astra.md",
+   "from": "that file"
+  },
+  "g5.latest_verdict": {
+   "value": "G5 round 26: CLOSED",
+   "from": "that file, as committed at HEAD: its final verdict line"
+  },
+  "g5.latest_answered": {
+   "value": true,
+   "from": "that file: a Response section answers its findings in writing"
+  },
+  "g5.item6": {
+   "value": "FATAL for the proposed final certification \u2014 The retained artifacts cannot close the intermediate keep-file gap.",
+   "from": "research/unit-distance-23/results/g5-cross-model-2026-09-26/G5-closure-read-gpt-6-astra.md: item 6's title"
+  },
+  "contract.claim_65": {
+   "value": "We claim u(23) = 65 only with an exact embedding of a 23-vertex, 65-edge graph accepted by the checker.",
+   "from": "research/unit-distance-23/CONTRACT.md: Section 0, bullet"
+  },
+  "contract.claim_64": {
+   "value": "We claim u(23) = 64 only when the enumeration of Section 2 is complete for the graphs that could exist, every graph at its top level carries a checker-accepted refutation (or a TU witness), and gates G0 to G6 are green.",
+   "from": "research/unit-distance-23/CONTRACT.md: Section 0, bullet"
+  },
+  "contract.never": {
+   "value": "Never \"u(23) = 64\" on an empty level whose emptiness was not produced by the certified pipeline, on numerics, or on an unchecked certificate. Never hide a dependency: the claim rests on u(22) = 60, on AMP's u(n) for n <= 21, on the 398 minimal forbidden graphs (Globus-Parshall and GP-10), and on the six TU gadgets.",
+   "from": "research/unit-distance-23/CONTRACT.md: Section 0, bullet"
+  },
+  "contract.intro": {
+   "value": "u(n) is the maximum number of edges of a unit-distance graph on n vertices (OEIS A186705). Known before this programme: u(23) >= 64 (AMP, arXiv:2412.11914, Theorem 1(b): configurations found by Engel et al. and AMP), and u(22) = 60 (our u(22) result). AMP's Lemma (Schade): a graph with n vertices and m edges has an induced subgraph on n - 1 vertices with at least ceil(m(n-2)/n) edges. With m = 66 that subgraph would have 61 > u(22) edges, so **u(23) <= 65, and u(23) is 64 or 65.**",
+   "from": "research/unit-distance-23/CONTRACT.md: Section 0, first paragraph"
+  },
+  "contract.lower": {
+   "value": 64,
+   "from": "research/unit-distance-23/CONTRACT.md: Section 0: u(23) is <lower> or <upper>"
+  },
+  "contract.upper": {
+   "value": 65,
+   "from": "research/unit-distance-23/CONTRACT.md: Section 0: u(23) is <lower> or <upper>"
+  },
+  "contract.section1": {
+   "value": [
+    "**Minimum degree exactly 5.** Deleting a vertex of degree d leaves a unit-distance graph with 65 - d <= u(22) = 60 edges, so d >= 5; and 2 x 65 / 23 < 6, so some vertex has degree <= 5. (Schade's bound; no extra lemma needed.)",
+    "**Free of all 398.** It contains none of the 398 minimal forbidden graphs on at most 10 vertices (`research/unit-distance-22/data/forbidden-398.json`, sha256 pinned in Section 5): each is not a unit-distance graph, and subgraphs of unit-distance graphs are unit-distance graphs.",
+    "**TU-free, hereditarily.** PRUNING.md's Lemma L2 with (N, M) = (23, 65): a TU gadget with its pair non-adjacent in an induced subgraph would force a 66th unit distance, and u(23) <= 65.",
+    "**Every canonical ancestor is a unit-distance graph** (L1), so the ancestor on j vertices has at most u(j) edges: u(j) from AMP for j <= 21, and u(22) = 60."
+   ],
+   "from": "research/unit-distance-23/CONTRACT.md: Section 1, bullets"
+  },
+  "contract.section3": {
+   "value": "Every graph written at (23, 65) and not TU-pruned is either embedded exactly (then u(23) = 65 and the programme stops to verify it three ways) or refuted by a certificate that `research/gp-10/check/gp10check.py`'s sample profile (or `research/unit-distance-22/check/udcheck.py`) accepts. Unknown is never absorbed into a claim.",
+   "from": "research/unit-distance-23/CONTRACT.md: Section 3"
+  },
+  "contract.amend2_deps": {
+   "value": "Section 0's dependencies gain Lemma R (every unit 4-cycle of an injective embedding is a rhombus; Globus-Parshall's Lemma 2) and Lemma T (every unit triangle is rotated by +-60 degrees).",
+   "from": "research/unit-distance-23/CONTRACT.md: Section 8, amendment 2"
+  },
+  "contract.slicing_level": {
+   "value": 13,
+   "from": "research/unit-distance-23/CONTRACT.md: Section 2, Slicing bullet"
+  },
+  "contract.amended_slicing_level": {
+   "value": 12,
+   "from": "research/unit-distance-23/CONTRACT.md: Section 8: a slicing level an amendment sets (none: no such)"
+  },
+  "contract.gates": {
+   "value": {
+    "G0": "inputs pinned (Section 5); literature recheck that u(23) is still open",
+    "G1": "Mode 398 built and validated (`enum/REPORT-398.md`: regression, semantics, filter on B10)",
+    "G2": "controls of Section 4 green; the pilot's measured cost model written before the fleet launches",
+    "G3": "every slice complete; the top level decided by checker-accepted certificates",
+    "G4": "the independent replay of Section 4.4",
+    "G5": "a cross-model soundness read of anything new in the trust chain, every finding answered in writing",
+    "G6": "the write-up generated from checker and manifest output only"
+   },
+   "from": "research/unit-distance-23/CONTRACT.md: Section 6, the gates table"
+  },
+  "contract.reach_admits": {
+   "value": {
+    "21": [
+     55,
+     56
+    ],
+    "20": [
+     50,
+     53
+    ],
+    "19": [
+     45,
+     50
+    ],
+    "22": [
+     60,
+     60
+    ]
+   },
+   "from": "research/unit-distance-23/CONTRACT.md: Section 2, Reach table bullet"
+  },
+  "jobs.cap": {
+   "value": 48,
+   "from": "coordination/cloud-workers/JOBS.md, u23-fleet: 'the cloud cap is about N'"
+  }
+ },
+ "decision": {
+  "state": "COMPLETE",
+  "headline": "The enumeration finds no (23,65) unit-distance graph. All 1,920 of 1,920 slices have a complete copy; the coverage audit says `COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares`; the 1 graph(s) the fleet's filter-only prune kept at (23,65) each carry a refutation that both checkers accept (`TOP-LEVEL OK: 1 slice(s) with kept graphs, 1 cop(ies), 0 problem(s)`) and a blind second verifier accepts (`BLIND-CHECK OK: 1 of 1 top-level certificates accepted by the blind verifier (verify_tree.py sha256 1bafc054ee736f4c); 7 of 7 tampered inputs rejected`); the G4 replays give PASS 1,920. If the gates of Section 6 are all green, u(23) = 64.",
+  "failing": [],
+  "checks": [
+   {
+    "name": "coverage",
+    "ok": true,
+    "status": "complete",
+    "detail": "1,920 of 1,920 slices have a complete copy",
+    "gate": false
+   },
+   {
+    "name": "audit",
+    "ok": true,
+    "status": "OK",
+    "detail": "`COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares`, `CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)` (exit 3); summaries 1,955, slice indices 1,920, missing 0",
+    "gate": false
+   },
+   {
+    "name": "top level",
+    "ok": true,
+    "status": "decided",
+    "detail": "kept at (23,65) by the filter-only prune: 1 graph(s) in slice(s) 50; `TOP-LEVEL OK: 1 slice(s) with kept graphs, 1 cop(ies), 0 problem(s)`",
+    "gate": false
+   },
+   {
+    "name": "blind verifier",
+    "ok": true,
+    "status": "accepts",
+    "detail": "`blind-verifier/verify_tree.py`, written from the format and the mathematics alone: `BLIND-CHECK OK: 1 of 1 top-level certificates accepted by the blind verifier (verify_tree.py sha256 1bafc054ee736f4c); 7 of 7 tampered inputs rejected`",
+    "gate": false
+   },
+   {
+    "name": "G4",
+    "ok": true,
+    "status": "PASS",
+    "detail": "verdicts over the chosen copies PASS 1,920; the audit's G4 results PASS 1,955; every replay in its mode's scope: `G4-SCOPE OK: 101 of 101 full-mode replays and 1854 of 1854 slice-mode replays in their mode's scope; 0 problem(s)`",
+    "gate": false
+   },
+   {
+    "name": "aggregate",
+    "ok": true,
+    "status": "clean",
+    "detail": "problems 0; self-check 8 of 8 identities hold; final flag yes",
+    "gate": false
+   },
+   {
+    "name": "snapshot",
+    "ok": true,
+    "status": "one snapshot",
+    "detail": "root: the audit's is the aggregate's: yes; slice copies: the audit 1,955, the aggregate 1,955; missing: the audit 0, the aggregate 0; the target cell's children and kept: the audit 1 and 1, the aggregate 1 and 1; the root's fingerprint while the tools ran: unchanged",
+    "gate": false
+   },
+   {
+    "name": "known graphs",
+    "ok": true,
+    "status": "kept",
+    "detail": "of the 35 known (22,60) configurations, the 14 with minimum degree at least 4 kept at level 22: 14; `LEVEL-22 CONTROL OK: 14 of 14 required graphs found`",
+    "gate": false
+   },
+   {
+    "name": "certification sample",
+    "ok": true,
+    "status": "all verified",
+    "detail": "63 of 63 sampled slices re-run with nothing deleted and checked, their result files identical to the fleet's; `VERIFY-SAMPLE OK: 63 of 63 planned slices verified (15 restarted, 48 random, seed 20260927; 9 of 10 workers' first slices checked whole, the rest from level 13 with the prefix compared), 0 problem(s)`",
+    "gate": false
+   },
+   {
+    "name": "tree control",
+    "ok": true,
+    "status": "empty",
+    "detail": "the whole (22,61) tree, with no u-bar override at its level below and root minimum degree 5 (Lemma D4), must keep nothing at its top: `TARGET-CHECK OK: (22,61): 1920 of 1920 slices complete, G4 PASS 1920; 0 failing, 0 missing; kept at (22,61): 0 distinct graph(s)`; `SELF-TEST passed: 79 of 79 red controls caught`",
+    "gate": true
+   },
+   {
+    "name": "calibration",
+    "ok": true,
+    "status": "all kept",
+    "detail": "the whole (21,57) tree, root minimum degree 3 (Schade's bound), must keep all five of AMP's extremal graphs: `TARGET-CHECK OK: (21,57): 1920 of 1920 slices complete, G4 PASS 1920; 0 failing, 0 missing; kept at (21,57): 10 distinct graph(s); known: 5 of 5 kept`; `SELF-TEST passed: 78 of 78 red controls caught`",
+    "gate": true
+   },
+   {
+    "name": "full re-run",
+    "ok": true,
+    "status": "all verified",
+    "detail": "every slice re-run with nothing deleted and checked (`u23-verify-all-claude`, Claude cloud): `VERIFY-ALL OK: 1920 of 1920 slices re-run and verified (48 tasks; 48 first slices checked whole, the rest from level 13 with the prefix compared; every prefix the prefix of a whole check; 6 by the memory-bounded verify-chain-lean.py after the G5 check was killed for memory), 0 problem(s)`",
+    "gate": true
+   }
+  ]
+ },
+ "lint": "the lint sees no numeral, status word or state assertion in the fixed text around the 563 values, and each of the 7 occurrences of u(23) = n sits in a conditional sentence"
+}

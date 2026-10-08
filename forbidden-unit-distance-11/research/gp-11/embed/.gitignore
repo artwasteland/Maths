@@ -1,0 +1,5 @@
+# Checked logs must travel with the returned certificate shards.
+!results/extension/**/*.log
+!cloud/degree2/**/*.log
+results/extension/**/.lock
+cloud/degree2/**/.lock

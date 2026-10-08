@@ -1,0 +1,37 @@
+R7 index = count: exit 2: slice index 3 is not below 3; anything written: False
+R7 count 0: exit 2: slice count must be a positive integer; anything written: False
+R7 index x: exit 2: slice index x is not a non-negative integer; anything written: False
+R1 runbook exit 0; log:
+    [2026-09-26T02:32:15Z] toolchain ok: Nauty&Traces version 2.8081 (32 bits); cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+    [2026-09-26T02:32:22Z] pins and self-checks passed
+    [2026-09-26T02:32:22Z] slice s0of3: disk /dev/sda2       457G  429G  5.0G  99% /
+    [2026-09-26T02:32:22Z] slice s0of3 starting (output <scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/out/dag-17-43-s0of3)
+    [2026-09-26T02:35:01Z] slice s0of3: levels <= 13 kept in <scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/out/prefix-17-43 for the later slices (185 files)
+    results written <scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/res/17-43/s0of3
+    [2026-09-26T02:35:02Z] G4 replay of slice s0of3 (full: levels 0-17, the level-10 seeds recomputed in full, red controls; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:36:22Z] G4 replay of slice s0of3 (full): PASS 385 parents sampled (227 processed), 298 production children compared, 0 mismatching, 33 stage files re-derived, seeds 14/14 identical, red controls 6/6 red; 80 s against the run's 159 s
+    [2026-09-26T02:36:22Z] slice s0of3 done
+    [2026-09-26T02:36:22Z] slice s1of3: disk /dev/sda2       457G  429G  4.8G  99% /
+    [2026-09-26T02:36:22Z] slice s1of3: levels <= 13 hard-linked from <scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/out/prefix-17-43 (185 files)
+    [2026-09-26T02:36:22Z] slice s1of3 starting (output <scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/out/dag-17-43-s1of3)
+    results written <scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/res/17-43/s1of3
+    [2026-09-26T02:36:33Z] G4 replay of slice s1of3 (slice: levels 14-17; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:37:09Z] G4 replay of slice s1of3 (slice): PASS 120 parents sampled (87 processed), 23 production children compared, 0 mismatching, 17 stage files re-derived; 36 s against the run's 11 s
+    [2026-09-26T02:37:09Z] slice s1of3 done
+    [2026-09-26T02:37:09Z] slice s2of3: disk /dev/sda2       457G  429G  4.8G  99% /
+    [2026-09-26T02:37:09Z] slice s2of3: levels <= 13 hard-linked from <scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/out/prefix-17-43 (185 files)
+    [2026-09-26T02:37:09Z] slice s2of3 starting (output <scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/out/dag-17-43-s2of3)
+    results written <scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/res/17-43/s2of3
+    [2026-09-26T02:37:20Z] G4 replay of slice s2of3 (slice: levels 14-17; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:38:00Z] G4 replay of slice s2of3 (slice): PASS 148 parents sampled (94 processed), 51 production children compared, 0 mismatching, 17 stage files re-derived; 40 s against the run's 11 s
+    [2026-09-26T02:38:00Z] slice s2of3 done
+    [2026-09-26T02:38:00Z] all slices done: 0 1 2
+R2 levels <= 13: 74 .g6 files hashed, identical in all 3 slices: True; 85 level files of slice 0 equal to the unsliced run: 85
+R3 levels >= 14: 65 of 65 files partitioned exactly by the 3 slices (disjoint, order-preserving, union = unsliced)
+R4 17-43.keep.g6: union over slices 8 graphs, unsliced 8, equal True; AMP's known (17,43) graphs present 7/7
+R5 verify-chain slice 0: exit 0: CHAIN OK; {"run": "<scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/out/dag-17-43-s0of3", "target": [17, 43], "levels_inspected": 34, "reach_files": 
+R5 verify-chain slice 1 --from-n 14: exit 0: CHAIN OK; {"run": "<scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/out/dag-17-43-s1of3", "target": [17, 43], "levels_inspected": 13, "reach_files": 
+R5 verify-chain slice 2 --from-n 14: exit 0: CHAIN OK; {"run": "<scratch>/scratchpad/g4replay/u23scratch/runbook-17-43/out/dag-17-43-s2of3", "target": [17, 43], "levels_inspected": 13, "reach_files": 
+R6 results: 220 files, 584 kB in all, largest 67 kB; per slice: ['16-38.UNKNOWN.g6', '16-38.certs.jsonl', '16-38.g6', '16-38.keep.g6', '16-38.manifest.json', '16-38.prune.manifest.json', '16-39.UNKNOWN.g6', '16-39.certs.jsonl', '16-39.g6', '16-39.keep.g6', '16-39.manifest.json', '16-39.prune.manifest.json', '16-40.UNKNOWN.g6', '16-40.certs.jsonl', '16-40.g6', '16-40.keep.g6', '16-40.manifest.json', '16-40.prune.manifest.json', '16-41.UNKNOWN.g6', '16-41.certs.jsonl', '16-41.g6', '16-41.keep.g6', '16-41.manifest.json', '16-41.prune.manifest.json', '17-43.UNKNOWN.g6', '17-43.certs.jsonl', '17-43.g6', '17-43.keep.g6', '17-43.manifest.json', '17-43.prune.manifest.json', 'counts.json', 'hashes.json', 'reach.json', 'replay', 'run-config.json', 'run-summary.json', 'verify']; per worker: ['filter-selfcheck-<host>.txt', 'linear-rules-selfcheck-<host>.txt', 'pins-<host>.json', 'replay-selfcheck-<host>.json', 'selftest-398-<host>.txt', 'verify-quick-<host>.json']
+RUNBOOK PASS
+exit 0 after 360 s

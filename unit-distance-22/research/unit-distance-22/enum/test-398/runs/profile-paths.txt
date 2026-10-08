@@ -1,0 +1,6 @@
+level 12: parent records {'skipped': 256, 'restricted': 1217, 'pattern': 542}; restricted path cpu 74 1.711 s, 398 8.648 s; pattern path cpu 74 0.106 s, 398 0.285 s
+level 13: parent records {'skipped': 296, 'restricted': 1285, 'pattern': 213}; restricted path cpu 74 3.591 s, 398 16.505 s; pattern path cpu 74 0.149 s, 398 0.550 s
+level 15: parent records {'skipped': 598, 'restricted': 907, 'pattern': 71}; restricted path cpu 74 0.598 s, 398 1.300 s; pattern path cpu 74 0.096 s, 398 0.505 s
+level 16: parent records {'skipped': 50, 'restricted': 1407, 'pattern': 61}; restricted path cpu 74 4.981 s, 398 7.980 s; pattern path cpu 74 0.132 s, 398 0.767 s
+level 17: parent records {'skipped': 0, 'restricted': 1126, 'pattern': 377}; restricted path cpu 74 10.877 s, 398 9.125 s; pattern path cpu 74 1.223 s, 398 7.432 s
+level 18: parent records {'skipped': 6, 'restricted': 532, 'pattern': 968}; restricted path cpu 74 8.892 s, 398 7.418 s; pattern path cpu 74 4.273 s, 398 26.608 s

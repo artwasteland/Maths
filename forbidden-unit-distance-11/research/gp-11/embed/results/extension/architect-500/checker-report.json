@@ -1,0 +1,50 @@
+{
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "claim_authorized": false,
+  "conditional": true,
+  "conditional_minimal": [],
+  "control": "not_a_control",
+  "counts": {
+    "embedded": 448,
+    "refuted": 0,
+    "unknown": 52
+  },
+  "cross_checks": 0,
+  "direct_rejections": 0,
+  "elapsed_seconds": 38.97708626789972,
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 160340,
+    "nice": 15,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "hosts": false,
+      "path": "/tmp/gp11-extend/replay-46xp9dei/records.jsonl",
+      "sha256": "9028dfe7cdb478237159aaa7cdaf1c811ea0521012c080d43a23f7a660c58c3b"
+    }
+  ],
+  "forbidden_limit": 0,
+  "hosts": 0,
+  "input_count": 500,
+  "input_sha256": "047790b8caf4c0f0accde05ad1b550e8d200efa7ca9268744492c06cf61dd9f3",
+  "kernel_sha256": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+  "minimal": [],
+  "profile": "sample",
+  "reason": "verified",
+  "scope": "certificate-and-run-checks",
+  "status": "ACCEPT",
+  "trusted_data_sha256": {
+    "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  },
+  "unknown_rate": {
+    "budgets": "unknown-budgets.jsonl",
+    "denominator": 500,
+    "numerator": 52
+  }
+}

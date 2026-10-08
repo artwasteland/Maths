@@ -1,0 +1,11 @@
+{
+  "reason": "worker crash: wait status 134",
+  "g6": "HGEAXjw",
+  "frame": [
+    0,
+    8
+  ],
+  "seconds": 16.847293072845787,
+  "limit": 55.0,
+  "verdict": "unknown"
+}

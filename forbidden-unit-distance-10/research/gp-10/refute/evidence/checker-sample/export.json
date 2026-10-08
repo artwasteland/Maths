@@ -1,0 +1,13 @@
+{
+  "records": 74,
+  "converted_sturm": 0,
+  "unknown": 4,
+  "local_replay": "PASS",
+  "independent_checker_run": false,
+  "argv": [
+    "<repo>/research/gp-10/refute/export_checker.py",
+    "<repo>/research/gp-10/refute/evidence/GP74.combined.jsonl",
+    "--out-dir",
+    "<repo>/research/gp-10/refute/evidence/checker-sample"
+  ]
+}

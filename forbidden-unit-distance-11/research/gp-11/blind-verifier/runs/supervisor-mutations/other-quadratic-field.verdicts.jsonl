@@ -1,0 +1,1 @@
+{"i": 0, "line": 1, "g6": "JQ`@HKYE]W?", "type": "tree", "verdict": "REJECT", "reason": "tree node root: L3 d^2 != 4|a|^2|b|^2 - (|a|^2+|b|^2-|c|^2)^2", "deps": [], "f10_premises": [], "stats": {}, "bytes": 56556, "wall_seconds": 0.02, "cpu_seconds": 0.009, "peak_rss_mb": 56.3}

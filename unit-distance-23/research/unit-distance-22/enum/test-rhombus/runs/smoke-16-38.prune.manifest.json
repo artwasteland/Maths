@@ -1,0 +1,107 @@
+{
+  "kind": "prune",
+  "level": [
+    16,
+    38
+  ],
+  "level_file": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/16-38.reach.g6",
+  "target": [
+    17,
+    43
+  ],
+  "rhombus": true,
+  "rhombus_checker": {
+    "path": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/dev_replay_rhombus.py",
+    "from_environment": true,
+    "command": "nice -n 10 <repo>/pyenv-maths/bin/python <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/dev_replay_rhombus.py --expect-n 16 --expect-m 38 --graphs <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/16-38.reach.g6 --unknown-file <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/16-38.UNKNOWN.g6 --data-dir <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/data --forbidden-set 74 <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/16-38.certs.jsonl"
+  },
+  "rhombus_stats": {
+    "graphs": 12,
+    "pass": 9,
+    "refuted": 1,
+    "tu": 2,
+    "certificate_failures": 0,
+    "failure_singular": 0,
+    "failure_inexact": 0,
+    "failure_overflow": 0,
+    "failure_empty": 0,
+    "failure_self_check": 0,
+    "fingerprint_false_positives": 0,
+    "cycles": 264,
+    "max_cycles": 24,
+    "max_rank": 14
+  },
+  "tu_rule_bound": {
+    "n": 17,
+    "proved_upper_bound": 43
+  },
+  "software_sha256": {
+    "prune.py": "31f594a6bc6e2b25f5a6b6c8240a9953a2f21b5187db42d1b79e9f3d66b5c74d",
+    "udfilter": "6e0771bb0888e193b7790bdd4b34518d5b35b313fd6a15f330f39f8489fd6dcc",
+    "udembed.py": "75886c6323caa82d15c2a4c14680c0b6ed3b5cc3608abf116934463361decbda",
+    "exact_verify.py": "ab55ce77bca0d66f13ba4189ddb16cc0a27fda36838abcf89bb1bda0d8285a7c",
+    "udcheck.py": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+    "python": "<repo>/pyenv-maths/bin/python 3.12.3",
+    "udrhombus": "718394942c875b5a7505d2086ae73b8b121ea6ee50db0cc48f18d7d35d0a31cd",
+    "udcheck_rhombus.py": "05b94af2b2e85b824b1bf649f1a80dd7f55ecc0e06acb431b0752fa347ac9a0c"
+  },
+  "inputs_sha256": {
+    "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/16-38.reach.g6": "752a89ff26a0884b2a1fbd112bdce2b8e71515d9b5b2bd7ff1da3f4b5c173055",
+    "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/data/forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/data/tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  },
+  "outputs_sha256": {
+    "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/16-38.certs.jsonl": "d264fd4a4c1ba426e743fa8fe014463dfeff1dbf7d25ce4d7c3b1f473a4da217",
+    "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/16-38.keep.g6": "b9f0a7e59922ac93ef635f93b56aa2eb069db0cbecc390f483d7bfd24f11478f",
+    "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/16-38.UNKNOWN.g6": "b9f0a7e59922ac93ef635f93b56aa2eb069db0cbecc390f483d7bfd24f11478f",
+    "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/_prune/16-38/filter.jsonl": "b6f48846fdc1ce2732a01b1c447bf737adb97fe7b421c5244a5161e71fd792e1",
+    "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/_prune/16-38/survivors.g6": "0aee3cffd330d147a7b2d3d76c98c1baf4e3a7fb0a7be04a3058c1e888c96909",
+    "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/_prune/16-38/rhombus.jsonl": "5658d14ca301aec3d68d834fb4e390c80f139d36cd828b65986245e805378261",
+    "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/smoke/_prune/16-38/rhombus-survivors.g6": "b9f0a7e59922ac93ef635f93b56aa2eb069db0cbecc390f483d7bfd24f11478f"
+  },
+  "counts": {
+    "input": 433,
+    "tu": 421,
+    "survivors": 12,
+    "rhombus_tu": 2,
+    "rhombus_refuted": 1,
+    "rhombus_survivors": 9,
+    "embedded": 0,
+    "refuted": 0,
+    "unknown": 9,
+    "kept": 9,
+    "pruned": 424
+  },
+  "embedder": {
+    "skipped": true,
+    "filter_only": true,
+    "survivors": 9
+  },
+  "jobs": 2,
+  "wall_seconds": {
+    "filter": 0.20495229214429855,
+    "rhombus": 0.002486360725015402,
+    "embed": 0.0,
+    "check": 0.18728733900934458,
+    "total": 0.4157966491766274
+  },
+  "checker": "ACCEPT certificates records=433 forbidden=0 tu=423 embedded=0 refuted=1 unknown=9 proof_nodes=0 rhombus_tu=2 rhombus_refuted=1",
+  "verified_counts": {
+    "records": 433,
+    "tu": 423,
+    "refuted": 1,
+    "embedded": 0,
+    "unknown": 9,
+    "rhombus_tu": 2,
+    "rhombus_refuted": 1,
+    "kept": 9
+  },
+  "mutation": {
+    "unknown_as_pruned": false
+  },
+  "started": "2026-09-25T21:27:20Z",
+  "finished": "2026-09-25T21:27:21Z",
+  "host": "<host>",
+  "exit_status": 0,
+  "problems": []
+}

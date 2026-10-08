@@ -1,0 +1,1054 @@
+{
+  "argv": [
+    "research/gp-10/refute/round2.py",
+    "sweep",
+    "--suite",
+    "B9p",
+    "--method",
+    "tu",
+    "--seconds",
+    ".5",
+    "--prefix",
+    "19",
+    "--tag",
+    "B9p-tu"
+  ],
+  "rows": [
+    {
+      "g6": "H??|Qro",
+      "gp_index": 20,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.020885190926492214,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H??|Qrp",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.025554105173796415,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?Ahqvo",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02545092673972249,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?Aiprp",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02041184203699231,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?ChuJp",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.020496618002653122,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?CnE`|",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.036544055212289095,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?GXmRo",
+      "gp_index": 19,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.015933192800730467,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?HVCp|",
+      "gp_index": 48,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02593536302447319,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?KLIno",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02133690658956766,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?XPdeM",
+      "gp_index": 27,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02087228000164032,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?dPdLi",
+      "gp_index": 38,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.0203301259316504,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?hPaue",
+      "gp_index": 34,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02130560902878642,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H?iRQhr",
+      "gp_index": 41,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.026535036973655224,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H@?XuVc",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.023135109804570675,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H@CNEK|",
+      "gp_index": 51,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02088868198916316,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H@Dc]Rp",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.022790479939430952,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H@EMBD|",
+      "gp_index": 49,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.021595018915832043,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H@EPQ^a",
+      "gp_index": 28,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.021732109133154154,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H@Q_o~a",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02119356906041503,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H@_maXr",
+      "gp_index": 52,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.030807611998170614,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H@dPPNB",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.021896584890782833,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H@hO]Fp",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.03052128106355667,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H@hUDTV",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.03561340970918536,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HAGW}Ed",
+      "gp_index": 31,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.023072219919413328,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HAJ?Xfw",
+      "gp_index": 25,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.0233085579238832,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HBAkqTd",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.029091678094118834,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HCO_W~q",
+      "gp_index": 23,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02102826302871108,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HGEAXjw",
+      "gp_index": 39,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.020793261006474495,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HG_\\aXr",
+      "gp_index": 53,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.027022522874176502,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HGaqOtr",
+      "gp_index": 54,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.033917390275746584,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HHEAG^x",
+      "gp_index": 55,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.03340400103479624,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HH_KiXr",
+      "gp_index": 44,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.03561198990792036,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HH`K_\\r",
+      "gp_index": 50,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02545346925035119,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HIA@Wzw",
+      "gp_index": 36,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.04095561197027564,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HIAkotd",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.031101733911782503,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HIGCkX{",
+      "gp_index": 21,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.022134448867291212,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HIGO[^q",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.030588835943490267,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HIe@G\\r",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.030980187002569437,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HMi?g\\b",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.025589313823729753,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HOKQ]Jp",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.031330580823123455,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HOLO]Fp",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.03058411506935954,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HOOo}Rp",
+      "gp_index": 57,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.05064884014427662,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HQ`F_wl",
+      "gp_index": 71,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.041542795952409506,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HSD_YVp",
+      "gp_index": 43,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.026308911852538586,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HY_EhW\\",
+      "gp_index": null,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02558218827471137,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H]`?Wsf",
+      "gp_index": null,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.03139046160504222,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H_CfKxw",
+      "gp_index": 69,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.025257740169763565,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H_HPc\\w",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02061070967465639,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H_KQ\\Jp",
+      "gp_index": 45,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.03971794480457902,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H_ScXjp",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.026735620107501745,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H_SsPNo",
+      "gp_index": 33,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.023522815201431513,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H_WXKdp",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.025664749089628458,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H_hOpNo",
+      "gp_index": 37,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02144288783892989,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H_hP_^o",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.021205753087997437,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H_hP`SV",
+      "gp_index": 22,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.025518615264445543,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H_oohVo",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.021053818985819817,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H`?NeW{",
+      "gp_index": 59,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.025388866662979126,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H`@ItGx",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.03879184368997812,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H`QAxih",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02094823494553566,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H`QBWyp",
+      "gp_index": 46,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.015820843167603016,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H`QBgyh",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.020904152188450098,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H`QBhqL",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.021037473808974028,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H`QBpiL",
+      "gp_index": 68,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02539491094648838,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H``Axih",
+      "gp_index": 73,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.025597811210900545,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H``Bgyh",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.026364549063146114,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hdh?YKr",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.021736769005656242,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hg?G|hw",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02096958737820387,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hg?X[rp",
+      "gp_index": 58,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.025772088207304478,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HgCXSLp",
+      "gp_index": 24,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.021224424708634615,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HgCo[Vp",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.023568666074424982,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HgDGlCx",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.013897222001105547,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hh_EhW\\",
+      "gp_index": 42,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.024264763109385967,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hh_Gg\\r",
+      "gp_index": null,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01835694396868348,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HkCbcWN",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.019523100927472115,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HkCeHoN",
+      "gp_index": 47,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.019499793648719788,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HkCe`WN",
+      "gp_index": 64,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018417393788695335,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HkM?Wlb",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018985089845955372,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hm__XKZ",
+      "gp_index": 56,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018723938148468733,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Ho?gqd{",
+      "gp_index": 29,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.013941586948931217,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Ho@PO~w",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01913108816370368,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Ho@PQwz",
+      "gp_index": 40,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018884875811636448,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HoCYPLp",
+      "gp_index": 32,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01887617027387023,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HoCy@TR",
+      "gp_index": 35,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.015352438669651747,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HoO_ol{",
+      "gp_index": 30,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.0136752356775105,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hp?Gi^w",
+      "gp_index": 61,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01340234000235796,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HpO]@cN",
+      "gp_index": 70,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.014830189757049084,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hp`@iWZ",
+      "gp_index": 67,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.0187444519251585,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HqG?g^{",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01899840822443366,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HqGEhW\\",
+      "gp_index": 65,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018563647288829088,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HqGOW^p",
+      "gp_index": null,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018927785102277994,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HqGRKoN",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.019060408230870962,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HqGRSgN",
+      "gp_index": 60,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018405126873403788,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HqHPOkN",
+      "gp_index": null,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.024043217301368713,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HqIAXgZ",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018910630140453577,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HqIAhWZ",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.01892436109483242,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "HqL@?[V",
+      "gp_index": 26,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.013831066899001598,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hr?MPgN",
+      "gp_index": 62,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018401571083813906,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hr_@iWN",
+      "gp_index": 63,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.019248547963798046,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hr`?Wkj",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.02112938230857253,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "Hr`?XKZ",
+      "gp_index": 72,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018944005016237497,
+        "limit": 0.5
+      }
+    },
+    {
+      "g6": "H{O_okN",
+      "gp_index": 66,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.018533692695200443,
+        "limit": 0.5
+      }
+    }
+  ],
+  "seconds": 2.5982935866340995,
+  "prefix": 19,
+  "known": false,
+  "source_sha256": {
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "audit_report.py": "fcd3646d501e8f806406321b75ddc874d1798b066e0311aef06f2138f92c1a6b",
+    "algebra.py": "f041665b93a182c22eb13531aa06bff5e0c6448c52b8bee6a05863800e963b7a",
+    "round2.py": "0b0357965c96d2c8e62dee1071067518e5c1eb2664153231a8c2fd0eb2905009",
+    "export_checker.py": "612182fba410aee4e33c12f96b2d12b54f0272350f08b6d1ef7d6e271706eccd",
+    "stall_search.py": "778394aca8e8c4b0bc88a8a24f7f402c50996f9c3c90f1fa9df274370eb3d682",
+    "centroid66.py": "93193ea7da062366148fe2664bd50b939235be2b704dd88932a8089808c9239a",
+    "gp10refute.py": "62d87028955112cf4247fb06782459f5873a58f37a70911072e4c5f9da306d1e",
+    "circle_helpers.py": "c24d242cc6cecfa94884559eafb8e08f86daaea361d5c6da78edb7470132e583",
+    "selftest.py": "fd34878e06725005254d6bcfca38a3a1cee8b1f2b5739eea77cdee219c162806",
+    "controls.py": "26717ed7fbfe69f275705d10cc652952156a0333b0a626bf29677d19d314086a",
+    "audit_sample.py": "6b3434eaa669033ef325249c81667a26726f6b6a5db446c8f702c6fce0181f3e",
+    "graphs.py": "29249a6942f9099a89cceb148fcfd2f266e99d545a70d33570abc392ae7b9f1f",
+    "null39.py": "2e45a033a125748cf0a93cc00829cde1a6d66d994940a61309ea75732f825486",
+    "wrong_frame_control.py": "660fbf6071be92b0fa7ecdfa936129cb28d39cf6f8348c4a865b0d014a0aa4ca",
+    "analytic39.py": "54fae5eb0f7879d0e9c10957369faca200f42894d9a5dbd2a09bf034db5b79b0",
+    "run_focused_controls.py": "4cc11b5f664c10105664fc573bf94c10e2768d6fff189e0010e9afdfad0a62be",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec",
+    "factored_lift.py": "d09c66885c8f6dab657ddeb1c9f84349cad5bc7d5a41cba956d304f5712ce987",
+    "real_radical.py": "4b3fb214bdb2c6d0bb2f177445d7f9bf531237ac8d052b4f45453ae928a8f817",
+    "cofactor_reduce.py": "68834b0162711f269090e4eb8749a6d1c12a02f08f56ff6ec438cc28d0fa6d2f"
+  }
+}

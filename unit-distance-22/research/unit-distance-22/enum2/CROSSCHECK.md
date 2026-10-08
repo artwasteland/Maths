@@ -134,7 +134,7 @@ vertices or edges than H; enum2 skips patterns with more vertices than H.
 
 Bench command: `replay.py bench --parent-file <_parents file> --start A --end B --n N --m M`
 (one process; measured with four such processes running concurrently under `nice -n 10` on
-liam-desktop, 4 cores, load already ~3.7 from other sessions). Seconds per parent that udenum's
+<host>, 4 cores, load already ~3.7 from other sessions). Seconds per parent that udenum's
 guard does not skip:
 
 | region | hosts | d | measured | parents/s |
@@ -203,7 +203,7 @@ of these hold.
 
 ## 3. The run and the agreement table
 
-`replay.py replay --plan-file plan-main.json --workers 4 --tag main` on liam-desktop, started 2026-09-05T13:24:19Z, finished 2026-09-05T14:14:29Z, wall 3010 s (50.2 min) with 4 worker processes under `nice -n 10`; enum2 CPU 12036 s summed over units.
+`replay.py replay --plan-file plan-main.json --workers 4 --tag main` on <host>, started 2026-09-05T13:24:19Z, finished 2026-09-05T14:14:29Z, wall 3010 s (50.2 min) with 4 worker processes under `nice -n 10`; enum2 CPU 12036 s summed over units.
 
 Shards replayed: 92 of 92 (6 whole, 86 sub-ranges); identical: 92 of 92; all identical: **True**. Parent records replayed: 7503 (of 815,215 in the two transitions, 0.92%); of these 6177 pass the minimum-degree guard (of udenum's 636,488 processed parents, 0.97%). udenum children in the replayed ranges: 57355 (of 5,128,203 in the two transitions, 1.12%); enum2 distinct children: 57355; enum2 raw constructions exceeding distinct (Aut(H)-equivalent neighbourhoods, removed by the set): 4326.
 

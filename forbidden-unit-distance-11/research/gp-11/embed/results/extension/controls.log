@@ -1,0 +1,16 @@
+test_failure_paths (__main__.ExtensionTests.test_failure_paths) ... ok
+test_higher_degree_primitive_conversion (__main__.ExtensionTests.test_higher_degree_primitive_conversion) ... ok
+test_journal_partial_write_recovery (__main__.ExtensionTests.test_journal_partial_write_recovery) ... ok
+test_nonbiconnected_missing_base_and_no_degree_two (__main__.ExtensionTests.test_nonbiconnected_missing_base_and_no_degree_two) ... ok
+test_nonmonic_reducible_and_selected_root (__main__.ExtensionTests.test_nonmonic_reducible_and_selected_root) ... ok
+test_only_colliding_extensions_stay_unknown (__main__.ExtensionTests.test_only_colliding_extensions_stay_unknown) ... COLLISION_UNKNOWN {"record":{"cert":{"budget":{"attempt_reasons":{"extension:collision":1},"attempt_seconds":1.0,"base_placements":1,"block_gluing":false,"degree_cap":256,"seconds":10},"reason":"extension:collision"},"g6":"J@CYQIagQF_","verdict":"unknown"},"stats":{"attempts":[{"base":"I?C]dPcwW","branches":[[1,2],[-1,10]],"detail":"  ***   Warning: new maximum stack size = 512000000 (488.281 Mbytes).\n  ***   at top-level: main()\n  ***                 ^------\n  ***   in function main: ...sen=s;break));if(!chosen,error(\"extension:coll\n  ***                                                 ^---------------------\n  ***   user error: extension:collision\n... skipping file '/tmp/gp11-extend-tests-b_vgekto/extension.gp'\n","reason":"extension:collision","seconds":0.00903637008741498,"tangent":false,"vertex":0}],"check_seconds":0.0,"cpu_seconds":0.009701999999997213,"degree2_vertices":1,"g6":"J@CYQIagQF_","reason":"extension:collision","seconds":0.009326576255261898,"seed":13306306366608530715,"verdict":"unknown"}}
+ok
+test_real_deletion_map_and_determinism (__main__.ExtensionTests.test_real_deletion_map_and_determinism) ... ok
+test_red_controls_and_recheck_originals (__main__.ExtensionTests.test_red_controls_and_recheck_originals) ... ok
+test_tangent_and_two_intersections (__main__.ExtensionTests.test_tangent_and_two_intersections) ... ok
+RED_CONTROLS [{"control": "coordinate_perturbed", "message": "edge_equation: (0, 1)", "reason": "edge_equation"}, {"control": "new_point_on_non_neighbour", "message": "exact_collision: (1, 2)", "reason": "exact_collision"}, {"control": "wrong_relabelling", "message": "edge_equation: (0, 2)", "reason": "edge_equation"}]
+
+----------------------------------------------------------------------
+Ran 9 tests in 17.394s
+
+OK

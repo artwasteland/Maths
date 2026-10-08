@@ -1,0 +1,364 @@
+{
+  "argv": [
+    "research/gp-10/refute/round2.py",
+    "sweep",
+    "--suite",
+    "B8p",
+    "--method",
+    "tree",
+    "--seconds",
+    "2.5",
+    "--prefix",
+    "6",
+    "--tag",
+    "B8p-tree"
+  ],
+  "rows": [
+    {
+      "g6": "G?K]Nc",
+      "gp_index": 6,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.2706662379205227,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "G?Nebs",
+      "gp_index": 13,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.13558382028713822,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "G@IQV{",
+      "gp_index": 11,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.14527767105028033,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "G@fBJs",
+      "gp_index": 9,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 4,
+        "l3_triples": 13,
+        "moves": {
+          "L1c": 2,
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.5973403276875615,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "GAJcrs",
+      "gp_index": 14,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.16436355281621218,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "GHCML{",
+      "gp_index": 12,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.11966712400317192,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "G[dBG{",
+      "gp_index": 16,
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 2.517516925930977,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "GdhAXk",
+      "gp_index": 15,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.23154224222525954,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "Gm__x[",
+      "gp_index": 17,
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 2.5136789279058576,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "GoDPV{",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 7,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.11467597400769591,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "Gp@Gzo",
+      "gp_index": 7,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.15954823605716228,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "Gq?g~o",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1b": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.08553853677585721,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "GqGTYw",
+      "gp_index": 18,
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 2.5118319038301706,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "GqGUXw",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 2,
+        "initial_rank": 3,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1,
+          "L2": 1
+        },
+        "states": 2,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.22828566888347268,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "GqHPW{",
+      "gp_index": 10,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 3,
+        "initial_rank": 4,
+        "l3_triples": 13,
+        "moves": {
+          "L1c": 2,
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "contradiction": 2
+        },
+        "method": "tree",
+        "seconds": 1.2154252962209284,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "Gr`?x[",
+      "gp_index": null,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 5,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.1308578783646226,
+        "limit": 2.5
+      }
+    },
+    {
+      "g6": "GsOiho",
+      "gp_index": 8,
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 1,
+        "initial_rank": 4,
+        "l3_triples": 0,
+        "moves": {
+          "L1a": 1
+        },
+        "states": 1,
+        "stops": {
+          "contradiction": 1
+        },
+        "method": "tree",
+        "seconds": 0.1288864933885634,
+        "limit": 2.5
+      }
+    }
+  ],
+  "seconds": 12.319201045669615,
+  "prefix": 6,
+  "known": false,
+  "source_sha256": {
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "audit_report.py": "fcd3646d501e8f806406321b75ddc874d1798b066e0311aef06f2138f92c1a6b",
+    "algebra.py": "f041665b93a182c22eb13531aa06bff5e0c6448c52b8bee6a05863800e963b7a",
+    "round2.py": "0b0357965c96d2c8e62dee1071067518e5c1eb2664153231a8c2fd0eb2905009",
+    "export_checker.py": "612182fba410aee4e33c12f96b2d12b54f0272350f08b6d1ef7d6e271706eccd",
+    "stall_search.py": "778394aca8e8c4b0bc88a8a24f7f402c50996f9c3c90f1fa9df274370eb3d682",
+    "centroid66.py": "93193ea7da062366148fe2664bd50b939235be2b704dd88932a8089808c9239a",
+    "gp10refute.py": "62d87028955112cf4247fb06782459f5873a58f37a70911072e4c5f9da306d1e",
+    "circle_helpers.py": "c24d242cc6cecfa94884559eafb8e08f86daaea361d5c6da78edb7470132e583",
+    "selftest.py": "fd34878e06725005254d6bcfca38a3a1cee8b1f2b5739eea77cdee219c162806",
+    "controls.py": "26717ed7fbfe69f275705d10cc652952156a0333b0a626bf29677d19d314086a",
+    "audit_sample.py": "6b3434eaa669033ef325249c81667a26726f6b6a5db446c8f702c6fce0181f3e",
+    "graphs.py": "29249a6942f9099a89cceb148fcfd2f266e99d545a70d33570abc392ae7b9f1f",
+    "null39.py": "2e45a033a125748cf0a93cc00829cde1a6d66d994940a61309ea75732f825486",
+    "wrong_frame_control.py": "660fbf6071be92b0fa7ecdfa936129cb28d39cf6f8348c4a865b0d014a0aa4ca",
+    "analytic39.py": "54fae5eb0f7879d0e9c10957369faca200f42894d9a5dbd2a09bf034db5b79b0",
+    "run_focused_controls.py": "4cc11b5f664c10105664fc573bf94c10e2768d6fff189e0010e9afdfad0a62be",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec",
+    "factored_lift.py": "d09c66885c8f6dab657ddeb1c9f84349cad5bc7d5a41cba956d304f5712ce987",
+    "real_radical.py": "4b3fb214bdb2c6d0bb2f177445d7f9bf531237ac8d052b4f45453ae928a8f817",
+    "cofactor_reduce.py": "68834b0162711f269090e4eb8749a6d1c12a02f08f56ff6ec438cc28d0fa6d2f"
+  }
+}

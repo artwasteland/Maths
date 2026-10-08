@@ -1,0 +1,5 @@
+s50: 1 kept graph(s) in 1 copy; udcheck.py: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15
+s50: 1 kept graph(s) in 1 copy; udcheck398.py: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15
+s50: self-test: udcheck.py rejects a tampered certificate: REJECT: /tmp/tmpwv2mw5uf/23-65.certs.jsonl:1.witness.tree.A: row space is inconsistent with the claimed constraints
+s50: self-test: udcheck398.py rejects a tampered certificate: REJECT: /tmp/tmpwv2mw5uf/23-65.certs.jsonl:1.witness.tree.A: row space is inconsistent with the claimed constraints
+TOP-LEVEL OK: 1 slice(s) with kept graphs, 1 cop(ies), 0 problem(s)

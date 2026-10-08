@@ -1,0 +1,12 @@
+{
+ "predictions_sha256": "12a37f573d087c304dc6ab629d2abf49ec555f038174ca63605aa53fd750b906",
+ "commit": "601258c057e6f22142cca92e4c5ee031a8e2e27b",
+ "predates_B11_run": true,
+ "attested_by": "claude-answering-alexeev-u22 (the coordinating Claude instance, for the repository owner), 2026-10-06T04:02:11Z, written before any B11-final run directory exists",
+ "evidence": [
+  "research/gp-11/PREDICTIONS.md at commit 601258c057e6f22142cca92e4c5ee031a8e2e27b (committer time 2026-10-01T04:57:00+10:00 = 2026-09-30T18:57:00Z) hashes to 12a37f573d087c304dc6ab629d2abf49ec555f038174ca63605aa53fd750b906 (git show | sha256sum), equal to b11_final.PREDICTION_SHA; it is the only commit touching that path, and the working-tree file hashes the same.",
+  "GitHub's server-side push activity for refs/heads/claude/answering-alexeev-u22 (GET /repos/{repo}/activity) records the push before=e0e706df296b813f4d04b6c03c81000495abddc0 after=601258c057e6f22142cca92e4c5ee031a8e2e27b at 2026-09-30T18:57:03Z (actor artwasteland): the first push containing the commit.",
+  "The first frontier-input commit, 2dcaf813459fe86e51482986beb355bea87f5f6a, is later (2026-10-01T10:58+10:00).",
+  "At 2026-10-06T04:02:11Z no B11-final run exists: <repo>/b11-endgame has no B11-final-* directory, and the final check cannot be prepared while campaign-0 has UNKNOWN packets (311 of 503 ACCEPTED at 03:42Z)."
+ ]
+}

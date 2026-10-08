@@ -1,0 +1,2 @@
+REJECT record Cr minpoly: expected positive degree integer polynomial
+REJECT run records_rejected

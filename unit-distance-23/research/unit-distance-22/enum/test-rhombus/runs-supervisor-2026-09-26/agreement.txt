@@ -1,0 +1,21 @@
+w1-measure-13.g6: 1500 graphs; prover pass 1349 refuted 25 tu 126; prototype identical on 1500; certificates replayed 151, rejected 0; certificate failures 0; seconds prover 0.01 prototype 0.7
+w1-measure-14.g6: 1500 graphs; prover pass 1207 refuted 50 tu 243; prototype identical on 1500; certificates replayed 293, rejected 0; certificate failures 0; seconds prover 0.02 prototype 0.8
+w1-measure-15.g6: 1500 graphs; prover pass 1050 refuted 102 tu 348; prototype identical on 1500; certificates replayed 450, rejected 0; certificate failures 0; seconds prover 0.02 prototype 0.9
+w1-measure-16.g6: 1500 graphs; prover pass 775 refuted 190 tu 535; prototype identical on 1500; certificates replayed 725, rejected 0; certificate failures 0; seconds prover 0.03 prototype 1.0
+w1-measure-17.g6: 1500 graphs; prover pass 619 refuted 228 tu 653; prototype identical on 1500; certificates replayed 881, rejected 0; certificate failures 0; seconds prover 0.05 prototype 1.2
+w1-measure-18.g6: 1500 graphs; prover pass 397 refuted 344 tu 759; prototype identical on 1500; certificates replayed 1103, rejected 0; certificate failures 0; seconds prover 0.04 prototype 1.3
+w1-measure-19.g6: 1500 graphs; prover pass 247 refuted 544 tu 709; prototype identical on 1500; certificates replayed 1253, rejected 0; certificate failures 0; seconds prover 0.05 prototype 1.5
+w2-measure-13.g6: 1500 graphs; prover pass 1336 refuted 29 tu 135; prototype identical on 1500; certificates replayed 164, rejected 0; certificate failures 0; seconds prover 0.01 prototype 0.7
+w2-measure-14.g6: 1500 graphs; prover pass 1206 refuted 67 tu 227; prototype identical on 1500; certificates replayed 294, rejected 0; certificate failures 0; seconds prover 0.03 prototype 0.8
+w2-measure-15.g6: 1500 graphs; prover pass 1066 refuted 94 tu 340; prototype identical on 1500; certificates replayed 434, rejected 0; certificate failures 0; seconds prover 0.02 prototype 0.9
+w2-measure-16.g6: 1500 graphs; prover pass 830 refuted 191 tu 479; prototype identical on 1500; certificates replayed 670, rejected 0; certificate failures 0; seconds prover 0.02 prototype 1.0
+w2-measure-17.g6: 1500 graphs; prover pass 738 refuted 238 tu 524; prototype identical on 1500; certificates replayed 762, rejected 0; certificate failures 0; seconds prover 0.03 prototype 1.3
+w2-measure-18.g6: 1500 graphs; prover pass 755 refuted 267 tu 478; prototype identical on 1500; certificates replayed 745, rejected 0; certificate failures 0; seconds prover 0.04 prototype 1.5
+w3-measure-13.g6: 1500 graphs; prover pass 1393 refuted 12 tu 95; prototype identical on 1500; certificates replayed 107, rejected 0; certificate failures 0; seconds prover 0.01 prototype 0.7
+w3-measure-14.g6: 1500 graphs; prover pass 1352 refuted 23 tu 125; prototype identical on 1500; certificates replayed 148, rejected 0; certificate failures 0; seconds prover 0.03 prototype 0.8
+w3-measure-15.g6: 1500 graphs; prover pass 1150 refuted 48 tu 302; prototype identical on 1500; certificates replayed 350, rejected 0; certificate failures 0; seconds prover 0.02 prototype 0.9
+w3-measure-16.g6: 1500 graphs; prover pass 1056 refuted 56 tu 388; prototype identical on 1500; certificates replayed 444, rejected 0; certificate failures 0; seconds prover 0.02 prototype 1.1
+w3-measure-17.g6: 1500 graphs; prover pass 796 refuted 127 tu 577; prototype identical on 1500; certificates replayed 704, rejected 0; certificate failures 0; seconds prover 0.03 prototype 1.3
+w3-measure-18.g6: 1500 graphs; prover pass 446 refuted 241 tu 813; prototype identical on 1500; certificates replayed 1054, rejected 0; certificate failures 0; seconds prover 0.04 prototype 1.4
+TOTAL {"pass": 17768, "refuted": 2876, "tu": 7856, "graphs": 28500, "disagreements": 0, "replay_rejections": 0}
+AGREEMENT PASS

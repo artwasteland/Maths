@@ -1,0 +1,73 @@
+{
+  "control51-final": {
+    "all_outputs_receipt_sha256": "ca525c58a18d802a45792335066c09d3cb7fc8c83d85e0fb95ba47ea71da686f",
+    "assigned_graphs": 25358,
+    "attempt_records": 575,
+    "bundles": 98,
+    "failure_classes": {
+      "no_separated_seed": 16,
+      "seed_without_exact": 9
+    },
+    "failure_flags": {
+      "attempt_deadline_unspecified": 8,
+      "producer_algebra_error": 7,
+      "producer_timeout": 25
+    },
+    "generator_sha256": "6f6e80fc33843b278761ef970a972dcc60f2b761592665cb7003c027cff4e076",
+    "labelg_sha256": "96e973e3a13442c6f626012b6b1059ef88e750aff284be6bfc6cd77ee7f185bf",
+    "manifest_sha256": "40b0d91bcca24529054961628225e2739fc954f6bcf21b8e31d287cb7ea152bf",
+    "nontrivial_TU_maps": 0,
+    "numerically_inferred_frames": 25,
+    "output_path": "research/gp-11/tools/endgame-work/control51-final",
+    "packets": 25,
+    "saved_proposals": 0,
+    "source_counts": {
+      "embedded": 24966,
+      "refuted": 367,
+      "unknown": 25
+    },
+    "source_unknowns": 25,
+    "verified_output_files": 692
+  },
+  "f1-final": {
+    "all_outputs_receipt_sha256": "68d2a8cd9bbbc8ed2e98d8a3d6f636344dcb60f85148f249ac1cba72a0c26313",
+    "assigned_graphs": 6400,
+    "attempt_records": 5612,
+    "bundles": 71,
+    "failure_classes": {
+      "no_separated_seed": 133,
+      "seed_without_exact": 111
+    },
+    "failure_flags": {
+      "checker_deadline": 31,
+      "checker_rejection_or_error": 44,
+      "producer_algebra_error": 43,
+      "producer_timeout": 241
+    },
+    "generator_sha256": "6f6e80fc33843b278761ef970a972dcc60f2b761592665cb7003c027cff4e076",
+    "labelg_sha256": "96e973e3a13442c6f626012b6b1059ef88e750aff284be6bfc6cd77ee7f185bf",
+    "manifest_sha256": "2975243e241eb3df21a836eb9f2c31e1fce4922bb50300525600790c5dbffee9",
+    "nontrivial_TU_maps": 12,
+    "numerically_inferred_frames": 243,
+    "output_path": "research/gp-11/tools/endgame-work/f1-final",
+    "packets": 244,
+    "saved_proposals": 0,
+    "source_counts": {
+      "embedded": 5631,
+      "refuted": 525,
+      "unknown": 244
+    },
+    "source_unknowns": 244,
+    "verified_output_files": 2309
+  },
+  "scope": "source-integrity and packet-structure validation; no full frozen checker run in slim snapshot",
+  "tests": {
+    "command": [
+      "python3",
+      "-B",
+      "research/gp-11/tools/test_make_packets.py"
+    ],
+    "exit": 0,
+    "log_sha256": "817aa6445a0ccbcc14154e4dd50fe40370ea8cc646a075c3d84492cd0f1a81ec"
+  }
+}

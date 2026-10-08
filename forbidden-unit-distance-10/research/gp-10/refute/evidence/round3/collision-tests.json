@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "official_checks": [
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-collision-positive",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 0,
+      "final_line": "ACCEPT run verified",
+      "seconds": 0.3209264650940895,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+    },
+    {
+      "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-collision-red",
+      "records": 1,
+      "refuted": 1,
+      "forbidden_limit": 0,
+      "checker_exit": 1,
+      "final_line": "REJECT run records_rejected",
+      "seconds": 0.06463622115552425,
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+    }
+  ],
+  "discovery_trials": [
+    {
+      "index": 16,
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 18,
+        "helper_rows": 15,
+        "sat_pairs": 3,
+        "positive_targets": 0,
+        "collision_tests": 12,
+        "method": "portfolio",
+        "seconds": 0.05713703017681837,
+        "limit": 10
+      }
+    },
+    {
+      "index": 68,
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 35,
+        "helper_rows": 18,
+        "sat_pairs": 4,
+        "positive_targets": 0,
+        "collision_tests": 17,
+        "method": "portfolio",
+        "seconds": 0.04786695679649711,
+        "limit": 10
+      }
+    }
+  ],
+  "safe_controls": [
+    {
+      "name": "prism",
+      "detail": {
+        "method": "portfolio",
+        "seconds": 1.001588128041476,
+        "limit": 1,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "name": "petersen",
+      "detail": {
+        "method": "portfolio",
+        "seconds": 1.0023085288703442,
+        "limit": 1,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "name": "spindle",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 15,
+        "helper_rows": 12,
+        "sat_pairs": 2,
+        "positive_targets": 0,
+        "collision_tests": 8,
+        "method": "portfolio",
+        "seconds": 0.02270929468795657,
+        "limit": 1
+      }
+    }
+  ]
+}

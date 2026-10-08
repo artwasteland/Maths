@@ -1,0 +1,1 @@
+{"cert": {"type": "tree", "witness": {"field": {"interval": [0, 1], "minpoly": [0, 1]}, "tree": {"A": [[1, -1, 1, -1], [1, -1, -1, 1], [1, 1, -1, -1]], "children": [], "edges": [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]], "move": {"kind": "L1a", "pair": [0, 1]}}}}, "g6": "C~", "verdict": "refuted"}

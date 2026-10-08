@@ -1,0 +1,20 @@
+{
+  "binaries_and_checker_sha256": {
+    "/usr/bin/gp": "c9673623cad2eaa7cfe402e7b7d833f1f703689a09837026b6386aaafba6deec",
+    "/usr/bin/nauty-labelg": "96e973e3a13442c6f626012b6b1059ef88e750aff284be6bfc6cd77ee7f185bf",
+    "research/gp-10/check/gp10check.py": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+  },
+  "checker_environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 160340,
+    "nice": 15,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "pari_gp": "2.15.4",
+  "pynauty": "2.8.8.1",
+  "python": "3.12.3",
+  "python_executable": "<repo>/pyenv-gp10/bin/python"
+}

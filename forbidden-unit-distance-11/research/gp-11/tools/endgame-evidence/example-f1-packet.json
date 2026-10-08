@@ -1,0 +1,852 @@
+{
+  "analyst_hints": [],
+  "attempt_history": {
+    "count": 23,
+    "path": "attempts.jsonl",
+    "prior_and_current_budget": {
+      "policy": "full",
+      "stages": [
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "tu",
+            "name": "tu",
+            "nodes": 0,
+            "seconds": 5
+          },
+          "outcome": "unknown",
+          "reason": "tu_no_checked_endpoint",
+          "stage": "tu"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "extension",
+            "name": "extension",
+            "nodes": 0,
+            "seconds": 3
+          },
+          "outcome": "unknown",
+          "reason": "graph_timeout",
+          "stage": "extension"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "rebase",
+            "name": "rebase",
+            "nodes": 0,
+            "seconds": 3
+          },
+          "outcome": "unknown",
+          "reason": "wall_budget",
+          "stage": "rebase"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "lattice18",
+            "name": "lattice",
+            "nodes": 20000,
+            "seconds": 0.5
+          },
+          "outcome": "unknown",
+          "reason": "exhausted",
+          "stage": "lattice"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "host",
+            "name": "host",
+            "nodes": 20000,
+            "seconds": 1
+          },
+          "outcome": "unknown",
+          "reason": "no_host_match",
+          "stage": "host"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "tree",
+            "name": "tree",
+            "nodes": 1200,
+            "seconds": 1
+          },
+          "outcome": "unknown",
+          "reason": "wall_budget",
+          "stage": "tree"
+        },
+        {
+          "budget": {
+            "all_pairs": true,
+            "check_seconds": 60,
+            "method": "null",
+            "name": "null",
+            "nodes": 0,
+            "seconds": 3
+          },
+          "outcome": "unknown",
+          "reason": "producer_error:TimeoutExpired",
+          "stage": "null"
+        },
+        {
+          "budget": {
+            "all_pairs": true,
+            "check_seconds": 60,
+            "method": "real",
+            "name": "real",
+            "nodes": 0,
+            "seconds": 3
+          },
+          "outcome": "unknown",
+          "reason": "producer_error:TimeoutExpired",
+          "stage": "real"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "msolve",
+            "name": "msolve",
+            "nodes": 0,
+            "seconds": 20
+          },
+          "outcome": "unknown",
+          "reason": "no_certificate_within_budget",
+          "stage": "msolve"
+        },
+        {
+          "budget": {
+            "all_pairs": true,
+            "check_seconds": 60,
+            "method": "portfolio",
+            "name": "portfolio",
+            "nodes": 0,
+            "seconds": 10
+          },
+          "outcome": "unknown",
+          "reason": "producer_error:TimeoutExpired",
+          "stage": "portfolio"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "extension",
+            "name": "esc-extension",
+            "nodes": 0,
+            "seconds": 60
+          },
+          "outcome": "unknown",
+          "reason": "graph_timeout",
+          "stage": "esc-extension"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "numeric",
+            "name": "esc-numeric",
+            "nodes": 0,
+            "seconds": 60
+          },
+          "outcome": "unknown",
+          "reason": "no_certificate",
+          "stage": "esc-numeric"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "branch_exact",
+            "name": "esc-branch",
+            "nodes": 0,
+            "seconds": 30
+          },
+          "outcome": "unknown",
+          "reason": "no_exact_certificate",
+          "stage": "esc-branch"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "msolve_long",
+            "name": "esc-msolve",
+            "nodes": 0,
+            "seconds": 120
+          },
+          "outcome": "unknown",
+          "reason": "no_certificate_within_budget",
+          "stage": "esc-msolve"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "rebase",
+            "name": "esc-rebase",
+            "nodes": 0,
+            "seconds": 60
+          },
+          "outcome": "unknown",
+          "reason": "alternative_bases_exhausted",
+          "stage": "esc-rebase"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "msolve_sat",
+            "name": "esc-saturated",
+            "nodes": 0,
+            "seconds": 180
+          },
+          "outcome": "unknown",
+          "reason": "no_exact_certificate",
+          "stage": "esc-saturated"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 180,
+            "method": "saved_exact",
+            "name": "esc-saved",
+            "nodes": 0,
+            "seconds": 180
+          },
+          "outcome": "unknown",
+          "reason": "checker:ValueError",
+          "stage": "esc-saved"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "tree",
+            "name": "esc-tree",
+            "nodes": 100000,
+            "seconds": 60
+          },
+          "outcome": "unknown",
+          "reason": "no_certificate",
+          "stage": "esc-tree"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "targeted",
+            "name": "esc-targeted",
+            "nodes": 0,
+            "seconds": 60
+          },
+          "outcome": "unknown",
+          "reason": "producer_error:TimeoutExpired",
+          "stage": "esc-targeted"
+        },
+        {
+          "budget": {
+            "all_pairs": true,
+            "check_seconds": 60,
+            "method": "null",
+            "name": "esc-null",
+            "nodes": 0,
+            "seconds": 60
+          },
+          "outcome": "unknown",
+          "reason": "producer_error:TimeoutExpired",
+          "stage": "esc-null"
+        },
+        {
+          "budget": {
+            "all_pairs": true,
+            "check_seconds": 60,
+            "method": "real",
+            "name": "esc-real",
+            "nodes": 0,
+            "seconds": 60
+          },
+          "outcome": "unknown",
+          "reason": "producer_error:TimeoutExpired",
+          "stage": "esc-real"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "numeric_pin",
+            "name": "esc-pins",
+            "nodes": 0,
+            "seconds": 120
+          },
+          "outcome": "unknown",
+          "reason": "checker:Deadline",
+          "stage": "esc-pins"
+        },
+        {
+          "budget": {
+            "all_pairs": false,
+            "check_seconds": 60,
+            "method": "targeted_components",
+            "name": "esc-components",
+            "nodes": 0,
+            "seconds": 180
+          },
+          "outcome": "unknown",
+          "reason": "no_finite_component_diagnostics",
+          "stage": "esc-components"
+        }
+      ]
+    },
+    "sha256": "e70b3b48262a407a4021e67abafba9c376ddb381c080ad63afa79a2d47356e25",
+    "timing_status": "per-stage caps retained; actual per-graph seconds not exported by these bundles"
+  },
+  "checker": {
+    "acceptance": "exit 0, literal ACCEPT run verified, status ACCEPT, zero unknown and direct_rejections, one decided graph",
+    "argv": [
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/guard.py",
+      "--",
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/check/gp11check.py",
+      "check"
+    ],
+    "control_policy": "F10 premise allowed; fixture11 is not a final B11 result",
+    "cwd": "this packet directory",
+    "pinned_command": [
+      "bash",
+      "check.sh"
+    ],
+    "pins": {
+      "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+      "gp10check.py": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+      "gp11check.py": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+      "tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629",
+      "udcheck.py": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de"
+    },
+    "result_required": "write one self-contained frozen-format record to check/records.jsonl; return checker log/report, record hash and measured wall/RSS cost",
+    "scratch": "/tmp/gp10-check (hard-coded; TMPDIR alone does not relocate it)"
+  },
+  "failure_class": {
+    "flags": [
+      "checker_deadline",
+      "producer_timeout",
+      "checker_rejection_or_error"
+    ],
+    "primary": "seed_without_exact",
+    "reason_counts": {
+      "alternative_bases_exhausted": 1,
+      "checker:Deadline": 1,
+      "checker:ValueError": 1,
+      "exhausted": 1,
+      "graph_timeout": 2,
+      "no_certificate": 2,
+      "no_certificate_within_budget": 2,
+      "no_exact_certificate": 2,
+      "no_finite_component_diagnostics": 1,
+      "no_host_match": 1,
+      "producer_error:TimeoutExpired": 6,
+      "tu_no_checked_endpoint": 1,
+      "wall_budget": 2
+    },
+    "routing_only": true,
+    "seed_evidence_mixed": false
+  },
+  "field_candidates": {
+    "proposal_metadata": [],
+    "recorded": [],
+    "status": "candidate hints only; no minimal polynomial or degree invented",
+    "suggestions": [
+      "Try rational functions over Q(sqrt(3)); triangles justify considering this subfield, not a field degree"
+    ]
+  },
+  "frames": {
+    "candidate_edges": [
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        7,
+        10
+      ]
+    ],
+    "inferred_from_numeric_only": [
+      [
+        3,
+        5
+      ]
+    ],
+    "recorded": []
+  },
+  "geometric_identities": {
+    "rhombi": [
+      {
+        "identity": "p3+p6=p7+p10",
+        "opposite_pairs": [
+          [
+            3,
+            6
+          ],
+          [
+            7,
+            10
+          ]
+        ]
+      },
+      {
+        "identity": "p4+p7=p6+p10",
+        "opposite_pairs": [
+          [
+            4,
+            7
+          ],
+          [
+            6,
+            10
+          ]
+        ]
+      }
+    ],
+    "status": "graph-derived necessary identities for injective unit-distance embeddings; not certificates",
+    "triangle_identity": "p_c=(p_a+p_b)/2 +/- sqrt(3)/2 * R90(p_b-p_a); retain both orientations",
+    "triangles": [
+      [
+        3,
+        7,
+        10
+      ],
+      [
+        4,
+        6,
+        10
+      ],
+      [
+        5,
+        8,
+        9
+      ],
+      [
+        6,
+        7,
+        10
+      ]
+    ]
+  },
+  "graph": {
+    "canonicalizer": "nauty-labelg -q",
+    "degrees": [
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5
+    ],
+    "edges": [
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        7,
+        10
+      ]
+    ],
+    "g6": "J??QPckpKu?",
+    "label_convention": "zero-based labels of this canonical graph6; never silently relabel coordinates",
+    "labels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "n": 11
+  },
+  "id": "packet-a54545e65e3e8ef9",
+  "independent_certificate_obligations": 1,
+  "missing_evidence": [
+    "saved_proposals",
+    "explicit_rational_pins",
+    "recorded_field_candidates"
+  ],
+  "mode": "b11",
+  "numerical": {
+    "available": true,
+    "collision_pairs": [
+      {
+        "occurrences": 2,
+        "pair": [
+          0,
+          4
+        ]
+      },
+      {
+        "occurrences": 1,
+        "pair": [
+          0,
+          5
+        ]
+      },
+      {
+        "occurrences": 2,
+        "pair": [
+          0,
+          7
+        ]
+      },
+      {
+        "occurrences": 1,
+        "pair": [
+          0,
+          8
+        ]
+      },
+      {
+        "occurrences": 7,
+        "pair": [
+          1,
+          5
+        ]
+      },
+      {
+        "occurrences": 4,
+        "pair": [
+          2,
+          9
+        ]
+      },
+      {
+        "occurrences": 2,
+        "pair": [
+          2,
+          10
+        ]
+      },
+      {
+        "occurrences": 19,
+        "pair": [
+          3,
+          6
+        ]
+      },
+      {
+        "occurrences": 24,
+        "pair": [
+          4,
+          7
+        ]
+      },
+      {
+        "occurrences": 1,
+        "pair": [
+          6,
+          9
+        ]
+      }
+    ],
+    "evidence_only": true,
+    "labels": "original canonical graph vertex order",
+    "precision": "as exported; do not infer high precision from float residual 0",
+    "raw": {
+      "best_gap": 0.4255424309762762,
+      "best_residual": 1.9984014443252818e-15,
+      "collision_pairs": {
+        "(0, 4)": 2,
+        "(0, 5)": 1,
+        "(0, 7)": 2,
+        "(0, 8)": 1,
+        "(1, 5)": 7,
+        "(2, 10)": 2,
+        "(2, 9)": 4,
+        "(3, 6)": 19,
+        "(4, 7)": 24,
+        "(6, 9)": 1
+      },
+      "converged": 73,
+      "coords": [
+        [
+          1.1286539779914821,
+          -0.4056285425215613
+        ],
+        [
+          0.5695952187454442,
+          -1.3978546541899322
+        ],
+        [
+          0.07554208104689154,
+          -1.386222333042535
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5873444557123366,
+          -1.9118123575141936
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          -0.3873306926539021,
+          -1.6881868778450588
+        ],
+        [
+          -0.6810029205100704,
+          -0.7322806990879622
+        ],
+        [
+          0.9979469170425076,
+          -0.9999978924229639
+        ],
+        [
+          0.13294987995206886,
+          -0.49822092421421665
+        ],
+        [
+          0.29367222785616837,
+          -0.9559061787570968
+        ]
+      ],
+      "starts": 73
+    }
+  },
+  "original_unknown": {
+    "path": "original-unknown.jsonl",
+    "sha256": "2e75a6a9e1543e63cd8a0a92613877ec2baa2610b7b7a50a453bec1ce9d2e470"
+  },
+  "rational_pins": {
+    "recorded": [],
+    "restriction": "extra pins may select embedding candidates; no added pin is an axiom in a refutation",
+    "status": "only explicit hints retained; numerical near-rationals are not exact pins"
+  },
+  "related_graph_groups": [
+    {
+      "common_connected_induced_core": "H?DB`Y\\",
+      "core_edges": 13,
+      "core_vertices": 9,
+      "deletions": {
+        "J??QPckpKu?": [
+          1,
+          9
+        ],
+        "J@`?oLDgZs?": [
+          5,
+          8
+        ]
+      },
+      "graphs": [
+        "J??QPckpKu?",
+        "J@`?oLDgZs?"
+      ],
+      "grouping_is_a_verdict_equivalence": false,
+      "id": "P000001",
+      "ids": [
+        46690,
+        312685
+      ],
+      "independent_certificate_obligations": 2,
+      "route": "analyst"
+    }
+  ],
+  "saved_proposals": {
+    "availability": "absent from exported attempts; recover explicitly from worker scratch before retrying saved-candidate checks",
+    "records": []
+  },
+  "schema": "gp11-analyst-packet-v1",
+  "source": {
+    "bundle": "<repo>/f1-bundles/f1-057",
+    "graph_id_in_bundle": 46690,
+    "receipt": "../../sources/bundle-0020/receipt.json",
+    "summary_sha256": "0724e32bfcbd86142e769925cb0765e5857868709f98c1b26e2adbef1d390e0d"
+  },
+  "tu_closure": {
+    "available": true,
+    "end": null,
+    "fixed_point": true,
+    "g6": "J??QPckpKu?",
+    "map_direction": "original canonical vertex -> canonical TU closure vertex",
+    "new_to_old": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "old_to_new": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "steps": [],
+    "steps_labels": "original canonical graph; gadget maps use stored gadget labels",
+    "validation": "edge additions and permutation only; gadget implications require frozen replay"
+  }
+}

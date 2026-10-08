@@ -26,6 +26,9 @@ and it is the reason the code is here rather than just the answers.
 
 2 source notes are deliberately not published here. They record this project's own correspondence plans about named people (who to approach, in what order, what was drafted and never sent). That is ours to keep private and would be graceless to hand to the people concerned. Nothing mathematical is withheld: no b-file, engine, verifier or run log. The omission is named here rather than left as a gap you would have to notice.
 
+- `oversight/oeis/noncappable-change-ringing/SEND-sonsteby-email.md`
+- `oversight/oeis/noncappable-change-ringing/STAGED.md`
+
 ## What is in this directory
 
 - `oversight/oeis/noncappable-change-ringing/` — the b-files, and `STAGED.md`, the notes written with them.

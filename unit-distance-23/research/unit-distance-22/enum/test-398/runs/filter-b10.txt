@@ -1,0 +1,10 @@
+B10 33162 graphs; records 33162: {'refuted': 509, 'embedded': 32653}
+set 398: {'pass': 22995, 'tu': 9658, 'forbidden': 509}; refuted called forbidden 509 of 509; embedded called forbidden 0; witnesses verified 509 naming 324 distinct members; problems []
+matcher.c (unmodified) on B10 with the 398: removed 509, equals refuted True, bad witnesses 0, hits on the 74 0
+set 74: old == new(default) True, old == new(-s 74) True, forbidden verdicts 0, output sha256 328b97f2931656699bf68c4d48ee07ffd9f773f8a841a41bff4b3d98ce3d49b3
+RED CONTROL went red: X1 old udfilter (the 74 only) judged as the set-398 run: ["F2: forbidden set differs from the refuted set: 509 refuted not called forbidden (first ['I??OzIJ}?', 'I??XUC{{O', 'I??Y`Yb}?']), 0 embedded called forbidden (first [])"]
+RED CONTROL went red: X2 record 1112 (I??OzIJ}?) turned from forbidden into pass: ["F2: forbidden set differs from the refuted set: 1 refuted not called forbidden (first ['I??OzIJ}?']), 0 embedded called forbidden (first [])"]
+RED CONTROL went red: X3 witness of record 1112 made non-injective: ['F3: 1 forbidden witnesses do not verify']
+RED CONTROL went red: X4 udfilter rebuilt with its pin moved to a list whose member 174 (IC`PiOhWw) is replaced by member 175: ["F2: forbidden set differs from the refuted set: 1 refuted not called forbidden (first ['IC`PiOhWw']), 0 embedded called forbidden (first [])", 'F3: 1 witness patterns are not their L10 graph']
+RED CONTROL went red: X5 matcher without member 174: 508
+RESULT: PASS

@@ -1,0 +1,38 @@
+[
+  {
+    "bytes": 779918,
+    "degree": 72,
+    "g6": "Jk?CX[WDJ@_",
+    "line": 69,
+    "sha256": "4366b26756ce60135399fc3530fe01ff92c3d5b0124c5d306d1ec20a888a1f1c",
+    "source": "<repo>/f1-bundles/f1-154/records.jsonl.gz",
+    "type": "exact"
+  },
+  {
+    "bytes": 1066813,
+    "degree": 56,
+    "g6": "JrHK??FEOF_",
+    "line": 90,
+    "sha256": "4f29e9e2511d0de8d199f668fbf011505e26d9933716534e64e9d4f761e24f46",
+    "source": "<repo>/f1-bundles/f1-089/records.jsonl.gz",
+    "type": "exact"
+  },
+  {
+    "bytes": 3196760,
+    "degree": 26,
+    "g6": "JdZ@??FEOF_",
+    "line": 73,
+    "sha256": "57103419d81dd0e12abbac2369c12419f094f65d5cec857140494baf5557081a",
+    "source": "<repo>/f1-bundles/f1-026/records.jsonl.gz",
+    "type": "exact"
+  },
+  {
+    "bytes": 843916,
+    "degree": 60,
+    "g6": "I`dcA?rBo",
+    "line": 258,
+    "sha256": "5fcf0ea3e8bc5863b183dd36a035598cabb65e34063345a8f79975260ef8f6ac",
+    "source": "<repo>/c51-bundles/control51-r1-071/records.jsonl.gz",
+    "type": "exact"
+  }
+]

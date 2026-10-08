@@ -1,0 +1,17 @@
+F1 fs-16-41-default: exit 0 after 16 s
+F1 fs-16-41-pf74: exit 0 after 15 s
+F1 level files: 86 of 86 byte-identical (extra in the -pf74 run: []); filter.jsonl: 12 of 12 identical
+F1 -pf74 prune manifests: 12, without filter_set 74 and both forbidden hashes: []; run-config prune_filter_set 74, run-summary 74; default run's manifests naming a filter_set: []
+F1 verify-chain --check fs-16-41-default: exit 0: CHAIN OK
+F1 verify-chain --check fs-16-41-pf74: exit 0: CHAIN OK
+F2 the Mode 74 (16,41) run the planted graph is taken from: exit 0 after 12 s
+planted graph KGCOYqedCSkJ (from the Mode 74 run's 12-24.keep.g6): 12 vertices, 24 edges, minimum degree 3 (reach bound 3); set 74 pass; set 398 forbidden member 363; canonical True
+F2 planted run -pf74: exit 2 after 14 s; the planted graph in 12-24.g6: True; 'STAGE VERIFICATION FAILED at (12,24)' reported: True; level files above 12: []; last line: N FAILED at (12,24): udenum --verify-parents --forbidden-set 398 rejected 12-24.keep.g6 records [46,92) (exit 2): udenum: parent file contains a forbidden graph
+F2 planted run default: exit 2 after 17 s; the planted graph in 12-24.g6: True; 'GENERATOR BUG' reported: True; level files above 12: []; last line: ome/liam/aw-claude-answering-alexeev-u22/research/unit-distance-22/enum/test-rhombus/scratch/e2e/fs-plant-default/reach.json']' returned non-zero exit status 2.
+F3 --prune-filter-set 74 without --verify-stages: exit 2:  74 in a set-398 run needs --verify-stages: the stage verification is then the only re-check of the 324 (PRUNING.md 5.6); directory made False
+F3 --prune-filter-set 398 in a set-74 run: exit 2: g2.py: --prune-filter-set 398 in a set-74 run would call the tree's graphs containing one of GP-10's 324 a generator bug; directory made False
+F3 --prune-filter-set without --prune: exit 2: run-dag2.py: --prune-filter-set applies to the prune step and needs --prune; directory made False
+F3 prune.py --filter-set 398 --forbidden-set 74: exit 2:  run would call the tree's graphs that contain one of GP-10's 324 a generator bug; the filter set is the run's set or 74
+F3 verify-chain on -pf74 with verify_stages removed from run-config.json: exit 1; PROBLEM: run-config.json: prune_filter_set 74 without verify_stages
+F4 runbook directory keys (set, U23_PRUNE_FILTER_SET) -> (exit, name): {('398', ''): (0, 'dag-23-65-s0of1920'), ('398', '74'): (0, 'dag-23-65-pf74-s0of1920'), ('398', '398'): (0, 'dag-23-65-s0of1920'), ('74', '74'): (0, 'dag-23-65-f74-s0of1920'), ('74', '398'): (2, 'U23_PRUNE_FILTER_SET=398 needs U23_FORBIDDEN_SET=398')}
+FILTERSET PASS

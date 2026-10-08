@@ -1,0 +1,33 @@
+{
+  "frontier_count": 702,
+  "processed": 32,
+  "new_refuted": 2,
+  "still_undecided": 700,
+  "unprocessed": 670,
+  "certificate_types": {
+    "tu": 2
+  },
+  "attempts": {
+    "tu": 32,
+    "tree": 30,
+    "null": 30,
+    "real": 30
+  },
+  "method_seconds": {
+    "tu": 1.9286607536487281,
+    "tree": 35.717838187702,
+    "null": 278.69087093276903,
+    "real": 72.68286445597187
+  },
+  "search_seconds": 389.4741593063809,
+  "checker_seconds": 0.5675583239644766,
+  "batch_count": 8,
+  "hint_count": 0,
+  "pending_hints": 0,
+  "extra_graphs": 0,
+  "hints_snapshot": {
+    "files": [],
+    "ignored_lines": [],
+    "hints": {}
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "cross_sample_determinism": {
+    "identical_embeddings_with_same_attempt_route": 3,
+    "shared_graphs": 4
+  },
+  "projection": {
+    "formula": "448708 * (graph seconds + full replay seconds) / 5000 / 14400; divide by utilization and add 256 * setup seconds / 14400",
+    "four_core_cpu_ideal_hours": 7.538851252860051,
+    "four_core_observed_wall_ideal_hours": 8.1254086474056,
+    "mean_projected_compressed_record_bytes_per_shard": 839910.213715625,
+    "planning_hours_at_50_percent_utilization": 17,
+    "planning_hours_at_80_percent_utilization": 11,
+    "population": 448708,
+    "shards": 256,
+    "startup_four_core_hour_allowance": 0.4712989601741234
+  },
+  "prototype_comparison": {
+    "delta": 3,
+    "new_embedded": 448,
+    "prototype_checker_seconds": 25.304,
+    "prototype_count": 500,
+    "prototype_embedded": 445,
+    "prototype_search_seconds": 60.029
+  },
+  "samples": {
+    "architect-500": {
+      "artifacts": {
+        "UNKNOWN.g6": {
+          "bytes": 624,
+          "sha256": "1758ee81719b9fba3f1d45d0df6dccbaae87bb8001b93d050d42aace92f39168"
+        },
+        "checker-report.json": {
+          "bytes": 1479,
+          "sha256": "3bbe3c327c220b4e074a3dc12074429f4e15862b41b5fa3a52748a04d4d864f0"
+        },
+        "input.g6": {
+          "bytes": 6000,
+          "sha256": "047790b8caf4c0f0accde05ad1b550e8d200efa7ca9268744492c06cf61dd9f3"
+        },
+        "records.jsonl.gz": {
+          "bytes": 281131,
+          "sha256": "d38bd00ec1e10bf8e5b15c5182c787f8aeb30db208b8cdac974438dc72cec083"
+        },
+        "run.json": {
+          "bytes": 218,
+          "sha256": "639598e475120e45b6b46db0071f86c9b71ea81acb187e88b03caa5659027034"
+        },
+        "timings.jsonl.gz": {
+          "bytes": 42253,
+          "sha256": "cd8cff6d6bbfc0b27564ec29182b564d9c6bb918582065b490a41127dd380830"
+        }
+      },
+      "attempt_reasons": {
+        "attempt_timeout": 16,
+        "base_not_biconnected": 126,
+        "embedded": 448,
+        "extension:collision": 99,
+        "extension:far": 23,
+        "graph_timeout": 5
+      },
+      "checker_counts": {
+        "embedded": 448,
+        "refuted": 0,
+        "unknown": 52
+      },
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+      "checker_status": "ACCEPT",
+      "completed": true,
+      "count": 500,
+      "counts": {
+        "embedded": 448,
+        "unknown": 52
+      },
+      "cpu_seconds_per_graph_including_replay": 0.2597493360000005,
+      "embedded_percent": 89.6,
+      "field_degrees": {
+        "10": 34,
+        "12": 2,
+        "16": 6,
+        "2": 1,
+        "4": 298,
+        "8": 107
+      },
+      "graph_cpu_seconds": 92.09039300000023,
+      "graph_seconds": 99.82383690727875,
+      "graphs_with_attempted_nonbiconnected_base": {
+        "embedded": 42,
+        "unknown": 19
+      },
+      "max_child_rss_kib": 160468,
+      "max_record_bytes": 73497,
+      "max_rss_kib": 160340,
+      "max_seconds": 3.0095045999623835,
+      "mean_seconds": 0.1996476738145575,
+      "median_seconds": 0.05547621473670006,
+      "min_MemAvailable_kib": 5046660,
+      "online_check_seconds": 39.91261019464582,
+      "p95_seconds": 1.0276733417995274,
+      "replay_cpu_seconds": 37.78427500000001,
+      "replay_seconds": 39.85596894985065,
+      "seconds_per_graph_including_replay": 0.27935961171425877,
+      "setup_seconds": 22.650252871215343,
+      "uncompressed_record_bytes": 1277926,
+      "unknown_attempt_reasons": {
+        "attempt_timeout": 5,
+        "base_not_biconnected": 54,
+        "extension:collision": 28,
+        "extension:far": 10,
+        "graph_timeout": 5
+      },
+      "unknown_reasons": {
+        "base_not_biconnected": 6,
+        "extension:collision": 7,
+        "extension:far": 4,
+        "graph_timeout": 5,
+        "no_degree_two_vertex": 17,
+        "placements_exhausted": 13
+      },
+      "unknown_with_any_nonbiconnected_base": 19
+    },
+    "seeded-5000": {
+      "artifacts": {
+        "UNKNOWN.g6": {
+          "bytes": 5592,
+          "sha256": "3b6260a14621b31994aa9a38bc99b0c076db61f31e524494c95ad3cd99510ff1"
+        },
+        "checker-report.json": {
+          "bytes": 1485,
+          "sha256": "abc7a06b79fe3535a9b658912b2f100b4ec9f4bf93ad3de80c5e0439215faea3"
+        },
+        "input.g6": {
+          "bytes": 60000,
+          "sha256": "f3a783b22fb9e1f18eddc65584dff31b33238a7bbc87a9b8b9c2ddfbe28e2d12"
+        },
+        "records.jsonl.gz": {
+          "bytes": 2395957,
+          "sha256": "365116cf6a8b1ffc4e138d15e9c86f814dd13bd0410fde8dc331813dc72a9239"
+        },
+        "run.json": {
+          "bytes": 218,
+          "sha256": "ecc124c3bd6941598c71d7678d2e0644420a9660fed3f78c17a21893edad186e"
+        },
+        "timings.jsonl.gz": {
+          "bytes": 408333,
+          "sha256": "110f4fa3d0a67aad330ca729dea6a0458661bc96c393c77633796f3e6b504607"
+        }
+      },
+      "attempt_reasons": {
+        "attempt_timeout": 149,
+        "base_not_biconnected": 1111,
+        "embedded": 4534,
+        "extension:collision": 892,
+        "extension:far": 194,
+        "graph_timeout": 52
+      },
+      "checker_counts": {
+        "embedded": 4534,
+        "refuted": 0,
+        "unknown": 466
+      },
+      "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+      "checker_status": "ACCEPT",
+      "completed": true,
+      "count": 5000,
+      "counts": {
+        "embedded": 4534,
+        "unknown": 466
+      },
+      "cpu_seconds_per_graph_including_replay": 0.24193787059999985,
+      "embedded_percent": 90.68,
+      "field_degrees": {
+        "10": 348,
+        "12": 57,
+        "16": 62,
+        "18": 1,
+        "2": 23,
+        "4": 3084,
+        "6": 1,
+        "8": 958
+      },
+      "graph_cpu_seconds": 860.5497639999994,
+      "graph_seconds": 918.3092772602104,
+      "graphs_with_attempted_nonbiconnected_base": {
+        "embedded": 412,
+        "unknown": 175
+      },
+      "max_child_rss_kib": 167904,
+      "max_record_bytes": 118751,
+      "max_rss_kib": 167904,
+      "max_seconds": 3.050723123829812,
+      "mean_seconds": 0.18366185545204208,
+      "median_seconds": 0.049339821096509695,
+      "min_MemAvailable_kib": 4122672,
+      "online_check_seconds": 366.28903562622145,
+      "p95_seconds": 0.6148333558812737,
+      "replay_cpu_seconds": 349.139589,
+      "replay_seconds": 385.4994861520827,
+      "seconds_per_graph_including_replay": 0.2607617526824586,
+      "setup_seconds": 26.510566509794444,
+      "uncompressed_record_bytes": 11386246,
+      "unknown_attempt_reasons": {
+        "attempt_timeout": 51,
+        "base_not_biconnected": 482,
+        "extension:collision": 263,
+        "extension:far": 77,
+        "graph_timeout": 52
+      },
+      "unknown_reasons": {
+        "base_not_biconnected": 69,
+        "extension:collision": 63,
+        "extension:far": 30,
+        "graph_timeout": 52,
+        "no_degree_two_vertex": 128,
+        "placements_exhausted": 124
+      },
+      "unknown_with_any_nonbiconnected_base": 175
+    }
+  }
+}

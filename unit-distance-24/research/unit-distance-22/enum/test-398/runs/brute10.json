@@ -1,0 +1,37 @@
+{
+ "geng_9": 274668,
+ "geng_10": 12005168,
+ "free9": 11803,
+ "brute74": 106189,
+ "brute398": 105680,
+ "gen": {
+  "old74": 106189,
+  "new74": 106189,
+  "new398": 105680
+ },
+ "difference": 509,
+ "refuted": 509,
+ "checks": {
+  "gen74_equals_brute74": true,
+  "gen398_equals_brute398": true,
+  "old74_bytes_equal_new74": true,
+  "brute398_subset_of_brute74": true,
+  "brute74_minus_brute398_is_the_509_refuted": true
+ },
+ "red_controls": [
+  {
+   "control": "gen398 with its last record dropped",
+   "went_red": true
+  },
+  {
+   "control": "the set-74 generator judged against brute398",
+   "went_red": true
+  },
+  {
+   "control": "brute398 without member 74",
+   "difference": 508,
+   "went_red": true
+  }
+ ],
+ "pass": true
+}

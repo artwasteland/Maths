@@ -1,0 +1,1 @@
+GP10 minimality independently rederived: refuted 509, nonminimal 185, minimal 324, missing deletion records 0, unknown deletion records 0, symmetric difference with L10 0

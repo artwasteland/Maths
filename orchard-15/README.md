@@ -6,11 +6,17 @@ Documented on the Artificial Wasteland at [/strata/no-thirty-second-row/](https:
 
 ## What is verified, and how far
 
-The theorem rests on a chain a stranger can replay, and every link is a file in `research/orchard-15/`: `chiro/REPORT-EXIST.md` (the nine lemmas of the reduction and the cube split), `chiro/AUDIT-15-32.md` (the ledger: for each of the four cube CNFs its sha256, the solver, the proof size and hash, and the exact `s VERIFIED` line of drat-trim; for all four the LRAT proof accepted by the formally verified checker cake_lpr; for cube 3 also the complete 5393-child depth-2 certification), `chiro/cnf-audit/` (the four CNFs regenerated on an unrelated machine, byte-identical to what the solvers refuted, and `emit_cube_cnf.py` to regenerate any of them in seconds), `chiro/lrat-c3/` (the cube 3 record), and `realize/` (the exact realizer, its blind checker, the (13,23) class with its non-realizability certificate, and the no-lex census control that met its predicted 184,320 models). The proofs themselves (10.6 GB checked by drat-trim, 314 GB of sub-case proofs) are regenerable, not stored.
+The theorem rests on a chain a stranger can replay, and every link is a file in `research/orchard-15/`: `chiro/REPORT-EXIST.md` (the nine lemmas of the reduction and the cube split), `chiro/AUDIT-15-32.md` (the ledger: for each of the four cube CNFs its sha256, the solver, the proof size and hash, and the exact `s VERIFIED` line of drat-trim; for all four the LRAT proof accepted by the formally verified checker cake_lpr; for cube 3 also the complete 5393-child depth-2 certification), `chiro/cnf-audit/` (the four CNFs regenerated on an unrelated machine, byte-identical to what the solvers refuted, and `emit_cube_cnf.py` to regenerate any of them in seconds), `chiro/lrat-c3/` (the cube 3 record), and `realize/` (the exact realizer, its blind checker, the (13,23) class with its non-realizability certificate, and the no-lex census control that met its predicted 184,320 models). The proofs themselves (19.6 GB of checked proofs in the displayed ledger, 314 GB of sub-case proofs) are regenerable, not stored.
 
 ## ⚠ Read before relying on this
 
-The proofs themselves (10.6 GB checked by drat-trim, 314 GB of sub-case proofs) are not in the repository; every one is regenerable from the frozen generator (`chiro/exist.py`, `chiro/cnf-audit/emit_cube_cnf.py`) and the recorded solver versions, and `chiro/AUDIT-15-32.md` carries every hash, time and checker log. The census of (13,23) chirotopes without symmetry breaking was still running when this entry was written and has since agreed exactly (184,320 labelled models, one class, `realize/nolex/`). In this copy the absolute machine paths that run records carry are rewritten to `<repo>/`; the hashes beside them are untouched.
+The proofs themselves (19.6 GB of checked proofs in the displayed ledger, 314 GB of sub-case proofs) are not in the repository; every one is regenerable from the frozen generator (`chiro/exist.py`, `chiro/cnf-audit/emit_cube_cnf.py`) and the recorded solver versions, and `chiro/AUDIT-15-32.md` carries every hash, time and checker log. The census of (13,23) chirotopes without lex-leader symmetry breaking was still running when this entry was written and has since agreed exactly (184,320 labelled models, one class, `realize/nolex/`). In this copy the absolute machine paths that run records carry are rewritten to `<repo>/`; the hashes beside them are untouched.
+
+## What was withheld, and why
+
+1 source note is deliberately not published here. It records this project's own correspondence plans about named people (who to approach, in what order, what was drafted and never sent). That is ours to keep private and would be graceless to hand to the people concerned. Nothing mathematical is withheld: no b-file, engine, verifier or run log. The omission is named here rather than left as a gap you would have to notice.
+
+- `research/orchard-15/OEIS-A003035-draft.md`
 
 ## What is in this directory
 
@@ -19,6 +25,19 @@ The proofs themselves (10.6 GB checked by drat-trim, 314 GB of sub-case proofs) 
 The two trees mirror the layout of the private repository these came from, so
 that every relative import inside them resolves unchanged. Nothing here reaches
 outside its own directory.
+
+## Citing this
+
+**DOI: [10.5281/zenodo.22468969](https://doi.org/10.5281/zenodo.22468969)**
+
+Assigned by Zenodo for this deposit. If that link does not resolve, the deposit is
+still a draft awaiting publication; the number is fixed either way and does not
+change when it is published.
+
+<!-- Worded to be true before AND after publication on purpose. This file is
+     frozen into the deposit, so a sentence that is only true while the deposit
+     is a draft would become a false statement in a permanent record the moment
+     somebody pressed publish. -->
 
 ## If this is useful to you
 

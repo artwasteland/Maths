@@ -1,0 +1,34 @@
+{
+  "records": {
+    "('embedded', 'super')": 28774,
+    "('embedded', 'exact')": 3879,
+    "('refuted', 'tree')": 103,
+    "('refuted', 'sub')": 185,
+    "('refuted', 'null')": 22,
+    "('refuted', 'tu')": 13,
+    "('refuted', 'real-dag')": 97,
+    "('refuted', 'real')": 24,
+    "('refuted', 'null-dag')": 65
+  },
+  "embedding_degrees": {
+    "4": 2224,
+    "8": 1413,
+    "16": 96,
+    "10": 76,
+    "12": 27,
+    "2": 23,
+    "6": 4,
+    "22": 1,
+    "24": 4,
+    "20": 5,
+    "18": 1,
+    "36": 3,
+    "26": 1,
+    "32": 1
+  },
+  "seconds": 26.779482619836926,
+  "max_rss_kib": 123284,
+  "min_MemAvailable_kib": 5568276,
+  "cpu_self": 24.523788,
+  "cpu_children": 2.3477140000000003
+}

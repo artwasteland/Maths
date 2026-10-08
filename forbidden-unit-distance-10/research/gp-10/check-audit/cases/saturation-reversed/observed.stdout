@@ -1,0 +1,2 @@
+REJECT record DFw sat_pair_order: use u < v
+REJECT run records_rejected

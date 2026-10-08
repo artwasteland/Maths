@@ -1,0 +1,92 @@
+[
+  {
+    "bytes": 1067973,
+    "certificate_sha256": "8b55583cdf0f19b5888648f9e6b80b169bb9da3519d9659cfb6af9fc7c9a1995",
+    "certificate_type": "exact",
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "command": [
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/guard.py",
+      "--",
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/measure_check_cost.py",
+      "--worker",
+      "<repo>/research/gp-11/tools/endgame-evidence/check-cost/case-000",
+      "--exact-only"
+    ],
+    "details": {
+      "interval_bisections": 0
+    },
+    "environment": {
+      "SYMPY_GROUND_TYPES": "python",
+      "executable": "<repo>/pyenv-gp10/bin/python",
+      "flint": "0.9.0",
+      "max_rss_kib": 78872,
+      "nice": 15,
+      "python": "3.12.3",
+      "sympy": "1.14.0"
+    },
+    "exit": 0,
+    "field_degree": 28,
+    "g6": "J_?gkpAYHb?",
+    "peak_child_rss_kib": 48020,
+    "peak_self_rss_kib": 85912,
+    "profile_sha256": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+    "scope": "E-exact arithmetic only; NOT a run ACCEPT",
+    "scratch_relocation": "<repo>/research/gp-11/tools/endgame-evidence/check-cost/case-000/scratch",
+    "source": "<repo>/research/gp-11/analyst/A34/a3-run/records.jsonl",
+    "status": "ARITHMETIC_PASS",
+    "timed_out": false,
+    "timeout_seconds": 900,
+    "verification_seconds": 45.02885685907677,
+    "wall_seconds": 46.096462942194194,
+    "worker_seconds": 45.49588349601254
+  },
+  {
+    "bytes": 914553,
+    "certificate_sha256": "ffa1e926a9f1570f4395d72ce0356e83f80cebbc8031112725569637f7492771",
+    "certificate_type": "exact",
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "command": [
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/guard.py",
+      "--",
+      "<repo>/pyenv-gp10/bin/python",
+      "-B",
+      "<repo>/research/gp-11/tools/measure_check_cost.py",
+      "--worker",
+      "<repo>/research/gp-11/tools/endgame-evidence/check-cost/case-001",
+      "--exact-only"
+    ],
+    "details": {
+      "interval_bisections": 0
+    },
+    "environment": {
+      "SYMPY_GROUND_TYPES": "python",
+      "executable": "<repo>/pyenv-gp10/bin/python",
+      "flint": "0.9.0",
+      "max_rss_kib": 78728,
+      "nice": 15,
+      "python": "3.12.3",
+      "sympy": "1.14.0"
+    },
+    "exit": 0,
+    "field_degree": 60,
+    "g6": "JqM??CNGqg_",
+    "peak_child_rss_kib": 47500,
+    "peak_self_rss_kib": 86792,
+    "profile_sha256": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+    "scope": "E-exact arithmetic only; NOT a run ACCEPT",
+    "scratch_relocation": "<repo>/research/gp-11/tools/endgame-evidence/check-cost/case-001/scratch",
+    "source": "<repo>/research/gp-11/analyst/A34/a4-run/records.jsonl",
+    "status": "ARITHMETIC_PASS",
+    "timed_out": false,
+    "timeout_seconds": 900,
+    "verification_seconds": 89.21719719097018,
+    "wall_seconds": 90.11105216201395,
+    "worker_seconds": 89.65301014389843
+  }
+]

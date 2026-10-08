@@ -1,0 +1,8 @@
+P1 set 398 on the Mode 74 file: exit 2: prune.py: GENERATOR BUG: the level file contains a non-F-free graph K?LcCOECYd{w (forbidden witness {'index': 340, 'map': [3, 4, 7, 9, 10, 2, 6, 5, 8, 11]})
+P2 set 74 on the Mode 74 file: exit 0; counts {'input': 16093, 'tu': 11724, 'survivors': 4369, 'embedded': 0, 'refuted': 0, 'unknown': 4369, 'kept': 4369, 'pruned': 11724}; manifest as in u(22): True
+P3 set 398 on the Mode 398 file: exit 0; counts {'input': 11262, 'tu': 8024, 'survivors': 3238, 'embedded': 0, 'refuted': 0, 'unknown': 3238, 'kept': 3238, 'pruned': 8024}; manifest says set 398, pinned file, udcheck398.py: True; certificates = Mode 74's for the 398-free graphs: True (11262 of 16093)
+P4 set 74 then set 398 in one directory: first exit 0 (left 1 filter parts), second exit 2: prune.py: GENERATOR BUG: the level file contains a non-F-free graph K?LcCOECYd{w (forbidden witness {'index': 340, 'map'
+P5 set 398 then set 74 in one directory: first exit 2 (marker '398'), second exit 0
+P6 target (23,64): exit 2: prune.py: target (23,64) lies below the proved bound u(23) <= 65; TU pruning is not justified
+P6 target (23,65): exit 0; tu_rule_bound {'n': 23, 'proved_upper_bound': 65, 'source': "u(22) = 60 (research/unit-distance-22/RESULT-u22.md) and Schade's lemma: ceil(66 * 21 / 23) = 61 > u(22)"}
+PRUNE-398 PASS

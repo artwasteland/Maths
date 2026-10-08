@@ -1,0 +1,174 @@
+
+=== build
+cdea8f70bfeb130c91978656d06833eac04d41346744082915335ede920aeeb4  ../../filter/udtriangle.c
+
+=== a. unit graphs (expected verdicts in units.tsv)
+udtriangle: graphs=13 refuted=2 tu=6 pass=5 (open=5 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=8 tree_nodes=8 leaves=8 leaves_without_cycles=0 max_nodes=1 budget_limit=4096 mirror=1
+  ok   K4: refuted
+  ok   K_{1,1,3}: refuted
+  ok   Moser spindle: pass
+  ok   W6 wheel: pass
+  ok   triangular lattice patch, hexagon of radius 2 (19 points, 42 edges): pass
+  ok   triangular lattice patch, 3x3 rhombic block: pass
+  ok   two triangles on an edge (unit rhombus with its short diagonal): pass
+  ok   TU gadget 0 (pair 1,5): tu
+  ok   TU gadget 1 (pair 4,5): tu
+  ok   TU gadget 2 (pair 2,4): tu
+  ok   TU gadget 3 (pair 3,7): tu
+  ok   TU gadget 4 (pair 6,7): tu
+  ok   TU gadget 5 (pair 6,7): tu
+ACCEPT records=13 pass=5 refuted=2 tu=6 tree_nodes=8 max_nodes=1 leaves=8 mean_nodes=1.0 max_depth=0 leaves_without_cycles=0 leaves_without_triangles=8 mean_rows_per_leaf=2.88
+
+=== samples of the (23,65) Mode-74 tree (levels 13-18: the w1 measurement samples; level 19: sampled children)
+measure-13 graphs=1500 wall=.032304163s udtriangle: graphs=1500 refuted=27 tu=348 pass=1125 (open=1125 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=151 tree_nodes=3239 leaves=1807 leaves_without_cycles=0 max_nodes=95 budget_limit=4096 mirror=1
+measure-14 graphs=1500 wall=.046120055s udtriangle: graphs=1500 refuted=50 tu=572 pass=878 (open=878 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=293 tree_nodes=5780 leaves=3201 leaves_without_cycles=0 max_nodes=79 budget_limit=4096 mirror=1
+measure-15 graphs=1500 wall=.047643815s udtriangle: graphs=1500 refuted=110 tu=684 pass=706 (open=706 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=450 tree_nodes=6574 leaves=3684 leaves_without_cycles=0 max_nodes=63 budget_limit=4096 mirror=1
+measure-16 graphs=1500 wall=.059056389s udtriangle: graphs=1500 refuted=208 tu=906 pass=386 (open=386 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=725 tree_nodes=9100 leaves=5107 leaves_without_cycles=0 max_nodes=127 budget_limit=4096 mirror=1
+measure-17 graphs=1500 wall=.068409975s udtriangle: graphs=1500 refuted=262 tu=1056 pass=182 (open=182 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=881 tree_nodes=10460 leaves=5889 leaves_without_cycles=0 max_nodes=111 budget_limit=4096 mirror=1
+measure-18 graphs=1500 wall=.070434509s udtriangle: graphs=1500 refuted=375 tu=1089 pass=36 (open=36 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=1103 tree_nodes=8662 leaves=5063 leaves_without_cycles=0 max_nodes=71 budget_limit=4096 mirror=1
+level19-children graphs=1354 wall=.053127927s udtriangle: graphs=1354 refuted=641 tu=695 pass=18 (open=18 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=1240 tree_nodes=2968 leaves=2152 leaves_without_cycles=0 max_nodes=55 budget_limit=4096 mirror=1
+  measure-13: ACCEPT records=1500 pass=1125 refuted=27 tu=348 tree_nodes=3239 max_nodes=95 leaves=1807 mean_nodes=8.64 max_depth=6 leaves_without_cycles=0 leaves_without_triangles=151 mean_rows_per_leaf=5.46
+  measure-14: ACCEPT records=1500 pass=878 refuted=50 tu=572 tree_nodes=5780 max_nodes=79 leaves=3201 mean_nodes=9.29 max_depth=6 leaves_without_cycles=0 leaves_without_triangles=293 mean_rows_per_leaf=5.82
+  measure-15: ACCEPT records=1500 pass=706 refuted=110 tu=684 tree_nodes=6574 max_nodes=63 leaves=3684 mean_nodes=8.28 max_depth=6 leaves_without_cycles=0 leaves_without_triangles=450 mean_rows_per_leaf=6.15
+  measure-16: ACCEPT records=1500 pass=386 refuted=208 tu=906 tree_nodes=9100 max_nodes=127 leaves=5107 mean_nodes=8.17 max_depth=7 leaves_without_cycles=0 leaves_without_triangles=725 mean_rows_per_leaf=7.25
+  measure-17: ACCEPT records=1500 pass=182 refuted=262 tu=1056 tree_nodes=10460 max_nodes=111 leaves=5889 mean_nodes=7.94 max_depth=7 leaves_without_cycles=0 leaves_without_triangles=881 mean_rows_per_leaf=8.05
+  measure-18: ACCEPT records=1500 pass=36 refuted=375 tu=1089 tree_nodes=8662 max_nodes=71 leaves=5063 mean_nodes=5.92 max_depth=7 leaves_without_cycles=0 leaves_without_triangles=1103 mean_rows_per_leaf=8.92
+  level19-children: ACCEPT records=1354 pass=18 refuted=641 tu=695 tree_nodes=2968 max_nodes=55 leaves=2152 mean_nodes=2.22 max_depth=6 leaves_without_cycles=0 leaves_without_triangles=1240 mean_rows_per_leaf=8.45
+
+=== b. positive controls: AMP's 56 known graphs and GP-10's 32,653 embedded B10 graphs
+udtriangle: graphs=56 refuted=0 tu=0 pass=56 (open=56 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=0 tree_nodes=0 leaves=0 leaves_without_cycles=0 max_nodes=0 budget_limit=4096 mirror=1
+udtriangle: graphs=32653 refuted=0 tu=10432 pass=22221 (open=22221 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=9712 tree_nodes=16716 leaves=13574 leaves_without_cycles=0 max_nodes=31 budget_limit=4096 mirror=1
+ACCEPT records=56 pass=56 refuted=0 tu=0 tree_nodes=0 max_nodes=0 leaves=0 mean_nodes=0 max_depth=0 leaves_without_cycles=0 leaves_without_triangles=0 mean_rows_per_leaf=0
+ACCEPT records=32653 pass=22221 refuted=0 tu=10432 tree_nodes=16716 max_nodes=31 leaves=13574 mean_nodes=1.6 max_depth=4 leaves_without_cycles=0 leaves_without_triangles=9712 mean_rows_per_leaf=3.16
+  AMP flagged: 0 (must be 0); B10 refuted: 0 (must be 0)
+  B10 tu trees followed with the real embeddings:
+checked tu graphs: 10432  leaf checks (embedding + mirror): 20864  unit leaves holding: 20864  worst residual: 2.7341e-94  exact embeddings evaluated: 858  fields: 81
+reached depths: {'reached depth 0': 19424, 'reached depth 2': 998, 'reached depth 3': 428, 'reached depth 4': 14}
+FAILURES: 0
+
+=== c. agreement with the prototype (per graph, levels 13-18)
+level-13 graphs=1500 udtriangle_flagged=375 disagreements=0
+    prototype rhombus=none        triangle=open                -> udtriangle pass              x1122
+    prototype rhombus=none        triangle=closed              -> udtriangle tu      split     x219
+    prototype rhombus=hidden-edge triangle=-                   -> udtriangle tu      root-leaf x126
+    prototype rhombus=collision   triangle=-                   -> udtriangle refuted root-leaf x25
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle tu      split     x3
+    prototype rhombus=none        triangle=no-triangles        -> udtriangle pass              x3
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle refuted split     x2
+level-14 graphs=1500 udtriangle_flagged=622 disagreements=0
+    prototype rhombus=none        triangle=open                -> udtriangle pass              x878
+    prototype rhombus=none        triangle=closed              -> udtriangle tu      split     x308
+    prototype rhombus=hidden-edge triangle=-                   -> udtriangle tu      root-leaf x243
+    prototype rhombus=collision   triangle=-                   -> udtriangle refuted root-leaf x50
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle tu      split     x21
+level-15 graphs=1500 udtriangle_flagged=794 disagreements=0
+    prototype rhombus=none        triangle=open                -> udtriangle pass              x706
+    prototype rhombus=hidden-edge triangle=-                   -> udtriangle tu      root-leaf x348
+    prototype rhombus=none        triangle=closed              -> udtriangle tu      split     x307
+    prototype rhombus=collision   triangle=-                   -> udtriangle refuted root-leaf x102
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle tu      split     x29
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle refuted split     x8
+level-16 graphs=1500 udtriangle_flagged=1114 disagreements=0
+    prototype rhombus=hidden-edge triangle=-                   -> udtriangle tu      root-leaf x535
+    prototype rhombus=none        triangle=open                -> udtriangle pass              x386
+    prototype rhombus=none        triangle=closed              -> udtriangle tu      split     x268
+    prototype rhombus=collision   triangle=-                   -> udtriangle refuted root-leaf x190
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle tu      split     x103
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle refuted split     x18
+level-17 graphs=1500 udtriangle_flagged=1318 disagreements=0
+    prototype rhombus=hidden-edge triangle=-                   -> udtriangle tu      root-leaf x653
+    prototype rhombus=collision   triangle=-                   -> udtriangle refuted root-leaf x228
+    prototype rhombus=none        triangle=closed              -> udtriangle tu      split     x205
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle tu      split     x198
+    prototype rhombus=none        triangle=open                -> udtriangle pass              x182
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle refuted split     x34
+level-18 graphs=1500 udtriangle_flagged=1464 disagreements=0
+    prototype rhombus=hidden-edge triangle=-                   -> udtriangle tu      root-leaf x759
+    prototype rhombus=collision   triangle=-                   -> udtriangle refuted root-leaf x344
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle tu      split     x295
+    prototype rhombus=none        triangle=open                -> udtriangle pass              x36
+    prototype rhombus=none        triangle=closed              -> udtriangle tu      split     x35
+    prototype rhombus=none        triangle=closed-collision    -> udtriangle refuted split     x31
+
+=== mirror construction = search, byte for byte
+same bytes: units budget 4096 (81509f271fe2e8db)
+same bytes: units budget 7 (81509f271fe2e8db)
+same bytes: measure-13 budget 4096 (1cc93b41553bbc4d)
+same bytes: measure-13 budget 7 (3459f868768580eb)
+same bytes: measure-14 budget 4096 (4464f0e1ce067eae)
+same bytes: measure-14 budget 7 (d046581ca1852389)
+same bytes: measure-15 budget 4096 (c9378fe27097f653)
+same bytes: measure-15 budget 7 (3bbf1ffbeb8142ff)
+same bytes: measure-16 budget 4096 (50842e2e826f5ff1)
+same bytes: measure-16 budget 7 (7ae4b702634d10a9)
+same bytes: measure-17 budget 4096 (7b9cc75d6906c51a)
+same bytes: measure-17 budget 7 (b1e4197d1cad3053)
+same bytes: measure-18 budget 4096 (f2c10b0901aebb50)
+same bytes: measure-18 budget 7 (00dca94a181bf789)
+same bytes: level19-children budget 4096 (ce56b327bd8cb2e6)
+same bytes: level19-children budget 7 (b775f75ce90d655e)
+same bytes: B10-embedded budget 4096 (e1b8d684688320b5)
+same bytes: B10-embedded budget 7 (f372019c87ed3021)
+same bytes: amp-known56 budget 4096 (767326a9f73e4cae)
+same bytes: amp-known56 budget 7 (767326a9f73e4cae)
+
+=== d. red controls (compile-time mutants)
+mut-rotation on amp-known56: flagged=49  devcheck: COUNT certificates=49 rejected=49 accepted=0 reasons={'identity fails at vertex 0': 45, 'identity fails at vertex 1': 3, 'identity fails at vertex 2': 1}
+mut-rotation-searchonly on amp-known56: flagged=0 verify_fail=49  devcheck: ACCEPT records=56 pass=56 refuted=0 tu=0 tree_nodes=0 max_no
+mut-rotation on B10-embedded: flagged=26677  devcheck: COUNT certificates=26677 rejected=16965 accepted=9712 reasons={'identity fails at vertex 0': 5690, 'identity fails at vertex 2': 3247, 'identity fails at vertex 1': 2915, 'identity fails at vertex 4': 1634, 'identity fails at vertex 3': 2577, 'identity fails at vertex 5': 737, 'identity fails at vertex 6': 160, 'identity fails at vertex 7': 5}
+mut-rotation-searchonly on B10-embedded: flagged=9712 verify_fail=16965  devcheck: ACCEPT records=32653 pass=22941 refuted=0 tu=9712 tree_nodes
+mut-rotation on measure-18: flagged=1500  devcheck: COUNT certificates=1500 rejected=397 accepted=1103 reasons={'identity fails at vertex 0': 215, 'identity fails at vertex 1': 112, 'identity fails at vertex 2': 61, 'identity fails at vertex 3': 9}
+mut-rotation-searchonly on measure-18: flagged=1103 verify_fail=397  devcheck: ACCEPT records=1500 pass=397 refuted=344 tu=759 tree_nodes=1
+mut-rotation: RED as required (dev checker rejected 17411 certificates; 26726 positive-control graphs flagged)
+mut-edge on amp-known56: flagged=53  devcheck: COUNT certificates=53 rejected=53 accepted=0 reasons={'pair': 53}
+mut-edge-searchonly on amp-known56: flagged=0 verify_fail=53  devcheck: ACCEPT records=56 pass=56 refuted=0 tu=0 tree_nodes=0 max_no
+mut-edge on B10-embedded: flagged=32613  devcheck: COUNT certificates=32613 rejected=29224 accepted=3389 reasons={'pair': 29224}
+mut-edge-searchonly on B10-embedded: flagged=3389 verify_fail=29224  devcheck: ACCEPT records=32653 pass=29264 refuted=0 tu=3389 tree_nodes
+mut-edge on measure-18: flagged=1500  devcheck: COUNT certificates=1500 rejected=1018 accepted=482 reasons={'pair': 1018}
+mut-edge-searchonly on measure-18: flagged=482 verify_fail=1018  devcheck: ACCEPT records=1500 pass=1018 refuted=344 tu=138 tree_nodes=
+mut-edge: RED as required (dev checker rejected 30295 certificates; 32666 positive-control graphs flagged)
+
+=== input handling, budgets, determinism
+ok   empty line is an error (exit 2)
+ok   a space inside graph6 is an error (exit 2)
+ok   wrong length is an error (exit 2)
+ok   25 vertices is an error (host limit 24) (exit 2)
+ok   a >>graph6<< header is an error (exit 2)
+ok   nonzero padding bits are an error (exit 2)
+ok   a byte above 126 is an error (exit 2)
+ok   CRLF line ending is accepted (exit 0)
+ok   a last line without newline is accepted (exit 0)
+ok   order 0 and 1 are accepted (exit 0)
+ok   -b 0 refused
+ok   -b 100001 refused
+ok   orders 0, 1, 2 pass and K4 is refuted
+ok   budget 1: flagged 881 of 1500, largest tree 1 nodes, dev checker ACCEPT
+ok   budget 2: flagged 881 of 1500, largest tree 1 nodes, dev checker ACCEPT
+ok   budget 3: flagged 890 of 1500, largest tree 3 nodes, dev checker ACCEPT
+ok   budget 4: flagged 890 of 1500, largest tree 3 nodes, dev checker ACCEPT
+ok   budget 5: flagged 890 of 1500, largest tree 3 nodes, dev checker ACCEPT
+ok   budget 6: flagged 890 of 1500, largest tree 3 nodes, dev checker ACCEPT
+ok   budget 7: flagged 960 of 1500, largest tree 7 nodes, dev checker ACCEPT
+ok   budget 8: flagged 960 of 1500, largest tree 7 nodes, dev checker ACCEPT
+ok   budget 9: flagged 960 of 1500, largest tree 7 nodes, dev checker ACCEPT
+ok   budget 10: flagged 960 of 1500, largest tree 7 nodes, dev checker ACCEPT
+ok   budget 11: flagged 976 of 1500, largest tree 11 nodes, dev checker ACCEPT
+ok   budget 12: flagged 976 of 1500, largest tree 11 nodes, dev checker ACCEPT
+ok   budget 4096: flagged 1318 of 1500, largest tree 111 nodes, dev checker ACCEPT
+ok   budget 5: every certificate equals the unbounded run's
+ok   deterministic (measure-16 twice: 50842e2e826f5ff1)
+
+=== fuzz: known-embedding unit-distance graphs; random graphs vs the prototype
+udtriangle: graphs=6000 refuted=0 tu=826 pass=5174 (open=5174 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=791 tree_nodes=1536 leaves=1181 leaves_without_cycles=0 max_nodes=143 budget_limit=4096 mirror=1
+fuzz-ud: graphs=6000 pass=5174 tu=826 refuted=0 leaf_checks=1652 split_trees=35 failures=0
+ACCEPT records=6000 pass=5174 refuted=0 tu=826 tree_nodes=1536 max_nodes=143 leaves=1181 mean_nodes=1.86 max_depth=7 leaves_without_cycles=0 leaves_without_triangles=791 mean_rows_per_leaf=3.91
+udtriangle: graphs=3000 refuted=2169 tu=102 pass=729 (open=729 budget=0 verify_fail=0 lift_fail=0 internal=0) root_leaf=2260 tree_nodes=2397 leaves=2334 leaves_without_cycles=0 max_nodes=35 budget_limit=4096 mirror=1
+ACCEPT records=3000 pass=729 refuted=2169 tu=102 tree_nodes=2397 max_nodes=35 leaves=2334 mean_nodes=1.06 max_depth=5 leaves_without_cycles=0 leaves_without_triangles=2260 mean_rows_per_leaf=4.83
+fuzz-random graphs=3000 udtriangle_flagged=2271 disagreements=0
+    prototype rhombus=collision   triangle=-                   -> udtriangle refuted root-leaf x2169
+    prototype rhombus=none        triangle=open                -> udtriangle pass              x441
+    prototype rhombus=none        triangle=no-triangles        -> udtriangle pass              x288
+    prototype rhombus=hidden-edge triangle=-                   -> udtriangle tu      root-leaf x91
+    prototype rhombus=none        triangle=closed              -> udtriangle tu      split     x11
+
+ALL STEPS PASSED

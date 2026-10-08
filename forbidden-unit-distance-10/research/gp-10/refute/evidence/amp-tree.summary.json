@@ -1,0 +1,798 @@
+{
+  "suite": "amp",
+  "method": "tree",
+  "count": 56,
+  "refuted": 0,
+  "unknown": 56,
+  "seconds_per_graph": 0.5,
+  "max_states": 200,
+  "all_sat": false,
+  "total_seconds": 25.970263186842203,
+  "rows": [
+    {
+      "index": 0,
+      "g6": "?",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 0,
+        "l3_triples": 0,
+        "moves": {},
+        "states": 1,
+        "stops": {
+          "no_move_no_embedding": 1
+        },
+        "method": "tree",
+        "seconds": 0.008150444366037846,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 1,
+      "g6": "@",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 0,
+        "l3_triples": 0,
+        "moves": {},
+        "states": 1,
+        "stops": {
+          "no_move_no_embedding": 1
+        },
+        "method": "tree",
+        "seconds": 0.007427968084812164,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 2,
+      "g6": "A_",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 0,
+        "l3_triples": 0,
+        "moves": {},
+        "states": 1,
+        "stops": {
+          "no_move_no_embedding": 1
+        },
+        "method": "tree",
+        "seconds": 0.012571054976433516,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 3,
+      "g6": "Bw",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 0,
+        "l3_triples": 3,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 0.2899192562326789,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 4,
+      "g6": "C^",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 1,
+        "l3_triples": 21,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 0.2755402382463217,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 5,
+      "g6": "DR{",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 2,
+        "l3_triples": 71,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 0.3036334081552923,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 6,
+      "g6": "E{Sw",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 2,
+        "l3_triples": 169,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 0.365155132021755,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 7,
+      "g6": "EDZw",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 3,
+        "l3_triples": 169,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 0.481168270111084,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 8,
+      "g6": "EQlw",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 3,
+        "l3_triples": 169,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 0.37696652114391327,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 9,
+      "g6": "EElw",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 3,
+        "l3_triples": 169,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 0.3515563807450235,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 10,
+      "g6": "FoSvw",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 4,
+        "l3_triples": 441,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 0.40594768710434437,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 11,
+      "g6": "G`iiqk",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5109023880213499,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 12,
+      "g6": "G`iZQk",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5147356828674674,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 13,
+      "g6": "GIISZ{",
+      "verdict": "unknown",
+      "detail": {
+        "initial_rank": 5,
+        "l3_triples": 729,
+        "moves": {
+          "L3": 1
+        },
+        "states": 3,
+        "stops": {
+          "no_move_no_embedding": 2
+        },
+        "method": "tree",
+        "seconds": 0.4664084641262889,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 14,
+      "g6": "H{dQXgj",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5089037171564996,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 15,
+      "g6": "IISpZATaw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5103147951886058,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 16,
+      "g6": "J`GWDeNYak_",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5123321041464806,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 17,
+      "g6": "J`GhcpJdQL_",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5100847231224179,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 18,
+      "g6": "KwC[KLQIibDJ",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5100375898182392,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 19,
+      "g6": "L@rLaDBIOidEDJ",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5114803658798337,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 20,
+      "g6": "M_C_?FBNLcTHTaRP_",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5073047513142228,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 21,
+      "g6": "M_DbIo`GWg`RdIah_",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5081474389880896,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 22,
+      "g6": "NGECKA@WW{igRHKpDSW",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.509964665863663,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 23,
+      "g6": "O@iib@`cC_iOAsAi_ioHZ",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5097001856192946,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 24,
+      "g6": "P?CpiPHS@OYAiA@S_UWIY?jK",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5109421028755605,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 25,
+      "g6": "P@Oa@GoQ?d@j@KEoWPOFef?w",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5086367651820183,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 26,
+      "g6": "P?_YQT_K@_r_wG@c_hWDi?ZK",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5087147653102875,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 27,
+      "g6": "P?O`H`OSHaRoq@@I_RWZAAsK",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5082575450651348,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 28,
+      "g6": "P?SaACcK@_q{u??k_LW[aBQK",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5099766082130373,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 29,
+      "g6": "PJPK?CA?gYEF_qEGaaXRAHSK",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5110546639189124,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 30,
+      "g6": "PASaACcG@?rB`xDcAhGTaAYK",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.514143506065011,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 31,
+      "g6": "Q_HG_gT_`?cB?q?hiQ?QTAH^kB?",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5118609229102731,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 32,
+      "g6": "Q`G@O?oDII@YAWD_OHiGs@wqWBo",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.511270095128566,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 33,
+      "g6": "Q?CX@C_CAXOYAg@W`QOIbwINOV?",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5111833419650793,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 34,
+      "g6": "Q_GP@COCGC_LBeBXgwCP`iBDSK_",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5080455900169909,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 35,
+      "g6": "Q?GP?aHP_K?hAaAPtDbCidCpPi?",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5115055278874934,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 36,
+      "g6": "Q_GP?ggC?ZIA@KApSOQCx?{qKF_",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5117622730322182,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 37,
+      "g6": "Q_?oq?`APgPIWW?e_cas@?M]EF_",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5095643121749163,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 38,
+      "g6": "Q_?HGoSDHKBG?J?Ft?ROB_whBPW",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5096193193458021,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 39,
+      "g6": "Q_?HPGdI_oA_?N?oQ_ioQ_ix@VO",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5105807390064001,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 40,
+      "g6": "Q_?P@CgE?oi_?d?R_uOJRiGrNC?",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5090020298957825,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 41,
+      "g6": "Q_?Oh?`E?o_i?t@J?TZOIi?nN_?",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5091883260756731,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 42,
+      "g6": "QGCCIGdX?oq?c@?r?T[K_QPSgaw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5144410179927945,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 43,
+      "g6": "Q??OP_g?WI_U@bdDHRBaKiIbE@_",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5183531371876597,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 44,
+      "g6": "Qw?G@_K?gDoOO`EBA`XbKaTPDQg",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5147653557360172,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 45,
+      "g6": "QKc?G_HW?G_b`_GqCSkFcSQpGeg",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5113159348256886,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 46,
+      "g6": "QwC?H?W@gA``Ab_XGKXAod@TQAw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5104851298965514,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 47,
+      "g6": "RJ?GKEB`CGh?AKAIh_`CKC`S`QoaRW",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5131244543008506,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 48,
+      "g6": "R@KCAHD`CG_U?jH_SOI_IQ?sPSoQTW",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5132903540506959,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 49,
+      "g6": "R?CCGx_oE?_Q?b`oKKpgGJ?cOtOPUW",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5152459079399705,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 50,
+      "g6": "S?E@cQHWB?_Q?bDPAcYWKM_BC?OAiW@T[",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5127896382473409,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 51,
+      "g6": "Tsc@IGC@GD?R?S?Wd@A_CK@HG@VM??PRKOUZ",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5090662040747702,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 52,
+      "g6": "TCKx?D?OI?OMCBSA_L?ApA_gEA\\EG?PBSCPV",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5153447510674596,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 53,
+      "g6": "TCTWACAG@@CDKC?e?QgQA@OMOq]F??OUcCEj",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5105998869985342,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 54,
+      "g6": "TCS`?H??XIZ?K_Co`CG@JO[?EOSCpGOTSCE\\",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5090689403004944,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 55,
+      "g6": "T??_`OhSCSYA@I?c?OyWBEa@c?SIU?Aa[?el",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "Deadline: graph time limit",
+        "method": "tree",
+        "seconds": 0.5081342859193683,
+        "limit": 0.5,
+        "forbidden_in_force": 0
+      }
+    }
+  ],
+  "environment": {
+    "sympy": "1.14.0",
+    "flint": "0.9.0",
+    "SYMPY_GROUND_TYPES": "python"
+  },
+  "argv": [
+    "controls.py",
+    "--suite",
+    "amp",
+    "--method",
+    "tree",
+    "--seconds",
+    "0.5"
+  ],
+  "source_sha256": {
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "algebra.py": "18b79b8f9db10df849c946d8dccb6c74f518ffc1e1f0fb7ade79f2bc2689d45a",
+    "gp10refute.py": "5854a63a6eb23bac3e62b3c4583a2ba7ebca9215f79f7636741cdc6458601787",
+    "selftest.py": "2a5063ccaa7d616e1abca9bf649ead0587dee91d4611f410e77fa22cba8c9b9d",
+    "controls.py": "7fd29fb7dae2a33efc9f12b2b83ae2d65fe2031c1bdc8d5dbeb4d35c7a6f8f6b",
+    "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec"
+  }
+}

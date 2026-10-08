@@ -1,0 +1,9 @@
+{
+  "input": "input.g6",
+  "input_sha256": "9cc850a8c6b406c368809cb76c2cb9e51d257fc72cdb4a11fd165e63b5e0f2db",
+  "profile": "named11",
+  "provenance": "provenance.json",
+  "records": [
+    "records.jsonl"
+  ]
+}

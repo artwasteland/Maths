@@ -1,0 +1,66 @@
+K6 U23_RHOMBUS=2: exit 2: U23_RHOMBUS must be 0 or 1; anything written: False
+K6 U23_RHOMBUS=1 with U23_TRIANGLES=1: exit 2: U23_TRIANGLES=1 implies the rhombus rule: set one of the two; anything written: False
+K6 U23_RHOMBUS=1 with a missing checker: exit 3: 2:23:42Z] /nonexistent/udcheck_rhombus.py is missing (the linear rules' provers and checkers are pinned on every worker); run directories made: 0
+K1 rhombus rule, slices 0 and 1 of 2: exit 0
+    [2026-09-26T02:23:42Z] toolchain ok: Nauty&Traces version 2.8081 (32 bits); cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+    [2026-09-26T02:23:50Z] pins and self-checks passed
+    [2026-09-26T02:23:50Z] slice s0of2: disk /dev/sda2       457G  429G  5.3G  99% /
+    [2026-09-26T02:23:50Z] slice s0of2 starting (output <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/dag-16-41-L12-rh-s0of2)
+    [2026-09-26T02:24:10Z] slice s0of2: levels <= 12 kept in <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/prefix-16-41-L12-rh for the later slices (111 files)
+    results written <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/res/16-41-L12-rh/s0of2
+    [2026-09-26T02:24:10Z] G4 replay of slice s0of2 (full: levels 0-16, the level-10 seeds recomputed in full, red controls; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:25:10Z] G4 replay of slice s0of2 (full): PASS 170 parents sampled (127 processed), 57 production children compared, 0 mismatching, 19 stage files re-derived, seeds 13/13 identical, red controls 6/6 red; 60 s against the run's 20 s
+    [2026-09-26T02:25:10Z] slice s0of2 done
+    [2026-09-26T02:25:10Z] slice s1of2: disk /dev/sda2       457G  429G  5.2G  99% /
+    [2026-09-26T02:25:10Z] slice s1of2: levels <= 12 hard-linked from <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/prefix-16-41-L12-rh (111 files)
+    [2026-09-26T02:25:10Z] slice s1of2 starting (output <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/dag-16-41-L12-rh-s1of2)
+    results written <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/res/16-41-L12-rh/s1of2
+    [2026-09-26T02:25:13Z] G4 replay of slice s1of2 (slice: levels 13-16; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:25:18Z] G4 replay of slice s1of2 (slice): PASS 89 parents sampled (66 processed), 25 production children compared, 0 mismatching, 11 stage files re-derived; 5 s against the run's 3 s
+    [2026-09-26T02:25:18Z] slice s1of2 done
+    [2026-09-26T02:25:18Z] all slices done: 0 1
+K3 pins after the rhombus run: the linear rules' files pinned: ['check/tri_verify.py', 'check/udcheck_rhombus.py', 'filter/udrhombus', 'filter/udrhombus.c', 'filter/udtriangle', 'filter/udtriangle.c']; missing []
+K1 triangles rule, slices 0 and 1 of 2: exit 0
+    [2026-09-26T02:25:18Z] toolchain ok: Nauty&Traces version 2.8081 (32 bits); cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+    [2026-09-26T02:25:25Z] pins and self-checks passed
+    [2026-09-26T02:25:25Z] slice s0of2: disk /dev/sda2       457G  429G  5.2G  99% /
+    [2026-09-26T02:25:25Z] slice s0of2 starting (output <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/dag-16-41-L12-tri-s0of2)
+    [2026-09-26T02:25:42Z] slice s0of2: levels <= 12 kept in <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/prefix-16-41-L12-tri for the later slices (111 files)
+    results written <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/res/16-41-L12-tri/s0of2
+    [2026-09-26T02:25:42Z] G4 replay of slice s0of2 (full: levels 0-16, the level-10 seeds recomputed in full, red controls; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:26:44Z] G4 replay of slice s0of2 (full): PASS 160 parents sampled (117 processed), 57 production children compared, 0 mismatching, 19 stage files re-derived, seeds 13/13 identical, red controls 6/6 red; 62 s against the run's 17 s
+    [2026-09-26T02:26:44Z] slice s0of2 done
+    [2026-09-26T02:26:44Z] slice s1of2: disk /dev/sda2       457G  429G  5.1G  99% /
+    [2026-09-26T02:26:44Z] slice s1of2: levels <= 12 hard-linked from <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/prefix-16-41-L12-tri (111 files)
+    [2026-09-26T02:26:44Z] slice s1of2 starting (output <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/dag-16-41-L12-tri-s1of2)
+    results written <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/res/16-41-L12-tri/s1of2
+    [2026-09-26T02:26:49Z] G4 replay of slice s1of2 (slice: levels 13-16; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:26:55Z] G4 replay of slice s1of2 (slice): PASS 81 parents sampled (58 processed), 25 production children compared, 0 mismatching, 11 stage files re-derived; 6 s against the run's 5 s
+    [2026-09-26T02:26:55Z] slice s1of2 done
+    [2026-09-26T02:26:55Z] all slices done: 0 1
+K3 pins after the triangles run: the linear rules' files pinned: ['check/tri_verify.py', 'check/udcheck_rhombus.py', 'filter/udrhombus', 'filter/udrhombus.c', 'filter/udtriangle', 'filter/udtriangle.c']; missing []
+K2 no rule, slice 0, same U23_OUT: exit 0
+    [2026-09-26T02:26:55Z] toolchain ok: Nauty&Traces version 2.8081 (32 bits); cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+    [2026-09-26T02:27:02Z] pins and self-checks passed
+    [2026-09-26T02:27:02Z] slice s0of2: disk /dev/sda2       457G  429G  5.3G  99% /
+    [2026-09-26T02:27:02Z] slice s0of2 starting (output <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/dag-16-41-L12-s0of2)
+    [2026-09-26T02:27:22Z] slice s0of2: levels <= 12 kept in <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/prefix-16-41-L12 for the later slices (111 files)
+    results written <scratch>/scratchpad/g4replay/rhscratch/runbook-rh/res/16-41-L12/s0of2
+    [2026-09-26T02:27:22Z] G4 replay of slice s0of2 (full: levels 0-16, the level-10 seeds recomputed in full, red controls; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:28:40Z] G4 replay of slice s0of2 (full): PASS 171 parents sampled (127 processed), 71 production children compared, 0 mismatching, 19 stage files re-derived, seeds 13/13 identical, red controls 6/6 red; 78 s against the run's 20 s
+    [2026-09-26T02:28:40Z] slice s0of2 done
+    [2026-09-26T02:28:40Z] all slices done: 0
+K3 pins after the plain run: the linear rules' files pinned: ['check/tri_verify.py', 'check/udcheck_rhombus.py', 'filter/udrhombus', 'filter/udrhombus.c', 'filter/udtriangle', 'filter/udtriangle.c']; missing []
+K3 rhombus slice 0: run-config rhombus True, triangles None; 12 prune manifests, 0 not naming the rule and the real checker
+K3 rhombus slice 1: run-config rhombus True, triangles None; 12 prune manifests, 0 not naming the rule and the real checker
+K3 triangles slice 0: run-config triangles True, rhombus None; 12 prune manifests, 0 not naming the rule and the real checker
+K3 triangles slice 1: run-config triangles True, rhombus None; 12 prune manifests, 0 not naming the rule and the real checker
+K3 plain slice 0: run-config rule keys []; prune manifests naming a rule: []
+K4 rhombus: union of the two slices' 16-41.keep.g6: 1 graphs; known (16,41) graphs present 1/1
+K5 verify-chain rhombus slice 0: exit 0: CHAIN OK; {"run": "<scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/dag-16-41-L12-rh-s0of2", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files":
+K5 verify-chain rhombus slice 1 --from-n 13: exit 0: CHAIN OK; {"run": "<scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/dag-16-41-L12-rh-s1of2", "target": [16, 41], "levels_inspected": 8, "reach_files": 8, "keep_files": 8
+K4 triangles: union of the two slices' 16-41.keep.g6: 1 graphs; known (16,41) graphs present 1/1
+K5 verify-chain triangles slice 0: exit 0: CHAIN OK; {"run": "<scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/dag-16-41-L12-tri-s0of2", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files"
+K5 verify-chain triangles slice 1 --from-n 13: exit 0: CHAIN OK; {"run": "<scratch>/scratchpad/g4replay/rhscratch/runbook-rh/out/dag-16-41-L12-tri-s1of2", "target": [16, 41], "levels_inspected": 8, "reach_files": 8, "keep_files": 
+RUNBOOK-RULES PASS
+exit 0 after 305 s

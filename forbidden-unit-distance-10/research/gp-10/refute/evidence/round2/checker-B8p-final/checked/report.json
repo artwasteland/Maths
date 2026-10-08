@@ -1,0 +1,50 @@
+{
+  "checker_sha256": "ca643575c793c20ed716ef696cfef84b39b47e9d4a64a3e1790089074c88de8f",
+  "claim_authorized": false,
+  "conditional": false,
+  "conditional_minimal": [],
+  "control": "not_a_control",
+  "counts": {
+    "embedded": 0,
+    "refuted": 17,
+    "unknown": 0
+  },
+  "cross_checks": 0,
+  "direct_rejections": 0,
+  "elapsed_seconds": 0.7579060536809266,
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 191300,
+    "nice": 19,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "hosts": false,
+      "path": "<repo>/research/gp-10/refute/evidence/round2/checker-B8p-final/records.jsonl",
+      "sha256": "47b30961853aa6a22c31ad4720ca15fb04c490065850681df8db65b52cc390bb"
+    }
+  ],
+  "forbidden_limit": 7,
+  "hosts": 0,
+  "input_count": 17,
+  "input_sha256": "643e0f6aae3ff1dbec9687dc1f2237f4a9b7d55c73272d3700b7e625a11e8c16",
+  "kernel_sha256": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+  "minimal": [],
+  "profile": "sample",
+  "reason": "verified",
+  "scope": "certificate-and-run-checks",
+  "status": "ACCEPT",
+  "trusted_data_sha256": {
+    "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  },
+  "unknown_rate": {
+    "budgets": "unknown-budgets.jsonl",
+    "denominator": 17,
+    "numerator": 0
+  }
+}

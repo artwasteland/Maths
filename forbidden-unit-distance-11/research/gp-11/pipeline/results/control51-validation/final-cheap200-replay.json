@@ -1,0 +1,13 @@
+{
+  "claim_authorized": false,
+  "counts": {
+    "embedded": 176,
+    "refuted": 3,
+    "unknown": 21
+  },
+  "elapsed_seconds": 4.553558856714517,
+  "profile": "sample",
+  "report_sha256": "4cedf5421d693e4b21ee406d5a55afa6d651b1abd49753117a4ce492bcb88358",
+  "source_summary_sha256": "578291642ed257ae6a588e345a54b4265cd8652276efd186a026c34aba90eb0d",
+  "status": "ACCEPT"
+}

@@ -1,0 +1,32 @@
+new udenum a99b130ab5ad0386265c429b78cf3c4a4c708e1d5dd6e222bec14a4596c16a84; new udfilter b0947a10659b78059013d3d99ba22b8ddc116e9add7d3ce0c4e34c098407a09e; matcher32 5c95b5227064ce0c267643c5f3cff761501f50cae6329e635fceb06518849aba; forbidden-398.g6 91d5810c4d7b02d97afec7dfe2a2a5629f2075439100aa8eae6b60dca4ff4381
+dag-22-61/11-19              P74  18668 (398-hits    505) P398  18163 | C74  59129 (398-hits  10957) expected  48172 C398  48172 | EQUAL (udfilter agrees True, nx negatives 8 decided/0 timed out, witnesses 11462)
+dag-22-61/11-20              P74   3333 (398-hits    362) P398   2971 | C74   5737 (398-hits   1308) expected   4429 C398   4429 | EQUAL (udfilter agrees True, nx negatives 6 decided/0 timed out, witnesses 1670)
+dag-22-61/11-21              P74    247 (398-hits      9) P398    238 | C74    363 (398-hits     20) expected    343 C398    343 | EQUAL (udfilter agrees True, nx negatives 4 decided/0 timed out, witnesses 29)
+dag-22-61/11-22              P74    247 (398-hits      9) P398    238 | C74     25 (398-hits      0) expected     25 C398     25 | EQUAL (udfilter agrees True, nx negatives 3 decided/0 timed out, witnesses 9)
+dag-22-61/11-23              P74     20 (398-hits      0) P398     20 | C74      2 (398-hits      0) expected      2 C398      2 | EQUAL (udfilter agrees True, nx negatives 2 decided/0 timed out, witnesses 0)
+dag-22-61/12-23              P74   6125 (398-hits   1328) P398   4797 | C74  16281 (398-hits   4831) expected  11450 C398  11450 | EQUAL (udfilter agrees True, nx negatives 2 decided/0 timed out, witnesses 6159)
+dag-22-61/12-24              P74   6127 (398-hits   1328) P398   4799 | C74   1034 (398-hits    113) expected    921 C398    921 | EQUAL (udfilter agrees True, nx negatives 2 decided/0 timed out, witnesses 1441)
+dag-22-61/12-25              P74    390 (398-hits     20) P398    370 | C74     81 (398-hits      2) expected     79 C398     79 | EQUAL (udfilter agrees True, nx negatives 2 decided/0 timed out, witnesses 22)
+dag-22-61/12-26              P74     27 (398-hits      0) P398     27 | C74      6 (398-hits      0) expected      6 C398      6 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 0)
+dag-22-61/12-27              P74      2 (398-hits      0) P398      2 | C74      1 (398-hits      0) expected      1 C398      1 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 0)
+dag-18-46/15-34              P74  20654 (398-hits   5913) P398  14741 | C74   5886 (398-hits   1978) expected   3908 C398   3908 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 7891)
+dag-18-46/15-35              P74   1162 (398-hits    187) P398    975 | C74    252 (398-hits     42) expected    210 C398    210 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 229)
+dag-18-46/15-36              P74     57 (398-hits      5) P398     52 | C74     11 (398-hits      0) expected     11 C398     11 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 5)
+dag-18-46/15-37              P74      2 (398-hits      0) P398      2 | C74      1 (398-hits      0) expected      1 C398      1 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 0)
+dag-18-46/16-38              P74   6150 (398-hits   2020) P398   4130 | C74   2045 (398-hits    675) expected   1370 C398   1370 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 2695)
+dag-18-46/16-39              P74    264 (398-hits     42) P398    222 | C74    108 (398-hits     12) expected     96 C398     96 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 54)
+dag-18-46/16-40              P74    264 (398-hits     42) P398    222 | C74      6 (398-hits      0) expected      6 C398      6 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 42)
+dag-18-46/16-41              P74     12 (398-hits      0) P398     12 | C74      1 (398-hits      0) expected      1 C398      1 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 0)
+dag-18-46/17-42              P74   2160 (398-hits    687) P398   1473 | C74    590 (398-hits    333) expected    257 C398    257 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 1020)
+dag-18-46/17-43              P74   2160 (398-hits    687) P398   1473 | C74     15 (398-hits      6) expected      9 C398      9 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 693)
+dag-18-46/18-46              P74  19708 (398-hits  12767) P398   6941 | C74     84 (398-hits     61) expected     23 C398     23 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 12828)
+u22-all-48-slices/22-61      P74    743 (398-hits    703) P398     40 | C74      4 (398-hits      4) expected      0 C398      0 | EQUAL (udfilter agrees True, nx negatives 0 decided/1 timed out, witnesses 707)
+RED CONTROL went red: W1 empty set-398 output (dag-22-61/11-19): equality FAIL, wrong subset check PASS, 0 vs 48172 expected
+RED CONTROL went red: W2 one expected record dropped (dag-22-61/11-19): equality FAIL, wrong subset check PASS, 48171 vs 48172 expected
+RED CONTROL went red: W3 generator without the 324: old binary (set 74) on P398 (dag-22-61/11-19): equality FAIL, wrong subset check PASS, 49431 vs 48172 expected
+RED CONTROL went red: W4 set 398 run on unfiltered P74 (dag-22-61/11-19): equality FAIL, wrong subset check PASS, 57179 vs 48172 expected
+RED CONTROL went red: W5a expected side computed with the 74 only (dag-22-61/11-19): equality FAIL, wrong subset check PASS, 48172 vs 59129 expected
+RED CONTROL went red: W5b expected side computed without the single member 240 (dag-22-61/11-19): equality FAIL, wrong subset check PASS, 48172 vs 48400 expected
+RED CONTROL went red: W6 --forbidden-set 398 --verify-parents on unfiltered P74 (dag-22-61/11-19): exit 2: udenum: parent file contains a forbidden graph
+cells equal: 22 of 22; totals {'P74': 88522, 'P74_containing_398': 26614, 'P398': 61908, 'C74': 91662, 'C74_containing_398': 20342, 'expected': 71320, 'C398': 71320, 'witnesses_verified': 46956}; networkx negatives 29; red controls 7 of 7 went red
+RESULT: PASS

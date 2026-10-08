@@ -1,0 +1,35 @@
+{
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "claim_authorized": false,
+  "detail": "records_rejected: 1",
+  "direct_rejections": 1,
+  "elapsed_seconds": 0.04443101119250059,
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 84860,
+    "nice": 19,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "hosts": false,
+      "path": "<repo>/research/gp-10/refute/evidence/round3/tests-collision-red/records.jsonl",
+      "sha256": "e1497e6f21c842e2acf7140d97bdff6fda0bda1105060ac3694996da28044756"
+    }
+  ],
+  "forbidden_limit": 0,
+  "input_count": 1,
+  "input_sha256": "2c6fed148786809e00807b14ca5dc0947298bc74304cb7345f66fa1098bb9035",
+  "kernel_sha256": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+  "profile": "sample",
+  "reason": "records_rejected",
+  "scope": "certificate-and-run-checks",
+  "status": "REJECT",
+  "trusted_data_sha256": {
+    "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  }
+}

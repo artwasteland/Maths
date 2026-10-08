@@ -56,7 +56,7 @@ exactly four F-free graphs with 22 vertices and 61 edges: two in slice 15 and tw
    algebraically (four proof nodes), with an empty UNKNOWN file, and `check/udcheck.py`
    accepts those certificates too (records 4, refuted 4).
 
-So on these 44 slices the emptiness of the cell rests on a checked forbidden-configuration
+So on all 48 slices the emptiness of the cell rests on a checked forbidden-configuration
 witness and, separately, on a checked proof that none of the four graphs embeds at all. Every slice is complete.
 
 ## 3. The enumeration
@@ -93,11 +93,13 @@ re-run from scratch by fresh workers); every worker regenerated levels 10 to 13 
 | 21 | 56 | 1,336 | 743 | 44.4% |
 | 22 | 61 | 4 | 0 | 100.0% |
 
-The tree peaks at level 15 (about 215 million kept graphs) and collapses from level 16, where
-the reach table admits a single edge count. One slice takes about 3 h 25 min on a 4-core VM
+The tree peaks at level 15 (about 221 million kept graphs) and shrinks from level 16 on; the
+reach windows narrow from level 17 and admit a single edge count, 56, only at level 21.
+(Corrected 2026-09-25: this sentence, and the letter to AMP, said the single edge count began at
+level 16; `enum/out-22/dag-22-61-f12/reach.json` gives 34..41 there.) One slice takes about 3 h 25 min on a 4-core VM
 from its level 13 to (22,61); the whole run is about 165 VM-hours against AMP's 15,000
 CPU-hour estimate for the unpruned enumeration, the difference being hereditary TU pruning
-from level 12 (which removes 17 to 53 percent of each level and everything below the removed
+from level 12 (which removes 17 to 54 percent of each level and everything below the removed
 graphs) and the minimum-degree reach table.
 
 ## 5. Cross-checks that were actually run
@@ -161,6 +163,40 @@ reproduces AMP's embed/refute split on the calibration survivors, which is repor
 
 ## 8. How to check it
 
-[to be written from the final slice manifests: the stranger's script of PRUNING.md Section 3,
-`enum/verify-chain.py` per slice directory, `results/u22/aggregate-slices.py` for the union,
-`results/u22/compare-prefix-hashes.py` for the prefix.]
+Written 2026-09-28, when u(23) came to rest on this result. The theorem has two derivations on record; each needs
+Lemma D4, and either one suffices.
+
+**Lemma D4** (`delta4/RESULT.md`). The proof is half a page. Its computational part is 18,689 canonical graphs, each
+with a forbidden-subgraph witness in `delta4/filter-verdicts.jsonl`; the check is the six-line script printed there
+(every witness map injective, every pattern edge an edge of the graph), which runs in seconds.
+
+**The first derivation: the original run of 2026-09-05** (48 slices, the 74 forbidden graphs, hereditary TU pruning).
+- `results/u22/aggregate-slices.py --fetch`: every slice 0..47 present, the per-level totals, and the (22,61) keep
+  and UNKNOWN totals, from the workers' branches `claude/reaching-noether-cloud-u22-w1` to `-w13`.
+- `results/u22/compare-prefix-hashes.py --fetch`: the shared prefix byte-identical on every worker.
+- `results/u22/cell-22-61/`: the four graphs that reached (22,61), each with a TU witness and an embedder
+  refutation; `SHA256SUMS` pins them, and `check/udcheck.py` checks the certificates.
+- `results/u22/summary-coverage-audit.py`: the summary-level coverage audit (`enum/verify-chain.py --summary-only`)
+  over every pushed copy. It contradicts nothing, but ends UNRESOLVED in 9 places, all in slice 37: 24 resumed cells
+  whose parents no pushed record keeps, and its unrecorded share of the eight level-13 cells. The run directories
+  are gone, so the summaries alone cannot close those nine places.
+
+**The second derivation: the (22,61) control of the u(23) programme** (2026-09-27, 1,920 slices, the final
+pipeline: the 398 forbidden graphs, hereditary TU, rhombus and triangle pruning, root minimum degree 5 by Lemma D4,
+and u-bar(21) = u(21) = 57 below it, with no override). It re-derives the empty (22,61) level from scratch, and
+every slice passes the summary audit, the coverage audit and the independent G4 replay:
+
+    python3 research/unit-distance-23/tools/target_check.py --root ROOT --target 22 61 --root-k 5 --no-ubar \
+        --expect-empty --fetch 'k*' --self-test
+
+prints `TARGET-CHECK OK: (22,61): 1920 of 1920 slices complete, G4 PASS 1920; 0 failing, 0 missing; kept at
+(22,61): 0 distinct graph(s)`, with every red control of its self-test caught (79 of 79 on 2026-09-28).
+`--fetch 'k*'` extracts the control workers' branches (`claude/answering-alexeev-u22-cloud-u23-k01` to `-k10`)
+into ROOT. This derivation stands on its own, so the theorem does not rest on the first derivation's nine
+unresolved places: it replaces them rather than repairing them (the first run's directories are gone, so its
+missing records cannot be recovered; the metadata audit of 2026-10-01,
+`research/unit-distance-23/METADATA-AUDIT-2026-10-01.md`, traces this).
+
+**The lemmas** are in `enum/PRUNING.md` (L1 to L5; the proof of L4 was corrected on 2026-09-28, an exposition
+error with no effect on the code or the run, see its erratum), `check/PROOFS.md` (the six TU gadgets) and, for the
+second derivation, `research/unit-distance-23/RHOMBUS-SPEC.md` (Lemmas R and T).

@@ -1,0 +1,5 @@
+ACCEPT record Cr verified
+ACCEPT record F`o~_ verified
+ACCEPT record C~ verified
+REJECT record Cr embedded_refuted_conflict
+REJECT run embedded_refuted_conflict

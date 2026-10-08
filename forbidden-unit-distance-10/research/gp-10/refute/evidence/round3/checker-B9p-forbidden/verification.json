@@ -1,0 +1,10 @@
+{
+  "directory": "<repo>/research/gp-10/refute/evidence/round3/checker-B9p-forbidden",
+  "records": 101,
+  "refuted": 101,
+  "forbidden_limit": 8,
+  "checker_exit": 0,
+  "final_line": "ACCEPT run verified",
+  "seconds": 16.797799655236304,
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+}

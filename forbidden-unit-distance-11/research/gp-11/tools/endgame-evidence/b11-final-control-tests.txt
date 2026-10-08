@@ -1,0 +1,27 @@
+test_accepted_skip_requires_intact_record_and_receipts (__main__.CampaignTests.test_accepted_skip_requires_intact_record_and_receipts) ... ok
+test_all_accepted_creates_new_final_once_and_requires_literal_pass (__main__.CampaignTests.test_all_accepted_creates_new_final_once_and_requires_literal_pass) ... ok
+test_changed_receipt_cannot_reuse_cached_final_pass (__main__.CampaignTests.test_changed_receipt_cannot_reuse_cached_final_pass) ... ok
+test_checker_counts_profile_and_consumed_hash_must_match (__main__.CampaignTests.test_checker_counts_profile_and_consumed_hash_must_match) ... ok
+test_clean_exact_allowlist (__main__.CampaignTests.test_clean_exact_allowlist) ... ok
+test_extra_directory_symlink_hardlink_modified_file (__main__.CampaignTests.test_extra_directory_symlink_hardlink_modified_file) ... ok
+test_failed_isolation_probe_prevents_codex (__main__.CampaignTests.test_failed_isolation_probe_prevents_codex) ... ok
+test_fresh_config_disables_subagents_web_and_tool_network (__main__.CampaignTests.test_fresh_config_disables_subagents_web_and_tool_network) ... ok
+test_idempotent_ledger_resume_and_conflict (__main__.CampaignTests.test_idempotent_ledger_resume_and_conflict) ... ok
+test_incomplete_campaign_cannot_merge_or_start_population_checker (__main__.CampaignTests.test_incomplete_campaign_cannot_merge_or_start_population_checker) ... ok
+test_independent_check_ignores_claim_and_modified_analyst_checker (__main__.CampaignTests.test_independent_check_ignores_claim_and_modified_analyst_checker) ... ok
+test_interrupted_return_is_checked_once_before_retrying (__main__.CampaignTests.test_interrupted_return_is_checked_once_before_retrying) ... ok
+test_ledger_rejects_chain_corruption (__main__.CampaignTests.test_ledger_rejects_chain_corruption) ... ok
+test_maximum_two_concurrent_workers (__main__.CampaignTests.test_maximum_two_concurrent_workers) ... ok
+test_merge_replaces_only_unknown_preserving_all_other_bytes (__main__.CampaignTests.test_merge_replaces_only_unknown_preserving_all_other_bytes) ... ok
+test_namespace_exposes_only_current_workspace_and_runtime (__main__.CampaignTests.test_namespace_exposes_only_current_workspace_and_runtime) ... ok
+test_planted_forbidden_or_disguised_file_stops_all_launches (__main__.CampaignTests.test_planted_forbidden_or_disguised_file_stops_all_launches) ... ok
+test_record_admission_rejects_dependency_and_bad_json (__main__.CampaignTests.test_record_admission_rejects_dependency_and_bad_json) ... ok
+test_tampered_allowlist_cannot_authorize_forbidden_file_or_new_checker (__main__.CampaignTests.test_tampered_allowlist_cannot_authorize_forbidden_file_or_new_checker) ... ok
+test_timeout_still_gets_independent_check_and_durable_unresolved_event (__main__.CampaignTests.test_timeout_still_gets_independent_check_and_durable_unresolved_event) ... ok
+test_torn_tail_quarantined_event_recovered_once (__main__.CampaignTests.test_torn_tail_quarantined_event_recovered_once) ... ok
+test_unresolved_retry_uses_new_workspace_and_no_previous_context (__main__.CampaignTests.test_unresolved_retry_uses_new_workspace_and_no_previous_context) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 3.207s
+
+OK

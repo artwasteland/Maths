@@ -1,0 +1,6 @@
+PLAN pilot: verdict OK, 42 slices, 44 staged copies
+PLAN full: verdict OK, 1841 slices, 1842 staged copies
+PLAN phaseB: verdict OK, 37 slices, 37 staged copies
+UNION: 1923 copies, 1920 slices
+COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares
+FLEET AUDIT OK (summary audit status complete, exit 3)

@@ -1,0 +1,11 @@
+{
+  "artifacts": {
+    "input.g6": "b98de7efca37c675a5af71c2b8bca4ae4cd6f6b1c1fdf740c8207dbe8078a4be",
+    "unknown-records.jsonl.gz": "f1678547110604b83bbe48dd17202de8b461abed49773f038778cf975beda841"
+  },
+  "count": 4,
+  "helper_sha256": "bb747716c785067427b91a4b761230d35acc66cddf63511ccead7b597ca56193",
+  "predecessor_summary_sha256": "de5cf7adb9e2b5fbcc5e6f9b224152535673d0ca535d6a5db7950c92e4ebb07f",
+  "purpose": "frontier_allocation_only",
+  "schema": 1
+}

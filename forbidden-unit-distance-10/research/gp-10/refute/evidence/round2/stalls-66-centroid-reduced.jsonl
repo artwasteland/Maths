@@ -1,0 +1,1 @@
+{"cert":{"budget":{"frame":[3,6],"g6":"H{O_okN","limit":55.0,"reason":"AttributeError: 'flint.types.fmpq_mpoly.fmpq_mpoly' object has no attribute 'leading_monomial'","seconds":0.0004147728905081749,"stages":[],"verdict":"unknown"},"reason":"AttributeError: 'flint.types.fmpq_mpoly.fmpq_mpoly' object has no attribute 'leading_monomial'"},"g6":"H{O_okN","verdict":"unknown"}

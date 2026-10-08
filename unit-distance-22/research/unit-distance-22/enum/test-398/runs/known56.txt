@@ -1,0 +1,3 @@
+56 known graphs: udfilter set 398 forbidden 0, matcher removed 0
+RED CONTROL went red: L10 line 0 appended -> udfilter 1, matcher 1
+RESULT: PASS

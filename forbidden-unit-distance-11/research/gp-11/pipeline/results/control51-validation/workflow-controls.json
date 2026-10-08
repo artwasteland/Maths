@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "tests": {
+    "run-0": {
+      "exit": 0,
+      "expected_rule": null
+    },
+    "resume-0": {
+      "exit": 0,
+      "expected_rule": null,
+      "byte_identical_artifacts": [
+        "records.jsonl.gz",
+        "assigned.g6",
+        "input.g6",
+        "UNKNOWN.g6",
+        "attempts.jsonl.gz",
+        "frontier.jsonl.gz",
+        "packets.jsonl.gz"
+      ]
+    },
+    "replay-0": {
+      "exit": 0,
+      "expected_rule": null
+    },
+    "run-1": {
+      "exit": 0,
+      "expected_rule": null
+    },
+    "resume-1": {
+      "exit": 0,
+      "expected_rule": null,
+      "byte_identical_artifacts": [
+        "records.jsonl.gz",
+        "assigned.g6",
+        "input.g6",
+        "UNKNOWN.g6",
+        "attempts.jsonl.gz",
+        "frontier.jsonl.gz",
+        "packets.jsonl.gz"
+      ]
+    },
+    "replay-1": {
+      "exit": 0,
+      "expected_rule": null
+    },
+    "assemble": {
+      "exit": 0,
+      "expected_rule": null,
+      "checker_counts": {
+        "embedded": 8,
+        "refuted": 0,
+        "unknown": 4
+      }
+    },
+    "missing_population": {
+      "exit": 1,
+      "expected_rule": "shard_union_coverage"
+    },
+    "duplicate_assignment": {
+      "exit": 1,
+      "expected_rule": "shard_union_duplicate"
+    },
+    "no_sample_complete": {
+      "exit": 1,
+      "expected_rule": "checker_rejected"
+    },
+    "corrupt_bundle": {
+      "exit": 1,
+      "expected_rule": "bundle_artifact_hash:UNKNOWN.g6"
+    },
+    "restored_bundle": {
+      "exit": 0,
+      "expected_rule": null
+    },
+    "checker_controls": {
+      "exit": 0,
+      "expected_rule": null,
+      "profiles": [
+        "B4p",
+        "B5p",
+        "B6p",
+        "B7p",
+        "B8p",
+        "B9p",
+        "named",
+        "regressions"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1238 @@
+{
+  "counts": {
+    "embedded": 24966,
+    "refuted": 367,
+    "unknown": 25
+  },
+  "graphs": [
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-028",
+      "failure_class": {
+        "flags": [
+          "attempt_deadline_unspecified",
+          "producer_timeout"
+        ],
+        "primary": "seed_without_exact",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "attempt_error:Deadline": 3,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 2,
+          "no_certificate": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_timed_out_saved_candidate": 1,
+          "numerically_isolated_no_coordinate_pin_needed": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I?D@N@xf_",
+      "id": "packet-a71da6b9c114991c",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 0.2548453700693323,
+      "numeric_best_residual": 2.220446049250313e-16,
+      "path": "packets/packet-a71da6b9c114991c/packet.json",
+      "proposals": 0,
+      "sha256": "6197d5938e072c63377e2a91b8ae6233f838836c9c868120f41a2ae9b3760577",
+      "source_summary_sha256": "53abd1d9798f393c8cca6c7e85e39feffa8c135a06e54fe52e6f5df0a68452af"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-045",
+      "failure_class": {
+        "flags": [
+          "producer_timeout",
+          "producer_algebra_error"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:AlgebraError": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I?DP]QowW",
+      "id": "packet-45fd9982f18b132d",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 5.699886239562065e-05,
+      "numeric_best_residual": 0.0,
+      "path": "packets/packet-45fd9982f18b132d/packet.json",
+      "proposals": 0,
+      "sha256": "3aeaf18964991657cfefdd66cc5e0e34138f4a434e28c6fdfd55507016229c34",
+      "source_summary_sha256": "58613f28cf4e6f649e44ca7308978163f9582c8fd3be7067cb62e6213d7b8a6a"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-005",
+      "failure_class": {
+        "flags": [
+          "producer_timeout"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 3,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_finite_component_diagnostics": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 3
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I?GO]C{{O",
+      "id": "packet-924e6a2fe442a505",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 1.1580993553408484e-05,
+      "numeric_best_residual": 1.1102230246251565e-16,
+      "path": "packets/packet-924e6a2fe442a505/packet.json",
+      "proposals": 0,
+      "sha256": "cdf01af9e56840ae1d4fd9a19211e1e8c68f57caa5b599eee44d8f70478c248b",
+      "source_summary_sha256": "273d45430e2aa0723ca9da0f5ac3155e1c5308563ff7a7e50e29f5ffc35021b6"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-087",
+      "failure_class": {
+        "flags": [
+          "attempt_deadline_unspecified",
+          "producer_timeout"
+        ],
+        "primary": "seed_without_exact",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "attempt_error:Deadline": 3,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 2,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 1,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I?H_omJ{?",
+      "id": "packet-4701cba296fbbe57",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 0.3748007423662887,
+      "numeric_best_residual": 2.220446049250313e-16,
+      "path": "packets/packet-4701cba296fbbe57/packet.json",
+      "proposals": 0,
+      "sha256": "a4bdb7cb138e51ea6a839d8ef7ba4543b16c2b57f5ebfa24cdaed1ee7600dd85",
+      "source_summary_sha256": "37faf730aa1d69e94666eed57aab0460e955af87b81a19e151445814d7bced35"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-012",
+      "failure_class": {
+        "flags": [
+          "producer_timeout"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_finite_component_diagnostics": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I@?KQJoNo",
+      "id": "packet-75ebdf3184a91b0c",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 1.1181115336102612e-07,
+      "numeric_best_residual": 2.220446049250313e-16,
+      "path": "packets/packet-75ebdf3184a91b0c/packet.json",
+      "proposals": 0,
+      "sha256": "5faf3c5058d7533ce17d3f5116265b4d73f12b110e3042d35f4fc6452c5c70f0",
+      "source_summary_sha256": "44c82a27f2ac0cfc2c11d1d5ba6ca2c81e54144c746600a65bc1470765e12441"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-005",
+      "failure_class": {
+        "flags": [
+          "producer_timeout"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_finite_component_diagnostics": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I@@KTHQMW",
+      "id": "packet-9899dcda4e4d6685",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 1.9912469451099952e-09,
+      "numeric_best_residual": 4.440892098500626e-16,
+      "path": "packets/packet-9899dcda4e4d6685/packet.json",
+      "proposals": 0,
+      "sha256": "cd9d5c44698f425ffb81b4951c8498d6ebd27e6e861655999045f7845b8946f7",
+      "source_summary_sha256": "273d45430e2aa0723ca9da0f5ac3155e1c5308563ff7a7e50e29f5ffc35021b6"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-033",
+      "failure_class": {
+        "flags": [
+          "producer_timeout"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_finite_component_diagnostics": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I@F?YE`]G",
+      "id": "packet-65e899a8119a0ca1",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 2.2732108562185137e-07,
+      "numeric_best_residual": 1.1102230246251565e-16,
+      "path": "packets/packet-65e899a8119a0ca1/packet.json",
+      "proposals": 0,
+      "sha256": "ee1eebddbe7bda9bc2015b923a6c407229cc0dff498e5adff394f132231a6101",
+      "source_summary_sha256": "ee806b0ea204f2a3272e3de9bd7338501d39b488e704b32e4bbd7c43ae2d12d4"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-060",
+      "failure_class": {
+        "flags": [
+          "attempt_deadline_unspecified",
+          "producer_timeout"
+        ],
+        "primary": "seed_without_exact",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "attempt_error:Deadline": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 2,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 7,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 2
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "IQAIPCT}?",
+      "id": "packet-6dfac18de786593c",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 0.2725892241765646,
+      "numeric_best_residual": 2.220446049250313e-16,
+      "path": "packets/packet-6dfac18de786593c/packet.json",
+      "proposals": 0,
+      "sha256": "adf55c925f0e53c62b5bd17bc3f2ef437b8c9c30f35d0bd92f7dafaecb097e49",
+      "source_summary_sha256": "a97a291c6b52eb48df8a4e464aaf449d375dad2710dbc7e9a362a745f9358d7c"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-017",
+      "failure_class": {
+        "flags": [
+          "producer_timeout"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_finite_component_diagnostics": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I_AQPgiMW",
+      "id": "packet-5fd726a4a0735291",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 1.4337574719957313e-09,
+      "numeric_best_residual": 3.3306690738754696e-16,
+      "path": "packets/packet-5fd726a4a0735291/packet.json",
+      "proposals": 0,
+      "sha256": "86f07df25e18016efc2359d9210221dfa677c83e65688830391af23a26f75b1a",
+      "source_summary_sha256": "de2a5041a493004905c69f183eb529a56334d0dedff5e618810fc3158cdd6a72"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-061",
+      "failure_class": {
+        "flags": [
+          "producer_timeout"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_finite_component_diagnostics": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I_GQSGyLW",
+      "id": "packet-8d9a66d984c42b3d",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 9.797153488054749e-08,
+      "numeric_best_residual": 2.220446049250313e-16,
+      "path": "packets/packet-8d9a66d984c42b3d/packet.json",
+      "proposals": 0,
+      "sha256": "dc2774a8bbe346b0a58348b430bb32418adf3ffff95414de9ee2b3a3231562ed",
+      "source_summary_sha256": "905f194ad4f69f9b814c79818f1f437e8a93f5c5c13063c763136744f6dbe835"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-009",
+      "failure_class": {
+        "flags": [
+          "producer_timeout"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_finite_component_diagnostics": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I_YP?cjDo",
+      "id": "packet-3301a21e820be889",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 2.6101763658609814e-11,
+      "numeric_best_residual": 4.440892098500626e-16,
+      "path": "packets/packet-3301a21e820be889/packet.json",
+      "proposals": 0,
+      "sha256": "e689a8ac68d9707d1add9c4fdb2592dc76ca193a23c9866d54f5682b6d64aaec",
+      "source_summary_sha256": "3b99d3019a1cb7a0db13aef33cbb2dce2c338c6a8868990e0b69b7f88638f2f8"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-094",
+      "failure_class": {
+        "flags": [
+          "producer_timeout"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_finite_component_diagnostics": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 6,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I_hRC_hDg",
+      "id": "packet-cbf209943fbbf1de",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 1.7596823702236725e-07,
+      "numeric_best_residual": 0.0,
+      "path": "packets/packet-cbf209943fbbf1de/packet.json",
+      "proposals": 0,
+      "sha256": "49c5a5c07d4d57b120c07908e46da48f9d65a7642a1bb1530612480fb7958b64",
+      "source_summary_sha256": "9c61e7712046aab213663582572dad162b154962dc0d26b16f37e8f5a237e667"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-010",
+      "failure_class": {
+        "flags": [
+          "attempt_deadline_unspecified",
+          "producer_timeout"
+        ],
+        "primary": "seed_without_exact",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "attempt_error:Deadline": 1,
+          "exhausted": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 2,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 7,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I_hca_hDg",
+      "id": "packet-285539f1e4ed808a",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 0.3436020384724172,
+      "numeric_best_residual": 2.220446049250313e-16,
+      "path": "packets/packet-285539f1e4ed808a/packet.json",
+      "proposals": 0,
+      "sha256": "6c8b77080f021d9bbe8236879c6060559e753baefafa956deb6149c60a474c57",
+      "source_summary_sha256": "02bb85776badb4f55c15f6701cfaff98c56171c4afb8e68bdc16bc226881c5f9"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-100",
+      "failure_class": {
+        "flags": [
+          "producer_timeout",
+          "producer_algebra_error"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:AlgebraError": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 2
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "I``F_odBW",
+      "id": "packet-83c57ecac1dac3e4",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 6.506463914239782e-07,
+      "numeric_best_residual": 0.0,
+      "path": "packets/packet-83c57ecac1dac3e4/packet.json",
+      "proposals": 0,
+      "sha256": "4aff44b81ed4a7d280bec4cebdceddb69b0bf4a6398019f990a145bb0c7abbf9",
+      "source_summary_sha256": "03ba08a561eed6401f2d193ed35654eeea9d31b38b3a3d82299d1e007f4e6d91"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-034",
+      "failure_class": {
+        "flags": [
+          "attempt_deadline_unspecified",
+          "producer_timeout"
+        ],
+        "primary": "seed_without_exact",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "attempt_error:Deadline": 3,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 2,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 1,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "IhC?KLMMO",
+      "id": "packet-6d8ff9fa8a31c422",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 0.26123136834413324,
+      "numeric_best_residual": 4.884981308350689e-15,
+      "path": "packets/packet-6d8ff9fa8a31c422/packet.json",
+      "proposals": 0,
+      "sha256": "4a24c1c0e10ec0442f46b175f286efd3a6cee0f16424dd3bb8d176a89d0886a1",
+      "source_summary_sha256": "9e28e1ed76a20cb4468d03ab3ab7b25f62a49710c0d7334fe3e1eb65d88f4f47"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-002",
+      "failure_class": {
+        "flags": [
+          "producer_timeout",
+          "producer_algebra_error"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:AlgebraError": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "Ik_bOgLCw",
+      "id": "packet-0d061f0721b40002",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 1.1995051069112775e-07,
+      "numeric_best_residual": 0.0,
+      "path": "packets/packet-0d061f0721b40002/packet.json",
+      "proposals": 0,
+      "sha256": "f0823651755c5d610c5c55d688dc261d39ee81383c56f1176654a561116fbcb6",
+      "source_summary_sha256": "73d21f0b0288206ca2ac019dd4795b901d3e80f5e9300de43d30532bed653045"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-088",
+      "failure_class": {
+        "flags": [
+          "producer_timeout",
+          "producer_algebra_error"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:AlgebraError": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "Il`@OgJ@w",
+      "id": "packet-d2565526b01a5658",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 1.292374846311399e-08,
+      "numeric_best_residual": 0.0,
+      "path": "packets/packet-d2565526b01a5658/packet.json",
+      "proposals": 0,
+      "sha256": "2cfb2827f546f1b30515f1544f4089aec3487cb692468ba3f6f202c37e672ddc",
+      "source_summary_sha256": "cb4ee0cdb50660d7bcfd21bf29f8c831bb6611dafbe6006e3c21c674fcb1c8fd"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-026",
+      "failure_class": {
+        "flags": [
+          "producer_timeout"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_finite_component_diagnostics": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "Io?hohHSW",
+      "id": "packet-421f88e5aa416b9a",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 7.933406982201347e-08,
+      "numeric_best_residual": 2.220446049250313e-16,
+      "path": "packets/packet-421f88e5aa416b9a/packet.json",
+      "proposals": 0,
+      "sha256": "15a3fc7832010ff6cac7831873422d65d5041a5ee0b075dc40b936ea4ffdef6c",
+      "source_summary_sha256": "bfbc14d2ab96311e5d6c3b4bf7372c1f6f8a1b448588fb83bfbc90af13c5aaeb"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-016",
+      "failure_class": {
+        "flags": [
+          "attempt_deadline_unspecified",
+          "producer_timeout"
+        ],
+        "primary": "seed_without_exact",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "attempt_error:Deadline": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 2,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 7,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 2
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "IoEHa@FMO",
+      "id": "packet-790f57d89ad16f90",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 0.16604761786236807,
+      "numeric_best_residual": 2.220446049250313e-16,
+      "path": "packets/packet-790f57d89ad16f90/packet.json",
+      "proposals": 0,
+      "sha256": "082df9d6b96fc79af7095b70a7f6fd24cbe43a576f27d1c5be32aeacbe7f42d1",
+      "source_summary_sha256": "284770a4ad4b2f5d767d7fad3981c8c2efb5b36c30710fd0d3edf3750474770d"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-080",
+      "failure_class": {
+        "flags": [
+          "producer_timeout",
+          "producer_algebra_error"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:AlgebraError": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 2
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "IoSo?FbFo",
+      "id": "packet-d7d2998e2c2029d0",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 1.687596159763009e-16,
+      "numeric_best_residual": 0.0,
+      "path": "packets/packet-d7d2998e2c2029d0/packet.json",
+      "proposals": 0,
+      "sha256": "a6ac1c5f37b2247df5b991b5dc40b98048bcc428b4931c9760c0617879d502de",
+      "source_summary_sha256": "f9a9d916b1d12757c9989a362cca4d66c2721ed392e8d0d4cb3c7b6760fd925e"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-009",
+      "failure_class": {
+        "flags": [
+          "producer_timeout",
+          "producer_algebra_error"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:AlgebraError": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 2
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "IqGFGgLEW",
+      "id": "packet-8e1ff98405b34909",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 9.83029008328932e-08,
+      "numeric_best_residual": 0.0,
+      "path": "packets/packet-8e1ff98405b34909/packet.json",
+      "proposals": 0,
+      "sha256": "2de6e99e3636f4ac093f52954fe82fe9eae2fed7eb7220af701c2706fb155daa",
+      "source_summary_sha256": "3b99d3019a1cb7a0db13aef33cbb2dce2c338c6a8868990e0b69b7f88638f2f8"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-004",
+      "failure_class": {
+        "flags": [
+          "attempt_deadline_unspecified",
+          "producer_timeout"
+        ],
+        "primary": "seed_without_exact",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "attempt_error:Deadline": 1,
+          "attempt_error:Rejection": 1,
+          "exhausted": 1,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 2,
+          "no_finite_component_diagnostics": 1,
+          "producer_error:TimeoutExpired": 6,
+          "tu_no_checked_endpoint": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "IqL@K?RBW",
+      "id": "packet-a69c7cd171071a84",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 0.2177983613850733,
+      "numeric_best_residual": 0.0,
+      "path": "packets/packet-a69c7cd171071a84/packet.json",
+      "proposals": 0,
+      "sha256": "0f59595c55274261b32102dc7f621de1ade36cb357c5f7e60754060111402e39",
+      "source_summary_sha256": "33169d64ef4b5ddabc3be5a59ec276f4f4bc06ca6e17cb5f51f59c1e5e9bca72"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-011",
+      "failure_class": {
+        "flags": [
+          "producer_timeout",
+          "producer_algebra_error"
+        ],
+        "primary": "no_separated_seed",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "exhausted": 1,
+          "no certifiable target in Groebner basis": 1,
+          "no_certificate": 2,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 1,
+          "no_separated_numerical_seed": 1,
+          "no_separated_seed": 1,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:AlgebraError": 1,
+          "producer_error:TimeoutExpired": 5,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "Ir`?X_FAw",
+      "id": "packet-c1b28cd9afcf530b",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 7.234526029766958e-08,
+      "numeric_best_residual": 0.0,
+      "path": "packets/packet-c1b28cd9afcf530b/packet.json",
+      "proposals": 0,
+      "sha256": "ceebe1d0fdddb81413370c3c2dfb84880c3058b1fb3f64d257825040a990046f",
+      "source_summary_sha256": "528791940e46253948574e6865d3c8e934cb8eed48b7ec18c50ecf783f7afaff"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-087",
+      "failure_class": {
+        "flags": [
+          "producer_timeout"
+        ],
+        "primary": "seed_without_exact",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "no_certificate": 3,
+          "no_certificate_within_budget": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 4,
+          "no_finite_component_diagnostics": 1,
+          "producer_error:TimeoutExpired": 6,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "IsP@OkWHG",
+      "id": "packet-f034d103a3e245d7",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 0.12992005268844506,
+      "numeric_best_residual": 5.995204332975845e-15,
+      "path": "packets/packet-f034d103a3e245d7/packet.json",
+      "proposals": 0,
+      "sha256": "54119db52e4ecc5e256a8d36e0f71a2c5c75171d5668f7216a3f1b3d6b4bc062",
+      "source_summary_sha256": "37faf730aa1d69e94666eed57aab0460e955af87b81a19e151445814d7bced35"
+    },
+    {
+      "attempts": 23,
+      "bundle": "<repo>/c51-bundles/control51-r1-092",
+      "failure_class": {
+        "flags": [
+          "attempt_deadline_unspecified",
+          "producer_timeout"
+        ],
+        "primary": "seed_without_exact",
+        "reason_counts": {
+          "B9_placements_exhausted": 4,
+          "attempt_error:Deadline": 3,
+          "exhausted": 1,
+          "no_certificate": 2,
+          "no_eligible_host_order_at_most_9": 1,
+          "no_exact_certificate": 2,
+          "no_timed_out_saved_candidate": 1,
+          "producer_error:TimeoutExpired": 7,
+          "tu_no_checked_endpoint": 1,
+          "wall_budget": 1
+        },
+        "routing_only": true,
+        "seed_evidence_mixed": false
+      },
+      "g6": "ItPG?CfEo",
+      "id": "packet-cf4d96cfa93e1fdc",
+      "missing_evidence": [
+        "saved_proposals",
+        "explicit_rational_pins",
+        "recorded_field_candidates"
+      ],
+      "mode": "control51",
+      "numeric_best_gap": 0.2686517230370148,
+      "numeric_best_residual": 1.0436096431476471e-14,
+      "path": "packets/packet-cf4d96cfa93e1fdc/packet.json",
+      "proposals": 0,
+      "sha256": "11ea2b405b1a66233ee959009314e0058251ab0efd13512de2b0ea5eb9c77b42",
+      "source_summary_sha256": "15e9d66ecb7d5ead23eec34a899514c9736311fa267805f6a0c98e5522b274fa"
+    }
+  ],
+  "projection": {
+    "expected_additional_unknown": 7.693824434103636,
+    "expected_full_unknown": 32.69382443410364,
+    "observed": 25358,
+    "observed_unknown": 25,
+    "population": 33162,
+    "unknown_by_shards": 32.6530612244898,
+    "unobserved": 7804
+  },
+  "source_manifest_sha256": "40b0d91bcca24529054961628225e2739fc954f6bcf21b8e31d287cb7ea152bf",
+  "stage_reasons": [
+    {
+      "count": 9,
+      "reason": "no_exact_certificate",
+      "stage": "esc-branch"
+    },
+    {
+      "count": 16,
+      "reason": "no_separated_seed",
+      "stage": "esc-branch"
+    },
+    {
+      "count": 3,
+      "reason": "no certifiable target in Groebner basis",
+      "stage": "esc-components"
+    },
+    {
+      "count": 11,
+      "reason": "no_finite_component_diagnostics",
+      "stage": "esc-components"
+    },
+    {
+      "count": 7,
+      "reason": "producer_error:AlgebraError",
+      "stage": "esc-components"
+    },
+    {
+      "count": 4,
+      "reason": "producer_error:TimeoutExpired",
+      "stage": "esc-components"
+    },
+    {
+      "count": 25,
+      "reason": "B9_placements_exhausted",
+      "stage": "esc-extension"
+    },
+    {
+      "count": 4,
+      "reason": "attempt_error:Deadline",
+      "stage": "esc-msolve"
+    },
+    {
+      "count": 21,
+      "reason": "no_certificate_within_budget",
+      "stage": "esc-msolve"
+    },
+    {
+      "count": 25,
+      "reason": "producer_error:TimeoutExpired",
+      "stage": "esc-null"
+    },
+    {
+      "count": 25,
+      "reason": "no_certificate",
+      "stage": "esc-numeric"
+    },
+    {
+      "count": 3,
+      "reason": "attempt_error:Deadline",
+      "stage": "esc-pins"
+    },
+    {
+      "count": 5,
+      "reason": "no_exact_certificate",
+      "stage": "esc-pins"
+    },
+    {
+      "count": 16,
+      "reason": "no_separated_numerical_seed",
+      "stage": "esc-pins"
+    },
+    {
+      "count": 1,
+      "reason": "numerically_isolated_no_coordinate_pin_needed",
+      "stage": "esc-pins"
+    },
+    {
+      "count": 25,
+      "reason": "producer_error:TimeoutExpired",
+      "stage": "esc-real"
+    },
+    {
+      "count": 25,
+      "reason": "B9_placements_exhausted",
+      "stage": "esc-rebase"
+    },
+    {
+      "count": 7,
+      "reason": "attempt_error:Deadline",
+      "stage": "esc-saturated"
+    },
+    {
+      "count": 18,
+      "reason": "no_exact_certificate",
+      "stage": "esc-saturated"
+    },
+    {
+      "count": 1,
+      "reason": "attempt_error:Rejection",
+      "stage": "esc-saved"
+    },
+    {
+      "count": 1,
+      "reason": "no_exact_certificate",
+      "stage": "esc-saved"
+    },
+    {
+      "count": 23,
+      "reason": "no_timed_out_saved_candidate",
+      "stage": "esc-saved"
+    },
+    {
+      "count": 18,
+      "reason": "no certifiable target in Groebner basis",
+      "stage": "esc-targeted"
+    },
+    {
+      "count": 7,
+      "reason": "producer_error:TimeoutExpired",
+      "stage": "esc-targeted"
+    },
+    {
+      "count": 25,
+      "reason": "no_certificate",
+      "stage": "esc-tree"
+    },
+    {
+      "count": 25,
+      "reason": "B9_placements_exhausted",
+      "stage": "extension"
+    },
+    {
+      "count": 25,
+      "reason": "no_eligible_host_order_at_most_9",
+      "stage": "host"
+    },
+    {
+      "count": 18,
+      "reason": "exhausted",
+      "stage": "lattice"
+    },
+    {
+      "count": 7,
+      "reason": "wall_budget",
+      "stage": "lattice"
+    },
+    {
+      "count": 2,
+      "reason": "attempt_error:Deadline",
+      "stage": "msolve"
+    },
+    {
+      "count": 23,
+      "reason": "no_certificate_within_budget",
+      "stage": "msolve"
+    },
+    {
+      "count": 25,
+      "reason": "producer_error:TimeoutExpired",
+      "stage": "null"
+    },
+    {
+      "count": 25,
+      "reason": "producer_error:TimeoutExpired",
+      "stage": "portfolio"
+    },
+    {
+      "count": 25,
+      "reason": "producer_error:TimeoutExpired",
+      "stage": "real"
+    },
+    {
+      "count": 24,
+      "reason": "B9_placements_exhausted",
+      "stage": "rebase"
+    },
+    {
+      "count": 1,
+      "reason": "wall_budget",
+      "stage": "rebase"
+    },
+    {
+      "count": 11,
+      "reason": "no_certificate",
+      "stage": "tree"
+    },
+    {
+      "count": 14,
+      "reason": "wall_budget",
+      "stage": "tree"
+    },
+    {
+      "count": 25,
+      "reason": "tu_no_checked_endpoint",
+      "stage": "tu"
+    }
+  ]
+}

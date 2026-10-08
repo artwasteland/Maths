@@ -1,0 +1,39 @@
+{
+ "graphs": {
+  "J@@UPO[gUB_": {
+   "class": "noseed",
+   "shard": 1
+  },
+  "JGCBC]OLIX?": {
+   "class": "deadline",
+   "shard": 1
+  },
+  "JIGOSED@~o?": {
+   "class": "noseed",
+   "shard": 0
+  },
+  "JgCIH?BcXw_": {
+   "class": "deadline",
+   "shard": 3
+  },
+  "Ji?hKOHCgb_": {
+   "class": "deadline",
+   "shard": 2
+  },
+  "Jo?A]_kLGu?": {
+   "class": "noseed",
+   "shard": 3
+  },
+  "JqG\\A_H@gF_": {
+   "class": "noseed",
+   "shard": 2
+  },
+  "JqKAHMCCWT_": {
+   "class": "deadline",
+   "shard": 0
+  }
+ },
+ "input_sha256": "cf422c094dbfe90d13ad1c9fd1446c21e9c841b6d1693e4773d9b99f03015003",
+ "purpose": "probe of the 'long' policy (stages.py) on the f1 residue: 4 graphs whose proposal died on checker:Deadline, 4 with no separated numerical seed",
+ "selection": "from the f1 UNKNOWN records of the 64 shards back at 2026-10-01 04:0xZ; per class, sorted by sha256('p2-20261001'+g6), first graph per shard (count 4) until 4"
+}

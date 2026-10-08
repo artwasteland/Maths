@@ -50,6 +50,8 @@ Three of the source directories overlap. `penney-mary` (m = 3, 4, 5) and `many-s
 
 1 source note is deliberately not published here. It records this project's own correspondence plans about named people (who to approach, in what order, what was drafted and never sent). That is ours to keep private and would be graceless to hand to the people concerned. Nothing mathematical is withheld: no b-file, engine, verifier or run log. The omission is named here rather than left as a gap you would have to notice.
 
+- `oversight/oeis/penney-tournament/OUTREACH.md`
+
 ## What is in this directory
 
 - `oversight/oeis/penney-tournament/` — the b-files, and `STAGED.md`, the notes written with them.

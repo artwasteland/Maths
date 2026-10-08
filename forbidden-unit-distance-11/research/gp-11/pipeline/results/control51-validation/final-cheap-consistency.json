@@ -1,0 +1,16 @@
+{
+  "conflicting_decisions": [],
+  "final_cheap_counts": {
+    "embedded": 176,
+    "refuted": 3,
+    "unknown": 21
+  },
+  "full_sample_counts": {
+    "embedded": 196,
+    "refuted": 3,
+    "unknown": 1
+  },
+  "note": "Final rebase fix changes early coverage; it does not resolve the one full-sample UNKNOWN.",
+  "same_200_graphs": true,
+  "status": "PASS"
+}

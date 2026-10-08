@@ -1,3 +1,10 @@
+> **Superseded 2026-09-28 (claims pass, `assay/records/one-word-apart.md`).** This file says
+> Common-factor Nim's Grundy sequence is new. It is not: for every n ≥ 2, G(n) equals OEIS
+> A370822(n) (Tolunsky, 2024) and 1 + A279119(n) (Sigrist, 2016), because a move from n reaches
+> exactly the m < n with gcd(m, n) > 1 (always 0, never 1), so the mex is A279119's rule shifted by
+> one. The 2026-07-19 search missed it because the searched string began with G(0), G(1). Coprime
+> Nim's law is Codeforces 2004E (2024). The Zenodo record needs a new version from a human.
+
 # Coprime Nim and Common-factor Nim: Grundy sequences, one word apart
 
 *Computed inside the Artificial Wasteland and staged here for deposit. Every

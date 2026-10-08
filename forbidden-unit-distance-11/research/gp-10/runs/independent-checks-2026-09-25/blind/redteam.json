@@ -1,0 +1,2052 @@
+{
+ "originals": [
+  {
+   "key": "tu_forbidden",
+   "g6": "I?ERPrCwW",
+   "type": "tu",
+   "verdict": "ACCEPT",
+   "reason": "tu chain of 1 step(s) ending at forbidden-74[17] (premise: GP theorem that it is forbidden)"
+  },
+  {
+   "key": "tu_refuted",
+   "g6": "I?CYKMqYO",
+   "type": "tu",
+   "verdict": "ACCEPT",
+   "reason": "tu chain of 1 step(s) ending at refuted record I?GPYMX{?"
+  },
+  {
+   "key": "tu_two_step",
+   "g6": "IAh?HKyco",
+   "type": "tu",
+   "verdict": "ACCEPT",
+   "reason": "tu chain of 2 step(s) ending at forbidden-74[38] (premise: GP theorem that it is forbidden)"
+  },
+  {
+   "key": "tu_target_tree",
+   "g6": "I?GPYMX{?",
+   "type": "tree",
+   "verdict": "ACCEPT",
+   "reason": "proof tree over field of degree 1: 4 nodes, leaves L1a:1"
+  },
+  {
+   "key": "tu_pointing_to_tu",
+   "g6": "I?l@Glo_w",
+   "type": "tu",
+   "verdict": "ACCEPT",
+   "reason": "tu chain of 1 step(s) ending at refuted record IAh?HKyco"
+  },
+  {
+   "key": "null",
+   "g6": "I?D@Yib}?",
+   "type": "null",
+   "verdict": "ACCEPT",
+   "reason": "Nullstellensatz identity = 1 (25 cofactors; frame 0,8; 28 sat pairs; 44 vars)"
+  },
+  {
+   "key": "null2",
+   "g6": "I?EJPjOwW",
+   "type": "null",
+   "verdict": "ACCEPT",
+   "reason": "Nullstellensatz identity = 1 (26 cofactors; frame 7,9; 10 sat pairs; 26 vars)"
+  },
+  {
+   "key": "null_dag",
+   "g6": "IRaAQGbFG",
+   "type": "null-dag",
+   "verdict": "ACCEPT",
+   "reason": "Nullstellensatz identity = 1 (6 rows; frame 0,2; 11 sat pairs; 27 vars)"
+  },
+  {
+   "key": "null_dag2",
+   "g6": "IhEEOgdAw",
+   "type": "null-dag",
+   "verdict": "ACCEPT",
+   "reason": "Nullstellensatz identity = 1 (45 rows; frame 9,7; 9 sat pairs; 25 vars)"
+  },
+  {
+   "key": "real_sos",
+   "g6": "I@@KTHQMW",
+   "type": "real",
+   "verdict": "ACCEPT",
+   "reason": "identity = f (21 cofactors; frame 2,9; 6 sat pairs); f = c + sum of 4 weighted squares, c > 0"
+  },
+  {
+   "key": "real_sturm",
+   "g6": "IqGOGQjTo",
+   "type": "real",
+   "verdict": "ACCEPT",
+   "reason": "identity = f (22 cofactors; frame 0,1; 6 sat pairs); univariate in y_9 of degree 2 with no real root"
+  },
+  {
+   "key": "real_dag_sos",
+   "g6": "I_CbWyooW",
+   "type": "real-dag",
+   "verdict": "ACCEPT",
+   "reason": "identity = f (11 rows; frame 9,8; 7 sat pairs); f = c + sum of 2 weighted squares, c > 0"
+  },
+  {
+   "key": "real_dag_sturm",
+   "g6": "IGDLGqPwW",
+   "type": "real-dag",
+   "verdict": "ACCEPT",
+   "reason": "identity = f (4 rows; frame 7,8; 7 sat pairs); univariate in y_5 of degree 2 with no real root"
+  },
+  {
+   "key": "tree_L2_L1a",
+   "g6": "I??OzIJ}?",
+   "type": "tree",
+   "verdict": "ACCEPT",
+   "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1"
+  },
+  {
+   "key": "tree_L3_L1a",
+   "g6": "I?L@GuTw_",
+   "type": "tree",
+   "verdict": "ACCEPT",
+   "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:4"
+  },
+  {
+   "key": "tree_L3_L1c",
+   "g6": "I@AGv@M[o",
+   "type": "tree",
+   "verdict": "ACCEPT",
+   "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2"
+  },
+  {
+   "key": "tree_L1b",
+   "g6": "I@hUE?hDg",
+   "type": "tree",
+   "verdict": "ACCEPT",
+   "reason": "proof tree over field of degree 2: 3 nodes, leaves L1b:2"
+  },
+  {
+   "key": "tree_big",
+   "g6": "I?_y`fGwW",
+   "type": "tree",
+   "verdict": "ACCEPT",
+   "reason": "proof tree over field of degree 2: 19 nodes, leaves L1a:4,L1c:4"
+  }
+ ],
+ "originals_all_accepted": true,
+ "mutations": [
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "duplicate the step: the second application points at a pair that is already an edge",
+   "verdict": "REJECT",
+   "reason": "tu step 1: pair 1-4 is already an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "graph already contains the step pair as an edge (step points at an existing edge)",
+   "verdict": "REJECT",
+   "reason": "tu step 0: pair 1-4 is already an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "swap two entries of the step map",
+   "verdict": "REJECT",
+   "reason": "tu step 0: map not edge-preserving (edge 0-3 -> 4-2 is not an edge)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "swap two entries of the end (forbidden) map",
+   "verdict": "REJECT",
+   "reason": "tu end forbidden[17]: map not edge-preserving (edge 0-3 -> 1-0 is not an edge)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "end cites a different forbidden-74 index (16 instead of 17)",
+   "verdict": "REJECT",
+   "reason": "tu end forbidden[16]: map not edge-preserving (edge 0-6 -> 5-9 is not an edge)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "step cites a different gadget (1 instead of 0)",
+   "verdict": "REJECT",
+   "reason": "tu step 0: map must be a list of length 7",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "step pair is not the image of the distinguished pair",
+   "verdict": "REJECT",
+   "reason": "tu step 0: pair is not the image of the gadget distinguished pair",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "end map not injective",
+   "verdict": "REJECT",
+   "reason": "tu end forbidden[17]: map not injective",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "zero-step chain (direct containment is an R-ptr, not a tu chain)",
+   "verdict": "REJECT",
+   "reason": "tu: steps must be a nonempty list",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "unknown extra field in the certificate",
+   "verdict": "REJECT",
+   "reason": "tu: schema (extra ['note'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "record verdict \"tu\" instead of \"refuted\" (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "record verdict is 'tu', not refuted",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "boolean in place of the integer gadget index",
+   "verdict": "REJECT",
+   "reason": "tu step 0: bad gadget index False",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "IAh?HKyco",
+   "mutation": "two-step chain with its first step deleted",
+   "verdict": "REJECT",
+   "reason": "tu step 0: map not edge-preserving (edge 0-2 -> 2-3 is not an edge)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "IAh?HKyco",
+   "mutation": "two-step chain with its steps reversed",
+   "verdict": "REJECT",
+   "reason": "tu step 0: map not edge-preserving (edge 0-2 -> 2-3 is not an edge)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?CYKMqYO",
+   "mutation": "end points at a refuted-graph g6 with no record in the run",
+   "verdict": "REJECT",
+   "reason": "tu end refuted IKHK`HHc_: map not edge-preserving (edge 0-3 -> 1-7 is not an edge)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?CYKMqYO",
+   "mutation": "end target record is present but its own certificate is broken",
+   "verdict": "REJECT",
+   "reason": "pointer target I?GPYMX{? is not accepted (REJECT: tree node root: L2 relation is not in the row space of A)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "pointer cycle: chain ends at its own record (identity map is valid)",
+   "verdict": "REJECT",
+   "reason": "pointer target I?ERPrCwW is not accepted (REJECT: pointer cycle through I?ERPrCwW)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?l@Glo_w",
+   "mutation": "two-record pointer loop (target rewritten to point back)",
+   "verdict": "REJECT",
+   "reason": "pointer target IAh?HKyco is not accepted (REJECT: tu end refuted I?l@Glo_w: map not edge-preserving (edge 1-8 -> 1-8 is not an edge))",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "change one rational coefficient of one cofactor",
+   "verdict": "REJECT",
+   "reason": "null: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "drop one cofactor term",
+   "verdict": "REJECT",
+   "reason": "null: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "drop one whole cofactor",
+   "verdict": "REJECT",
+   "reason": "null: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "extra non-edge-equals-1 generator e:u,v for a non-edge (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "cofactors: unknown generator key 'e:0,1'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "coefficient as a JSON number instead of a rational string",
+   "verdict": "REJECT",
+   "reason": "cofactor e:0,9: bad rational 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "duplicate monomial (zero-coefficient copy of an existing term)",
+   "verdict": "REJECT",
+   "reason": "cofactor e:0,9: duplicate monomial",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "stated system present but one generator differs from the regenerated one",
+   "verdict": "REJECT",
+   "reason": "system: stated generator e:0,9 differs from the regenerated one",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "exponent vector one entry too long",
+   "verdict": "REJECT",
+   "reason": "cofactor e:0,9: exponent vector must have 44 entries",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "frame is a non-edge (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "frame: 0-1 is not an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "frame reversed (a valid frame, but a different system)",
+   "verdict": "REJECT",
+   "reason": "null: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "swap two saturation entries (t-variable naming changes)",
+   "verdict": "REJECT",
+   "reason": "null: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "duplicated saturation pair",
+   "verdict": "REJECT",
+   "reason": "sat: duplicate pair",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "unknown extra field",
+   "verdict": "REJECT",
+   "reason": "null: schema (extra ['comment'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?EJPjOwW",
+   "mutation": "change one rational coefficient of one cofactor",
+   "verdict": "REJECT",
+   "reason": "null: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?EJPjOwW",
+   "mutation": "drop one cofactor term",
+   "verdict": "REJECT",
+   "reason": "null: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?EJPjOwW",
+   "mutation": "drop one whole cofactor",
+   "verdict": "REJECT",
+   "reason": "null: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?EJPjOwW",
+   "mutation": "frame is a non-edge (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "frame: 0-1 is not an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?EJPjOwW",
+   "mutation": "frame reversed (a valid frame, but a different system)",
+   "verdict": "REJECT",
+   "reason": "null: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?EJPjOwW",
+   "mutation": "swap two saturation entries (t-variable naming changes)",
+   "verdict": "REJECT",
+   "reason": "null: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?EJPjOwW",
+   "mutation": "duplicated saturation pair",
+   "verdict": "REJECT",
+   "reason": "sat: duplicate pair",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?EJPjOwW",
+   "mutation": "unknown extra field",
+   "verdict": "REJECT",
+   "reason": "null: schema (extra ['comment'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "change one coefficient of a row cofactor",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "change one coefficient of a row polynomial",
+   "verdict": "REJECT",
+   "reason": "dag row 0 poly: zero coefficient in canonical sparse polynomial",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "drop one cofactor term in a row",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "self reference aux:k in row k",
+   "verdict": "REJECT",
+   "reason": "dag_reference_order: row 4 references aux:4",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "forward reference to a later row",
+   "verdict": "REJECT",
+   "reason": "dag_reference_order: row 4 references aux:5",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "aux index spelled with a leading zero",
+   "verdict": "REJECT",
+   "reason": "dag_source: row 4 names unknown source 'aux:01'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "drop the last row",
+   "verdict": "REJECT",
+   "reason": "null-dag: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "two terms of a row polynomial out of lexicographic order",
+   "verdict": "REJECT",
+   "reason": "dag row 0 poly: terms not in strictly increasing lexicographic order",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "zero-coefficient term appended to a row polynomial",
+   "verdict": "REJECT",
+   "reason": "dag row 0 poly: zero coefficient in canonical sparse polynomial",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "more than 256 rows (padding with zero rows)",
+   "verdict": "REJECT",
+   "reason": "dag_row_limit: more than 256 rows",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "unknown source name",
+   "verdict": "REJECT",
+   "reason": "dag_source: row 0 names unknown source 'q:1,2'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "extra field in a row",
+   "verdict": "REJECT",
+   "reason": "dag row 0: schema (extra ['note'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "last row claims 2 instead of the derived value",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 5 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "attack: a single row claiming 1 with no cofactors",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "frame is a non-edge (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "frame: 0-1 is not an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "frame reversed (a valid frame, but a different system)",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "swap two saturation entries (t-variable naming changes)",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 2 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "duplicated saturation pair",
+   "verdict": "REJECT",
+   "reason": "sat: duplicate pair",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IRaAQGbFG",
+   "mutation": "unknown extra field",
+   "verdict": "REJECT",
+   "reason": "null-dag: schema (extra ['comment'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "change one coefficient of a row cofactor",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "change one coefficient of a row polynomial",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "drop one cofactor term in a row",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 1 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "self reference aux:k in row k",
+   "verdict": "REJECT",
+   "reason": "dag_reference_order: row 7 references aux:7",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "forward reference to a later row",
+   "verdict": "REJECT",
+   "reason": "dag_reference_order: row 7 references aux:8",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "aux index spelled with a leading zero",
+   "verdict": "REJECT",
+   "reason": "dag_source: row 7 names unknown source 'aux:01'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "drop the last row",
+   "verdict": "REJECT",
+   "reason": "null-dag: sum(cofactor * generator) != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "two terms of a row polynomial out of lexicographic order",
+   "verdict": "REJECT",
+   "reason": "dag row 0 poly: terms not in strictly increasing lexicographic order",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "zero-coefficient term appended to a row polynomial",
+   "verdict": "REJECT",
+   "reason": "dag row 0 poly: zero coefficient in canonical sparse polynomial",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "more than 256 rows (padding with zero rows)",
+   "verdict": "REJECT",
+   "reason": "dag_row_limit: more than 256 rows",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "unknown source name",
+   "verdict": "REJECT",
+   "reason": "dag_source: row 0 names unknown source 'q:1,2'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "extra field in a row",
+   "verdict": "REJECT",
+   "reason": "dag row 0: schema (extra ['note'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "last row claims 2 instead of the derived value",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 44 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "attack: a single row claiming 1 with no cofactors",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "frame is a non-edge (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "frame: 0-2 is not an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "frame reversed (a valid frame, but a different system)",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "swap two saturation entries (t-variable naming changes)",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 10 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "duplicated saturation pair",
+   "verdict": "REJECT",
+   "reason": "sat: duplicate pair",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "IhEEOgdAw",
+   "mutation": "unknown extra field",
+   "verdict": "REJECT",
+   "reason": "null-dag: schema (extra ['comment'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "change one coefficient of f",
+   "verdict": "REJECT",
+   "reason": "real: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "drop one cofactor term",
+   "verdict": "REJECT",
+   "reason": "real: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "change one rational coefficient of one cofactor",
+   "verdict": "REJECT",
+   "reason": "real: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "SOS constant c = 0 (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "sos: c must be strictly positive",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "SOS constant c negative",
+   "verdict": "REJECT",
+   "reason": "sos: c must be strictly positive",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "SOS weight negative",
+   "verdict": "REJECT",
+   "reason": "sos: weight 0 must be strictly positive",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "drop one SOS square",
+   "verdict": "REJECT",
+   "reason": "sos: c + sum w q^2 != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "both sturm and sos present",
+   "verdict": "REJECT",
+   "reason": "real: needs exactly one of sturm or sos",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "frame is a non-edge (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "frame: 0-1 is not an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "frame reversed (a valid frame, but a different system)",
+   "verdict": "REJECT",
+   "reason": "real: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "swap two saturation entries (t-variable naming changes)",
+   "verdict": "REJECT",
+   "reason": "real: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "duplicated saturation pair",
+   "verdict": "REJECT",
+   "reason": "sat: duplicate pair",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I@@KTHQMW",
+   "mutation": "unknown extra field",
+   "verdict": "REJECT",
+   "reason": "real: schema (extra ['comment'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "change one coefficient of f",
+   "verdict": "REJECT",
+   "reason": "real: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "drop one cofactor term",
+   "verdict": "REJECT",
+   "reason": "real: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "change one rational coefficient of one cofactor",
+   "verdict": "REJECT",
+   "reason": "real: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "Sturm names a different variable than the one f uses",
+   "verdict": "REJECT",
+   "reason": "sturm: f involves a variable other than x_2",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "Sturm names a frame coordinate that is not a variable",
+   "verdict": "REJECT",
+   "reason": "sturm: 'x_0' is not a variable of the regenerated system",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "Sturm proof replaced by an SOS claim f = 1",
+   "verdict": "REJECT",
+   "reason": "sos: c + sum w q^2 != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "frame is a non-edge (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "frame: 0-3 is not an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "frame reversed (a valid frame, but a different system)",
+   "verdict": "REJECT",
+   "reason": "real: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "swap two saturation entries (t-variable naming changes)",
+   "verdict": "REJECT",
+   "reason": "real: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "duplicated saturation pair",
+   "verdict": "REJECT",
+   "reason": "sat: duplicate pair",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "IqGOGQjTo",
+   "mutation": "unknown extra field",
+   "verdict": "REJECT",
+   "reason": "real: schema (extra ['comment'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "change one coefficient of a row cofactor",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "change one coefficient of a row polynomial",
+   "verdict": "REJECT",
+   "reason": "dag row 0 poly: zero coefficient in canonical sparse polynomial",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "drop one cofactor term in a row",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "self reference aux:k in row k",
+   "verdict": "REJECT",
+   "reason": "dag_reference_order: row 6 references aux:6",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "forward reference to a later row",
+   "verdict": "REJECT",
+   "reason": "dag_reference_order: row 6 references aux:7",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "aux index spelled with a leading zero",
+   "verdict": "REJECT",
+   "reason": "dag_source: row 6 names unknown source 'aux:02'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "drop the last row",
+   "verdict": "REJECT",
+   "reason": "real-dag: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "two terms of a row polynomial out of lexicographic order",
+   "verdict": "REJECT",
+   "reason": "dag row 0 poly: terms not in strictly increasing lexicographic order",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "zero-coefficient term appended to a row polynomial",
+   "verdict": "REJECT",
+   "reason": "dag row 0 poly: zero coefficient in canonical sparse polynomial",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "more than 256 rows (padding with zero rows)",
+   "verdict": "REJECT",
+   "reason": "dag_row_limit: more than 256 rows",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "unknown source name",
+   "verdict": "REJECT",
+   "reason": "dag_source: row 0 names unknown source 'q:1,2'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "extra field in a row",
+   "verdict": "REJECT",
+   "reason": "dag row 0: schema (extra ['note'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "frame is a non-edge (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "frame: 0-2 is not an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "frame reversed (a valid frame, but a different system)",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "swap two saturation entries (t-variable naming changes)",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "duplicated saturation pair",
+   "verdict": "REJECT",
+   "reason": "sat: duplicate pair",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "unknown extra field",
+   "verdict": "REJECT",
+   "reason": "real-dag: schema (extra ['comment'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "change one coefficient of a row cofactor",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "change one coefficient of a row polynomial",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "drop one cofactor term in a row",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "self reference aux:k in row k",
+   "verdict": "REJECT",
+   "reason": "dag_reference_order: row 3 references aux:3",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "forward reference to a later row",
+   "verdict": "REJECT",
+   "reason": "dag_reference_order: row 0 references aux:1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "aux index spelled with a leading zero",
+   "verdict": "REJECT",
+   "reason": "dag_source: row 3 names unknown source 'aux:01'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "drop the last row",
+   "verdict": "REJECT",
+   "reason": "real-dag: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "two terms of a row polynomial out of lexicographic order",
+   "verdict": "REJECT",
+   "reason": "dag row 0 poly: terms not in strictly increasing lexicographic order",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "zero-coefficient term appended to a row polynomial",
+   "verdict": "REJECT",
+   "reason": "dag row 0 poly: zero coefficient in canonical sparse polynomial",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "more than 256 rows (padding with zero rows)",
+   "verdict": "REJECT",
+   "reason": "dag_row_limit: more than 256 rows",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "unknown source name",
+   "verdict": "REJECT",
+   "reason": "dag_source: row 0 names unknown source 'q:1,2'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "extra field in a row",
+   "verdict": "REJECT",
+   "reason": "dag row 0: schema (extra ['note'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "frame is a non-edge (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "frame: 0-1 is not an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "frame reversed (a valid frame, but a different system)",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "swap two saturation entries (t-variable naming changes)",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "duplicated saturation pair",
+   "verdict": "REJECT",
+   "reason": "sat: duplicate pair",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "unknown extra field",
+   "verdict": "REJECT",
+   "reason": "real-dag: schema (extra ['comment'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "change one coefficient of f",
+   "verdict": "REJECT",
+   "reason": "real-dag: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "change one coefficient of a row cofactor",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "last row polynomial differs from f",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 10 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "SOS constant c = 0 (contract red fixture)",
+   "verdict": "REJECT",
+   "reason": "sos: c must be strictly positive",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "SOS constant c negative",
+   "verdict": "REJECT",
+   "reason": "sos: c must be strictly positive",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "SOS weight negative",
+   "verdict": "REJECT",
+   "reason": "sos: weight 0 must be strictly positive",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "drop one SOS square",
+   "verdict": "REJECT",
+   "reason": "sos: c + sum w q^2 != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I_CbWyooW",
+   "mutation": "both sturm and sos present",
+   "verdict": "REJECT",
+   "reason": "real-dag: needs exactly one of sturm or sos",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "change one coefficient of f",
+   "verdict": "REJECT",
+   "reason": "real-dag: sum(cofactor * generator) != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "change one coefficient of a row cofactor",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 0 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "last row polynomial differs from f",
+   "verdict": "REJECT",
+   "reason": "dag_row_identity: row 3 poly != sum(cofactor * source)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "Sturm names a different variable than the one f uses",
+   "verdict": "REJECT",
+   "reason": "sturm: f involves a variable other than x_0",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "Sturm names a frame coordinate that is not a variable",
+   "verdict": "REJECT",
+   "reason": "sturm: 'x_7' is not a variable of the regenerated system",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "IGDLGqPwW",
+   "mutation": "Sturm proof replaced by an SOS claim f = 1",
+   "verdict": "REJECT",
+   "reason": "sos: c + sum w q^2 != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "alter one entry of the root matrix A",
+   "verdict": "REJECT",
+   "reason": "tree node root: A contains a row that is not implied by the proved constraints",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "alter one entry of the leaf matrix A",
+   "verdict": "REJECT",
+   "reason": "tree node root.0.0: A contains a row that is not implied by the proved constraints",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "delete one row of the root matrix A (strictness: row-space equality)",
+   "verdict": "REJECT",
+   "reason": "tree node root: A row space is smaller than the regenerated constraint space (strict equality reading)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "attack: root A gains the unproved row e0-e1 and the root becomes an L1a leaf",
+   "verdict": "REJECT",
+   "reason": "tree node root: A contains a row that is not implied by the proved constraints",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "delete the child of an L2 node",
+   "verdict": "REJECT",
+   "reason": "tree node root: L2 must have exactly one child",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "flip the sign of an L2 omega",
+   "verdict": "REJECT",
+   "reason": "tree node root: L2 relation is not in the row space of A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "L2 omega of modulus 2",
+   "verdict": "REJECT",
+   "reason": "tree node root: L2 relation is not in the row space of A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "L2 second pair is already an edge",
+   "verdict": "REJECT",
+   "reason": "tree node root: L2 relation is not in the row space of A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "L1a names a pair that is not forced to collide",
+   "verdict": "REJECT",
+   "reason": "tree node root.0.0: L1a collision 0=9 is not forced by A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "root graph state gains a non-edge",
+   "verdict": "REJECT",
+   "reason": "tree node root: stated graph differs from the graph derived by the moves",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "leaf graph state loses an edge",
+   "verdict": "REJECT",
+   "reason": "tree node root.0.0: stated graph differs from the graph derived by the moves",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "field interval without a root",
+   "verdict": "REJECT",
+   "reason": "field: minpoly has no strict sign change on the interval",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "attack: root replaced by an unforced L1a leaf",
+   "verdict": "REJECT",
+   "reason": "tree node root: L1a collision 0=1 is not forced by A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?L@GuTw_",
+   "mutation": "L3 d changed (d^2 != discriminant)",
+   "verdict": "REJECT",
+   "reason": "tree node root: L3 d^2 != 4|a|^2|b|^2 - (|a|^2+|b|^2-|c|^2)^2",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?L@GuTw_",
+   "mutation": "delete one child of an L3 node",
+   "verdict": "REJECT",
+   "reason": "tree node root: L3 must have exactly two children",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?L@GuTw_",
+   "mutation": "swap the two L3 children (+d / -d branches)",
+   "verdict": "REJECT",
+   "reason": "tree node root.0: A contains a row that is not implied by the proved constraints",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?L@GuTw_",
+   "mutation": "L3 second child replaced by a copy of the first (one branch covered twice)",
+   "verdict": "REJECT",
+   "reason": "tree node root.1: A contains a row that is not implied by the proved constraints",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?L@GuTw_",
+   "mutation": "L3 coefficient changed",
+   "verdict": "REJECT",
+   "reason": "tree node root: L3 relation is not in the row space of A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?L@GuTw_",
+   "mutation": "L3 coefficient zero",
+   "verdict": "REJECT",
+   "reason": "tree node root: L3 coefficients must all be nonzero",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?L@GuTw_",
+   "mutation": "minpoly with a zero leading coefficient",
+   "verdict": "REJECT",
+   "reason": "field: minpoly must have positive degree and nonzero leading coeff",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?L@GuTw_",
+   "mutation": "reducible minpoly x^3 - 3x",
+   "verdict": "REJECT",
+   "reason": "field: minpoly is not irreducible over Q",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?L@GuTw_",
+   "mutation": "decimal string entry in A",
+   "verdict": "REJECT",
+   "reason": "tree node root A[0]: bad rational '1.0'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I@AGv@M[o",
+   "mutation": "L1c coefficients replaced by (1,1,1): relation not forced and discriminant 3 > 0",
+   "verdict": "REJECT",
+   "reason": "tree node root.0.0: L1c relation is not in the row space of A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I@AGv@M[o",
+   "mutation": "L1c edges swapped (relation no longer in the row space)",
+   "verdict": "REJECT",
+   "reason": "tree node root.0.0: L1c relation is not in the row space of A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I@AGv@M[o",
+   "mutation": "L1c leaf given a child",
+   "verdict": "REJECT",
+   "reason": "tree node root.0.0: L1c leaf must have no children",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I@AGv@M[o",
+   "mutation": "L1c relabelled L3 with d = 0 (d^2 != negative discriminant)",
+   "verdict": "REJECT",
+   "reason": "tree node root.0.0: L3 d^2 != 4|a|^2|b|^2 - (|a|^2+|b|^2-|c|^2)^2",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I@hUE?hDg",
+   "mutation": "L1b omega replaced by -1 (modulus 1)",
+   "verdict": "REJECT",
+   "reason": "tree node root.0: L1b relation is not in the row space of A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I@hUE?hDg",
+   "mutation": "L1b omega conjugated (same modulus, relation not forced)",
+   "verdict": "REJECT",
+   "reason": "tree node root.0: L1b relation is not in the row space of A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I@hUE?hDg",
+   "mutation": "L1b second edge is a non-edge",
+   "verdict": "REJECT",
+   "reason": "tree node root.0 second edge: 0-1 is not an edge of the current graph",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?_y`fGwW",
+   "mutation": "unknown move kind",
+   "verdict": "REJECT",
+   "reason": "tree node root: unknown move kind 'L4'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?_y`fGwW",
+   "mutation": "extra field in a node",
+   "verdict": "REJECT",
+   "reason": "tree node root: schema (extra ['note'], missing [])",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?_y`fGwW",
+   "mutation": "alter one zero entry of the deepest node matrix A",
+   "verdict": "REJECT",
+   "reason": "tree node root.1.1.1.0: A contains a row that is not implied by the proved constraints",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "attack: saturation pair [u,u] (generator = -1)",
+   "verdict": "REJECT",
+   "reason": "sat: pair must have u < v",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "attack: saturation pair stored with u > v",
+   "verdict": "REJECT",
+   "reason": "sat: pair must have u < v",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "attack: degenerate frame [a, a]",
+   "verdict": "REJECT",
+   "reason": "frame: vertices must be distinct",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "attack: identity is valid but f = t_0 - 1 has a real root (Sturm must say 1)",
+   "verdict": "REJECT",
+   "reason": "sturm: f has 1 real root(s) in t_0",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "attack: f = t_0 - 1 with a bogus SOS c=1 and no squares",
+   "verdict": "REJECT",
+   "reason": "sos: c + sum w q^2 != f",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "real-dag",
+   "source_g6": "I?D@Yib}?",
+   "mutation": "attack: f = 0 (the zero polynomial) with Sturm",
+   "verdict": "REJECT",
+   "reason": "sturm: f is the zero polynomial",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "synthetic",
+   "mutation": "attack on the diamond (a UDG): genuine identity sum c g = 1 with the frame pinned on the NON-edge 2-3",
+   "verdict": "REJECT",
+   "reason": "frame: 2-3 is not an edge",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "synthetic",
+   "mutation": "attack on the diamond (a UDG): genuine identity using an extra generator e:2,3 for a NON-edge",
+   "verdict": "REJECT",
+   "reason": "cofactors: unknown generator key 'e:2,3'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null-dag",
+   "source_g6": "synthetic",
+   "mutation": "attack on the diamond (a UDG): one-row DAG using the extra NON-edge generator e:2,3",
+   "verdict": "REJECT",
+   "reason": "dag_source: row 0 names unknown source 'e:2,3'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "synthetic",
+   "mutation": "attack on C4 (a UDG): L1b with omega = 1 (relation exact, modulus 1)",
+   "verdict": "REJECT",
+   "reason": "tree node root: L1b needs |omega| != 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "synthetic",
+   "mutation": "attack on K3 (a UDG): L1c with discriminant +3 (relation exact)",
+   "verdict": "REJECT",
+   "reason": "tree node root: L1c discriminant is not strictly negative",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "synthetic",
+   "mutation": "attack on C4 (a UDG): L1a on the diagonal pair 0,2 (not forced)",
+   "verdict": "REJECT",
+   "reason": "tree node root: L1a collision 0=2 is not forced by A",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "synthetic",
+   "mutation": "attack on the diamond (a UDG): L3 then L2 adding non-edge 2-3 with |omega|^2 = 1/3, then K4 collapses by L1a",
+   "verdict": "REJECT",
+   "reason": "tree node root.0: L2 needs |omega| = 1",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "synthetic",
+   "mutation": "attack on the diamond (a UDG): the same relation as an L1b leaf, but 2-3 is a non-edge",
+   "verdict": "REJECT",
+   "reason": "tree node root.0 second edge: 2-3 is not an edge of the current graph",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "duplicate JSON key \"type\" in the certificate",
+   "verdict": "REJECT",
+   "reason": "json: duplicate key 'type'",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "graph6 with nonzero padding bits",
+   "verdict": "REJECT",
+   "reason": "g6: nonzero padding bits",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "graph6 one character short",
+   "verdict": "REJECT",
+   "reason": "g6: wrong length for n=10",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu",
+   "source_g6": "I?ERPrCwW",
+   "mutation": "truncated JSON line",
+   "verdict": "REJECT",
+   "reason": "json: Invalid control character at: line 1 column 98 (char 97)",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "null",
+   "source_g6": "I?EJPjOwW",
+   "mutation": "coefficient written as a JSON float literal",
+   "verdict": "REJECT",
+   "reason": "json: floating-point literal 1.5",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "NaN in the field interval",
+   "verdict": "REJECT",
+   "reason": "json: non-finite constant NaN",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I?L@GuTw_",
+   "mutation": "irreducible minpoly x^3-3x+1 whose interval holds 3 real roots",
+   "verdict": "REJECT",
+   "reason": "field: interval does not isolate exactly one real root",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "L1a leaf given a child",
+   "verdict": "REJECT",
+   "reason": "tree node root.0.0: L1a leaf must have no children",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I@hUE?hDg",
+   "mutation": "L1b leaf given a child",
+   "verdict": "REJECT",
+   "reason": "tree node root.0: L1b leaf must have no children",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tree",
+   "source_g6": "I??OzIJ}?",
+   "mutation": "control that should still ACCEPT: omega -1 respelled as {re:[-1], im:[0]}",
+   "verdict": "ACCEPT",
+   "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1",
+   "pass": true,
+   "expected": "ACCEPT"
+  },
+  {
+   "type": "tu-gadget-data",
+   "source_g6": "tu-gadgets.json[0]",
+   "mutation": "gadget 0 with edge [0, 3] deleted (TU proof must fail)",
+   "verdict": "REJECT",
+   "reason": "gadget 0: TU property NOT re-proved by rhombus algebra",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu-gadget-data",
+   "source_g6": "tu-gadgets.json[3]",
+   "mutation": "gadget 3 with edge [2, 3] deleted (TU proof must fail)",
+   "verdict": "REJECT",
+   "reason": "gadget 3: TU property NOT re-proved by rhombus algebra",
+   "pass": true,
+   "expected": "REJECT"
+  },
+  {
+   "type": "tu-gadget-data",
+   "source_g6": "tu-gadgets.json[5]",
+   "mutation": "gadget 5 with edge [5, 6] deleted (TU proof must fail)",
+   "verdict": "REJECT",
+   "reason": "gadget 5: TU property NOT re-proved by rhombus algebra",
+   "pass": true,
+   "expected": "REJECT"
+  }
+ ],
+ "summary_by_type": {
+  "tu": {
+   "negative_controls": 22,
+   "rejected": 22,
+   "positive_controls": 0,
+   "accepted": 0
+  },
+  "null": {
+   "negative_controls": 27,
+   "rejected": 27,
+   "positive_controls": 0,
+   "accepted": 0
+  },
+  "null-dag": {
+   "negative_controls": 39,
+   "rejected": 39,
+   "positive_controls": 0,
+   "accepted": 0
+  },
+  "real": {
+   "negative_controls": 26,
+   "rejected": 26,
+   "positive_controls": 0,
+   "accepted": 0
+  },
+  "real-dag": {
+   "negative_controls": 49,
+   "rejected": 49,
+   "positive_controls": 0,
+   "accepted": 0
+  },
+  "tree": {
+   "negative_controls": 41,
+   "rejected": 41,
+   "positive_controls": 1,
+   "accepted": 1
+  },
+  "tu-gadget-data": {
+   "negative_controls": 3,
+   "rejected": 3,
+   "positive_controls": 0,
+   "accepted": 0
+  }
+ },
+ "all_negative_controls_rejected": true,
+ "all_positive_controls_accepted": true,
+ "all_controls_as_expected": true
+}

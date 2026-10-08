@@ -1,0 +1,117 @@
+{
+  "suite": "named",
+  "method": "real",
+  "count": 6,
+  "refuted": 3,
+  "unknown": 3,
+  "seconds_per_graph": 3.0,
+  "max_states": 200,
+  "all_sat": false,
+  "total_seconds": 6.238351387903094,
+  "rows": [
+    {
+      "index": 0,
+      "g6": "C~",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 6,
+        "sat_pairs": 0,
+        "method": "real",
+        "seconds": 0.03138831211254001,
+        "limit": 3.0,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 1,
+      "g6": "DFw",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 6,
+        "sat_pairs": 4,
+        "method": "real",
+        "seconds": 0.05727167706936598,
+        "limit": 3.0,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 2,
+      "g6": "Is?@WxcU?",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 10,
+        "sat_pairs": 10,
+        "method": "real",
+        "seconds": 0.03626343701034784,
+        "limit": 3.0,
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 3,
+      "g6": "Is?HGtcU?",
+      "verdict": "unknown",
+      "detail": {
+        "method": "real",
+        "seconds": 3.004268973134458,
+        "limit": 3.0,
+        "reason": "Deadline: graph time limit",
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 4,
+      "g6": "IsP@OkWHG",
+      "verdict": "unknown",
+      "detail": {
+        "method": "real",
+        "seconds": 3.0059907152317464,
+        "limit": 3.0,
+        "reason": "Deadline: graph time limit",
+        "forbidden_in_force": 0
+      }
+    },
+    {
+      "index": 5,
+      "g6": "F`o~_",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 15,
+        "helper_rows": 4,
+        "sat_pairs": 2,
+        "method": "real",
+        "seconds": 0.08172110607847571,
+        "limit": 3.0,
+        "forbidden_in_force": 0
+      }
+    }
+  ],
+  "environment": {
+    "sympy": "1.14.0",
+    "flint": "0.9.0",
+    "SYMPY_GROUND_TYPES": "python"
+  },
+  "argv": [
+    "controls.py",
+    "--suite",
+    "named",
+    "--method",
+    "real",
+    "--seconds",
+    "3"
+  ],
+  "source_sha256": {
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "algebra.py": "18b79b8f9db10df849c946d8dccb6c74f518ffc1e1f0fb7ade79f2bc2689d45a",
+    "gp10refute.py": "5854a63a6eb23bac3e62b3c4583a2ba7ebca9215f79f7636741cdc6458601787",
+    "selftest.py": "2a5063ccaa7d616e1abca9bf649ead0587dee91d4611f410e77fa22cba8c9b9d",
+    "controls.py": "7fd29fb7dae2a33efc9f12b2b83ae2d65fe2031c1bdc8d5dbeb4d35c7a6f8f6b",
+    "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec"
+  }
+}

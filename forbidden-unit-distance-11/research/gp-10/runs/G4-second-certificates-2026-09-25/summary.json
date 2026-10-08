@@ -1,0 +1,1 @@
+{"L10": 324, "candidates_with_alternate": 194, "checker_accepted": 194, "final_line": ["ACCEPT run verified"], "rejects": [], "alternate_types_accepted": {"tree": 177, "tu": 1, "real-dag": 3, "null": 11, "real": 1, "null-dag": 1}, "primary_types_covered": {"null": 20, "tu": 9, "real-dag": 80, "real": 16, "null-dag": 56, "tree": 13}}

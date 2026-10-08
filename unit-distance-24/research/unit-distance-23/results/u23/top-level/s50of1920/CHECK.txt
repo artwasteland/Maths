@@ -1,0 +1,16 @@
+# u(23) fleet, slice s50of1920: the top level (23,65) kept 1 graph in the fleet's filter-only prune
+# decided here per CONTRACT Section 3 by the full prune (embedder on) and two replays of its certificate
+# source revision: 5d020e54624be6ee4723f2237a4c99e26346a7a7; host <host>; 2026-09-26T07:54:53Z
+# fleet record: worker f51 (branch claude/answering-alexeev-u22-cloud-u23-f51-2h4ksy), 23-65.keep.g6 = 23-65.UNKNOWN.g6 = 23-65.g6 here
+
+$ python3 enum/prune.py --level 23-65.g6 --target-n 23 --target-m 65 --jobs 1 --forbidden-set 398 --graph-timeout 1800
+{"level": [23, 65], "counts": {"input": 1, "tu": 0, "survivors": 1, "embedded": 0, "refuted": 1, "unknown": 0, "kept": 0, "pruned": 1}, "wall_seconds": {"filter": 0.047270447947084904, "embed": 60.627787839155644, "check": 7.261305617168546, "total": 67.9458117899485}, "checker": "ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15", "problems": []}
+
+$ python3 check/udcheck.py --graphs 23-65.g6 --unknown-file 23-65.UNKNOWN.g6 --data-dir data --expect-n 23 --expect-m 65 23-65.certs.jsonl
+ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15
+
+$ python3 check/udcheck398.py (same arguments; the checker prune.py ran with --forbidden-set 398)
+ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15
+
+# red control: the same certificate with witness.tree.A[0][0] changed from [1] to [2]
+REJECT: tampered.certs.jsonl:1.witness.tree.A: row space is inconsistent with the claimed constraints

@@ -1,0 +1,12 @@
+{
+  "reason": "AttributeError: 'flint.types.fmpq_mpoly.fmpq_mpoly' object has no attribute 'leading_monomial'",
+  "g6": "H{O_okN",
+  "frame": [
+    3,
+    6
+  ],
+  "seconds": 0.0004147728905081749,
+  "limit": 55.0,
+  "stages": [],
+  "verdict": "unknown"
+}

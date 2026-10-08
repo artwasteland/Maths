@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "control": "nonprefix list",
+      "rejected_reason": "forbidden list must be a prefix of forbidden-74.json"
+    },
+    {
+      "control": "global index outside F7",
+      "rejected_reason": "sub: forbidden index is not in force"
+    },
+    {
+      "control": "noninjective sub map",
+      "rejected_reason": "sub map: not injective"
+    },
+    {
+      "control": "zero-step TU",
+      "rejected_reason": "tu: steps must be nonempty"
+    },
+    {
+      "control": "std ordinary lift",
+      "rejected_reason": "one-generator mutation has no exact identity marker"
+    },
+    {
+      "control": "std homogeneous lift",
+      "rejected_reason": "one-generator mutation has no exact identity marker"
+    },
+    {
+      "control": "slimgb ordinary lift",
+      "rejected_reason": "one-generator mutation has no exact identity marker"
+    },
+    {
+      "control": "slimgb homogeneous lift",
+      "rejected_reason": "one-generator mutation has no exact identity marker"
+    },
+    {
+      "control": "FGLM source variable order",
+      "rejected_reason": "one-generator mutation has positive dimension and returns skip"
+    },
+    {
+      "control": "std quotient lift",
+      "rejected_reason": "one-target mutation has no exact quotient marker"
+    },
+    {
+      "control": "slimgb quotient lift",
+      "rejected_reason": "one-target mutation has no exact quotient marker"
+    },
+    {
+      "control": "replayed coefficient mutation",
+      "rejected_reason": "AlgebraError: identity: expansion is not the claimed target"
+    },
+    {
+      "control": "official positive",
+      "checker_exit": 0,
+      "final_line": "ACCEPT run verified"
+    },
+    {
+      "control": "official cofactor",
+      "checker_exit": 1,
+      "final_line": "REJECT run records_rejected"
+    },
+    {
+      "control": "official sos",
+      "checker_exit": 1,
+      "final_line": "REJECT run records_rejected"
+    }
+  ],
+  "count": 15
+}

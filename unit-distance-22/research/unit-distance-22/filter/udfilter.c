@@ -6,6 +6,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* Host vertices are bits of a uint32_t (UINT32_C(1) << v for v < n), and so are pattern
+   vertices in udf_pattern.adj. */
+_Static_assert(UDF_MAX_VERTICES <= 32, "host adjacency rows and masks are uint32_t");
+_Static_assert(UDF_MAX_PATTERN_VERTICES <= 32, "pattern adjacency rows are uint32_t");
+
 typedef struct {
     const udf_graph *host;
     const udf_pattern *pattern;
@@ -45,6 +50,71 @@ static void finish_pattern(udf_pattern *pattern) {
 
 static char *read_all(const char *path, long *length, char *error, int error_size);
 static const char *next_int(const char *p, const char *end, int *value);
+
+/* sha256 of data/forbidden-398.json, the only file forbidden set 398 accepts.  A test build may
+   override it with -D to exercise the count guard on a mutated file (enum/test-398). */
+#ifndef UDF_FORBIDDEN_398_SHA256
+#define UDF_FORBIDDEN_398_SHA256 "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c"
+#endif
+
+/* Compact SHA-256 (FIPS 180-4), used only to pin the forbidden-398 file. */
+static uint32_t sha_rotr(uint32_t x, unsigned n) {
+    return (x >> n) | (x << (32 - n));
+}
+
+static void sha_block(uint32_t h[8], const unsigned char *block) {
+    static const uint32_t k[64] = {
+        0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
+        0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+        0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
+        0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+        0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+        0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+        0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+        0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2
+    };
+    uint32_t w[64], a, b, c, d, e, f, g, hh;
+    int i;
+    for (i = 0; i < 16; i++)
+        w[i] = ((uint32_t)block[4*i] << 24) | ((uint32_t)block[4*i+1] << 16) |
+               ((uint32_t)block[4*i+2] << 8) | block[4*i+3];
+    for (i = 16; i < 64; i++) {
+        uint32_t s0 = sha_rotr(w[i-15], 7) ^ sha_rotr(w[i-15], 18) ^ (w[i-15] >> 3);
+        uint32_t s1 = sha_rotr(w[i-2], 17) ^ sha_rotr(w[i-2], 19) ^ (w[i-2] >> 10);
+        w[i] = w[i-16] + s0 + w[i-7] + s1;
+    }
+    a = h[0]; b = h[1]; c = h[2]; d = h[3]; e = h[4]; f = h[5]; g = h[6]; hh = h[7];
+    for (i = 0; i < 64; i++) {
+        uint32_t s1 = sha_rotr(e, 6) ^ sha_rotr(e, 11) ^ sha_rotr(e, 25);
+        uint32_t ch = (e & f) ^ (~e & g);
+        uint32_t t1 = hh + s1 + ch + k[i] + w[i];
+        uint32_t s0 = sha_rotr(a, 2) ^ sha_rotr(a, 13) ^ sha_rotr(a, 22);
+        uint32_t maj = (a & b) ^ (a & c) ^ (b & c);
+        uint32_t t2 = s0 + maj;
+        hh = g; g = f; f = e; e = d + t1; d = c; c = b; b = a; a = t1 + t2;
+    }
+    h[0] += a; h[1] += b; h[2] += c; h[3] += d; h[4] += e; h[5] += f; h[6] += g; h[7] += hh;
+}
+
+static void sha256_hex(const unsigned char *data, size_t len, char hex[65]) {
+    uint32_t h[8] = {0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,
+                     0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19};
+    unsigned char block[64];
+    uint64_t bits = (uint64_t)len * 8;
+    size_t off = 0, rest;
+    int i;
+    while (len - off >= 64) { sha_block(h, data + off); off += 64; }
+    rest = len - off;
+    memset(block, 0, sizeof(block));
+    memcpy(block, data + off, rest);
+    block[rest] = 0x80;
+    if (rest >= 56) { sha_block(h, block); memset(block, 0, sizeof(block)); }
+    for (i = 0; i < 8; i++) block[56 + i] = (unsigned char)(bits >> (56 - 8 * i));
+    sha_block(h, block);
+    for (i = 0; i < 8; i++)
+        snprintf(hex + 8 * i, 9, "%08x", (unsigned)h[i]);
+    hex[64] = '\0';
+}
 
 static int read_graph6_char(const char **p, unsigned *value) {
     unsigned char c = (unsigned char)**p;
@@ -99,13 +169,28 @@ static const char *skip_space(const char *p, const char *end) {
     return p;
 }
 
-static int load_forbidden(udf_database *db, const char *path,
+static int load_forbidden(udf_database *db, const char *path, int forbidden_set,
                           char *error, int error_size) {
     char *data;
     long length;
     const char *p, *end;
+    if (forbidden_set != UDF_FORBIDDEN_SET_74 && forbidden_set != UDF_FORBIDDEN_SET_398) {
+        set_error(error, error_size, "forbidden set must be 74 or 398");
+        return 0;
+    }
     data = read_all(path, &length, error, error_size);
     if (data == NULL) return 0;
+    if (forbidden_set == UDF_FORBIDDEN_SET_398) {
+        /* Hash the very bytes that are parsed below. */
+        char hex[65];
+        sha256_hex((const unsigned char *)data, (size_t)length, hex);
+        if (strcmp(hex, UDF_FORBIDDEN_398_SHA256) != 0) {
+            free(data);
+            snprintf(error, (size_t)error_size,
+                     "forbidden JSON sha256 %s is not the pinned forbidden-398.json", hex);
+            return 0;
+        }
+    }
     p = skip_space(data, data + length);
     end = data + length;
     if (p >= end || *p++ != '[') {
@@ -118,7 +203,10 @@ static int load_forbidden(udf_database *db, const char *path,
         p = skip_space(p, end);
         if (p >= end) break;
         if (*p == ']') { p++; break; }
-        if (*p++ != '[' || db->forbidden_count >= UDF_MAX_PATTERNS) {
+        /* Set 74 keeps the old capacity (UDF_MAX_PATTERNS), so every input is rejected where
+           and as it was before; set 398 may use the raised capacity. */
+        if (*p++ != '[' || db->forbidden_count >= (forbidden_set == UDF_FORBIDDEN_SET_74
+                                                    ? UDF_MAX_PATTERNS : UDF_MAX_FORBIDDEN)) {
             free(data); set_error(error, error_size, "invalid forbidden JSON"); return 0;
         }
         pat = &db->forbidden[db->forbidden_count];
@@ -154,9 +242,22 @@ static int load_forbidden(udf_database *db, const char *path,
         if (p < end && *p == ',') p++;
     }
     free(data);
-    if (db->forbidden_count != 74) {
+    if (forbidden_set == UDF_FORBIDDEN_SET_74 && db->forbidden_count != 74) {
         set_error(error, error_size, "forbidden JSON does not contain 74 patterns");
         return 0;
+    }
+    if (forbidden_set == UDF_FORBIDDEN_SET_398) {
+        int i;
+        if (db->forbidden_count != 398) {
+            set_error(error, error_size, "forbidden JSON does not contain 398 patterns");
+            return 0;
+        }
+        for (i = 0; i < db->forbidden_count; i++) {
+            if (db->forbidden[i].n > 10) {
+                set_error(error, error_size, "forbidden set 398 has a graph of order above 10");
+                return 0;
+            }
+        }
     }
     return 1;
 }
@@ -269,11 +370,18 @@ static int load_tu(udf_database *db, const char *path, char *error, int error_si
     return 1;
 }
 
+int udf_database_load_set(udf_database *db, const char *forbidden_json,
+                          const char *tu_json, int forbidden_set,
+                          char *error, int error_size) {
+    memset(db, 0, sizeof(*db));
+    if (!load_forbidden(db, forbidden_json, forbidden_set, error, error_size)) return 0;
+    return load_tu(db, tu_json, error, error_size);
+}
+
 int udf_database_load(udf_database *db, const char *forbidden_json,
                       const char *tu_json, char *error, int error_size) {
-    memset(db, 0, sizeof(*db));
-    if (!load_forbidden(db, forbidden_json, error, error_size)) return 0;
-    return load_tu(db, tu_json, error, error_size);
+    return udf_database_load_set(db, forbidden_json, tu_json, UDF_FORBIDDEN_SET_74,
+                                 error, error_size);
 }
 
 static uint32_t candidates(const search_state *s, int pv) {

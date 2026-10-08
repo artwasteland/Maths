@@ -1,0 +1,6 @@
+input_graphs=6
+survivors=6
+removed=0
+patterns=74
+max_pattern_n=3
+drop_index=-1

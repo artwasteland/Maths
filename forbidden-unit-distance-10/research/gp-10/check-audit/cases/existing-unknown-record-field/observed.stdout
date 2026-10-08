@@ -1,0 +1,2 @@
+REJECT record records.jsonl:1 schema: record: missing=[] extra=['unexpected']
+REJECT run records_rejected

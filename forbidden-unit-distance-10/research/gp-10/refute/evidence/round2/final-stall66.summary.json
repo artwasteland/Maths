@@ -1,0 +1,35 @@
+{
+  "terms": 55850,
+  "scale": "3",
+  "bytes": 2806632,
+  "g6": "H{O_okN",
+  "frame": [
+    6,
+    7
+  ],
+  "seconds": 2.550701347645372,
+  "limit": 55.0,
+  "stages": [
+    {
+      "stage": "reduced:9",
+      "seconds": 0.0015939339064061642
+    },
+    {
+      "stage": "lift:True",
+      "seconds": 0.4895617626607418
+    },
+    {
+      "stage": "terms:55850",
+      "seconds": 0.7495485208928585
+    },
+    {
+      "stage": "scaled:3",
+      "seconds": 1.3077661446295679
+    },
+    {
+      "stage": "verified",
+      "seconds": 2.438499283976853
+    }
+  ],
+  "verdict": "refuted"
+}

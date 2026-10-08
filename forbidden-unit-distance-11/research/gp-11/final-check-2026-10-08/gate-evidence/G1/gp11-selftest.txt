@@ -1,0 +1,74 @@
+PASS exact11: ACCEPT exact
+PASS tree11: ACCEPT tree
+PASS tu11: ACCEPT tu
+PASS polynomial11: ACCEPT null
+PASS path11: ACCEPT exact
+PASS exact11 coordinate: REJECT edge_equation: (0, 7)
+PASS tree11 collision pair: REJECT tree: R-tree.tree.move.pair: invalid distinct vertices
+PASS tu11 distinguished pair: REJECT tu_distinguished_pair
+PASS polynomial11 coefficient: REJECT cofactor_identity
+PASS withheld B10 answer: REJECT forbidden_not_in_force: 74
+PASS certificate originals restored: all order-11 originals ACCEPT
+PASS eleven-vertex deletion with ten-vertex block: embedded_by_blocks
+PASS block order ceiling: REJECT block_order
+PASS block must be non-biconnected: REJECT block_is_biconnected
+PASS intact ten-vertex forbidden block: REJECT block_forbidden
+PASS block originals restored: same block partitions
+PASS omitted candidate record: REJECT coverage
+PASS duplicated candidate record: REJECT duplicate_record
+PASS wrong input bytes hash: REJECT input_hash
+PASS malformed controls object: REJECT controls_required
+PASS B11 independent frozen hash: REJECT frozen_input_hash
+PASS B11 missing external hash: REJECT b11_hash_required
+PASS B11 omitted frozen candidate: REJECT frozen_input_hash
+PASS frozen fixture restored: same external digest accepted
+PASS L11 output collision: REJECT output_input_collision
+PASS coverage originals restored: same counts and ACCEPT
+PASS B11 incomplete census: REJECT b11_input_count
+PASS census fixture restored: one canonical fixture accepted only as fixture11
+PASS record changed during check: REJECT inputs_changed_during_check
+PASS consumed record restored: same counts and ACCEPT
+PASS streamed certificate hash: REJECT consumed_record_hash: records.jsonl
+PASS streamed receipt restored
+PASS partial ACCEPT B10 counts: REJECT b10_incomplete
+PASS partial ACCEPT B10 conditional: REJECT b10_incomplete
+PASS partial ACCEPT B10 conditional_minimal: REJECT b10_incomplete
+PASS partial ACCEPT B10 direct_rejections: REJECT b10_incomplete
+PASS B10 seeded with F10 answers: REJECT b10_control_input
+PASS B10 derived list missing one: REJECT b10_derived_list
+PASS missing named11 report: REJECT control_report_missing: named11
+PASS malformed control report: REJECT control_report_not_accepted: named11
+PASS unaccepted named11 report: REJECT control_report_not_accepted: named11
+PASS omitted control: REJECT controls_required
+PASS control outside run tree: REJECT control_outside_run_tree
+PASS control report symlink outside run tree: REJECT control_outside_run_tree
+PASS receipt traversal symlink outside run tree: REJECT control_outside_run_tree
+PASS control reports restored: original 324; preflight only, heavy replay still required
+PASS named11 retained general-search positives: ACCEPT two exact embeddings
+PASS named11 lookup provenance: REJECT control_not_general_search
+PASS named11 library pointer: REJECT control_library_pointer
+PASS named11 originals restored: same two embeddings
+PASS eleven-vertex minimality: ACCEPT minimal=1 conditional=false
+PASS one unknown deletion cannot certify unconditional minimality: ACCEPT conditional=true minimal_if_all_listed_deletions_embed
+PASS eleven-vertex missing deletion evidence: REJECT minimality_deletion_missing
+PASS L11 output branch: same derived member, fixture-only report
+PASS eleven-vertex claimed minimal with refuted deletion: REJECT minimality_claim_refuted_deletion
+PASS minimality originals restored: same minimal list; known refuted deletion defeats unknowns
+PASS writer otherwise-ACCEPT conditional report: REJECT writer_conditional
+PASS writer fixture cannot publish: REJECT writer_profile
+PASS writer count mismatch: REJECT writer_counts
+PASS writer stale G5 review: REJECT writer_stale_review
+PASS writer open G0: REJECT writer_gate_open: G0
+PASS writer uncommitted selftest: REJECT writer_g1_sources
+PASS writer late predictions: REJECT writer_prediction_chronology
+PASS writer stale report: REJECT writer_report_hash
+PASS writer stale derived list: REJECT writer_g4_list
+PASS writer unanswered findings: REJECT writer_review_open
+PASS writer stale evidence: REJECT writer_evidence_hash: G0
+PASS writer receipt originals restored: unit receipts only; no B11 publication
+PASS frozen verifier hash: REJECT frozen_source_hash: research/gp-10/check/gp10check.py
+PASS named problem source hash: REJECT frozen_source_hash: research/unit-distance-22/sources/amp/anc/graph6.txt
+PASS profile replaced after import: REJECT profile_changed_since_import
+PASS frozen verifier originals restored
+GP11 SELFTEST PASS checks=72 rejected_mutations=49
+RESOURCE min_MemAvailable_kib=3968396 exit=0

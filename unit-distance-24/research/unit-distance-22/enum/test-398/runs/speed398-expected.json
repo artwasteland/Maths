@@ -1,0 +1,138 @@
+{
+ "cells": [
+  {
+   "cell": "dag-18-46_15-34",
+   "expected_records": 3908,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-18-46_15-35",
+   "expected_records": 210,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-18-46_15-36",
+   "expected_records": 11,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-18-46_15-37",
+   "expected_records": 1,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-18-46_16-38",
+   "expected_records": 1370,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-18-46_16-39",
+   "expected_records": 96,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-18-46_16-40",
+   "expected_records": 6,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-18-46_16-41",
+   "expected_records": 1,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-18-46_17-42",
+   "expected_records": 257,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-18-46_17-43",
+   "expected_records": 9,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-18-46_18-46",
+   "expected_records": 23,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-22-61_11-19",
+   "expected_records": 48172,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-22-61_11-20",
+   "expected_records": 4429,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-22-61_11-21",
+   "expected_records": 343,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-22-61_11-22",
+   "expected_records": 25,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-22-61_11-23",
+   "expected_records": 2,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-22-61_12-23",
+   "expected_records": 11450,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-22-61_12-24",
+   "expected_records": 921,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-22-61_12-25",
+   "expected_records": 79,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-22-61_12-26",
+   "expected_records": 6,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "dag-22-61_12-27",
+   "expected_records": 1,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  },
+  {
+   "cell": "u22-all-48-slices_22-61",
+   "expected_records": 0,
+   "new_equals_E": true,
+   "reference_equals_E": true
+  }
+ ],
+ "expected_records": 71320,
+ "pass": true
+}

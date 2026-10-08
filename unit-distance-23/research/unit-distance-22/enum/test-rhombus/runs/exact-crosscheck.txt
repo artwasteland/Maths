@@ -1,0 +1,21 @@
+w1-measure-13.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w1-measure-14.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w1-measure-15.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w1-measure-16.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w1-measure-17.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w1-measure-18.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w1-measure-19.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w2-measure-13.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w2-measure-14.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w2-measure-15.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w2-measure-16.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w2-measure-17.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w2-measure-18.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w3-measure-13.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w3-measure-14.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w3-measure-15.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w3-measure-16.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w3-measure-17.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+w3-measure-18.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 1500
+TOTAL {'pass': 17768, 'refuted': 2876, 'tu': 7856, 'graphs': 28500, 'differences': 0}
+EXACT PASS

@@ -1,0 +1,22 @@
+{
+  "coordinator_scenario_hours": 4.899866634801211,
+  "currency": "Multiply machine-hours by the applicable worker rate; no billed rate was supplied.",
+  "eight_prerequisites_seconds": 1526.9095356077887,
+  "extra_worker_GP11_replay_seconds": 6.472501968964934,
+  "first_wave_and_coordinator_scenario_hours": 28.072646834000956,
+  "full_B10_replay_count_in_documented_workflow": 2,
+  "historical_full_B10_checker_seconds_per_replay": 3156,
+  "hypothetical_repeat_residue_search_hours": 7.265574370259267,
+  "ideal_four_core_worker_machine_hours": 23.172780199199746,
+  "limitations": "Desktop extrapolation, ideal lane utilization, small sparse coordinator sample, two historical-duration full checks, unknown tail and analyst cost. Repeating identical deterministic search is not expected to solve the residue.",
+  "linear_residue_projection": 165.81,
+  "planning_machine_hours_excluding_residue": 40,
+  "population": 33162,
+  "producer_seconds": 2005.999814950861,
+  "residue_attempt_seconds": 630.9889085805044,
+  "sample": 200,
+  "sample_residue": 1,
+  "seed": 20261001,
+  "serial_intake_12_graph_seconds": 3.5464484710246325,
+  "serial_intake_projection_hours": 2.7223917637990476
+}

@@ -1,0 +1,14 @@
+{
+ "records": "<repo>/b11-endgame/assembly-1/records.jsonl",
+ "bytes": 3391468870,
+ "sha256": "41731c987fade25c26b205fb02c809a2b75461ddeae852869ad61aab2804e114",
+ "lines": 448708,
+ "verdicts": {
+  "embedded": 443444,
+  "refuted": 5264
+ },
+ "refuted_indexed": 5264,
+ "duplicate_g6": 0,
+ "duplicates": [],
+ "seconds": 96.4
+}

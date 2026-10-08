@@ -1,0 +1,30 @@
+{
+  "power": 2,
+  "terms": 796826,
+  "g6": "H{O_okN",
+  "verdict": "refuted",
+  "seconds": 46.163416563067585,
+  "limit": 90.0,
+  "stages": [
+    {
+      "stage": "power:1",
+      "seconds": 0.011588381137698889
+    },
+    {
+      "stage": "power:2",
+      "seconds": 0.16959897382184863
+    },
+    {
+      "stage": "lifted",
+      "seconds": 1.5966646927408874
+    },
+    {
+      "stage": "expanded:796826",
+      "seconds": 9.30905281379819
+    },
+    {
+      "stage": "verified",
+      "seconds": 46.163352742791176
+    }
+  ]
+}

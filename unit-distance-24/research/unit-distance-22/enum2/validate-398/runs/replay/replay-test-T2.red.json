@@ -1,0 +1,68 @@
+[
+ {
+  "id": "R1",
+  "control": "mutated parent (edge 0-1 flipped, re-canonicalised) against the original production block",
+  "cell": "11-20",
+  "index": 408,
+  "block_size": 2,
+  "baseline_identical": true,
+  "mutated": "I_Q?hS|{_",
+  "only_production": 2,
+  "only_enum2": 18,
+  "went_red": true
+ },
+ {
+  "id": "R2",
+  "control": "one record dropped from the production block",
+  "cell": "11-20",
+  "index": 408,
+  "block_size": 2,
+  "baseline_identical": true,
+  "only_enum2": 1,
+  "went_red": true
+ },
+ {
+  "id": "R4",
+  "control": "enum2's children of parent i against the block of parent i+1",
+  "cell": "11-20",
+  "index": 408,
+  "block_size": 2,
+  "baseline_identical": true,
+  "next_block_size": 0,
+  "went_red": true
+ },
+ {
+  "id": "R5a",
+  "control": "one production record replaced by a neighbouring child (another parent's)",
+  "cell": "11-20",
+  "index": 408,
+  "block_size": 2,
+  "baseline_identical": true,
+  "wrong_equal_count_check": "PASS",
+  "set_check": "FAIL",
+  "went_red": true
+ },
+ {
+  "id": "R5b",
+  "control": "enum2's children minus one record",
+  "cell": "11-20",
+  "index": 408,
+  "block_size": 2,
+  "baseline_identical": true,
+  "wrong_subset_check": "PASS",
+  "set_check": "FAIL",
+  "went_red": true
+ },
+ {
+  "id": "R3",
+  "control": "enum2 without member 311 (one of the 324) against the production block",
+  "cell": "11-20",
+  "index": 1509,
+  "production_children": 0,
+  "enum2_children_without_member": 1,
+  "extra": 1,
+  "missing": 0,
+  "extras_contain_exactly_that_member": true,
+  "went_red": true
+ }
+]

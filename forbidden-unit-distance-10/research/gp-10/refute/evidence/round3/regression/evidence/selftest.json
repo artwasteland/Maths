@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "control": "tree collision pair",
+      "rejected_reason": "tree.tree.move.pair: invalid distinct vertices"
+    },
+    {
+      "control": "null coefficient",
+      "rejected_reason": "identity: expansion is not the claimed target"
+    },
+    {
+      "control": "null nonedge frame",
+      "rejected_reason": "frame: not an edge"
+    },
+    {
+      "control": "extra nonedge generator",
+      "rejected_reason": "cofactors: unexpected generator"
+    },
+    {
+      "control": "certificate supplied system",
+      "rejected_reason": "algebra: unexpected system or certificate field"
+    },
+    {
+      "control": "real zero constant",
+      "rejected_reason": "sos: c must be positive"
+    },
+    {
+      "control": "real univariate variable",
+      "rejected_reason": "sturm: f is not univariate"
+    },
+    {
+      "control": "TU terminal map",
+      "rejected_reason": "tu end map: not edge-preserving"
+    },
+    {
+      "control": "bare TU gadget",
+      "rejected_reason": "tu end: missing terminal refutation"
+    },
+    {
+      "control": "TU distinguished pair",
+      "rejected_reason": "tu step: pair is not the missing distinguished pair"
+    },
+    {
+      "control": "TU forbidden map",
+      "rejected_reason": "tu end map: not edge-preserving"
+    },
+    {
+      "control": "TU forbidden list in force",
+      "rejected_reason": "tu end: forbidden index is not in force"
+    },
+    {
+      "control": "pentagonal prism frame mutation",
+      "rejected_reason": "frame: not an edge"
+    },
+    {
+      "control": "Singular positive and one-generator red",
+      "reason": "no exact identity marker for nonmember"
+    },
+    {
+      "control": "pre-expanded grammar",
+      "rejected_reason": "CAS polynomial is not pre-expanded"
+    },
+    {
+      "control": "exceptions, native child exit, timeout, next graph",
+      "reason": "all failures unknown; following positive accepted"
+    },
+    {
+      "control": "L3 visits both children",
+      "reason": "unknown then contradiction visits both and leaves parent unknown"
+    },
+    {
+      "control": "resume changed budget",
+      "rejected_reason": "resume configuration or source changed; choose a new output"
+    },
+    {
+      "control": "resume altered graph",
+      "rejected_reason": "resume coverage or order mismatch"
+    },
+    {
+      "control": "interrupted main-process recovery",
+      "reason": "pending graph becomes unknown, coverage remains exact"
+    },
+    {
+      "control": "known pointer cycle",
+      "rejected_reason": "known pointer cycle"
+    }
+  ],
+  "count": 21,
+  "environment": {
+    "sympy": "1.14.0",
+    "flint": "0.9.0",
+    "SYMPY_GROUND_TYPES": "python",
+    "nice": 19,
+    "RLIMIT_AS": [
+      999999488,
+      999999488
+    ]
+  },
+  "argv": [
+    "-"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+ "set398": {
+  "verdicts": {
+   "pass": 22995,
+   "tu": 9658,
+   "forbidden": 509
+  },
+  "forbidden": 509,
+  "refuted": 509,
+  "refuted_called_forbidden": 509,
+  "embedded_called_forbidden": 0,
+  "tu_on_embedded": 9658,
+  "witnesses_verified": 509,
+  "distinct_witness_members": 324,
+  "problems": []
+ },
+ "matcher10": {
+  "removed": 509,
+  "equals_refuted": true,
+  "witnesses_bad": 0,
+  "first_74_hits": 0
+ },
+ "set74": {
+  "old_equals_new_default": true,
+  "old_equals_new_74": true,
+  "forbidden_verdicts_set74": 0,
+  "output_sha256": "328b97f2931656699bf68c4d48ee07ffd9f773f8a841a41bff4b3d98ce3d49b3"
+ },
+ "red_controls": [
+  {
+   "control": "X1 old udfilter (the 74 only) judged as the set-398 run",
+   "went_red": true,
+   "problems": [
+    "F2: forbidden set differs from the refuted set: 509 refuted not called forbidden (first ['I??OzIJ}?', 'I??XUC{{O', 'I??Y`Yb}?']), 0 embedded called forbidden (first [])"
+   ]
+  },
+  {
+   "control": "X2 record 1112 (I??OzIJ}?) turned from forbidden into pass",
+   "went_red": true,
+   "problems": [
+    "F2: forbidden set differs from the refuted set: 1 refuted not called forbidden (first ['I??OzIJ}?']), 0 embedded called forbidden (first [])"
+   ]
+  },
+  {
+   "control": "X3 witness of record 1112 made non-injective",
+   "went_red": true,
+   "problems": [
+    "F3: 1 forbidden witnesses do not verify"
+   ]
+  },
+  {
+   "control": "X4 udfilter rebuilt with its pin moved to a list whose member 174 (IC`PiOhWw) is replaced by member 175",
+   "refuted_now_not_forbidden": [
+    "IC`PiOhWw"
+   ],
+   "went_red": true,
+   "problems": [
+    "F2: forbidden set differs from the refuted set: 1 refuted not called forbidden (first ['IC`PiOhWw']), 0 embedded called forbidden (first [])",
+    "F3: 1 witness patterns are not their L10 graph"
+   ]
+  },
+  {
+   "control": "X5 matcher without member 174",
+   "removed": 508,
+   "went_red": true
+  }
+ ],
+ "pass": true
+}

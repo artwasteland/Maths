@@ -1,0 +1,51 @@
+{
+ "13": {
+  "cpu": 3.608031,
+  "written": 33993,
+  "after_reach": 33993,
+  "kept": 28342,
+  "sampled_parents": 3000
+ },
+ "14": {
+  "cpu": 7.775596,
+  "written": 40901,
+  "after_reach": 40901,
+  "kept": 32562,
+  "sampled_parents": 3000
+ },
+ "15": {
+  "cpu": 15.551465999999998,
+  "written": 36276,
+  "after_reach": 36276,
+  "kept": 24654,
+  "sampled_parents": 4000
+ },
+ "16": {
+  "cpu": 6.061412,
+  "written": 21130,
+  "after_reach": 21130,
+  "kept": 13793,
+  "sampled_parents": 6000
+ },
+ "17": {
+  "cpu": 18.142312000000004,
+  "written": 27318,
+  "after_reach": 27318,
+  "kept": 17653,
+  "sampled_parents": 13793
+ },
+ "18": {
+  "cpu": 99.868347,
+  "written": 15046,
+  "after_reach": 15046,
+  "kept": 8736,
+  "sampled_parents": 17653
+ },
+ "19": {
+  "cpu": 94.98964600000001,
+  "written": 4803,
+  "after_reach": 4803,
+  "kept": 2333,
+  "sampled_parents": 8736
+ }
+}

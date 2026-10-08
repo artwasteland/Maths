@@ -1,0 +1,4 @@
+ACCEPT record C~ verified
+ACCEPT record C^ verified
+REJECT record K_?G?cks`M^? pointer_target_not_accepted_refuted
+REJECT run records_rejected

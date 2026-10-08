@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "artifacts": {
+    "records.jsonl.gz": "1324e169ee2ac38250b9bb205006a1b101fd25e2132791990ed392e6117d3d62",
+    "assigned.g6": "f9ebbf3ff3adff1d72652496258352458d26d5a4ae93ab1ef82179df154ab687",
+    "input.g6": "f9ebbf3ff3adff1d72652496258352458d26d5a4ae93ab1ef82179df154ab687",
+    "UNKNOWN.g6": "3a7304a833817a61c0fa3b8d9ed1729c1bbdb515ec88916be03aa9c1ed7ed86c",
+    "attempts.jsonl.gz": "5e2b52d498e7cdefa8c859fef258263fe87a9dbf0c3fa8aaba1f6e753765d690",
+    "frontier.jsonl.gz": "465e8611bc18cf452543e639373280b8fe1b370245ccbc98a027a8cb8aa582a1",
+    "packets.jsonl.gz": "0ab4696794111e363cab1b4d90b61c8bc936ac8492242fa173ea7f2da1cdc710"
+  }
+}

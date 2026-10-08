@@ -1,0 +1,10 @@
+{
+  "directory": "<repo>/research/gp-10/refute/evidence/round3/checker-cli-dag-replay",
+  "records": 1,
+  "refuted": 1,
+  "forbidden_limit": 0,
+  "checker_exit": 0,
+  "final_line": "ACCEPT run verified",
+  "seconds": 1.8992867548950016,
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+}

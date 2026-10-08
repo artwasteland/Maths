@@ -1,0 +1,15 @@
+{
+  "status": "ACCEPT",
+  "counts": {
+    "embedded": 0,
+    "refuted": 0,
+    "unknown": 448708
+  },
+  "conditional": true,
+  "seconds": 110.25059612374753,
+  "scope": "All-unknown sample-profile streaming benchmark; no certificates or B11 minimality checked",
+  "max_rss_kib": 87248,
+  "min_MemAvailable_kib": 5479092,
+  "cpu_self": 82.970361,
+  "cpu_children": 7.520884000000001
+}

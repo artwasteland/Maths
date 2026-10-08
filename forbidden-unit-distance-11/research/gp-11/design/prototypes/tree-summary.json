@@ -1,0 +1,15 @@
+{
+  "method": "tree",
+  "cap": 1.0,
+  "count": 500,
+  "counts": {
+    "unknown": 494,
+    "refuted": 6
+  },
+  "extra": {},
+  "seconds": 486.4060679236427,
+  "max_rss_kib": 134712,
+  "min_MemAvailable_kib": 4111056,
+  "cpu_self": 456.09794899999997,
+  "cpu_children": 0.001437
+}

@@ -1,0 +1,999 @@
+[
+  {
+    "file": "k23-null-dag.json",
+    "name": "k23-null-dag",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "k4-isolate-null-dag.json",
+    "name": "k4-isolate-null-dag",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "k23-real-dag-sturm.json",
+    "name": "k23-real-dag-sturm",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "k4-real-dag-sos.json",
+    "name": "k4-real-dag-sos",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "real-dag-constant.json",
+    "name": "real-dag-constant",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "dag-rational-spelling.json",
+    "name": "dag-rational-spelling",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "dag-zero-row.json",
+    "name": "dag-zero-row",
+    "status": "ACCEPT"
+  },
+  {
+    "file": "dag-256-rows.json",
+    "name": "dag-256-rows",
+    "status": "ACCEPT"
+  },
+  {
+    "detail": null,
+    "file": "null-forward.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:3"
+    ],
+    "name": "null-forward",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_reference_order",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-self.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:2"
+    ],
+    "name": "null-self",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_reference_order",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-unknown-source.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "e:99,100"
+    ],
+    "name": "null-unknown-source",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_source",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-negative-index.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:-1"
+    ],
+    "name": "null-negative-index",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_source",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-leading-zero-index.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:00"
+    ],
+    "name": "null-leading-zero-index",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_source",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-huge-index.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+    ],
+    "name": "null-huge-index",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_reference_order",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-missing-cofactors.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "cofactors"
+    ],
+    "name": "null-missing-cofactors",
+    "positive": "k23-null-dag.json",
+    "reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-missing-poly.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "poly"
+    ],
+    "name": "null-missing-poly",
+    "positive": "k23-null-dag.json",
+    "reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-extra-row-field.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "extra"
+    ],
+    "name": "null-extra-row-field",
+    "positive": "k23-null-dag.json",
+    "reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-extra-cert-field.json",
+    "mutation_path": [
+      "cert",
+      "system"
+    ],
+    "name": "null-extra-cert-field",
+    "positive": "k23-null-dag.json",
+    "reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-cofactors-list.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "cofactors"
+    ],
+    "name": "null-cofactors-list",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_source",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-rows-object.json",
+    "mutation_path": [
+      "cert",
+      "rows"
+    ],
+    "name": "null-rows-object",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_rows",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-empty-rows.json",
+    "mutation_path": [
+      "cert",
+      "rows"
+    ],
+    "name": "null-empty-rows",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_rows",
+    "status": "REJECT"
+  },
+  {
+    "detail": "increasing exponent order",
+    "file": "null-noncanonical-poly.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "poly"
+    ],
+    "name": "null-noncanonical-poly",
+    "positive": "k23-null-dag.json",
+    "reason": "sparse_noncanonical",
+    "status": "REJECT"
+  },
+  {
+    "detail": "increasing exponent order",
+    "file": "null-noncanonical-cofactor.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "cofactors",
+      "e:0,3"
+    ],
+    "name": "null-noncanonical-cofactor",
+    "positive": "k23-null-dag.json",
+    "reason": "sparse_noncanonical",
+    "status": "REJECT"
+  },
+  {
+    "detail": "zero coefficient",
+    "file": "null-zero-term.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0"
+    ],
+    "name": "null-zero-term",
+    "positive": "k23-null-dag.json",
+    "reason": "sparse_noncanonical",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-duplicate-term.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "poly"
+    ],
+    "name": "null-duplicate-term",
+    "positive": "k23-null-dag.json",
+    "reason": "sparse_duplicate_monomial",
+    "status": "REJECT"
+  },
+  {
+    "detail": "row 0",
+    "file": "null-failed-identity.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "cofactors",
+      "e:0,3",
+      0,
+      0
+    ],
+    "name": "null-failed-identity",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_row_identity",
+    "status": "REJECT"
+  },
+  {
+    "detail": "row 0",
+    "file": "null-wrong-row-poly.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "poly",
+      0,
+      0
+    ],
+    "name": "null-wrong-row-poly",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_row_identity",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-frame-nonedge.json",
+    "mutation_path": [
+      "cert",
+      "frame"
+    ],
+    "name": "null-frame-nonedge",
+    "positive": "k23-null-dag.json",
+    "reason": "frame_not_edge",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-float-coefficient.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0",
+      0,
+      0
+    ],
+    "name": "null-float-coefficient",
+    "positive": "k23-null-dag.json",
+    "reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-spaced-rational.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0",
+      0,
+      0
+    ],
+    "name": "null-spaced-rational",
+    "positive": "k23-null-dag.json",
+    "reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-negative-denominator.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0",
+      0,
+      0
+    ],
+    "name": "null-negative-denominator",
+    "positive": "k23-null-dag.json",
+    "reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-zero-denominator.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0",
+      0,
+      0
+    ],
+    "name": "null-zero-denominator",
+    "positive": "k23-null-dag.json",
+    "reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-boolean-exponent.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "poly",
+      0,
+      1,
+      0
+    ],
+    "name": "null-boolean-exponent",
+    "positive": "k23-null-dag.json",
+    "reason": "sparse_exponents",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-forward.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:3"
+    ],
+    "name": "real-forward",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_reference_order",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-self.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:2"
+    ],
+    "name": "real-self",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_reference_order",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-unknown-source.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "e:99,100"
+    ],
+    "name": "real-unknown-source",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_source",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-negative-index.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:-1"
+    ],
+    "name": "real-negative-index",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_source",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-leading-zero-index.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:00"
+    ],
+    "name": "real-leading-zero-index",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_source",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-huge-index.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+    ],
+    "name": "real-huge-index",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_reference_order",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-missing-cofactors.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "cofactors"
+    ],
+    "name": "real-missing-cofactors",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-missing-poly.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "poly"
+    ],
+    "name": "real-missing-poly",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-extra-row-field.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "extra"
+    ],
+    "name": "real-extra-row-field",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-extra-cert-field.json",
+    "mutation_path": [
+      "cert",
+      "system"
+    ],
+    "name": "real-extra-cert-field",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-cofactors-list.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "cofactors"
+    ],
+    "name": "real-cofactors-list",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_source",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-rows-object.json",
+    "mutation_path": [
+      "cert",
+      "rows"
+    ],
+    "name": "real-rows-object",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_rows",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-empty-rows.json",
+    "mutation_path": [
+      "cert",
+      "rows"
+    ],
+    "name": "real-empty-rows",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_rows",
+    "status": "REJECT"
+  },
+  {
+    "detail": "increasing exponent order",
+    "file": "real-noncanonical-poly.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "poly"
+    ],
+    "name": "real-noncanonical-poly",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "sparse_noncanonical",
+    "status": "REJECT"
+  },
+  {
+    "detail": "increasing exponent order",
+    "file": "real-noncanonical-cofactor.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "cofactors",
+      "e:0,3"
+    ],
+    "name": "real-noncanonical-cofactor",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "sparse_noncanonical",
+    "status": "REJECT"
+  },
+  {
+    "detail": "zero coefficient",
+    "file": "real-zero-term.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0"
+    ],
+    "name": "real-zero-term",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "sparse_noncanonical",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-duplicate-term.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "poly"
+    ],
+    "name": "real-duplicate-term",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "sparse_duplicate_monomial",
+    "status": "REJECT"
+  },
+  {
+    "detail": "row 0",
+    "file": "real-failed-identity.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "cofactors",
+      "e:0,3",
+      0,
+      0
+    ],
+    "name": "real-failed-identity",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_row_identity",
+    "status": "REJECT"
+  },
+  {
+    "detail": "row 0",
+    "file": "real-wrong-row-poly.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "poly",
+      0,
+      0
+    ],
+    "name": "real-wrong-row-poly",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_row_identity",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-frame-nonedge.json",
+    "mutation_path": [
+      "cert",
+      "frame"
+    ],
+    "name": "real-frame-nonedge",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "frame_not_edge",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-float-coefficient.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0",
+      0,
+      0
+    ],
+    "name": "real-float-coefficient",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-spaced-rational.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0",
+      0,
+      0
+    ],
+    "name": "real-spaced-rational",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-negative-denominator.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0",
+      0,
+      0
+    ],
+    "name": "real-negative-denominator",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-zero-denominator.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0",
+      0,
+      0
+    ],
+    "name": "real-zero-denominator",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "rational",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-boolean-exponent.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "poly",
+      0,
+      1,
+      0
+    ],
+    "name": "real-boolean-exponent",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "sparse_exponents",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "null-last-not-one.json",
+    "mutation_path": [
+      "cert",
+      "rows"
+    ],
+    "name": "null-last-not-one",
+    "positive": "k23-null-dag.json",
+    "reason": "dag_last_null",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-last-not-f.json",
+    "mutation_path": [
+      "cert",
+      "f",
+      0,
+      0
+    ],
+    "name": "real-last-not-f",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "dag_last_real",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "dag-257-rows.json",
+    "mutation_path": [
+      "cert",
+      "rows"
+    ],
+    "name": "dag-257-rows",
+    "positive": "dag-256-rows.json",
+    "reason": "dag_row_limit",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-noncanonical-f.json",
+    "mutation_path": [
+      "cert",
+      "f"
+    ],
+    "name": "real-noncanonical-f",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "sparse_noncanonical",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-wrong-sturm-variable.json",
+    "mutation_path": [
+      "cert",
+      "sturm"
+    ],
+    "name": "real-wrong-sturm-variable",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "sturm_multivariate",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-missing-proof.json",
+    "mutation_path": [
+      "cert",
+      "sturm"
+    ],
+    "name": "real-missing-proof",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "real_proof_choice",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-both-proofs.json",
+    "mutation_path": [
+      "cert",
+      "sos"
+    ],
+    "name": "real-both-proofs",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "real_proof_choice",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "real-missing-f.json",
+    "mutation_path": [
+      "cert",
+      "f"
+    ],
+    "name": "real-missing-f",
+    "positive": "k23-real-dag-sturm.json",
+    "reason": "schema",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "sos-zero-constant.json",
+    "mutation_path": [
+      "cert",
+      "sos",
+      "c"
+    ],
+    "name": "sos-zero-constant",
+    "positive": "k4-real-dag-sos.json",
+    "reason": "sos_constant_positive",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "sos-negative-weight.json",
+    "mutation_path": [
+      "cert",
+      "sos",
+      "squares",
+      0,
+      0
+    ],
+    "name": "sos-negative-weight",
+    "positive": "k4-real-dag-sos.json",
+    "reason": "sos_weight_positive",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "sos-wrong-square.json",
+    "mutation_path": [
+      "cert",
+      "sos",
+      "squares",
+      0,
+      1,
+      0,
+      0
+    ],
+    "name": "sos-wrong-square",
+    "positive": "k4-real-dag-sos.json",
+    "reason": "sos_identity",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "sos-zero-term.json",
+    "mutation_path": [
+      "cert",
+      "sos",
+      "squares",
+      0,
+      1,
+      0,
+      0
+    ],
+    "name": "sos-zero-term",
+    "positive": "k4-real-dag-sos.json",
+    "reason": "sparse_noncanonical",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "zero-row-nonzero-poly.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      0,
+      "poly"
+    ],
+    "name": "zero-row-nonzero-poly",
+    "positive": "dag-zero-row.json",
+    "reason": "dag_row_identity",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "k4-frame-nonedge.json",
+    "mutation_path": [
+      "cert",
+      "frame"
+    ],
+    "name": "k4-frame-nonedge",
+    "positive": "k4-isolate-null-dag.json",
+    "reason": "frame_not_edge",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "constant-last-not-f.json",
+    "mutation_path": [
+      "cert",
+      "f",
+      0,
+      0
+    ],
+    "name": "constant-last-not-f",
+    "positive": "real-dag-constant.json",
+    "reason": "dag_last_real",
+    "status": "REJECT"
+  },
+  {
+    "detail": null,
+    "file": "rational-spelling-invalid.json",
+    "mutation_path": [
+      "cert",
+      "rows",
+      2,
+      "cofactors",
+      "aux:0",
+      0,
+      0
+    ],
+    "name": "rational-spelling-invalid",
+    "positive": "dag-rational-spelling.json",
+    "reason": "rational",
+    "status": "REJECT"
+  }
+]

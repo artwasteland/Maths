@@ -242,7 +242,7 @@ All commands run from this directory with the current exist.py. Backend `cadical
 the CNF, runs `/usr/bin/cadical --binary=false -q -w MODEL CNF PROOF`, and on exit 20 runs
 `~/tools/sat/drat-trim/drat-trim CNF PROOF` and requires `s VERIFIED` (a SAT model is
 checked by verify_model instead). Times are the program's own perf_counter fields; WALL is
-`/usr/bin/time` around the whole python process, under nice -n 10 on liam-desktop (4 cores
+`/usr/bin/time` around the whole python process, under nice -n 10 on <host> (4 cores
 shared with about twenty other processes, load average 3 to 5, so wall times are noisy).
 
 ### (8,8): UNSAT, proof verified = True

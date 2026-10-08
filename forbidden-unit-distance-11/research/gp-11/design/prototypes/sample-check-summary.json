@@ -1,0 +1,52 @@
+{
+  "methods": [
+    "lattice",
+    "lattice36",
+    "lattice30",
+    "host",
+    "numeric",
+    "extension",
+    "tree",
+    "tu",
+    "null",
+    "real",
+    "msolve",
+    "portfolio"
+  ],
+  "individual_accepted_counts": {
+    "lattice": 406,
+    "host": 17,
+    "numeric": 2,
+    "extension": 445,
+    "tree": 6,
+    "tu": 8,
+    "msolve": 2
+  },
+  "sample_counts": {
+    "embedded": 479,
+    "unknown": 13,
+    "refuted": 8
+  },
+  "dependency_records": 2,
+  "report_status": "ACCEPT",
+  "checker_seconds": 13.37281610071659,
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "kernel_sha256": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+  "reds": [
+    {
+      "kind": "exact",
+      "reason": "edge_equation",
+      "expected": "edge_equation"
+    },
+    {
+      "kind": "tu",
+      "reason": "tu_distinguished_pair",
+      "expected": "tu_distinguished_pair"
+    }
+  ],
+  "seconds": 13.502018603030592,
+  "max_rss_kib": 95808,
+  "min_MemAvailable_kib": 5806372,
+  "cpu_self": 13.502556,
+  "cpu_children": 0.013139999999999999
+}

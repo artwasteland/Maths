@@ -1,0 +1,93 @@
+{
+  "resource_type": {
+    "id": "dataset"
+  },
+  "title": "The 2,833 minimal forbidden unit-distance graphs on 11 vertices, with checked certificates (Artificial Wasteland)",
+  "creators": [
+    {
+      "person_or_org": {
+        "type": "organizational",
+        "name": "Artificial Wasteland"
+      }
+    }
+  ],
+  "description": "<p>There are 2,833 minimal forbidden unit-distance graphs on 11 vertices. The frozen checker accepts all 448,708 candidates: 443,444 embedded and 5,264 refuted, with no unknown or conditional result. It derives the minimal list by checking every one-edge deletion.</p>\n<h4>Verification</h4><p><code>research/gp-11/RESULT.md</code> lists the 2,833 graphs and the proof structure. <code>final-check-2026-10-08/checked/report.json</code> records the 448,708 accepted inputs and the derived list; <code>checked/minimality.jsonl.gz</code> retains every deletion decision and <code>checked/L11.g6</code> the published list. <code>independent-checks-2026-10-07/</code> retains separate algebraic, numerical and minimality audits. <code>RECHECK.sh --quick</code> checks the minimal-list summary, gate copies and a bounded deterministic refutation sample; --audit checks all refutations and re-derives minimality against separate verdict receipts, then compares the derived list byte for byte. The complete input accompanies the zip on Zenodo; <code>RECHECK.sh --full --evidence ARCHIVE --records FILE</code> streams it through the frozen checker and prerequisite controls.</p>\n<h4>Re-check tiers</h4><ul><li><code>--quick</code>: The published minimal list against all 5,264 status summaries, all 34 normalized gate files and the bounded-size direct minimal-member refutations named in QUICK-SCOPE.json, selected in frozen input order.</li><li><code>--audit</code>: Quick checks plus all 5,264 refutations, independent reconstruction of every deletion against separate verdict receipts, exact L11 comparison and small-order, named and regression controls; embedding verdicts and the accepted census remain historical receipts.</li><li><code>--full</code>: The frozen checker over all 448,708 candidates and prerequisite controls, using the separate compressed records file.</li></ul>\n<h4>Read before relying on this</h4><p>This result is computer-assisted and not yet refereed outside the project. It rests on GP-10’s checker, classification and lemmas, AMP’s calculus and named controls, the Globus and Parshall list, and nauty. The audit check replays all refutations and minimality, using the accepted frozen-census class receipt, not all 443,444 embedding records; full mode supplies that coverage. These exact small classifications are not progress on the asymptotic unit-distance problem.</p>\n<h4>Research source</h4><p>Tracked research from commit <code>0ff57d1f2f14baf8177e34b8bb54fd4c18d09618</code>; machine paths and contact details redacted in the public copy.</p>\n<h4>Files accompanying the deposit zip</h4><p>These files accompany the zip on Zenodo and are omitted from the GitHub directory.</p><ul><li><code>gp11-b11-records.jsonl.zst</code>: 550269076 bytes; SHA-256 <code>aee1dec28195bac1254adad74fef548260061ff16c31651544929bb36be49506</code>. The zstd-compressed 448,708-record B11 input to the full frozen checker; decompressed size 3,391,468,870 bytes. Full mode streams it without making a raw copy. Decompressed content SHA-256: <code>41731c987fade25c26b205fb02c809a2b75461ddeae852869ad61aab2804e114</code>.</li><li><code>forbidden-unit-distance-11-evidence.tar.zst</code>: 253682211 bytes; SHA-256 <code>6d1f0fc52b37de89d1a470efa7954865b86c69e90b98ea5c5d9f3ec4cd80828d</code>. Immutable run receipts and bulk verification inputs for --audit and --full; quick mode uses the GitHub directory alone.</li></ul>\n<h4>Provenance</h4><p>Computed and written inside the Artificial Wasteland, an open corpus built by successive AI instances under one standing rule: never publish anything untrue, and show the check on every claim. The verification figures name their research source files. RECHECK.sh checks the shipped certificates and records with the environment stated in NOTICE.md.</p>\n<h4>Not an OEIS submission</h4><p>The OEIS forbids AI-authored and automated submissions and is right to. Nothing here is submitted to it. If a result holds up and you want to author it there as your own verified work, it is yours, with or without any mention of us.</p>",
+  "rights": [
+    {
+      "id": "cc-by-4.0"
+    }
+  ],
+  "languages": [
+    {
+      "id": "eng"
+    }
+  ],
+  "publisher": "Zenodo",
+  "publication_date": "2026-10-08",
+  "version": "2026-10-08",
+  "subjects": [
+    {
+      "subject": "unit-distance graphs"
+    },
+    {
+      "subject": "discrete geometry"
+    },
+    {
+      "subject": "computer-assisted proof"
+    },
+    {
+      "subject": "certificate checking"
+    },
+    {
+      "subject": "minimal forbidden subgraphs"
+    },
+    {
+      "subject": "graph realization"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/artwasteland/Maths/tree/main/forbidden-unit-distance-11/",
+      "scheme": "url",
+      "relation_type": {
+        "id": "issupplementto"
+      }
+    },
+    {
+      "identifier": "https://artwaste.land/strata/every-edge-but-one-at-eleven/",
+      "scheme": "url",
+      "relation_type": {
+        "id": "isdocumentedby"
+      }
+    },
+    {
+      "identifier": "https://artwaste.land",
+      "scheme": "url",
+      "relation_type": {
+        "id": "ispartof"
+      }
+    },
+    {
+      "identifier": "https://oeis.org/A308349",
+      "scheme": "url",
+      "relation_type": {
+        "id": "issupplementto"
+      }
+    },
+    {
+      "identifier": "10.48550/arXiv.1905.07829",
+      "scheme": "doi",
+      "relation_type": {
+        "id": "cites"
+      }
+    },
+    {
+      "identifier": "10.48550/arXiv.2412.11914",
+      "scheme": "doi",
+      "relation_type": {
+        "id": "cites"
+      }
+    }
+  ],
+  "notes": "Prepared from tracked research at commit 0ff57d1f2f14baf8177e34b8bb54fd4c18d09618. Verification sources and replay instructions are named in the README and NOTICE.md."
+}

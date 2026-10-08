@@ -1,0 +1,197 @@
+GP-11 escalation measurement, completed 2026-09-30T18:32:33+00:00
+Elapsed measurement/report preparation: 173.6 minutes. Repository left unchanged by this job; all new files are under /tmp/gp11-escalate/.
+
+Measured result: of the 72 graphs left unknown by the two cheap samples, 62 now have accepted exact embeddings, 4 now have accepted refutations, and 6 remain unknown. Every counted certificate passed the unchanged GP10 checker. The final combined replay returned ACCEPT in 346.507 seconds. Its sample profile remains conditional; this is a measurement, not a completed B11 classification or a minimality certificate.
+
+Sample | cheap unknown | after direct escalation | after propagation | final E/R/U
+1 (n=500) | 13 | 2 | 2 | 490/8/2
+2 (n=2000) | 59 | 4 | 4 | 1977/19/4
+
+The larger sample projects the cheap residue to 13,237 (nominal 95% 10,293 to 16,990) B11 graphs. Its observed post-escalation/post-propagation residue projects to 897 (nominal 95% 349 to 2,302). The pilot after its complete attempted portfolio projects to 1,795 (nominal 95% 493 to 6,491). The pooled post-measurement descriptive value is 1,077 (nominal 95% 494 to 2,345); the samples received different escalation coverage, so this is not a measured uniform-policy rate. All fractions and intervals are in the detailed tables below.
+
+Sampling is reproducible: take the ascending population indices in the byte-sorted canonical B11 list, remove the original 500 indices, then compute sorted(random.Random(20261002).sample(eligible, 2000)). The exact indices, excluded indices, input hashes and sample hash are in sample2-manifest.json. The first sample used seed 20261001. Nominal Wilson 95% intervals quantify sampling uncertainty only; adaptive method development, structural prioritization, timing variability and unfinished methods add uncertainty. No finite-population correction was applied (under 0.3% effect on interval widths).
+
+Budgets were per graph and conditional on all preceding methods failing. The pilot used extension 60 s; multistart/both-circle branch search and radical exactification 60 s; branch-preflight plus framed/pinned msolve 120 s; an extra branch-only retry 30 s; alternative B10 super-bases 60 s; selected-saturation framed/pinned msolve 180 s; targeted real/DAG 60 s; tree 60 s with 100,000 states; all-pairs-saturated R-null 60 s; all-pairs-saturated R-real 60 s. A factor-guided targeted real/FGLM retry used 180 s, and a final positive-search retry for JoCBkhGIGJ_ had a 600 s cap if admitted before the deadline. Search failures and negative pinned-solver outputs remain UNKNOWN.
+The second sample used the same cheap method budgets as the architect measurement: TU fixed point, lattice18 0.5 s/20,000 nodes, extension 3 s, host 1 s/20,000 nodes, numeric 2 s, lattice36 and lattice30 0.5 s, tree 1 s/1,200 states, null and real 3 s, framed/pinned msolve 20 s, all-pairs portfolio 10 s. Longer extension and numeric/branch passes covered every still-undecided graph. Subsequent stages used alternative bases 60 s, saturated framed/pinned msolve 180 s, tree/targeted/all-pairs null/all-pairs real 60 s each, and saved-output exactification retries 180 s. The saved-output retry allowed 180 s for official checking; other per-attempt official checks had a 60 s cap. Final replay has no per-certificate timer.
+The larger-sample expensive stages were bounded by total wall allowances of 300/1200/240/600/600/600 seconds for alternative bases/saturated msolve/tree/targeted/null/real, plus 300 seconds for saved-output retries. Allowances stop between graphs; the current graph retains its per-graph cap. The main expensive-search admission cutoff was 18:18 UTC. After the combined replay passed, one further 360-second slimgb/FGLM/DAG probe on JaICZOo@Wd_ was admitted at 18:23 UTC, with its outcome recorded as esc-s1-targeted-components-final. Actual attempted counts and all censored stages appear below and in MEASUREMENTS.json. Search order is round robin over explicit structural kinds, with one representative of every kind before repeats; separated numeric candidates precede others for embedding, collapsed candidates precede others for refutation.
+
+Measured numerical characterisation of the final residue: best guesses {'forbidden': 2, 'embeddable': 4}. 4 unknowns refined to edge error below 1e-40 at 70-digit precision while retaining separation above 1e-6; 1 refined to a closest-pair distance below 1e-8. These are numerical observations, not certificates. Every graph's edges, degree sequence, minimum degree, TU witness, converged-start counts, separations, closest pairs, branch evidence and reasoned guess are in UNKNOWN.json and the grouped inventory below. Raw converged trials use squared-edge error <=1e-10; branch configurations use <=1e-8. 'All converge to collisions' means all recorded converged starts were within the stated tolerance, never that all mathematical configurations were exhausted.
+
+Measured structural grouping: 6 distinct TU closures among 6 survivors; 0 survivors have a TU witness; 6 proposed families using exact shared ten-vertex induced cores and proper 3-cores. FAMILIES.json records the actual cores and vertex deletions. These are batching suggestions, not a theorem equating all family members' verdicts. The full-population TU engine/poset was reused, closure representatives were searched where applicable, and checked positive or negative results were pulled back appropriately. The architect's 3,323 full-population TU refutation proposals were not silently promoted to checked decisions.
+
+Measured propagation: 4,721,083 B11 one-edge relations; 2,467 checked embedding seeds reach 121,084 B11 graphs downward; 27 checked refutation seeds reach 53 upward. This is structural reach over the complete poset, not a replayed complete classification. Propagation decided 0 additional sample survivors. There are 0 strict subgraph/supergraph pairs among the final unknowns. All 72 original cheap-residue parent rows were compared with independent Python one-edge deletion/canonicalization (1114 matching immediate relations). Per-graph E and R fanouts, both total and additional beyond the currently checked seeds' reach, are in propagation-per-residue.json. Fanouts include the graph itself and overlap across graphs, so they cannot be added as a workload discount.
+
+My planning estimate is about 900 unresolved certificate cases under the larger sample's actually measured, bounded policy, with the graph-level nominal range 349 to 2,302. This is a bounded-policy residue; any unattempted methods are recorded explicitly, and further automatic improvements can reduce it. I would initially budget one case per distinct TU-closed graph: the measured comparabilities and family suggestions do not justify assuming one proof settles many survivors. If an analyst packet reliably handles an average of one to three related cases, the corresponding point scenario is approximately 299 to 897 independent packets. That batching factor is an assumption, not a measurement or a confidence interval. WORKLOAD.json makes the assumptions explicit. No analyst throughput was measured here.
+A one-week finish remains a conditional target, not an evidence-backed promise. For illustration, 50 effective concurrent analysts, 120 usable hours and a 30% margin would require 0.07 to 0.21 accepted packets per analyst-hour for the one-to-three-case scenario, including setup, failed attempts, return transport and checking. Actual capacity and the hard mathematical tail are unmeasured. The pilot has a higher point estimate with much wider sampling uncertainty; the larger sample provides a firmer cheap baseline and explicit partial-escalation evidence. It would be a mistake to call the original 11,700 estimate 11,700 new refutations.
+
+What surprised me: alternative exact B10 bases alone produced 10 additional accepted embeddings in 27.792 measured seconds including their checks. Cheap numerical collapse was frequently misleading: many initially collapsed cases became exact embeddings after multistart, branch enumeration or saturated solving. Stronger negative searches need not win merely because the cheap searches failed. Also, propagation's large whole-population reach did not imply a comparable reduction of the observed hard residue. Some positive proposals were limited by exact conversion or checking time, so the remaining embedding workload includes certificate representation work, not just geometric search.
+
+Resource observations: at most 2 computation processes in the monitored worker tree, including solver children; one solver/BLAS thread; nice 15; 1,024,000,000-byte address-space cap per process. Lowest sampled system MemAvailable was 3.382 GiB, above the 1.5 GiB stop threshold. Memory stop triggered: False; process-count stop triggered: False. Monitoring interval was one second. Shell launchers and brief file inspection were administrative; no parallel solver jobs or agent workers were launched.
+Reproducibility and limitations: PROVENANCE.json pins sources, binaries, Python/package versions and limits. source-snapshots/ preserves per-stage producer versions. HARNESS-NOTES.txt records the repaired missing seed library and GP sign-emission bug; affected cases were retried, and no unchecked output is counted. Sample/profile checking uses frozen gp10check.py d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04 and kernel 63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de. final-check/checked/report.json is the final receipt. No B11 enumeration, completeness, minimality or new profile approval is claimed by this job.
+
+Additional positive-search retries: a second saved-output/field-representation pass had a 240-second stage allowance, with 180-second per-graph search caps. A coordinate-pinning retry used 120 seconds per graph, a 120-second pilot allowance and a 180-second second-sample allowance. It selects free coordinates using the numerical branch Jacobian, then proposes nearby rational pins and selected saturation equations. Numerical rank only chooses a positive search restriction; no dimension theorem or refutation follows from it. All resulting original-graph coordinates still require the frozen E-exact checker. Field reduction tries an existing coordinate as primitive element before GP10's weighted combinations; exact re-expression is checked independently. Individual field-reduction failures remain recorded.
+The 180-second factor-guided real/FGLM/DAG probe on JSO@]OSDjB? ran without producing a checked decision. The initially planned 600-second slimgb/FGLM/DAG probe on JaICZOo@Wd_ was not admitted before its 18:12 UTC cutoff; its zero-attempt row is censored. A separate 360-second retry was admitted after the combined checker replay had completed, as described above. The two rows must not be combined into a claimed 960-second search.
+A final saved-proposal retry for JoCBkhGIGJ_ used a 180-second extraction/representation cap and a 300-second frozen-checker cap, after the 600-second framed search found a proposal but the earlier 60-second check timed out. Its row is esc-s1-saved-long. All table caps are search caps; checker runtimes are shown separately.
+Propagation scope matters for the workload estimate: the full B11 relation graph was measured, but the decision seeds are the checked samples and their dependencies/closure endpoints. A cheap pass over every B11 graph was not run here. Therefore the additional propagation obtained from a fully decided cheap-pass population is still unmeasured, and no discount for that effect is included in the analyst estimate.
+The additional TU-aware propagation measurement formed 728 distinct embedding-closure proposals from the checked seeds and accepted 0 needed exact closure endpoints with the frozen checker. For reverse TU fanouts it examined 37,543 possible B11 predecessors, using the complete poset to exclude graphs that cannot reach a supergraph of the queried survivor. It independently rechecked 37 ancestor rows and checked 12 conditional TU chains. These conditional chains are fanout witnesses, not refutations of the still-unknown endpoint. Details: tu-propagation-summary.json and tu-propagation-per-residue.json.
+
+The larger sample's four remaining cases are provisionally {'forbidden': 1, 'embeddable': 3}. Scaling these guesses gives 224 forbidden certificate cases, 673 embeddable certificate cases across B11. These are numerical/CAS-guided guesses, not accepted classifications; in particular, a separated numerical embedding still needs an exact certificate.
+Runtime scaling, separate from the analyst count: measured second-sample cheap stages total 1910.3 wall seconds, and its escalation search plus individual checks total 4519.6 seconds. Linear extrapolation gives 400.7 serial-worker hours, or 100.2 ideal four-core machine-hours at perfect utilization, before deployment overhead or population-wide propagation savings. Repeating this policy serially on the desktop would exceed one week. The architect's distributed worker plan can supply this compute, but that capacity was not exercised here. Scaling the measured combined replay alone gives 17.3 serial hours; larger tail certificates could increase that cost.
+Numerical refinement rerun: the initial QR-based refinement failed with singular-matrix exceptions on all six candidates. The retained correction uses a rank-selected square subsystem and pivoted LU Newton steps, then measures every original edge equation. Four separated candidates reached error below 1e-40; JSO@]OSDjB? collapsed. JaICZOo@Wd_ retained a gap near 6.66e-5 but stalled at squared-edge error about 5.24e-17 after an approximate rank choice introduced a pin. That last refinement supplies no high-precision confirmation of either conclusion. The initial failures and rerun are both retained.
+A further negative-search surprise: all four new tree refutations needed only 8 to 31 visited states, but 7 to 45 seconds of search. The cheap one-second cap, rather than its 1,200-state allowance, was the relevant limitation.
+Suggested analyst routing: the four separated survivors belong first in exactification/representation work. JoCBkhGIGJ_ already has a local degree-40 coordinate proposal whose frozen check exceeded 300 seconds; J_?gkpAYHb? has a local degree-28 proposal rejected while parsing rational coefficients. Neither proposal is an accepted certificate. The other two separated survivors have retained 70-digit coordinates and branch evidence. The two collapsed survivors belong in component-wise geometric/algebraic refutation work, with an independent embedding attempt retained as a competing explanation. Shared degree sequences alone do not justify treating them as one mathematical family.
+Checker denominators: the combined receipt contains the 2,500 sampled graphs plus six additional refuted TU-closure endpoints needed by their certificates. Its 2,506 records therefore comprise 2,467 embeddings, 33 refutations and six unknowns. The sample estimates correctly use 2,500 graphs and 27 refutations; the six supporting endpoints are not additional random observations.
+An additional exhaustive comparison of all one- and two-vertex deletions found 0 shared connected ten-vertex cores and 26 shared connected nine-vertex cores across 13 pairs of survivors. shared-cores.json gives the actual cores and labelled deletions. These are optional common-core analyst packets, not fewer independent certificate obligations.
+  Common-core packet: JSO@]OSDjB? and J_?gkpAYHb?; core H@@GtBB (9 vertices, 11 edges); deletions {'JSO@]OSDjB?': [7, 8], 'J_?gkpAYHb?': [2, 8]}.
+  Common-core packet: JSO@]OSDjB? and J`C@KHIB^a?; core HQ?OZQM (9 vertices, 12 edges); deletions {'JSO@]OSDjB?': [2, 9], 'J`C@KHIB^a?': [2, 9]}.
+  Common-core packet: JSO@]OSDjB? and JaICZOo@Wd_; core HGE@[pT (9 vertices, 13 edges); deletions {'JSO@]OSDjB?': [3, 5], 'JaICZOo@Wd_': [4, 6]}.
+  Common-core packet: JSO@]OSDjB? and JoCBkhGIGJ_; core HoD@hXW (9 vertices, 13 edges); deletions {'JSO@]OSDjB?': [1, 5], 'JoCBkhGIGJ_': [4, 5]}.
+  Common-core packet: JSO@]OSDjB? and JqM??CNGqg_; core HM?GXMw (9 vertices, 13 edges); deletions {'JSO@]OSDjB?': [3, 4], 'JqM??CNGqg_': [2, 4]}.
+  Common-core packet: J_?gkpAYHb? and J`C@KHIB^a?; core HA?gtFK (9 vertices, 12 edges); deletions {'J_?gkpAYHb?': [2, 3], 'J`C@KHIB^a?': [0, 9]}.
+  Common-core packet: J_?gkpAYHb? and JaICZOo@Wd_; core H`?PQYM (9 vertices, 12 edges); deletions {'J_?gkpAYHb?': [3, 4], 'JaICZOo@Wd_': [0, 10]}.
+  Common-core packet: J_?gkpAYHb? and JoCBkhGIGJ_; core H`?PQYM (9 vertices, 12 edges); deletions {'J_?gkpAYHb?': [3, 4], 'JoCBkhGIGJ_': [1, 9]}.
+  Common-core packet: J`C@KHIB^a? and JaICZOo@Wd_; core HIGGkMw (9 vertices, 13 edges); deletions {'J`C@KHIB^a?': [0, 7], 'JaICZOo@Wd_': [3, 10]}.
+  Common-core packet: J`C@KHIB^a? and JoCBkhGIGJ_; core HgHGkcx (9 vertices, 14 edges); deletions {'J`C@KHIB^a?': [3, 4], 'JoCBkhGIGJ_': [0, 1]}.
+  Common-core packet: JaICZOo@Wd_ and JoCBkhGIGJ_; core HGDPSMw (9 vertices, 13 edges); deletions {'JaICZOo@Wd_': [2, 8], 'JoCBkhGIGJ_': [1, 8]}.
+  Common-core packet: JaICZOo@Wd_ and JqM??CNGqg_; core HGDPSMw (9 vertices, 13 edges); deletions {'JaICZOo@Wd_': [2, 8], 'JqM??CNGqg_': [6, 7]}.
+  Common-core packet: JoCBkhGIGJ_ and JqM??CNGqg_; core HGDPSMw (9 vertices, 13 edges); deletions {'JoCBkhGIGJ_': [1, 8], 'JqM??CNGqg_': [6, 7]}.
+For the six observed cases I suggest four initial packets: the two likely forbidden graphs share the 9-vertex, 13-edge core HGE@[pT; JoCBkhGIGJ_ and J`C@KHIB^a? share the denser 9-vertex, 14-edge core HgHGkcx and both have separated numerical embeddings; handle J_?gkpAYHb? and JqM??CNGqg_ separately. ANALYST-PACKETS.json records these suggestions. This is four packets containing six independent certificate obligations, not evidence for extrapolating a four-sixths workload discount.
+
+Detailed measured tables and the complete grouped survivor inventory follow.
+
+GP-11 escalation measurement
+
+All counts and runtimes below are measured unless explicitly called projections or guesses.
+Repository read-only; all new artifacts under /tmp/gp11-escalate/.
+
+Sampling: second sample is sorted(random.Random(20261002).sample(eligible,2000)), where eligible is the ascending list of B11 indices excluding the first 500. Exact indices and hashes: sample2-manifest.json.
+
+Unresolved counts, nominal Wilson 95% intervals and projections to all 448708 B11 graphs:
+sample 1, cheap: 13/500 = 2.600%; 95% 1.526..4.397%; projection 11666 (6846..19730).
+sample 1, escalation_direct: 2/500 = 0.400%; 95% 0.110..1.447%; projection 1795 (493..6491).
+sample 1, after_propagation: 2/500 = 0.400%; 95% 0.110..1.447%; projection 1795 (493..6491).
+sample 2, cheap: 59/2000 = 2.950%; 95% 2.294..3.787%; projection 13237 (10293..16990).
+sample 2, escalation_direct: 4/2000 = 0.200%; 95% 0.078..0.513%; projection 897 (349..2302).
+sample 2, after_propagation: 4/2000 = 0.200%; 95% 0.078..0.513%; projection 897 (349..2302).
+
+Nominal Wilson intervals, without finite-population correction (under 0.3% effect). The pilot was exploratory; post-escalation budgets differ between samples and unattempted methods remain censored. Pooled escalation values describe this measurement, not a uniform fully escalated policy.
+
+Escalation table (conditional cohorts; already-decided graphs skipped):
+tag | method | seconds cap | attempted | E | R | unknown | search seconds | checker seconds
+esc-s1-branch-exact | branch_exact | [30.0] | 7 | 0 | 0 | 7 | 48.444 | 0.000
+esc-s1-extension | extension | [60.0] | 13 | 3 | 0 | 10 | 29.842 | 2.422
+esc-s1-msolve-sat-long | msolve_sat | [600.0] | 1 | 0 | 0 | 1 | 88.633 | 60.001
+esc-s1-msolve-sat | msolve_sat | [180.0] | 5 | 3 | 0 | 2 | 244.194 | 31.342
+esc-s1-msolve | msolve | [120.0] | 10 | 3 | 0 | 7 | 624.270 | 2.247
+  Actual producer breakdown (branch exactification precedes solver): {"framed_pinned_msolve": {"attempted": 7, "verdicts": {"unknown": 7}, "search_seconds": 623.4023667466827}, "branch_radical_exactification": {"attempted": 3, "verdicts": {"embedded": 3}, "search_seconds": 0.8672134969383478}}
+esc-s1-null | null | [60.0] | 2 | 0 | 0 | 2 | 119.625 | 0.000
+esc-s1-numeric-pin | numeric_pin | [120.0] | 1 | 0 | 0 | 1 | 0.015 | 0.000
+esc-s1-numeric | numeric | [60.0] | 10 | 0 | 0 | 10 | 134.951 | 0.000
+esc-s1-real | real | [60.0] | 2 | 0 | 0 | 2 | 119.625 | 0.000
+esc-s1-saved-long | saved_exact | [180.0] | 1 | 0 | 0 | 1 | 69.675 | 300.003
+esc-s1-superbase | superbase | [60.0] | 7 | 2 | 0 | 5 | 0.089 | 0.121
+esc-s1-targeted-components-final | targeted_components | [360.0] | 1 | 0 | 0 | 1 | 359.871 | 0.000
+esc-s1-targeted-components-long | targeted_components | [600.0] | 0 | 0 | 0 | 0 | 0.000 | 0.000
+  Censored at overall_compute_deadline; first unattempted JaICZOo@Wd_; final unknowns unattempted by this stage: 1
+esc-s1-targeted-components | targeted_components | [180.0] | 2 | 0 | 0 | 2 | 180.011 | 0.000
+esc-s1-targeted | targeted | [60.0] | 2 | 0 | 0 | 2 | 119.632 | 0.000
+esc-s1-tree | tree | [60.0] | 2 | 0 | 0 | 2 | 17.919 | 0.000
+esc-s2-extension | extension | [60.0] | 59 | 10 | 0 | 49 | 249.620 | 12.518
+esc-s2-field-retry | saved_exact | [180.0] | 2 | 0 | 0 | 2 | 271.915 | 0.003
+  Censored at stage_wall_allowance; first unattempted J`C@KHIB^a?; final unknowns unattempted by this stage: 2
+esc-s2-msolve_sat | msolve_sat | [180.0] | 31 | 21 | 0 | 10 | 640.692 | 318.403
+esc-s2-null | null | [60.0] | 4 | 0 | 0 | 4 | 239.673 | 0.000
+esc-s2-numeric-pin | numeric_pin | [120.0] | 2 | 0 | 0 | 2 | 225.540 | 0.000
+  Censored at stage_wall_allowance; first unattempted J`C@KHIB^a?; final unknowns unattempted by this stage: 2
+esc-s2-numeric | numeric | [60.0] | 49 | 10 | 0 | 39 | 1291.018 | 1.978
+esc-s2-real | real | [60.0] | 4 | 0 | 0 | 4 | 239.310 | 0.000
+esc-s2-saved-exact | saved_exact | [180.0] | 4 | 2 | 0 | 2 | 329.190 | 148.947
+  Censored at stage_wall_allowance; first unattempted J`C@KHIB^a?; final unknowns unattempted by this stage: 2
+esc-s2-superbase | superbase | [60.0] | 39 | 8 | 0 | 31 | 21.066 | 6.516
+esc-s2-targeted-components | targeted_components | [180.0] | 1 | 0 | 0 | 1 | 179.806 | 0.000
+esc-s2-targeted | targeted | [60.0] | 4 | 0 | 0 | 4 | 190.889 | 0.000
+esc-s2-tree | tree | [60.0] | 8 | 0 | 4 | 4 | 147.756 | 4.778
+
+Numerics are evidence only. Every accepted verdict is replayed by GP10 frozen checker; final-check-summary.json and final-check/checked/report.json contain the receipt.
+
+Every unresolved graph (labels are the canonical graph6 labels):
+
+F001: JSO@]OSDjB?
+  JSO@]OSDjB? (sample 2): m=19; degrees=[4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3]; minimum=3; TU witness=False
+    edges=[[0, 2], [0, 3], [1, 4], [2, 6], [4, 6], [5, 6], [0, 7], [1, 7], [4, 7], [3, 8], [5, 8], [3, 9], [5, 9], [6, 9], [8, 9], [1, 10], [2, 10], [7, 10], [8, 10]]
+    numeric: 2985/3000 converged; best gap 1.0279278935269833e-08; all converged within 1e-4: True; branch configurations 50; separated branches 0; refined gap 1.393102075171438537540116190235546902809464014776058821808466589790498e-28, error 7.762933567387876056458224425454823715103300832438446243242353403037273e-56.
+    guess=forbidden: The best-gap floating-point candidate collapsed under 70-digit refinement; observed floating-point gaps stayed below 0.01. This is a search-based guess, not exhaustive. Unpinned finite CAS output also reported only colliding real solutions; this remains solver-dependent triage, not a frozen-checker refutation.
+    B11 coverage including self: if E 2407; if R 1; unknown subgraphs []; unknown supergraphs [].
+    Converged-start separation range=[0.0, 1.0279278935269833e-08]; median=0.0; maximum converged squared-edge error=6.661338147750939e-16.
+    Most frequent closest colliding pairs=[["(3, 5)", 595], ["(4, 10)", 457], ["(6, 8)", 447], ["(2, 7)", 170], ["(1, 6)", 141]].
+    Best candidate before refinement: gap=1.0279278935269833e-08, squared-edge error=3.3306690738754696e-16; refined closest pair=[2, 7]; refinement error=None.
+    CAS diagnostics (not refutation certificates)=[{"stage": "esc-s2-msolve_sat", "solver_status": "finite", "degree": 48, "real_roots": 4, "sturm_real_roots": 4, "triage": true, "reason": "rigid_no_distinct_real_solution", "pairs": [[3, 5]]}, {"stage": "esc-s2-msolve_sat", "solver_status": "finite", "degree": 48, "real_roots": 4, "sturm_real_roots": 4, "triage": true, "reason": "rigid_no_distinct_real_solution", "pairs": [[3, 5], [4, 10], [6, 8]]}, {"stage": "esc-s2-msolve_sat", "solver_status": "finite", "degree": 44, "real_roots": 0, "sturm_real_roots": 0, "triage": true, "reason": "rigid_no_distinct_real_solution", "pairs": [[3, 5], [4, 10], [6, 8], [2, 7], [1, 6], [2, 5]]}].
+    Additional B11 coverage beyond currently checked seeds' reach: if E 106; if R 1.
+    Conditional R coverage including reverse TU chains: 1 B11 graphs, of which 0 are additional TU predecessors. Every added chain's maps were checked by the frozen checker; its R endpoint is hypothetical until this graph is refuted.
+
+F002: J_?gkpAYHb?
+Proper 3-core(s): H_SsHVo
+  J_?gkpAYHb? (sample 2): m=18; degrees=[4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 2]; minimum=2; TU witness=False
+    edges=[[0, 1], [2, 5], [4, 5], [3, 6], [5, 6], [0, 7], [3, 7], [4, 7], [1, 8], [6, 8], [1, 9], [2, 9], [4, 9], [8, 9], [2, 10], [3, 10], [7, 10], [8, 10]]
+    numeric: 535/535 converged; best gap 0.40317269447778736; all converged within 1e-4: False; branch configurations 854; separated branches 10; refined gap 0.4031726944776241661232222875093799562117476199279728964794982322438154, error 3.622271631530684947003647716355116712273012479255655275833045955974201e-71.
+    guess=embeddable: 70-digit Newton refinement reached edge error <1e-40 with separation 0.4031726944776241661232222875093799562117476199279728964794982322438154; exact certificate still absent. An exact coordinate proposal reached the official checker but was not accepted in a recorded attempt: Rejection:rational: invalid denominator or numerator.
+    B11 coverage including self: if E 977; if R 13; unknown subgraphs []; unknown supergraphs [].
+    Converged-start separation range=[0.0, 0.40317269447778736]; median=5.1619700831806116e-14; maximum converged squared-edge error=7.502798382574838e-11.
+    Most frequent closest colliding pairs=[["(2, 8)", 88], ["(2, 4)", 87], ["(5, 9)", 68], ["(6, 10)", 64], ["(3, 8)", 41]].
+    Best candidate before refinement: gap=0.40317269447778736, squared-edge error=6.372680161348399e-14; refined closest pair=[1, 6]; refinement error=None.
+    CAS diagnostics (not refutation certificates)=[{"stage": "esc-s2-field-retry", "solver_status": "finite", "degree": 68, "real_roots": 22, "sturm_real_roots": 22, "triage": false, "reason": "exact_embedding", "certificate_degree": 28}, {"stage": "esc-s2-saved-exact", "solver_status": "finite", "degree": 68, "real_roots": 22, "sturm_real_roots": 22, "triage": false, "reason": "exact_embedding", "certificate_degree": 28}].
+    Additional B11 coverage beyond currently checked seeds' reach: if E 12; if R 13.
+    Conditional R coverage including reverse TU chains: 21 B11 graphs, of which 8 are additional TU predecessors. Every added chain's maps were checked by the frozen checker; its R endpoint is hypothetical until this graph is refuted.
+
+F003: J`C@KHIB^a?
+  J`C@KHIB^a? (sample 2): m=19; degrees=[5, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3]; minimum=3; TU witness=False
+    edges=[[0, 1], [2, 3], [3, 4], [2, 6], [5, 6], [0, 7], [5, 7], [1, 8], [4, 8], [6, 8], [4, 9], [5, 9], [7, 9], [8, 9], [0, 10], [1, 10], [2, 10], [3, 10], [7, 10]]
+    numeric: 186/197 converged; best gap 0.36050752671813346; all converged within 1e-4: False; branch configurations 4979; separated branches 20; refined gap 0.3605075267181335671685176925103312527854810454588051026034993925384475, error 7.988131190613430398507279587486888786226921439746996861315086814738871e-62.
+    guess=embeddable: 70-digit Newton refinement reached edge error <1e-40 with separation 0.3605075267181335671685176925103312527854810454588051026034993925384475; exact certificate still absent.
+    B11 coverage including self: if E 2297; if R 3; unknown subgraphs []; unknown supergraphs [].
+    Converged-start separation range=[0.0, 0.3147981113313336]; median=7.188884068652499e-18; maximum converged squared-edge error=3.593614295027692e-11.
+    Most frequent closest colliding pairs=[["(5, 8)", 49], ["(1, 7)", 42], ["(6, 9)", 32], ["(1, 2)", 8], ["(2, 7)", 7]].
+    Best candidate before refinement: gap=0.36050752671813346, squared-edge error=6.661338147750939e-16; refined closest pair=[6, 9]; refinement error=None.
+    Additional B11 coverage beyond currently checked seeds' reach: if E 45; if R 3.
+    Conditional R coverage including reverse TU chains: 3 B11 graphs, of which 0 are additional TU predecessors. Every added chain's maps were checked by the frozen checker; its R endpoint is hypothetical until this graph is refuted.
+
+F004: JaICZOo@Wd_
+  JaICZOo@Wd_ (sample 1): m=19; degrees=[4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3]; minimum=3; TU witness=False
+    edges=[[0, 1], [1, 3], [2, 4], [0, 5], [0, 6], [4, 6], [5, 6], [1, 7], [2, 7], [4, 7], [2, 8], [3, 8], [5, 9], [7, 9], [8, 9], [3, 10], [6, 10], [8, 10], [9, 10]]
+    numeric: 2962/3000 converged; best gap 6.657792248638942e-05; all converged within 1e-4: True; branch configurations 361; separated branches 0; refined gap 0.00006657792248651363970731356930732375342404925037804407627364686850471241, error 0.00000000000000005240102475351698923483215768730933664290066023772265348034176093852061.
+    guess=forbidden: Every converged multistart collided within 1e-4 and no separated circle branch was retained. Bounded search only. Unpinned finite CAS output also reported only colliding real solutions; this remains solver-dependent triage, not a frozen-checker refutation.
+    B11 coverage including self: if E 2893; if R 1; unknown subgraphs []; unknown supergraphs [].
+    Converged-start separation range=[0.0, 6.657792248638942e-05]; median=0.0; maximum converged squared-edge error=9.801981448731567e-11.
+    Most frequent closest colliding pairs=[["(3, 9)", 547], ["(5, 10)", 400], ["(2, 9)", 289], ["(7, 8)", 241], ["(2, 3)", 224]].
+    Best candidate before refinement: gap=6.657792248638942e-05, squared-edge error=2.220446049250313e-16; refined closest pair=[1, 5]; refinement error=None.
+    CAS diagnostics (not refutation certificates)=[{"stage": "esc-s1-msolve-sat", "solver_status": "finite", "degree": 76, "real_roots": 48, "sturm_real_roots": 48, "triage": true, "reason": "rigid_no_distinct_real_solution", "pairs": [[3, 9]]}, {"stage": "esc-s1-msolve-sat", "solver_status": "finite", "degree": 50, "real_roots": 38, "sturm_real_roots": 38, "triage": true, "reason": "rigid_no_distinct_real_solution", "pairs": [[3, 9], [5, 10], [2, 9]]}, {"stage": "esc-s1-msolve-sat", "solver_status": "finite", "degree": 24, "real_roots": 12, "sturm_real_roots": 12, "triage": true, "reason": "rigid_no_distinct_real_solution", "pairs": [[3, 9], [5, 10], [2, 9], [7, 8], [2, 3], [2, 6]]}, {"stage": "esc-s1-msolve", "solver_status": "positive_dimension", "triage": false, "reason": "msolve_positive_dimension", "frame": [9, 10]}].
+    Additional B11 coverage beyond currently checked seeds' reach: if E 107; if R 1.
+    Conditional R coverage including reverse TU chains: 1 B11 graphs, of which 0 are additional TU predecessors. Every added chain's maps were checked by the frozen checker; its R endpoint is hypothetical until this graph is refuted.
+
+F005: JoCBkhGIGJ_
+  JoCBkhGIGJ_ (sample 1): m=19; degrees=[4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3]; minimum=3; TU witness=False
+    edges=[[0, 1], [0, 2], [3, 4], [1, 6], [2, 6], [3, 6], [5, 6], [0, 7], [3, 7], [5, 7], [1, 8], [4, 8], [2, 9], [4, 9], [8, 9], [5, 10], [7, 10], [8, 10], [9, 10]]
+    numeric: 258/259 converged; best gap 0.34124089640189287; all converged within 1e-4: False; branch configurations 62; separated branches 3; refined gap 0.3412408964018926335500465618639935986545127925688067759367376316585709, error 2.865041546216077339459135314091073448114195569560239828724244307584369e-62.
+    guess=embeddable: 70-digit Newton refinement reached edge error <1e-40 with separation 0.3412408964018926335500465618639935986545127925688067759367376316585709; exact certificate still absent. An exact coordinate proposal reached the official checker but was not accepted in a recorded attempt: Deadline:.
+    B11 coverage including self: if E 1752; if R 7; unknown subgraphs []; unknown supergraphs [].
+    Converged-start separation range=[0.0, 0.3412408964018927]; median=7.279310662651446e-18; maximum converged squared-edge error=4.4284576006248244e-12.
+    Most frequent closest colliding pairs=[["(3, 5)", 52], ["(4, 10)", 39], ["(6, 7)", 23], ["(2, 8)", 19], ["(1, 9)", 10]].
+    Best candidate before refinement: gap=0.34124089640189287, squared-edge error=4.440892098500626e-16; refined closest pair=[7, 8]; refinement error=None.
+    CAS diagnostics (not refutation certificates)=[{"stage": "esc-s1-msolve-sat-long", "solver_status": "finite", "degree": 120, "real_roots": 72, "sturm_real_roots": 72, "triage": false, "reason": "exact_embedding", "pairs": [[3, 5]], "frame": [0, 1], "certificate_degree": 40}, {"stage": "esc-s1-saved-long", "solver_status": "finite", "degree": 120, "real_roots": 72, "sturm_real_roots": 72, "triage": false, "reason": "exact_embedding", "certificate_degree": 40}].
+    Additional B11 coverage beyond currently checked seeds' reach: if E 81; if R 7.
+    Conditional R coverage including reverse TU chains: 7 B11 graphs, of which 0 are additional TU predecessors. Every added chain's maps were checked by the frozen checker; its R endpoint is hypothetical until this graph is refuted.
+
+F006: JqM??CNGqg_
+  JqM??CNGqg_ (sample 2): m=18; degrees=[4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3]; minimum=3; TU witness=False
+    edges=[[0, 1], [0, 2], [1, 3], [2, 4], [3, 4], [0, 5], [6, 7], [4, 8], [5, 8], [6, 8], [7, 8], [2, 9], [6, 9], [7, 9], [1, 10], [3, 10], [5, 10], [9, 10]]
+    numeric: 88/88 converged; best gap 0.2352041976461149; all converged within 1e-4: False; branch configurations 288; separated branches 20; refined gap 0.2352041976467035957858279680261132787363988441015209324545991723326005, error 3.622271631530684947003647716355116712273012479255655275833045955974201e-71.
+    guess=embeddable: 70-digit Newton refinement reached edge error <1e-40 with separation 0.2352041976467035957858279680261132787363988441015209324545991723326005; exact certificate still absent.
+    B11 coverage including self: if E 672; if R 12; unknown subgraphs []; unknown supergraphs [].
+    Converged-start separation range=[0.0, 0.23520419764594214]; median=4.198055292552537e-14; maximum converged squared-edge error=2.815969679659247e-12.
+    Most frequent closest colliding pairs=[["(8, 9)", 26], ["(1, 5)", 13], ["(2, 5)", 11], ["(0, 10)", 8], ["(4, 10)", 3]].
+    Best candidate before refinement: gap=0.2352041976461149, squared-edge error=8.33000335376255e-13; refined closest pair=[4, 6]; refinement error=None.
+    Additional B11 coverage beyond currently checked seeds' reach: if E 12; if R 12.
+    Conditional R coverage including reverse TU chains: 16 B11 graphs, of which 4 are additional TU predecessors. Every added chain's maps were checked by the frozen checker; its R endpoint is hypothetical until this graph is refuted.
+
+Detailed numeric trials, best coordinates, branches, exactification attempts, and per-method outcomes are retained in numeric/, esc-*-cases/, and *-stats.jsonl. Family membership is a proposal for batching, not a theorem that one proof settles all members.
+

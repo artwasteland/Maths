@@ -417,7 +417,7 @@ def main() -> int:
                 "children_written": 1,
                 "children_file": f"../child-{i}.g6",
                 "children_sha256": sha(child),
-                "host": "selftest",
+                "host": "<host>",
                 "exit_status": 0,
             }
             (manifest_dir / f"s{i}.json").write_text(json.dumps(manifest) + "\n", encoding="utf-8")

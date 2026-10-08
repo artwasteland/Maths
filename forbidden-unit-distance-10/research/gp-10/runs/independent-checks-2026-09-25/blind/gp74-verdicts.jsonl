@@ -1,0 +1,74 @@
+{"g6": "C~", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 1 nodes, leaves L1a:1", "seconds": 0.001}
+{"g6": "DFw", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 1 nodes, leaves L1a:1", "seconds": 0.003}
+{"g6": "EqLw", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[1] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "F@h^_", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[1] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "FoS~_", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[0] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "FqHXw", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 3 nodes, leaves L1c:2", "seconds": 0.01}
+{"g6": "G?K]Nc", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[1] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "G?Nebs", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[2] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "G@IQV{", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[1] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "G@fBJs", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (16 cofactors; frame 0,4; 4 sat pairs); univariate in y_5 of degree 2 with no real root", "seconds": 0.61}
+{"g6": "GAJcrs", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[2] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "GHCML{", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[1] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "G[dBG{", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 15 nodes, leaves L1a:8", "seconds": 0.046}
+{"g6": "GdhAXk", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[2] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "Gm__x[", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:2,L1c:2", "seconds": 0.024}
+{"g6": "Gp@Gzo", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[1] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "GqGTYw", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:2,L1c:2", "seconds": 0.023}
+{"g6": "GqHPW{", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (16 cofactors; frame 0,1; 4 sat pairs); univariate in y_6 of degree 2 with no real root", "seconds": 0.084}
+{"g6": "GsOiho", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 1 nodes, leaves L1a:1", "seconds": 0.005}
+{"g6": "H??|Qro", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[1] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "H?GXmRo", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[1] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "H?HVCp|", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[4] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "H?XPdeM", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[7] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "H?dPdLi", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (19 cofactors; frame 6,7; 22 sat pairs); f = c + sum of 6 weighted squares, c > 0", "seconds": 0.688}
+{"g6": "H?hPaue", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[3] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "H?iRQhr", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 3 nodes, leaves L1c:2", "seconds": 0.022}
+{"g6": "H@CNEK|", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[1] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "H@EMBD|", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[2] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "H@EPQ^a", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[3] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "H@_maXr", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[4] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HAGW}Ed", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[6] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HAJ?Xfw", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[3] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HCO_W~q", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[6] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HGEAXjw", "type": "null-dag", "verdict": "ACCEPT", "reason": "Nullstellensatz identity = 1 (14 rows; frame 0,8; 10 sat pairs; 24 vars)", "seconds": 0.71}
+{"g6": "HG_\\aXr", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[4] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HGaqOtr", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[4] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HHEAG^x", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.011}
+{"g6": "HH_KiXr", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[12] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HH`K_\\r", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[2] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HIA@Wzw", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 2 step(s) ending at forbidden-74[7] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HIGCkX{", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 1 nodes, leaves L1a:1", "seconds": 0.003}
+{"g6": "HOOo}Rp", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:2,L1c:2", "seconds": 0.032}
+{"g6": "HQ`F_wl", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 13 nodes, leaves L1a:4,L1c:2", "seconds": 0.041}
+{"g6": "HSD_YVp", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 2 nodes, leaves L1a:1", "seconds": 0.007}
+{"g6": "H_CfKxw", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 27 nodes, leaves L1a:12", "seconds": 0.105}
+{"g6": "H_KQ\\Jp", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.014}
+{"g6": "H_SsPNo", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[7] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "H_hOpNo", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 1 nodes, leaves L1b:1", "seconds": 0.002}
+{"g6": "H_hP`SV", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (18 cofactors; frame 4,7; 22 sat pairs); f = c + sum of 9 weighted squares, c > 0", "seconds": 0.257}
+{"g6": "H`?NeW{", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 23 nodes, leaves L1a:8", "seconds": 0.084}
+{"g6": "H`QBWyp", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.016}
+{"g6": "H`QBpiL", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 21 nodes, leaves L1a:10", "seconds": 0.078}
+{"g6": "H``Axih", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 13 nodes, leaves L1a:4,L1c:2", "seconds": 0.044}
+{"g6": "Hg?X[rp", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:2,L1c:2", "seconds": 0.032}
+{"g6": "HgCXSLp", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[7] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "Hh_EhW\\", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 4 nodes, leaves L1c:2", "seconds": 0.012}
+{"g6": "HkCeHoN", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 1: 3 nodes, leaves L1a:1", "seconds": 0.008}
+{"g6": "HkCe`WN", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:2,L1c:2", "seconds": 0.03}
+{"g6": "Hm__XKZ", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:2,L1c:2", "seconds": 0.035}
+{"g6": "Ho?gqd{", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[2] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "Ho@PQwz", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 3 nodes, leaves L1c:2", "seconds": 0.01}
+{"g6": "HoCYPLp", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[7] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HoCy@TR", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[2] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "HoO_ol{", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[2] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "Hp?Gi^w", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1c:4", "seconds": 0.03}
+{"g6": "HpO]@cN", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 7 nodes, leaves L1a:2,L1b:2", "seconds": 0.018}
+{"g6": "Hp`@iWZ", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 21 nodes, leaves L1a:10", "seconds": 0.083}
+{"g6": "HqGEhW\\", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:2,L1c:2", "seconds": 0.033}
+{"g6": "HqGRSgN", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 9 nodes, leaves L1a:2,L1c:2", "seconds": 0.041}
+{"g6": "HqL@?[V", "type": "tu", "verdict": "ACCEPT", "reason": "tu chain of 1 step(s) ending at forbidden-74[7] (premise: GP theorem that it is forbidden)", "seconds": 0.0}
+{"g6": "Hr?MPgN", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (18 cofactors; frame 0,1; 4 sat pairs); f = c + sum of 0 weighted squares, c > 0", "seconds": 0.872}
+{"g6": "Hr_@iWN", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 7 nodes, leaves L1a:2,L1c:2", "seconds": 0.02}
+{"g6": "Hr`?XKZ", "type": "tree", "verdict": "ACCEPT", "reason": "proof tree over field of degree 2: 3 nodes, leaves L1c:2", "seconds": 0.007}
+{"g6": "H{O_okN", "type": "real", "verdict": "ACCEPT", "reason": "identity = f (19 cofactors; frame 6,7; 5 sat pairs); f = c + sum of 2 weighted squares, c > 0", "seconds": 1.079}

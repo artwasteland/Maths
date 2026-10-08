@@ -1,0 +1,10 @@
+{
+  "profile": "sample",
+  "input": "input.g6",
+  "input_sha256": "e164642ea41d1f94f4eaf0ff36aeaa3cd8caf89434c9faaa17b24b469faf7d2b",
+  "records": [
+    "records.jsonl"
+  ],
+  "unknown": "UNKNOWN.g6",
+  "forbidden_limit": 0
+}

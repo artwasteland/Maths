@@ -1,0 +1,14 @@
+{
+ "markers": "Receipt paths relocated; 1444 identity reconstructed around unchanged honest receipt bytes.",
+ "original_1907_receipt_hashes": {
+  "s1907of1920-fixcheck.inventory.jsonl.gz": "a6347c6920b793d3ed1e9396db377a545293971b60d7a232e850b05a31bfb4cd",
+  "s1907of1920-fixcheck.known.json": "0d01f5e475a0f47afa7929792c3f36d6ae9f0700cf26a377cbaa6ef62f948486",
+  "s1907of1920-fixcheck.structure.json": "46400ff83d8f6624a100187c9cde2831ad7bf3128d6da4da54db2322d76c4313",
+  "s1907of1920-fixcheck.txt": "e4ff489f08d87d6a8136e18735369eb34ffeeae3a3f278c7628c57059e02660f"
+ },
+ "partial_run_view": "Only unchanged retained files; used for missing-parameter controls before reconciliation.",
+ "raw_1444_source_for_separate_integration": "/tmp/u24-rereview-fixes-xJ9521/real-worker/out/dag-24-69-L12-tri-pf74-s1444of1920",
+ "source_1444": "/tmp/u24-rereview-fixes-xJ9521/controls-final/false-count",
+ "source_1907": "/tmp/u24-rereview-fixes-xJ9521/controls-final/false-export",
+ "whole_run_view": "Only preserved aggregate manifests; used only for G4 fingerprint checks."
+}

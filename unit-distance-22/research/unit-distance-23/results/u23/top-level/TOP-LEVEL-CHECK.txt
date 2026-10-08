@@ -1,0 +1,7 @@
+# 2026-09-26T16:01:50Z: python3 research/unit-distance-23/tools/top_level_check.py <fleet extraction> --self-test (fleet in progress: rerun when it ends; the self-test now requires a REJECT naming the proof tree)
+s50: 1 kept graph(s) in 1 copy; udcheck.py: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15
+s50: 1 kept graph(s) in 1 copy; udcheck398.py: ACCEPT certificates records=1 forbidden=0 tu=0 embedded=0 refuted=1 unknown=0 proof_nodes=15
+s50: self-test: udcheck.py rejects a tampered certificate: REJECT: /tmp/tmpx39rh_e7/23-65.certs.jsonl:1.witness.tree.A: row space is inconsistent with the claimed constraints
+s50: self-test: udcheck398.py rejects a tampered certificate: REJECT: /tmp/tmpx39rh_e7/23-65.certs.jsonl:1.witness.tree.A: row space is inconsistent with the claimed constraints
+TOP-LEVEL OK: 1 slice(s) with kept graphs, 1 cop(ies), 0 problem(s)
+# exit 0

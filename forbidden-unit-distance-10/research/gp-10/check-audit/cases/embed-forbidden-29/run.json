@@ -1,0 +1,8 @@
+{
+  "input": "input.g6",
+  "input_sha256": "de2e569293d54c3d249b92fc3c409499af251cb8d5414d93e97041efe6e4af16",
+  "profile": "sample",
+  "records": [
+    "records.jsonl"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "attempt_seconds": 1.0,
+  "degree_cap": 256,
+  "memory_cap_bytes": 1024000000,
+  "memory_floor_kib": 1572864,
+  "seconds": 3.0,
+  "shard_count": 1,
+  "shard_index": 0,
+  "source_hashes": {
+    "B10.g6": "3cec678af7e0f2dec59b5f362e6d18e3fcb993ee94b701a8da8280529bd1321f",
+    "extend.py": "879c37a147b3bd28ed51d975ed63f76124ed9af25aea72564a8e4e8538bccb40",
+    "extend_run.py": "9e1c16e78416890d96474d5e92a15c5cf4d82a3af82ecbc7eb76e1fb53fdd2e7",
+    "extension.gp": "125b56a9f77811a601666e589bf72c73ced1f6d71cc57d86e117606a77fcdc7d",
+    "gp10check.py": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "graph6.py": "2903d82757c302e057efe93a2a1aa328567ed62bdb1eba8d268c6616319a96f3",
+    "index.py": "90d8595249be4eee109a274fecf52709eb3e7cb468164c919f0bdd8b50d825ea",
+    "records.jsonl.gz": "fb40aff1dd9513bf04d434a71c25ed96b60d254f46de0a826651cc27856b764a"
+  },
+  "source_sha256": "f3a783b22fb9e1f18eddc65584dff31b33238a7bbc87a9b8b9c2ddfbe28e2d12"
+}

@@ -1,0 +1,1 @@
+{"cert": {"end": {"forbidden": 0, "map": [0, 1, 2, 3]}, "steps": [{"gadget": 0, "map": [5, 10, 2, 8, 4, 11], "pair": [10, 11]}, {"gadget": 0, "map": [10, 11, 3, 7, 6, 9], "pair": [11, 9]}], "type": "tu"}, "g6": "K_?G?cks`M^?", "verdict": "refuted"}

@@ -1,0 +1,1040 @@
+{
+  "suite": "gp74",
+  "method": "null",
+  "count": 74,
+  "refuted": 10,
+  "unknown": 64,
+  "seconds_per_graph": 3.0,
+  "max_states": 200,
+  "total_seconds": 23.490919309668243,
+  "rows": [
+    {
+      "index": 0,
+      "g6": "C~",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 6,
+        "sat_pairs": 0,
+        "method": "null",
+        "seconds": 0.03176617994904518,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 1,
+      "g6": "DFw",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 6,
+        "sat_pairs": 4,
+        "method": "null",
+        "seconds": 0.05617079511284828,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 2,
+      "g6": "EqLw",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 6,
+        "sat_pairs": 4,
+        "method": "null",
+        "seconds": 0.05631267698481679,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 3,
+      "g6": "F@h^_",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 54,
+        "helper_rows": 6,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.02690405398607254,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 4,
+      "g6": "FqHXw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 16,
+        "helper_rows": 6,
+        "sat_pairs": 3,
+        "method": "null",
+        "seconds": 0.021139273885637522,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 5,
+      "g6": "FoS~_",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 6,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.10223341779783368,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 6,
+      "g6": "G?K]Nc",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 67,
+        "helper_rows": 6,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.0306350770406425,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 7,
+      "g6": "Gp@Gzo",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 39,
+        "helper_rows": 6,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.020852926187217236,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 8,
+      "g6": "GsOiho",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 8,
+        "sat_pairs": 8,
+        "method": "null",
+        "seconds": 0.05247515020892024,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 9,
+      "g6": "G@fBJs",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 19,
+        "helper_rows": 8,
+        "sat_pairs": 4,
+        "method": "null",
+        "seconds": 0.02500501461327076,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 10,
+      "g6": "GqHPW{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 19,
+        "helper_rows": 8,
+        "sat_pairs": 4,
+        "method": "null",
+        "seconds": 0.02588556706905365,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 11,
+      "g6": "G@IQV{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 17,
+        "helper_rows": 10,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.04897065181285143,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 12,
+      "g6": "GHCML{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 18,
+        "helper_rows": 10,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.024920740630477667,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 13,
+      "g6": "G?Nebs",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 19,
+        "helper_rows": 10,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.027087740134447813,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 14,
+      "g6": "GAJcrs",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 20,
+        "helper_rows": 8,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.018095206934958696,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 15,
+      "g6": "GdhAXk",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 19,
+        "helper_rows": 8,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.02317790361121297,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 16,
+      "g6": "G[dBG{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 18,
+        "helper_rows": 6,
+        "sat_pairs": 3,
+        "method": "null",
+        "seconds": 0.024575515184551477,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 17,
+      "g6": "Gm__x[",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 26,
+        "helper_rows": 6,
+        "sat_pairs": 4,
+        "method": "null",
+        "seconds": 0.026550596114248037,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 18,
+      "g6": "GqGTYw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 19,
+        "helper_rows": 6,
+        "sat_pairs": 4,
+        "method": "null",
+        "seconds": 0.02442666608840227,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 19,
+      "g6": "H?GXmRo",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 178,
+        "helper_rows": 6,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 1.1650733691640198,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 20,
+      "g6": "H??|Qro",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 86,
+        "helper_rows": 10,
+        "sat_pairs": 10,
+        "method": "null",
+        "seconds": 0.06291266763582826,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 21,
+      "g6": "HIGCkX{",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 10,
+        "sat_pairs": 8,
+        "method": "null",
+        "seconds": 0.13411864498630166,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 22,
+      "g6": "H_hP`SV",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 29,
+        "helper_rows": 8,
+        "sat_pairs": 4,
+        "method": "null",
+        "seconds": 0.029186215717345476,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 23,
+      "g6": "HCO_W~q",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 102,
+        "helper_rows": 8,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.09812429919838905,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 24,
+      "g6": "HgCXSLp",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 43,
+        "helper_rows": 8,
+        "sat_pairs": 8,
+        "method": "null",
+        "seconds": 0.03258429188281298,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 25,
+      "g6": "HAJ?Xfw",
+      "verdict": "unknown",
+      "detail": {
+        "method": "null",
+        "seconds": 3.002017764840275,
+        "limit": 3.0,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "index": 26,
+      "g6": "HqL@?[V",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 72,
+        "helper_rows": 8,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.05808732844889164,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 27,
+      "g6": "H?XPdeM",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 69,
+        "helper_rows": 10,
+        "sat_pairs": 9,
+        "method": "null",
+        "seconds": 0.03213937021791935,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 28,
+      "g6": "H@EPQ^a",
+      "verdict": "unknown",
+      "detail": {
+        "method": "null",
+        "seconds": 3.0017015067860484,
+        "limit": 3.0,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "index": 29,
+      "g6": "Ho?gqd{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 42,
+        "helper_rows": 8,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.026999760884791613,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 30,
+      "g6": "HoO_ol{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 80,
+        "helper_rows": 6,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.09979443904012442,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 31,
+      "g6": "HAGW}Ed",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 71,
+        "helper_rows": 8,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.05546331312507391,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 32,
+      "g6": "HoCYPLp",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 43,
+        "helper_rows": 8,
+        "sat_pairs": 8,
+        "method": "null",
+        "seconds": 0.02888435171917081,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 33,
+      "g6": "H_SsPNo",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 175,
+        "helper_rows": 6,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 1.7770434129051864,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 34,
+      "g6": "H?hPaue",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 112,
+        "helper_rows": 8,
+        "sat_pairs": 8,
+        "method": "null",
+        "seconds": 0.23993572778999805,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 35,
+      "g6": "HoCy@TR",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 112,
+        "helper_rows": 6,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.17513994919136167,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 36,
+      "g6": "HIA@Wzw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 97,
+        "helper_rows": 8,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.10072811180725694,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 37,
+      "g6": "H_hOpNo",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 8,
+        "sat_pairs": 8,
+        "method": "null",
+        "seconds": 0.1195708829909563,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 38,
+      "g6": "H?dPdLi",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 166,
+        "helper_rows": 6,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 1.042144691105932,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 39,
+      "g6": "HGEAXjw",
+      "verdict": "unknown",
+      "detail": {
+        "method": "null",
+        "seconds": 3.0040734908543527,
+        "limit": 3.0,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "index": 40,
+      "g6": "Ho@PQwz",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 22,
+        "helper_rows": 10,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.02419205568730831,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 41,
+      "g6": "H?iRQhr",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 22,
+        "helper_rows": 10,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.030942879151552916,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 42,
+      "g6": "Hh_EhW\\",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 31,
+        "helper_rows": 8,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.025650937110185623,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 43,
+      "g6": "HSD_YVp",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 8,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.1797951222397387,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 44,
+      "g6": "HH_KiXr",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 21,
+        "helper_rows": 10,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.02701990306377411,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 45,
+      "g6": "H_KQ\\Jp",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 25,
+        "helper_rows": 10,
+        "sat_pairs": 8,
+        "method": "null",
+        "seconds": 0.025133573915809393,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 46,
+      "g6": "H`QBWyp",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 24,
+        "helper_rows": 8,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.024143217131495476,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 47,
+      "g6": "HkCeHoN",
+      "verdict": "unknown",
+      "detail": {
+        "method": "null",
+        "seconds": 3.016822461038828,
+        "limit": 3.0,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "index": 48,
+      "g6": "H?HVCp|",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 23,
+        "helper_rows": 10,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.024742607958614826,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 49,
+      "g6": "H@EMBD|",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 22,
+        "helper_rows": 10,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.026267662178725004,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 50,
+      "g6": "HH`K_\\r",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 21,
+        "helper_rows": 10,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.02908357186242938,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 51,
+      "g6": "H@CNEK|",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 23,
+        "helper_rows": 10,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.023226997815072536,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 52,
+      "g6": "H@_maXr",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 33,
+        "helper_rows": 8,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.025073841214179993,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 53,
+      "g6": "HG_\\aXr",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 33,
+        "helper_rows": 8,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.028911614790558815,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 54,
+      "g6": "HGaqOtr",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 23,
+        "helper_rows": 10,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.024271828122437,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 55,
+      "g6": "HHEAG^x",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 21,
+        "helper_rows": 10,
+        "sat_pairs": 7,
+        "method": "null",
+        "seconds": 0.024091319181025028,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 56,
+      "g6": "Hm__XKZ",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 29,
+        "helper_rows": 8,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.024112724233418703,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 57,
+      "g6": "HOOo}Rp",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 22,
+        "helper_rows": 8,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.02230202266946435,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 58,
+      "g6": "Hg?X[rp",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 29,
+        "helper_rows": 8,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.023361004889011383,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 59,
+      "g6": "H`?NeW{",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 25,
+        "helper_rows": 6,
+        "sat_pairs": 3,
+        "method": "null",
+        "seconds": 0.023517395835369825,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 60,
+      "g6": "HqGRSgN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 23,
+        "helper_rows": 8,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.022796886041760445,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 61,
+      "g6": "Hp?Gi^w",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 33,
+        "helper_rows": 8,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.024118182715028524,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 62,
+      "g6": "Hr?MPgN",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 6,
+        "sat_pairs": 4,
+        "method": "null",
+        "seconds": 2.6893422822467983,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 63,
+      "g6": "Hr_@iWN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 23,
+        "helper_rows": 8,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.02295526023954153,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 64,
+      "g6": "HkCe`WN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 29,
+        "helper_rows": 8,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.03386507136747241,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 65,
+      "g6": "HqGEhW\\",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 29,
+        "helper_rows": 8,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.023123865947127342,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 66,
+      "g6": "H{O_okN",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 38,
+        "helper_rows": 6,
+        "sat_pairs": 3,
+        "method": "null",
+        "seconds": 0.04428307991474867,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 67,
+      "g6": "Hp`@iWZ",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 28,
+        "helper_rows": 6,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.1711681541055441,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 68,
+      "g6": "H`QBpiL",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 35,
+        "helper_rows": 6,
+        "sat_pairs": 4,
+        "method": "null",
+        "seconds": 0.02171447267755866,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 69,
+      "g6": "H_CfKxw",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 27,
+        "helper_rows": 6,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.02681971387937665,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 70,
+      "g6": "HpO]@cN",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 6,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.40836913511157036,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 71,
+      "g6": "HQ`F_wl",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 22,
+        "helper_rows": 6,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.022368587087839842,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 72,
+      "g6": "Hr`?XKZ",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 28,
+        "helper_rows": 8,
+        "sat_pairs": 6,
+        "method": "null",
+        "seconds": 0.02513248473405838,
+        "limit": 3.0
+      }
+    },
+    {
+      "index": 73,
+      "g6": "H``Axih",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 33,
+        "helper_rows": 6,
+        "sat_pairs": 5,
+        "method": "null",
+        "seconds": 0.27619435731321573,
+        "limit": 3.0
+      }
+    }
+  ],
+  "environment": {
+    "sympy": "1.14.0",
+    "flint": "0.9.0",
+    "SYMPY_GROUND_TYPES": "python"
+  },
+  "argv": [
+    "research/gp-10/refute/controls.py",
+    "--suite",
+    "gp74",
+    "--method",
+    "null",
+    "--seconds",
+    "3"
+  ]
+}

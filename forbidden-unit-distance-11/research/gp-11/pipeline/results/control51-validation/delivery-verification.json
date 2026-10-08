@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "pre_existing_files_unchanged": 443,
+  "bundle_artifact_hashes_verified": 22,
+  "full_sample_archived_sources_verified": 148,
+  "checker_prerequisites": 8,
+  "worker_resume_exit": 0
+}

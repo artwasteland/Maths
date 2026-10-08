@@ -1,0 +1,83 @@
+parameters: target (21,57), root minimum degree 3, u-bar override the fleet 22=60 only, top level holding the known graphs, known engel-21-57.g6 sha256 06f0d779a598292e6be4e2758097d7e0a1c2364fc348cda7d197751ed2a98aff (5 graphs); checker target_check.py sha256 1716d48763cc2e908fb99f0402432800702182ee3dbc4ddc3e80cedeb3505e2d; audit verify-chain.py sha256 d253338569dedb41740cdb4774a6a361f6498f036787a52c3f985caca5d6ddd8
+ok   self-test, s0 removed: s1: verify manifests of [(10, 15), (10, 16), (10, 17)] name a stage file outside this run (and, for the prefix, outside every full-mode run with this 
+ok   self-test, s0's run-config naming another slice: s0: run-config.json names target [21, 57] slice [12, 1, 1920]
+ok   self-test, s0 run with another prune filter set: s0: run-config differs from the fleet's pipeline: {'prune_filter_set': 398}
+ok   self-test, s0 run with another root minimum degree: s0: root minimum degree 4, not 3
+ok   self-test, s0's first slice cell with its parents emptied (G5 round 13): s0: audit: s0of1920: G4 replayed (13, 24) with 256 parents, and no copy of the slice records its parents
+ok   self-test, s0's cell with children -1: s0: audit: s0of1920: (13,24): counts that are not nonnegative integers: [('children', -1)]
+ok   self-test, s0's G4 replay with a failed stage under an OK aggregate: s0: audit: s0of1920: G4 replay says 'PASS' but its evidence gives FAIL: aggregate stages_ok True is not the False its details give; stage files that d
+ok   self-test, s0's G4 replay with another sampling policy: s0: G4 replay not the fleet's tool, data or sampling policy: {'fraction': 0, 'min_per_shard': 1, 'whole_max': 0, 'max_per_shard': 1}
+ok   self-test, s0's G4 replay with one cell mismatching: s0: audit: s0of1920: G4 replay says 'PASS' but its evidence gives FAIL: aggregate mismatching_parents 0 is not the 1 its details give; per_level is no
+ok   self-test, s0's top prune count saying a graph was kept, beside its keep file: s0: audit: s0of1920: (21,57): prune counts {'input': 0, 'tu': 0, 'survivors': 0, 'tri_tu': 0, 'tri_refuted': 0, 'tri_silent_passes': 0, 'tri_survivors
+ok   self-test, s0's copy without run-summary.json (G5 round 14): s0: no run-summary.json, so the audit did not see this copy
+ok   self-test, s0's full replay limited to the slice's levels, its totals and fingerprint reconciled (G5 rounds 14 and 17): s0: a full G4 replay of levels '13-21'
+ok   self-test, s0's full replay with the seeds' full checks deleted (G5 round 14): s0: a full G4 replay whose seed cell 10-15 is not recomputed in full over its 25401 audited graphs: records 25401, enum2 None
+ok   self-test, s0's first level-10 seed record claiming a full check of no graphs (G5 round 15): s0: a full G4 replay whose seed cell 10-15 is not recomputed in full over its 25401 audited graphs: records 0, enum2 0
+ok   self-test, s0's replay row of a large cell sampling none of it, totals rebalanced (G5 round 15): s0: a full G4 replay whose row of 11-18 has parents 28254, sampled 0 over 3 shards, for 28254 audited parents in 3 shards (the policy samples 29)
+ok   self-test, s0's cell resumed, its parents only in the history, its replay row removed (G5 round 15): s0: a full G4 replay with no row for cell 11-18 (28254 audited parents)
+ok   self-test, s0's own audit reading failing in-process: s0: the audit's own reading of this copy failed (RuntimeError: simulated)
+ok   self-test, s0's replay row of a one-parent cell sampling True (a bool, not a count): s0: a full G4 replay whose row of 16-36 has parents 1, sampled True over 1 shards, for 1 audited parents in 1 shards (the policy samples 1)
+ok   self-test, s0's replay row sampling more parents than its cell has: s0: a full G4 replay whose row of 11-18 has parents 28254, sampled 28255 over 3 shards, for 28254 audited parents in 3 shards (the policy samples 29)
+ok   self-test, s0's replay with a row naming a malformed cell: s0: a full G4 replay whose rows name malformed or repeated cells: ['x-1']
+ok   self-test, s0's audited parents of cell 13-24 a float: s0: audited parents of cell 13-24 are not a nonnegative integer: 256.0
+ok   self-test, a second copy of s0 disagreeing on the audited parents of cell 11-18: prefix 08053f878c26: copies disagree on the audited parents of cell 11-18: 28254 and 28255
+ok   self-test, a second copy of s0 failing its replay scope beside a passing copy: s0: a full G4 replay of levels 'bogus'
+ok   self-test, s0's replay row of 11-21 sampling 1, one fewer than the policy's 2 (the lower bound it replaced, 1, passed it): s0: a full G4 replay whose row of 11-21 has parents 238, sampled 1 over 1 shards, for 238 audited parents in 1 shards (the policy samples 2)
+ok   self-test, s0's replay row of 11-18 claiming 4 strata for its 3 shards: s0: a full G4 replay whose row of 11-18 has parents 28254, sampled 29 over 4 shards, for 28254 audited parents in 3 shards (the policy samples 29)
+ok   self-test, s0's replay with a row for cell 11-99, which the audit has no evidence for: s0: a full G4 replay with rows for cells the audit has no evidence for: ['11-99']
+ok   self-test, s0's replay row 11-18 saying n 12: s0: a full G4 replay whose row 11-18 says n 12, m 18
+ok   self-test, s0's audited shards of 11-18 stopping one parent short: s0: the audited shards of cell 11-18 are not ranges tiling its 28254 parents: ((0, 28253),)
+ok   self-test, s1's slice-mode copy recording another prefix: s1: its prefix (levels <= 12, 0000000000000000) is not one a passing full-mode G4 replay covers
+ok   self-test, s0's replay row of 11-18 naming the run of s1: s0: a full G4 replay whose rows or stage records name another run: ['dag-21-57-L12-tri-pf74-s1of1920']
+ok   self-test, s0's replay summary naming the run of s1: s0: a full G4 replay whose summary names run(s) ['/x/dag-21-57-L12-tri-pf74-s1of1920'], not dag-21-57-L12-tri-pf74-s0of1920
+ok   self-test, s0's replay without the stage record of ((10, 15), 'reach'): s0: a full G4 replay with no stage record of 1 audited parent source(s): [((10, 15), 'reach')]
+ok   self-test, s0's stage record of ((10, 15), 'reach') with its counts zeroed: s0: a full G4 replay whose stage record of (10, 15) (reach) says in 0, out 0, status 're-derived', for audited counts (level file, reach, keep) (25401
+ok   self-test, s0's verify/10-15.verify.manifest.json with exit status 1: s0: verify/10-15.verify.manifest.json is not a clean verification of 10-15.reach.g6 (13042 audited records): exit 1, reach 13042 records, seen 13042, 
+ok   self-test, s0 run with the stage verifications off: s0: run-config differs from the fleet's pipeline: {'verify_stages': False}
+ok   self-test, s0's top manifest naming another udenum: s0: 21-57.manifest.json: software udenum sha256 0000000000000000 is not the pinned one
+ok   self-test, s0's 13 prefix cells' evidence moved to s1's copy, their rows removed from its full replay (G5 round 17, finding 1): s0: a full G4 replay with no row for cell 11-18 (28254 audited parents)
+ok   self-test, s0's first seed check failed in its details (identical still true): s0: a full G4 replay whose seed checks of ['1-0'] did not pass in their details
+ok   self-test, s0's reach stage of [10, 15] with k 99: s0: a full G4 replay whose stage record of (10,15) reach says source '10-15.reach.g6', k 99/2, for cell '11-18': not its own file, parameters or consu
+ok   self-test, s0's stage of [10, 15] naming the source 99-99.reach.g6: s0: a full G4 replay whose stage record of (10,15) reach says source '99-99.reach.g6', k 2/2, for cell '11-18': not its own file, parameters or consum
+ok   self-test, s0's top pruning manifest with exit status 1: s0: 21-57.prune.manifest.json is not a clean success bound to the copy's files: exit 1
+ok   self-test, s0's top enumeration manifest with exit status 1: s0: 21-57.manifest.json is not a clean success bound to the copy's files: exit 1
+ok   self-test, s0's verify/13-24.verify.manifest.json naming the stage file of another slice's run: s0: verify manifests of [(13, 24)] name a stage file outside this run (and, for the prefix, outside every full-mode run with this prefix)
+ok   self-test, s0's red control R1 with its baseline not identical, went_red still true (finding 3): s0: a full G4 replay whose red controls ['R1'] are not red by their own recorded outcome
+ok   self-test, s0's red control R3 whose extras are not the dropped member's: s0: a full G4 replay whose red controls ['R3'] are not red by their own recorded outcome
+ok   self-test, s0's full replay with one red control missing: s0: a full G4 replay whose red controls are ['R1', 'R2', 'R4', 'R5a', 'R5b'], not each of ['R1', 'R2', 'R3', 'R4', 'R5a', 'R5b'] once
+ok   self-test, s0's red.json disagreeing with its summary's red controls: s0: a full G4 replay whose red.json is not its summary's red controls
+ok   self-test, s0's top enumeration manifest with its forbidden set's digest zeroed (finding 4): s0: 21-57.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's top enumeration manifest counting a child its level file does not have (finding 4): s0: 21-57.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's top pruning manifest whose checker says REJECT, with a problem (finding 4): s0: 21-57.prune.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's top pruning manifest whose verified counts are not its counts: s0: 21-57.prune.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's verify/13-24.verify.manifest.json with its software pins deleted (finding 5): s0: verify/13-24.verify.manifest.json: software keys None, not the verify manifest's ['run-dag2.py', 'udenum']
+ok   self-test, s0's verify/13-24.verify.manifest.json naming another udenum target, an operation that verifies nothing (finding 1): s0: verify/13-24.verify.manifest.json is not a clean verification of 13-24.keep.g6 (1252 audited records): exit 0, keep 1252 records, seen 1252, parts
+ok   self-test, s0's 20-52.manifest.json with a parent source deleted and its range shortened to match (finding 2): s0: 20-52.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's top pruning manifest claiming one more graph checked and pruned than its files hold (finding 3): s0: 21-57.prune.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's verify/13-24.verify.manifest.json whose parts cite another slice's verification manifests (finding 1): s0: verify/13-24.verify.manifest.json is not a clean verification of 13-24.keep.g6 (1252 audited records): exit 0, keep 1252 records, seen 1252, parts
+ok   self-test, s0's 20-52.manifest.json with a parent source listed twice (finding 2): s0: 20-52.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's 20-52.manifest.json whose parent file is another slice's (finding 2): s0: 20-52.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0 without its level-20 manifests ['20-52.manifest.json', '20-52.prune.manifest.json', '20-53.manifest.json', '20-53.prune.manifest.json', '20-54.manifest.json', '20-54.prune.manifest.json'] (finding 3): s0: manifest files for cells [(21, 57)] are not the top two levels' [(20, 52), (20, 53), (20, 54), (21, 57)]
+ok   self-test, s0's top pruning manifest whose checker ran on another slice's files (finding 4): s0: 21-57.prune.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's red controls on cell 99-999, index -1 (finding 5): s0: a full G4 replay whose red controls ['R1', 'R2', 'R4', 'R5a', 'R5b', 'R3'] do not act on its own replayed cells and parents
+ok   self-test, s0's R3 dropping member 0, one of the 74 (finding 5): s0: a full G4 replay whose red controls ['R3'] do not act on its own replayed cells and parents
+ok   self-test, s0's verify/13-24.verify.manifest.json whose parts' manifests lie outside every run (finding 1): s0: verify/13-24.verify.manifest.json is not a clean verification of 13-24.keep.g6 (1252 audited records): exit 0, keep 1252 records, seen 1252, parts
+ok   self-test, s0's top enumeration manifest whose parent file lies outside every run (finding 1): s0: 21-57.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's top enumeration manifest with another parent-file digest (finding 3): s0: 21-57.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's top pruning manifest whose checker command runs /bin/true (finding 4): s0: 21-57.prune.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, s0's R4 on its cell's last parent, with no parent after it (finding 5): s0: a full G4 replay whose red controls ['R4'] do not act on its own replayed cells and parents
+ok   self-test, s0's R2 dropping one record and finding 102 (finding 5): s0: a full G4 replay whose red controls ['R2'] are not red by their own recorded outcome
+ok   self-test, s0's R4 with a next block of -1 records (G5 round 23, finding 6): s0: a full G4 replay whose red controls ['R4'] are not red by their own recorded outcome
+ok   self-test, s0's partly sampled cell 11-18 comparing 174372 children, more than it holds (finding 5): s0: a full G4 replay whose cells ['11-18'] compare more children than they hold
+ok   self-test, s0's R1 with only_enum2 -1 (G5 round 24, finding 3): s0: a full G4 replay whose red controls ['R1'] are not red by their own recorded outcome
+ok   self-test, s0's R4 whose next block holds more children than its cell: s0: a full G4 replay whose red controls ['R4'] do not act on its own replayed cells and parents
+ok   self-test, s0's sampled red controls on parent 0, which the policy did not draw: s0: a full G4 replay whose red controls ['R1', 'R2', 'R4', 'R5a', 'R5b'] act on a parent the policy did not draw
+ok   self-test, s0's seed check that says it could not be replayed (finding 4): s0: a full G4 replay whose seed checks of ['1-0'] did not pass in their details
+ok   self-test, s0's seed records naming another run: s0: a full G4 replay whose rows or stage records name another run: ['dag-23-65-L12-tri-pf74-s1of1920']
+n/a  self-test, finding 2's control: no complete copy has a partly sampled cell with a shard drawn in full, so the lower bound has nothing to check in this data (not counted)
+ok   self-test, s0's fully sampled cell 11-23 comparing no children (finding 6): s0: a full G4 replay whose fully sampled cells ['11-23'] compare fewer children than the audit records
+ok   self-test, s19's 20-52.manifest.json whose parent digest is not its one nonempty source's (finding 4): s19: 20-52.manifest.json is not a clean success bound to the copy's files: exit 0
+ok   self-test, known graph 0 (kept) dropped from every keep, every slice in: known graph(s) [0] of 5 not kept at (21,57)
+SELF-TEST passed: 78 of 78 red controls caught
+AUDIT: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares
+TARGET-CHECK OK: (21,57): 1920 of 1920 slices complete, G4 PASS 1920; 0 failing, 0 missing; kept at (21,57): 10 distinct graph(s); known: 5 of 5 kept

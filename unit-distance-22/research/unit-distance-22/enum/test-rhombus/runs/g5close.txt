@@ -1,0 +1,322 @@
+landed tools from 4120dd63c: run-dag2.py c1484f2aeff1, verify-chain.py 10055ae823f6; fixed: run-dag2.py 78b66addd192, verify-chain.py d253338569de
+fixture: the runbook, (16,41) --triangles sliced 2 ways at level 12: exit 0; ['[2026-09-26T09:03:40Z] G4 replay of slice s0of2 (full: levels 0-16, the level-10 seeds recomputed in full, red controls; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)', "[2026-09-26T09:04:33Z] G4 replay of slice s0of2 (full): PASS 160 parents sampled (117 processed), 57 production children compared, 0 mismatching, 19 stage files re-derived, seeds 13/13 identical, red controls 6/6 red; 53 s against the run's 18 s", '[2026-09-26T09:04:37Z] G4 replay of slice s1of2 (slice: levels 13-16; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)', "[2026-09-26T09:04:42Z] G4 replay of slice s1of2 (slice): PASS 81 parents sampled (58 processed), 25 production children compared, 0 mismatching, 11 stage files re-derived; 5 s against the run's 3 s"]
+C2 red, the reader's seed-24 fixture, landed: exit 0: COVERAGE exhaustive: all 0 required cells of (23,65) present and checked, their parent sources exactly as L4 a / CHAIN OK
+C2 red, the reader's seed-24 fixture, fixed: exit 1:  / CHAIN FAIL (10 problems)
+      PROBLEM: run-config.json seed level 24 is not in 1..22 (run-dag2.py's range)
+      PROBLEM: reach.json target [23, 65] / seed 24 is not the run's [23, 65] / 22
+      PROBLEM: reach.json table does not follow from the target's root by the L4 recursion
+      PROBLEM: reach.json schade_windows are not the target's Schade windows
+C2 valid control: slice 0, --check: exit 0: COVERAGE exhaustive: all 20 required cells of (16,41) from seed level 10 present and checked, their parent sou / CHAIN OK
+C2 valid control: slice 0, --check, pinned: exit 0: COVERAGE exhaustive: all 20 required cells of (16,41) from seed level 10 present and checked, their parent sou / CHAIN OK
+C2 red: slice 0 pinned to seed 9: exit 1:  / CHAIN FAIL (1 problems)
+      PROBLEM: run-config.json seed level 10 is not the pinned 9
+C2 red: slice 0 pinned to target (16,40): exit 1:  / CHAIN FAIL (1 problems)
+      PROBLEM: run-config.json target [16, 41] is not the pinned [16, 40]
+C2 red: slice 0 pinned to 3 slices: exit 1:  / CHAIN FAIL (1 problems)
+      PROBLEM: run-config.json slice [12, 0, 2] is not a slice of the pinned 3 at level 12
+C3 valid control, the two untouched summaries, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C3 valid control, fixed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, eve / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C3 (a): (12,24) holds 74; slice 0 claims 75 in 1 entries; slice 1's level 13 resumed
+C3 red (a), landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C3 red (a), fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 5 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s0of2: (13,28): its slice of (12,24) holds 75 records, the stage file 74
+      PROBLEM: fleet (16,41): the 1 recorded shares of (12,24) add up to 75, the cell holds 74
+      UNRESOLVED: slice 1: 3 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 3})
+      UNRESOLVED: fleet (16,41): slices [1] record no share of (12,24)
+      UNRESOLVED: fleet (16,41): slices [1] record no share of (12,25)
+C3 (b): shares 80 (1 entries) and -6 (1 entries) of (12,24)
+C3 red (b), landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C3 red (b), fixed: exit 1: COVERAGE (summary only) FAIL (3 problems, 1 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: s0of2: (13,28): its slice of (12,24) holds 80 records, the stage file 74
+      PROBLEM: s1of2: (13,28): counts that are not nonnegative integers: [('records of [12, 24]', -6)]
+      PROBLEM: fleet (16,41): the 1 recorded shares of (12,24) add up to 80, the cell holds 74
+      UNRESOLVED: fleet (16,41): slices [1] record no share of (12,24)
+C4 (a): slice 1 has the empty target (top keep sizes {0: 1, 1: 0}); it alone, declared [12,0,0], level 13 resumed
+C4 red (a), landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C4 red (a), fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 1 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: s1of2: run-config.json slice [12, 0, 0] is not [level, index, count] with count >= 1, 0 <= index < count and seed level <= level < target n
+      UNRESOLVED: s1of2: 11 resumed cells record no parent choice in the summary or its pushed history (levels {11: 4, 12: 4, 13: 3})
+C4 red (a), fixed, pinned: exit 1: COVERAGE (summary only) FAIL (2 problems, 1 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s1of2: run-config.json slice [12, 0, 0] is not a slice of the pinned 2 at level 12
+      PROBLEM: s1of2: run-config.json slice [12, 0, 0] is not [level, index, count] with count >= 1, 0 <= index < count and seed level <= level < target n
+      UNRESOLVED: s1of2: 11 resumed cells record no parent choice in the summary or its pushed history (levels {11: 4, 12: 4, 13: 3})
+C4 valid control, both result directories, pinned, hashes and G4 required: exit 3: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, eve / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C4 red (b) a prefix file's hash changed in slice 1, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C4 red (b) a prefix file's hash changed in slice 1, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (16,41): 1 prefix files differ between slices or workers, e.g. [('12-24.keep.g6', {'35b752cd6002': ['s0of2'], '000000000000': ['s1of2']})]
+C4 red (c) a copy of slice 0 from another worker, one prefix hash changed, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C4 red (c) a copy of slice 0 from another worker, one prefix hash changed, fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: fleet (16,41): 1 prefix files differ between slices or workers, e.g. [('11-20.reach.g6', {'ddc653cc55aa': ['s0of2', 's1of2'], 'ffffffffffff': ['other-worker/s0of2']})]
+      PROBLEM: fleet (16,41): the copies of slice 0 (s0of2, other-worker/s0of2) differ
+C4 red (d) slice 1's G4 result FAIL, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C4 red (d) slice 1's G4 result FAIL, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: s1of2: G4 replay says 'FAIL' but its evidence gives PASS: no fault found (its reasons [])
+C4 red (e) slice 0's G4 record of its (12,24) slice not re-derived, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C4 red (e) slice 0's G4 record of its (12,24) slice not re-derived, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: s0of2: G4's 12-24.slice-0-of-2.g6 (differs, 34 records re-derived as 34 from 74) is not the slice's share of 34 records of 74
+C4 red (f) slice 0's G4 record of its (12,24) slice size changed, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C4 red (f) slice 0's G4 record of its (12,24) slice size changed, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: s0of2: G4's 12-24.slice-0-of-2.g6 (re-derived, 34 records re-derived as 999 from 74) is not the slice's share of 34 records of 74
+C4 red (g) slice 1's replay/ missing, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C4 red (g) slice 1's replay/ missing, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: s1of2: no G4 replay (replay/fingerprint.json)
+C4 red (h) slice 1's hashes.json naming slice 0, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed, complete and recorded with the parents L4 a / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C4 red (h) slice 1's hashes.json naming slice 0, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: s1of2: hashes.json slice [12, 0, 2] is not run-config.json's [12, 1, 2]
+C4 red (i) the fleet pinned at 3 slices, fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s0of2: run-config.json slice [12, 0, 2] is not a slice of the pinned 3 at level 12
+      PROBLEM: s1of2: run-config.json slice [12, 1, 2] is not a slice of the pinned 3 at level 12
+C6 an exact duplicate of slice 0, original first, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, eve / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C6 an exact duplicate of slice 0, original first, fixed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, eve / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C6 an exact duplicate of slice 0, duplicate first, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, eve / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C6 an exact duplicate of slice 0, duplicate first, fixed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, eve / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C6 a duplicate of slice 0 claiming 35 of (12,24): 1 entries changed; its hashes.json and cell counts kept, its G4 stage record matched
+C6 a duplicate of slice 0 claiming 35 of (12,24), original first, landed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, eve / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C6 a duplicate of slice 0 claiming 35 of (12,24), original first, fixed: exit 1: COVERAGE (summary only) FAIL (3 problems, 0 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: fleet (16,41): the copies of slice 0 record different parents for (13, 28): (45, (34, 11)) and (46, (35, 11)) (other-worker/s0of2)
+      PROBLEM: fleet (16,41): the copies of slice 0 record different shares of (12,24): 34 and 35 (other-worker/s0of2)
+      PROBLEM: other-worker/s0of2: G4's 12-24.slice-0-of-2.g6 (re-derived, 35 records re-derived as 35 from 74) is not the slice's share of 34 records of 74
+C6 a duplicate of slice 0 claiming 35 of (12,24), duplicate first, landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (16,41): the 2 recorded shares of (12,24) add up to 75, the cell holds 74
+C6 a duplicate of slice 0 claiming 35 of (12,24), duplicate first, fixed: exit 1: COVERAGE (summary only) FAIL (6 problems, 0 unresolved) / CHAIN FAIL (6 problems)
+      PROBLEM: fleet (16,41): the copies of slice 0 record different parents for (13, 28): (46, (35, 11)) and (45, (34, 11)) (s0of2)
+      PROBLEM: fleet (16,41): the copies of slice 0 record different shares of (12,24): 35 and 34 (s0of2)
+      PROBLEM: other-worker/s0of2: G4 replayed (13, 28) with 45 parents, the accepted records say 46
+      PROBLEM: s0of2: G4 replayed (13, 28) with 45 parents, the accepted records say 46
+C6 complementary copies of slice 0: copy A records the shares [24, 25] (only (13, 28) fresh), copy B [25, 26, 27] ([(13, 29), (13, 30)] fresh); only A records [24]
+C6 complementary copies, landed: exit 4: COVERAGE (summary only) UNRESOLVED (1): the summaries contradict nothing, but they do not record everything co / CHAIN PARTIAL (summary only; coverage unresolved in 1 places)
+      UNRESOLVED: fleet (16,41): slices [0] record no share of (12,24)
+C6 complementary copies, fixed: exit 3: COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, eve / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+C7 fixture: a copy of the fleet's f01-jjpzl7/s0of1920 result directory, whose share of (12,20) is 734
+C7 valid control, the untouched record, landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C7 valid control, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C7 red, a seed level not identical, all_identical false, PASS kept, landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C7 red, a seed level not identical, all_identical false, PASS kept, fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s0of1920: G4 replay says 'PASS' but its evidence gives FAIL: seed levels that differ: 1-0 (its reasons [])
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C7 red, EMPTY, exit 1, nothing sampled, for the slice holding 734 graphs of (12,20), landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C7 red, EMPTY, exit 1, nothing sampled, for the slice holding 734 graphs of (12,20), fixed: exit 1: COVERAGE (summary only) FAIL (17 problems, 0 unresolved) / CHAIN FAIL (17 problems)
+      PROBLEM: s0of1920: G4 replay says 'EMPTY' but its evidence gives FAIL: aggregate sampled_parents 0 is not the 1944 its details give; aggregate processed_parents 0 is not the 1297 its details give; red controls in a slice-mode replay (its reasons [])
+      PROBLEM: s0of1920: G4 slice-mode replay of the prefix cell (11, 17)
+      PROBLEM: s0of1920: G4 slice-mode replay of the prefix cell (11, 18)
+      PROBLEM: s0of1920: G4 slice-mode replay of the prefix cell (11, 19)
+C9 valid control, the untouched fleet record, landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C9 valid control, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C9 red, only per_cell[0].mismatches set to 1, landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C9 red, only per_cell[0].mismatches set to 1, fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s0of1920: G4 replay says 'PASS' but its evidence gives FAIL: aggregate mismatching_parents 0 is not the 1 its details give; per_level is not the per-level sums of per_cell; 1 mismatching parents in per_cell; aggregate all_identical True is not the False its de
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C9 red, only red_controls[0].went_red set to false, landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C9 red, only red_controls[0].went_red set to false, fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s0of1920: G4 replay says 'PASS' but its evidence gives FAIL: aggregate red_all True is not the False its red controls give; red controls that did not go red: R1 (its reasons [])
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C8 fixture: slice 1's 13-28 (25 records): counts tu 11, tri_tu 1, survivors 14, tri_survivors 13
+C8 valid control, untouched: landed reuses True, fixed reuses True
+C8 red, counts.tu +1, counts.tri_tu -1, counts.survivors -1 (tri_survivors kept): landed reuses True, fixed reuses False
+C10 fixture: the level-12 keep files hold 102 records; of 128 slices, slice 0 is not empty (run first: the full G4 replay) and slice 4 is empty
+C10 runbook exit 0: ['[2026-09-26T09:05:25Z] G4 replay of slice s0of128 (full: levels 0-16, the level-10 seeds recomputed in full, red controls; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)', "[2026-09-26T09:05:52Z] G4 replay of slice s0of128 (full): PASS 62 parents sampled (38 processed), 19 production children compared, 0 mismatching, 19 stage files re-derived, seeds 13/13 identical, red controls 6/6 red; 27 s against the run's 15 s", '[2026-09-26T09:05:55Z] G4 replay of slice s4of128 (slice: levels 13-16; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)', "[2026-09-26T09:05:55Z] G4 replay of slice s4of128 (slice): EMPTY 0 parents sampled (0 processed), 0 production children compared, 0 mismatching, 11 stage files re-derived; 0 s against the run's 3 s"]
+C10 the empty slice's G4 fingerprint: result EMPTY, mode slice, exit 1, sampled 0, stages 11
+C10 positive control, the runbook's own EMPTY slice, landed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: all_identical False (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C10 positive control, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C10 summarize([], ...): all_identical False, stages 11 ok True, sampled 0
+C10 positive control, summarize([], ...) as the reader built it, landed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: all_identical False (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C10 positive control, summarize([], ...), fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C10 red, the empty slice's summary recording a share of 1 graph of (12,24) (1 entries), landed: exit 1: COVERAGE (summary only) FAIL (3 problems, 0 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: all_identical False (its reasons [])
+      PROBLEM: s4of128: G4's 12-24.slice-4-of-128.g6 (re-derived, 0 records re-derived as 0 from 74) is not the summary's share of 1 records of 74
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C10 red, fixed: exit 1: COVERAGE (summary only) FAIL (3 problems, 0 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [[13, 28]], shares {24: 1, 25: 0, 26: 0, 27: 0}, unconfirmed [] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      PROBLEM: red/s4of128: G4's 12-24.slice-4-of-128.g6 (re-derived, 0 records re-derived as 0 from 74) is not the slice's share of 1 records of 74
+C11 (13,28) of the empty slice resumed, its fresh summary kept as history/original.json: cells recovered 1
+C11 red at the landed code, accepted when fixed: landed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {24: 0, 25: 0, 26: 0, 27: 0}, unconfirmed [[13, 28]] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C11 fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C11 red, (13,28) resumed with no history, landed: exit 1: COVERAGE (summary only) FAIL (2 problems, 2 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {25: 0, 26: 0, 27: 0}, unconfirmed [[13, 28]] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      UNRESOLVED: slice 4: 1 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 1})
+      UNRESOLVED: fleet (16,41): slices [4] record no share of (12,24)
+C11 red, no history, fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 2 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      PROBLEM: c11/s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay of a slice that is not shown empty with every copy's records: unconfirmed [[13, 28]], cells with parents [], shares {}
+      UNRESOLVED: slice 4: 1 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 1})
+      UNRESOLVED: fleet (16,41): slices [4] record no share of (12,24)
+C11 red, a history record with parents in (13,28), landed: exit 1: COVERAGE (summary only) FAIL (3 problems, 0 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {24: 1, 25: 0, 26: 0, 27: 0}, unconfirmed [[13, 28]] (its reasons [])
+      PROBLEM: s4of128: G4's 12-24.slice-4-of-128.g6 (re-derived, 0 records re-derived as 0 from 74) is not the summary's share of 1 records of 74
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C11 red, history with parents, fixed: exit 1: COVERAGE (summary only) FAIL (3 problems, 0 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [[13, 28]], shares {24: 1, 25: 0, 26: 0, 27: 0}, unconfirmed [] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      PROBLEM: c11/s4of128: G4's 12-24.slice-4-of-128.g6 (re-derived, 0 records re-derived as 0 from 74) is not the slice's share of 1 records of 74
+C12 the reader's complementary copies of the EMPTY slice, order A, B, landed: exit 1: COVERAGE (summary only) FAIL (3 problems, 0 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {24: 0, 25: 0}, unconfirmed [[13, 29], [13, 30]] (its reasons [])
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {25: 0, 26: 0, 27: 0}, unconfirmed [[13, 28]] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C12 the reader's complementary copies of the EMPTY slice, order A, B, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C12 the reader's complementary copies of the EMPTY slice, order B, A, landed: exit 1: COVERAGE (summary only) FAIL (3 problems, 0 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {25: 0, 26: 0, 27: 0}, unconfirmed [[13, 28]] (its reasons [])
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {24: 0, 25: 0}, unconfirmed [[13, 29], [13, 30]] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C12 the reader's complementary copies of the EMPTY slice, order B, A, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C12 red, neither copy records (13,28), order A, B, landed: exit 1: COVERAGE (summary only) FAIL (3 problems, 2 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {26: 0, 27: 0}, unconfirmed [[13, 28], [13, 29]] (its reasons [])
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {25: 0, 26: 0, 27: 0}, unconfirmed [[13, 28], [13, 30]] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      UNRESOLVED: slice 4: 1 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 1})
+      UNRESOLVED: fleet (16,41): slices [4] record no share of (12,24)
+C12 red, neither copy records (13,28), order A, B, fixed: exit 1: COVERAGE (summary only) FAIL (3 problems, 2 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      PROBLEM: c12/s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay of a slice that is not shown empty with every copy's records: unconfirmed [[13, 28]], cells with parents [], shares {}
+      PROBLEM: c12/s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay of a slice that is not shown empty with every copy's records: unconfirmed [[13, 28]], cells with parents [], shares {}
+      UNRESOLVED: slice 4: 1 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 1})
+      UNRESOLVED: fleet (16,41): slices [4] record no share of (12,24)
+C12 red, neither copy records (13,28), order B, A, landed: exit 1: COVERAGE (summary only) FAIL (3 problems, 2 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {25: 0, 26: 0, 27: 0}, unconfirmed [[13, 28], [13, 30]] (its reasons [])
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {26: 0, 27: 0}, unconfirmed [[13, 28], [13, 29]] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      UNRESOLVED: slice 4: 1 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 1})
+      UNRESOLVED: fleet (16,41): slices [4] record no share of (12,24)
+C12 red, neither copy records (13,28), order B, A, fixed: exit 1: COVERAGE (summary only) FAIL (3 problems, 2 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      PROBLEM: c12/s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay of a slice that is not shown empty with every copy's records: unconfirmed [[13, 28]], cells with parents [], shares {}
+      PROBLEM: c12/s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay of a slice that is not shown empty with every copy's records: unconfirmed [[13, 28]], cells with parents [], shares {}
+      UNRESOLVED: slice 4: 1 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {13: 1})
+      UNRESOLVED: fleet (16,41): slices [4] record no share of (12,24)
+C12 red, complementary copies, B recording parents in (13,29), order A, B, landed: exit 1: COVERAGE (summary only) FAIL (5 problems, 0 unresolved) / CHAIN FAIL (5 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {24: 0, 25: 0}, unconfirmed [[13, 29], [13, 30]] (its reasons [])
+      PROBLEM: s4of128: (13,30): its slice of (12,27) is recorded with 0 and 1 records
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [[13, 29]], shares {25: 0, 26: 0, 27: 1}, unconfirmed [[13, 28]] (its reasons [])
+      PROBLEM: s4of128: G4's 12-27.slice-4-of-128.g6 (re-derived, 0 records re-derived as 0 from 1) is not the summary's share of 1 records of 1
+C12 red, complementary copies, B recording parents in (13,29), order A, B, fixed: exit 1: COVERAGE (summary only) FAIL (6 problems, 0 unresolved) / CHAIN FAIL (6 problems)
+      PROBLEM: s4of128: (13,30): its slice of (12,27) is recorded with 0 and 1 records
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [[13, 29]], shares {25: 0, 26: 0, 27: 1}, unconfirmed [[13, 28]] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      PROBLEM: c12/s4of128: G4's 12-27.slice-4-of-128.g6 (re-derived, 0 records re-derived as 0 from 1) is not the slice's share of 1 records of 1
+C12 red, complementary copies, B recording parents in (13,29), order B, A, landed: exit 1: COVERAGE (summary only) FAIL (5 problems, 0 unresolved) / CHAIN FAIL (5 problems)
+      PROBLEM: s4of128: (13,30): its slice of (12,27) is recorded with 0 and 1 records
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [[13, 29]], shares {25: 0, 26: 0, 27: 1}, unconfirmed [[13, 28]] (its reasons [])
+      PROBLEM: s4of128: G4's 12-27.slice-4-of-128.g6 (re-derived, 0 records re-derived as 0 from 1) is not the summary's share of 1 records of 1
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {24: 0, 25: 0}, unconfirmed [[13, 29], [13, 30]] (its reasons [])
+C12 red, complementary copies, B recording parents in (13,29), order B, A, fixed: exit 1: COVERAGE (summary only) FAIL (6 problems, 0 unresolved) / CHAIN FAIL (6 problems)
+      PROBLEM: s4of128: (13,30): its slice of (12,27) is recorded with 0 and 1 records
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [[13, 29]], shares {25: 0, 26: 0, 27: 1}, unconfirmed [[13, 28]] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      PROBLEM: c12/s4of128: G4's 12-27.slice-4-of-128.g6 (re-derived, 0 records re-derived as 0 from 1) is not the slice's share of 1 records of 1
+C12 red, copies whose shares of (12,24) disagree (0 and 1), order A, B, landed: exit 1: COVERAGE (summary only) FAIL (5 problems, 0 unresolved) / CHAIN FAIL (5 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {24: 0, 25: 0}, unconfirmed [[13, 29], [13, 30]] (its reasons [])
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [[13, 28]], shares {24: 1, 25: 0, 26: 0, 27: 0}, unconfirmed [] (its reasons [])
+      PROBLEM: s4of128: G4's 12-24.slice-4-of-128.g6 (re-derived, 0 records re-derived as 0 from 74) is not the summary's share of 1 records of 74
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C12 red, copies whose shares of (12,24) disagree (0 and 1), order A, B, fixed: exit 1: COVERAGE (summary only) FAIL (4 problems, 0 unresolved) / CHAIN FAIL (4 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [[13, 28]], shares {24: 1, 25: 0, 26: 0, 27: 0}, unconfirmed [] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      PROBLEM: fleet (16,41): the copies of slice 4 record different parents for (13, 28): (0, (0, 0)) and (1, (1, 0)) (c12/s4of128)
+      PROBLEM: fleet (16,41): the copies of slice 4 record different shares of (12,24): 0 and 1 (c12/s4of128)
+C12 red, copies whose shares of (12,24) disagree (0 and 1), order B, A, landed: exit 1: COVERAGE (summary only) FAIL (5 problems, 0 unresolved) / CHAIN FAIL (5 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [[13, 28]], shares {24: 1, 25: 0, 26: 0, 27: 0}, unconfirmed [] (its reasons [])
+      PROBLEM: s4of128: G4's 12-24.slice-4-of-128.g6 (re-derived, 0 records re-derived as 0 from 74) is not the summary's share of 1 records of 74
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [], shares {24: 0, 25: 0}, unconfirmed [[13, 29], [13, 30]] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C12 red, copies whose shares of (12,24) disagree (0 and 1), order B, A, fixed: exit 1: COVERAGE (summary only) FAIL (7 problems, 0 unresolved) / CHAIN FAIL (7 problems)
+      PROBLEM: s4of128: G4 replay says 'EMPTY' but its evidence gives FAIL: an empty replay (exit 1, nothing sampled) of a slice that is not shown empty: cells with parents [[13, 28]], shares {24: 1, 25: 0, 26: 0, 27: 0}, unconfirmed [] (its reasons [])
+      PROBLEM: fleet (16,41) sliced 128 ways at level 12: 126 slices have no summary ([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      PROBLEM: fleet (16,41): the copies of slice 4 record different parents for (13, 28): (1, (1, 0)) and (0, (0, 0)) (c12/s4of128)
+      PROBLEM: fleet (16,41): the copies of slice 4 record different shares of (12,24): 1 and 0 (c12/s4of128)
+C12 red, the fleet record's G4 per_cell 11-17 parents_in_cell raised by one (per_level too), landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C12 red, per_cell parents, fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+      PROBLEM: s0of1920: G4 replayed (11, 17) with 31128 parents, the accepted records say 31127
+C13 (a) copy A: (11,17) replayed with 31128 parents and resumed; copy B untouched; order A, B; landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C13 (a) order A, B, fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+      PROBLEM: copy-a/s0of1920: G4 replayed (11, 17) with 31128 parents, the accepted records say 31127
+C13 (a) copy A: (11,17) replayed with 31128 parents and resumed; copy B untouched; order B, A; landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C13 (a) order B, A, fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+      PROBLEM: copy-a/s0of1920: G4 replayed (11, 17) with 31128 parents, the accepted records say 31127
+C13 (b) copy A alone, landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 1 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+      UNRESOLVED: fleet (23,65): the parents of the prefix cells [[11, 17]] are recorded by no slice summary nor its pushed history
+C13 (b) copy A alone, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 2 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+      UNRESOLVED: s0of1920: G4 replayed (11, 17) with 31128 parents, and no copy of the slice nor any slice records its parents
+      UNRESOLVED: fleet (23,65): the parents of the prefix cells [[11, 17]] are recorded by no slice summary nor its pushed history
+C13 (c) slice s1of1920 of f02-1w2dw0: (11,17) resumed and replayed with 31128 parents, audited with f01's untouched s0of1920; landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1918 slices have no summary ([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+C13 (c) fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1918 slices have no summary ([2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21] ...)
+      PROBLEM: f02-1w2dw0/s1of1920: G4 replayed (11, 17) with 31128 parents, the accepted records say 31127
+C13 (d) copy A records no share and its G4 record of the (12,20) slice file is one larger; landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C13 (d) fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+      PROBLEM: copy-a/s0of1920: G4's 12-20.slice-0-of-1920.g6 (re-derived, 735 records re-derived as 735 from 1384579) is not the slice's share of 734 records of 1384579
+C13 valid control, two untouched copies, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C14 (a) per_cell 11-17 (31127 parents, 32 sampled) set to parents_in_cell 31127.0 and 31128 sampled, the sampled totals moved with it; landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C14 (a) fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s0of1920: G4 per_cell row of (11, 17): parents_in_cell 31127.0 and sampled 31128 are not both nonnegative integers
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C14 (b) per_cell 16-36 (1 parents, 1 sampled) set to parents_in_cell True and 2 sampled, the sampled totals moved with it; landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C14 (b) fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s0of1920: G4 per_cell row of (16, 36): parents_in_cell True and sampled 2 are not both nonnegative integers
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C14 (c) per_cell 16-36 (1 parents, 1 sampled) set to parents_in_cell 1.0 and 2 sampled, the sampled totals moved with it; landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C14 (c) fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 0 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s0of1920: G4 per_cell row of (16, 36): parents_in_cell 1.0 and sampled 2 are not both nonnegative integers
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C14 (d) valid control, an untouched copy, fixed: exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C14 (e) the target entry written (23, 65.0) with 1 child; landed (its report: 0 children at the target): exit 1: COVERAGE (summary only) FAIL (1 problems, 0 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C14 (e) fixed: exit 1: COVERAGE (summary only) FAIL (3 problems, 0 unresolved) / CHAIN FAIL (3 problems)
+      PROBLEM: s0of1920: run-summary.json level entries whose n and m are not nonnegative integers: [(23, 65.0)]
+      PROBLEM: s0of1920: 1 required cell(s) of (23,65) not in run-summary.json: [[23, 65]]
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+C14 (f) the source level [12, 20] of [(13, 23)] written [12, 20.0], the G4 record of the (12,20) slice file one larger; landed: exit 1: COVERAGE (summary only) FAIL (1 problems, 1 unresolved) / CHAIN FAIL (1 problems)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+      UNRESOLVED: s0of1920: G4 re-derived no 12-20.0.slice-0-of-1920.g6 (the share of (12,20.0))
+C14 (f) fixed: exit 1: COVERAGE (summary only) FAIL (2 problems, 2 unresolved) / CHAIN FAIL (2 problems)
+      PROBLEM: s0of1920: (13,23): recorded parents [20, 21] / [[12, 20.0], [12, 21]] are not the allowed [20, 21] (L4 from the target)
+      PROBLEM: fleet (23,65) sliced 1920 ways at level 12: 1919 slices have no summary ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] ...)
+      UNRESOLVED: s0of1920: G4 replayed (13, 23) with 972 parents, and no copy of the slice records its parents
+      UNRESOLVED: fleet (23,65): slices [0] record no share of (12,20)
+C1 fixture (13,29) of slice 0: 7 records, keep 6; Lj??GPNHOetaeb unknown and kept True; L?Kw_fbaaKpIPR tu
+C1 valid control, (13,29) untouched: landed reuses True, fixed reuses True
+C1 red: keep = input order with Lj??GPNHOetaeb out and L?Kw_fbaaKpIPR in (6 records), only the keep hash updated: landed reuses True, fixed reuses False
+C1 end to end: run-dag2.py --resume exit 0; (13,29) prune step rerun True; the keep file holds Lj??GPNHOetaeb again and not L?Kw_fbaaKpIPR: True
+C1 end to end: verify-chain --check after the rerun: exit 0: CHAIN OK
+C5 certificate files by size: {0: {'12-24': 483, '12-25': 79, '12-26': 6, '12-27': 1, '13-28': 16, '13-29': 7, '13-30': 1, '14-32': 16, '14-33': 2, '15-36': 2, '15-37': 1, '16-41': 1}, 1: {'12-24': 483, '12-25': 79, '12-26': 6, '12-27': 1, '13-28': 25, '13-29': 0, '13-30': 0, '14-32': 0, '14-33': 0, '15-36': 0, '15-37': 0, '16-41': 0}}; 25-record cells: [(1, '13-28')]
+C5 red, counts.tu alone changed, slice 0's (13,29): landed reuses True, fixed reuses False
+C5 red, ACCEPT tu and verified tu both 999 on the 25-record cell, slice 1's 13-28: landed reuses True, fixed reuses False
+C5 red, target (16,40) in the manifest and the run, below u(16) <= 41, slice 0's (13,29): landed reuses True, fixed reuses False
+C5 valid control, slice 0: the fixed code reuses 12 of 12 untouched prune steps
+C5 valid control, slice 1: the fixed code reuses 12 of 12 untouched prune steps
+G5CLOSE PASS

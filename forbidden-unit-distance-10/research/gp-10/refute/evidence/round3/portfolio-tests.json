@@ -1,0 +1,73 @@
+[
+  {
+    "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-portfolio-1",
+    "records": 1,
+    "refuted": 1,
+    "forbidden_limit": 0,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "seconds": 0.0943440468981862,
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "detail": {
+      "basis_size": 1,
+      "helper_rows": 8,
+      "sat_pairs": 4,
+      "positive_targets": 1,
+      "method": "portfolio",
+      "seconds": 0.4513999284245074,
+      "limit": 5
+    },
+    "type": "null"
+  },
+  {
+    "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-portfolio-4",
+    "records": 1,
+    "refuted": 1,
+    "forbidden_limit": 0,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "seconds": 0.1174408053047955,
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "detail": {
+      "basis_size": 16,
+      "helper_rows": 13,
+      "sat_pairs": 3,
+      "positive_targets": 2,
+      "method": "portfolio",
+      "seconds": 0.1872314102947712,
+      "limit": 5
+    },
+    "type": "real"
+  },
+  {
+    "safe_graph": "prism",
+    "detail": {
+      "method": "portfolio",
+      "seconds": 1.0019473391585052,
+      "limit": 1,
+      "reason": "Deadline: graph time limit"
+    }
+  },
+  {
+    "safe_graph": "petersen",
+    "detail": {
+      "method": "portfolio",
+      "seconds": 1.0025270907208323,
+      "limit": 1,
+      "reason": "Deadline: graph time limit"
+    }
+  },
+  {
+    "safe_graph": "spindle",
+    "detail": {
+      "reason": "no certifiable target in Groebner basis",
+      "basis_size": 15,
+      "helper_rows": 12,
+      "sat_pairs": 2,
+      "positive_targets": 0,
+      "method": "portfolio",
+      "seconds": 0.042366134002804756,
+      "limit": 1
+    }
+  }
+]

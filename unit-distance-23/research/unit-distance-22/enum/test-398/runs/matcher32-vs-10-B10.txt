@@ -1,0 +1,3 @@
+hosts B10.g6: matcher10 removed 509, matcher32 removed 509; survivors 32653 / 32653; removed sets, witnesses and survivor order identical: True
+RED CONTROL went red: matcher32 without member 74 removed 508
+RESULT: PASS

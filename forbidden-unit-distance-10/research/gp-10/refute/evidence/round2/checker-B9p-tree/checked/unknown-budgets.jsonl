@@ -1,0 +1,20 @@
+{"g6": "H?dPdLi", "budget": {"initial_rank": 3, "l3_triples": 729, "limit": 2.5, "method": "tree", "moves": {"L3": 1}, "seconds": 0.8660023491829634, "states": 3, "stops": {"no_move_no_embedding": 2}}, "reason": "exhausted"}
+{"g6": "HGEAXjw", "budget": {"initial_rank": 2, "l3_triples": 1461, "limit": 2.5, "method": "tree", "moves": {"L3": 3}, "seconds": 2.3873037570156157, "states": 7, "stops": {"no_move_no_embedding": 4}}, "reason": "exhausted"}
+{"g6": "HOOo}Rp", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5122209852561355}, "reason": "Deadline: graph time limit"}
+{"g6": "HQ`F_wl", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5138404830358922}, "reason": "Deadline: graph time limit"}
+{"g6": "H_CfKxw", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5123391458764672}, "reason": "Deadline: graph time limit"}
+{"g6": "H_hP`SV", "budget": {"initial_rank": 4, "l3_triples": 729, "limit": 2.5, "method": "tree", "moves": {"L3": 1}, "seconds": 0.7263443302363157, "states": 3, "stops": {"no_move_no_embedding": 2}}, "reason": "exhausted"}
+{"g6": "H`?NeW{", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5120958420448005}, "reason": "Deadline: graph time limit"}
+{"g6": "H`QBpiL", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.510079676285386}, "reason": "Deadline: graph time limit"}
+{"g6": "H``Axih", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5087901037186384}, "reason": "Deadline: graph time limit"}
+{"g6": "Hg?X[rp", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5101937516592443}, "reason": "Deadline: graph time limit"}
+{"g6": "HkCe`WN", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5130369472317398}, "reason": "Deadline: graph time limit"}
+{"g6": "Hm__XKZ", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.516219047829509}, "reason": "Deadline: graph time limit"}
+{"g6": "Hp?Gi^w", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.510779774747789}, "reason": "Deadline: graph time limit"}
+{"g6": "HpO]@cN", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5142455738969147}, "reason": "Deadline: graph time limit"}
+{"g6": "Hp`@iWZ", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5113389287143946}, "reason": "Deadline: graph time limit"}
+{"g6": "HqGEhW\\", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.509103626012802}, "reason": "Deadline: graph time limit"}
+{"g6": "HqGRSgN", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5168926320038736}, "reason": "Deadline: graph time limit"}
+{"g6": "Hr?MPgN", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.515024134889245}, "reason": "Deadline: graph time limit"}
+{"g6": "Hr_@iWN", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5132307806052268}, "reason": "Deadline: graph time limit"}
+{"g6": "H{O_okN", "budget": {"limit": 2.5, "method": "tree", "reason": "Deadline: graph time limit", "seconds": 2.5099808848463}, "reason": "Deadline: graph time limit"}

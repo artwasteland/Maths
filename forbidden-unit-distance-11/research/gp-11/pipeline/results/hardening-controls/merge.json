@@ -1,0 +1,1 @@
+{"after_import":{"embedded":2,"refuted":2,"unknown":0},"before_import":{"embedded":0,"refuted":0,"unknown":2},"cross_shard_pointer_types":["sub","super"],"duplicate_union":"shard_union_duplicate","incomplete_union":"shard_union_coverage","positive_after":"ACCEPT","status":"PASS","valid_json_bundle_limits":["bundle_record_count","record_size_cap"]}

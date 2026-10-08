@@ -1,0 +1,32 @@
+ok  udenum set 74, forbidden-74.json: exit 0: {"forbidden_graphs":74,"patterns":635,"size_distribution":{"2":61,"3":413,"4":130,"5":26,"6":4,"7":1}}
+ok  udenum set 398, forbidden-398.json: exit 0: {"forbidden_graphs":398,"patterns":3875,"size_distribution":{"2":251,"3":2474,"4":920,"5":192,"6":34,"7":4}}
+ok  udfilter set 74, forbidden-74.json: exit 0: {"g6":"C~","verdict":"forbidden","witness":{"index":0,"map":[0,1,2,3]}}
+ok  udfilter set 398, forbidden-398.json: exit 0: {"g6":"C~","verdict":"forbidden","witness":{"index":0,"map":[0,1,2,3]}}
+ok  udenum set 398 given forbidden-74.json: exit 2: udenum: forbidden JSON sha256 ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a is not the pinned 8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed5
+ok  udenum set 398 given forbidden-398.json plus a newline: exit 2: udenum: forbidden JSON sha256 8e77c57031985682c363ce6eeb3a74703a46c903bed716afc2e5ab3d2c51dda6 is not the pinned 8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed5
+ok  udfilter set 398 given forbidden-74.json: exit 2: udfilter: forbidden JSON sha256 ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a is not the pinned forbidden-398.json
+ok  udfilter set 398 given forbidden-398.json plus a newline: exit 2: udfilter: forbidden JSON sha256 8e77c57031985682c363ce6eeb3a74703a46c903bed716afc2e5ab3d2c51dda6 is not the pinned forbidden-398.json
+ok  udenum --forbidden-set 75: exit 2: udenum: --forbidden-set must be 74 or 398
+ok  udfilter -s 75: exit 2: usage: <repo>/.claude/worktrees/agent-aef7ff2db55129c43/research/unit-distance-22/filter/udfilter [-s 74|398] [-f forbidden.json] [-t t
+ok  udenum set 74 on the 398 file: new exit 2 'udenum: bad forbidden edge' | old exit 2 'udenum: bad forbidden edge'
+ok  udfilter set 74 on the 398 file: new exit 2 'udfilter: invalid forbidden JSON' | old exit 2 'udfilter: invalid forbidden JSON'
+ok  udenum set 74 on 73 graphs: new exit 2 'udenum: forbidden JSON does not contain 74 graphs' | old exit 2 'udenum: forbidden JSON does not contain 74 graphs'
+ok  udfilter set 74 on 73 graphs: new exit 2 'udfilter: forbidden JSON does not contain 74 patterns' | old exit 2 'udfilter: forbidden JSON does not contain 74 patterns'
+ok  udenum set 74 on 81 graphs: new exit 2 'udenum: too many forbidden graphs' | old exit 2 'udenum: too many forbidden graphs'
+ok  udfilter set 74 on 81 graphs: new exit 2 'udfilter: forbidden JSON does not contain 74 patterns' | old exit 2 'udfilter: forbidden JSON does not contain 74 patterns'
+ok  udenum set 74 on a duplicate edge: new exit 2 'udenum: duplicate forbidden edge' | old exit 2 'udenum: duplicate forbidden edge'
+ok  udfilter set 74 on a duplicate edge: new exit 0 '{"g6":"C~","verdict":"pass"}' | old exit 0 '{"g6":"C~","verdict":"pass"}'
+ok  udenum set 74 on an order-10 member: new exit 2 'udenum: bad forbidden edge' | old exit 2 'udenum: bad forbidden edge'
+ok  udfilter set 74 on an order-10 member: new exit 0 '{"g6":"C~","verdict":"forbidden","witness":{"index":0,"map":[0,1,2,3]}}' | old exit 0 '{"g6":"C~","verdict":"forbidden","witness":{"index":0,"map":[0,1,2,3]}}'
+ok  udenum set 74 on unbalanced brackets: new exit 2 'udenum: unbalanced forbidden JSON at end of file' | old exit 2 'udenum: unbalanced forbidden JSON at end of file'
+ok  udfilter set 74 on unbalanced brackets: new exit 0 '{"g6":"C~","verdict":"forbidden","witness":{"index":0,"map":[0,1,2,3]}}' | old exit 0 '{"g6":"C~","verdict":"forbidden","witness":{"index":0,"map":[0,1,2,3]}}'
+ok  udenum test build pinned to [397 graphs]: exit 2: udenum: forbidden JSON does not contain 398 graphs
+ok  udfilter test build pinned to [397 graphs]: exit 2: udfilter: forbidden JSON does not contain 398 patterns
+ok  udenum test build pinned to [a 9-vertex member in place of a 10-vertex one]: exit 2: udenum: forbidden JSON does not yield 3875 deletion patterns
+ok  udfilter test build pinned to [a 9-vertex member in place of a 10-vertex one] (loads: only the pin guards content): exit 0: {"g6":"C~","verdict":"forbidden","witness":{"index":0,"map":[0,1,2,3]}}
+ok  udenum test build pinned to [one edge added to member 250]: exit 2: udenum: forbidden pattern size distribution does not match the contract
+ok  udfilter test build pinned to [one edge added to member 250] (loads: only the pin guards content): exit 0: {"g6":"C~","verdict":"forbidden","witness":{"index":0,"map":[0,1,2,3]}}
+ok  udenum test build pinned to [an 11-vertex member]: exit 2: udenum: bad forbidden edge
+ok  udfilter test build pinned to [an 11-vertex member]: exit 2: udfilter: forbidden set 398 has a graph of order above 10
+30 of 30 cases as required
+RESULT: PASS

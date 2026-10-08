@@ -1,0 +1,77 @@
+{
+  "argv": [
+    "research/gp-10/refute/round2.py",
+    "sweep",
+    "--suite",
+    "stalls",
+    "--method",
+    "tu",
+    "--seconds",
+    "20",
+    "--prefix",
+    "19",
+    "--known",
+    "--tag",
+    "stalls-tu-f8-known"
+  ],
+  "rows": [
+    {
+      "g6": "H_hP`SV",
+      "gp_index": 22,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.05882391519844532,
+        "limit": 20.0
+      }
+    },
+    {
+      "g6": "H?dPdLi",
+      "gp_index": 38,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.06657031690701842,
+        "limit": 20.0
+      }
+    },
+    {
+      "g6": "HGEAXjw",
+      "gp_index": 39,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.04417328396812081,
+        "limit": 20.0
+      }
+    },
+    {
+      "g6": "H{O_okN",
+      "gp_index": 66,
+      "verdict": "unknown",
+      "detail": {
+        "method": "tu",
+        "seconds": 0.06704558804631233,
+        "limit": 20.0
+      }
+    }
+  ],
+  "seconds": 0.24814583081752062,
+  "prefix": 19,
+  "known": true,
+  "source_sha256": {
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "audit_report.py": "fcd3646d501e8f806406321b75ddc874d1798b066e0311aef06f2138f92c1a6b",
+    "algebra.py": "395d7109e25c880fd22d150af5ff7e4a305be4337fb918354092fa4caa27bf93",
+    "round2.py": "0b0357965c96d2c8e62dee1071067518e5c1eb2664153231a8c2fd0eb2905009",
+    "export_checker.py": "612182fba410aee4e33c12f96b2d12b54f0272350f08b6d1ef7d6e271706eccd",
+    "gp10refute.py": "62d87028955112cf4247fb06782459f5873a58f37a70911072e4c5f9da306d1e",
+    "selftest.py": "fd34878e06725005254d6bcfca38a3a1cee8b1f2b5739eea77cdee219c162806",
+    "controls.py": "26717ed7fbfe69f275705d10cc652952156a0333b0a626bf29677d19d314086a",
+    "audit_sample.py": "6b3434eaa669033ef325249c81667a26726f6b6a5db446c8f702c6fce0181f3e",
+    "graphs.py": "29249a6942f9099a89cceb148fcfd2f266e99d545a70d33570abc392ae7b9f1f",
+    "wrong_frame_control.py": "660fbf6071be92b0fa7ecdfa936129cb28d39cf6f8348c4a865b0d014a0aa4ca",
+    "run_focused_controls.py": "4cc11b5f664c10105664fc573bf94c10e2768d6fff189e0010e9afdfad0a62be",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec"
+  }
+}

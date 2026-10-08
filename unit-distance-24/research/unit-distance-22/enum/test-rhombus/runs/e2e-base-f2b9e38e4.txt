@@ -1,0 +1,121 @@
+scratch tree <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/tree/research/unit-distance-22: new scripts prune.py 12226dd8e02c, run-dag2.py c7d916e4dc97; landed (f2b9e38e4) prune.py 50d5a28e5857, run-dag2.py c804b1192ef3; the rhombus checker is the DEV REPLAY <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/dev_replay_rhombus.py
+I (16,41) mode 398 base scripts: exit 0 after 26 s
+I (16,41) mode 398 new scripts: exit 0 after 29 s
+I (16,41) mode 398: {"files": 488, "only_base": [], "only_new": [], "byte_identical": 277, "json_equal_after_normalising": 211, "different": [], "normalised": {"<run-dag2.py sha256>": 242, "started": 266, "finished": 266, "wall_seconds": 384, "cpu_seconds": 200, "max_rss_kib": 200, "<prune.py sha256>": 24, "geng_wall_seconds": 28, "filter_wall_seconds": 28, "step_wall_seconds": 24}, "hashes_of_equivalent_files_renamed": 838}
+I (16,41) mode 74 base scripts: exit 0 after 15 s
+I (16,41) mode 74 new scripts: exit 0 after 12 s
+I (16,41) mode 74: {"files": 351, "only_base": [], "only_new": [], "byte_identical": 230, "json_equal_after_normalising": 121, "different": [], "normalised": {"<run-dag2.py sha256>": 132, "started": 156, "finished": 156, "wall_seconds": 164, "cpu_seconds": 60, "max_rss_kib": 60, "<prune.py sha256>": 24, "geng_wall_seconds": 28, "filter_wall_seconds": 28, "step_wall_seconds": 24}, "hashes_of_equivalent_files_renamed": 588}
+C c-16-41-f398: exit 0 after 26 s
+C c-16-41-f398: top keep 16-41: 1 graphs; known (16,41) graphs present 1/1
+C c-16-41-f398-rh: exit 0 after 29 s
+C c-16-41-f398-rh: top keep 16-41: 1 graphs; known (16,41) graphs present 1/1
+    12-24: plain keep 91, rhombus keep 90 (rhombus tu 1, refuted 0); subset True
+    12-25: plain keep 25, rhombus keep 25 (rhombus tu 0, refuted 0); subset True
+    12-26: plain keep 2, rhombus keep 2 (rhombus tu 0, refuted 0); subset True
+    12-27: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    13-28: plain keep 26, rhombus keep 26 (rhombus tu 0, refuted 0); subset True
+    13-29: plain keep 6, rhombus keep 6 (rhombus tu 0, refuted 0); subset True
+    13-30: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    14-32: plain keep 10, rhombus keep 9 (rhombus tu 1, refuted 0); subset True
+    14-33: plain keep 2, rhombus keep 2 (rhombus tu 0, refuted 0); subset True
+    15-36: plain keep 2, rhombus keep 2 (rhombus tu 0, refuted 0); subset True
+    15-37: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    16-41: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+C c-16-41-f398-rh: 12 pruned levels (plain run 12); levels only in the plain run (never generated with the rule): []
+C c-16-41-f398-rh: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-16-41-f398-rh", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files": 12, "parent_files": 16, "s
+C c-16-41-f398: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-16-41-f398", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files": 12, "parent_files": 16, "shar
+C c-16-41-f74: exit 0 after 11 s
+C c-16-41-f74: top keep 16-41: 1 graphs; known (16,41) graphs present 1/1
+C c-16-41-f74-rh: exit 0 after 12 s
+C c-16-41-f74-rh: top keep 16-41: 1 graphs; known (16,41) graphs present 1/1
+    12-24: plain keep 121, rhombus keep 114 (rhombus tu 3, refuted 4); subset True
+    12-25: plain keep 26, rhombus keep 26 (rhombus tu 0, refuted 0); subset True
+    12-26: plain keep 2, rhombus keep 2 (rhombus tu 0, refuted 0); subset True
+    12-27: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    13-28: plain keep 29, rhombus keep 29 (rhombus tu 0, refuted 0); subset True
+    13-29: plain keep 6, rhombus keep 6 (rhombus tu 0, refuted 0); subset True
+    13-30: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    14-32: plain keep 11, rhombus keep 10 (rhombus tu 1, refuted 0); subset True
+    14-33: plain keep 2, rhombus keep 2 (rhombus tu 0, refuted 0); subset True
+    15-36: plain keep 2, rhombus keep 2 (rhombus tu 0, refuted 0); subset True
+    15-37: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    16-41: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+C c-16-41-f74-rh: 12 pruned levels (plain run 12); levels only in the plain run (never generated with the rule): []
+C c-16-41-f74-rh: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-16-41-f74-rh", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files": 12, "parent_files": 16, "sh
+C c-16-41-f74: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-16-41-f74", "target": [16, 41], "levels_inspected": 20, "reach_files": 20, "keep_files": 12, "parent_files": 16, "shard
+C c-17-43-f74: exit 0 after 135 s
+C c-17-43-f74: top keep 17-43: 8 graphs; known (17,43) graphs present 7/7
+C c-17-43-f74-rh: exit 0 after 143 s
+C c-17-43-f74-rh: top keep 17-43: 8 graphs; known (17,43) graphs present 7/7
+    12-22: plain keep 35105, rhombus keep 29696 (rhombus tu 4184, refuted 1225); subset True
+    12-23: plain keep 4369, rhombus keep 4071 (rhombus tu 202, refuted 96); subset True
+    12-24: plain keep 241, rhombus keep 234 (rhombus tu 3, refuted 4); subset True
+    12-25: plain keep 26, rhombus keep 26 (rhombus tu 0, refuted 0); subset True
+    12-26: plain keep 2, rhombus keep 2 (rhombus tu 0, refuted 0); subset True
+    12-27: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    13-26: plain keep 8098, rhombus keep 6827 (rhombus tu 436, refuted 193); subset True
+    13-27: plain keep 655, rhombus keep 643 (rhombus tu 3, refuted 2); subset True
+    13-28: plain keep 61, rhombus keep 61 (rhombus tu 0, refuted 0); subset True
+    13-29: plain keep 6, rhombus keep 6 (rhombus tu 0, refuted 0); subset True
+    13-30: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    14-30: plain keep 1429, rhombus keep 1288 (rhombus tu 64, refuted 50); subset True
+    14-31: plain keep 185, rhombus keep 180 (rhombus tu 3, refuted 2); subset True
+    14-32: plain keep 25, rhombus keep 24 (rhombus tu 1, refuted 0); subset True
+    14-33: plain keep 2, rhombus keep 2 (rhombus tu 0, refuted 0); subset True
+    15-34: plain keep 461, rhombus keep 419 (rhombus tu 17, refuted 16); subset True
+    15-35: plain keep 50, rhombus keep 46 (rhombus tu 3, refuted 0); subset True
+    15-36: plain keep 3, rhombus keep 3 (rhombus tu 0, refuted 0); subset True
+    15-37: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    16-38: plain keep 12, rhombus keep 9 (rhombus tu 2, refuted 0); subset True
+    16-39: plain keep 8, rhombus keep 8 (rhombus tu 0, refuted 0); subset True
+    16-40: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    16-41: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    17-43: plain keep 8, rhombus keep 8 (rhombus tu 0, refuted 0); subset True
+C c-17-43-f74-rh: 24 pruned levels (plain run 24); levels only in the plain run (never generated with the rule): []
+C c-17-43-f74-rh: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-17-43-f74-rh", "target": [17, 43], "levels_inspected": 34, "reach_files": 34, "keep_files": 24, "parent_files": 29, "sh
+C c-17-43-f74: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-17-43-f74", "target": [17, 43], "levels_inspected": 34, "reach_files": 34, "keep_files": 24, "parent_files": 29, "shard
+C c-18-46-f74: exit 0 after 551 s
+C c-18-46-f74: top keep 18-46: 38 graphs; known (18,46) graphs present 16/16
+C c-18-46-f74-rh: exit 0 after 510 s
+C c-18-46-f74-rh: top keep 18-46: 35 graphs; known (18,46) graphs present 16/16
+    12-22: plain keep 83419, rhombus keep 74430 (rhombus tu 6860, refuted 2129); subset True
+    12-23: plain keep 4369, rhombus keep 4071 (rhombus tu 202, refuted 96); subset True
+    12-24: plain keep 250, rhombus keep 243 (rhombus tu 3, refuted 4); subset True
+    12-25: plain keep 26, rhombus keep 26 (rhombus tu 0, refuted 0); subset True
+    12-26: plain keep 2, rhombus keep 2 (rhombus tu 0, refuted 0); subset True
+    12-27: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    13-25: plain keep 202186, rhombus keep 155781 (rhombus tu 18201, refuted 4732); subset True
+    13-26: plain keep 12532, rhombus keep 11057 (rhombus tu 502, refuted 199); subset True
+    13-27: plain keep 655, rhombus keep 643 (rhombus tu 3, refuted 2); subset True
+    13-28: plain keep 63, rhombus keep 63 (rhombus tu 0, refuted 0); subset True
+    13-29: plain keep 6, rhombus keep 6 (rhombus tu 0, refuted 0); subset True
+    13-30: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    14-29: plain keep 39251, rhombus keep 30085 (rhombus tu 2972, refuted 1142); subset True
+    14-30: plain keep 2591, rhombus keep 2421 (rhombus tu 91, refuted 52); subset True
+    14-31: plain keep 185, rhombus keep 180 (rhombus tu 3, refuted 2); subset True
+    14-32: plain keep 25, rhombus keep 24 (rhombus tu 1, refuted 0); subset True
+    14-33: plain keep 2, rhombus keep 2 (rhombus tu 0, refuted 0); subset True
+    15-33: plain keep 9551, rhombus keep 7871 (rhombus tu 690, refuted 299); subset True
+    15-34: plain keep 913, rhombus keep 840 (rhombus tu 35, refuted 18); subset True
+    15-35: plain keep 78, rhombus keep 74 (rhombus tu 3, refuted 0); subset True
+    15-36: plain keep 3, rhombus keep 3 (rhombus tu 0, refuted 0); subset True
+    15-37: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    16-37: plain keep 3897, rhombus keep 3116 (rhombus tu 315, refuted 148); subset True
+    16-38: plain keep 238, rhombus keep 216 (rhombus tu 7, refuted 5); subset True
+    16-39: plain keep 17, rhombus keep 17 (rhombus tu 0, refuted 0); subset True
+    16-40: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    16-41: plain keep 1, rhombus keep 1 (rhombus tu 0, refuted 0); subset True
+    17-41: plain keep 150, rhombus keep 94 (rhombus tu 11, refuted 14); subset True
+    17-42: plain keep 73, rhombus keep 70 (rhombus tu 3, refuted 0); subset True
+    17-43: plain keep 8, rhombus keep 8 (rhombus tu 0, refuted 0); subset True
+    18-46: plain keep 38, rhombus keep 35 (rhombus tu 2, refuted 1); subset True
+C c-18-46-f74-rh: 31 pruned levels (plain run 31); levels only in the plain run (never generated with the rule): []
+C c-18-46-f74-rh: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-18-46-f74-rh", "target": [18, 46], "levels_inspected": 41, "reach_files": 41, "keep_files": 31, "parent_files": 36, "sh
+C c-18-46-f74: verify-chain --check: exit 0: CHAIN OK; {"run": "<repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-18-46-f74", "target": [18, 46], "levels_inspected": 41, "reach_files": 41, "keep_files": 31, "parent_files": 36, "shard
+R R1 12-22.certs.jsonl line 3 coefficient changed: verify-chain exit 1: CHAIN FAIL (2 problems); ['PROBLEM: 12-22.certs.jsonl: hash differs from the prune manifest', 'PROBLEM: 12-22.certs.jsonl: udcheck did not accept: REJECT: <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/c-17-43-f74-rh/12-22.certs.jsonl:3: sum of l_j r(C_j) is [2, -']
+R R2 12-22.prune.manifest.json without its rhombus flag: verify-chain exit 1: CHAIN FAIL (1 problems); ["PROBLEM: 12-22.prune.manifest.json: rhombus setting None is not the run's True"]
+R3 prune.py with a corrupting prover wrapper: exit 1; manifest exit_status 1; problems ['udcheck REJECTED the certificates: REJECT: <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/e2e/red-r3/12-22.certs.jsonl:3: sum of l_j r(C_j)
+R4 --rhombus without --prune: exit 2: run-dag2.py: --rhombus runs inside the prune step and needs --prune; directory made False
+R4 --resume of a no-rhombus directory with --rhombus: exit 2: run-dag2.py: run-config.json differs from this run's options; refusing to resume; files touched 0
+wall seconds: {"16-41 mode 398 base": 25.9, "16-41 mode 398 new": 29.2, "16-41 mode 74 base": 14.9, "16-41 mode 74 new": 11.7, "c-16-41-f398": 26.2, "c-16-41-f398-rh": 28.8, "c-16-41-f74": 11.2, "c-16-41-f74-rh": 12.1, "c-17-43-f74": 135.1, "c-17-43-f74-rh": 142.9, "c-18-46-f74": 550.5, "c-18-46-f74-rh": 510.2}
+E2E PASS

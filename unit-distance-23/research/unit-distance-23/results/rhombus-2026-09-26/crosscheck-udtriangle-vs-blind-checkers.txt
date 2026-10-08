@@ -1,0 +1,14 @@
+Cross-check 2026-09-26: udtriangle (filter/, from 625b59be0) certificates replayed by the two blind checkers.
+tri_verify.py sha256 78a54100...1299 (landed 851691456), pinned in udcheck_rhombus.py; kernel udcheck.py pinned.
+
+measure-13: ACCEPT certificates records=1500 forbidden=0 tu=348 embedded=0 refuted=27 unknown=1125 proof_nodes=0 rhombus_tu=0 rhombus_refuted=0 tri_tu=348 tri_refuted=27
+measure-14: ACCEPT certificates records=1500 forbidden=0 tu=572 embedded=0 refuted=50 unknown=878 proof_nodes=0 rhombus_tu=0 rhombus_refuted=0 tri_tu=572 tri_refuted=50
+measure-15: ACCEPT certificates records=1500 forbidden=0 tu=684 embedded=0 refuted=110 unknown=706 proof_nodes=0 rhombus_tu=0 rhombus_refuted=0 tri_tu=684 tri_refuted=110
+measure-16: ACCEPT certificates records=1500 forbidden=0 tu=906 embedded=0 refuted=208 unknown=386 proof_nodes=0 rhombus_tu=0 rhombus_refuted=0 tri_tu=906 tri_refuted=208
+measure-17: ACCEPT certificates records=1500 forbidden=0 tu=1056 embedded=0 refuted=262 unknown=182 proof_nodes=0 rhombus_tu=0 rhombus_refuted=0 tri_tu=1056 tri_refuted=262
+measure-18: ACCEPT certificates records=1500 forbidden=0 tu=1089 embedded=0 refuted=375 unknown=36 proof_nodes=0 rhombus_tu=0 rhombus_refuted=0 tri_tu=1089 tri_refuted=375
+level17-parents-w1: ACCEPT certificates records=17652 forbidden=0 tu=12441 embedded=0 refuted=3108 unknown=2103 proof_nodes=0 rhombus_tu=0 rhombus_refuted=0 tri_tu=12441 tri_refuted=3108
+level19-children: ACCEPT certificates records=1354 forbidden=0 tu=695 embedded=0 refuted=641 unknown=18 proof_nodes=0 rhombus_tu=0 rhombus_refuted=0 tri_tu=695 tri_refuted=641
+B10-embedded: ACCEPT certificates records=32653 forbidden=0 tu=10432 embedded=0 refuted=0 unknown=22221 proof_nodes=0 rhombus_tu=0 rhombus_refuted=0 tri_tu=10432 tri_refuted=0
+
+tri_verify.py CLI on the tri-only files: every file ACCEPT (375, 622, 794, 1114, 1318, 1464, 15549, 1336, 10432 records).

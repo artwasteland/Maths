@@ -1,0 +1,2 @@
+OK   n=21 m=57: survivors=19 (expect 19), embedded=5 (expect 5), refuted=14, unknown=0, dups=0, known-among-survivors=5/5, extra-embedded=0, missing-embedded=0, known-refuted=0, checker=ACCEPT
+GATE G3: PASS

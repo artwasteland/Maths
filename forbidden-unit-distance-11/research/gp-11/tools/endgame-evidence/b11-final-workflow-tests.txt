@@ -1,0 +1,207 @@
+test_current_unknown_gate_and_rehearsal (__main__.Tests.test_current_unknown_gate_and_rehearsal) ... ok
+test_event_recovery_export_and_conflict_quarantine (__main__.Tests.test_event_recovery_export_and_conflict_quarantine) ... ok
+test_every_new_campaign_admission_guard_has_a_mutation_case (__main__.Tests.test_every_new_campaign_admission_guard_has_a_mutation_case) ... ok
+test_expired_lease_salvages_once_without_agents (__main__.Tests.test_expired_lease_salvages_once_without_agents) ... ok
+test_final_nine_controls_and_acceptance (__main__.Tests.test_final_nine_controls_and_acceptance) ... ok
+test_receipt_tampering_fails_before_reuse (__main__.Tests.test_receipt_tampering_fails_before_reuse) ... ok
+test_reject_absolute_path (__main__.Tests.test_reject_absolute_path) ... ok
+test_reject_assembled_unknown (__main__.Tests.test_reject_assembled_unknown) ... ok
+test_reject_assembly_digest (__main__.Tests.test_reject_assembly_digest) ... ok
+test_reject_assembly_external (__main__.Tests.test_reject_assembly_external) ... ok
+test_reject_assembly_input (__main__.Tests.test_reject_assembly_input) ... ok
+test_reject_assembly_large_rehearsal (__main__.Tests.test_reject_assembly_large_rehearsal) ... ok
+test_reject_assembly_outputs (__main__.Tests.test_reject_assembly_outputs) ... ok
+test_reject_assembly_population (__main__.Tests.test_reject_assembly_population) ... ok
+test_reject_bundle_counts (__main__.Tests.test_reject_bundle_counts) ... ok
+test_reject_bundle_coverage (__main__.Tests.test_reject_bundle_coverage) ... ok
+test_reject_bundle_duplicate (__main__.Tests.test_reject_bundle_duplicate) ... ok
+test_reject_bundle_raw_hash (__main__.Tests.test_reject_bundle_raw_hash) ... ok
+test_reject_cli_budgets (__main__.Tests.test_reject_cli_budgets) ... ok
+test_reject_cli_export (__main__.Tests.test_reject_cli_export) ... ok
+test_reject_cli_return (__main__.Tests.test_reject_cli_return) ... ok
+test_reject_config_coverage (__main__.Tests.test_reject_config_coverage) ... ok
+test_reject_config_digest (__main__.Tests.test_reject_config_digest) ... ok
+test_reject_config_scope (__main__.Tests.test_reject_config_scope) ... ok
+test_reject_control_B10 (__main__.Tests.test_reject_control_B10) ... ok
+test_reject_control_F10 (__main__.Tests.test_reject_control_F10) ... ok
+test_reject_control_L10 (__main__.Tests.test_reject_control_L10) ... ok
+test_reject_control_PASS (__main__.Tests.test_reject_control_PASS) ... ok
+test_reject_control_complete (__main__.Tests.test_reject_control_complete) ... ok
+test_reject_control_profile (__main__.Tests.test_reject_control_profile) ... ok
+test_reject_event_artifacts (__main__.Tests.test_reject_event_artifacts) ... ok
+test_reject_event_line (__main__.Tests.test_reject_event_line) ... ok
+test_reject_event_location (__main__.Tests.test_reject_event_location) ... ok
+test_reject_event_packet (__main__.Tests.test_reject_event_packet) ... ok
+test_reject_event_provenance (__main__.Tests.test_reject_event_provenance) ... ok
+test_reject_event_receipt (__main__.Tests.test_reject_event_receipt) ... ok
+test_reject_evidence_limit (__main__.Tests.test_reject_evidence_limit) ... ok
+test_reject_existing_export (__main__.Tests.test_reject_existing_export) ... ok
+test_reject_final_F10 (__main__.Tests.test_reject_final_F10) ... ok
+test_reject_final_UNKNOWN_gate (__main__.Tests.test_reject_final_UNKNOWN_gate) ... ok
+test_reject_final_conditional (__main__.Tests.test_reject_final_conditional) ... ok
+test_reject_final_conditional_minimal (__main__.Tests.test_reject_final_conditional_minimal) ... ok
+test_reject_final_control_receipt (__main__.Tests.test_reject_final_control_receipt) ... ok
+test_reject_final_controls (__main__.Tests.test_reject_final_controls) ... ok
+test_reject_final_count (__main__.Tests.test_reject_final_count) ... ok
+test_reject_final_exit (__main__.Tests.test_reject_final_exit) ... ok
+test_reject_final_external (__main__.Tests.test_reject_final_external) ... ok
+test_reject_final_input (__main__.Tests.test_reject_final_input) ... ok
+test_reject_final_line (__main__.Tests.test_reject_final_line) ... ok
+test_reject_final_minimal_hash (__main__.Tests.test_reject_final_minimal_hash) ... ok
+test_reject_final_minimal_list (__main__.Tests.test_reject_final_minimal_list) ... ok
+test_reject_final_minimal_name (__main__.Tests.test_reject_final_minimal_name) ... ok
+test_reject_final_prediction (__main__.Tests.test_reject_final_prediction) ... ok
+test_reject_final_profile (__main__.Tests.test_reject_final_profile) ... ok
+test_reject_final_rejections (__main__.Tests.test_reject_final_rejections) ... ok
+test_reject_final_sources (__main__.Tests.test_reject_final_sources) ... ok
+test_reject_final_status (__main__.Tests.test_reject_final_status) ... ok
+test_reject_final_stream (__main__.Tests.test_reject_final_stream) ... ok
+test_reject_final_unknown (__main__.Tests.test_reject_final_unknown) ... ok
+test_reject_isolation (__main__.Tests.test_reject_isolation) ... ok
+test_reject_job_policy (__main__.Tests.test_reject_job_policy) ... ok
+test_reject_job_shard (__main__.Tests.test_reject_job_shard) ... ok
+test_reject_labelg_hash (__main__.Tests.test_reject_labelg_hash) ... ok
+test_reject_memory_floor (__main__.Tests.test_reject_memory_floor) ... ok
+test_reject_opposite_verdict (__main__.Tests.test_reject_opposite_verdict) ... ok
+test_reject_path_symlink (__main__.Tests.test_reject_path_symlink) ... ok
+test_reject_prepare_B11 (__main__.Tests.test_reject_prepare_B11) ... ok
+test_reject_prepare_binding (__main__.Tests.test_reject_prepare_binding) ... ok
+test_reject_prepare_contract (__main__.Tests.test_reject_prepare_contract) ... ok
+test_reject_prepare_existing (__main__.Tests.test_reject_prepare_existing) ... ok
+test_reject_prepare_extra (__main__.Tests.test_reject_prepare_extra) ... ok
+test_reject_prepare_identity (__main__.Tests.test_reject_prepare_identity) ... ok
+test_reject_prepare_inside (__main__.Tests.test_reject_prepare_inside) ... ok
+test_reject_prepare_missing (__main__.Tests.test_reject_prepare_missing) ... ok
+test_reject_prepare_selection (__main__.Tests.test_reject_prepare_selection) ... ok
+test_reject_return_checker (__main__.Tests.test_reject_return_checker) ... ok
+test_reject_return_cost (__main__.Tests.test_reject_return_cost) ... ok
+test_reject_return_provenance (__main__.Tests.test_reject_return_provenance) ... ok
+test_reject_return_size (__main__.Tests.test_reject_return_size) ... ok
+test_reject_round_contract (__main__.Tests.test_reject_round_contract) ... ok
+test_reject_round_counts (__main__.Tests.test_reject_round_counts) ... ok
+test_reject_round_coverage (__main__.Tests.test_reject_round_coverage) ... ok
+test_reject_round_displaced_conflict (__main__.Tests.test_reject_round_displaced_conflict) ... ok
+test_reject_round_extra_f3 (__main__.Tests.test_reject_round_extra_f3) ... ok
+test_reject_round_f1first (__main__.Tests.test_reject_round_f1first) ... ok
+test_reject_round_missing_f3 (__main__.Tests.test_reject_round_missing_f3) ... ok
+test_reject_round_order (__main__.Tests.test_reject_round_order) ... ok
+test_reject_round_overlap (__main__.Tests.test_reject_round_overlap) ... ok
+test_reject_round_overlay (__main__.Tests.test_reject_round_overlay) ... ok
+test_reject_round_pin (__main__.Tests.test_reject_round_pin) ... ok
+test_reject_round_population (__main__.Tests.test_reject_round_population) ... ok
+test_reject_round_round_pin (__main__.Tests.test_reject_round_round_pin) ... ok
+test_reject_round_unknown (__main__.Tests.test_reject_round_unknown) ... ok
+test_reject_runtime_changed (__main__.Tests.test_reject_runtime_changed) ... ok
+test_reject_runtime_exit (__main__.Tests.test_reject_runtime_exit) ... ok
+test_reject_runtime_input (__main__.Tests.test_reject_runtime_input) ... ok
+test_reject_runtime_line (__main__.Tests.test_reject_runtime_line) ... ok
+test_reject_runtime_manifest (__main__.Tests.test_reject_runtime_manifest) ... ok
+test_reject_source_hash (__main__.Tests.test_reject_source_hash) ... ok
+test_reject_traversal (__main__.Tests.test_reject_traversal) ... ok
+test_reject_workspace_dirs (__main__.Tests.test_reject_workspace_dirs) ... ok
+test_reject_workspace_files (__main__.Tests.test_reject_workspace_files) ... ok
+test_reject_workspace_pins (__main__.Tests.test_reject_workspace_pins) ... ok
+test_round_selection_and_unknown_sets (__main__.Tests.test_round_selection_and_unknown_sets) ... ok
+
+----------------------------------------------------------------------
+Ran 104 tests in 16.579s
+
+OK
+RED b11_final:final_status test_reject_final_status
+RED b11_final:final_identity test_reject_final_profile
+RED b11_final:final_identity test_reject_final_count
+RED b11_final:final_identity test_reject_final_input
+RED b11_final:final_sources test_reject_final_sources
+RED b11_final:final_rejections test_reject_final_rejections
+RED b11_final:final_consumed test_reject_final_stream
+RED b11_final:final_external_digest test_reject_final_external
+RED b11_final:final_complete test_reject_final_unknown
+RED b11_final:final_complete test_reject_final_conditional
+RED b11_final:final_complete test_reject_final_conditional_minimal
+RED b11_final:final_L11_name test_reject_final_minimal_name
+RED b11_final:final_L11_evidence test_reject_final_minimal_list
+RED b11_final:final_L11_evidence test_reject_final_minimal_hash
+RED b11_final:final_F10 test_reject_final_F10
+RED b11_final:final_controls test_reject_final_controls
+RED b11_final:final_predictions test_reject_final_prediction
+RED b11_final:final_exit test_reject_final_exit
+RED b11_final:final_accept_line test_reject_final_line
+RED b11_final:final_control_receipt test_reject_final_control_receipt
+RED b11_campaign:event_packet test_reject_event_packet
+RED b11_campaign:event_artifacts test_reject_event_artifacts
+RED b11_campaign:event_provenance test_reject_event_provenance
+RED b11_campaign:event_receipt test_reject_event_receipt
+RED b11_campaign:event_accept_line test_reject_event_line
+RED b11_final:control_profile test_reject_control_profile
+RED b11_final:control_complete test_reject_control_complete
+RED b11_final:control_PASS test_reject_control_PASS
+RED b11_final:control_B10 test_reject_control_B10
+RED b11_final:control_L10 test_reject_control_L10
+RED b11_final:control_F10_provenance test_reject_control_F10
+RED b11_final:run_relative_path test_reject_absolute_path
+RED b11_final:run_relative_path test_reject_traversal
+RED b11_final:run_path_escape test_reject_path_symlink
+RED b11_final:external_assembly_digest test_reject_assembly_external
+RED b11_campaign:assembly_digest test_reject_assembly_digest
+RED b11_campaign:assembly_outputs test_reject_assembly_outputs
+RED b11_final:assembly_input test_reject_assembly_input
+RED b11_final:final_B11_input test_reject_assembly_population
+RED b11_final:small_rehearsal_only test_reject_assembly_large_rehearsal
+RED b11_campaign:workspace_frozen_pins test_reject_workspace_pins
+RED b11_campaign:workspace_file_set_or_hash test_reject_workspace_files
+RED b11_campaign:workspace_directories test_reject_workspace_dirs
+RED b11_campaign:new_campaign_required test_reject_prepare_existing
+RED b11_campaign:assembly_and_packets_required test_reject_prepare_missing
+RED b11_campaign:campaign_outside_repository test_reject_prepare_inside
+RED b11_campaign:packet_file_set test_reject_prepare_extra
+RED b11_campaign:current_residue_packets test_reject_prepare_selection
+RED b11_campaign:packet_identity test_reject_prepare_identity
+RED b11_campaign:packet_binding test_reject_prepare_binding
+RED b11_campaign:B11_packet_required test_reject_prepare_B11
+RED b11_campaign:packet_check_contract test_reject_prepare_contract
+RED b11_campaign:campaign_scope test_reject_config_scope
+RED b11_campaign:campaign_digest test_reject_config_digest
+RED b11_campaign:campaign_coverage test_reject_config_coverage
+RED b11_campaign:return_evidence_size test_reject_return_size
+RED b11_campaign:return_provenance test_reject_return_provenance
+RED b11_campaign:return_cost test_reject_return_cost
+RED b11_campaign:independent_rejection: test_reject_return_checker
+RED b11_campaign:event_location test_reject_event_location
+RED b11_campaign:conflicting_admissions_quarantined test_reject_opposite_verdict
+RED b11_check:check_manifest test_reject_runtime_manifest
+RED b11_check:check_input test_reject_runtime_input
+RED b11_check:checker_accept_line test_reject_runtime_line
+RED b11_check:record_changed test_reject_runtime_changed
+RED b11_check:checker_exit: test_reject_runtime_exit
+RED b11_check:frozen_source: test_reject_source_hash
+RED b11_check:canonicalizer_hash test_reject_labelg_hash
+RED b11_check:memory_floor test_reject_memory_floor
+RED b11_campaign:positive_concurrency_and_budgets test_reject_cli_budgets
+RED b11_campaign:return_case_required test_reject_cli_return
+RED b11_campaign:export_destination_required test_reject_cli_export
+RED b11_campaign:new_export_required test_reject_existing_export
+RED b11_campaign:isolation_probe test_reject_isolation
+RED b11_residue:round_contract test_reject_round_contract
+RED b11_residue:round_order test_reject_round_order
+RED b11_residue:round_bundle_pin test_reject_round_pin
+RED b11_residue:base_overlap test_reject_round_overlap
+RED b11_residue:base_coverage test_reject_round_coverage
+RED b11_residue:f1_first test_reject_round_f1first
+RED b11_residue:round_unknown_equality test_reject_round_unknown
+RED b11_residue:round_counts test_reject_round_counts
+RED b11_residue:f3_assignment_overlap_or_extra test_reject_round_extra_f3
+RED b11_residue:f3_complete_coverage test_reject_round_missing_f3
+RED b11_residue:overlay_not_base_unknown test_reject_round_overlay
+RED b11_residue:round_decision_conflict test_reject_round_displaced_conflict
+RED b11_residue:f3_round_pin test_reject_round_round_pin
+RED b11_residue:round_population test_reject_round_population
+RED b11_residue:bundle_actual_counts test_reject_bundle_counts
+RED b11_residue:bundle_raw_hash test_reject_bundle_raw_hash
+RED b11_residue:bundle_exact_coverage test_reject_bundle_coverage
+RED b11_residue:bundle_record_header test_reject_bundle_duplicate
+RED b11_residue:f3_job test_reject_job_policy
+RED b11_residue:f3_sharding test_reject_job_shard
+RED b11_residue:assembled_unknown_mismatch test_reject_assembled_unknown
+RED b11_final:assembled_UNKNOWN_not_empty test_reject_final_UNKNOWN_gate
+RED b11_campaign:return_evidence_bundle test_reject_evidence_limit
+PASS all 97 workflow rejection tests fail with their guard disabled

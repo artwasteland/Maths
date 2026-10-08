@@ -1,0 +1,161 @@
+GP-11 job D: degree-two extension
+
+Run from the repository root with the frozen GP-10 environment.
+The producer emits ordinary E-exact records and explicit UNKNOWN records.
+It checks every proposed embedding with the frozen exact checker.
+It then replays the entire shard with gp10check.py's sample profile.
+An ACCEPT here is a certificate/coverage receipt, not a B11 classification gate.
+
+LOCAL COMMAND
+
+  PYTHONDONTWRITEBYTECODE=1 <repo>/pyenv-gp10/bin/python -B \
+    research/gp-11/embed/extend.py \
+    --input research/gp-11/data/B11.g6 \
+    --output research/gp-11/embed/cloud/degree2/shard-000 \
+    --shard-count 256 --shard-index 0 \
+    --seconds 3 --attempt-seconds 1 --degree-cap 256
+
+Run one such command at a time on the owner's desktop.
+It has one Python process and at most one PARI or checker child.
+Every process inherits nice 15, a 1,024,000,000-byte address-space ceiling,
+single-thread numerical libraries, and a disabled core dump.
+PARI has a 512,000,000-byte stack ceiling within that process limit.
+The parent checks MemAvailable every 0.1 seconds during initialization,
+graph work, and final replay, stopping below 1,572,864 KiB (1.5 GiB).
+The current graph becomes UNKNOWN:memory_floor if its work was interrupted.
+Exit 75 means stop and resume later; it does not mean a completed shard.
+
+POLICY
+
+The default graph wall budget is three seconds, including its online exact check.
+Each PARI attempt gets at most one second while other vertices remain.
+The last eligible vertex can use the remaining graph budget.
+Vertices are visited in increasing canonical vertex order.
+For a vertex, the + branch is tried first, then the - branch if it collides.
+PARI's seed is the first eight bytes of SHA256(canonical graph6), read big endian.
+No seed depends on a shard number, input line number, or worker identity.
+Fixed-budget timeouts may differ with hardware contention; successful searches
+with the same completed attempt sequence produce the same exact certificate.
+The policy tries one frozen base placement per deletion.
+Non-biconnected bases are recorded as base_not_biconnected and skipped.
+There is no block gluing or flexible-base continuation in this pass.
+
+RESUME AND ARTIFACTS
+
+Repeat the identical command with --resume.
+Resume binds the input hash, producer/checker/index source hashes, frozen index
+data hashes, shard parameters, and budgets through job.json.
+Changed code, data, or budgets require a fresh output directory.
+An advisory lock prevents concurrent writers to the same directory.
+
+journal.jsonl is the live stream: one flushed and fsynced record/timing envelope
+per graph, in input order, with no certificate collection held in memory.
+pending.json names the graph being attempted before its work begins.
+On recovery, an incomplete final journal line is truncated.
+A complete malformed line is an error.
+A pending graph without a committed line becomes UNKNOWN:interrupted exactly once.
+Changing that outcome requires a new run, not silent replacement during resume.
+
+On completion, the producer writes:
+  input.g6                 the sorted, disjoint shard input
+  records.jsonl.gz         ordinary records, deterministic gzip headers
+  timings.jsonl.gz         one diagnostic/timing record per input graph
+  UNKNOWN.g6               sorted explicit unknown list, possibly empty
+  run.json                 sample manifest for the decompressed records
+  checker-report.json      full frozen-checker ACCEPT receipt
+  checker.log              checker process output
+  job.json                 provenance and budgets
+  summary.json             counts, reasons, timing, memory, artifact hashes
+
+The complete journal is removed only after the frozen sample replay accepts.
+An interrupted replay leaves the journal for another --resume.
+An already-complete resume verifies all recorded artifact hashes and does no search.
+The .lock file is a zero-byte local coordination file and need not be returned.
+Do not return pending.json, STOP.json, or a journal as a completed shard.
+The checker itself reads plain JSONL; run.json deliberately names records.jsonl.
+The CLI materializes that file in unique /tmp scratch for its automatic replay.
+
+timings.jsonl.gz includes graph wall and CPU seconds, the online checker time,
+each attempted deletion and canonical base, and exact branch collision results.
+A branch row is [sign, occupied_base_slot], with zero meaning unoccupied.
+Occupied slots are one-based positions in the increasing list of surviving
+input labels; they are not canonical base labels or original graph labels.
+extension:collision and extension:far describe this stored placement only.
+placements_exhausted aggregates mixed attempt reasons in the UNKNOWN budget.
+Neither reason is a graph refutation.
+
+CLOUD WORKERS: FOUR CORES, 15 GB
+
+Use the same reviewed code and frozen files on every worker.
+The required tools are the existing GP-10 Python environment (including
+python-flint, NetworkX, pynauty, SymPy), gp, and nauty-labelg 2.8.8.
+No package or dependency was added for this producer.
+Use fresh worktrees assigned by the coordinating session.
+Assign each shard index 0..255 to exactly one worker.
+Do not run the following four-way launcher on the owner's desktop.
+
+For example, on a cloud worker assigned shard indices 0..15:
+
+  export PYTHONDONTWRITEBYTECODE=1
+  export SYMPY_GROUND_TYPES=python
+  seq 0 15 | xargs -P 4 -I '{}' bash -c '
+    shard="$1"
+    out=$(printf "research/gp-11/embed/cloud/degree2/shard-%03d" "$shard")
+    <repo>/pyenv-gp10/bin/python -B research/gp-11/embed/extend.py \
+      --input research/gp-11/data/B11.g6 --output "$out" \
+      --shard-count 256 --shard-index "$shard" \
+      --seconds 3 --attempt-seconds 1 --degree-cap 256 --resume
+  ' _ '{}'
+
+The other workers run their assigned, nonoverlapping ranges.
+The four waiting Python parents do not consume four extra compute cores while
+PARI runs; no invocation starts two numerical children concurrently.
+Each process retains the desktop's conservative 1 GB ceiling on the cloud.
+The same 1.5 GiB global memory floor remains active.
+
+The shard assignment is seed_for(g6) modulo 256.
+It is independent of the sampling RNG and has about 1,753 graphs per shard.
+Only the completed compressed artifacts and their small manifests/receipts need
+to travel back through the workers' commits and pushes.
+Have the coordinating session land those worker outputs; this builder does not
+perform git state changes.
+
+Before returning a shard, require summary.completed == true, checker_status ==
+ACCEPT, matching artifact hashes, and a total directory payload below 45,000,000
+bytes (leaving margin below the requested approximate 50 MB limit).
+Measured archive sizes and a full-pass cost estimate are in EXTEND-REPORT.txt.
+If a shard exceeds that payload limit, rerun its two disjoint halves using
+--shard-count 512 and --shard-index s and s+256, each in a new directory.
+Return the halves instead of their parent and record that replacement.
+The same split rule can be repeated if needed.
+It preserves graph coverage and every per-graph seed.
+
+REPLAY A RETURNED SHARD
+
+  shard=research/gp-11/embed/cloud/degree2/shard-000
+  replay_dir=$(mktemp -d /tmp/gp11-degree2-replay.XXXXXX)
+  cp "$shard/input.g6" "$shard/UNKNOWN.g6" "$shard/run.json" "$replay_dir/"
+  gzip -cd "$shard/records.jsonl.gz" > "$replay_dir/records.jsonl"
+  nice -n 15 bash -c '
+    ulimit -v 1000000
+    export SYMPY_GROUND_TYPES=python PYTHONDONTWRITEBYTECODE=1
+    exec <repo>/pyenv-gp10/bin/python -B \
+      research/gp-10/check/gp10check.py "$1" --output "$1/checked"
+  ' _ "$replay_dir"
+
+Before assembly, independently require the union of shard inputs to equal B11
+byte for byte after sorting, without duplicates; require each shard's records
+and UNKNOWN list to cover that shard exactly, as its sample checker does.
+Do not concatenate the two research samples: they can overlap.
+The coordinating pipeline must ingest the full-run shards and satisfy the
+GP-11 contract's independent controls, minimality, and publication gates.
+
+REGRESSIONS
+
+  <repo>/pyenv-gp10/bin/python -B research/gp-11/embed/test_extend.py
+  <repo>/pyenv-gp10/bin/python -B research/gp-11/embed/test_extend_stream.py
+
+The second test uses two real checked records from the stored architect sample.
+It simulates death with a partial last write, resumes to exactly one UNKNOWN,
+replays the completed stream with the frozen sample CLI, checks an idempotent
+second resume, and refuses changed budgets and tampered completed artifacts.

@@ -1,0 +1,123 @@
+{
+ "controls": [
+  {
+   "control": "M1 exact coordinate of I???XjI{O moved by 1e-40",
+   "red": true,
+   "expected_alarm": "off unit length",
+   "verdict": "INDEPENDENT AUDIT FAIL",
+   "alarms": [
+    "an embedding edge is off unit length by 1.7908e-40"
+   ],
+   "seconds": 116
+  },
+  {
+   "control": "M2 super-pointer map of I???MWy{W broken by one swap",
+   "red": true,
+   "expected_alarm": "does not resolve",
+   "verdict": "INDEPENDENT AUDIT FAIL",
+   "alarms": [
+    "pointer chain from I???MWy{W does not resolve"
+   ],
+   "seconds": 70
+  },
+  {
+   "control": "M3 L10 member I??OzIJ}? relabelled embedded (minimality)",
+   "red": true,
+   "expected_alarm": "minimality recount differs",
+   "verdict": "INDEPENDENT AUDIT FAIL",
+   "alarms": [
+    "minimality recount differs from L10: only mine [], only L10 ['I??OzIJ}?']",
+    "I??OzIJ}? is embedded but contains an L10 member",
+    "up-set of L10 (509) differs from the refuted set (508): []"
+   ],
+   "seconds": 17
+  },
+  {
+   "control": "M3 L10 member I??OzIJ}? relabelled embedded (up-set)",
+   "red": true,
+   "expected_alarm": "contains an L10 member",
+   "verdict": "INDEPENDENT AUDIT FAIL",
+   "alarms": [
+    "minimality recount differs from L10: only mine [], only L10 ['I??OzIJ}?']",
+    "I??OzIJ}? is embedded but contains an L10 member",
+    "up-set of L10 (509) differs from the refuted set (508): []"
+   ],
+   "seconds": 17
+  },
+  {
+   "control": "M4 non-minimal refuted I??Y`Yb}? relabelled embedded",
+   "red": true,
+   "expected_alarm": "contains an L10 member",
+   "verdict": "INDEPENDENT AUDIT FAIL",
+   "alarms": [
+    "I??Y`Yb}? is embedded but contains an L10 member",
+    "up-set of L10 (509) differs from the refuted set (508): []"
+   ],
+   "seconds": 18
+  },
+  {
+   "control": "M5 L10 without I??OzIJ}? (minimality)",
+   "red": true,
+   "expected_alarm": "minimality recount differs",
+   "verdict": "INDEPENDENT AUDIT FAIL",
+   "alarms": [
+    "minimality recount differs from L10: only mine ['I??OzIJ}?'], only L10 []",
+    "up-set of L10 (508) differs from the refuted set (509): ['I??OzIJ}?']"
+   ],
+   "seconds": 17
+  },
+  {
+   "control": "M5 L10 without I??OzIJ}? (up-set)",
+   "red": true,
+   "expected_alarm": "up-set of L10",
+   "verdict": "INDEPENDENT AUDIT FAIL",
+   "alarms": [
+    "minimality recount differs from L10: only mine ['I??OzIJ}?'], only L10 []",
+    "up-set of L10 (508) differs from the refuted set (509): ['I??OzIJ}?']"
+   ],
+   "seconds": 17
+  },
+  {
+   "control": "M6 L10 plus non-minimal I??Y`Yb}?",
+   "red": true,
+   "expected_alarm": "minimality recount differs",
+   "verdict": "INDEPENDENT AUDIT FAIL",
+   "alarms": [
+    "minimality recount differs from L10: only mine [], only L10 ['I??Y`Yb}?']"
+   ],
+   "seconds": 16
+  },
+  {
+   "control": "M7 B10 with I???MWy{W replaced by a relabelled I???XfK{O (duplicate)",
+   "red": true,
+   "expected_alarm": "duplicate isomorphism class",
+   "verdict": "INDEPENDENT AUDIT FAIL",
+   "alarms": [
+    "B10 duplicate isomorphism class: I???XfK{O ~ IQN@IHCK?",
+    "records do not cover B10 exactly: 1 missing, 1 extra"
+   ],
+   "seconds": 15
+  },
+  {
+   "control": "M7 B10 with I???MWy{W replaced by a relabelled I???XfK{O (coverage)",
+   "red": true,
+   "expected_alarm": "do not cover B10",
+   "verdict": "INDEPENDENT AUDIT FAIL",
+   "alarms": [
+    "B10 duplicate isomorphism class: I???XfK{O ~ IQN@IHCK?",
+    "records do not cover B10 exactly: 1 missing, 1 extra"
+   ],
+   "seconds": 15
+  },
+  {
+   "control": "P1 stage 3 at 240 digits on the true inputs",
+   "passes_and_shrinks": true,
+   "worst_edge_error_240": "6.72e-219",
+   "smallest_point_gap": "0.00240617",
+   "exact_embeddings": 3879,
+   "seconds": 117
+  }
+ ],
+ "all_controls_behaved": true,
+ "verdict": "REDTEAM PASS: every mutation turned the audit red with its named alarm"
+}

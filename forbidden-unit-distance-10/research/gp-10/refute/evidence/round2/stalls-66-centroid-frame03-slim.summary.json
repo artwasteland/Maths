@@ -1,0 +1,17 @@
+{
+  "reason": "MemoryError: ",
+  "g6": "H{O_okN",
+  "frame": [
+    0,
+    3
+  ],
+  "seconds": 46.928279880899936,
+  "limit": 55.0,
+  "stages": [
+    {
+      "stage": "lift:True",
+      "seconds": 27.940349380951375
+    }
+  ],
+  "verdict": "unknown"
+}

@@ -1,0 +1,66 @@
+{
+  "B8p-tu": {
+    "refuted": 11,
+    "total": 17,
+    "budget": 0.5,
+    "elapsed": 0.3508090949617326,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified"
+  },
+  "B8p-tree": {
+    "refuted": 14,
+    "total": 17,
+    "budget": 2.5,
+    "elapsed": 12.319201045669615,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified"
+  },
+  "B8p-null": {
+    "refuted": 5,
+    "total": 17,
+    "budget": 2.5,
+    "elapsed": 2.6573854265734553,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified"
+  },
+  "B8p-real": {
+    "refuted": 7,
+    "total": 17,
+    "budget": 2.5,
+    "elapsed": 5.392928900197148,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified"
+  },
+  "B9p-tu": {
+    "refuted": 71,
+    "total": 101,
+    "budget": 0.5,
+    "elapsed": 2.5982935866340995,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified"
+  },
+  "B9p-tree": {
+    "refuted": 81,
+    "total": 101,
+    "budget": 2.5,
+    "elapsed": 80.18966521508992,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified"
+  },
+  "B9p-null": {
+    "refuted": 20,
+    "total": 101,
+    "budget": 2.5,
+    "elapsed": 31.127101585268974,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified"
+  },
+  "B9p-real": {
+    "refuted": 32,
+    "total": 101,
+    "budget": 2.5,
+    "elapsed": 51.05243615107611,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified"
+  }
+}

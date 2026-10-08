@@ -1,0 +1,28 @@
+[
+  {
+    "host": "<host>",
+    "vertices": 27,
+    "edges": 57,
+    "limit_seconds": 60,
+    "status": "certified",
+    "degree": 8,
+    "seconds": 22.560428651981056
+  },
+  {
+    "host": "<host>",
+    "vertices": 33,
+    "edges": 95,
+    "limit_seconds": 60,
+    "status": "certified",
+    "degree": 8,
+    "seconds": 31.710151285864413
+  },
+  {
+    "host": "<host>",
+    "vertices": 118,
+    "edges": 299,
+    "limit_seconds": 60,
+    "status": "timeout",
+    "seconds": 60.00050019705668
+  }
+]

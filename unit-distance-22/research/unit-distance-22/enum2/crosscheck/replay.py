@@ -47,7 +47,7 @@ DEFAULT_DAG = ROOT / "enum" / "out-22" / "dag-22-61-f12"
 DEFAULT_FORBIDDEN = ROOT / "data" / "forbidden-74.json"
 ALL_CELLS = "11-17,11-18,11-19,11-20,11-21,11-22,11-23,12-20,12-21,12-22,12-23,12-24,12-25,12-26,12-27"
 
-# measured 2026-09-05 on liam-desktop (nice 10, 4 concurrent): seconds per PROCESSED parent
+# measured 2026-09-05 on <host> (nice 10, 4 concurrent): seconds per PROCESSED parent
 RATE = {(3, 11): 5.4, (3, 10): 3.0, (2, 11): 0.40, (2, 10): 0.19, (4, 11): 1.3, (4, 10): 1.3,
         (1, 11): 0.01, (1, 10): 0.01, (0, 10): 0.01, (0, 11): 0.01}
 

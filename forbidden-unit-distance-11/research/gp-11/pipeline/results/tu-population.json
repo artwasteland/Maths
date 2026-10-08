@@ -1,0 +1,21 @@
+{
+  "architect_hits_match_exactly": true,
+  "assigned_population": 448708,
+  "attempts": [
+    {
+      "count": 1735,
+      "outcome": "refuted",
+      "reason": "verified"
+    },
+    {
+      "count": 445385,
+      "outcome": "unknown",
+      "reason": "tu_no_checked_endpoint"
+    }
+  ],
+  "checked_refuted": 3323,
+  "job_sha256": "10f22dbac4ada3e072ae5de82278e93041a9a0e9208bc5ce3b3f45976329e76b",
+  "mathematical_authority": "Only accepted ordinary certificates and independently checked dependencies; the C closure hit list alone is not evidence.",
+  "status": "PASS",
+  "supporting_gp10_refutations": 179
+}

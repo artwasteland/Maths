@@ -1,0 +1,14 @@
+[2026-09-25T15:32:54Z] toolchain ok: Nauty&Traces version 2.8081 (32 bits); cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+[2026-09-25T15:33:01Z] pins and self-checks passed
+[2026-09-25T15:33:01Z] slice s0of3 starting (output <scratch>/scratchpad/u23/runbook-17-43/out/dag-17-43-s0of3)
+results written <scratch>/scratchpad/u23/runbook-17-43/res/17-43/s0of3
+[2026-09-25T15:44:39Z] slice s0of3 done
+[2026-09-25T15:44:39Z] slice s1of3: levels <= 13 hard-linked from <scratch>/scratchpad/u23/runbook-17-43/out/dag-17-43-s0of3 (185 files)
+[2026-09-25T15:44:39Z] slice s1of3 starting (output <scratch>/scratchpad/u23/runbook-17-43/out/dag-17-43-s1of3)
+results written <scratch>/scratchpad/u23/runbook-17-43/res/17-43/s1of3
+[2026-09-25T15:44:57Z] slice s1of3 done
+[2026-09-25T15:44:57Z] slice s2of3: levels <= 13 hard-linked from <scratch>/scratchpad/u23/runbook-17-43/out/dag-17-43-s0of3 (185 files)
+[2026-09-25T15:44:57Z] slice s2of3 starting (output <scratch>/scratchpad/u23/runbook-17-43/out/dag-17-43-s2of3)
+results written <scratch>/scratchpad/u23/runbook-17-43/res/17-43/s2of3
+[2026-09-25T15:45:12Z] slice s2of3 done
+[2026-09-25T15:45:12Z] all slices done: 0 1 2

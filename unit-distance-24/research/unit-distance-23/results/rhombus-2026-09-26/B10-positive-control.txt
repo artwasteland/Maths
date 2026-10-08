@@ -1,0 +1,3 @@
+B10-embedded.g6 {('none', 'open'): 21535, ('none', 'no-triangles'): 686, ('hidden-edge', '-'): 9712, ('none', 'closed'): 720}
+B10-refuted.g6 {('hidden-edge', '-'): 344, ('collision', '-'): 31, ('none', 'open'): 96, ('none', 'closed'): 30, ('none', 'closed-collision'): 8}
+embedded graphs refuted by collision (must be none): [] 0

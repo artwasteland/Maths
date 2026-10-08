@@ -1,0 +1,100 @@
+{
+  "status": "PASS_LOCAL_REPLAY",
+  "gp_total": 74,
+  "gp_refuted": 70,
+  "gp_unknown": 4,
+  "gp_unknown_indices": [
+    22,
+    38,
+    39,
+    66
+  ],
+  "combined_certificate_types": {
+    "tree": 67,
+    "null": 3
+  },
+  "per_method_union": {
+    "tu": 0,
+    "tree": 67,
+    "null": 12,
+    "real": 24
+  },
+  "replayed_method_certificates": {
+    "null": 15,
+    "real": 30,
+    "tree": 70
+  },
+  "soundness_inputs_per_method": 559,
+  "false_refutations": 0,
+  "wrong_frame_control": {
+    "status": "PASS",
+    "g6": "Is?HGtcU?",
+    "good_frame": [
+      0,
+      1
+    ],
+    "mutated_frame": [
+      0,
+      5
+    ],
+    "sat_unchanged": true,
+    "embedding_edges_exact": true,
+    "distinct_pairs_positive": 45,
+    "positive_system_has_exact_real_point": true,
+    "unsafe_identity_equals_one": true,
+    "production_guard_reason": "frame: not an edge",
+    "certificate_rejection_reason": "frame: not an edge",
+    "outer_soundness_red_reason": "soundness bug: prism refuted after wrong frame",
+    "embedding_mutation_reason": "prism-coordinate-mutation: points 0 and 1 collide",
+    "false_refutation_emitted_by_producer": false,
+    "seconds": 0.5624138028360903,
+    "argv": [
+      "research/gp-10/refute/wrong_frame_control.py"
+    ]
+  },
+  "cli_records": 74,
+  "cli_verdicts": {
+    "refuted": 49,
+    "unknown": 25
+  },
+  "cli_unknown_exact": true,
+  "resume_bytes_unchanged": true,
+  "known_cli_accepted": true,
+  "current_sturm_cli_accepted": true,
+  "export_records": 74,
+  "export_max_record_bytes": 6692481,
+  "oversized_method_records": [
+    {
+      "run": "gp74-real-extra",
+      "g6": "Gm__x[",
+      "raw_bytes": 9559729
+    },
+    {
+      "run": "gp74-real-focused",
+      "g6": "GqGTYw",
+      "raw_bytes": 9436447
+    }
+  ],
+  "tree_source_unchanged": true,
+  "input_hashes_unchanged": true,
+  "independent_gp10_format_exists": true,
+  "independent_gp10_checker_exists": false,
+  "seconds": 31.146688705310225,
+  "argv": [
+    "research/gp-10/refute/audit_report.py"
+  ],
+  "source_sha256": {
+    "algebra.py": "395d7109e25c880fd22d150af5ff7e4a305be4337fb918354092fa4caa27bf93",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec",
+    "audit_report.py": "fcd3646d501e8f806406321b75ddc874d1798b066e0311aef06f2138f92c1a6b",
+    "audit_sample.py": "6b3434eaa669033ef325249c81667a26726f6b6a5db446c8f702c6fce0181f3e",
+    "controls.py": "26717ed7fbfe69f275705d10cc652952156a0333b0a626bf29677d19d314086a",
+    "export_checker.py": "612182fba410aee4e33c12f96b2d12b54f0272350f08b6d1ef7d6e271706eccd",
+    "gp10refute.py": "50d851358b91dbbc6cd6ac1ae8a5b8f110d7b59803d43eecf395ea8769a4e573",
+    "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63",
+    "run_focused_controls.py": "4cc11b5f664c10105664fc573bf94c10e2768d6fff189e0010e9afdfad0a62be",
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "selftest.py": "fd34878e06725005254d6bcfca38a3a1cee8b1f2b5739eea77cdee219c162806",
+    "wrong_frame_control.py": "660fbf6071be92b0fa7ecdfa936129cb28d39cf6f8348c4a865b0d014a0aa4ca"
+  }
+}

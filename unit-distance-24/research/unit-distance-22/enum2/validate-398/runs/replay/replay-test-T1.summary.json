@@ -1,0 +1,980 @@
+{
+ "tool": "enum2/replay-398.py",
+ "tool_sha256": "d57827ea83e49baa72c241dd28cf64484f1cd92cddb14373714275d34493d35f",
+ "enum2_sha256": "d967fc9024cda647c01bca95d6d6d9e2b6b0c24539d288c0ee1ee669faffa54e",
+ "forbidden_set": "398",
+ "forbidden_sha256": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+ "run_dirs": [
+  "<scratch>/scratchpad/v398/runs/A-16-41"
+ ],
+ "seed": "20260925",
+ "fraction": 0.02,
+ "min_per_shard": 3,
+ "whole_max": 20,
+ "max_per_shard": null,
+ "levels": "",
+ "host": "<host>",
+ "workers": 1,
+ "sampled_parents": 194,
+ "processed_parents": 143,
+ "production_children_compared": 53,
+ "enum2_children_compared": 53,
+ "mismatching_parents": 0,
+ "unreplayable_cells": [],
+ "seconds_per_sampled_parent": {
+  "count": 194,
+  "mean": 0.0445,
+  "median": 0.0112,
+  "p90": 0.1605,
+  "max": 0.4105,
+  "total": 8.6
+ },
+ "seconds_per_processed_parent": {
+  "count": 143,
+  "mean": 0.0604,
+  "median": 0.0288,
+  "p90": 0.1759,
+  "max": 0.4105,
+  "total": 8.6
+ },
+ "per_level": [
+  {
+   "n": 11,
+   "cells": 4,
+   "parents": 3116,
+   "sampled": 83,
+   "processed": 67,
+   "production_children": 23,
+   "enum2_children": 23,
+   "mismatches": 0,
+   "enum2_seconds": 1.31,
+   "fraction_sampled": 0.026637
+  },
+  {
+   "n": 12,
+   "cells": 4,
+   "parents": 1904,
+   "sampled": 54,
+   "processed": 30,
+   "production_children": 13,
+   "enum2_children": 13,
+   "mismatches": 0,
+   "enum2_seconds": 1.3,
+   "fraction_sampled": 0.028361
+  },
+  {
+   "n": 13,
+   "cells": 3,
+   "parents": 655,
+   "sampled": 22,
+   "processed": 20,
+   "production_children": 11,
+   "enum2_children": 11,
+   "mismatches": 0,
+   "enum2_seconds": 1.89,
+   "fraction_sampled": 0.033588
+  },
+  {
+   "n": 14,
+   "cells": 2,
+   "parents": 201,
+   "sampled": 23,
+   "processed": 19,
+   "production_children": 3,
+   "enum2_children": 3,
+   "mismatches": 0,
+   "enum2_seconds": 2.58,
+   "fraction_sampled": 0.114428
+  },
+  {
+   "n": 15,
+   "cells": 2,
+   "parents": 36,
+   "sampled": 5,
+   "processed": 5,
+   "production_children": 2,
+   "enum2_children": 2,
+   "mismatches": 0,
+   "enum2_seconds": 1.14,
+   "fraction_sampled": 0.138889
+  },
+  {
+   "n": 16,
+   "cells": 1,
+   "parents": 7,
+   "sampled": 7,
+   "processed": 2,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.41,
+   "fraction_sampled": 1.0
+  }
+ ],
+ "per_cell": [
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "11-20",
+   "n": 11,
+   "m": 20,
+   "sampled": 53,
+   "processed": 52,
+   "production_children": 20,
+   "enum2_children": 20,
+   "mismatches": 0,
+   "enum2_seconds": 0.8,
+   "d_values": [
+    3
+   ],
+   "parents_in_cell": 2631,
+   "strata": 9,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "11-21",
+   "n": 11,
+   "m": 21,
+   "sampled": 5,
+   "processed": 5,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.17,
+   "d_values": [
+    3
+   ],
+   "parents_in_cell": 232,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "11-22",
+   "n": 11,
+   "m": 22,
+   "sampled": 5,
+   "processed": 1,
+   "production_children": 0,
+   "enum2_children": 0,
+   "mismatches": 0,
+   "enum2_seconds": 0.05,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 233,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "11-23",
+   "n": 11,
+   "m": 23,
+   "sampled": 20,
+   "processed": 9,
+   "production_children": 2,
+   "enum2_children": 2,
+   "mismatches": 0,
+   "enum2_seconds": 0.29,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 20,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "12-24",
+   "n": 12,
+   "m": 24,
+   "sampled": 40,
+   "processed": 22,
+   "production_children": 11,
+   "enum2_children": 11,
+   "mismatches": 0,
+   "enum2_seconds": 0.89,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 1510,
+   "strata": 6,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "12-25",
+   "n": 12,
+   "m": 25,
+   "sampled": 9,
+   "processed": 3,
+   "production_children": 0,
+   "enum2_children": 0,
+   "mismatches": 0,
+   "enum2_seconds": 0.03,
+   "d_values": [
+    4
+   ],
+   "parents_in_cell": 365,
+   "strata": 2,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "12-26",
+   "n": 12,
+   "m": 26,
+   "sampled": 3,
+   "processed": 3,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.14,
+   "d_values": [
+    4
+   ],
+   "parents_in_cell": 27,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "12-27",
+   "n": 12,
+   "m": 27,
+   "sampled": 2,
+   "processed": 2,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.24,
+   "d_values": [
+    4
+   ],
+   "parents_in_cell": 2,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "13-28",
+   "n": 13,
+   "m": 28,
+   "sampled": 12,
+   "processed": 12,
+   "production_children": 8,
+   "enum2_children": 8,
+   "mismatches": 0,
+   "enum2_seconds": 1.04,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 562,
+   "strata": 2,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "13-29",
+   "n": 13,
+   "m": 29,
+   "sampled": 3,
+   "processed": 1,
+   "production_children": 2,
+   "enum2_children": 2,
+   "mismatches": 0,
+   "enum2_seconds": 0.13,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 86,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "13-30",
+   "n": 13,
+   "m": 30,
+   "sampled": 7,
+   "processed": 7,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.72,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 7,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "14-32",
+   "n": 14,
+   "m": 32,
+   "sampled": 4,
+   "processed": 4,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.3,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 182,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "14-33",
+   "n": 14,
+   "m": 33,
+   "sampled": 19,
+   "processed": 15,
+   "production_children": 2,
+   "enum2_children": 2,
+   "mismatches": 0,
+   "enum2_seconds": 2.28,
+   "d_values": [
+    3,
+    4
+   ],
+   "parents_in_cell": 19,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "15-36",
+   "n": 15,
+   "m": 36,
+   "sampled": 3,
+   "processed": 3,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.44,
+   "d_values": [
+    4
+   ],
+   "parents_in_cell": 34,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "15-37",
+   "n": 15,
+   "m": 37,
+   "sampled": 2,
+   "processed": 2,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.7,
+   "d_values": [
+    4
+   ],
+   "parents_in_cell": 2,
+   "strata": 1,
+   "stratum": "shards"
+  },
+  {
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "cell": "16-41",
+   "n": 16,
+   "m": 41,
+   "sampled": 7,
+   "processed": 2,
+   "production_children": 1,
+   "enum2_children": 1,
+   "mismatches": 0,
+   "enum2_seconds": 0.41,
+   "d_values": [
+    4,
+    5
+   ],
+   "parents_in_cell": 7,
+   "strata": 1,
+   "stratum": "shards"
+  }
+ ],
+ "seeds": [
+  {
+   "cell": "1-0",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 1,
+   "sampled": 1,
+   "sample_bad": [],
+   "sample_ok": true,
+   "identical": true
+  },
+  {
+   "cell": "2-1",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 1,
+   "sampled": 1,
+   "sample_bad": [],
+   "sample_ok": true,
+   "identical": true
+  },
+  {
+   "cell": "3-3",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 1,
+   "sampled": 1,
+   "sample_bad": [],
+   "sample_ok": true,
+   "identical": true
+  },
+  {
+   "cell": "4-5",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 1,
+   "sampled": 1,
+   "sample_bad": [],
+   "sample_ok": true,
+   "identical": true
+  },
+  {
+   "cell": "5-7",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 1,
+   "sampled": 1,
+   "sample_bad": [],
+   "sample_ok": true,
+   "identical": true
+  },
+  {
+   "cell": "6-9",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 4,
+   "sampled": 3,
+   "sample_bad": [],
+   "sample_ok": true,
+   "identical": true
+  },
+  {
+   "cell": "7-12",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 1,
+   "sampled": 1,
+   "sample_bad": [],
+   "sample_ok": true,
+   "identical": true
+  },
+  {
+   "cell": "8-14",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 3,
+   "sampled": 3,
+   "sample_bad": [],
+   "sample_ok": true,
+   "identical": true
+  },
+  {
+   "cell": "9-18",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 1,
+   "sampled": 1,
+   "sample_bad": [],
+   "sample_ok": true,
+   "identical": true
+  },
+  {
+   "cell": "10-17",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 2733,
+   "sampled": 55,
+   "sample_bad": [],
+   "sample_ok": true,
+   "full_check": true,
+   "enum2_records": 2733,
+   "only_seed_file": 0,
+   "only_enum2": 0,
+   "full_identical": true,
+   "full_seconds": 4.7,
+   "identical": true
+  },
+  {
+   "cell": "10-18",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 218,
+   "sampled": 5,
+   "sample_bad": [],
+   "sample_ok": true,
+   "full_check": true,
+   "enum2_records": 218,
+   "only_seed_file": 0,
+   "only_enum2": 0,
+   "full_identical": true,
+   "full_seconds": 2.4,
+   "identical": true
+  },
+  {
+   "cell": "10-19",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 19,
+   "sampled": 3,
+   "sample_bad": [],
+   "sample_ok": true,
+   "full_check": true,
+   "enum2_records": 19,
+   "only_seed_file": 0,
+   "only_enum2": 0,
+   "full_identical": true,
+   "full_seconds": 0.6,
+   "identical": true
+  },
+  {
+   "cell": "10-20",
+   "run_dir": "<scratch>/scratchpad/v398/runs/A-16-41",
+   "kind": "seed",
+   "replayable": true,
+   "records": 1,
+   "sampled": 1,
+   "sample_bad": [],
+   "sample_ok": true,
+   "full_check": true,
+   "enum2_records": 1,
+   "only_seed_file": 0,
+   "only_enum2": 0,
+   "full_identical": true,
+   "full_seconds": 0.2,
+   "identical": true
+  }
+ ],
+ "wall_seconds": 33.9,
+ "all_identical": true,
+ "stages": [
+  {
+   "for_cell": "11-20",
+   "run_dir": "A-16-41",
+   "source": "10-17.reach.g6",
+   "level": [
+    10,
+    17
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 2,
+   "reach_json_k": 2,
+   "input_records": 2733,
+   "records": 2631,
+   "derived_records": 2631
+  },
+  {
+   "for_cell": "11-21",
+   "run_dir": "A-16-41",
+   "source": "10-18.reach.g6",
+   "level": [
+    10,
+    18
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 2,
+   "reach_json_k": 2,
+   "input_records": 218,
+   "records": 213,
+   "derived_records": 213
+  },
+  {
+   "for_cell": "11-21",
+   "run_dir": "A-16-41",
+   "source": "10-19.reach.g6",
+   "level": [
+    10,
+    19
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 1,
+   "reach_json_k": 1,
+   "input_records": 19,
+   "records": 19,
+   "derived_records": 19
+  },
+  {
+   "for_cell": "11-22",
+   "run_dir": "A-16-41",
+   "source": "10-20.reach.g6",
+   "level": [
+    10,
+    20
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 1,
+   "reach_json_k": 1,
+   "input_records": 1,
+   "records": 1,
+   "derived_records": 1
+  },
+  {
+   "for_cell": "12-24",
+   "run_dir": "A-16-41",
+   "source": "11-20.reach.g6",
+   "level": [
+    11,
+    20
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 3,
+   "reach_json_k": 3,
+   "input_records": 1172,
+   "records": 1172,
+   "derived_records": 1172
+  },
+  {
+   "for_cell": "12-24",
+   "run_dir": "A-16-41",
+   "source": "11-21.reach.g6",
+   "level": [
+    11,
+    21
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 2,
+   "reach_json_k": 2,
+   "input_records": 338,
+   "records": 338,
+   "derived_records": 338
+  },
+  {
+   "for_cell": "12-25",
+   "run_dir": "A-16-41",
+   "source": "11-22.reach.g6",
+   "level": [
+    11,
+    22
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 2,
+   "reach_json_k": 2,
+   "input_records": 25,
+   "records": 25,
+   "derived_records": 25
+  },
+  {
+   "for_cell": "12-25",
+   "run_dir": "A-16-41",
+   "source": "11-23.reach.g6",
+   "level": [
+    11,
+    23
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 1,
+   "reach_json_k": 1,
+   "input_records": 2,
+   "records": 2,
+   "derived_records": 2
+  },
+  {
+   "for_cell": "13-28",
+   "run_dir": "A-16-41",
+   "source": "12-24.reach.g6",
+   "level": [
+    12,
+    24
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 3,
+   "reach_json_k": 3,
+   "input_records": 483,
+   "records": 483,
+   "derived_records": 483
+  },
+  {
+   "for_cell": "13-28",
+   "run_dir": "A-16-41",
+   "source": "12-25.reach.g6",
+   "level": [
+    12,
+    25
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 2,
+   "reach_json_k": 2,
+   "input_records": 79,
+   "records": 79,
+   "derived_records": 79
+  },
+  {
+   "for_cell": "13-29",
+   "run_dir": "A-16-41",
+   "source": "12-26.reach.g6",
+   "level": [
+    12,
+    26
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 2,
+   "reach_json_k": 2,
+   "input_records": 6,
+   "records": 6,
+   "derived_records": 6
+  },
+  {
+   "for_cell": "13-29",
+   "run_dir": "A-16-41",
+   "source": "12-27.reach.g6",
+   "level": [
+    12,
+    27
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 1,
+   "reach_json_k": 1,
+   "input_records": 1,
+   "records": 1,
+   "derived_records": 1
+  },
+  {
+   "for_cell": "14-32",
+   "run_dir": "A-16-41",
+   "source": "13-28.reach.g6",
+   "level": [
+    13,
+    28
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 3,
+   "reach_json_k": 3,
+   "input_records": 164,
+   "records": 164,
+   "derived_records": 164
+  },
+  {
+   "for_cell": "14-32",
+   "run_dir": "A-16-41",
+   "source": "13-29.reach.g6",
+   "level": [
+    13,
+    29
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 2,
+   "reach_json_k": 2,
+   "input_records": 18,
+   "records": 18,
+   "derived_records": 18
+  },
+  {
+   "for_cell": "14-33",
+   "run_dir": "A-16-41",
+   "source": "13-30.reach.g6",
+   "level": [
+    13,
+    30
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 2,
+   "reach_json_k": 2,
+   "input_records": 1,
+   "records": 1,
+   "derived_records": 1
+  },
+  {
+   "for_cell": "15-36",
+   "run_dir": "A-16-41",
+   "source": "14-32.reach.g6",
+   "level": [
+    14,
+    32
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 3,
+   "reach_json_k": 3,
+   "input_records": 34,
+   "records": 34,
+   "derived_records": 34
+  },
+  {
+   "for_cell": "15-37",
+   "run_dir": "A-16-41",
+   "source": "14-33.reach.g6",
+   "level": [
+    14,
+    33
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 3,
+   "reach_json_k": 3,
+   "input_records": 2,
+   "records": 2,
+   "derived_records": 2
+  },
+  {
+   "for_cell": "16-41",
+   "run_dir": "A-16-41",
+   "source": "15-36.reach.g6",
+   "level": [
+    15,
+    36
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 4,
+   "reach_json_k": 4,
+   "input_records": 6,
+   "records": 6,
+   "derived_records": 6
+  },
+  {
+   "for_cell": "16-41",
+   "run_dir": "A-16-41",
+   "source": "15-37.reach.g6",
+   "level": [
+    15,
+    37
+   ],
+   "kind": "reach",
+   "status": "re-derived",
+   "ok": true,
+   "k": 3,
+   "reach_json_k": 3,
+   "input_records": 1,
+   "records": 1,
+   "derived_records": 1
+  }
+ ],
+ "stages_checked": 19,
+ "stages_ok": true,
+ "red_controls": [
+  {
+   "id": "R1",
+   "control": "mutated parent (edge 0-1 flipped, re-canonicalised) against the original production block",
+   "cell": "11-20",
+   "index": 139,
+   "block_size": 1,
+   "baseline_identical": true,
+   "mutated": "I?IOyZ`[g",
+   "only_production": 1,
+   "only_enum2": 12,
+   "went_red": true
+  },
+  {
+   "id": "R2",
+   "control": "one record dropped from the production block",
+   "cell": "11-20",
+   "index": 139,
+   "block_size": 1,
+   "baseline_identical": true,
+   "only_enum2": 1,
+   "went_red": true
+  },
+  {
+   "id": "R4",
+   "control": "enum2's children of parent i against the block of parent i+1",
+   "cell": "11-20",
+   "index": 139,
+   "block_size": 1,
+   "baseline_identical": true,
+   "next_block_size": 0,
+   "went_red": true
+  },
+  {
+   "id": "R5a",
+   "control": "one production record replaced by a neighbouring child (another parent's)",
+   "cell": "11-20",
+   "index": 139,
+   "block_size": 1,
+   "baseline_identical": true,
+   "wrong_equal_count_check": "PASS",
+   "set_check": "FAIL",
+   "went_red": true
+  },
+  {
+   "id": "R5b",
+   "control": "enum2's children minus one record",
+   "cell": "11-20",
+   "index": 139,
+   "block_size": 1,
+   "baseline_identical": true,
+   "wrong_subset_check": "PASS",
+   "set_check": "FAIL",
+   "went_red": true
+  },
+  {
+   "id": "R3",
+   "control": "enum2 without member 395 (one of the 324) against the production block",
+   "cell": "11-20",
+   "index": 129,
+   "production_children": 0,
+   "enum2_children_without_member": 1,
+   "extra": 1,
+   "missing": 0,
+   "extras_contain_exactly_that_member": true,
+   "went_red": true
+  }
+ ],
+ "red_all": true
+}

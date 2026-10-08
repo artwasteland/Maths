@@ -1,0 +1,17 @@
+{
+  "artifacts": {
+    "B10-final/checked/F10-provenance.json": "bcabf588e3e725564fd2c39c24d86ead234535e721bb6d507d1a9435c1dc63e2",
+    "B10-final/checked/L10.g6": "a899e36cec0f135f253e0c9942d2fecd29280da44189a01d00752e8a5af971b8",
+    "B10-final/checked/report.json": "a72a3e448b0a90c900cd111b59ca909f71a7a939b439a21c42ba583966c77cb8",
+    "final-check.log": "0d9ca0fe920eb98cdf2fec14a00a6dc6ed7139f79770c8b82b82ae2e7944f17c"
+  },
+  "execution": {
+    "exit": 0,
+    "min_available_kib": 5382840,
+    "reason": "completed",
+    "wall_seconds": 3664.847363463603
+  },
+  "merge_sha256": "429166c13cf169f1aa170d33ff59660a93e5fe4e9d50a77084b9dd62efa191c2",
+  "pass_line": "PASS B10 COMPLETE derived=324",
+  "status": "PASS"
+}

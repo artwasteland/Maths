@@ -1,0 +1,21 @@
+== units
+UNITS PASS
+== agreement
+AGREEMENT PASS
+== exact-crosscheck
+EXACT PASS
+== b10
+B10 PASS (41 s)
+== mutants
+MUTANTS PASS
+== through-checker
+THROUGH-CHECKER PASS
+== bench-w1
+{"file": "w1-measure-19.g6", "graphs": 201000, "cpu_seconds": 5.303, "wall_seconds": 5.327, "graphs_per_cpu_second": 37903, "sample_verdicts": {"pass": 247, "refuted": 544, "tu": 709}, "flagged_percent": 83.5, "mean_cycles": 16.6, "max_rank": 18, "certificate_failures": 0}
+== e2e
+E2E PASS
+== filterset
+FILTERSET PASS
+== runbook-rh
+RUNBOOK-RULES PASS
+ALL RHOMBUS TESTS PASSED

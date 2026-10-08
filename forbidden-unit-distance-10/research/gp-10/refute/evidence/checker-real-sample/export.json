@@ -1,0 +1,13 @@
+{
+  "records": 1,
+  "converted_sturm": 0,
+  "unknown": 0,
+  "local_replay": "PASS",
+  "independent_checker_run": false,
+  "argv": [
+    "research/gp-10/refute/export_checker.py",
+    "research/gp-10/refute/evidence/cli-current-real.jsonl",
+    "--out-dir",
+    "research/gp-10/refute/evidence/checker-real-sample"
+  ]
+}

@@ -1,0 +1,25 @@
+--filter the 4 L10 members with 15 edges, set 398: exit 0; sanitizer lines 0; {"parents_seen":4,"parents_processed":4,"parents_degree_skipped":0,"bad_sets":0,"neighbourhoods":0,"neighbourhood_orbit_
+    kept 0, expected 0: ok
+--filter the 4 L10 members with 15 edges, set 74: exit 0; sanitizer lines 0; {"parents_seen":4,"parents_processed":4,"parents_degree_skipped":0,"bad_sets":0,"neighbourhoods":0,"neighbourhood_orbit_
+    kept 4, expected 4: ok
+--filter the 126 L10 members with 16 edges, set 398: exit 0; sanitizer lines 0; {"parents_seen":126,"parents_processed":126,"parents_degree_skipped":0,"bad_sets":0,"neighbourhoods":0,"neighbourhood_or
+    kept 0, expected 0: ok
+--filter the 126 L10 members with 16 edges, set 74: exit 0; sanitizer lines 0; {"parents_seen":126,"parents_processed":126,"parents_degree_skipped":0,"bad_sets":0,"neighbourhoods":0,"neighbourhood_or
+    kept 126, expected 126: ok
+--filter the 191 L10 members with 17 edges, set 398: exit 0; sanitizer lines 0; {"parents_seen":191,"parents_processed":191,"parents_degree_skipped":0,"bad_sets":0,"neighbourhoods":0,"neighbourhood_or
+    kept 0, expected 0: ok
+--filter the 191 L10 members with 17 edges, set 74: exit 0; sanitizer lines 0; {"parents_seen":191,"parents_processed":191,"parents_degree_skipped":0,"bad_sets":0,"neighbourhoods":0,"neighbourhood_or
+    kept 191, expected 191: ok
+--filter the 3 L10 members with 18 edges, set 398: exit 0; sanitizer lines 0; {"parents_seen":3,"parents_processed":3,"parents_degree_skipped":0,"bad_sets":0,"neighbourhoods":0,"neighbourhood_orbit_
+    kept 0, expected 0: ok
+--filter the 3 L10 members with 18 edges, set 74: exit 0; sanitizer lines 0; {"parents_seen":3,"parents_processed":3,"parents_degree_skipped":0,"bad_sets":0,"neighbourhoods":0,"neighbourhood_orbit_
+    kept 3, expected 3: ok
+set 398 --verify-parents on the 743 level-21 parents (must refuse): exit 2; sanitizer lines 0; udenum: parent file contains a forbidden graph
+set 398 on the 743 level-21 parents: exit 0; sanitizer lines 0; {"parents_seen":743,"parents_processed":676,"parents_degree_skipped":67,"bad_sets":4011,"neighbourhoods":333688,"neighbo
+ASAN checks: PASS
+RED CONTROL: planted order[9]/map[9], --filter the 16-edge members: exit 1; sanitizer lines 4; ==3177503==ABORTING
+    <scratch>/scratchpad/t398-work/asan/udenum-oldexists.c:724:17: runtime error: index 9 out of bounds for type 'int [9]'
+    <scratch>/scratchpad/t398-work/asan/udenum-oldexists.c:718:49: runtime error: index 9 out of bounds for type 'int [9]'
+    ==3177503==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x795aab000658 at pc 0x5b3a4a2de644 bp 0x7ffd43a504c0 sp 0x7ffd43a504b0
+RED CONTROL went red
+RESULT: PASS

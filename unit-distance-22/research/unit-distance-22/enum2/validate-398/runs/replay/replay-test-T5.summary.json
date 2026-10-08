@@ -1,0 +1,43 @@
+{
+ "tool": "enum2/replay-398.py",
+ "tool_sha256": "d57827ea83e49baa72c241dd28cf64484f1cd92cddb14373714275d34493d35f",
+ "enum2_sha256": "d967fc9024cda647c01bca95d6d6d9e2b6b0c24539d288c0ee1ee669faffa54e",
+ "forbidden_set": "398",
+ "forbidden_sha256": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+ "run_dirs": [
+  "<scratch>/scratchpad/v398/replay-test/T5-run/A-16-41"
+ ],
+ "seed": "20260925",
+ "fraction": 0.02,
+ "min_per_shard": 3,
+ "whole_max": 20,
+ "max_per_shard": null,
+ "levels": "",
+ "host": "<host>",
+ "workers": 1,
+ "sampled_parents": 0,
+ "processed_parents": 0,
+ "production_children_compared": 0,
+ "enum2_children_compared": 0,
+ "mismatching_parents": 0,
+ "unreplayable_cells": [
+  {
+   "run_dir": "<scratch>/scratchpad/v398/replay-test/T5-run/A-16-41",
+   "cell": "11-20",
+   "replayable": false,
+   "problems": [
+    "parent source <scratch>/scratchpad/v398/replay-test/T5-run/A-16-41/10-17.reach.g6 not found with sha256 49e0a661e315a6b885531a3632a941d186c06e50746e73de3c3158abe23ea613"
+   ]
+  }
+ ],
+ "seconds_per_sampled_parent": null,
+ "seconds_per_processed_parent": null,
+ "per_level": [],
+ "per_cell": [],
+ "seeds": [],
+ "wall_seconds": 0.0,
+ "all_identical": false,
+ "stages": [],
+ "stages_checked": 0,
+ "stages_ok": true
+}

@@ -1,0 +1,760 @@
+diff -ru pristine-r1/research/unit-distance-24/tools/g1_controls.py repo/research/unit-distance-24/tools/g1_controls.py
+--- pristine-r1/research/unit-distance-24/tools/g1_controls.py	2026-10-07 10:35:57.000000000 +1100
++++ repo/research/unit-distance-24/tools/g1_controls.py	2026-10-07 18:50:40.125733596 +1100
+@@ -58,6 +58,11 @@
+     digest = hashlib.sha256("".join(f"{name} {row['sha256']}\n" for name, row in sorted(hashes["files"].items())).encode())
+     s["files_digest"] = f"{len(hashes['files'])} files, sha256 {digest.hexdigest()}"
+     s["run_summary_sha256"] = e.sha(result / "run-summary.json")
++    if {"run-config.json", "reach.json"} & set(changed):
++        kp = text.with_suffix(".known.json")
++        known = e.load(kp)
++        known.update(run_config_sha256=e.sha(result / "run-config.json"), reach_sha256=e.sha(result / "reach.json"))
++        dump(kp, known)
+     write_inventory(ip, rows)
+     dump(sp, s)
+     seal(text, sp, ip)
+@@ -148,17 +153,354 @@
+             m["counts"].update(input=1, unknown=1, kept=1, pruned=0, survivors=1, tri_survivors=1)
+             for suffix in (".certs.jsonl", ".keep.g6", ".UNKNOWN.g6"):
+                 rebind(m, result, CELL + suffix)
++            m["inputs_sha256"][m["level_file"]] = e.sha(result / (CELL + ".g6"))
++            m["verified_counts"].update(records=1, unknown=1, kept=1)
++            m["triangles_stats"].update(graphs=1, **{"pass": 1})
++            m["embedder"]["survivors"] = 1
++            m["checker"] = m["checker"].replace("records=0", "records=1").replace("unknown=0", "unknown=1")
+         producer(result, initial)
+         changed.append(CELL + ".prune.manifest.json")
++        for summary in (raw, s["summary"]):
++            entry = next(v for v in summary["levels"] if v["n"] == 23)
++            entry["prune"]["checker"] = e.load(result / (CELL + ".prune.manifest.json"))["checker"]
++        dump(result / "run-summary.json", raw)
++        dump(sp, s)
++        stage = e.load(result / (CELL + ".manifest.json"))
++        stage.update(children_written=1, children_file_sha256=e.sha(result / (CELL + ".g6")))
++        dump(result / (CELL + ".manifest.json"), stage)
++        stage = e.load(result / "24-69.manifest.json")
++        stage["parent_range"] = [0, 1]
++        stage["parent_sources"][0].update(records=1, sha256=e.sha(result / (CELL + ".keep.g6")))
++        stage["inputs_sha256"][stage["parent_file"]] = e.sha(result / (CELL + ".keep.g6"))
++        dump(result / "24-69.manifest.json", stage)
++        verify.update(parents_seen=1)
++        verify["parts"][0]["range"] = [0, 1]
++        verify["parts"][0]["udenum_stats"]["parents_seen"] = 1
++        verify["parts"][0]["udenum_stats"]["parents_degree_skipped"] = 1
++        dump(result / "verify/23-64.verify.manifest.json", verify)
++        changed += [CELL + ".manifest.json", "24-69.manifest.json"]
+     refresh(result, text, changed)
+ 
+ 
++def round2(args, setup, control, accept):
++    """Each case has one deliberately false claim and otherwise fresh envelopes."""
++    stage, prune, verify = CELL + ".manifest.json", CELL + ".prune.manifest.json", "verify/23-64.verify.manifest.json"
++    expanded, _, text = setup("r2-expanded-honest", args.expanded)
++    seal(text, text.with_suffix(".structure.json"), text.with_suffix(".inventory.jsonl.gz"))
++    accept(expanded)
++    print("G1 GREEN: expanded receipt with refreshed duplicate envelopes accepted", flush=True)
++
++    def manifest_case(name, file, edit, want, source=None, remove_export=False):
++        root, result, text = setup("r2-" + name, source)
++        if remove_export:
++            sp = text.with_suffix(".structure.json")
++            s = e.load(sp)
++            del s["manifests"][stage]
++            dump(sp, s)
++        value = e.load(result / file)
++        old_checker = value.get("checker")
++        edit(value)
++        dump(result / file, value)
++        changed = [file]
++        if file == prune and value.get("checker") != old_checker:
++            sp = text.with_suffix(".structure.json")
++            s, raw = e.load(sp), e.load(result / "run-summary.json")
++            for sm in (raw, s["summary"]):
++                next(v for v in sm["levels"] if v["n"] == 23)["prune"]["checker"] = value["checker"]
++            dump(sp, s)
++            dump(result / "run-summary.json", raw)
++            changed.append("run-summary.json")
++        refresh(result, text, changed)
++        control("r2-" + name, root, want)
++
++    for key, value, want in (
++            ("children_written", 777, "COUNTS: 23-64.manifest.json children_written: metadata 777 != checked files 0"),
++            ("children_file_sha256", "0" * 64, "RECEIPT: 23-64.manifest.json children_file_sha256 differs from checked files")):
++        manifest_case(key, stage, lambda m, k=key, v=value: m.update({k: v}), want)
++        # The expanded countercheck is kept honest, including its duplicate byte envelopes.
++        manifest_case("export-removed-" + key, stage, lambda m, k=key, v=value: m.update({k: v}),
++                      want, expanded, True)
++        accept(expanded)
++    for remove, want in ((stage, "RECEIPT: retained 23-64.g6 has no stage manifest"),
++                         (CELL + ".g6", "RECEIPT: 23-64.manifest.json describes a level file that is not retained")):
++        root, result, text = setup("r2-missing-" + remove)
++        sp, ip = text.with_suffix(".structure.json"), text.with_suffix(".inventory.jsonl.gz")
++        s, rows = e.load(sp), inventory(ip)
++        (result / remove).unlink()
++        del s["retained"][remove]
++        if remove in s["file_counts"]:
++            s["file_counts"][remove]["bytes"] = 4_000_000
++        for row in rows:
++            if row.get("path") == remove:
++                row["bytes"] = 4_000_000
++        write_inventory(ip, rows)
++        dump(sp, s)
++        seal(text, sp, ip)
++        control("r2-missing-" + remove, root, want)
++
++    def replace_nested(keys, value):
++        def edit(m):
++            for key in keys[:-1]:
++                m = m[key]
++            m[keys[-1]] = value
++        return edit
++
++    for key, value in (("parent_file", "wrong.g6"), ("parent_range", [0, 777])):
++        manifest_case(key, stage, lambda m, k=key, v=value: m.update({k: v}),
++                      f"RECEIPT: {stage} {key} differs from checked files")
++    for key, value in (("exit_status", 1), ("forbidden_set", 74)):
++        manifest_case('stage-' + key, stage, lambda m, k=key, v=value: m.update({k: v}),
++                      f"RECEIPT: {stage} {key} differs from checked files")
++    for key, value in (("enabled", False), ("prune_from", 99), ("prune_filter_only", False),
++                       ("triangles", False), ("filter_set", 398)):
++        manifest_case('stage-pruning-' + key, stage, replace_nested(['pruning', key], value),
++                      f"RECEIPT: {stage} pruning {key} differs from checked files")
++    for key, value, want in (
++            ("level", [21, 59], f"RECEIPT: {stage} parent stages differs from checked files"),
++            ("kind", "full", f"RECEIPT: {stage} parent stages differs from checked files"),
++            ("file", "wrong.g6", f"RECEIPT: {stage} parent file differs from checked files"),
++            ("d", 777, f"COUNTS: {stage} parent d: metadata 777 != checked files 5"),
++            ("records", 777, f"COUNTS: {stage} parent 22-59.keep.g6 records: metadata 777 != checked files 0"),
++            ("sha256", "0" * 64, f"RECEIPT: {stage} parent 22-59.keep.g6 sha256 differs from checked files")):
++        manifest_case("parent-" + key, stage, replace_nested(["parent_sources", 0, key], value), want)
++    for key, value in (("enabled", False), ("k", 777), ("reach_json_sha256", "0" * 64),
++                       ("table_level", {"64": 777}), ("table_parent_level", {"59": 777, "60": 3})):
++        manifest_case("reach-" + key, stage, replace_nested(["reach", key], value),
++                      f"RECEIPT: {stage} reach {key} differs from checked files")
++    for file, field, source in ((stage, "inputs_sha256", "reach.json"),
++                                (prune, "inputs_sha256", CELL + ".reach.g6")):
++        def edit(m, source=source, field=field):
++            m[field].update({k: "0" * 64 for k in m[field] if Path(k).name == source})
++        manifest_case(file + "-" + field, file, edit,
++                      f"RECEIPT: {file} {field} {source} differs from checked files")
++    manifest_case("metadata-output-hash", stage, lambda m: m.update(outputs_sha256={"reach.json": "0" * 64}),
++                  f"RECEIPT: {stage} outputs_sha256 reach.json differs from checked files")
++    manifest_case("level_file", prune, lambda m: m.update(level_file="wrong.g6"),
++                  f"RECEIPT: {prune} level_file differs from checked files")
++    for key, value in (("target", [24, 70]), ("forbidden_set", 74), ("triangles", False),
++                       ("filter_set", 398), ("exit_status", 1), ("problems", ['probe']),
++                       ("mutation", {'unknown_as_pruned': True})):
++        manifest_case('prune-' + key, prune, lambda m, k=key, v=value: m.update({k: v}),
++                      f"RECEIPT: {prune} {key} differs from checked files")
++    for field, key, value in (("embedder", "skipped", False), ("embedder", "filter_only", False),
++                              ("tu_rule_bound", "n", 23), ("tu_rule_bound", "proved_upper_bound", 70),
++                              ("triangles_prover", "witness", 'rhombus')):
++        label = field + ' ' + key
++        manifest_case(label, prune, replace_nested([field, key], value), f"RECEIPT: {prune} {label} differs from checked files")
++    for key, value in (("command", 'false'), ("path", 'wrong.py'), ("from_environment", True)):
++        manifest_case('checker-description-' + key, prune, replace_nested(['triangles_checker', key], value),
++                      f"RECEIPT: {prune} triangles_checker command differs from checked files")
++    manifest_case('checker-result', prune, lambda m: m.update(checker=m['checker'].replace('ACCEPT', 'REJECT', 1)),
++                  f"RECEIPT: {prune} checker result differs from checked files")
++    for field in ('counts', 'verified_counts'):
++        manifest_case(field + '-keys', prune, lambda m, f=field: m[f].update(extra=777),
++                      f"RECEIPT: {prune} {field} keys differs from checked files")
++    for data_name in ('forbidden-398.json', 'forbidden-74.json', 'tu-gadgets.json'):
++        def edit(m, data_name=data_name):
++            m['inputs_sha256'].update({k: '0'*64 for k in m['inputs_sha256'] if Path(k).name == data_name})
++        manifest_case('data-sha-' + data_name, prune, edit,
++                      f"RECEIPT: {prune} inputs_sha256 {data_name} differs from checked files")
++    for field, keys in (("counts", ("tu", "survivors", "embedded", "refuted", "tri_tu", "tri_refuted", "tri_survivors", "tri_silent_passes")),
++                        ("verified_counts", tuple(e.load(paths(args.source)[0] / prune)["verified_counts"])),
++                        ("triangles_stats", ("graphs", "tu", "refuted", "pass")), ("embedder", ("survivors",))):
++        for key in keys:
++            manifest_case(field + "-" + key, prune, replace_nested([field, key], 777),
++                          f"COUNTS: {prune} {field} {key}: metadata 777 != checked files 0")
++    manifest_case("triangles_silent_passes", prune, lambda m: m.update(triangles_silent_passes=777),
++                  f"COUNTS: {prune} triangles_silent_passes: metadata 777 != checked files 0")
++    for key in ("records", "forbidden", "tu", "embedded", "refuted", "unknown", "proof_nodes", "rhombus_tu", "rhombus_refuted", "tri_tu", "tri_refuted"):
++        manifest_case("checker-" + key, prune, lambda m, k=key: m.update(checker=m["checker"].replace(k + "=0", k + "=777")),
++                      f"COUNTS: {prune} checker {key}: metadata 777 != checked files 0")
++    for key, value, want in (("stage_file", "wrong.g6", f"RECEIPT: {verify} stage_file differs from checked files"),
++                            ("parents_seen", 777, f"COUNTS: {verify} parents_seen: metadata 777 != checked files 0"),
++                            ("parts", [], f"RECEIPT: {verify} parts do not tile checked stage")):
++        manifest_case("verify-" + key, verify, lambda m, k=key, v=value: m.update({k: v}), want)
++    manifest_case("verify-range", verify, replace_nested(["parts", 0, "range"], [0, 777]),
++                  f"RECEIPT: {verify} parts do not tile checked stage")
++    manifest_case("verify-part-parents", verify, replace_nested(["parts", 0, "udenum_stats", "parents_seen"], 777),
++                  f"COUNTS: {verify} part 0 parents_seen: metadata 777 != checked files 0")
++    for key, value in (("kind", 'wrong'), ("level", [23, 65]), ("exit_status", 1), ("forbidden_set", 74),
++                       ("check", 'unchecked'), ("udenum_target", [24, 69]), ("forbidden_sha256", '0'*64)):
++        manifest_case('verify-identity-' + key, verify, lambda m, k=key, v=value: m.update({k: v}),
++                      f"RECEIPT: {verify} {key} differs from checked files")
++    for key in ("parents_degree_skipped", "parents_processed", "children_written", "bad_sets", "neighbourhoods",
++                "neighbourhood_orbit_reps", "neighbourhoods_bad", "child_orbit_rejected"):
++        manifest_case('verify-part-' + key, verify, replace_nested(['parts', 0, 'udenum_stats', key], 777),
++                      f"COUNTS: {verify} part 0 {key}: metadata 777 != checked files 0")
++    # Bind summary duplicates: the raw summary and structure's normalized summary
++    # are separate claims, not two independent measurements.
++    for container in ("raw", "structure"):
++        fields = [("checker", "ACCEPT certificates records=777", "RECEIPT: 23-64 summary prune checker differs from checked files")]
++        fields += [("counts." + key, 777, f"COUNTS: 23-64 prune {key}: metadata 777 != checked files 0")
++                   for key in ("tu", "survivors", "embedded", "refuted", "tri_tu", "tri_refuted", "tri_survivors", "tri_silent_passes")]
++        fields.append(("verify.parts", 777, "COUNTS: 23-64 summary verify parts: metadata 777 != checked files 1"))
++        for field, value, want in fields:
++            root, result, text = setup("r2-summary-" + container + "-" + field)
++            sp = text.with_suffix(".structure.json")
++            s, raw = e.load(sp), e.load(result / "run-summary.json")
++            sm = raw if container == "raw" else s["summary"]
++            entry = next(v for v in sm["levels"] if v["n"] == 23)
++            if field == "verify.parts":
++                entry["verify"]["parts"] = value
++            elif field == "checker":
++                entry["prune"]["checker"] = value
++            else:
++                entry["prune"]["counts"][field.split('.')[1]] = value
++            dump(result / "run-summary.json", raw)
++            dump(result / "counts.json", [[v['n'], v['m'], v.get('children'), (v.get('prune') or {}).get('counts')] for v in raw['levels']])
++            dump(sp, s)
++            refresh(result, text, ["run-summary.json", "counts.json"])
++            control("r2-summary-" + container + "-" + field, root, want)
++        for field, value in (("forbidden_set", 74), ("prune_filter_set", 398), ("triangles", False),
++                             ("verify_stages", False), ("reach.enabled", False), ("prune.prune_filter_only", False)):
++            root, result, text = setup('r2-summary-' + container + '-parameter-' + field)
++            sp = text.with_suffix('.structure.json')
++            s, raw = e.load(sp), e.load(result / 'run-summary.json')
++            sm = raw if container == 'raw' else s['summary']
++            replace_nested(field.split('.'), value)(sm)
++            dump(sp, s)
++            dump(result / 'run-summary.json', raw)
++            refresh(result, text, ['run-summary.json'])
++            label = 'summary ' + field if '.' not in field else ('summary reach enabled' if field == 'reach.enabled' else 'summary prune_filter_only')
++            control('r2-summary-' + container + '-parameter-' + field, root, f"RECEIPT: {label} differs from checked files")
++        for key in ('builtin', 'value'):
++            root, result, text = setup('r2-summary-' + container + '-ubar-' + key)
++            sp = text.with_suffix('.structure.json')
++            s, raw = e.load(sp), e.load(result / 'run-summary.json')
++            sm = raw if container == 'raw' else s['summary']
++            sm['ubar_override']['23'][key] = 777
++            dump(sp, s)
++            dump(result / 'run-summary.json', raw)
++            refresh(result, text, ['run-summary.json'])
++            control('r2-summary-' + container + '-ubar-' + key, root, 'RECEIPT: summary ubar_override differs from checked files')
++    for key in ('builtin', 'value'):
++        manifest_case('config-ubar-' + key, 'run-config.json', replace_nested(['ubar_override', '23', key], 777),
++                      'RECEIPT: config ubar_override differs from checked files')
++    for key in ("bytes", "newlines"):
++        root, result, text = setup("r2-inventory-metadata-" + key)
++        sp, ip = text.with_suffix(".structure.json"), text.with_suffix(".inventory.jsonl.gz")
++        s, rows = e.load(sp), inventory(ip)
++        name = "reach.json"
++        row = next(r for r in rows if r.get("path") == name)
++        actual = row[key]
++        row[key] += 777
++        if name in s['file_counts']:
++            s['file_counts'][name]['bytes' if key == 'bytes' else 'records'] += 777
++        write_inventory(ip, rows)
++        dump(sp, s)
++        seal(text, sp, ip)
++        want = (f"COUNTS: inventory {name} records: metadata {actual+777} != checked files {actual}" if key == 'newlines'
++                else f"RECEIPT: inventory {name} differs from retained bytes")
++        control("r2-inventory-metadata-" + key, root, want)
++    for label, want in (("inventory", "text inventory bytes"), ("known receipt", "text known receipt bytes"),
++                        ("structure receipt", "text structure receipt bytes"),
++                        ("level files checked (the runbook's hashes.json rule)", "text level files checked")):
++        root, result, text = setup("r2-text-" + label.split()[0])
++        lines = text.read_text().splitlines()
++        prefix_line = '# ' + label + ': '
++        lines = [line.replace(' bytes', '0 bytes', 1) if line.startswith(prefix_line) and 'bytes' in line
++                 else (prefix_line + '777 files, sha256 ' + '0'*64 if line.startswith(prefix_line) else line) for line in lines]
++        text.write_text('\n'.join(lines) + '\n')
++        control("r2-text-" + label, root, f"RECEIPT: {want} differs from checked files")
++    for field in ("sha256", "bytes", "prefix"):
++        root, result, text = setup("r2-text-inventory-json-" + field)
++        lines = text.read_text().splitlines()
++        for index, line in enumerate(lines):
++            if line.startswith('# inventory:'):
++                head, payload = line.split('; ', 1)
++                payload = json.loads(payload)
++                payload[field] = '0'*64 if field == 'sha256' else (777 if field == 'bytes' else {})
++                lines[index] = head + '; ' + json.dumps(payload)
++        text.write_text('\n'.join(lines) + '\n')
++        control("r2-text-inventory-json-" + field, root, f"RECEIPT: text inventory {field} differs from checked files")
++    for key in ("bytes", "sha256"):
++        root, result, text = setup("r2-parent-inventory-" + key)
++        sp, ip = text.with_suffix(".structure.json"), text.with_suffix(".inventory.jsonl.gz")
++        s, rows = e.load(sp), inventory(ip)
++        name = "_parents/24-69.g6"
++        row = next(r for r in rows if r.get('path') == name)
++        row[key] = 777 if key == 'bytes' else '0'*64
++        s['file_counts'][name][key] = row[key]
++        write_inventory(ip, rows)
++        dump(sp, s)
++        seal(text, sp, ip)
++        control("r2-parent-inventory-" + key, root, f"RECEIPT: inventory {name} differs from retained bytes")
++    manifest_case("parent-input-sha", "24-69.manifest.json",
++                  lambda m: m['inputs_sha256'].update({m['parent_file']: '0'*64}),
++                  "RECEIPT: 24-69.manifest.json inputs_sha256 _parents/24-69.g6 differs from checked files")
++    root, result, text = setup("r2-export-input-sha", expanded)
++    sp, ip = text.with_suffix('.structure.json'), text.with_suffix('.inventory.jsonl.gz')
++    s, rows = e.load(sp), inventory(ip)
++    name = next(name for name in sorted(s['manifests']) if name.startswith('13-') and '/' not in name)
++    m = json.loads(s['manifests'][name]['text'])
++    m['inputs_sha256']['reach.json'] = '0'*64
++    raw = (json.dumps(m, sort_keys=True) + '\n').encode()
++    sha = hashlib.sha256(raw).hexdigest()
++    s['manifests'][name] = dict(text=raw.decode(), sha256=sha)
++    for row in rows:
++        if row.get('path') == name:
++            row.update(bytes=len(raw), newlines=raw.count(b'\n'), sha256=sha)
++    if name in s['file_counts']:
++        s['file_counts'][name] = dict(bytes=len(raw), records=raw.count(b'\n'), sha256=sha)
++    write_inventory(ip, rows)
++    dump(sp, s)
++    seal(text, sp, ip)
++    control("r2-export-input-sha", root, f"RECEIPT: export {name} inputs_sha256 reach.json differs from checked files")
++    synthetic, result, text = setup('r2-synthetic-certificate-order')
++    synthetic_keep(result, text, 1)
++    accept(synthetic)
++    for suffix in ('.certs.jsonl', '.keep.g6', '.UNKNOWN.g6'):
++        root, result, text = setup('r2-certificate-order' + suffix, synthetic)
++        path = result / (CELL + suffix)
++        path.write_bytes(path.read_bytes().replace(b'?'*43, b'?'*42 + b'@'))
++        producer(result, lambda m: rebind(m, result, path.name))
++        changed = [path.name, prune]
++        if suffix == '.keep.g6':
++            m = e.load(result / '24-69.manifest.json')
++            m['parent_sources'][0]['sha256'] = e.sha(path)
++            m['inputs_sha256'][m['parent_file']] = e.sha(path)
++            dump(result / '24-69.manifest.json', m)
++            vm = e.load(result / verify)
++            vm['stage_sha256'] = e.sha(path)
++            dump(result / verify, vm)
++            changed += ['24-69.manifest.json', verify]
++            sp, ip = text.with_suffix('.structure.json'), text.with_suffix('.inventory.jsonl.gz')
++            s, rows = e.load(sp), inventory(ip)
++            for row in rows:
++                if row.get('path') == '_parents/24-69.g6':
++                    row['sha256'] = e.sha(path)
++            s['file_counts']['_parents/24-69.g6']['sha256'] = e.sha(path)
++            write_inventory(ip, rows)
++            dump(sp, s)
++        refresh(result, text, changed)
++        want = ("RECEIPT: inventory 23-64.reach.g6 differs from retained bytes" if suffix == '.certs.jsonl' else
++                f"RECEIPT: retained {CELL + suffix} certificate sha256 differs from checked files")
++        control('r2-certificate-order' + suffix, root, want)
++        accept(synthetic)
++    for label, fields in (("target records from checked files", ("bytes", "records", "sha256")),
++                          ("target counts from checked files", tuple(e.load(paths(args.source)[1].with_suffix('.structure.json'))['target_counts']))):
++        for field in fields:
++            root, result, text = setup("r2-text-target-" + label.split()[1] + '-' + field)
++            lines = text.read_text().splitlines()
++            for index, line in enumerate(lines):
++                if line.startswith('# ' + label + ': '):
++                    payload = json.loads(line.split(': ', 1)[1])
++                    row = payload['.keep.g6'] if 'records' in label else payload
++                    row[field] = '0'*64 if field == 'sha256' else 777
++                    lines[index] = '# ' + label + ': ' + json.dumps(payload)
++            text.write_text('\n'.join(lines) + '\n')
++            want = 'text target records' if 'records' in label else 'text target counts'
++            control("r2-text-target-" + label.split()[1] + '-' + field, root, f"RECEIPT: {want} differs from checked files")
++
++
+ def main():
+     ap = argparse.ArgumentParser(description=__doc__)
+     ap.add_argument("--source", type=Path, default=Path("/tmp/u24-fixes-yE1TRr/worker"))
+     ap.add_argument("--out", type=Path, required=True)
+     ap.add_argument("--audit-code", type=Path)
+     ap.add_argument("--expect-unpatched", action="store_true")
++    ap.add_argument("--round2-only", action="store_true", help="only controls newly added after round 1")
++    ap.add_argument("--expanded", type=Path, default=Path("/tmp/u24-rereview-fixes-xJ9521/fresh-whole"))
+     args = ap.parse_args()
+     selected = audit
+     if args.audit_code:
+@@ -200,6 +542,12 @@
+         reports.append(dict(control=name, output=verdict, expected_error=want))
+ 
+     green()
++    if args.round2_only:
++        round2(args, setup, control, accept)
++        dump(args.out / "g1-controls.json", dict(audit_sha256=e.sha(Path(selected.__file__)), unpatched=args.expect_unpatched,
++                                               controls=reports))
++        print(f"G1 ROUND2 OK: {len(reports)} controls; untouched receipts accepted after each", flush=True)
++        return
+     for rebound in (False, True):
+         name = "certificate-added" + ("-producer-rebound" if rebound else "")
+         root, result, text = setup(name)
+@@ -267,6 +615,7 @@
+     refresh(result, text, [CELL + ".manifest.json"])
+     control("other-producer-hash", root,
+             "RECEIPT: retained 23-64.certs.jsonl sha256 differs from 23-64.manifest.json outputs_sha256")
++    round2(args, setup, control, accept)
+     dump(args.out / "g1-controls.json", dict(audit_sha256=e.sha(Path(selected.__file__)), unpatched=args.expect_unpatched,
+                                            controls=reports))
+     print(f"G1 CONTROLS OK: {len(reports)} controls; untouched receipts accepted after each", flush=True)
+diff -ru pristine-r1/research/unit-distance-24/tools/receipt_audit.py repo/research/unit-distance-24/tools/receipt_audit.py
+--- pristine-r1/research/unit-distance-24/tools/receipt_audit.py	2026-10-07 10:34:59.000000000 +1100
++++ repo/research/unit-distance-24/tools/receipt_audit.py	2026-10-07 18:50:40.079732770 +1100
+@@ -35,6 +35,7 @@
+         self.rows, self.inventory = {}, {}
+         with gzip.open(path, "rt") as stream:
+             header = json.loads(next(stream))
++            self.header = header
+             if (header.get("prefix_through") != 12 or any(type(header.get(k)) is not int or header[k] < 0
+                                                         for k in ("files", "bytes"))
+                     or not re.fullmatch("[0-9a-f]{64}", str(header.get("sha256")))):
+@@ -228,6 +229,262 @@
+                 raise ValueError(f"RECEIPT: {cell} verification differs from checked stage")
+ 
+ 
++def checked_value(where, claimed, actual):
++    if json.dumps(claimed, sort_keys=True) != json.dumps(actual, sort_keys=True):
++        raise ValueError(f"RECEIPT: {where} differs from checked files")
++
++
++def referenced_name(path, rows):
++    # Prefer the longest inventory suffix: _parents/24-69.g6 is not 24-69.g6.
++    matches = [name for name in rows if isinstance(path, str) and (path == name or path.endswith("/" + name))]
++    return max(matches, key=len, default=None)
++
++
++def check_retained_claims(result, config, derived, files, structure, measured):
++    """Remeasure metadata too, and bind every retained producer's content claims.
++
++    Deleted inputs stay historical inventory evidence unless retained certificates
++    or parent sources reconstruct their exact ordered bytes. Diagnostics that do
++    not distinguish certificate records cannot be independently recovered here.
++    """
++    retained = structure["retained"]
++    summaries = (evidence.load(result / "run-summary.json"), structure["summary"])
++    entries = [{(v["n"], v["m"]): v for v in sm["levels"]} for sm in summaries]
++    overrides = evidence.load(result / "reach.json").get("ubar_override", {})
++    checked_value("config ubar_override", config.get("ubar_override", {}), overrides)
++    for sm in summaries:
++        checked_value("summary ubar_override", sm.get("ubar_override", {}), overrides)
++        for key in ("forbidden_set", "prune_filter_set", "triangles", "verify_stages"):
++            checked_value(f"summary {key}", sm.get(key), config.get(key))
++        checked_value("summary reach enabled", sm["reach"].get("enabled"), config["reach"])
++        checked_value("summary prune_filter_only", sm["prune"].get("prune_filter_only"), config["prune_filter_only"])
++    for name in sorted(retained):
++        raw = (result / name).read_bytes()
++        row = {"sha256": hashlib.sha256(raw).hexdigest(), "bytes": len(raw), "records": raw.count(b"\n")}
++        measured.rows[name] = row
++        source = Path(name).name if name.startswith("verify/") else name
++        if source in files.inventory:
++            files.measure(source, row)
++        if source in structure["file_counts"]:
++            checked_value(f"file_counts {source}", structure["file_counts"][source], row)
++
++    stages = {name[:-len(".manifest.json")]: evidence.load(result / name)
++              for name in retained if re.fullmatch(r"\d+-\d+\.manifest\.json", name)}
++    full = {name[:-3] for name in retained if re.fullmatch(r"\d+-\d+\.g6", name)}
++    for cell in sorted(stages.keys() - full):
++        raise ValueError(f"RECEIPT: {cell}.manifest.json describes a level file that is not retained")
++    for cell in sorted(full - stages.keys()):
++        raise ValueError(f"RECEIPT: retained {cell}.g6 has no stage manifest")
++    for cell, manifest in sorted(stages.items()):
++        name, output = cell + ".manifest.json", measured.read(cell + ".g6")
++        evidence.count_equal(f"{name} children_written", manifest.get("children_written"), output["records"])
++        checked_value(f"{name} children_file_sha256", manifest.get("children_file_sha256"), output["sha256"])
++        checked_value(f"{name} exit_status", manifest.get("exit_status"), 0)
++        checked_value(f"{name} forbidden_set", manifest.get("forbidden_set"), config["forbidden_set"])
++        for key, value in {"enabled": config["prune"], "prune_from": config["prune_from"],
++                           "prune_filter_only": config["prune_filter_only"], "triangles": config["triangles"],
++                           "filter_set": config["prune_filter_set"]}.items():
++            checked_value(f"{name} pruning {key}", manifest.get("pruning", {}).get(key), value)
++        n, m = map(int, cell.split("-"))
++        if (n, m) not in derived["allowed"]:
++            continue
++        sources = manifest.get("parent_sources", [])
++        expected = entries[1][n, m]["parent_sources"]
++        checked_value(f"{name} parent stages", [{k: s.get(k) for k in ("level", "kind")} for s in sources],
++                      [{k: s[k] for k in ("level", "kind")} for s in expected])
++        parent_names = []
++        for source in sources:
++            pn, pm = source["level"]
++            suffix = {"keep": ".keep.g6", "reach": ".reach.g6", "full": ".g6"}[source["kind"]]
++            parent = f"{pn}-{pm}{suffix}"
++            checked_value(f"{name} parent file", Path(source["file"]).name, parent)
++            evidence.count_equal(f"{name} parent d", source.get("d"), m - pm)
++            row = files.read(parent)
++            evidence.count_equal(f"{name} parent {parent} records", source.get("records"), row["records"])
++            checked_value(f"{name} parent {parent} sha256", source.get("sha256"), row["sha256"])
++            parent_names.append(parent)
++        parent_file = f"_parents/{cell}.g6"
++        checked_value(f"{name} parent_file", referenced_name(manifest.get("parent_file", ""), files.rows), parent_file)
++        if all(parent in retained for parent in parent_names):
++            raw = b"".join((result / parent).read_bytes() for parent in parent_names)
++            actual = {"bytes": len(raw), "records": raw.count(b"\n"), "sha256": hashlib.sha256(raw).hexdigest()}
++            files.measure(parent_file, actual)
++            measured.rows[parent_file] = actual
++        checked_value(f"{name} parent_range", manifest.get("parent_range"), [0, files.count(parent_file)])
++        reach = manifest.get("reach", {})
++        for key, value in {"enabled": config["reach"], "k": derived["table"][n][m],
++                           "reach_json_sha256": measured.read("reach.json")["sha256"],
++                           "table_level": {str(k): v for k, v in derived["table"][n].items()},
++                           "table_parent_level": {str(k): v for k, v in derived["table"][n-1].items()}}.items():
++            checked_value(f"{name} reach {key}", reach.get(key), value)
++
++    rule = "triangles" if config.get("triangles") else "rhombus" if config.get("rhombus") else None
++    prefix = {"triangles": "tri", "rhombus": "rhombus"}.get(rule)
++    for cell in sorted(full):
++        name = cell + ".prune.manifest.json"
++        if name not in retained:
++            continue
++        manifest = evidence.load(result / name)
++        records = [json.loads(line) for line in (result / (cell + ".certs.jsonl")).read_text().splitlines()]
++        hashes = {suffix: hashlib.sha256() for suffix in (".reach.g6", ".keep.g6", ".UNKNOWN.g6")}
++        size = 0
++        verified = {k: 0 for k in ("records", "tu", "refuted", "embedded", "unknown", "kept")}
++        checker = dict(verified, forbidden=0, proof_nodes=0)
++        del checker["kept"]
++        checker.update({f"{p}_{v}": 0 for p in ("tri", "rhombus") for v in ("tu", "refuted")})
++        if prefix:
++            verified.update({prefix + "_tu": 0, prefix + "_refuted": 0})
++        for record in records:
++            verdict, witness = record["verdict"], record.get("witness") or {}
++            raw = (record["g6"] + "\n").encode()
++            hashes[".reach.g6"].update(raw)
++            size += len(raw)
++            verified["records"] += 1
++            verified[verdict] += 1
++            checker["records"] += 1
++            checker[verdict] += 1
++            if verdict in ("embedded", "unknown"):
++                verified["kept"] += 1
++                hashes[".keep.g6"].update(raw)
++            if verdict == "unknown":
++                hashes[".UNKNOWN.g6"].update(raw)
++            for p in ("tri", "rhombus"):
++                if p in witness:
++                    checker[p + "_" + verdict] += 1
++                    if p == prefix:
++                        verified[p + "_" + verdict] += 1
++            if verdict == "refuted" and "tree" in witness:
++                stack = [witness["tree"]]
++                while stack:
++                    node = stack.pop()
++                    checker["proof_nodes"] += 1
++                    stack.extend(node["children"])
++        source = cell + (".reach.g6" if config["reach"] else ".g6")
++        checked_value(f"{name} level_file", Path(manifest.get("level_file", "")).name, source)
++        for key in ("target", "forbidden_set", "triangles"):
++            checked_value(f"{name} {key}", manifest.get(key), config[key])
++        checked_value(f"{name} filter_set", manifest.get("filter_set"), config["prune_filter_set"])
++        for key, value in {"exit_status": 0, "problems": [], "mutation": {"unknown_as_pruned": False}}.items():
++            checked_value(f"{name} {key}", manifest.get(key), value)
++        for key in ("skipped", "filter_only"):
++            checked_value(f"{name} embedder {key}", manifest.get("embedder", {}).get(key), config["prune_filter_only"])
++        # check_accept pins this audit's target to (24,69), whose TU producer
++        # records the proved bound 69 (the reach u-bar is a different bound).
++        bound = config["target"][1]
++        for key, value in {"n": config["target"][0], "proved_upper_bound": bound}.items():
++            checked_value(f"{name} tu_rule_bound {key}", manifest.get("tu_rule_bound", {}).get(key), value)
++        actual = {"bytes": size, "records": len(records), "sha256": hashes[".reach.g6"].hexdigest()}
++        files.measure(source, actual)
++        measured.rows[source] = actual
++        if source in structure["file_counts"]:
++            checked_value(f"file_counts {source}", structure["file_counts"][source], actual)
++        for suffix in (".keep.g6", ".UNKNOWN.g6"):
++            checked_value(f"retained {cell + suffix} certificate sha256", measured.read(cell + suffix)["sha256"], hashes[suffix].hexdigest())
++        silent = {}
++        if rule:
++            stats = manifest[rule + "_stats"]
++            fields = ("budget", "verify_fail", "lift_fail", "internal") if rule == "triangles" else ("certificate_failures",)
++            for key in fields:
++                if type(stats.get(key)) is not int or stats[key] < 0:
++                    raise ValueError(f"COUNTS: {name}: missing prover diagnostic {key}")
++            silent[prefix + "_silent_passes"] = sum(stats[k] for k in fields)
++        counts = evidence.prune_counts(result, cell, measured, rule, silent, source)
++        for label, claimed in ((name + " counts", manifest["counts"]), (name + " verified_counts", manifest["verified_counts"])):
++            wanted = counts if label.endswith(" counts") else verified
++            checked_value(label + " keys", sorted(claimed), sorted(wanted))
++            for key, value in wanted.items():
++                evidence.count_equal(label + " " + key, claimed.get(key), value)
++        for rows in entries:
++            entry = rows[tuple(map(int, cell.split("-")))]
++            for key, value in counts.items():
++                evidence.count_equal(f"{cell} prune {key}", entry["prune"]["counts"].get(key), value)
++            if "checker" in entry["prune"]:
++                checked_value(f"{cell} summary prune checker", entry["prune"]["checker"], manifest["checker"])
++        said = {key: int(value) for key, value in re.findall(r"(\w+)=(\d+)", manifest.get("checker", ""))}
++        checked_value(f"{name} checker result", manifest.get("checker", "").startswith("ACCEPT certificates "), True)
++        for key, value in checker.items():
++            if key in said or key in ("records", "tu", "embedded", "refuted", "unknown", "proof_nodes", "forbidden"):
++                evidence.count_equal(f"{name} checker {key}", said.get(key), value)
++        if rule:
++            for key, value in {"graphs": counts["survivors"], "tu": counts[prefix + "_tu"],
++                               "refuted": counts[prefix + "_refuted"], "pass": counts[prefix + "_survivors"]}.items():
++                evidence.count_equal(f"{name} {rule}_stats {key}", manifest[rule + "_stats"].get(key), value)
++            evidence.count_equal(f"{name} {rule}_silent_passes", manifest.get(rule + "_silent_passes"), counts[prefix + "_silent_passes"])
++            checked_value(f"{name} {rule}_prover witness", manifest.get(rule + "_prover", {}).get("witness"), prefix)
++            if rule == "triangles":
++                checked_value(f"{name} triangles_checker command", evidence.fleet_judge().checker_command_ok(result, cell, manifest), True)
++        if "survivors" in manifest.get("embedder", {}):
++            evidence.count_equal(f"{name} embedder survivors", manifest["embedder"]["survivors"],
++                                 counts[prefix + "_survivors"] if prefix else counts["survivors"])
++
++    # Every naming map is checked, including exported aggregates. Reconstructed
++    # deleted inputs count as measured; other deleted names remain historical.
++    manifests = {name: evidence.load(result / name) for name in retained if name.endswith("manifest.json")}
++    manifests.update({"export " + name: json.loads(row["text"]) for name, row in structure["manifests"].items()})
++    for name, manifest in sorted(manifests.items()):
++        for field in ("inputs_sha256", "outputs_sha256"):
++            for path, digest in manifest.get(field, {}).items():
++                source = referenced_name(path, files.rows.keys() | measured.rows.keys())
++                if source in measured.rows:
++                    checked_value(f"{name} {field} {source}", digest, measured.read(source)["sha256"])
++                elif field == "inputs_sha256" and Path(path).name in ("forbidden-398.json", "forbidden-74.json", "tu-gadgets.json"):
++                    data = evidence.CHECKER.parent.parent / "data" / Path(path).name
++                    checked_value(f"{name} {field} {data.name}", digest, evidence.sha(data))
++        if not name.startswith("verify/"):
++            continue
++        cell = Path(name).name[:-len(".verify.manifest.json")]
++        kind = manifest["stage_kind"]
++        stage = cell + {"keep": ".keep.g6", "reach": ".reach.g6", "full": ".g6"}[kind]
++        checked_value(f"{name} stage_file", Path(manifest.get("stage_file", "")).name, stage)
++        n, m = map(int, cell.split("-"))
++        for key, value in {"kind": "verify", "level": [n, m], "exit_status": 0, "forbidden_set": config["forbidden_set"],
++                           "check": evidence.fleet_judge().VERIFY_CHECK, "udenum_target": [n+1, m+n],
++                           "forbidden_sha256": evidence.sha(evidence.CHECKER.parent.parent / "data/forbidden-398.json")}.items():
++            checked_value(f"{name} {key}", manifest.get(key), value)
++        # All retained verification manifests are counted against their bound
++        # inventory stage, even when that stage itself has since been deleted.
++        count = files.count(stage)
++        evidence.count_equal(f"{name} parents_seen", manifest.get("parents_seen"), count)
++        cursor = 0
++        for index, part in enumerate(manifest.get("parts", [])):
++            span = part.get("range")
++            if (not isinstance(span, list) or len(span) != 2 or any(type(v) is not int for v in span)
++                    or span[0] != cursor or span[1] < span[0] or span[1] > count):
++                raise ValueError(f"RECEIPT: {name} parts do not tile checked stage")
++            cursor = span[1]
++            evidence.count_equal(f"{name} part {index} parents_seen", part.get("udenum_stats", {}).get("parents_seen"), span[1]-span[0])
++            for key, value in {"parents_degree_skipped": span[1]-span[0], "parents_processed": 0, "children_written": 0,
++                               "bad_sets": 0, "neighbourhoods": 0, "neighbourhood_orbit_reps": 0,
++                               "neighbourhoods_bad": 0, "child_orbit_rejected": 0}.items():
++                evidence.count_equal(f"{name} part {index} {key}", part.get("udenum_stats", {}).get(key), value)
++        if not manifest.get("parts") or cursor != count:
++            raise ValueError(f"RECEIPT: {name} parts do not tile checked stage")
++        for rows in entries:
++            entry = rows[tuple(map(int, cell.split("-")))]
++            if "parts" in entry["verify"]:
++                evidence.count_equal(f"{cell} summary verify parts", entry["verify"]["parts"], len(manifest["parts"]))
++
++
++def check_text_claims(text, paths, structure, files):
++    def claim(label):
++        lines = [line[len('# ' + label + ': '):] for line in text.splitlines() if line.startswith('# ' + label + ': ')]
++        if len(lines) != 1:
++            raise ValueError(f"RECEIPT: missing or repeated {label}")
++        return lines[0]
++
++    for kind, path in paths.items():
++        label = 'inventory' if kind == 'inventory' else kind + ' receipt'
++        head = claim(label).split('; ', 1)[0]
++        checked_value(f"text {label} bytes", head, f"sha256 {evidence.sha(path)}, {path.stat().st_size} bytes")
++    inv = json.loads(claim('inventory').split('; ', 1)[1])
++    for key, value in {'sha256': evidence.sha(paths['inventory']), 'bytes': paths['inventory'].stat().st_size,
++                       'prefix': files.header}.items():
++        checked_value(f"text inventory {key}", inv.get(key), value)
++    checked_value('text level files checked', claim("level files checked (the runbook's hashes.json rule)"), structure['files_digest'])
++    checked_value('text target records', json.loads(claim('target records from checked files')), structure['target_files'])
++    checked_value('text target counts', json.loads(claim('target counts from checked files')), structure['target_counts'])
++
++
+ def check_structure(structure, original, config, derived, files):
+     archive = {}
+     for name, row in structure["manifests"].items():
+@@ -421,6 +678,8 @@
+     if structure.get("g4") != fp:
+         raise ValueError("RECEIPT: G4 fingerprint differs from checked result")
+     evidence.g4(None, result, structure, whole=whole, prefix=prefix)
++    check_retained_claims(result, config, derived, files, structure, measured)
++    check_text_claims(text, paths, structure, files)
+     structure["target_files"], structure["target_counts"] = target_files, target_counts
+     if measurements is not None:
+         measurements.update(files.rows)
+diff -ru pristine-r1/research/unit-distance-24/tools/rereview_controls.py repo/research/unit-distance-24/tools/rereview_controls.py
+--- pristine-r1/research/unit-distance-24/tools/rereview_controls.py	2026-10-07 09:59:27.000000000 +1100
++++ repo/research/unit-distance-24/tools/rereview_controls.py	2026-10-07 18:28:52.352968542 +1100
+@@ -25,13 +25,27 @@
+     path.write_text(json.dumps(value, sort_keys=True) + "\n")
+ 
+ 
+-def seal(text, structure, inventory):
++def seal(text, structure, inventory_path):
+     body = text.read_text()
+-    for label, path in (("structure receipt", structure), ("inventory", inventory)):
+-        body = re.sub(r"^# " + label + r": sha256 [0-9a-f]{64},",
+-                      "# " + label + ": sha256 " + e.sha(path) + ",", body, flags=re.M)
++    kp = text.with_suffix(".known.json")
++    for label, path in (("structure receipt", structure), ("inventory", inventory_path), ("known receipt", kp)):
++        body = re.sub(r"^# " + label + r": sha256 [0-9a-f]{64}, \d+ bytes",
++                      f"# {label}: sha256 {e.sha(path)}, {path.stat().st_size} bytes", body, flags=re.M)
++    # These are duplicate envelopes, not semantic claims. Keep them current when
++    # constructing a resealed control; the audit now checks every duplicate.
++    rows = inventory(inventory_path)
++    def inventory_info(match):
++        info = json.loads(match[1])
++        info.update(sha256=e.sha(inventory_path), bytes=inventory_path.stat().st_size, prefix=rows[0])
++        return "; " + json.dumps(info, sort_keys=True)
++    body = re.sub(r"(?<=bytes); (\{.*\})$", inventory_info, body, flags=re.M)
++    s = e.load(structure)
++    for label, value in (("level files checked (the runbook's hashes.json rule)", s["files_digest"]),
++                         ("target records from checked files", json.dumps(s["target_files"], sort_keys=True)),
++                         ("target counts from checked files", json.dumps(s["target_counts"], sort_keys=True))):
++        body = re.sub(r"^# " + re.escape(label) + r": .*$", lambda _: "# " + label + ": " + value, body, flags=re.M)
+     text.write_text(body)
+-    for label, path in (("structure receipt", structure), ("inventory", inventory)):
++    for label, path in (("structure receipt", structure), ("inventory", inventory_path)):
+         assert re.search(r"^# " + label + ": sha256 " + e.sha(path) + ",", body, re.M)
+ 
+ 
+diff -ru pristine-r1/research/unit-distance-24/tools/test_judge.py repo/research/unit-distance-24/tools/test_judge.py
+--- pristine-r1/research/unit-distance-24/tools/test_judge.py	2026-10-07 09:59:27.000000000 +1100
++++ repo/research/unit-distance-24/tools/test_judge.py	2026-10-07 18:39:37.586938723 +1100
+@@ -47,7 +47,24 @@
+     with gzip.open(ip, "rt") as stream:
+         header = json.loads(next(stream))
+         rows = {r["path"]: r for r in map(json.loads, stream)}
++    def reach_envelopes(manifest):
++        reach_sha = e.sha(result / "reach.json")
++        for key in manifest.get("inputs_sha256", {}):
++            if Path(key).name == "reach.json":
++                manifest["inputs_sha256"][key] = reach_sha
++        if "reach_json_sha256" in manifest.get("reach", {}):
++            manifest["reach"]["reach_json_sha256"] = reach_sha
++    for path in result.glob("*.manifest.json"):
++        manifest = e.load(path)
++        reach_envelopes(manifest)
++        dump(path, manifest)
+     for name, row in structure["manifests"].items():
++        manifest = json.loads(row["text"])
++        reach_envelopes(manifest)
++        if (result / name).is_file():
++            row["text"] = (result / name).read_text()
++        else:
++            row["text"] = json.dumps(manifest, sort_keys=True) + "\n"
+         raw = row["text"].encode()
+         m = measurement(raw)
+         row["sha256"] = m["sha256"]
+@@ -87,6 +104,8 @@
+     for label, path in (("structure receipt", sp), ("inventory", ip), ("known receipt", kp)):
+         body = re.sub(r"^# " + label + r": sha256 [0-9a-f]{64},", "# " + label + ": sha256 " + e.sha(path) + ",", body, flags=re.M)
+     text.write_text(body)
++    from rereview_controls import seal as seal_envelopes
++    seal_envelopes(text, sp, ip)
+ 
+ 
+ def relabel(root, old, new):
+@@ -155,6 +174,12 @@
+     fleet = out / "honest"
+     for branch, source in (("legacy", legacy), ("expanded", expanded)):
+         shutil.copytree(source, fleet / branch / judge.SUB)
++        # Older expanded controls resealed SHA256 but left duplicate sizes stale.
++        # Repair only those envelopes in this private copy, before its green check.
++        from rereview_controls import seal as seal_envelopes
++        for index in (1907, 1444):
++            _, text = bundle(fleet, branch=branch, index=index)
++            seal_envelopes(text, text.with_suffix(".structure.json"), text.with_suffix(".inventory.jsonl.gz"))
+     plan = {"job": "u24-two-slice-control", "target": [24, 69], "slice_level": 12, "count": 1920,
+             "slices": [1907, 1444], "tasks": {"fixcheck": [1907, 1444]}}
+     dump(out / "plan.json", plan)

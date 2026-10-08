@@ -1,0 +1,209 @@
+GP-11 control 5.1: withheld B10 producer run
+
+Scope and acceptance
+
+control_b10.py uses the 23 stages and budgets in stages.POLICIES['full'].
+F9 is the pinned forbidden-74.json, unchanged in order and stored labels.
+The producer never reads forbidden-398.json, GP-10's B10 records, the retained
+control archive, existing B11 indexes, or cached host coordinate files.
+The default extension bases are fresh order-nine lattice searches on vertex
+deletions of the current graph. Optional --bases files must contain only direct
+exact embeddings of order at most nine, and every row is screened before search.
+These bases require documented independent lower-order provenance. The guard
+cannot establish the ancestry of arbitrary externally supplied coordinates.
+The default measured jobs use no external bases.
+
+The host stage has no eligible cached host under this control's order-nine cap.
+It records an explicit unsuccessful attempt. All other stages run normally.
+Degree-two extension and alternative-base labels use nine vertices; the long
+msolve adapter uses 2*n-3-rank. TU uses only F9 and new checked same-run endpoints.
+The graph-only B10 deletion index is built locally from the frozen graph list.
+No existing B11 pipeline source or checker is edited.
+
+A worker's ACCEPT only establishes replay of its sample-profile certificate
+bundle. Unknowns are allowed in that bundle. Neither a producer tally nor a
+minimal-list cardinality passes the control. Completion requires BOTH:
+  gp11check.py's own line: PASS B10 COMPLETE derived=324
+  its checked/report.json: profile B10, status ACCEPT, counts.unknown 0,
+    conditional false, conditional_minimal [], direct_rejections 0.
+The checker compares the actual canonical list, not just its length.
+
+Toolchain on a fresh dedicated Claude cloud worker, 4 cores and 15 GB
+
+Use the reviewed source snapshot. Do not import historical B10 output or build
+the B11 index. gp11-setup.sh contains the reference apt/pip choices, but its final
+B11 index command is unnecessary here. Provision the same packages as follows:
+
+  sudo apt-get update -q
+  sudo apt-get install -y -q --no-install-recommends \
+    nauty libnauty-dev singular msolve pari-gp build-essential python3-venv
+  python3 -m venv "$HOME/gp10-venv"
+  "$HOME/gp10-venv/bin/pip" install \
+    sympy==1.14.0 python-flint==0.9.0 networkx numpy scipy mpmath pynauty
+  mkdir -p "$HOME/tools"
+  ln -sfn "$HOME/gp10-venv" "$HOME/tools/pyenv-gp10"
+  export PY="$HOME/tools/pyenv-gp10/bin/python" SYMPY_GROUND_TYPES=python
+
+Require /usr/bin/nauty-labelg, version 2.8.8. If the distro calls it labelg,
+create the appropriate executable symlink at that exact path. The frozen checker
+uses that path. Require /usr/bin/msolve SHA256:
+  c2722288d22c3a1eab00c0b818d0204d4a98104d059b2fd4ecb7343e8ef759fa
+Do not substitute another binary and bypass its pin. Resolve package/toolchain
+differences before assigning research work. Capture package and executable
+versions in the return logs. No network or installation occurs inside a search.
+
+Every Python search/check command below is niced and wrapped in tools/guard.py.
+The guard caps each process at 1,024,000,000 bytes of virtual address space,
+uses one numerical thread, and stops below 1.5 GiB system MemAvailable.
+The control driver additionally samples the sum of its process-tree RSS every
+0.1 seconds and stops above 1,400,000 KiB. The sampled peak is diagnostic, not
+a proof of a continuous-time maximum. Run ONE lane on the shared desktop.
+
+  guarded() {
+    nice -n 10 "$PY" -B research/gp-11/tools/guard.py -- "$PY" -B "$@"
+  }
+
+Before cloud rollout run the own-rule red controls:
+
+  guarded research/gp-11/pipeline/test_control_b10.py \
+    --output /tmp/control51-leak-tests
+
+Require PASS and no state directory for any rejected source. For a toolchain
+smoke check use a fresh three-graph full run and its GP-11 sample replay:
+
+  guarded research/gp-11/pipeline/control_b10.py \
+    --state /tmp/control51-smoke-state --output /tmp/control51-smoke \
+    --sample 3 --seed 20261001 --validate-index
+  guarded research/gp-11/pipeline/control_b10_bundle.py replay \
+    /tmp/control51-smoke --output /tmp/control51-smoke-replay
+
+Full cloud wave
+
+Use 128 hash shards, about 259 graphs each. Assignment is the first eight bytes
+of SHA256(graph6), interpreted big endian, modulo 128. Assign each index once.
+Give each worker a distinct pre-created return branch and the same reviewed
+source snapshot. Do not change source, bases, inputs or policy during a resume.
+No B11 index, GP-10 answer stream, --records intake or historical base corpus
+is supplied to a producer worker.
+
+  TAG=c5100 bash coordination/cloud-workers/control51-worker.sh r1 - 128 0 1 2 3
+
+The next worker gets 4 5 6 7, and so on through 127. Four invocations run per
+cloud worker. The '-' selects frozen research/gp-10/data/B10.g6. The worker
+script has usage and exit discipline matching gp11-frontier.sh:
+  0 all shards replayed and returned;
+  7 producer, resource, replay or payload failure, output/state kept;
+  8 a commit/push failed;
+  2 precondition failure.
+CONTROL51_PUSH=0 suppresses all commits and pushes. CONTROL51_JOBS=1 is required
+for desktop smoke tests. This builder did not execute any git command.
+
+Restart the same command on the same source. SQLite leases and append-only
+certificate hashes are checked on resume. Native scratch and state stay on the
+worker. Finished shards contain assigned.g6, input.g6 with dependency closure,
+records.jsonl.gz, UNKNOWN.g6, attempts, frontier/core packets, job/source hashes,
+metrics and a frozen-checker report. A sibling -replay directory retains the
+actual GP-11 profile report and log. The script independently replays again
+before returning. Keep interrupted states; an exit-75 run is not complete.
+
+The combined portable return must be under 45,000,000 bytes. If oversized,
+replace shard s of modulus 128 by s and s+128 of modulus 256, in fresh states
+and distinctly named output rounds. The coordinator records the replacement
+and supplies only the two halves, excluding their old parent. Do not truncate
+records or drop assigned graphs. Avoid putting stdout logs inside a bundle
+while the exporter hashes it; the script uses /tmp logs.
+
+Assemble ONE B10 run on a dedicated cloud coordinator
+
+Collect each completed shard directory. Supply every disjoint shard, including
+any replacement halves, exactly once. A convenient same-round invocation is:
+
+  bundles=()
+  for path in research/gp-11/pipeline/cloud/control51-r1-[0-9][0-9][0-9]; do
+    bundles+=(--bundle "$path")
+  done
+  guarded research/gp-11/pipeline/control_b10_bundle.py assemble \
+    "${bundles[@]}" --output /tmp/control51-B10
+
+For split shards construct that argument list explicitly. Assembly checks the
+disjoint union against all 33,162 exact frozen graph6 strings, replays every
+bundle with the GP-11 sample profile, and rechecks proposed certificates while
+resolving dependencies. Alternative proofs are retained until grounded, avoiding
+cycles introduced by choosing the shortest proof independently. It writes one
+record per B10 graph and one exact UNKNOWN list. It does not derive a minimal
+list or use an expected count to accept certificates.
+
+Assembly also creates and replays controls/B4p through B9p, named, regressions,
+and a prediction declaration required by the inherited B10 profile. These eight
+historical checker prerequisites are extracted from tree-public.tar.gz only in
+this checker-side process. Root B10 records are never extracted. The controls
+are not bases and are never visible to the producer. Replaying them does not
+claim that GP-11 has newly rerun the separate lower-order producer controls.
+
+Finally invoke the unmodified checker explicitly:
+
+  guarded research/gp-11/check/gp11check.py /tmp/control51-B10 \
+    --require-complete-b10 > /tmp/control51-B10-complete.log 2>&1
+
+Read the checker line and checked/report.json using the acceptance conditions
+above. Retain the whole tree, checked/L10.g6, F10-provenance.json, minimality
+witnesses, source manifests, logs and reports. The helper's equivalent complete
+command reads both the line and report and refuses if either is missing:
+
+  guarded research/gp-11/pipeline/control_b10_bundle.py complete /tmp/control51-B10
+
+Residue and subsequent rounds
+
+If UNKNOWN.g6 is nonempty, the control remains OPEN. The full policy has already
+visited every remaining graph without a global admission cutoff. Frontier and
+packets preserve exact obligations, TU closure and search budgets; numeric
+coordinates remain hints. Do not look at GP-10's answer stream to resolve them.
+
+Allocate only the assembled UNKNOWN.g6 to new workers in a new round. Example:
+
+  TAG=c51next bash coordination/cloud-workers/control51-worker.sh \
+    r2 /tmp/control51-B10/UNKNOWN.g6 8 0 1 2 3
+
+Use enough nonempty shards for that frontier. An unchanged deterministic policy
+may repeat its failures. Preserve first-wave evidence and assign difficult cases
+to an analyst for genuinely stronger exact searches, longer reviewed budgets,
+or a new certificate-producing method. Freeze any changed producer source as a
+new round; do not silently alter a resumable job. Every analyst certificate must
+be generated without historical order-ten answers and replayed under F9.
+The current CLI deliberately has no arbitrary certificate intake into search.
+Integrate a reviewed stronger producer adapter to return the normal bundle.
+
+Assemble original disjoint bundles plus --overlay NEW_BUNDLE for each residue
+return, using a fresh output directory. Overlays must assign disjoint subsets
+of the original UNKNOWN union. All old UNKNOWN histories are retained; accepted
+records are never replaced with unknowns. Conflicting positive/negative evidence
+aborts. Repeat final complete replay only when ready. Unresolved residue is not
+a PASS, regardless of how many minimal graphs appear in a partial report.
+
+Measurements and cost
+
+CONTROL51-REPORT.txt and results/control51-* retain the measured sample, all
+23 per-stage attempt/decision/time rows, resource diagnostics and checker output.
+The seed-20261001 sample of 200 took 2006 producer seconds plus 6.47 seconds for
+GP-11 replay: 196 embedded, 3 refuted, 1 UNKNOWN; peak sampled tree RSS 478 MiB.
+That full measurement has its own archived source revision. The final revision
+reran the same 200 through the cheap policy and has separate replay and resume
+evidence; see the report for the exact revision distinction.
+For N sampled graphs and T seconds of one-lane producer time plus worker replay:
+  ideal four-core worker machine-hours = T * 33162 / (N * 4 * 3600).
+Use measured serial coordinator time without division by four. The historical
+checker-only full B10 replay was about 3156 seconds, but new certificates can
+have different costs. Budget a margin for tail variation, shard imbalance and
+toolchain speed, and price as machine-hours times the applicable worker rate.
+The measured forecast is 23.17 ideal worker-hours for the first wave. Including
+serial intake and the documented checker passes gives a planning scenario of
+28.07 machine-hours; budget about 40, excluding residue and analyst work.
+No dollar rate or completion probability is asserted. Unknowns require a
+separately budgeted residue effort; simply repeating a wave is no guarantee.
+
+Local limits
+
+Only seeded samples, red controls, and small assembly/replay tests belong on
+the desktop. Never run the unsharded full producer, the complete B10 checker,
+or the full coordinator there. The fast graph-only index may inspect the full
+frozen input; it performs no unit-distance decisions or answer lookup.

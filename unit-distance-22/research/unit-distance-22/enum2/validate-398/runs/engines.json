@@ -1,0 +1,206 @@
+{
+ "software": {
+  "enum2.py": "d967fc9024cda647c01bca95d6d6d9e2b6b0c24539d288c0ee1ee669faffa54e",
+  "udenum": "a99b130ab5ad0386265c429b78cf3c4a4c708e1d5dd6e222bec14a4596c16a84",
+  "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+  "forbidden-398.json": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+  "python": "3.12.3",
+  "pynauty": "2.8.8.1"
+ },
+ "hosts": 108,
+ "sets": {
+  "74": {
+   "hosts": 108,
+   "family_checks": 231,
+   "family_mismatch": [],
+   "good_checks": 231,
+   "good_mismatch": [],
+   "children_checks": 45,
+   "children_mismatch": [],
+   "decider_checks": 444,
+   "decider_mismatch": [],
+   "bad_sets_compared": 5193,
+   "good_neighbourhoods_compared": 3099,
+   "children_compared": 293,
+   "reference_seconds": 810.7,
+   "fast_seconds": 9.8,
+   "d_required_cases": {
+    "n=11,d=2,|req|=1": 14,
+    "n=11,d=4,|req|=3": 6,
+    "n=11,d=3,|req|=1": 10,
+    "n=12,d=3,|req|=1": 2,
+    "n=10,d=3,|req|=0": 9,
+    "n=10,d=4,|req|=3": 3,
+    "n=10,d=2,|req|=1": 10,
+    "n=10,d=1,|req|=0": 1,
+    "n=10,d=3,|req|=2": 19,
+    "n=10,d=3,|req|=1": 12,
+    "n=11,d=2,|req|=0": 15,
+    "n=12,d=3,|req|=0": 4,
+    "n=12,d=2,|req|=0": 7,
+    "n=13,d=2,|req|=0": 4,
+    "n=13,d=2,|req|=1": 4,
+    "n=10,d=4,|req|=1": 7,
+    "n=10,d=2,|req|=0": 21,
+    "n=10,d=4,|req|=2": 6,
+    "n=11,d=3,|req|=3": 7,
+    "n=11,d=3,|req|=2": 6,
+    "n=11,d=4,|req|=2": 6,
+    "n=12,d=2,|req|=1": 5,
+    "n=12,d=3,|req|=2": 4,
+    "n=11,d=3,|req|=0": 8,
+    "n=14,d=2,|req|=0": 5,
+    "n=11,d=4,|req|=1": 3,
+    "n=10,d=3,|req|=3": 3,
+    "n=15,d=2,|req|=0": 4,
+    "n=16,d=2,|req|=1": 3,
+    "n=16,d=2,|req|=0": 2,
+    "n=13,d=3,|req|=0": 6,
+    "n=13,d=3,|req|=2": 2,
+    "n=13,d=3,|req|=1": 3,
+    "n=10,d=4,|req|=0": 2,
+    "n=14,d=2,|req|=1": 2,
+    "n=11,d=4,|req|=4": 1,
+    "n=11,d=4,|req|=0": 3,
+    "n=10,d=2,|req|=2": 1,
+    "n=15,d=2,|req|=1": 1
+   },
+   "x1_dropped_class_members": [
+    4,
+    5,
+    6
+   ],
+   "skipped_cases_cost": 53,
+   "decider_structured": {
+    "positives": 222,
+    "negatives": 1656,
+    "tester_wrong": [],
+    "tester_wrong_count": 0,
+    "reference_sample": 1500,
+    "reference_wrong": [],
+    "reference_seconds": 8.4,
+    "X3": [
+     {
+      "member": 0,
+      "order": 4,
+      "tester_without_j_calls_it_free": true,
+      "reference_finds_it": true,
+      "went_red": true
+     },
+     {
+      "member": 1,
+      "order": 5,
+      "tester_without_j_calls_it_free": true,
+      "reference_finds_it": true,
+      "went_red": true
+     },
+     {
+      "member": 73,
+      "order": 9,
+      "tester_without_j_calls_it_free": true,
+      "reference_finds_it": true,
+      "went_red": true
+     }
+    ],
+    "ok": true
+   },
+   "red_controls": {
+    "X1_fast_engine_missing_one_rooted_class": true,
+    "X2_reference_family_minus_one_set": true,
+    "X3_tester_without_member_j_on_F_j": true
+   },
+   "pass": true
+  },
+  "398": {
+   "hosts": 41,
+   "family_checks": 73,
+   "family_mismatch": [],
+   "good_checks": 73,
+   "good_mismatch": [],
+   "children_checks": 20,
+   "children_mismatch": [],
+   "decider_checks": 226,
+   "decider_mismatch": [],
+   "bad_sets_compared": 1241,
+   "good_neighbourhoods_compared": 1338,
+   "children_compared": 180,
+   "reference_seconds": 815.3,
+   "fast_seconds": 7.7,
+   "d_required_cases": {
+    "n=11,d=2,|req|=0": 9,
+    "n=11,d=3,|req|=2": 3,
+    "n=10,d=3,|req|=0": 2,
+    "n=10,d=2,|req|=1": 2,
+    "n=10,d=3,|req|=1": 9,
+    "n=10,d=1,|req|=0": 1,
+    "n=12,d=2,|req|=1": 2,
+    "n=13,d=2,|req|=0": 3,
+    "n=10,d=3,|req|=2": 6,
+    "n=11,d=3,|req|=1": 5,
+    "n=11,d=2,|req|=1": 5,
+    "n=10,d=2,|req|=0": 10,
+    "n=11,d=3,|req|=3": 3,
+    "n=13,d=2,|req|=1": 1,
+    "n=11,d=3,|req|=0": 2,
+    "n=12,d=2,|req|=0": 2,
+    "n=14,d=2,|req|=0": 1,
+    "n=10,d=3,|req|=3": 2,
+    "n=16,d=2,|req|=0": 2,
+    "n=16,d=2,|req|=1": 3
+   },
+   "x1_dropped_class_members": [
+    4,
+    5,
+    6
+   ],
+   "skipped_cases_cost": 39,
+   "decider_structured": {
+    "positives": 1194,
+    "negatives": 10273,
+    "tester_wrong": [],
+    "tester_wrong_count": 0,
+    "reference_sample": 1500,
+    "reference_wrong": [],
+    "reference_seconds": 42.6,
+    "X3": [
+     {
+      "member": 0,
+      "order": 4,
+      "tester_without_j_calls_it_free": true,
+      "reference_finds_it": true,
+      "went_red": true
+     },
+     {
+      "member": 1,
+      "order": 5,
+      "tester_without_j_calls_it_free": true,
+      "reference_finds_it": true,
+      "went_red": true
+     },
+     {
+      "member": 74,
+      "order": 10,
+      "tester_without_j_calls_it_free": true,
+      "reference_finds_it": true,
+      "went_red": true
+     },
+     {
+      "member": 397,
+      "order": 10,
+      "tester_without_j_calls_it_free": true,
+      "reference_finds_it": true,
+      "went_red": true
+     }
+    ],
+    "ok": true
+   },
+   "red_controls": {
+    "X1_fast_engine_missing_one_rooted_class": true,
+    "X2_reference_family_minus_one_set": true,
+    "X3_tester_without_member_j_on_F_j": true
+   },
+   "pass": true
+  }
+ },
+ "pass": true
+}

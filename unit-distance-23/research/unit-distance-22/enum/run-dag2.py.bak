@@ -1,0 +1,646 @@
+#!/usr/bin/env python3
+"""Build the F-free canonical augmentation DAG with frozen parent shards, optionally pruned.
+
+This is enum/run-dag.py plus two pruning stages (enum/PRUNING.md); run-dag.py itself is left
+untouched because running shards hash the script on disk.
+
+--reach            reach-table pruning (L4): only level files (n, m) that can still reach the
+                   target are generated, only parents whose new-vertex degree d = M - m can
+                   still reach it are used, and every level file is reduced to the graphs with
+                   minimum degree >= k(n, m) before it is used as a parent (<n>-<m>.reach.g6).
+--prune            hereditary pruning (L1 to L3): after each level file at n >= --prune-from is
+                   complete, enum/prune.py certifies every graph (tu, refuted, embedded or
+                   unknown) and the next level is built from <n>-<m>.keep.g6 only.
+
+Every aggregate manifest records which file served as each parent source (full, reach or
+keep), the reach entries used, and the hash of reach.json.
+"""
+
+from __future__ import annotations
+
+import argparse
+from concurrent.futures import ThreadPoolExecutor
+import hashlib
+import json
+import math
+import os
+from pathlib import Path
+import shutil
+import socket
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+
+
+UBAR = {
+    0: 0,
+    1: 0,
+    2: 1,
+    3: 3,
+    4: 5,
+    5: 7,
+    6: 9,
+    7: 12,
+    8: 14,
+    9: 18,
+    10: 20,
+    11: 23,
+    12: 27,
+    13: 30,
+    14: 33,
+    15: 37,
+    16: 41,
+    17: 43,
+    18: 46,
+    19: 50,
+    20: 54,
+    21: 57,
+    22: 62,
+    23: 66,
+}
+
+# Root minimum-degree bounds established by a lemma outside Schade's window (PRUNING.md L4).
+ROOT_K_LEMMAS = {
+    (22, 61): (5, "delta4/RESULT.md Lemma D4: every (22,61) unit-distance graph has minimum degree 5"),
+}
+
+
+def parse_args() -> argparse.Namespace:
+    here = Path(__file__).resolve().parent
+    parser = argparse.ArgumentParser(description=__doc__,
+                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--target-n", type=int, required=True)
+    parser.add_argument("--target-m", type=int, required=True)
+    parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--seed-n", type=int, default=10)
+    parser.add_argument("--shard-size", type=int, default=10000)
+    parser.add_argument("--jobs", type=int, choices=(1, 2), default=1)
+    parser.add_argument("--udenum", type=Path, default=here / "udenum")
+    parser.add_argument("--forbidden", type=Path,
+                        default=here.parent / "data" / "forbidden-74.json")
+    parser.add_argument("--geng", type=Path, default=Path("/usr/bin/nauty-geng"))
+    parser.add_argument("--resume", action="store_true")
+    parser.add_argument("--verify-parents", action="store_true")
+    parser.add_argument("--reach", action="store_true", help="reach-table pruning (L4)")
+    parser.add_argument("--reach-root-k", type=int, default=None,
+                        help="minimum degree bound at the target; default: Schade's bound, or a lemma")
+    parser.add_argument("--prune", action="store_true", help="hereditary pruning (L1 to L3)")
+    parser.add_argument("--prune-from", type=int, default=18,
+                        help="prune level files with n >= this (default 18)")
+    parser.add_argument("--prune-python", type=Path,
+                        default=Path(os.path.expanduser("~/tools/pyenv-maths/bin/python")))
+    parser.add_argument("--prune-tries", type=int, default=0,
+                        help="udembed --tries; 0 disables the random search, which can run for minutes")
+    parser.add_argument("--prune-max-states", type=int, default=400, help="udembed --max-states")
+    parser.add_argument("--prune-chunk", type=int, default=25)
+    parser.add_argument("--prune-graph-timeout", type=float, default=120.0)
+    return parser.parse_args()
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def record_count(path: Path) -> int:
+    with path.open("rb") as stream:
+        return sum(1 for line in stream
+                   if line.strip() and not line.startswith(b">>graph6<<"))
+
+
+def graph6_min_degree(code: str) -> int:
+    n = ord(code[0]) - 63
+    if n <= 0:
+        return 0
+    bits = "".join(f"{ord(c) - 63:06b}" for c in code[1:])
+    degree = [0] * n
+    k = 0
+    for j in range(1, n):
+        for i in range(j):
+            if bits[k] == "1":
+                degree[i] += 1
+                degree[j] += 1
+            k += 1
+    return min(degree)
+
+
+def windows_for(target_n: int, target_m: int, seed_n: int) -> dict[int, tuple[int, int]]:
+    if target_n not in UBAR or seed_n < 1 or seed_n >= target_n:
+        raise ValueError("target and seed orders must lie in the known u-bar table")
+    windows = {target_n: (target_m, target_m)}
+    for n in range(target_n, seed_n, -1):
+        child_low, child_high = windows[n]
+        lower = math.ceil(child_low * (n - 2) / n)
+        upper = min(UBAR[n - 1], child_high)
+        if lower > upper:
+            raise ValueError(f"empty induced-parent window at order {n - 1}")
+        windows[n - 1] = (lower, upper)
+    return windows
+
+
+def reach_table(target_n: int, target_m: int, root_k: int, seed_n: int) -> dict[int, dict[int, int]]:
+    """R(n) = {m: k}: graphs at level n with m edges can still reach the target only if their
+    minimum degree is at least k (PRUNING.md L4).  Built backward from the target."""
+    table: dict[int, dict[int, int]] = {target_n: {target_m: root_k}}
+    for n in range(target_n - 1, seed_n - 1, -1):
+        level: dict[int, int] = {}
+        for child_m, k in table[n + 1].items():
+            for d in range(k, min(n, (2 * child_m) // (n + 1)) + 1):
+                m = child_m - d
+                if m < 0 or m > UBAR[n]:
+                    continue
+                level[m] = min(level.get(m, d), max(0, d - 1))
+        if not level:
+            raise ValueError(f"reach table is empty at order {n}")
+        table[n] = level
+    return table
+
+
+def checked_run(command: list[str], *, stdout: Path | None = None,
+                stderr: Path | None = None) -> float:
+    start = time.monotonic()
+    out_stream = stdout.open("wb") if stdout else None
+    err_stream = stderr.open("wb") if stderr else None
+    try:
+        subprocess.run(command, check=True, stdout=out_stream, stderr=err_stream)
+    finally:
+        if out_stream:
+            out_stream.close()
+        if err_stream:
+            err_stream.close()
+    return time.monotonic() - start
+
+
+def valid_completed(path: Path, manifest: Path) -> bool:
+    if not path.is_file() or not manifest.is_file():
+        return False
+    try:
+        info = json.loads(manifest.read_text())
+    except (OSError, json.JSONDecodeError):
+        return False
+    return (info.get("exit_status") == 0 and
+            info.get("children_file_sha256") == sha256(path))
+
+
+def software_args(args: argparse.Namespace, runner: Path, geng: Path | None = None) -> list[str]:
+    result = ["--software", f"run-dag2.py={runner}"]
+    if geng is not None:
+        result += ["--software", f"nauty-geng={geng}"]
+    if args.reach:
+        result += ["--software", f"reach.json={args.reach_json}"]
+    return result
+
+
+def run_seed(args: argparse.Namespace, outdir: Path, n: int, m: int,
+             summary: list[dict[str, object]]) -> dict[str, object]:
+    output = outdir / f"{n}-{m}.g6"
+    manifest = outdir / f"{n}-{m}.manifest.json"
+    if args.resume and valid_completed(output, manifest):
+        entry: dict[str, object] = {"n": n, "m": m, "kind": "seed", "resumed": True,
+                                    "children": record_count(output)}
+        summary.append(entry)
+        return entry
+    raw_dir = outdir / "_geng"
+    raw_dir.mkdir(exist_ok=True)
+    raw = raw_dir / f"{n}-{m}.g6"
+    geng_command = ["nice", "-n", "10", str(args.geng), "-q", str(n), f"{m}:{m}"]
+    if n == 0:
+        raw.write_bytes(b"?\n")
+        geng_wall = 0.0
+    else:
+        geng_wall = checked_run(geng_command, stdout=raw)
+    command = [
+        "nice", "-n", "10", str(args.udenum), "--filter",
+        "--parents", str(raw), "--forbidden", str(args.forbidden),
+        "--n", str(n), "--m", str(m), "--output", str(output),
+        "--manifest", str(manifest), "--shard-id", f"seed-{n}-{m}",
+        *software_args(args, Path(__file__).resolve(), args.geng),
+    ]
+    if args.resume:
+        command.append("--overwrite")
+    stats_path = outdir / f"{n}-{m}.stats.json"
+    filter_wall = checked_run(command, stderr=stats_path)
+    entry = {"n": n, "m": m, "kind": "seed", "resumed": False,
+             "geng_wall_seconds": geng_wall,
+             "filter_wall_seconds": filter_wall,
+             "children": record_count(output), "stats": str(stats_path)}
+    summary.append(entry)
+    return entry
+
+
+def concatenate(paths: list[Path], output: Path) -> None:
+    with output.open("wb") as destination:
+        for path in paths:
+            with path.open("rb") as source:
+                shutil.copyfileobj(source, destination, 1024 * 1024)
+
+
+def write_aggregate_manifest(args: argparse.Namespace, manifest: Path,
+                             parent_file: Path, parent_count: int,
+                             parts: list[Path], output: Path,
+                             started: str, finished: str,
+                             extra: dict[str, object] | None = None) -> None:
+    software = {
+        "udenum": sha256(args.udenum),
+        "run-dag2.py": sha256(Path(__file__).resolve()),
+    }
+    inputs = {str(parent_file): sha256(parent_file),
+              str(args.forbidden): sha256(args.forbidden)}
+    if args.reach:
+        inputs[str(args.reach_json)] = sha256(args.reach_json)
+    for part in parts:
+        inputs[str(part)] = sha256(part)
+        part_manifest = part.with_suffix(".manifest.json")
+        inputs[str(part_manifest)] = sha256(part_manifest)
+    value = {
+        "shard_id": f"aggregate-{output.stem}",
+        "parent_file": str(parent_file),
+        "parent_range": [0, parent_count],
+        "software_sha256": software,
+        "inputs_sha256": inputs,
+        "started": started,
+        "finished": finished,
+        "children_written": record_count(output),
+        "children_file_sha256": sha256(output),
+        "host": socket.gethostname(),
+        "exit_status": 0,
+    }
+    if extra:
+        value.update(extra)
+    manifest.write_text(json.dumps(value, indent=2, sort_keys=False) + "\n")
+
+
+def stage_file(args: argparse.Namespace, outdir: Path, n: int, m: int) -> tuple[Path, str]:
+    """The file that represents level (n, m) when it serves as a parent: the last stage applied."""
+    if args.prune and n >= args.prune_from:
+        return outdir / f"{n}-{m}.keep.g6", "keep"
+    if args.reach:
+        return outdir / f"{n}-{m}.reach.g6", "reach"
+    return outdir / f"{n}-{m}.g6", "full"
+
+
+def parent_edge_counts(args: argparse.Namespace, windows: dict[int, tuple[int, int]],
+                       table: dict[int, dict[int, int]] | None, n: int, m: int) -> tuple[list[int], int]:
+    """Parent edge counts m' for level (n, m), and the reach bound k applied (0 without reach)."""
+    lower = math.ceil(m * (n - 2) / n)
+    upper = min(UBAR[n - 1], m)
+    previous_low, previous_high = windows[n - 1]
+    lower = max(lower, previous_low)
+    upper = min(upper, previous_high)
+    if table is None:
+        return list(range(lower, upper + 1)), 0
+    k = table[n][m]
+    chosen = [parent_m for parent_m in range(lower, upper + 1) if m - parent_m >= k]
+    for parent_m in chosen:
+        if parent_m not in table[n - 1]:
+            raise RuntimeError(f"reach table inconsistency: ({n - 1},{parent_m}) is a parent of "
+                               f"({n},{m}) but not a reach level")
+    return chosen, k
+
+
+def run_level_file(args: argparse.Namespace, outdir: Path,
+                   windows: dict[int, tuple[int, int]],
+                   table: dict[int, dict[int, int]] | None, n: int, m: int,
+                   summary: list[dict[str, object]]) -> dict[str, object]:
+    output = outdir / f"{n}-{m}.g6"
+    aggregate_manifest = outdir / f"{n}-{m}.manifest.json"
+    if args.resume and valid_completed(output, aggregate_manifest):
+        entry: dict[str, object] = {"n": n, "m": m, "kind": "augmentation",
+                                    "resumed": True, "children": record_count(output)}
+        summary.append(entry)
+        return entry
+    parent_ms, k = parent_edge_counts(args, windows, table, n, m)
+    sources = [(parent_m, *stage_file(args, outdir, n - 1, parent_m)) for parent_m in parent_ms]
+    missing = [str(path) for _, path, _ in sources if not path.is_file()]
+    if missing:
+        raise RuntimeError("missing parent files: " + ", ".join(missing))
+    parents_dir = outdir / "_parents"
+    parents_dir.mkdir(exist_ok=True)
+    parent_file = parents_dir / f"{n}-{m}.g6"
+    concatenate([path for _, path, _ in sources], parent_file)
+    count = record_count(parent_file)
+    parent_sources = [{"level": [n - 1, parent_m], "d": m - parent_m, "kind": kind,
+                       "file": str(path), "sha256": sha256(path), "records": record_count(path)}
+                      for parent_m, path, kind in sources]
+    shard_dir = outdir / "shards" / f"{n}-{m}"
+    shard_dir.mkdir(parents=True, exist_ok=True)
+    parts: list[Path] = []
+    shard_stats: list[dict[str, object]] = []
+    started = utc_now()
+    pending: list[tuple[int, int, str, Path, Path, Path, list[str]]] = []
+    for start in range(0, max(count, 1), args.shard_size):
+        end = min(start + args.shard_size, count)
+        if count == 0 and start > 0:
+            break
+        shard_id = f"{n}-{m}-{start}-{end}"
+        part = shard_dir / f"{shard_id}.g6"
+        manifest = shard_dir / f"{shard_id}.manifest.json"
+        stats_path = shard_dir / f"{shard_id}.stats.json"
+        if args.resume and valid_completed(part, manifest):
+            parts.append(part)
+            shard_stats.append({"range": [start, end], "resumed": True,
+                                "children": record_count(part)})
+            if count == 0:
+                break
+            continue
+        command = [
+            "nice", "-n", "10", str(args.udenum),
+            "--parents", str(parent_file), "--forbidden", str(args.forbidden),
+            "--n", str(n), "--m", str(m), "--start", str(start),
+            "--end", str(end), "--output", str(part),
+            "--manifest", str(manifest), "--shard-id", shard_id,
+            *software_args(args, Path(__file__).resolve()),
+        ]
+        if args.verify_parents:
+            command.append("--verify-parents")
+        if args.resume:
+            command.append("--overwrite")
+        parts.append(part)
+        pending.append((start, end, shard_id, part, manifest, stats_path, command))
+        if count == 0:
+            break
+
+    def run_one(spec: tuple[int, int, str, Path, Path, Path, list[str]]) -> dict[str, object]:
+        start, end, shard_id, part, manifest, stats_path, command = spec
+        del shard_id, manifest
+        wall = checked_run(command, stderr=stats_path)
+        return {"range": [start, end], "resumed": False,
+                "wall_seconds": wall, "children": record_count(part),
+                "stats": str(stats_path)}
+
+    if pending:
+        with ThreadPoolExecutor(max_workers=args.jobs) as executor:
+            shard_stats.extend(executor.map(run_one, pending))
+    parts.sort(key=lambda path: int(path.stem.split("-")[-2]))
+    shard_stats.sort(key=lambda value: int(value["range"][0]))
+    concatenate(parts, output)
+    finished = utc_now()
+    extra: dict[str, object] = {
+        "parent_sources": parent_sources,
+        "reach": ({"enabled": True, "k": k, "reach_json_sha256": sha256(args.reach_json),
+                   "table_level": table[n], "table_parent_level": table[n - 1]}
+                  if table is not None else {"enabled": False}),
+        "pruning": {"enabled": bool(args.prune), "prune_from": args.prune_from if args.prune else None},
+    }
+    write_aggregate_manifest(args, aggregate_manifest, parent_file, count,
+                             parts, output, started, finished, extra)
+    entry = {"n": n, "m": m, "kind": "augmentation",
+             "resumed": False, "parent_edge_counts": parent_ms, "reach_k": k,
+             "parent_sources": [{"level": s["level"], "kind": s["kind"], "records": s["records"]}
+                                for s in parent_sources],
+             "parents": count, "children": record_count(output),
+             "shards": shard_stats}
+    summary.append(entry)
+    return entry
+
+
+def valid_reach(out: Path, manifest: Path, full: Path, k: int) -> bool:
+    if not out.is_file() or not manifest.is_file():
+        return False
+    try:
+        info = json.loads(manifest.read_text())
+    except (OSError, json.JSONDecodeError):
+        return False
+    return (info.get("exit_status") == 0 and info.get("k") == k and
+            info.get("input_sha256") == sha256(full) and
+            info.get("output_sha256") == sha256(out))
+
+
+def reach_filter(args: argparse.Namespace, outdir: Path, table: dict[int, dict[int, int]],
+                 n: int, m: int, entry: dict[str, object]) -> None:
+    """Drop the graphs whose minimum degree is below k(n, m) (L4) before the level is a parent."""
+    full = outdir / f"{n}-{m}.g6"
+    out = outdir / f"{n}-{m}.reach.g6"
+    manifest = outdir / f"{n}-{m}.reach.manifest.json"
+    k = table[n][m]
+    if args.resume and valid_reach(out, manifest, full, k):
+        entry["reach"] = {"k": k, "resumed": True, "kept": record_count(out)}
+        return
+    started = utc_now()
+    codes = [line.strip() for line in full.read_text(encoding="ascii").splitlines()
+             if line.strip() and not line.startswith(">>")]
+    kept = [code for code in codes if graph6_min_degree(code) >= k]
+    out.write_text("".join(code + "\n" for code in kept), encoding="ascii")
+    manifest.write_text(json.dumps({
+        "kind": "reach",
+        "level": [n, m],
+        "k": k,
+        "reach_json_sha256": sha256(args.reach_json),
+        "software_sha256": {"run-dag2.py": sha256(Path(__file__).resolve())},
+        "input_file": str(full),
+        "input_sha256": sha256(full),
+        "input_records": len(codes),
+        "output_file": str(out),
+        "output_sha256": sha256(out),
+        "output_records": len(kept),
+        "dropped": len(codes) - len(kept),
+        "started": started,
+        "finished": utc_now(),
+        "host": socket.gethostname(),
+        "exit_status": 0,
+    }, indent=2) + "\n")
+    entry["reach"] = {"k": k, "resumed": False, "input": len(codes), "kept": len(kept),
+                      "dropped": len(codes) - len(kept)}
+
+
+def valid_prune(manifest: Path, source: Path, outdir: Path, n: int, m: int) -> bool:
+    if not manifest.is_file():
+        return False
+    try:
+        info = json.loads(manifest.read_text())
+    except (OSError, json.JSONDecodeError):
+        return False
+    if info.get("exit_status") != 0 or any(info.get("mutation", {}).values()):
+        return False
+    if info.get("inputs_sha256", {}).get(str(source)) != sha256(source):
+        return False
+    for name in (f"{n}-{m}.certs.jsonl", f"{n}-{m}.keep.g6", f"{n}-{m}.UNKNOWN.g6"):
+        path = outdir / name
+        if not path.is_file() or info.get("outputs_sha256", {}).get(str(path)) != sha256(path):
+            return False
+    return True
+
+
+def prune_level(args: argparse.Namespace, outdir: Path, n: int, m: int,
+                entry: dict[str, object]) -> None:
+    source = outdir / (f"{n}-{m}.reach.g6" if args.reach else f"{n}-{m}.g6")
+    manifest = outdir / f"{n}-{m}.prune.manifest.json"
+    if args.resume and valid_prune(manifest, source, outdir, n, m):
+        info = json.loads(manifest.read_text())
+        entry["prune"] = {"resumed": True, "source": str(source), "counts": info["counts"]}
+        return
+    here = Path(__file__).resolve().parent
+    command = [
+        sys.executable, str(here / "prune.py"), "--level", str(source),
+        "--target-n", str(args.target_n), "--target-m", str(args.target_m),
+        "--jobs", str(args.jobs), "--tries", str(args.prune_tries),
+        "--max-states", str(args.prune_max_states), "--chunk", str(args.prune_chunk),
+        "--graph-timeout", str(args.prune_graph_timeout), "--python", str(args.prune_python),
+        "--overwrite",
+    ]
+    if args.reach:
+        command += ["--record", f"reach.json={args.reach_json}"]
+    log = outdir / "_prune" / f"{n}-{m}.log"
+    log.parent.mkdir(exist_ok=True)
+    wall = checked_run(command, stdout=log)
+    info = json.loads(manifest.read_text())
+    if info.get("exit_status") != 0:
+        raise RuntimeError(f"prune.py reported problems for ({n},{m}): {info.get('problems')}")
+    entry["prune"] = {"resumed": False, "source": str(source), "counts": info["counts"],
+                      "wall_seconds": info["wall_seconds"], "checker": info["checker"],
+                      "step_wall_seconds": wall}
+
+
+def after_level(args: argparse.Namespace, outdir: Path, table: dict[int, dict[int, int]] | None,
+                n: int, m: int, entry: dict[str, object]) -> None:
+    if table is not None:
+        reach_filter(args, outdir, table, n, m, entry)
+    if args.prune and n >= args.prune_from:
+        prune_level(args, outdir, n, m, entry)
+
+
+def write_summary(outdir: Path, args: argparse.Namespace, windows: dict[int, tuple[int, int]],
+                  table: dict[int, dict[int, int]] | None, n: int,
+                  summary: list[dict[str, object]]) -> None:
+    (outdir / "run-summary.json").write_text(json.dumps({
+        "target": [args.target_n, args.target_m],
+        "seed_n": args.seed_n,
+        "windows": {str(k): list(v) for k, v in sorted(windows.items())},
+        "reach": ({"enabled": True, "root_k": args.reach_root_k,
+                   "levels": {str(k): sorted(v) for k, v in sorted(table.items())}}
+                  if table is not None else {"enabled": False}),
+        "prune": {"enabled": bool(args.prune), "prune_from": args.prune_from if args.prune else None},
+        "completed_through_n": n,
+        "levels": summary,
+    }, indent=2) + "\n")
+
+
+def run_config(args: argparse.Namespace) -> dict[str, object]:
+    return {"target": [args.target_n, args.target_m], "seed_n": args.seed_n,
+            "reach": bool(args.reach), "reach_root_k": args.reach_root_k,
+            "prune": bool(args.prune), "prune_from": args.prune_from if args.prune else None,
+            "prune_tries": args.prune_tries if args.prune else None,
+            "prune_max_states": args.prune_max_states if args.prune else None}
+
+
+def main() -> int:
+    args = parse_args()
+    args.udenum = args.udenum.resolve()
+    args.forbidden = args.forbidden.resolve()
+    args.geng = args.geng.resolve()
+    outdir = args.output_dir.resolve()
+    args.reach_json = outdir / "reach.json"
+    if args.shard_size < 1:
+        raise ValueError("--shard-size must be positive")
+    if outdir.exists() and not args.resume:
+        raise RuntimeError("output directory exists, use --resume to continue it")
+    outdir.mkdir(parents=True, exist_ok=True)
+    immediate_parent_lower = math.ceil(args.target_m * (args.target_n - 2) / args.target_n)
+    if (args.target_n - 1 in UBAR and
+            immediate_parent_lower > UBAR[args.target_n - 1]):
+        parents_dir = outdir / "_parents"
+        parents_dir.mkdir(exist_ok=True)
+        parent_file = parents_dir / f"{args.target_n}-{args.target_m}.g6"
+        parent_file.write_bytes(b"")
+        output = outdir / f"{args.target_n}-{args.target_m}.g6"
+        output.write_bytes(b"")
+        manifest = outdir / f"{args.target_n}-{args.target_m}.manifest.json"
+        now = utc_now()
+        args.reach = False
+        write_aggregate_manifest(args, manifest, parent_file, 0, [], output, now, now)
+        value = {
+            "target": [args.target_n, args.target_m],
+            "empty_by_schade": {
+                "required_parent_edges": immediate_parent_lower,
+                "parent_ubar": UBAR[args.target_n - 1],
+            },
+            "completed_through_n": args.target_n,
+            "levels": [{"n": args.target_n, "m": args.target_m,
+                        "parents": 0, "children": 0}],
+        }
+        (outdir / "run-summary.json").write_text(json.dumps(value, indent=2) + "\n")
+        print(json.dumps(value["empty_by_schade"]))
+        return 0
+    windows = windows_for(args.target_n, args.target_m, args.seed_n)
+    table: dict[int, dict[int, int]] | None = None
+    if args.reach:
+        source = "Schade: d >= target_m - u-bar(target_n - 1)"
+        if args.reach_root_k is None:
+            args.reach_root_k = max(0, args.target_m - UBAR[args.target_n - 1])
+            if (args.target_n, args.target_m) in ROOT_K_LEMMAS:
+                args.reach_root_k, source = ROOT_K_LEMMAS[(args.target_n, args.target_m)]
+        else:
+            source = "command line --reach-root-k"
+        table = reach_table(args.target_n, args.target_m, args.reach_root_k, args.seed_n)
+        for n, level in table.items():
+            low, high = windows[n]
+            for m in level:
+                if not low <= m <= high:
+                    raise RuntimeError(f"reach level ({n},{m}) lies outside Schade's window {windows[n]}")
+        reach_value = {
+            "target": [args.target_n, args.target_m],
+            "seed_n": args.seed_n,
+            "root_k": args.reach_root_k,
+            "root_k_source": source,
+            "ubar": {str(k): v for k, v in sorted(UBAR.items())},
+            "table": {str(n): {str(m): k for m, k in sorted(level.items())}
+                      for n, level in sorted(table.items())},
+            "schade_windows": {str(k): list(v) for k, v in sorted(windows.items())},
+        }
+        if args.reach_json.exists():
+            previous = json.loads(args.reach_json.read_text())
+            if previous != reach_value:
+                raise RuntimeError("existing reach.json differs from this run's reach table; "
+                                   "a resumed run must use the same table")
+        else:
+            args.reach_json.write_text(json.dumps(reach_value, indent=2) + "\n")
+    elif args.reach_json.exists():
+        raise RuntimeError("output directory has a reach.json but --reach was not given")
+    config_path = outdir / "run-config.json"
+    config = run_config(args)
+    if config_path.exists():
+        if json.loads(config_path.read_text()) != config:
+            raise RuntimeError("run-config.json differs from this run's options; refusing to resume")
+    else:
+        config_path.write_text(json.dumps(config, indent=2) + "\n")
+    if args.prune:
+        for tool in (args.prune_python, Path(__file__).resolve().parent / "prune.py"):
+            if not tool.is_file():
+                raise RuntimeError(f"missing pruning tool: {tool}")
+    summary: list[dict[str, object]] = []
+    for n in range(0, args.seed_n):
+        run_seed(args, outdir, n, UBAR[n], summary)
+    seed_levels = sorted(table[args.seed_n]) if table is not None else list(
+        range(windows[args.seed_n][0], windows[args.seed_n][1] + 1))
+    for m in seed_levels:
+        entry = run_seed(args, outdir, args.seed_n, m, summary)
+        after_level(args, outdir, table, args.seed_n, m, entry)
+    write_summary(outdir, args, windows, table, args.seed_n, summary)
+    for n in range(args.seed_n + 1, args.target_n + 1):
+        levels = sorted(table[n]) if table is not None else list(range(windows[n][0], windows[n][1] + 1))
+        for m in levels:
+            entry = run_level_file(args, outdir, windows, table, n, m, summary)
+            after_level(args, outdir, table, n, m, entry)
+            write_summary(outdir, args, windows, table, n, summary)
+    print(json.dumps({"target": [args.target_n, args.target_m],
+                      "windows": windows,
+                      "reach_levels": ({str(n): sorted(v) for n, v in sorted(table.items())}
+                                       if table is not None else None),
+                      "files": len(summary)}))
+    return 0
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except (OSError, ValueError, RuntimeError, subprocess.CalledProcessError) as error:
+        print(f"run-dag2.py: {error}", file=sys.stderr)
+        raise SystemExit(2)

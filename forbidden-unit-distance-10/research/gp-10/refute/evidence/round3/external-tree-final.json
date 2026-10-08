@@ -1,0 +1,53 @@
+{
+  "verification": {
+    "directory": "/tmp/gp10-refute/cand/tree-library-final-check",
+    "records": 98,
+    "refuted": 98,
+    "forbidden_limit": 9,
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "seconds": 5.269801881164312,
+    "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+  },
+  "snapshot": {
+    "candidate_sha256": "6def4c94c7640241cf629a56b76a53b76bbd1952d80b9a6b78ac6b664bcb4946",
+    "tree": {
+      "path": "<scratch>/scratchpad/cand/tree5.jsonl",
+      "snapshot_bytes": 651694,
+      "consumed_bytes": 651694,
+      "sha256": "4096cafbc8ccbca3e1ecde6157ff29c057156add64dc608eaf21f9ba85cd3412",
+      "verdicts": {
+        "unknown": 1417,
+        "refuted": 98
+      }
+    },
+    "embed": {
+      "path": "<scratch>/scratchpad/cand/emb.jsonl",
+      "snapshot_bytes": 1271226,
+      "consumed_bytes": 1271226,
+      "sha256": "327f7597f37e820db3bd20281f88f8eab8188bd81cd6e4f8b0258bcc3bd02088",
+      "verdicts": {
+        "embedded": 234,
+        "unknown": 930
+      }
+    },
+    "tree_configuration": {
+      "all_sat": false,
+      "extra_sat": [],
+      "forbidden_sha256": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+      "input_sha256": "6def4c94c7640241cf629a56b76a53b76bbd1952d80b9a6b78ac6b664bcb4946",
+      "known_sha256": null,
+      "methods": [
+        "tree"
+      ],
+      "seconds": 5.0,
+      "source_sha256": {
+        "algebra.py": "395d7109e25c880fd22d150af5ff7e4a305be4337fb918354092fa4caa27bf93",
+        "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec",
+        "gp10refute.py": "50d851358b91dbbc6cd6ac1ae8a5b8f110d7b59803d43eecf395ea8769a4e573",
+        "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63"
+      },
+      "states": 200
+    }
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "case": "real",
+    "graph": "data/23-65.g6",
+    "certificate": "data/23-65.certs.jsonl",
+    "stdout": "ACCEPT",
+    "stderr": "",
+    "exit": 0,
+    "wall_ns": 383986908
+  },
+  {
+    "case": "a",
+    "graph": "data/23-65.g6",
+    "certificate": "controls/a_root_A.jsonl",
+    "stdout": "REJECT root.A: row space does not equal all graph 4-cycle rhombus rows",
+    "stderr": "",
+    "exit": 1,
+    "wall_ns": 95581497
+  },
+  {
+    "case": "b",
+    "graph": "data/23-65.g6",
+    "certificate": "controls/b_missing_child.jsonl",
+    "stdout": "REJECT root: L3 requires 2 children; found 1",
+    "stderr": "",
+    "exit": 1,
+    "wall_ns": 98269149
+  },
+  {
+    "case": "c",
+    "graph": "data/23-65.g6",
+    "certificate": "controls/c_root_coefficients.jsonl",
+    "stdout": "REJECT root.move: ax+by+cz is not in A row space",
+    "stderr": "",
+    "exit": 1,
+    "wall_ns": 100474360
+  },
+  {
+    "case": "d",
+    "graph": "controls/d_edge_removed.g6",
+    "certificate": "data/23-65.certs.jsonl",
+    "stdout": "REJECT root.edges: does not equal input graph (missing=[], extra=[(0, 4)])",
+    "stderr": "",
+    "exit": 1,
+    "wall_ns": 85560749
+  }
+]

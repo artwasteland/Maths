@@ -1,0 +1,889 @@
+{
+ "file": "<repo>/b11-endgame/assembly-1/records.jsonl",
+ "file_sha256": "41731c987fade25c26b205fb02c809a2b75461ddeae852869ad61aab2804e114",
+ "bytes": 3391468870,
+ "lines": 448708,
+ "verdicts": {
+  "embedded": 443444,
+  "refuted": 5264
+ },
+ "embedded_types": {
+  "super": 405540,
+  "exact": 37904
+ },
+ "duplicate_g6": [],
+ "duplicate_g6_count": 0,
+ "anomalies": [
+  {
+   "line": 40002,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 46121,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 47377,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 54317,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 54748,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 73646,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 77955,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 78163,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 89327,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 89385,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 100101,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 102280,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 103173,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 107450,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 112378,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 114360,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 115611,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 116315,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 118510,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 127019,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 132354,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 133348,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 136441,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 142038,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 142861,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 145251,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 150274,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 153705,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 154665,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 158810,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 159536,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 163399,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 166187,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 171647,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 172175,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 173649,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 173737,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 179287,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 185893,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 188889,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 189087,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 189519,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 189632,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 189947,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 192340,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 195513,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 204456,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 204522,
+   "what": "other key order (verdict not last); verdict 'refuted'"
+  },
+  {
+   "line": 205152,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  },
+  {
+   "line": 205852,
+   "what": "other key order (verdict not last); verdict 'embedded'"
+  }
+ ],
+ "anomaly_count": 428,
+ "anomaly_kinds": {
+  "other key order (verdict not last)": 428
+ },
+ "refuted_types": {
+  "sub": 1590,
+  "tree": 1099,
+  "tu": 1760,
+  "null": 41,
+  "real-dag": 482,
+  "null-dag": 281,
+  "real": 11
+ },
+ "refuted_subfeatures": {
+  "real proof=sos": 5,
+  "real proof=sturm": 6,
+  "real-dag proof=sos": 70,
+  "real-dag proof=sturm": 412,
+  "sub sub_index=None": 1590,
+  "tree field_degree=1": 250,
+  "tree field_degree=2": 801,
+  "tree field_degree=4": 48,
+  "tu end=forbidden": 1735,
+  "tu end=refuted": 25,
+  "tu end_index=1": 5,
+  "tu end_index=10": 16,
+  "tu end_index=101": 5,
+  "tu end_index=103": 2,
+  "tu end_index=107": 7,
+  "tu end_index=109": 2,
+  "tu end_index=11": 21,
+  "tu end_index=110": 4,
+  "tu end_index=113": 2,
+  "tu end_index=114": 2,
+  "tu end_index=117": 4,
+  "tu end_index=12": 36,
+  "tu end_index=123": 5,
+  "tu end_index=125": 4,
+  "tu end_index=126": 5,
+  "tu end_index=128": 5,
+  "tu end_index=13": 17,
+  "tu end_index=131": 2,
+  "tu end_index=133": 3,
+  "tu end_index=134": 3,
+  "tu end_index=135": 2,
+  "tu end_index=136": 4,
+  "tu end_index=139": 3,
+  "tu end_index=14": 22,
+  "tu end_index=145": 4,
+  "tu end_index=147": 9,
+  "tu end_index=148": 4,
+  "tu end_index=15": 8,
+  "tu end_index=154": 4,
+  "tu end_index=155": 7,
+  "tu end_index=156": 2,
+  "tu end_index=158": 3,
+  "tu end_index=159": 4,
+  "tu end_index=16": 42,
+  "tu end_index=160": 2,
+  "tu end_index=161": 2,
+  "tu end_index=162": 4,
+  "tu end_index=164": 4,
+  "tu end_index=167": 3,
+  "tu end_index=17": 45,
+  "tu end_index=170": 15,
+  "tu end_index=171": 6,
+  "tu end_index=172": 6,
+  "tu end_index=175": 11,
+  "tu end_index=176": 9,
+  "tu end_index=177": 4,
+  "tu end_index=178": 4,
+  "tu end_index=179": 1,
+  "tu end_index=18": 26,
+  "tu end_index=182": 3,
+  "tu end_index=185": 4,
+  "tu end_index=186": 1,
+  "tu end_index=187": 6,
+  "tu end_index=19": 10,
+  "tu end_index=190": 8,
+  "tu end_index=191": 4,
+  "tu end_index=192": 6,
+  "tu end_index=193": 4,
+  "tu end_index=195": 6,
+  "tu end_index=196": 4,
+  "tu end_index=2": 10,
+  "tu end_index=20": 13,
+  "tu end_index=200": 8,
+  "tu end_index=203": 3,
+  "tu end_index=204": 2,
+  "tu end_index=205": 4,
+  "tu end_index=206": 2,
+  "tu end_index=208": 6,
+  "tu end_index=21": 17,
+  "tu end_index=210": 4,
+  "tu end_index=211": 4,
+  "tu end_index=212": 2,
+  "tu end_index=214": 1,
+  "tu end_index=217": 5,
+  "tu end_index=219": 4,
+  "tu end_index=22": 12,
+  "tu end_index=221": 3,
+  "tu end_index=223": 2,
+  "tu end_index=226": 6,
+  "tu end_index=227": 10,
+  "tu end_index=228": 2,
+  "tu end_index=229": 6,
+  "tu end_index=23": 4,
+  "tu end_index=231": 6,
+  "tu end_index=232": 1,
+  "tu end_index=235": 6,
+  "tu end_index=236": 4,
+  "tu end_index=237": 11,
+  "tu end_index=238": 2,
+  "tu end_index=239": 4,
+  "tu end_index=24": 6,
+  "tu end_index=240": 12,
+  "tu end_index=241": 2,
+  "tu end_index=242": 2,
+  "tu end_index=243": 1,
+  "tu end_index=244": 2,
+  "tu end_index=245": 10,
+  "tu end_index=246": 4,
+  "tu end_index=247": 2,
+  "tu end_index=248": 2,
+  "tu end_index=249": 2,
+  "tu end_index=25": 10,
+  "tu end_index=250": 2,
+  "tu end_index=251": 8,
+  "tu end_index=252": 6,
+  "tu end_index=253": 13,
+  "tu end_index=256": 2,
+  "tu end_index=26": 2,
+  "tu end_index=261": 3,
+  "tu end_index=262": 1,
+  "tu end_index=264": 4,
+  "tu end_index=266": 5,
+  "tu end_index=268": 12,
+  "tu end_index=27": 4,
+  "tu end_index=270": 7,
+  "tu end_index=272": 6,
+  "tu end_index=273": 3,
+  "tu end_index=276": 4,
+  "tu end_index=28": 5,
+  "tu end_index=281": 8,
+  "tu end_index=283": 2,
+  "tu end_index=284": 3,
+  "tu end_index=285": 2,
+  "tu end_index=287": 5,
+  "tu end_index=288": 3,
+  "tu end_index=29": 13,
+  "tu end_index=291": 4,
+  "tu end_index=292": 3,
+  "tu end_index=293": 6,
+  "tu end_index=295": 4,
+  "tu end_index=296": 8,
+  "tu end_index=297": 1,
+  "tu end_index=298": 5,
+  "tu end_index=299": 1,
+  "tu end_index=3": 35,
+  "tu end_index=30": 3,
+  "tu end_index=302": 5,
+  "tu end_index=307": 7,
+  "tu end_index=308": 2,
+  "tu end_index=309": 7,
+  "tu end_index=31": 3,
+  "tu end_index=310": 6,
+  "tu end_index=311": 3,
+  "tu end_index=312": 6,
+  "tu end_index=314": 6,
+  "tu end_index=315": 3,
+  "tu end_index=318": 2,
+  "tu end_index=319": 3,
+  "tu end_index=32": 1,
+  "tu end_index=320": 4,
+  "tu end_index=321": 7,
+  "tu end_index=325": 6,
+  "tu end_index=326": 2,
+  "tu end_index=327": 8,
+  "tu end_index=328": 7,
+  "tu end_index=33": 16,
+  "tu end_index=330": 11,
+  "tu end_index=334": 2,
+  "tu end_index=336": 2,
+  "tu end_index=337": 6,
+  "tu end_index=338": 4,
+  "tu end_index=339": 4,
+  "tu end_index=34": 4,
+  "tu end_index=340": 4,
+  "tu end_index=342": 3,
+  "tu end_index=345": 3,
+  "tu end_index=346": 5,
+  "tu end_index=347": 2,
+  "tu end_index=349": 7,
+  "tu end_index=35": 16,
+  "tu end_index=350": 6,
+  "tu end_index=351": 4,
+  "tu end_index=352": 3,
+  "tu end_index=353": 2,
+  "tu end_index=354": 9,
+  "tu end_index=356": 2,
+  "tu end_index=357": 6,
+  "tu end_index=359": 5,
+  "tu end_index=36": 8,
+  "tu end_index=362": 8,
+  "tu end_index=363": 10,
+  "tu end_index=365": 4,
+  "tu end_index=367": 6,
+  "tu end_index=368": 3,
+  "tu end_index=37": 23,
+  "tu end_index=371": 7,
+  "tu end_index=373": 10,
+  "tu end_index=374": 2,
+  "tu end_index=376": 4,
+  "tu end_index=377": 1,
+  "tu end_index=38": 9,
+  "tu end_index=384": 5,
+  "tu end_index=385": 3,
+  "tu end_index=386": 5,
+  "tu end_index=388": 8,
+  "tu end_index=39": 4,
+  "tu end_index=393": 1,
+  "tu end_index=394": 6,
+  "tu end_index=395": 1,
+  "tu end_index=396": 6,
+  "tu end_index=4": 13,
+  "tu end_index=40": 1,
+  "tu end_index=41": 4,
+  "tu end_index=42": 9,
+  "tu end_index=43": 9,
+  "tu end_index=44": 4,
+  "tu end_index=45": 9,
+  "tu end_index=46": 14,
+  "tu end_index=47": 10,
+  "tu end_index=48": 6,
+  "tu end_index=49": 8,
+  "tu end_index=5": 24,
+  "tu end_index=50": 3,
+  "tu end_index=52": 7,
+  "tu end_index=53": 7,
+  "tu end_index=54": 13,
+  "tu end_index=56": 21,
+  "tu end_index=57": 18,
+  "tu end_index=58": 9,
+  "tu end_index=59": 2,
+  "tu end_index=6": 32,
+  "tu end_index=60": 9,
+  "tu end_index=61": 13,
+  "tu end_index=62": 9,
+  "tu end_index=63": 18,
+  "tu end_index=64": 12,
+  "tu end_index=65": 12,
+  "tu end_index=66": 6,
+  "tu end_index=67": 17,
+  "tu end_index=68": 17,
+  "tu end_index=69": 4,
+  "tu end_index=7": 39,
+  "tu end_index=70": 2,
+  "tu end_index=71": 5,
+  "tu end_index=72": 23,
+  "tu end_index=73": 13,
+  "tu end_index=8": 1,
+  "tu end_index=82": 7,
+  "tu end_index=84": 7,
+  "tu end_index=85": 4,
+  "tu end_index=86": 3,
+  "tu end_index=88": 6,
+  "tu end_index=9": 39,
+  "tu end_index=90": 1,
+  "tu end_index=91": 2,
+  "tu end_index=93": 1,
+  "tu end_index=94": 6,
+  "tu end_index=95": 2,
+  "tu end_index=98": 5,
+  "tu end_index=99": 3,
+  "tu gadgets=0": 1322,
+  "tu gadgets=0-0": 40,
+  "tu gadgets=0-5": 70,
+  "tu gadgets=1": 96,
+  "tu gadgets=2": 133,
+  "tu gadgets=3": 42,
+  "tu gadgets=3-0": 1,
+  "tu gadgets=3-1": 1,
+  "tu gadgets=3-3-4": 2,
+  "tu gadgets=3-4": 20,
+  "tu gadgets=5": 33,
+  "tu steps=1": 1626,
+  "tu steps=2": 132,
+  "tu steps=3": 2
+ },
+ "refuted_bytes_by_type": {
+  "sub": {
+   "n": 1590,
+   "bytes": 179753,
+   "max": 115
+  },
+  "tree": {
+   "n": 1099,
+   "bytes": 11766534,
+   "max": 66072
+  },
+  "tu": {
+   "n": 1760,
+   "bytes": 306636,
+   "max": 273
+  },
+  "null": {
+   "n": 41,
+   "bytes": 65292660,
+   "max": 4469782
+  },
+  "real-dag": {
+   "n": 482,
+   "bytes": 1326782934,
+   "max": 8379422
+  },
+  "null-dag": {
+   "n": 281,
+   "bytes": 646620932,
+   "max": 8274659
+  },
+  "real": {
+   "n": 11,
+   "bytes": 34706771,
+   "max": 6050117
+  }
+ },
+ "tree_node_histogram": {
+  "1": 110,
+  "2": 92,
+  "3": 75,
+  "4": 19,
+  "5": 10,
+  "6": 2,
+  "7": 47,
+  "8": 4,
+  "9": 93,
+  "10": 6,
+  "11": 86,
+  "12": 3,
+  "13": 59,
+  "15": 106,
+  "16": 7,
+  "17": 33,
+  "19": 56,
+  "21": 18,
+  "23": 78,
+  "25": 9,
+  "27": 55,
+  "28": 2,
+  "29": 8,
+  "31": 33,
+  "33": 8,
+  "35": 16,
+  "37": 3,
+  "39": 16,
+  "41": 2,
+  "43": 9,
+  "47": 16,
+  "51": 2,
+  "55": 4,
+  "59": 5,
+  "63": 3,
+  "67": 2,
+  "71": 1,
+  "75": 1
+ },
+ "tree_moves": {
+  "L3": 5500,
+  "L1a": 4198,
+  "L2": 3951,
+  "L1b": 790,
+  "L1c": 1611
+ },
+ "dag_row_histogram": {
+  "2": 1,
+  "6": 7,
+  "7": 18,
+  "8": 14,
+  "9": 34,
+  "10": 36,
+  "11": 49,
+  "12": 27,
+  "13": 51,
+  "14": 43,
+  "15": 25,
+  "16": 24,
+  "17": 15,
+  "18": 8,
+  "19": 13,
+  "20": 6,
+  "21": 8,
+  "22": 6,
+  "23": 7,
+  "24": 4,
+  "25": 5,
+  "26": 5,
+  "27": 2,
+  "28": 1,
+  "29": 7,
+  "30": 3,
+  "32": 1,
+  "33": 3,
+  "34": 2,
+  "35": 1,
+  "37": 3,
+  "40": 2,
+  "41": 1,
+  "42": 1,
+  "43": 2,
+  "45": 5,
+  "46": 3,
+  "48": 5,
+  "50": 3,
+  "51": 5,
+  "52": 2,
+  "53": 5,
+  "54": 3,
+  "55": 3,
+  "56": 3,
+  "58": 3,
+  "59": 3,
+  "60": 4,
+  "61": 2,
+  "62": 1,
+  "63": 3,
+  "64": 5,
+  "65": 1,
+  "66": 2,
+  "67": 1,
+  "68": 5,
+  "69": 1,
+  "70": 3,
+  "71": 4,
+  "72": 3,
+  "73": 1,
+  "75": 3,
+  "76": 2,
+  "77": 1,
+  "79": 1,
+  "80": 2,
+  "82": 3,
+  "83": 1,
+  "84": 1,
+  "88": 2,
+  "89": 3,
+  "91": 1,
+  "93": 1,
+  "94": 1,
+  "95": 4,
+  "96": 6,
+  "97": 1,
+  "98": 4,
+  "99": 3,
+  "100": 1,
+  "101": 3,
+  "103": 1,
+  "104": 4,
+  "105": 2,
+  "106": 1,
+  "107": 3,
+  "108": 6,
+  "109": 2,
+  "110": 6,
+  "111": 4,
+  "112": 5,
+  "113": 4,
+  "114": 8,
+  "115": 4,
+  "116": 7,
+  "117": 6,
+  "118": 1,
+  "119": 5,
+  "120": 1,
+  "121": 4,
+  "122": 1,
+  "123": 6,
+  "124": 3,
+  "125": 1,
+  "126": 6,
+  "127": 2,
+  "128": 4,
+  "130": 5,
+  "131": 1,
+  "132": 1,
+  "133": 2,
+  "134": 1,
+  "135": 1,
+  "136": 2,
+  "137": 2,
+  "138": 4,
+  "139": 2,
+  "141": 1,
+  "142": 2,
+  "143": 2,
+  "144": 3,
+  "145": 2,
+  "147": 3,
+  "148": 2,
+  "149": 1,
+  "152": 3,
+  "153": 1,
+  "154": 2,
+  "155": 2,
+  "156": 2,
+  "157": 2,
+  "158": 1,
+  "160": 5,
+  "163": 2,
+  "164": 4,
+  "165": 3,
+  "166": 3,
+  "169": 3,
+  "170": 1,
+  "171": 1,
+  "172": 1,
+  "173": 1,
+  "174": 1,
+  "177": 1,
+  "184": 2,
+  "187": 2,
+  "188": 1,
+  "189": 1,
+  "190": 1,
+  "191": 1,
+  "193": 1,
+  "194": 1,
+  "197": 1,
+  "198": 1,
+  "200": 1,
+  "205": 1,
+  "208": 1,
+  "209": 2,
+  "211": 1,
+  "214": 1,
+  "217": 2,
+  "227": 1,
+  "228": 1,
+  "241": 1,
+  "244": 1,
+  "248": 1,
+  "249": 1,
+  "254": 1,
+  "256": 4
+ },
+ "pointer_kinds": {
+  "sub index=none": 1590,
+  "tu->refuted": 25
+ },
+ "largest_20": [
+  {
+   "line": 370184,
+   "g6": "JG?w_VGcrF?",
+   "type": "real-dag",
+   "bytes": 8379422
+  },
+  {
+   "line": 447854,
+   "g6": "Jq_`i_DAWT_",
+   "type": "real-dag",
+   "bytes": 8312504
+  },
+  {
+   "line": 445120,
+   "g6": "JoCAhoKH]D?",
+   "type": "real-dag",
+   "bytes": 8291699
+  },
+  {
+   "line": 379265,
+   "g6": "JGCOIUg`na?",
+   "type": "real-dag",
+   "bytes": 8278301
+  },
+  {
+   "line": 267559,
+   "g6": "J@?GcLdqbo_",
+   "type": "null-dag",
+   "bytes": 8274659
+  },
+  {
+   "line": 445546,
+   "g6": "JoCI?[eKQ`_",
+   "type": "real-dag",
+   "bytes": 8242546
+  },
+  {
+   "line": 448151,
+   "g6": "JsO_olGHGF_",
+   "type": "real-dag",
+   "bytes": 8236422
+  },
+  {
+   "line": 447184,
+   "g6": "JpODOgMSOJ_",
+   "type": "real-dag",
+   "bytes": 8177247
+  },
+  {
+   "line": 419441,
+   "g6": "J_C@KHiFVa?",
+   "type": "real-dag",
+   "bytes": 8170917
+  },
+  {
+   "line": 395214,
+   "g6": "JK?ETHSMG]?",
+   "type": "real-dag",
+   "bytes": 8094578
+  },
+  {
+   "line": 321341,
+   "g6": "JA?PIUgbNa?",
+   "type": "real-dag",
+   "bytes": 8038675
+  },
+  {
+   "line": 440490,
+   "g6": "Jh_@wZ?@Wb_",
+   "type": "real-dag",
+   "bytes": 8010620
+  },
+  {
+   "line": 132354,
+   "g6": "J?CMHa`RJe?",
+   "type": "real-dag",
+   "bytes": 7974134
+  },
+  {
+   "line": 289109,
+   "g6": "J@C@MEKRNa?",
+   "type": "real-dag",
+   "bytes": 7940164
+  },
+  {
+   "line": 421549,
+   "g6": "J_CqX?XgUB_",
+   "type": "real-dag",
+   "bytes": 7839220
+  },
+  {
+   "line": 389223,
+   "g6": "JGcTGH@E^B?",
+   "type": "null-dag",
+   "bytes": 7787143
+  },
+  {
+   "line": 432473,
+   "g6": "J``?xeGPHB_",
+   "type": "real-dag",
+   "bytes": 7765163
+  },
+  {
+   "line": 447380,
+   "g6": "Jq?ApgK`hR?",
+   "type": "real-dag",
+   "bytes": 7714567
+  },
+  {
+   "line": 440489,
+   "g6": "Jh_@uGSAgJ_",
+   "type": "real-dag",
+   "bytes": 7696065
+  },
+  {
+   "line": 369473,
+   "g6": "JG?cOuSRJe?",
+   "type": "real-dag",
+   "bytes": 7682680
+  }
+ ],
+ "seconds": 94.6
+}

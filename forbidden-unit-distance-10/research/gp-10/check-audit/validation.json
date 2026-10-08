@@ -1,0 +1,18 @@
+{
+  "cases": 304,
+  "findings": {
+    "BLOCKER": 0,
+    "MAJOR": 1,
+    "MINOR": 2
+  },
+  "module_bytes": 1360237,
+  "module_files": 2005,
+  "python_scripts": 5,
+  "report_sections": [
+    "## VERDICT",
+    "## TEST CASES",
+    "## CODE REVIEW",
+    "## UNCERTAIN"
+  ],
+  "status": "PASS"
+}

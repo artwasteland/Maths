@@ -1,0 +1,10 @@
+{
+  "directory": "<repo>/research/gp-10/refute/evidence/round3/tests-real-sos-zero",
+  "records": 1,
+  "refuted": 1,
+  "forbidden_limit": 0,
+  "checker_exit": 1,
+  "final_line": "REJECT run records_rejected",
+  "seconds": 0.4038155539892614,
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04"
+}

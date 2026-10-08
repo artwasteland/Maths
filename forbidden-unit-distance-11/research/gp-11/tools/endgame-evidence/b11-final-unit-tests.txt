@@ -1,0 +1,82 @@
+test_accepted_report (__main__.Tests.test_accepted_report) ... ok
+test_b11_packet_seed_keeps_history_and_proposals (__main__.Tests.test_b11_packet_seed_keeps_history_and_proposals) ... ok
+test_manifest_contract (__main__.Tests.test_manifest_contract) ... ok
+test_record_and_F10_boundary (__main__.Tests.test_record_and_F10_boundary) ... ok
+test_reject_F10_bool (__main__.Tests.test_reject_F10_bool) ... ok
+test_reject_F10_upper (__main__.Tests.test_reject_F10_upper) ... ok
+test_reject_F9 (__main__.Tests.test_reject_F9) ... ok
+test_reject_TU_pointer (__main__.Tests.test_reject_TU_pointer) ... ok
+test_reject_TU_upper (__main__.Tests.test_reject_TU_upper) ... ok
+test_reject_bad_budget (__main__.Tests.test_reject_bad_budget) ... ok
+test_reject_bad_state (__main__.Tests.test_reject_bad_state) ... ok
+test_reject_cert_object (__main__.Tests.test_reject_cert_object) ... ok
+test_reject_checker_pin (__main__.Tests.test_reject_checker_pin) ... ok
+test_reject_conditional (__main__.Tests.test_reject_conditional) ... ok
+test_reject_conditional_minimal (__main__.Tests.test_reject_conditional_minimal) ... ok
+test_reject_consumed_hash (__main__.Tests.test_reject_consumed_hash) ... ok
+test_reject_count (__main__.Tests.test_reject_count) ... ok
+test_reject_data (__main__.Tests.test_reject_data) ... ok
+test_reject_direct_rejection (__main__.Tests.test_reject_direct_rejection) ... ok
+test_reject_embedding_pointer (__main__.Tests.test_reject_embedding_pointer) ... ok
+test_reject_extra_key (__main__.Tests.test_reject_extra_key) ... ok
+test_reject_graph (__main__.Tests.test_reject_graph) ... ok
+test_reject_host (__main__.Tests.test_reject_host) ... ok
+test_reject_input_hash (__main__.Tests.test_reject_input_hash) ... ok
+test_reject_no_newline (__main__.Tests.test_reject_no_newline) ... ok
+test_reject_oversize (__main__.Tests.test_reject_oversize) ... ok
+test_reject_profile (__main__.Tests.test_reject_profile) ... ok
+test_reject_profile_sources (__main__.Tests.test_reject_profile_sources) ... ok
+test_reject_reason (__main__.Tests.test_reject_reason) ... ok
+test_reject_refuted_pointer (__main__.Tests.test_reject_refuted_pointer) ... ok
+test_reject_scope (__main__.Tests.test_reject_scope) ... ok
+test_reject_stale_check (__main__.Tests.test_reject_stale_check) ... ok
+test_reject_status (__main__.Tests.test_reject_status) ... ok
+test_reject_two_records (__main__.Tests.test_reject_two_records) ... ok
+test_reject_unknown (__main__.Tests.test_reject_unknown) ... ok
+test_reject_unknown_count (__main__.Tests.test_reject_unknown_count) ... ok
+test_shared_lane_namespace_and_scalable_jobs (__main__.Tests.test_shared_lane_namespace_and_scalable_jobs) ... ok
+test_torn_ledger_recovery_and_idempotence (__main__.Tests.test_torn_ledger_recovery_and_idempotence) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.415s
+
+OK
+ASSEMBLY WRITTEN {"embedded":0,"hosts":0,"input":1,"refuted":0,"seconds":0.043,"unknown":1}
+ASSEMBLY WRITTEN {"embedded":1,"hosts":0,"input":1,"refuted":0,"seconds":1.48,"unknown":0}
+RED b11_check:record_graph test_reject_graph
+RED b11_check:record_graph test_reject_extra_key
+RED b11_check:record_certificate test_reject_cert_object
+RED b11_check:record_exact test_reject_embedding_pointer
+RED b11_check:record_refutation test_reject_unknown
+RED b11_check:record_indexed_F10 test_reject_refuted_pointer
+RED b11_check:record_indexed_F10 test_reject_F10_upper
+RED b11_check:record_indexed_F10 test_reject_F10_bool
+RED b11_check:record_F10_TU test_reject_TU_pointer
+RED b11_check:record_F10_TU test_reject_TU_upper
+RED b11_check:record_framing test_reject_no_newline
+RED b11_check:record_framing test_reject_two_records
+RED b11_check:record_framing test_reject_oversize
+RED b11_check:admission_status test_reject_status
+RED b11_check:admission_status test_reject_reason
+RED b11_check:admission_profile test_reject_profile
+RED b11_check:admission_profile test_reject_F9
+RED b11_check:admission_profile test_reject_scope
+RED b11_check:admission_counts test_reject_count
+RED b11_check:admission_counts test_reject_unknown_count
+RED b11_check:admission_input test_reject_input_hash
+RED b11_check:admission_complete test_reject_direct_rejection
+RED b11_check:admission_complete test_reject_conditional
+RED b11_check:admission_complete test_reject_conditional_minimal
+RED b11_check:admission_sources test_reject_profile_sources
+RED b11_check:admission_sources test_reject_checker_pin
+RED b11_check:admission_data test_reject_data
+RED b11_check:admission_consumed test_reject_consumed_hash
+RED b11_check:admission_consumed test_reject_host
+RED b11_check:fresh_check_required test_reject_stale_check
+RED b11_check:positive_budget test_reject_bad_budget
+RED b11_campaign:queue_state test_reject_bad_state
+PASS all 32 rejection tests fail with their guard disabled
+PASS actual independent fixture11/F10 admission, counts embedded=1 refuted=0 unknown=0
+SEALED /tmp/gp11-b11-final-validation-v5/sealed-rehearsal bcf3d1cdc47628877e8fe326ef6ea007513b4d6b830b0a6c70cffc97740d4a79
+VERIFIED_REHEARSAL
+PASS sealed one-graph launcher rehearsal and cached-run refusal

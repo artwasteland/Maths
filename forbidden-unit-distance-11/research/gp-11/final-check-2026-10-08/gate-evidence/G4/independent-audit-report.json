@@ -1,0 +1,129 @@
+{
+  "alarms": [],
+  "classification_authorized": false,
+  "cross_consistency": {
+    "equal": true,
+    "refuted": 5264,
+    "upset": 5264
+  },
+  "derived_list_valid": true,
+  "embeddings": {
+    "degree_10": 2615,
+    "degree_12": 889,
+    "degree_14": 9,
+    "degree_16": 2065,
+    "degree_18": 72,
+    "degree_2": 369,
+    "degree_20": 785,
+    "degree_22": 104,
+    "degree_24": 360,
+    "degree_26": 177,
+    "degree_28": 114,
+    "degree_30": 15,
+    "degree_32": 81,
+    "degree_34": 1,
+    "degree_36": 48,
+    "degree_38": 1,
+    "degree_4": 18251,
+    "degree_40": 18,
+    "degree_42": 3,
+    "degree_44": 8,
+    "degree_46": 4,
+    "degree_48": 16,
+    "degree_50": 2,
+    "degree_52": 12,
+    "degree_54": 3,
+    "degree_56": 6,
+    "degree_58": 4,
+    "degree_6": 121,
+    "degree_60": 3,
+    "degree_62": 3,
+    "degree_68": 2,
+    "degree_72": 2,
+    "degree_74": 1,
+    "degree_76": 2,
+    "degree_8": 11736,
+    "degree_80": 1,
+    "degree_84": 1,
+    "max_subdivisions": 43,
+    "method": "exact fraction-free integer polynomial reduction and rational interval separation",
+    "total_subdivisions": 4188,
+    "verified": 37904
+  },
+  "input": {
+    "B11": 448708,
+    "B11_sha256": "ec9a7109ae07ee7c1da853449d7c93d46587982ac75af3f9775bc89f8fc8937f",
+    "counts": {
+      "embedded": 443444,
+      "refuted": 5264
+    },
+    "distinct_iso_classes": 448708,
+    "records": 448708,
+    "records_sha256": "41731c987fade25c26b205fb02c809a2b75461ddeae852869ad61aab2804e114",
+    "types": {
+      "embedded/exact": 37904,
+      "embedded/super": 405540,
+      "refuted/null": 41,
+      "refuted/null-dag": 281,
+      "refuted/real": 11,
+      "refuted/real-dag": 482,
+      "refuted/sub": 1590,
+      "refuted/tree": 1099,
+      "refuted/tu": 1760
+    }
+  },
+  "lower_order_premise": "GP-10 theorem and B11 F10-freeness; not re-derived here",
+  "minimality": {
+    "L11": 2833,
+    "biconnected_deletions": 94852,
+    "blocks_of_order_10": 3854,
+    "deletions_refuted": 4795,
+    "explicit_F10_block_search": {
+      "blocks_requested": 8314,
+      "cache_hits": 7421,
+      "distinct_blocks_checked": 893,
+      "distinct_blocks_order_10": 795,
+      "distinct_blocks_order_2": 1,
+      "distinct_blocks_order_3": 1,
+      "distinct_blocks_order_4": 2,
+      "distinct_blocks_order_5": 2,
+      "distinct_blocks_order_6": 5,
+      "distinct_blocks_order_7": 8,
+      "distinct_blocks_order_8": 33,
+      "distinct_blocks_order_9": 46,
+      "patterns_considered": 320510,
+      "sha256": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c"
+    },
+    "non_biconnected_deletions_embedded_by_blocks": 4136,
+    "refuted_not_minimal": 2431,
+    "vertex_deletions_embedded_by_lower_order_theorem": 57904
+  },
+  "pointers": {
+    "bad_pointer_chains": 0,
+    "pointers": 407130
+  },
+  "predictions": {
+    "L11_in_forecast_95pct_range": true,
+    "automated_residue": "not reconstructible from final records; requires stage history",
+    "forecast_rows": [
+      "| quantity | forecast | 95% range and basis |",
+      "| refuted graphs in B11 | about 5,200 | 3,600 to 7,300: 27 to 29 refuted in 2,500 sampled (1.1 to 1.2%), sampling error only |",
+      "| embedded graphs in B11 | about 443,500 | the rest |",
+      "| minimal forbidden graphs on 11 vertices, \\|L11\\| | about 3,000 | 1,500 to 6,000: the refuted count times a minimal fraction of 40% to 70% (GP-10: 64%), and a growth ratio of 5 to 18 over 324 |",
+      "| undecided after the automated stages (the analyst residue) | about 900 | 349 to 2,302: 4 undecided of 2,000 after escalation (0.20%); the 500-sample gives 1,795 (493 to 6,491) |",
+      "| share of the residue that embeds | about two thirds | the six observed survivors guessed 4 embeddable, 2 forbidden (numerical, not certificates) |"
+    ],
+    "refuted_in_forecast_95pct_range": true,
+    "sha256": "12a37f573d087c304dc6ab629d2abf49ec555f038174ca63605aa53fd750b906"
+  },
+  "refutation_verdicts_are_premises": true,
+  "scope": "B11",
+  "seconds": 693.437,
+  "source_hashes": {
+    "forbidden_catalogue.py": "16a8823af311e05c0fa173cc323a38c577e95f892b846a3c94fd8c917c60539a",
+    "independent_audit.py": "c812e7dd8eeb10212637c72b8518927e9db46d9d93928d5da3ec31cf9fa0850f",
+    "independent_core.py": "898b416487e0727dbeb316761ee08093d33b705b0cfc7b3b4a30acedb973f1e5"
+  },
+  "stages": "1234",
+  "status": "PASS"
+}

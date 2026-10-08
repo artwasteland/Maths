@@ -1,0 +1,17 @@
+**No FATAL, MAJOR, or MINOR regression found.** I found no case where the rewrite loses a child or otherwise changes the old graph output.
+
+1. **Embedding pruning — [udenum.c:1384](<repo>/research/unit-distance-22/enum/udenum.c:1384).** Rule (b) is safe: the family cannot shrink between the partial-S check and a leaf. Every descendant image contains that partial image. Rule (c)’s return is explicitly gated by `depth >= s_complete_depth`; it cannot suppress a different S-placement.
+
+2. **Restricted-path freeness — [udenum.c:1625](<repo>/research/unit-distance-22/enum/udenum.c:1625), [parent verification:1927](<repo>/research/unit-distance-22/enum/udenum.c:1927).** `cfg->verify_parents` reaches the builder only after verification succeeds. Otherwise, switching requires a full child-containment test to return false. Since the parent is a subgraph of that child, this proves the needed freeness. A forbidden parent cannot trigger that switch.
+
+3. **Uncovered-set counting and direct tests — [udenum.c:1462](<repo>/research/unit-distance-22/enum/udenum.c:1462).** This caller sets `force_mask = 0`. Injectivity makes each image exactly an s-set, and each addition covers exactly one previously uncovered s-set. The list refresh follows family changes. Direct tests restrict all S positions to an equally sized target; when multiple images exist, the original traversal determines addition order.
+
+4. **Orbit and graph classes — [udenum.c:1157](<repo>/research/unit-distance-22/enum/udenum.c:1157).** Independent Python backtracking reproduced **3,387 representatives, 488 omitted patterns, and 1,843 graph classes**, including the exact C membership and partition. Omitted orbit representatives have the same images as an earlier representative. Negative graph-class caching uses unrestricted embedding tests of `F − v`, independent of S.
+
+5. **Rooted T searches — [udenum.c:1564](<repo>/research/unit-distance-22/enum/udenum.c:1564).** When overlap with R is necessary, the root restrictions partition eligible embeddings by the least-labelled S vertex mapped into R. The `avoid_required` positions are translated correctly. Only actual embeddings contribute sets to T.
+
+6. **Filters, bounds, and undefined behaviour — [udenum.c:1011](<repo>/research/unit-distance-22/enum/udenum.c:1011), [host tables:1235](<repo>/research/unit-distance-22/enum/udenum.c:1235).** The implemented filters are necessary conditions for non-induced embeddings. Independent calculation found maximum triangle and square requirements of six, safely below 63. I checked array indices, shifts, combination iteration, counters, and signed negation through 23 vertices; no new undefined behaviour surfaced.
+
+Verification included **120 old/new comparisons** of graph bytes, exit status, and all nine counters; **385 ordered-family hash comparisons** covering 23,697 sets with forced-switch variants; and **20 clean runs of existing ASan/UBSan binaries**. Cases included forbidden parents, verification refusals, mutation flags, dense hosts, and forbidden copies using vertex 22. Compiler syntax/warning checks passed. No files were modified.
+
+**Verdict:** no counterexample or output-changing defect identified in the reviewed rewrite. This review supports equivalence within the checked scope; it does not independently certify the exhaustive-search theorem.

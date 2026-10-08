@@ -1,0 +1,6 @@
+B1 records sha256 = pinned; 32653 embedded, 509 refuted; kinds {('embedded', 'super'): 28774, ('embedded', 'exact'): 3879, ('refuted', 'tree'): 103, ('refuted', 'sub'): 185, ('refuted', 'null'): 22, ('refuted', 'tu'): 13, ('refuted', 'real-dag'): 97, ('refuted', 'real'): 24, ('refuted', 'null-dag'): 65}; the records are exactly data/B10.g6 (33162): True
+B2 udrhombus on the 32653 embedded graphs: {'pass': 22941, 'tu': 9712}; statistics {"graphs": 32653, "pass": 22941, "refuted": 0, "tu": 9712, "certificate_failures": 0, "failure_singular": 0, "failure_inexact": 0, "failure_overflow": 0, "failure_empty": 0, "failure_self_check": 0, "fingerprint_false_positives": 0, "cycles": 109041, "max_cycles": 11, "max_rank": 7, "mutant": 0}
+B4 dev replay of the 9712 certificates: 0 rejected; certificate failures 0
+B3 9712 tu verdicts; 807 exact embeddings evaluated at 80 digits; forced pair at unit distance and f(a)-f(b) = f(p)-f(q) for 9712; worst |d(a,b)^2 - 1| 9.69e-74, worst identity 6.36e-75, worst edge |d^2 - 1| 1.14e-73, closest pair of points 0.0901229
+info: the 509 refuted graphs of B10: {'tu': 344, 'refuted': 31, 'pass': 134}; certificates rejected by the dev replay 0
+B10 PASS (42 s)

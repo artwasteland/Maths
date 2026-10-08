@@ -1,0 +1,64 @@
+e2e target (17,43); baseline <scratch>/scratchpad/baseline-tree/research/unit-distance-22/enum/run-dag2.py (b6f0b7b3); new run-dag2.py ccbde157
+run base74: exit 0 after 176 s
+run new74: exit 0 after 201 s
+run new398: exit 0 after 663 s
+A Mode 74 unchanged: 150 level files of the landed pipeline, 150 byte-identical in new74; missing 0, extra 0, different 0
+B WRONG-check demo on 10-16.g6: W1 empty output: subset check PASSES, equality FAILS; W2 one record dropped: subset PASSES, equality FAILS; W3 expected side with the 74 only: 15373 records vs 15230 written, equality FAILS
+B 0-0: .g6 1-0=1:1
+B 1-0: .g6 1-0=1:1
+B 2-1: .g6 1-0=1:1
+B 3-3: .g6 1-0=1:1
+B 4-5: .g6 1-0=1:1
+B 5-7: .g6 1-0=1:1
+B 6-9: .g6 4-0=4:4
+B 7-12: .g6 1-0=1:1
+B 8-14: .g6 3-0=3:3
+B 9-18: .g6 1-0=1:1
+B 10-16: .g6 15373-143=15230:15230; .reach.g6 13523-143=13380:13380
+B 10-17: .g6 3086-353=2733:2733; .reach.g6 3085-353=2732:2732
+B 10-18: .g6 227-9=218:218; .reach.g6 226-9=217:217
+B 10-19: .g6 19-0=19:19; .reach.g6 19-0=19:19
+B 10-20: .g6 1-0=1:1; .reach.g6 1-0=1:1
+B 11-19: .g6 57336-10912=46424:46424; .reach.g6 57336-10912=46424:46424
+B 11-20: .g6 5630-1308=4322:4322; .reach.g6 5630-1308=4322:4322
+B 11-21: .g6 363-20=343:343; .reach.g6 363-20=343:343
+B 11-22: .g6 25-0=25:25; .reach.g6 25-0=25:25
+B 11-23: .g6 2-0=2:2; .reach.g6 2-0=2:2
+B 12-22: .g6 92923-42226=50697:50697; .reach.g6 92923-42226=50697:50697; .keep.g6 35105-11060=24045:24045; .UNKNOWN.g6 35105-11060=24045:24045; .certs.jsonl 92923-42226=50697:50697
+B 12-23: .g6 16093-4831=11262:11262; .reach.g6 16093-4831=11262:11262; .keep.g6 4369-1131=3238:3238; .UNKNOWN.g6 4369-1131=3238:3238; .certs.jsonl 16093-4831=11262:11262
+B 12-24: .g6 1025-113=912:912; .reach.g6 1025-113=912:912; .keep.g6 241-30=211:211; .UNKNOWN.g6 241-30=211:211; .certs.jsonl 1025-113=912:912
+B 12-25: .g6 81-2=79:79; .reach.g6 81-2=79:79; .keep.g6 26-1=25:25; .UNKNOWN.g6 26-1=25:25; .certs.jsonl 81-2=79:79
+B 12-26: .g6 6-0=6:6; .reach.g6 6-0=6:6; .keep.g6 2-0=2:2; .UNKNOWN.g6 2-0=2:2; .certs.jsonl 6-0=6:6
+B 12-27: .g6 1-0=1:1; .reach.g6 1-0=1:1; .keep.g6 1-0=1:1; .UNKNOWN.g6 1-0=1:1; .certs.jsonl 1-0=1:1
+B 13-26: .g6 12364-6624=5740:5740; .reach.g6 12364-6624=5740:5740; .keep.g6 8098-3933=4165:4165; .UNKNOWN.g6 8098-3933=4165:4165; .certs.jsonl 12364-6624=5740:5740
+B 13-27: .g6 957-187=770:770; .reach.g6 957-187=770:770; .keep.g6 655-109=546:546; .UNKNOWN.g6 655-109=546:546; .certs.jsonl 957-187=770:770
+B 13-28: .g6 86-3=83:83; .reach.g6 86-3=83:83; .keep.g6 61-3=58:58; .UNKNOWN.g6 61-3=58:58; .certs.jsonl 86-3=83:83
+B 13-29: .g6 7-0=7:7; .reach.g6 7-0=7:7; .keep.g6 6-0=6:6; .UNKNOWN.g6 6-0=6:6; .certs.jsonl 7-0=7:7
+B 13-30: .g6 1-0=1:1; .reach.g6 1-0=1:1; .keep.g6 1-0=1:1; .UNKNOWN.g6 1-0=1:1; .certs.jsonl 1-0=1:1
+B 14-30: .g6 2387-1105=1282:1282; .reach.g6 2387-1105=1282:1282; .keep.g6 1429-632=797:797; .UNKNOWN.g6 1429-632=797:797; .certs.jsonl 2387-1105=1282:1282
+B 14-31: .g6 295-55=240:240; .reach.g6 295-55=240:240; .keep.g6 185-43=142:142; .UNKNOWN.g6 185-43=142:142; .certs.jsonl 295-55=240:240
+B 14-32: .g6 34-1=33:33; .reach.g6 34-1=33:33; .keep.g6 25-1=24:24; .UNKNOWN.g6 25-1=24:24; .certs.jsonl 34-1=33:33
+B 14-33: .g6 2-0=2:2; .reach.g6 2-0=2:2; .keep.g6 2-0=2:2; .UNKNOWN.g6 2-0=2:2; .certs.jsonl 2-0=2:2
+B 15-34: .g6 856-429=427:427; .reach.g6 856-429=427:427; .keep.g6 461-237=224:224; .UNKNOWN.g6 461-237=224:224; .certs.jsonl 856-429=427:427
+B 15-35: .g6 75-22=53:53; .reach.g6 75-22=53:53; .keep.g6 50-19=31:31; .UNKNOWN.g6 50-19=31:31; .certs.jsonl 75-22=53:53
+B 15-36: .g6 7-0=7:7; .reach.g6 7-0=7:7; .keep.g6 3-0=3:3; .UNKNOWN.g6 3-0=3:3; .certs.jsonl 7-0=7:7
+B 15-37: .g6 1-0=1:1; .reach.g6 1-0=1:1; .keep.g6 1-0=1:1; .UNKNOWN.g6 1-0=1:1; .certs.jsonl 1-0=1:1
+B 16-38: .g6 35-30=5:5; .reach.g6 35-30=5:5; .keep.g6 12-10=2:2; .UNKNOWN.g6 12-10=2:2; .certs.jsonl 35-30=5:5
+B 16-39: .g6 24-5=19:19; .reach.g6 24-5=19:19; .keep.g6 8-3=5:5; .UNKNOWN.g6 8-3=5:5; .certs.jsonl 24-5=19:19
+B 16-40: .g6 3-0=3:3; .reach.g6 3-0=3:3; .keep.g6 1-0=1:1; .UNKNOWN.g6 1-0=1:1; .certs.jsonl 3-0=3:3
+B 16-41: .g6 1-0=1:1; .reach.g6 1-0=1:1; .keep.g6 1-0=1:1; .UNKNOWN.g6 1-0=1:1; .certs.jsonl 1-0=1:1
+B 17-43: .g6 9-1=8:8; .reach.g6 9-1=8:8; .keep.g6 8-0=8:8; .UNKNOWN.g6 8-0=8:8; .certs.jsonl 9-1=8:8
+C new74: 7 of AMP's 7 known (17,43) graphs in 17-43.keep.g6 (8 graphs kept)
+C new398: 7 of AMP's 7 known (17,43) graphs in 17-43.keep.g6 (8 graphs kept)
+D verify-chain base74 (landed directory, new verify-chain): exit 0: CHAIN OK; {"run": "<scratch>/scratchpad/u23/e2e-17-43/base74", "target": [17, 43], "levels_inspected": 34, "reach_files": 34, "keep_files": 24, "parent_files": 29, "shards": 38, "certs_replayed": 24}
+D verify-chain new74: exit 0: CHAIN OK; {"run": "<scratch>/scratchpad/u23/e2e-17-43/new74", "target": [17, 43], "levels_inspected": 34, "reach_files": 34, "keep_files": 24, "parent_files": 29, "shards": 38, "certs_replayed": 24, "verify_manifest
+D verify-chain new398: exit 0: CHAIN OK; {"run": "<scratch>/scratchpad/u23/e2e-17-43/new398", "target": [17, 43], "levels_inspected": 34, "reach_files": 34, "keep_files": 24, "parent_files": 29, "shards": 36, "certs_replayed": 24, "forbidden_set"
+D verify-chain red: 12-22.keep.g6 one line short: exit 1: CHAIN FAIL (5 problems); PROBLEM: 12-22.keep.g6: is not the embedded and unknown records in order
+D verify-chain red: a tu witness in 12-22.certs.jsonl made non-injective: exit 1: CHAIN FAIL (2 problems); PROBLEM: 12-22.certs.jsonl: udcheck did not accept: REJECT: <scratch>/scratchpad/u23/e2e-17-43/new398/12-22.certs.jsonl:1.witness.map: map is not
+D verify-chain red: reach.json u-bar(16) lowered without a recorded override: exit 2: verify-chain.py: KeyError(41); the expected problem was NOT reported
+D verify-chain red: 10-16.reach.g6 changed after its stage verification: exit 1: CHAIN FAIL (5 problems); PROBLEM: 10-16: stage verification manifest does not cover the current stage file 10-16.reach.g6 in set 398
+E1 Mode 398 with set-74 seeds and --verify-stages: exit 2 after 3 s (expected to stop at (10, 16), the first level-10 stage file holding one of the 324): run-dag2.py: STAGE VERIFICATION FAILED at (10,16): udenum --verify-parents --forbidden-set 398 rejected 10-16.reach.g6 (exit 2): udenum: parent file contains a forbidden graph
+E2 the same without --verify-stages: exit 2 after 451 s; GENERATOR BUG reported: True; prune manifests written before it stopped: []
+F Mode 398 --resume over 86 copied set-74 files (levels <= 11): exit 0 after 557 s; levels accepted as resumed: []; files equal to new398: 150, different: 0
+PROBLEM: D verify-chain red: reach.json u-bar(16) lowered without a recorded override: exit 2: verify-chain.py: KeyError(41) []
+E2E (17,43) FAIL (1)

@@ -1,0 +1,13 @@
+{
+  "reason": "Deadline: graph time limit",
+  "g6": "HGEAXjw",
+  "frame": [
+    0,
+    8
+  ],
+  "degree": 12,
+  "seconds": 55.04005011031404,
+  "limit": 55.0,
+  "stages": [],
+  "verdict": "unknown"
+}

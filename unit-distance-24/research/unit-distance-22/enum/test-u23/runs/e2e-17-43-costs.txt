@@ -1,0 +1,20 @@
+Wall seconds by stage and level, target (17,43), --jobs 1, nice 15, shared 4-core box (other agents running).
+gen = udenum shards (seeds: geng + udenum --filter); filter/check = prune.py's udfilter and udcheck; verify = --verify-stages
+new74: total gen 162 s, prune filter 36 s, check 9 s, verify 18 s
+  n=10: children  18706  gen    8.2  filter    0.0  check   0.0  verify   1.4 (16854 stage records)
+  n=11: children  63356  gen   13.6  filter    0.0  check   0.0  verify   6.9 (63356 stage records)
+  n=12: children 110129  gen  115.5  filter   24.5  check   5.6  verify   6.7 (39744 stage records)
+  n=13: children  13415  gen   12.9  filter    7.8  check   1.6  verify   2.0 (8821 stage records)
+  n=14: children   2718  gen    5.6  filter    2.1  check   0.8  verify   0.7 (1641 stage records)
+  n=15: children    939  gen    3.7  filter    1.1  check   0.6  verify   0.3 (515 stage records)
+  n=16: children     63  gen    2.5  filter    0.1  check   0.5  verify   0.0 (22 stage records)
+  n=17: children      9  gen    0.1  filter    0.0  check   0.1  verify   0.0 (8 stage records)
+new398: total gen 503 s, prune filter 120 s, check 6 s, verify 73 s
+  n=10: children  18201  gen   13.0  filter    0.0  check   0.0  verify   5.4 (16349 stage records)
+  n=11: children  51116  gen   51.9  filter    0.0  check   0.0  verify  40.8 (51116 stage records)
+  n=12: children  62957  gen  350.2  filter   84.8  check   3.7  verify  18.3 (27522 stage records)
+  n=13: children   6601  gen   49.8  filter   21.4  check   1.1  verify   6.0 (4776 stage records)
+  n=14: children   1557  gen   22.6  filter    8.1  check   0.5  verify   1.7 (965 stage records)
+  n=15: children    488  gen   10.6  filter    4.9  check   0.6  verify   0.9 (259 stage records)
+  n=16: children     28  gen    3.8  filter    0.3  check   0.4  verify   0.1 (9 stage records)
+  n=17: children      8  gen    0.6  filter    0.2  check   0.1  verify   0.1 (8 stage records)

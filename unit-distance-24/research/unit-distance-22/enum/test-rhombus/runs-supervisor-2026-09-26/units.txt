@@ -1,0 +1,34 @@
+U1 K2,3 D]o: {"verdict":"refuted","witness":{"rhombus":{"cycles":[[0,2,1,4],[0,3,1,4]],"coefficients":[-1,1],"scale":1,"pair":[2,3]}}}; replay accepts
+U2 gadget 0 (6 vertices, 8 edges, pair [1, 5]): default tu pair [1, 5] (its own pair), replay ok; --pair 1 5: tu, replay ok
+U2 gadget 1 (7 vertices, 11 edges, pair [4, 5]): default tu pair [4, 5] (its own pair), replay ok; --pair 4 5: tu, replay ok
+U2 gadget 2 (7 vertices, 11 edges, pair [2, 4]): default tu pair [2, 4] (its own pair), replay ok; --pair 2 4: tu, replay ok
+U2 gadget 3 (8 vertices, 12 edges, pair [3, 7]): default tu pair [3, 7] (its own pair), replay ok; --pair 3 7: tu, replay ok
+U2 gadget 4 (8 vertices, 12 edges, pair [6, 7]): default tu pair [3, 7] (another pair first), replay ok; --pair 6 7: tu, replay ok
+U2 gadget 5 (8 vertices, 11 edges, pair [6, 7]): default tu pair [6, 7] (its own pair), replay ok; --pair 6 7: tu, replay ok
+U3 Moser spindle FzaGw: pass
+U3 unit rhombus C4 Cl: pass
+U3 wheel W6 FhENw: pass
+U4 AMP's 56 known graphs: 56 pass, 0 flagged (4-cycles listed 1462, largest rank 16)
+U5 66 inputs twice: identical output True; stats {"graphs": 66, "pass": 59, "refuted": 1, "tu": 6, "certificate_failures": 0, "failure_singular": 0, "failure_inexact": 0, "failure_overflow": 0, "failure_empty": 0, "failure_self_check": 0, "fingerprint_false_positives": 0, "cycles": 1496, "max_cycles": 54, "max_rank": 16, "mutant": 0}
+U6 red K2,3 coefficient + 1: rejected: D]o: coefficient 0 = 0 is not a nonzero JSON integer below 2^62
+U6 red K2,3 scale * 2: rejected: D]o: sum of l_j r(C_j) is [0, 0, 1, -1, 0], not s times the target [0, 0, 2, -2, 0]
+U6 red K2,3 scale 0: rejected: D]o: scale 0 is not a nonzero JSON integer below 2^62
+U6 red K2,3 cycle vertex replaced: rejected: D]o: sum of l_j r(C_j) is [0, 0, 1, 0, -1], not s times the target [0, 0, 1, -1, 0]
+U6 red K2,3 float coefficient: rejected: D]o: coefficient 0 = -1.0 is not a nonzero JSON integer below 2^62
+U6 red K2,3 boolean coefficient: rejected: D]o: coefficient 1 = True is not a nonzero JSON integer below 2^62
+U6 red K2,3 extra key: rejected: D]o: rhombus keys ['coefficients', 'cycles', 'note', 'pair', 'scale'] are not ['coefficients', 'cycles', 'pair
+U6 red K2,3 pair reversed: rejected: D]o: sum of l_j r(C_j) is [0, 0, 1, -1, 0], not s times the target [0, 0, -1, 1, 0]
+U6 red K2,3 empty cycle list: rejected: D]o: cycles must be a list of 1 to 4096 entries
+U6 red K2,3 repeated vertex: rejected: D]o: cycle 0 [0, 2, 0, 4] has a repeated vertex
+U6 red K2,3 verdict tu without edge: rejected: D]o: rhombus keys ['coefficients', 'cycles', 'pair', 'scale'] are not ['coefficients', 'cycles', 'edge', 'pair
+U6 red gadget 0 edge reversed: rejected: Elcg: sum of l_j r(C_j) is [-1, 1, 0, 0, 1, -1], not s times the target [1, 1, 0, 0, -1, -1]
+U6 red gadget 0 pair made an edge: rejected: Elcg: pair [0, 1] is an edge
+U6 red gadget 0 edge made a non-edge: rejected: Elcg: edge [0, 2] is not an edge of the graph
+U6 red gadget 0 edge key dropped: rejected: Elcg: rhombus keys ['coefficients', 'cycles', 'pair', 'scale'] are not ['coefficients', 'cycles', 'edge', 'pai
+U6 red gadget 0 verdict refuted: rejected: Elcg: rhombus keys ['coefficients', 'cycles', 'edge', 'pair', 'scale'] are not ['coefficients', 'cycles', 'pai
+U7 blank line b'\n': exit 2: udrhombus: line 1: invalid graph6 record (at most 32 vertices)
+U7 33 vertices b'`_???????????????????????????????????????????????????????????????????????????????????????\n': exit 2: udrhombus: line 1: invalid graph6 record (at most 32 vertices)
+U7 nonzero padding b'Bx\n': exit 2: udrhombus: line 1: invalid graph6 record (at most 32 vertices)
+U7 graph6 header b'>>graph6<<Bw\n': exit 2: udrhombus: line 1: invalid graph6 record (at most 32 vertices)
+U7 bad character b'C~ \n': exit 2: udrhombus: line 1: invalid graph6 record (at most 32 vertices)
+UNITS PASS

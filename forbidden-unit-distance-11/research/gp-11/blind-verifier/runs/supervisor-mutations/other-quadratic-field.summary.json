@@ -1,0 +1,84 @@
+{
+ "verifier": "<repo>/verify_refutations11.py",
+ "verifier_sha256": "bdb7051f48463586e1b3d65938b3fe101fb5e7b9f956c037724c7c46def1f41f",
+ "flint": "0.9.0",
+ "python": "3.12.3",
+ "SYMPY_GROUND_TYPES": "python",
+ "records_meta": {
+  "records": "<repo>/runs/supervisor-mutations/other-quadratic-field.jsonl",
+  "bytes": 56556,
+  "sha256": "4b3a15e708186ef32517f8c717f2ed411cf859ec2c309b37ca2b89d15b8962ca",
+  "lines": 1,
+  "verdicts": {
+   "refuted": 1
+  },
+  "refuted_indexed": 1,
+  "duplicate_g6": 0,
+  "duplicates": [],
+  "seconds": 0.0
+ },
+ "mode": "full",
+ "indexed_refuted": 1,
+ "results": 1,
+ "missing": 0,
+ "missing_first": [],
+ "extra_results": 0,
+ "duplicate_results": 0,
+ "coverage_complete": true,
+ "totals": {
+  "ACCEPT": 0,
+  "REJECT": 1,
+  "UNSUPPORTED": 0
+ },
+ "by_type_and_verdict": {
+  "tree/REJECT": 1
+ },
+ "not_accepted": [
+  {
+   "i": 0,
+   "line": 1,
+   "g6": "JQ`@HKYE]W?",
+   "type": "tree",
+   "verdict": "REJECT",
+   "reason": "tree node root: L3 d^2 != 4|a|^2|b|^2 - (|a|^2+|b|^2-|c|^2)^2"
+  }
+ ],
+ "direct_F10_premises": {},
+ "accepted_by_premise_chain": {
+  "none (self-contained)": 0,
+  "GP theorem only": 0,
+  "uses GP-10 result": 0
+ },
+ "cpu_seconds_total": 0.0,
+ "wall_seconds_sum": 0.0,
+ "max_wall_seconds": 0.02,
+ "max_peak_rss_mb": 56.3,
+ "by_type_time": {
+  "tree": {
+   "n": 1,
+   "cpu_seconds": 0.009,
+   "max_wall": 0.02,
+   "max_rss_mb": 56.3,
+   "bytes": 56556
+  }
+ },
+ "slowest_10": [
+  {
+   "g6": "JQ`@HKYE]W?",
+   "type": "tree",
+   "bytes": 56556,
+   "wall_seconds": 0.02,
+   "peak_rss_mb": 56.3
+  }
+ ],
+ "largest_rss_10": [
+  {
+   "g6": "JQ`@HKYE]W?",
+   "type": "tree",
+   "bytes": 56556,
+   "wall_seconds": 0.02,
+   "peak_rss_mb": 56.3
+  }
+ ],
+ "status": "NOT ALL ACCEPT (see not_accepted)"
+}

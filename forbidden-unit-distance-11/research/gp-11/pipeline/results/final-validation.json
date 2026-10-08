@@ -1,0 +1,47 @@
+{
+  "coordinator_sources": {
+    "coordinator/rounds.py": "bb747716c785067427b91a4b761230d35acc66cddf63511ccead7b597ca56193"
+  },
+  "receipts": {
+    "controls.json": "66dd5a5f0065eb6d82db51741e2c55f66e18b20d373cfbdca12890833068c95f",
+    "failures.json": "b68cdb78e8d898163a7061bc2e088ec5cc04b40e886893fc620380f3994b779a",
+    "history-regression.json": "1d83ac89207c098ce377b145cc77c8550252b6464c5112687a0b7697a1bbdd7a",
+    "history.json": "43c89bad627dde12c1d66dae50cffea2beb15a34ae8104f1511912b91e26c1a7",
+    "merge-cycles.json": "9d589de357a9ed521a1beec207777bb2fa7ef77f0cfba3d4b86007fab32bb0d4",
+    "merge.json": "de27fe9d46abc71d9266fe26481eb9964a64ea75286d5c0269efd90107b9cd6b",
+    "resume.json": "fb43ca2ca706a2ccccd055348b5ceef5f21d00a35a72dc2f526e34057b8b5e47",
+    "reuse.json": "ae6037742238a7429a874d9c81d27a837d35df6962a6a50a52e5d45d8464fa15",
+    "rounds.json": "bebb09f33f6e725a8ba2e92e731196757b73c3865d46e2c7ee93424f5f3f9974"
+  },
+  "runtime_sources": {
+    "common.py": "9bfac024de4d5ab873f02553e32f235f7210b71730def6e2eed5ec4ca9c3f744",
+    "drive.py": "798931cde8d00ee15478539c9a417a10bb561baecdc19e11adeac95fdd807d01",
+    "export.py": "1f5d572752f7671aa451abccd17a4dabc944e75871ecb35a9fc8cc7175c821e3",
+    "extension.py": "747cdd117724ad68db6fae317c4c1b27997cbc29b7a20b867fbfc43dd91e016e",
+    "generic_escalated.py": "45bf48cd0aba2831b6d3436dcdd6ae0a19a4e851a50cfbea2ed9eeb556473667",
+    "numeric_branch.py": "0795dcc9542e6537efed19600930d413938608aaadee88390bce84bb7cf227d5",
+    "portfolio.py": "eaaf8bf6abcb178ad9e75cb1b0dab398b9119cd1e9674f15847a069a03d574ab",
+    "poset.c": "0c2fdd6a7c50d19511e43624331de16b1dbc4f167d74e8b8da3e45d5548427c9",
+    "poset.py": "e01142852e755e9be1d8d66369693c6369dcc5823a70927f53d1db59cd40ccb8",
+    "preflight.py": "eabae8155df1114c160248199717f7789a7d501cd942b3a976e1240726baf57e",
+    "reduce_exact.py": "78cb959964f6de895cf78acd1b8be4e4dc9885e09e322a95b9ea12b8f05319c8",
+    "rigid_system.py": "39533a3887250af86cdc0e5081d0c1ace3c7f498231b435b556362d5899e3bb7",
+    "saturated_embed.py": "0d44303f304c86a4e685ec73f994113c7a328174784863f79379751f45c24757",
+    "stages.py": "ff36d2a4d1d8c92cc49d2fb3370ee45277f6288d4ffc7d1d6f2d5dd69d1637c3",
+    "store.py": "0c0549279eba70fa5fec9307e0e134c31ed8ac6ffa19e915198ab6ffe84c389f",
+    "tu.c": "b4d0ed37cc52000c80c8a4cc6ebedb5a0bd593047327f690da97964937f35cd5",
+    "tu.py": "c37ee0c0ce58af3841952391282352924cd2aaceb4696609ca603d2273663cb5"
+  },
+  "source_location": "Final runtime bytes validated in the isolated copy while the original population run completes; to be installed unchanged.",
+  "status": "PASS",
+  "test_sources": {
+    "test_failures.py": "1841ff929724f38f804bde13a7af232cd63107e6bc5f3762b178dc593758a837",
+    "test_history.py": "e7173ab89b80961ef5d3aa196916577de602bb6468558c606e2c4ebc40bb4101",
+    "test_merge.py": "ed0d4c7a2c25da61f2518f64767445b341e36f9a2f4bd3fa5f024515ac388c89",
+    "test_merge_cycles.py": "512eb8ddae038b7fbb26233c8cd81178db639f25707f287fad23269bb2a9f91c",
+    "test_pipeline.py": "fd3f8faf4dff53c59539044c8916cc644a29b7f9a25ae04125508b48a12efbb5",
+    "test_resume.py": "193bf376aec64ab955dc50eb97ca73f97b602668970d957f653b232e2585db83",
+    "test_reuse.py": "5ed63bd8734fe2c7e39fbe88b1cf3f7c9a7eb7babbf3340d54b6eef65a95217a",
+    "test_rounds.py": "6ff8e9176e0436518ec1a32a392e960ddf14ddd2605499dbf1492b2234d93d8f"
+  }
+}

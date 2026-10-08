@@ -1,0 +1,2792 @@
+{
+  "audit_accepted": 67,
+  "audit_cases": 304,
+  "audit_rejected": 237,
+  "audit_run_cases": 257,
+  "audit_sturm_cases": 47,
+  "checker_sha256": "ca643575c793c20ed716ef696cfef84b39b47e9d4a64a3e1790089074c88de8f",
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 87796,
+    "nice": 19,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "max_rss_kib": 87796,
+  "mutation_links": 237,
+  "new_profile_cases": 10,
+  "new_profile_results": [
+    {
+      "count": 1,
+      "name": "B4p-minimal-comparison",
+      "scope": "comparison helper",
+      "status": "ACCEPT"
+    },
+    {
+      "name": "B4p-wrong-derived-list",
+      "positive": "B4p-minimal-comparison",
+      "reason": "control_minimal_list",
+      "scope": "comparison helper",
+      "status": "REJECT"
+    },
+    {
+      "count": 1,
+      "name": "B5p-minimal-comparison",
+      "scope": "comparison helper",
+      "status": "ACCEPT"
+    },
+    {
+      "name": "B5p-wrong-derived-list",
+      "positive": "B5p-minimal-comparison",
+      "reason": "control_minimal_list",
+      "scope": "comparison helper",
+      "status": "REJECT"
+    },
+    {
+      "count": 1,
+      "name": "B6p-minimal-comparison",
+      "scope": "comparison helper",
+      "status": "ACCEPT"
+    },
+    {
+      "name": "B6p-wrong-derived-list",
+      "positive": "B6p-minimal-comparison",
+      "reason": "control_minimal_list",
+      "scope": "comparison helper",
+      "status": "REJECT"
+    },
+    {
+      "count": 3,
+      "name": "B7p-minimal-comparison",
+      "scope": "comparison helper",
+      "status": "ACCEPT"
+    },
+    {
+      "name": "B7p-wrong-derived-list",
+      "positive": "B7p-minimal-comparison",
+      "reason": "control_minimal_list",
+      "scope": "comparison helper",
+      "status": "REJECT"
+    },
+    {
+      "name": "B4p-frozen-complete",
+      "report": "/tmp/gp10-check/round2/regression/new-B4p-accepted/report.json",
+      "scope": "full frozen control",
+      "status": "ACCEPT"
+    },
+    {
+      "name": "B4p-wrong-claim",
+      "positive": "B4p-frozen-complete",
+      "reason": "minimality_claim_mismatch",
+      "scope": "full frozen control",
+      "status": "REJECT"
+    }
+  ],
+  "reason_updates": {
+    "unsupported-B4p": "control_unknown",
+    "unsupported-B5p": "control_unknown",
+    "unsupported-B6p": "control_unknown",
+    "unsupported-B7p": "control_unknown"
+  },
+  "results": [
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "existing-c4",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-c4/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "existing-triangle",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-triangle/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "existing-moser",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-moser/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "existing-k4-tree",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-k4-tree/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "existing-k23-tree",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-k23-tree/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "existing-k4-isolate-null",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-k4-isolate-null/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "existing-k4-real-sos",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-k4-real-sos/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "existing-k4-real-sturm",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-k4-real-sturm/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "existing-k23-saturated-null",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-k23-saturated-null/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "existing-tu-chain",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-tu-chain/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "run-pointers",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-pointers/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "run-mixed",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-mixed/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "run-unknown",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-unknown/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "run-refutation-pointer",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-refutation-pointer/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "run-frozen-pointer",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-frozen-pointer/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "run-tu-refuted-pointer",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-tu-refuted-pointer/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "run-minimality",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-minimality/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "run-conditional-minimality",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-conditional-minimality/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "rational-plus",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/rational-plus/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "rational-negative-zero",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/rational-negative-zero/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "rational-leading-zeroes",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/rational-leading-zeroes/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "large-rational",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/large-rational/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "multiple-roots",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/multiple-roots/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "repeated-root-odd",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/repeated-root-odd/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "repeated-root-mixed",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/repeated-root-mixed/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "shared-root",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/shared-root/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "interval-refinement",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/interval-refinement/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "edgeless-4",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/edgeless-4/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "edgeless-5",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/edgeless-5/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "edgeless-6",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/edgeless-6/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "edgeless-7",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/edgeless-7/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "edgeless-8",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/edgeless-8/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "edgeless-9",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/edgeless-9/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "tree-k4-isolates-4",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/tree-k4-isolates-4/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "tree-k4-isolates-7",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/tree-k4-isolates-7/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "tree-k4-isolates-10",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/tree-k4-isolates-10/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "saturation-adjacent",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/saturation-adjacent/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "real-saturation-variable",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/real-saturation-variable/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "pointer-chain",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/pointer-chain/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "refutation-chain",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/refutation-chain/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "control-sample-B4p",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/control-sample-B4p/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "control-sample-B5p",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/control-sample-B5p/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "control-sample-B6p",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/control-sample-B6p/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "control-sample-B7p",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/control-sample-B7p/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "frozen-canonical-labels",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/frozen-canonical-labels/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "tu-frozen-stored-labels",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-frozen-stored-labels/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "tu-pointer-with-unknown",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-pointer-with-unknown/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "derive-k4-disabled",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/derive-k4-disabled/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "derive-k4-complete",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/derive-k4-complete/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "block-forbidden-baseline",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/block-forbidden-baseline/observed.stdout"
+    },
+    {
+      "exit_code": 0,
+      "kind": "run",
+      "name": "real-constant",
+      "reason": "verified",
+      "record_reason": null,
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/real-constant/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive--3-1",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--3-1/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive--3-2",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--3-2/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive--2-1",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--2-1/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive--2-2",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--2-2/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive--1-1",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--1-1/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive--1-2",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--1-2/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive-0-1",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-0-1/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive-0-2",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-0-2/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive-1-1",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-1-1/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive-1-2",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-1-2/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive-2-1",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-2-1/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive-2-2",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-2-2/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive-3-1",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-3-1/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-positive-3-2",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-3-2/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-repeated-complex",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-repeated-complex/observed.stdout"
+    },
+    {
+      "count": 0,
+      "kind": "sturm",
+      "name": "sturm-constant",
+      "reason": "returned",
+      "status": "ACCEPT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-constant/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-coordinate-perturbed",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-coordinate-perturbed/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-collision-edges-fine",
+      "reason": "records_rejected",
+      "record_reason": "exact_collision",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-collision-edges-fine/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-interval-no-sign",
+      "reason": "records_rejected",
+      "record_reason": "interval_sign_change",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-interval-no-sign/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-unknown-record-field",
+      "reason": "records_rejected",
+      "record_reason": "schema",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-unknown-record-field/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-verdict-tu",
+      "reason": "records_rejected",
+      "record_reason": "verdict_allowlist",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-verdict-tu/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-verdict-pass",
+      "reason": "records_rejected",
+      "record_reason": "verdict_allowlist",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-verdict-pass/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-verdict-forbidden",
+      "reason": "records_rejected",
+      "record_reason": "verdict_allowlist",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-verdict-forbidden/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-tree-collision-pair",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-tree-collision-pair/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-frame-nonedge",
+      "reason": "records_rejected",
+      "record_reason": "frame_not_edge",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-frame-nonedge/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-extra-nonedge-generator",
+      "reason": "records_rejected",
+      "record_reason": "system_mismatch",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-extra-nonedge-generator/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-cofactor-coefficient",
+      "reason": "records_rejected",
+      "record_reason": "cofactor_identity",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-cofactor-coefficient/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-sos-zero-constant",
+      "reason": "records_rejected",
+      "record_reason": "sos_constant_positive",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-sos-zero-constant/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-sos-negative-weight",
+      "reason": "records_rejected",
+      "record_reason": "sos_weight_positive",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-sos-negative-weight/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-sos-wrong-square",
+      "reason": "records_rejected",
+      "record_reason": "sos_identity",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-sos-wrong-square/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-sturm-wrong-variable",
+      "reason": "records_rejected",
+      "record_reason": "sturm_multivariate",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-sturm-wrong-variable/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-saturation-cofactor",
+      "reason": "records_rejected",
+      "record_reason": "cofactor_identity",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-saturation-cofactor/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-tu-final-edge",
+      "reason": "records_rejected",
+      "record_reason": "map_not_edge_preserving",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-tu-final-edge/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-tu-future-edge",
+      "reason": "records_rejected",
+      "record_reason": "map_not_edge_preserving",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-tu-future-edge/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-tu-already-edge",
+      "reason": "records_rejected",
+      "record_reason": "tu_pair_already_edge",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-tu-already-edge/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "existing-tu-wrong-pair",
+      "reason": "records_rejected",
+      "record_reason": "tu_distinguished_pair",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/existing-tu-wrong-pair/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-pointer-noninjective",
+      "reason": "records_rejected",
+      "record_reason": "map_not_injective",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-pointer-noninjective/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-pointer-cycle",
+      "reason": "records_rejected",
+      "record_reason": "pointer_cycle",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-pointer-cycle/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-pointer-missing",
+      "reason": "records_rejected",
+      "record_reason": "pointer_target_missing",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-pointer-missing/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-coverage-missing",
+      "reason": "coverage",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-coverage-missing/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-coverage-extra",
+      "reason": "coverage",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-coverage-extra/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-coverage-duplicate",
+      "reason": "duplicate_record",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-coverage-duplicate/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-verdict-conflict",
+      "reason": "embedded_refuted_conflict",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-verdict-conflict/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-unknown-missing",
+      "reason": "unknown_exactness",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-unknown-missing/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-unknown-extra",
+      "reason": "unknown_exactness",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-unknown-extra/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-minimality-false-claim",
+      "reason": "minimality_claim_refuted_deletion",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-minimality-false-claim/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-withheld-index",
+      "reason": "records_rejected",
+      "record_reason": "forbidden_not_in_force",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-withheld-index/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-cross-check-wrong-verdict",
+      "reason": "cross_check_records",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-cross-check-wrong-verdict/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "run-conditional-unknown-missing",
+      "reason": "unknown_exactness",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/run-conditional-unknown-missing/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "zero-denominator",
+      "reason": "records_rejected",
+      "record_reason": "rational",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/zero-denominator/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "signed-denominator",
+      "reason": "records_rejected",
+      "record_reason": "rational",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/signed-denominator/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "rational-space",
+      "reason": "records_rejected",
+      "record_reason": "rational",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/rational-space/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "rational-decimal",
+      "reason": "records_rejected",
+      "record_reason": "rational",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/rational-decimal/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "rational-float",
+      "reason": "records_rejected",
+      "record_reason": "rational",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/rational-float/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "rational-bool",
+      "reason": "records_rejected",
+      "record_reason": "rational",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/rational-bool/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "rational-plus-red",
+      "reason": "records_rejected",
+      "record_reason": "rational",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/rational-plus-red/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "rational-negative-zero-red",
+      "reason": "records_rejected",
+      "record_reason": "rational",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/rational-negative-zero-red/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "rational-leading-zeroes-red",
+      "reason": "records_rejected",
+      "record_reason": "rational",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/rational-leading-zeroes-red/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "minpoly-constant",
+      "reason": "records_rejected",
+      "record_reason": "minpoly",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/minpoly-constant/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "minpoly-zero",
+      "reason": "records_rejected",
+      "record_reason": "minpoly",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/minpoly-zero/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "minpoly-leading-zero",
+      "reason": "records_rejected",
+      "record_reason": "minpoly",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/minpoly-leading-zero/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "minpoly-boolean",
+      "reason": "records_rejected",
+      "record_reason": "minpoly",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/minpoly-boolean/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "endpoint-root",
+      "reason": "records_rejected",
+      "record_reason": "interval_sign_change",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/endpoint-root/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "interval-reversed",
+      "reason": "records_rejected",
+      "record_reason": "interval_sign_change",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/interval-reversed/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "coordinate-missing-vertex",
+      "reason": "records_rejected",
+      "record_reason": "coordinate_count",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/coordinate-missing-vertex/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "coordinate-extra-vertex",
+      "reason": "records_rejected",
+      "record_reason": "coordinate_count",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/coordinate-extra-vertex/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "coordinate-not-reduced",
+      "reason": "records_rejected",
+      "record_reason": "coordinate_degree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/coordinate-not-reduced/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "coordinate-not-pair",
+      "reason": "records_rejected",
+      "record_reason": "coordinate_shape",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/coordinate-not-pair/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "coordinate-wrong-labels",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/coordinate-wrong-labels/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "large-rational-collision",
+      "reason": "records_rejected",
+      "record_reason": "exact_collision",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/large-rational-collision/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "multiple-roots-collision",
+      "reason": "records_rejected",
+      "record_reason": "exact_collision",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/multiple-roots-collision/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "repeated-root-odd-collision",
+      "reason": "records_rejected",
+      "record_reason": "exact_collision",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/repeated-root-odd-collision/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "repeated-root-mixed-collision",
+      "reason": "records_rejected",
+      "record_reason": "exact_collision",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/repeated-root-mixed-collision/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "shared-root-trap",
+      "reason": "records_rejected",
+      "record_reason": "exact_collision",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/shared-root-trap/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "interval-refinement-red",
+      "reason": "records_rejected",
+      "record_reason": "exact_collision",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/interval-refinement-red/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-K4",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-K4/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-00",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-00/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-01",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-01/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-02",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-02/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-03",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-03/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-04",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-04/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-05",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-05/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-06",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-06/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-07",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-07/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-08",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-08/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-09",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-09/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-10",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-10/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-11",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-11/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-12",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-12/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-13",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-13/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-14",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-14/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-15",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-15/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-16",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-16/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-17",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-17/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-18",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-18/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-19",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-19/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-20",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-20/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-21",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-21/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-22",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-22/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-23",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-23/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-24",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-24/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-25",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-25/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-26",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-26/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-27",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-27/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-28",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-28/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-29",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-29/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-30",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-30/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-31",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-31/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-32",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-32/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-33",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-33/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-34",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-34/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-35",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-35/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-36",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-36/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-37",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-37/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-38",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-38/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-39",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-39/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-40",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-40/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-41",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-41/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-42",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-42/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-43",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-43/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-44",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-44/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-45",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-45/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-46",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-46/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-47",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-47/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-48",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-48/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-49",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-49/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-50",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-50/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-51",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-51/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-52",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-52/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-53",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-53/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-54",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-54/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-55",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-55/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-56",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-56/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-57",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-57/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-58",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-58/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-59",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-59/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-60",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-60/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-61",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-61/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-62",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-62/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-63",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-63/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-64",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-64/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-65",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-65/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-66",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-66/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-67",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-67/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-68",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-68/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-69",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-69/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-70",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-70/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-71",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-71/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-72",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-72/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "embed-forbidden-73",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/embed-forbidden-73/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "refute-UDG-C4",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/refute-UDG-C4/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "refute-UDG-Moser",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/refute-UDG-Moser/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "refute-UDG-Petersen",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/refute-UDG-Petersen/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "refute-UDG-pentagonal_prism",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/refute-UDG-pentagonal_prism/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "refute-UDG-extremal",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/refute-UDG-extremal/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tree-root-edges",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tree-root-edges/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tree-root-rowspace",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tree-root-rowspace/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tree-reducible-field",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tree-reducible-field/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tree-endpoint-root",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tree-endpoint-root/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tree-leaf-children",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tree-leaf-children/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tree-forged-move",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tree-forged-move/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "cofactor-unexpected-key",
+      "reason": "records_rejected",
+      "record_reason": "cofactor_generator",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/cofactor-unexpected-key/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "system-renamed-generator",
+      "reason": "records_rejected",
+      "record_reason": "system_mismatch",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/system-renamed-generator/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "system-pinned-third-point",
+      "reason": "records_rejected",
+      "record_reason": "system_mismatch",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/system-pinned-third-point/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "system-changed-polynomial",
+      "reason": "records_rejected",
+      "record_reason": "system_mismatch",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/system-changed-polynomial/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "sparse-duplicate-monomial",
+      "reason": "records_rejected",
+      "record_reason": "sparse_duplicate_monomial",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sparse-duplicate-monomial/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "sparse-negative-exponent",
+      "reason": "records_rejected",
+      "record_reason": "sparse_exponents",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sparse-negative-exponent/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "sparse-boolean-exponent",
+      "reason": "records_rejected",
+      "record_reason": "sparse_exponents",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sparse-boolean-exponent/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "sparse-extra-variable",
+      "reason": "records_rejected",
+      "record_reason": "sparse_exponents",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sparse-extra-variable/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "saturation-repeated",
+      "reason": "records_rejected",
+      "record_reason": "sat_duplicate",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/saturation-repeated/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "saturation-reversed",
+      "reason": "records_rejected",
+      "record_reason": "sat_pair_order",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/saturation-reversed/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "saturation-self-pair",
+      "reason": "records_rejected",
+      "record_reason": "pair",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/saturation-self-pair/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "saturation-out-of-range",
+      "reason": "records_rejected",
+      "record_reason": "pair",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/saturation-out-of-range/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "saturation-variable-order",
+      "reason": "records_rejected",
+      "record_reason": "system_mismatch",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/saturation-variable-order/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "saturation-adjacent-red",
+      "reason": "records_rejected",
+      "record_reason": "sat_duplicate",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/saturation-adjacent-red/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "real-saturation-variable-red",
+      "reason": "records_rejected",
+      "record_reason": "sturm_multivariate",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/real-saturation-variable-red/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "real-nonexistent-variable",
+      "reason": "records_rejected",
+      "record_reason": "sturm_variable",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/real-nonexistent-variable/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "sos-zero-weight",
+      "reason": "records_rejected",
+      "record_reason": "sos_weight_positive",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sos-zero-weight/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "sos-negative-constant",
+      "reason": "records_rejected",
+      "record_reason": "sos_constant_positive",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sos-negative-constant/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "real-both-proof-types",
+      "reason": "records_rejected",
+      "record_reason": "real_proof_choice",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/real-both-proof-types/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "pointer-negative",
+      "reason": "records_rejected",
+      "record_reason": "map_range",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/pointer-negative/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "pointer-too-large",
+      "reason": "records_rejected",
+      "record_reason": "map_range",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/pointer-too-large/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "pointer-boolean",
+      "reason": "records_rejected",
+      "record_reason": "map_range",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/pointer-boolean/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "pointer-direction",
+      "reason": "records_rejected",
+      "record_reason": "map_length",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/pointer-direction/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "refutation-pointer-direction",
+      "reason": "records_rejected",
+      "record_reason": "map_length",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/refutation-pointer-direction/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "frozen-index-mismatch",
+      "reason": "records_rejected",
+      "record_reason": "forbidden_index_graph",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/frozen-index-mismatch/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "frozen-index-negative",
+      "reason": "records_rejected",
+      "record_reason": "forbidden_not_in_force",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/frozen-index-negative/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "frozen-index-out-of-range",
+      "reason": "records_rejected",
+      "record_reason": "forbidden_not_in_force",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/frozen-index-out-of-range/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "frozen-index-boolean",
+      "reason": "records_rejected",
+      "record_reason": "schema",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/frozen-index-boolean/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "pointer-chain-through-unknown",
+      "reason": "records_rejected",
+      "record_reason": "pointer_target_not_accepted_embedded",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/pointer-chain-through-unknown/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "refutation-chain-through-unknown",
+      "reason": "records_rejected",
+      "record_reason": "pointer_target_not_accepted_refuted",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/refutation-chain-through-unknown/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tu-map-repeated",
+      "reason": "records_rejected",
+      "record_reason": "map_not_injective",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-map-repeated/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tu-map-outside",
+      "reason": "records_rejected",
+      "record_reason": "map_range",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-map-outside/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tu-gadget-negative",
+      "reason": "records_rejected",
+      "record_reason": "gadget_index",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-gadget-negative/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tu-no-steps",
+      "reason": "records_rejected",
+      "record_reason": "tu_steps",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-no-steps/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tu-no-terminal-proof",
+      "reason": "records_rejected",
+      "record_reason": "schema",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-no-terminal-proof/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tu-terminal-index",
+      "reason": "records_rejected",
+      "record_reason": "forbidden_not_in_force",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-terminal-index/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "minimality-omitted-minimal",
+      "reason": "minimality_claim_mismatch",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/minimality-omitted-minimal/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "conditional-minimality-omitted",
+      "reason": "minimality_claim_mismatch",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/conditional-minimality-omitted/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "input-wrong-hash",
+      "reason": "input_hash",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/input-wrong-hash/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "empty-record-stream",
+      "reason": "coverage",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/empty-record-stream/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "records-no-final-newline",
+      "reason": "line_format",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/records-no-final-newline/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "records-blank-line",
+      "reason": "line_format",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/records-blank-line/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "unknown-file-absent",
+      "reason": "unknown_file_missing",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/unknown-file-absent/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "duplicate-json-key",
+      "reason": "records_rejected",
+      "record_reason": "duplicate_json_key",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/duplicate-json-key/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "duplicate-generator-key",
+      "reason": "records_rejected",
+      "record_reason": "duplicate_json_key",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/duplicate-generator-key/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "json-nan",
+      "reason": "records_rejected",
+      "record_reason": "json_constant",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/json-nan/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "coverage-noncanonical-record",
+      "reason": "records_rejected",
+      "record_reason": "noncanonical_g6",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/coverage-noncanonical-record/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "unsupported-B4p",
+      "original_audit_reason": "profile",
+      "reason": "control_unknown",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/unsupported-B4p/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "unsupported-B5p",
+      "original_audit_reason": "profile",
+      "reason": "control_unknown",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/unsupported-B5p/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "unsupported-B6p",
+      "original_audit_reason": "profile",
+      "reason": "control_unknown",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/unsupported-B6p/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "unsupported-B7p",
+      "original_audit_reason": "profile",
+      "reason": "control_unknown",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/unsupported-B7p/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "frozen-stored-labels-confused",
+      "reason": "records_rejected",
+      "record_reason": "map_not_edge_preserving",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/frozen-stored-labels-confused/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tu-frozen-canonical-labels-confused",
+      "reason": "records_rejected",
+      "record_reason": "map_not_edge_preserving",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-frozen-canonical-labels-confused/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tu-target-unknown",
+      "reason": "records_rejected",
+      "record_reason": "pointer_target_not_accepted_refuted",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-target-unknown/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "derive-requires-deletion",
+      "reason": "minimality_deletion_missing",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/derive-requires-deletion/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "derive-k4-omitted",
+      "reason": "minimality_claim_mismatch",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/derive-k4-omitted/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "block-forbidden-shortcut",
+      "reason": "block_forbidden",
+      "record_reason": null,
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/block-forbidden-shortcut/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "real-constant-zero-target",
+      "reason": "records_rejected",
+      "record_reason": "cofactor_identity",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/real-constant-zero-target/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive--3-1-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--3-1-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive--3-1-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--3-1-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive--3-2-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--3-2-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive--3-2-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--3-2-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive--2-1-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--2-1-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive--2-1-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--2-1-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive--2-2-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--2-2-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive--2-2-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--2-2-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive--1-1-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--1-1-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive--1-1-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--1-1-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive--1-2-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--1-2-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive--1-2-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive--1-2-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive-0-1-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-0-1-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive-0-1-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-0-1-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive-0-2-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-0-2-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive-0-2-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-0-2-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive-1-1-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-1-1-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive-1-1-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-1-1-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive-1-2-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-1-2-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive-1-2-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-1-2-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive-2-1-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-2-1-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive-2-1-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-2-1-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive-2-2-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-2-2-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive-2-2-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-2-2-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive-3-1-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-3-1-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive-3-1-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-3-1-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-positive-3-2-two-roots",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-3-2-two-roots/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-positive-3-2-repeated-root",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-positive-3-2-repeated-root/observed.stdout"
+    },
+    {
+      "count": 2,
+      "kind": "sturm",
+      "name": "sturm-quartic-real",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-quartic-real/observed.stdout"
+    },
+    {
+      "count": 1,
+      "kind": "sturm",
+      "name": "sturm-quartic-repeated-real",
+      "reason": "returned",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-quartic-repeated-real/observed.stdout"
+    },
+    {
+      "count": null,
+      "kind": "sturm",
+      "name": "sturm-zero",
+      "reason": "sturm_zero_polynomial",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/sturm-zero/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "moser-coordinate-red",
+      "reason": "records_rejected",
+      "record_reason": "edge_equation",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/moser-coordinate-red/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "k23-tree-collision-red",
+      "reason": "records_rejected",
+      "record_reason": "tree",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/k23-tree-collision-red/observed.stdout"
+    },
+    {
+      "exit_code": 1,
+      "kind": "run",
+      "name": "tu-refuted-pointer-map-red",
+      "reason": "records_rejected",
+      "record_reason": "map_not_injective",
+      "status": "REJECT",
+      "stdout": "/tmp/gp10-check/round2/regression/tu-refuted-pointer-map-red/observed.stdout"
+    }
+  ],
+  "seconds": 15.397455086000264,
+  "source_fixtures_sha256": "46f909b380149c63b7124d9310e696b7cdffbaf4e10d3c4a2323711bde2d7bba",
+  "status": "PASS",
+  "total_checks": 314
+}

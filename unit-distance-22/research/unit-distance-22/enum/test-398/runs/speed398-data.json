@@ -1,0 +1,36 @@
+{
+ "checks": {
+  "count": true,
+  "distribution": true,
+  "patterns_total": true,
+  "every_dropped_pattern_has_a_verified_automorphism": true,
+  "udenum_kept_list_equals_networkx": true,
+  "udenum_kept_list_in_data_order_without_repeats": true,
+  "graph_classes_1843": true,
+  "udenum_class_partition_equals_labelg": true
+ },
+ "distribution": {
+  "3": 2126,
+  "2": 209,
+  "4": 830,
+  "5": 184,
+  "7": 4,
+  "6": 34
+ },
+ "kept": 3387,
+ "red_controls": [
+  {
+   "control": "one kept pair removed from udenum's list",
+   "went_red": true
+  },
+  {
+   "control": "orbit of (F0, 1) split in the networkx list",
+   "went_red": true
+  },
+  {
+   "control": "two of udenum's graph classes merged",
+   "went_red": true
+  }
+ ],
+ "pass": true
+}

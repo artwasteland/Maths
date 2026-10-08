@@ -1,0 +1,55 @@
+{
+  "checker_sha256": "ca643575c793c20ed716ef696cfef84b39b47e9d4a64a3e1790089074c88de8f",
+  "claim_authorized": false,
+  "conditional": false,
+  "conditional_minimal": [],
+  "control": "not_a_control",
+  "counts": {
+    "embedded": 2,
+    "refuted": 1,
+    "unknown": 0
+  },
+  "cross_checks": 0,
+  "direct_rejections": 0,
+  "elapsed_seconds": 0.5347341173328459,
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 82804,
+    "nice": 12,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "hosts": false,
+      "path": "<scratch>/scratchpad/m10min/records.jsonl",
+      "sha256": "f18b7ffc410311c800a392586f48b8af4b5402b3bf5d7a94fe8e4ffecfb85115"
+    }
+  ],
+  "forbidden_limit": 9,
+  "hosts": 0,
+  "input_count": 3,
+  "input_sha256": "65627285f6931b5644e4e09927092975d1a871b6111c84edbb54a0653c68ccd8",
+  "kernel_sha256": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+  "minimal": [
+    "Is?@WxcU?"
+  ],
+  "minimal_count": 1,
+  "minimal_file": "minimal.g6",
+  "nonminimal_count": 0,
+  "profile": "sample",
+  "reason": "verified",
+  "scope": "certificate-and-run-checks",
+  "status": "ACCEPT",
+  "trusted_data_sha256": {
+    "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  },
+  "unknown_rate": {
+    "budgets": "unknown-budgets.jsonl",
+    "denominator": 3,
+    "numerator": 0
+  }
+}

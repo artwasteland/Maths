@@ -1,0 +1,145 @@
+{
+  "suite": "gp74",
+  "method": "null",
+  "count": 9,
+  "refuted": 2,
+  "unknown": 7,
+  "seconds_per_graph": 10.0,
+  "max_states": 200,
+  "all_sat": true,
+  "total_seconds": 69.43460970185697,
+  "rows": [
+    {
+      "index": 16,
+      "g6": "G[dBG{",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 6,
+        "sat_pairs": 15,
+        "method": "null",
+        "seconds": 0.2675124001689255,
+        "limit": 10.0
+      }
+    },
+    {
+      "index": 22,
+      "g6": "H_hP`SV",
+      "verdict": "unknown",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 257,
+        "helper_rows": 8,
+        "sat_pairs": 22,
+        "method": "null",
+        "seconds": 2.179076994303614,
+        "limit": 10.0
+      }
+    },
+    {
+      "index": 38,
+      "g6": "H?dPdLi",
+      "verdict": "unknown",
+      "detail": {
+        "method": "null",
+        "seconds": 10.00739676412195,
+        "limit": 10.0,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "index": 39,
+      "g6": "HGEAXjw",
+      "verdict": "unknown",
+      "detail": {
+        "method": "null",
+        "seconds": 10.005026832222939,
+        "limit": 10.0,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "index": 59,
+      "g6": "H`?NeW{",
+      "verdict": "unknown",
+      "detail": {
+        "method": "null",
+        "seconds": 10.184417619835585,
+        "limit": 10.0,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "index": 66,
+      "g6": "H{O_okN",
+      "verdict": "unknown",
+      "detail": {
+        "method": "null",
+        "seconds": 10.006304257083684,
+        "limit": 10.0,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "index": 67,
+      "g6": "Hp`@iWZ",
+      "verdict": "unknown",
+      "detail": {
+        "method": "null",
+        "seconds": 10.02255584904924,
+        "limit": 10.0,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "index": 68,
+      "g6": "H`QBpiL",
+      "verdict": "refuted",
+      "detail": {
+        "basis_size": 1,
+        "helper_rows": 6,
+        "sat_pairs": 21,
+        "method": "null",
+        "seconds": 5.596292281057686,
+        "limit": 10.0
+      }
+    },
+    {
+      "index": 69,
+      "g6": "H_CfKxw",
+      "verdict": "unknown",
+      "detail": {
+        "method": "null",
+        "seconds": 10.255158463027328,
+        "limit": 10.0,
+        "reason": "Deadline: graph time limit"
+      }
+    }
+  ],
+  "environment": {
+    "sympy": "1.14.0",
+    "flint": "0.9.0",
+    "SYMPY_GROUND_TYPES": "python"
+  },
+  "argv": [
+    "research/gp-10/refute/controls.py",
+    "--suite",
+    "gp74",
+    "--method",
+    "null",
+    "--seconds",
+    "10",
+    "--indices",
+    "16,22,38,39,59,66,67,68,69",
+    "--all-sat",
+    "--tag=-all-sat"
+  ],
+  "source_sha256": {
+    "algebra.py": "18b79b8f9db10df849c946d8dccb6c74f518ffc1e1f0fb7ade79f2bc2689d45a",
+    "gp10refute.py": "02cc3494847704028c5f8baa0dc8e58493f0558cd31bb1e4b98d05a430efac27",
+    "selftest.py": "ec0af9442f1e9ec05153355d151b9db2eba20098f7a9a13b502ec03acb27f6ec",
+    "controls.py": "d4b7dffa1c2435ed9e16e4c355d6d3f67abcc305d634c9216360ba8e770a3e58",
+    "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec"
+  }
+}

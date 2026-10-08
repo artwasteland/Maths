@@ -1,0 +1,274 @@
+{
+ "verifier": "<repo>/verify_refutations11.py",
+ "verifier_sha256": "3291138c73f23b2dce20aadb2f3251352d2bc31d3a00a6bc10e89f3150409952",
+ "flint": "0.9.0",
+ "python": "3.12.3",
+ "SYMPY_GROUND_TYPES": "python",
+ "records_meta": {
+  "records": "<repo>/b11-endgame/assembly-1/records.jsonl",
+  "bytes": 3391468870,
+  "sha256": "41731c987fade25c26b205fb02c809a2b75461ddeae852869ad61aab2804e114",
+  "lines": 448708,
+  "verdicts": {
+   "embedded": 443444,
+   "refuted": 5264
+  },
+  "refuted_indexed": 5264,
+  "duplicate_g6": 0,
+  "duplicates": [],
+  "seconds": 90.6
+ },
+ "mode": "sample (coverage not required)",
+ "indexed_refuted": 5264,
+ "results": 429,
+ "missing": 4835,
+ "missing_first": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  19,
+  20,
+  21
+ ],
+ "extra_results": 0,
+ "duplicate_results": 0,
+ "coverage_complete": false,
+ "totals": {
+  "ACCEPT": 429,
+  "REJECT": 0,
+  "UNSUPPORTED": 0
+ },
+ "by_type_and_verdict": {
+  "null-dag/ACCEPT": 32,
+  "null/ACCEPT": 41,
+  "real-dag/ACCEPT": 56,
+  "real/ACCEPT": 11,
+  "sub/ACCEPT": 62,
+  "tree/ACCEPT": 96,
+  "tu/ACCEPT": 131
+ },
+ "not_accepted": [],
+ "direct_F10_premises": {
+  "GP theorem": 71,
+  "GP-10 result": 35
+ },
+ "accepted_by_premise_chain": {
+  "none (self-contained)": 263,
+  "GP theorem only": 120,
+  "uses GP-10 result": 46
+ },
+ "cpu_seconds_total": 171.7,
+ "wall_seconds_sum": 192.3,
+ "max_wall_seconds": 13.593,
+ "max_peak_rss_mb": 279.0,
+ "by_type_time": {
+  "sub": {
+   "n": 62,
+   "cpu_seconds": 0.277,
+   "max_wall": 0.027,
+   "max_rss_mb": 58.4,
+   "bytes": 7011
+  },
+  "tree": {
+   "n": 96,
+   "cpu_seconds": 8.328,
+   "max_wall": 0.411,
+   "max_rss_mb": 62.0,
+   "bytes": 1231886
+  },
+  "tu": {
+   "n": 131,
+   "cpu_seconds": 0.58,
+   "max_wall": 0.032,
+   "max_rss_mb": 58.5,
+   "bytes": 23127
+  },
+  "null": {
+   "n": 41,
+   "cpu_seconds": 21.907,
+   "max_wall": 1.733,
+   "max_rss_mb": 102.7,
+   "bytes": 65292660
+  },
+  "real-dag": {
+   "n": 56,
+   "cpu_seconds": 106.781,
+   "max_wall": 13.593,
+   "max_rss_mb": 279.0,
+   "bytes": 223141298
+  },
+  "null-dag": {
+   "n": 32,
+   "cpu_seconds": 21.801,
+   "max_wall": 4.347,
+   "max_rss_mb": 125.4,
+   "bytes": 80755700
+  },
+  "real": {
+   "n": 11,
+   "cpu_seconds": 12.065,
+   "max_wall": 2.556,
+   "max_rss_mb": 117.2,
+   "bytes": 34706771
+  }
+ },
+ "slowest_10": [
+  {
+   "g6": "Jh_@wZ?@Wb_",
+   "type": "real-dag",
+   "bytes": 8010620,
+   "wall_seconds": 13.593,
+   "peak_rss_mb": 192.4
+  },
+  {
+   "g6": "JoCAhoKH]D?",
+   "type": "real-dag",
+   "bytes": 8291699,
+   "wall_seconds": 8.224,
+   "peak_rss_mb": 279.0
+  },
+  {
+   "g6": "J``?xeGPHB_",
+   "type": "real-dag",
+   "bytes": 7765163,
+   "wall_seconds": 7.769,
+   "peak_rss_mb": 183.2
+  },
+  {
+   "g6": "J?CMHa`RJe?",
+   "type": "real-dag",
+   "bytes": 7974134,
+   "wall_seconds": 6.272,
+   "peak_rss_mb": 142.6
+  },
+  {
+   "g6": "J_C@KHiFVa?",
+   "type": "real-dag",
+   "bytes": 8170917,
+   "wall_seconds": 5.864,
+   "peak_rss_mb": 243.9
+  },
+  {
+   "g6": "Jq?DQkKHGp_",
+   "type": "real-dag",
+   "bytes": 6143284,
+   "wall_seconds": 5.03,
+   "peak_rss_mb": 206.7
+  },
+  {
+   "g6": "J@?GcLdqbo_",
+   "type": "null-dag",
+   "bytes": 8274659,
+   "wall_seconds": 4.347,
+   "peak_rss_mb": 125.4
+  },
+  {
+   "g6": "J@C@MEKRNa?",
+   "type": "real-dag",
+   "bytes": 7940164,
+   "wall_seconds": 4.297,
+   "peak_rss_mb": 141.2
+  },
+  {
+   "g6": "JGCOIUg`na?",
+   "type": "real-dag",
+   "bytes": 8278301,
+   "wall_seconds": 4.017,
+   "peak_rss_mb": 121.3
+  },
+  {
+   "g6": "JoCI?[eKQ`_",
+   "type": "real-dag",
+   "bytes": 8242546,
+   "wall_seconds": 3.933,
+   "peak_rss_mb": 143.8
+  }
+ ],
+ "largest_rss_10": [
+  {
+   "g6": "JoCAhoKH]D?",
+   "type": "real-dag",
+   "bytes": 8291699,
+   "wall_seconds": 8.224,
+   "peak_rss_mb": 279.0
+  },
+  {
+   "g6": "J_C@KHiFVa?",
+   "type": "real-dag",
+   "bytes": 8170917,
+   "wall_seconds": 5.864,
+   "peak_rss_mb": 243.9
+  },
+  {
+   "g6": "Jq?DQkKHGp_",
+   "type": "real-dag",
+   "bytes": 6143284,
+   "wall_seconds": 5.03,
+   "peak_rss_mb": 206.7
+  },
+  {
+   "g6": "Jh_@wZ?@Wb_",
+   "type": "real-dag",
+   "bytes": 8010620,
+   "wall_seconds": 13.593,
+   "peak_rss_mb": 192.4
+  },
+  {
+   "g6": "J``?xeGPHB_",
+   "type": "real-dag",
+   "bytes": 7765163,
+   "wall_seconds": 7.769,
+   "peak_rss_mb": 183.2
+  },
+  {
+   "g6": "JK?ETHSMG]?",
+   "type": "real-dag",
+   "bytes": 8094578,
+   "wall_seconds": 3.915,
+   "peak_rss_mb": 164.3
+  },
+  {
+   "g6": "JoCI?[eKQ`_",
+   "type": "real-dag",
+   "bytes": 8242546,
+   "wall_seconds": 3.933,
+   "peak_rss_mb": 143.8
+  },
+  {
+   "g6": "J?CMHa`RJe?",
+   "type": "real-dag",
+   "bytes": 7974134,
+   "wall_seconds": 6.272,
+   "peak_rss_mb": 142.6
+  },
+  {
+   "g6": "J@C@MEKRNa?",
+   "type": "real-dag",
+   "bytes": 7940164,
+   "wall_seconds": 4.297,
+   "peak_rss_mb": 141.2
+  },
+  {
+   "g6": "Jo?A]_kLGu?",
+   "type": "real-dag",
+   "bytes": 5181356,
+   "wall_seconds": 1.996,
+   "peak_rss_mb": 132.6
+  }
+ ],
+ "status": "ALL 429 ACCEPT"
+}

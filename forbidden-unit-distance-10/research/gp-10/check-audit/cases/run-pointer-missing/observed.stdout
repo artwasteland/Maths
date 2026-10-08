@@ -1,0 +1,2 @@
+REJECT record A_ pointer_target_missing
+REJECT run records_rejected

@@ -1,0 +1,8 @@
+  DIFFER NGC?GOD?_Bu_GfuCW[G: prover tu [0, 1] [14, 13]; exact pass None None
+  DIFFER NO?OiO?@QPBCGL_m[WO: prover tu [0, 12] [14, 2]; exact tu (11, 13) (14, 1)
+  DIFFER N??atO?AGHccSHcEXw?: prover tu [0, 1] [14, 4]; exact pass None None
+  DIFFER N?GC?`@@?PeGo[ReUo_: prover refuted [1, 7] None; exact pass None None
+  DIFFER Ng??WoOHOKPC?JCM{WO: prover refuted [3, 11] None; exact tu (2, 6) (1, 14)
+w1-measure-15.g6: 1500 graphs; exact rational verdict, pair and edge = the prover's on 13
+TOTAL {'pass': 1050, 'tu': 348, 'refuted': 102, 'graphs': 1500, 'differences': 1487}
+EXACT FAIL (1)

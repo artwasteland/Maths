@@ -1,0 +1,134 @@
+{
+ "13": {
+  "n": 1500,
+  "verdicts": {
+   "open": 1129,
+   "hidden-edge": 135,
+   "closed": 192,
+   "collision": 29,
+   "closed-collision": 15
+  },
+  "open": {
+   "cpu": 2.822084,
+   "written": 14145,
+   "parents": 1129
+  },
+  "all": {
+   "cpu": 3.78781,
+   "written": 19773,
+   "parents": 1500
+  },
+  "gen_retention": 0.7450437059937008,
+  "children_retention": 0.7153694431800941
+ },
+ "14": {
+  "n": 1500,
+  "verdicts": {
+   "open": 938,
+   "closed": 238,
+   "hidden-edge": 227,
+   "closed-collision": 30,
+   "collision": 67
+  },
+  "open": {
+   "cpu": 3.754551,
+   "written": 7867,
+   "parents": 938
+  },
+  "all": {
+   "cpu": 5.98861,
+   "written": 12671,
+   "parents": 1500
+  },
+  "gen_retention": 0.626948657534887,
+  "children_retention": 0.6208665456554336
+ },
+ "15": {
+  "n": 1500,
+  "verdicts": {
+   "open": 745,
+   "closed": 281,
+   "hidden-edge": 340,
+   "collision": 94,
+   "closed-collision": 40
+  },
+  "open": {
+   "cpu": 0.612403,
+   "written": 2796,
+   "parents": 745
+  },
+  "all": {
+   "cpu": 1.28794,
+   "written": 6599,
+   "parents": 1500
+  },
+  "gen_retention": 0.47549031787195056,
+  "children_retention": 0.4237005606910138
+ },
+ "16": {
+  "n": 1500,
+  "verdicts": {
+   "collision": 191,
+   "closed": 281,
+   "open": 442,
+   "hidden-edge": 479,
+   "closed-collision": 107
+  },
+  "open": {
+   "cpu": 0.6885340000000001,
+   "written": 931,
+   "parents": 442
+  },
+  "all": {
+   "cpu": 2.1795780000000002,
+   "written": 2117,
+   "parents": 1500
+  },
+  "gen_retention": 0.3159024361596603,
+  "children_retention": 0.43977326405290507
+ },
+ "17": {
+  "n": 1500,
+  "verdicts": {
+   "hidden-edge": 524,
+   "open": 383,
+   "closed": 247,
+   "collision": 238,
+   "closed-collision": 108
+  },
+  "open": {
+   "cpu": 1.494707,
+   "written": 1245,
+   "parents": 383
+  },
+  "all": {
+   "cpu": 7.649019,
+   "written": 2280,
+   "parents": 1500
+  },
+  "gen_retention": 0.19541159461102137,
+  "children_retention": 0.5460526315789473
+ },
+ "18": {
+  "n": 1500,
+  "verdicts": {
+   "collision": 267,
+   "open": 501,
+   "hidden-edge": 478,
+   "closed": 186,
+   "closed-collision": 68
+  },
+  "open": {
+   "cpu": 1.530405,
+   "written": 145,
+   "parents": 501
+  },
+  "all": {
+   "cpu": 8.749931,
+   "written": 538,
+   "parents": 1500
+  },
+  "gen_retention": 0.17490480782077025,
+  "children_retention": 0.2695167286245353
+ }
+}

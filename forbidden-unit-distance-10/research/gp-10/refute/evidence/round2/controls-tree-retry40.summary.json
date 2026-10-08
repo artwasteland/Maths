@@ -1,0 +1,65 @@
+{
+  "argv": [
+    "research/gp-10/refute/round2_retry.py",
+    "--indices",
+    "69",
+    "--method",
+    "tree",
+    "--seconds",
+    "40",
+    "--tag",
+    "controls-tree-retry40"
+  ],
+  "rows": [
+    {
+      "index": 69,
+      "g6": "H_CfKxw",
+      "verdict": "refuted",
+      "detail": {
+        "checked_nodes": 27,
+        "initial_rank": 3,
+        "l3_triples": 105,
+        "moves": {
+          "L1a": 12,
+          "L2": 4,
+          "L3": 11
+        },
+        "states": 27,
+        "stops": {
+          "contradiction": 12
+        },
+        "method": "tree",
+        "seconds": 13.035749270580709,
+        "limit": 40.0
+      }
+    }
+  ],
+  "seconds": 13.301458178088069,
+  "prefix": 0,
+  "source_sha256": {
+    "run_small_controls.py": "0643961a7dd7e9c894bc69749a67586833f7e02333c2e08c528d3ce950fae98d",
+    "round2_retry.py": "1efefa1c624d7bd9915beca2c924837881f07ec7bfe2d75658942f9e4f189562",
+    "audit_report.py": "fcd3646d501e8f806406321b75ddc874d1798b066e0311aef06f2138f92c1a6b",
+    "algebra.py": "41df6e80750741febc1141f67e4d8de8c7e4af4a1f1c8464118970ebd51da0c9",
+    "round2.py": "0b0357965c96d2c8e62dee1071067518e5c1eb2664153231a8c2fd0eb2905009",
+    "export_checker.py": "612182fba410aee4e33c12f96b2d12b54f0272350f08b6d1ef7d6e271706eccd",
+    "stall_search.py": "778394aca8e8c4b0bc88a8a24f7f402c50996f9c3c90f1fa9df274370eb3d682",
+    "centroid66.py": "93193ea7da062366148fe2664bd50b939235be2b704dd88932a8089808c9239a",
+    "gp10refute.py": "7e18b35813c2ae88ba2ee93deab2b651d4583f403ed920eb9421d04f8dd048b2",
+    "circle_helpers.py": "c24d242cc6cecfa94884559eafb8e08f86daaea361d5c6da78edb7470132e583",
+    "selftest.py": "fd34878e06725005254d6bcfca38a3a1cee8b1f2b5739eea77cdee219c162806",
+    "controls.py": "26717ed7fbfe69f275705d10cc652952156a0333b0a626bf29677d19d314086a",
+    "audit_sample.py": "6b3434eaa669033ef325249c81667a26726f6b6a5db446c8f702c6fce0181f3e",
+    "graphs.py": "29249a6942f9099a89cceb148fcfd2f266e99d545a70d33570abc392ae7b9f1f",
+    "null39.py": "2e45a033a125748cf0a93cc00829cde1a6d66d994940a61309ea75732f825486",
+    "wrong_frame_control.py": "660fbf6071be92b0fa7ecdfa936129cb28d39cf6f8348c4a865b0d014a0aa4ca",
+    "analytic39.py": "6f884147207d6d3ae0c4d4a19afedb717fc359aea3fbb91998bcd3f83ccbd103",
+    "ideal_derivation.py": "78dd201353ff8168f3d8985e4c0e809fb1f4a749e58c02af871214ad40b44da7",
+    "run_focused_controls.py": "4cc11b5f664c10105664fc573bf94c10e2768d6fff189e0010e9afdfad0a62be",
+    "quotient39.py": "ef33056678425953b92f9be3e48d0943fc5e9c29eddeee5feac18a5e7eb33b00",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec",
+    "factored_lift.py": "d09c66885c8f6dab657ddeb1c9f84349cad5bc7d5a41cba956d304f5712ce987",
+    "real_radical.py": "4b3fb214bdb2c6d0bb2f177445d7f9bf531237ac8d052b4f45453ae928a8f817",
+    "cofactor_reduce.py": "68834b0162711f269090e4eb8749a6d1c12a02f08f56ff6ec438cc28d0fa6d2f"
+  }
+}

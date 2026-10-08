@@ -1,0 +1,1 @@
+{"g6":"H{O_okN","verdict":"unknown","reason":"FGLM found a positive sextic in x0, but lift timed out after 40 seconds with all 21 saturation pairs. No certificate was emitted.","frame":[3,6],"lift_limit":40,"basis_file":"basis-66.json","fglm_output":"fglm66.txt"}

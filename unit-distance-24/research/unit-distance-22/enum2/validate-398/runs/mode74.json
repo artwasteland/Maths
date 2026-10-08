@@ -1,0 +1,74 @@
+{
+ "software": {
+  "enum2.py": "d967fc9024cda647c01bca95d6d6d9e2b6b0c24539d288c0ee1ee669faffa54e",
+  "udenum": "a99b130ab5ad0386265c429b78cf3c4a4c708e1d5dd6e222bec14a4596c16a84",
+  "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+  "forbidden-398.json": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+  "python": "3.12.3",
+  "pynauty": "2.8.8.1"
+ },
+ "replay.py": "c1cada1dd9592c0dc9bb91e48102f504da751f2f822f617ebb8577271d4c8743",
+ "engine": "fast",
+ "runs": {
+  "main": {
+   "shards_old": 92,
+   "shards_new": 92,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "extra_shards": [],
+   "reproduced": true,
+   "all_identical_new": true,
+   "parents_replayed": 7503,
+   "udenum_children": 57355,
+   "enum2_children": 57355,
+   "enum2_cpu_seconds": 29.4,
+   "enum2_cpu_seconds_2026_09_05": 12035.8,
+   "input_mismatches_reported_by_replay": [
+    "udenum hash mismatch for 11-17-0-10000",
+    "udenum hash mismatch for 11-18-0-10000",
+    "udenum hash mismatch for 11-19-0-10000"
+   ],
+   "input_mismatch_count": 92
+  },
+  "main_red_perturbed_record": {
+   "reproduced": false,
+   "went_red": true
+  },
+  "control_a": {
+   "shards_old": 1,
+   "shards_new": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "extra_shards": [],
+   "reproduced": true,
+   "red": true
+  },
+  "control_b": {
+   "shards_old": 2,
+   "shards_new": 2,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "extra_shards": [],
+   "reproduced": true,
+   "red": true,
+   "copy_sha256": "38ab9bcc08af7f27cc75e7ed50628d9d9b41c108b501392bfd3deee4e8c9ee89"
+  },
+  "final_cell_22_61": {
+   "production": 4,
+   "production_distinct": 4,
+   "enum2_raw": 4,
+   "enum2": 4,
+   "only_production": 0,
+   "only_enum2": 0,
+   "only_production_first": [],
+   "only_enum2_first": [],
+   "equal_counts": true,
+   "enum2_subset_of_production": true,
+   "identical": true,
+   "parents": 743,
+   "enum2_cpu_seconds": 37.9
+  }
+ },
+ "wall_seconds": 75.8,
+ "pass": true
+}

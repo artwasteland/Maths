@@ -1,0 +1,11 @@
+ACCEPT B4p reason=verified counts={'embedded': 2, 'refuted': 1, 'unknown': 0} minimal=1 control={'status': 'PASS', 'minimal_members': 1}
+ACCEPT B5p reason=verified counts={'embedded': 3, 'refuted': 4, 'unknown': 0} minimal=1 control={'status': 'PASS', 'minimal_members': 1}
+ACCEPT B6p reason=verified counts={'embedded': 14, 'refuted': 2, 'unknown': 0} minimal=1 control={'status': 'PASS', 'minimal_members': 1}
+ACCEPT B7p reason=verified counts={'embedded': 56, 'refuted': 4, 'unknown': 0} minimal=3 control={'status': 'PASS', 'minimal_members': 3}
+ACCEPT B8p reason=verified counts={'embedded': 366, 'refuted': 17, 'unknown': 0} minimal=13 control={'status': 'PASS', 'minimal_members': 13}
+ACCEPT B9p reason=verified counts={'embedded': 2984, 'refuted': 101, 'unknown': 0} minimal=55 control={'status': 'PASS', 'minimal_members': 55}
+ACCEPT named reason=verified counts={'embedded': 4, 'refuted': 1, 'unknown': 0} minimal=None control={'status': 'PASS', 'provenance': 'general-search asserted by producer; not proved by certificates'}
+ACCEPT regressions reason=verified counts={'embedded': 1, 'refuted': 7, 'unknown': 0} minimal=None control={'status': 'PASS', 'forbidden_limit': 0}
+ACCEPT named11 reason=verified counts={'embedded': 2, 'refuted': 0, 'unknown': 0} minimal=None control={'status': 'PASS', 'provenance': 'general-search asserted by producer; not proved by certificates'}
+SMALL CONTROLS PASS; B10 control not executed
+RESOURCE min_MemAvailable_kib=5033632 exit=0

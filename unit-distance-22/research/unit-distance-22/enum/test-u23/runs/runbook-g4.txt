@@ -1,0 +1,68 @@
+G5 U23_REPLAY=2: exit 2: U23_REPLAY must be 0 or 1; anything written: False
+G5 U23_REPLAY_FRACTION=0: exit 2: U23_REPLAY_FRACTION must be a decimal in (0, 1], e.g. 0.001; anything written: False
+G5 U23_REPLAY_FRACTION=x: exit 2: U23_REPLAY_FRACTION must be a decimal in (0, 1], e.g. 0.001; anything written: False
+G5 U23_REPLAY_WHOLE_MAX=-1: exit 2: U23_REPLAY_WHOLE_MAX must be a non-negative integer; anything written: False
+G5 U23_REPLAY_SEED='a b': exit 2: U23_REPLAY_SEED must be a non-empty word of [A-Za-z0-9._-]; anything written: False
+G5 U23_CLEANUP=2: exit 2: U23_CLEANUP must be 0 or 1; anything written: False
+G5 U23_MIN_FREE_GB=x: exit 2: U23_MIN_FREE_GB must be a non-negative integer (GB); anything written: False
+G5 the mutant python's canon_label: canon_label sitecustomize 
+G5 a replay python without pynauty (/usr/bin/python3): exit 3: [2026-09-26T02:38:25Z] the G4 replay's python /usr/bin/python3 cannot import pynauty (U23_REPLAY_PY, or U23_REPLAY=0 to run without the replay); run directories made: 0
+G5 a pynauty with another canonical order: exit 3:  self-check FAILED (see <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/res/replay-selfcheck-<host>.json); run directories made: 0
+G5 the mutant's self-check record: canonical {'graphs': 56, 'relabelled_differently': 52, 'enum2_eq_labelg_eq_original': 5}, ok False
+G1 runbook exit 0; log:
+    [2026-09-26T02:38:32Z] toolchain ok: Nauty&Traces version 2.8081 (32 bits); cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+    [2026-09-26T02:38:41Z] pins and self-checks passed
+    [2026-09-26T02:38:41Z] slice s0of2: disk /dev/sda2       457G  429G  4.8G  99% /
+    [2026-09-26T02:38:41Z] slice s0of2 starting (output <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/out/dag-16-41-L12-tri-pf74-s0of2)
+    [2026-09-26T02:39:02Z] slice s0of2: levels <= 12 kept in <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/out/prefix-16-41-L12-tri-pf74 for the later slices (111 files)
+    results written <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/res/16-41-L12-tri-pf74/s0of2
+    [2026-09-26T02:39:02Z] G4 replay of slice s0of2 (full: levels 0-16, the level-10 seeds recomputed in full, red controls; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:40:11Z] G4 replay of slice s0of2 (full): PASS 160 parents sampled (119 processed), 72 production children compared, 0 mismatching, 19 stage files re-derived, seeds 13/13 identical, red controls 6/6 red; 69 s against the run's 21 s
+    [2026-09-26T02:40:11Z] slice s0of2 done
+    [2026-09-26T02:40:11Z] slice s1of2: disk /dev/sda2       457G  429G  4.7G  99% /
+    [2026-09-26T02:40:11Z] slice s1of2: levels <= 12 hard-linked from <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/out/prefix-16-41-L12-tri-pf74 (111 files)
+    [2026-09-26T02:40:11Z] slice s1of2 starting (output <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/out/dag-16-41-L12-tri-pf74-s1of2)
+    results written <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/res/16-41-L12-tri-pf74/s1of2
+    [2026-09-26T02:40:15Z] G4 replay of slice s1of2 (slice: levels 13-16; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:40:21Z] G4 replay of slice s1of2 (slice): PASS 81 parents sampled (58 processed), 25 production children compared, 0 mismatching, 11 stage files re-derived; 6 s against the run's 4 s
+    [2026-09-26T02:40:22Z] slice s1of2 done
+    [2026-09-26T02:40:22Z] all slices done: 0 1
+G1 prefix directory: made from <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/out/dag-16-41-L12-tri-pf74-s0of2; slice 1 linked from it: True
+G1 slice 0: mode full, levels '', sampled 160 (119 processed), 72 production children compared, 0 mismatching, 0 unreplayable, stages 19 (['keep', 'keep+slice', 'reach']) ok True, seeds 13, red_all True; wall 69 s against the run's 21 s
+G1 slice 1: mode slice, levels '13-16', sampled 81 (58 processed), 25 production children compared, 0 mismatching, 0 unreplayable, stages 11 (['keep', 'keep+slice']) ok True, seeds 0, red_all None; wall 6 s against the run's 4 s
+G1 slice 0 seeds: 13 seed levels, all identical True; level-10 full recomputations [('10-17', 2733, 2733, True), ('10-18', 218, 218, True), ('10-19', 19, 19, True), ('10-20', 1, 1, True)]
+G1 slice 0 red controls: R1 red; R2 red; R4 red; R5a red; R5b red; R3 red
+G1 R3: {"id": "R3", "control": "enum2 without member 212 (one of the 324) against the production block", "cell": "11-20", "index": 2161, "from_sample": false, "parents_tried": 124, "baseline_identical": true, "production_children": 1, "enum2_children_without_member": 2, "extra": 1, "missing": 0, "extras_contain_exactly_that_member": true, "went_red": true}
+G1 replay self-check: {"pynauty": "2.8.8.1", "python": "3.12.3", "canonical": {"graphs": 56, "relabelled_differently": 52, "enum2_eq_labelg_eq_original": 56}, "k4": {"normal": 0, "without_member_0": 1}, "augmentation_vs_brute": {"7-8": {"brute": 73, "augmentation": 73, "equal": true}, "7-9": {"brute": 72, "augmentation": 72, "equal": true}, "7-10": {"brute": 41, "augmentation": 41, "equal": true}}, "ok": true}
+G1 result files: 97, largest 40 kB; replay files slice 0 ['fingerprint.json', 'red.json', 'summary.json'], slice 1 ['fingerprint.json', 'summary.json']
+G7 after G1: commits ['u23 slice s0of2 done: through n 16; G4 replay PASS (full, 160 parents)', 'u23 slice s1of2 done: through n 16; G4 replay PASS (slice, 81 parents)']; 2 adds, 2 pushes, 0 failed pushes, refused []
+G1b parent 2161 of 11-20 (block of 1) lost JA?BgYLmFA_: replay exit 1; sampled parents all identical True; R3: {"id": "R3", "control": "a parent R3 tried has enum2 children that differ from its production block (a discrepancy, not a red control)", "cell": "11-20", "index": 2161, "from_sample": false, "parents_tried": 124, "production": 0, "enum2": 1, "only_production": 0, "only_enum2": 1, "only_production_first": [], "only_enum2_first": ["JA?BgYLmFA_"], "went_red": false}; other controls red [True, True, True, True, True]
+G2 restart: exit 0; log:
+    [2026-09-26T02:41:07Z] G4 replay of slice s0of2: already passed on this content and these settings (not repeated)
+    [2026-09-26T02:41:07Z] G4 replay of slice s1of2: already passed on this content and these settings (not repeated)
+G7 after G2: commits ['u23 slice s0of2 done: through n 16; G4 replay passed before', 'u23 slice s1of2 done: through n 16; G4 replay passed before']; 2 adds, 2 pushes, 0 failed pushes, refused []
+G3 planted: parent 2 of 16-41 (NGECKA@WW{igRHKpDSW), block ['O@iib@`cC_iOAsAi_ioHZ']: the child O@iib@`cC_iOAsAi_ioHZ deleted from 16-41-0-3.g6 (its manifest rewritten to match); the cell file, its aggregate manifest and the 0 files of levels above 16 deleted for run-dag2.py --resume to rebuild
+G3 runbook (U23_CLEANUP=1) exit 5; log:
+    [2026-09-26T02:41:07Z] toolchain ok: Nauty&Traces version 2.8081 (32 bits); cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+    [2026-09-26T02:41:15Z] pins and self-checks passed
+    [2026-09-26T02:41:15Z] slice s0of2: disk /dev/sda2       457G  430G  4.5G  99% /
+    [2026-09-26T02:41:15Z] slice s0of2 starting (output <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/out/dag-16-41-L12-tri-pf74-s0of2)
+    results written <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/res/16-41-L12-tri-pf74/s0of2
+    [2026-09-26T02:41:16Z] G4 replay of slice s0of2 (slice: levels 13-16; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)
+    [2026-09-26T02:41:28Z] G4 REPLAY FAILED for slice s0of2 (slice): MISMATCH: 1 sampled parents whose enum2 children differ from production's; evidence in <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/r
+G3 after the failed replay: run directory kept True, replay directory kept True, 'deleted' in the log False
+G3 FAILED: MISMATCH: 1 sampled parents whose enum2 children differ from production's; mismatches.jsonl: 1 entries; the victim's: {"run_dir": "<scratch>/scratchpad/g4replay/u23scratch/runbook-g4/out/dag-16-41-L12-tri-pf74-s0of2", "cell": "16-41", "n": 16, "m": 41, "index": 2, "record": "NGECKA@WW{igRHKpDSW", "d": 4, "processed": true, "where": "cell file", "block": [0, 0], "recoveries": 0, "production": 0, "enum2": 1, "enum2_raw": 1, "only_production": 0, "only_enum2": 1, "only_production_first": [], "only_enum2_first": ["O@iib@`cC_iOAsAi_ioHZ"], "production_duplicates
+G7 after G3: commits ["u23 slice s0of2 G4 REPLAY FAILED (slice): MISMATCH: 1 sampled parents whose enum2 children differ from production's"]; 1 adds, 1 pushes, 0 failed pushes, refused []
+G4 the corrupted directories with U23_REPLAY=0: exit 0; G4 lines: []; all slices done: True
+G7 after G4: commits ['u23 slice s0of2 done: through n 16; no G4 replay (U23_REPLAY=0)', 'u23 slice s1of2 done: through n 16; no G4 replay (U23_REPLAY=0)']; 2 adds, 2 pushes, 0 failed pushes, refused []
+G6 slice s0of1920 (no level-12 graph hashes to it; 100 indices of 1920 do): exit 0; prefix hard-linked from the prefix directory True; [' G4 replay of slice s0of1920 (slice: levels 13-16; set=398 fraction=0.001 seed=20260926 min-per-shard=2 whole-max=100)', " G4 replay of slice s0of1920 (slice): EMPTY 0 parents sampled (0 processed), 0 production children compared, 0 mismatching, 11 stage files re-derived; 0 s against the run's 3 s"]; fingerprint: result EMPTY, sampled 0, stage files 11
+G7 after G6: commits ['u23 slice s0of1920 done: through n 16; G4 replay EMPTY (slice, 0 parents)']; 1 adds, 1 pushes, 0 failed pushes, refused []
+G8 A1 slice 0: exit 0; replay PASS at log line 7, deletion at 8; commits ['u23 slice s0of5 done: through n 16; G4 replay PASS (full, 96 parents)'], pushes 1; run and replay directories gone True; logs kept True True; results kept 46 files, missing []; done marker {'slice': 's0of5', 'results': '<scratch>/scratchpad/g4replay/u23scratch/runbook-g4/c-res/16-41-L12-tri-pf74/s0of5', 'commit': 'cfea96c54db482622a942e58336ae2321d2c92fb', 'g4': 'G4 replay PASS (full, 96 parents)', 'run_dir_deleted': '<scratch>/scratchpad/g4replay/u23scratch/runbook-g4/c-out/dag-16-41-L12-tri-pf74-s0of5'}; prefix directory made from <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/c-out/dag-16-41-L12-tri-pf74-s0of5 (111 files)
+G8 A2 restart on 0 and 1: exit 0; slice 0 skipped True, started False; slice 1 hard-linked from the prefix directory True, replayed in full True (seeds identical True, red True); levels <= 12 equal slice 0's: True (42 files); commits ['u23 slice s1of5 done: through n 16; G4 replay PASS (full, 105 parents)']; slice 1 deleted True, done marker True
+G8 A3 restart again: exit 0; skipped 2; started 0; commits []
+G8 A4 slice 2, pushes failing: exit 0; commits ['u23 slice s2of5 done: through n 16; G4 replay PASS (slice, 27 parents)'], pushes 0, failed pushes 3; [' commit/push of s2of5 results failed; files are in <scratch>/scratchpad/g4replay/u23scratch/runbook-g4/c-res/16-41-L12-tri-', ' slice s2of5: its results are not pushed, so its run directory is kept (<scratch>/scratchpad/g4replay/u23scratch/runbook-g4']; run directory kept True, done marker False
+G8 A5 slice 2 again: exit 0; replay repeated False, 'already passed' True; commits ['u23 slice s2of5 done: through n 16; G4 replay passed before'], pushes 1; deleted True, done marker True
+G9 a U23_MIN_FREE_GB=1000000: exit 6;  slice s3of5: disk /dev/sda2       457G  432G  1.8G 100% /;  only 1 GB free on the output filesystem (<scratch>/scratchpad/g4replay/u23scratch/runbook-g4/c-out), below U23_MIN_FREE_GB=1000000; STOPPING this worker before slice s3of5; started False; commits []
+G9 b stand-in df (10 GB, then 1 GB free), U23_MIN_FREE_GB=5: exit 6; disk lines [' slice s3of5: disk stub 100G 0 10G 1% /stub', ' slice s4of5: disk stub 100G 0 1G 1% /stub']; slice 3 done True, deleted True;  only 1 GB free on the output filesystem (<scratch>/scratchpad/g4replay/u23scratch/runbook-g4/c-out), below U23_MIN_FREE_GB=5; STOPPING this worker before slice s4of5; slice 4 started False; commits ['u23 slice s3of5 done: through n 16; G4 replay PASS (slice, 23 parents)']
+RUNBOOK-G4 PASS
+exit 0 after 464 s

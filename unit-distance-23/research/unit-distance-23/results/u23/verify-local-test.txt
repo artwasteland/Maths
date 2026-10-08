@@ -1,0 +1,29 @@
+# coordination/cloud-workers/u23-verify.sh, tested locally on <host> 2026-09-26 ~17:05Z (the (17,43) target of the runbook's own local test, three slices at level 13)
+# environment: TAG=vtest U23_TARGET_N=17 U23_TARGET_M=43 U23_ROOT_K=2 U23_PRUNE_FROM=12 U23_SLICE_LEVEL=13 U23_VERIFY_COUNT=3 U23_OUT=<scratch>/out U23_RES=<scratch>/res U23_VERIFY_RES=<scratch>/verify U23_PUSH=0 U23_TOOLCHAIN=0 JOBS=1 PY=~/tools/pyenv-maths/bin/python U23_MIN_FREE_GB=0 (U23_UBAR unset: its production value)
+
+## green: a fresh run, bash coordination/cloud-workers/u23-verify.sh 0 1 2 (exit 0)
+[2026-09-26T17:02:21Z] u23-verify vtest: checker verify-chain-g5.py sha256 d253338569dedb41740cdb4774a6a361f6498f036787a52c3f985caca5d6ddd8 (G5 commit 34f0dcb9ba7c980c9931b1374a8a57a8f762edd0); its python <repo>/pyenv-maths/bin/python -> /usr/bin/python3.12
+[2026-09-26T17:02:21Z] u23-verify vtest: runbook on slices 0 1 2
+[2026-09-26T17:06:19Z] u23-verify vtest: s0of3: exit 0 after 12 s: CHAIN OK; pass
+[2026-09-26T17:06:21Z] u23-verify vtest: s1of3: exit 3 after 2 s: CHAIN PARTIAL (levels below 14 not inspected (--from-n 14)); pass
+[2026-09-26T17:06:24Z] u23-verify vtest: s2of3: exit 3 after 2 s: CHAIN PARTIAL (levels below 14 not inspected (--from-n 14)); pass
+[2026-09-26T17:06:24Z] u23-verify vtest: every check passed: 0 1 2
+
+## red: three forgeries, then the run directories checked again as they were (U23_VERIFY_SKIP_RUNBOOK=1; a runbook re-run resumes, and its resume recomputes any file whose hash no longer matches its manifest)
+# s0of3: 14-30.certs.jsonl, a refuted record's first tri leaf: cycle_coefficients [0,-1] -> [0,-2] (same length), every manifest's sha256 of the file rewritten
+# s1of3: 17-43.keep.g6 (the top level: no children), its first kept graph dropped, every manifest's sha256 of the file rewritten
+# s2of3: 11-19.reach.g6 (prefix, level 11: no check from level 14 reads it), a byte appended, hashes left alone
+[2026-09-26T17:06:39Z] u23-verify vtest: checker verify-chain-g5.py sha256 d253338569dedb41740cdb4774a6a361f6498f036787a52c3f985caca5d6ddd8 (G5 commit 34f0dcb9ba7c980c9931b1374a8a57a8f762edd0); its python <repo>/pyenv-maths/bin/python -> /usr/bin/python3.12
+[2026-09-26T17:06:39Z] u23-verify vtest: runbook skipped (U23_VERIFY_SKIP_RUNBOOK=1): checking the run directories as they are
+[2026-09-26T17:06:51Z] u23-verify vtest: s0of3: exit 1 after 12 s: CHAIN FAIL (1 problems); FAIL
+[2026-09-26T17:06:53Z] u23-verify vtest: s1of3: exit 1 after 2 s: CHAIN FAIL (6 problems); FAIL
+[2026-09-26T17:06:55Z] u23-verify vtest: s2of3: exit 3 after 2 s: CHAIN PARTIAL (levels below 14 not inspected (--from-n 14)); prefix: differs: 11-19.reach.g6; FAIL
+[2026-09-26T17:06:55Z] u23-verify vtest: NOT every check passed: s0of3 s1of3 s2of3 (run directories kept under <scratch>/out)
+  s0of3 PROBLEM: 14-30.certs.jsonl: udcheck did not accept: REJECT: <scratch>/out/dag-17-43-tri-pf74-s0of3/14-30.certs.jsonl:322.witness.tri: tree.minus.minus.minus.minus.leaf: identity fa
+  s1of3 PROBLEM: 17-43.reach.g6: reach manifest hashes or k do not match
+  s1of3 PROBLEM: 17-43.keep.g6: is not the embedded and unknown records in order
+  s1of3 PROBLEM: 17-43.UNKNOWN.g6: hash differs from the prune manifest
+  s1of3 PROBLEM: 17-43.reach.g6: hash differs from the prune manifest input
+  s1of3 PROBLEM: 17-43: stage verification manifest does not cover the current stage file 17-43.keep.g6 in set 398
+  s1of3 PROBLEM: 17-43: aggregate manifest does not hash its level file
+# exit 7

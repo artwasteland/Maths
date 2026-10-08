@@ -1,0 +1,64 @@
+{
+  "positive": {
+    "rows": 1,
+    "square_candidates": 5,
+    "lp_seconds": 0.015693225897848606,
+    "lp_status": 0
+  },
+  "one_constant_mutation": {
+    "rows": 1,
+    "square_candidates": 5,
+    "lp_seconds": 0.001975469756871462,
+    "lp_status": 2
+  },
+  "status": "PASS",
+  "centroid_trial": {
+    "found": true,
+    "detail": {
+      "rows": 243,
+      "square_candidates": 299,
+      "lp_seconds": 0.008464546874165535,
+      "lp_status": 0
+    }
+  },
+  "safe_controls": [
+    {
+      "name": "prism",
+      "detail": {
+        "method": "portfolio",
+        "seconds": 1.0016477457247674,
+        "limit": 1,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "name": "petersen",
+      "detail": {
+        "method": "portfolio",
+        "seconds": 1.0024949666112661,
+        "limit": 1,
+        "reason": "Deadline: graph time limit"
+      }
+    },
+    {
+      "name": "spindle",
+      "detail": {
+        "reason": "no certifiable target in Groebner basis",
+        "basis_size": 15,
+        "helper_rows": 12,
+        "sat_pairs": 2,
+        "positive_targets": 0,
+        "collision_tests": 8,
+        "quadratic_discovery": {
+          "rows": 111,
+          "square_candidates": 85,
+          "lp_seconds": 0.00373369874432683,
+          "lp_status": 2
+        },
+        "method": "portfolio",
+        "seconds": 0.3233274961821735,
+        "limit": 1
+      }
+    }
+  ]
+}

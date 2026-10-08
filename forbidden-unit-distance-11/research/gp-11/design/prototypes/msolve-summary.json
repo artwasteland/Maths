@@ -1,0 +1,13 @@
+{
+  "count": 15,
+  "counts": {
+    "unknown": 13,
+    "embedded": 2
+  },
+  "seconds": 155.54834577767178,
+  "producer_patch": "generic_rank ceiling 10 -> 11; scratch paths redirected; all other make_system/msolve_stage/invoke/certify code unchanged",
+  "max_rss_kib": 130172,
+  "min_MemAvailable_kib": 4144212,
+  "cpu_self": 1.751526,
+  "cpu_children": 154.462051
+}

@@ -1,0 +1,18 @@
+{
+  "all_sat": false,
+  "extra_sat": [],
+  "forbidden_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "input_sha256": "e164642ea41d1f94f4eaf0ff36aeaa3cd8caf89434c9faaa17b24b469faf7d2b",
+  "known_sha256": null,
+  "methods": [
+    "real"
+  ],
+  "seconds": 3.0,
+  "source_sha256": {
+    "algebra.py": "395d7109e25c880fd22d150af5ff7e4a305be4337fb918354092fa4caa27bf93",
+    "amp_core.py": "2f73d74d0a230eca41a3ed51c6a168d09ddf9057c63192aa563e6b76f66ca3ec",
+    "gp10refute.py": "50d851358b91dbbc6cd6ac1ae8a5b8f110d7b59803d43eecf395ea8769a4e573",
+    "graphs.py": "ef5fd7b618418df619b6e8b611cbaa7a850653f27b686f235ebccc49d8b93c63"
+  },
+  "states": 200
+}

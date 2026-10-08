@@ -1,0 +1,595 @@
+{
+  "audited_baseline_sha256": "9064ccc64ae900aee07672f14d4e3fec4f4cb6a09ec0042bb2db7e6e8df3ce6f",
+  "baseline": "/tmp/gp10-check/round2/baseline",
+  "checker_sha256": "ca643575c793c20ed716ef696cfef84b39b47e9d4a64a3e1790089074c88de8f",
+  "files": [
+    {
+      "kind": "modified",
+      "new_lines": 302,
+      "old_lines": 266,
+      "path": "FORMAT.md",
+      "ranges": [
+        {
+          "new_end": 38,
+          "new_start": 36,
+          "old_end": 36,
+          "old_start": 36,
+          "operation": "replace"
+        },
+        {
+          "new_end": 176,
+          "new_start": 176,
+          "old_end": 174,
+          "old_start": 174,
+          "operation": "replace"
+        },
+        {
+          "new_end": 183,
+          "new_start": 180,
+          "old_end": 180,
+          "old_start": 178,
+          "operation": "replace"
+        },
+        {
+          "new_end": 199,
+          "new_start": 198,
+          "old_end": 196,
+          "old_start": 195,
+          "operation": "replace"
+        },
+        {
+          "new_end": 209,
+          "new_start": 206,
+          "old_end": 204,
+          "old_start": 203,
+          "operation": "replace"
+        },
+        {
+          "new_end": 227,
+          "new_start": 225,
+          "old_end": 221,
+          "old_start": 220,
+          "operation": "replace"
+        },
+        {
+          "new_end": 257,
+          "new_start": 255,
+          "old_end": 250,
+          "old_start": 249,
+          "operation": "replace"
+        },
+        {
+          "new_end": 302,
+          "new_start": 274,
+          "old_end": 266,
+          "old_start": 267,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 87,
+      "old_lines": 87,
+      "path": "PROOFS.md",
+      "ranges": [
+        {
+          "new_end": 79,
+          "new_start": 78,
+          "old_end": 79,
+          "old_start": 78,
+          "operation": "replace"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 888,
+      "old_lines": 382,
+      "path": "REPORT.md",
+      "ranges": [
+        {
+          "new_end": 4,
+          "new_start": 2,
+          "old_end": 1,
+          "old_start": 2,
+          "operation": "insert"
+        },
+        {
+          "new_end": 235,
+          "new_start": 234,
+          "old_end": 231,
+          "old_start": 231,
+          "operation": "replace"
+        },
+        {
+          "new_end": 850,
+          "new_start": 351,
+          "old_end": 346,
+          "old_start": 347,
+          "operation": "insert"
+        },
+        {
+          "new_end": 857,
+          "new_start": 853,
+          "old_end": 352,
+          "old_start": 349,
+          "operation": "replace"
+        },
+        {
+          "new_end": 869,
+          "new_start": 868,
+          "old_end": 364,
+          "old_start": 363,
+          "operation": "replace"
+        },
+        {
+          "new_end": 884,
+          "new_start": 882,
+          "old_end": 378,
+          "old_start": 377,
+          "operation": "replace"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 29,
+      "old_lines": 29,
+      "path": "audit.json",
+      "ranges": [
+        {
+          "new_end": 3,
+          "new_start": 3,
+          "old_end": 3,
+          "old_start": 3,
+          "operation": "replace"
+        },
+        {
+          "new_end": 8,
+          "new_start": 8,
+          "old_end": 8,
+          "old_start": 8,
+          "operation": "replace"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 1,
+      "old_lines": 1,
+      "path": "audit.log",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 1,
+          "old_start": 1,
+          "operation": "replace"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 212,
+      "old_lines": 0,
+      "path": "audit_regression.py",
+      "ranges": [
+        {
+          "new_end": 212,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 25,
+      "old_lines": 25,
+      "path": "benchmark.json",
+      "ranges": [
+        {
+          "new_end": 12,
+          "new_start": 12,
+          "old_end": 12,
+          "old_start": 12,
+          "operation": "replace"
+        },
+        {
+          "new_end": 18,
+          "new_start": 17,
+          "old_end": 18,
+          "old_start": 17,
+          "operation": "replace"
+        },
+        {
+          "new_end": 21,
+          "new_start": 21,
+          "old_end": 21,
+          "old_start": 21,
+          "operation": "replace"
+        },
+        {
+          "new_end": 24,
+          "new_start": 24,
+          "old_end": 24,
+          "old_start": 24,
+          "operation": "replace"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 0,
+      "old_lines": 0,
+      "path": "fixtures/round2/B4p-accepted/UNKNOWN.g6",
+      "ranges": []
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "fixtures/round2/B4p-accepted/claim.g6",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 3,
+      "old_lines": 0,
+      "path": "fixtures/round2/B4p-accepted/input.g6",
+      "ranges": [
+        {
+          "new_end": 3,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 3,
+      "old_lines": 0,
+      "path": "fixtures/round2/B4p-accepted/records.jsonl",
+      "ranges": [
+        {
+          "new_end": 3,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 9,
+      "old_lines": 0,
+      "path": "fixtures/round2/B4p-accepted/run.json",
+      "ranges": [
+        {
+          "new_end": 9,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 0,
+      "old_lines": 0,
+      "path": "fixtures/round2/B4p-wrong-claim/UNKNOWN.g6",
+      "ranges": []
+    },
+    {
+      "kind": "new",
+      "new_lines": 0,
+      "old_lines": 0,
+      "path": "fixtures/round2/B4p-wrong-claim/claim.g6",
+      "ranges": []
+    },
+    {
+      "kind": "new",
+      "new_lines": 3,
+      "old_lines": 0,
+      "path": "fixtures/round2/B4p-wrong-claim/input.g6",
+      "ranges": [
+        {
+          "new_end": 3,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 3,
+      "old_lines": 0,
+      "path": "fixtures/round2/B4p-wrong-claim/records.jsonl",
+      "ranges": [
+        {
+          "new_end": 3,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 9,
+      "old_lines": 0,
+      "path": "fixtures/round2/B4p-wrong-claim/run.json",
+      "ranges": [
+        {
+          "new_end": 9,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 67,
+      "old_lines": 0,
+      "path": "fixtures/round2/minimal-comparisons.json",
+      "ranges": [
+        {
+          "new_end": 67,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "modified",
+      "new_lines": 979,
+      "old_lines": 976,
+      "path": "gp10check.py",
+      "ranges": [
+        {
+          "new_end": 44,
+          "new_start": 43,
+          "old_end": 42,
+          "old_start": 43,
+          "operation": "insert"
+        },
+        {
+          "new_end": 601,
+          "new_start": 601,
+          "old_end": 599,
+          "old_start": 599,
+          "operation": "replace"
+        },
+        {
+          "new_end": 632,
+          "new_start": 632,
+          "old_end": 630,
+          "old_start": 630,
+          "operation": "replace"
+        },
+        {
+          "new_end": 654,
+          "new_start": 654,
+          "old_end": 652,
+          "old_start": 652,
+          "operation": "replace"
+        },
+        {
+          "new_end": 663,
+          "new_start": 663,
+          "old_end": 661,
+          "old_start": 661,
+          "operation": "replace"
+        },
+        {
+          "new_end": 671,
+          "new_start": 670,
+          "old_end": 668,
+          "old_start": 668,
+          "operation": "replace"
+        },
+        {
+          "new_end": 680,
+          "new_start": 680,
+          "old_end": 677,
+          "old_start": 677,
+          "operation": "replace"
+        },
+        {
+          "new_end": 703,
+          "new_start": 703,
+          "old_end": 700,
+          "old_start": 700,
+          "operation": "replace"
+        },
+        {
+          "new_end": 726,
+          "new_start": 726,
+          "old_end": 723,
+          "old_start": 723,
+          "operation": "replace"
+        },
+        {
+          "new_end": 756,
+          "new_start": 756,
+          "old_end": 753,
+          "old_start": 753,
+          "operation": "replace"
+        },
+        {
+          "new_end": 758,
+          "new_start": 758,
+          "old_end": 755,
+          "old_start": 755,
+          "operation": "replace"
+        },
+        {
+          "new_end": 890,
+          "new_start": 890,
+          "old_end": 887,
+          "old_start": 887,
+          "operation": "replace"
+        },
+        {
+          "new_end": 932,
+          "new_start": 932,
+          "old_end": 929,
+          "old_start": 929,
+          "operation": "replace"
+        },
+        {
+          "new_end": 934,
+          "new_start": 934,
+          "old_end": 931,
+          "old_start": 931,
+          "operation": "replace"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 2,
+      "old_lines": 0,
+      "path": "round2-benchmark.log",
+      "ranges": [
+        {
+          "new_end": 2,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 2792,
+      "old_lines": 0,
+      "path": "round2-regression.json",
+      "ranges": [
+        {
+          "new_end": 2792,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 315,
+      "old_lines": 0,
+      "path": "round2-regression.log",
+      "ranges": [
+        {
+          "new_end": 315,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 595,
+      "old_lines": 0,
+      "path": "round2-review.json",
+      "ranges": [
+        {
+          "new_end": 595,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 1,
+      "old_lines": 0,
+      "path": "round2-review.log",
+      "ranges": [
+        {
+          "new_end": 1,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 77,
+      "old_lines": 0,
+      "path": "round2-selftest.log",
+      "ranges": [
+        {
+          "new_end": 77,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    },
+    {
+      "kind": "new",
+      "new_lines": 154,
+      "old_lines": 0,
+      "path": "round2_review.py",
+      "ranges": [
+        {
+          "new_end": 154,
+          "new_start": 1,
+          "old_end": 0,
+          "old_start": 1,
+          "operation": "insert"
+        }
+      ]
+    }
+  ],
+  "no_em_dash": "PASS",
+  "original_selftest_output": "identical",
+  "regression_checks": 314,
+  "source_review": {
+    "changed_functions": [
+      "Run.controls",
+      "Run.execute",
+      "Run.load_input",
+      "Run.minimality",
+      "Run.profile_controls",
+      "compare_control_minimals"
+    ],
+    "functions_checked": 59,
+    "minimality_decision_logic": "unchanged",
+    "unchanged_functions": 53,
+    "unrelated_globals": "unchanged"
+  },
+  "status": "PASS",
+  "syntax": "PASS"
+}

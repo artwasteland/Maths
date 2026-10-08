@@ -1,0 +1,2 @@
+u22 top certificates: four TU witnesses checked from edges, exact graph-list coverage; blind algebraic refutations 4 accepted, proof nodes 4
+u23 s50: blind refutation ACCEPT, nodes 15, graph sha256 c90a07cd8b4495d5bca46687e8d2c19d43e81ea5dd6b17f7f98eb1a7f3355f0e

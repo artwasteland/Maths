@@ -1,0 +1,63 @@
+{
+ "primes": [
+  "2^61-1",
+  "2^127-1"
+ ],
+ "points_per_prime": 3,
+ "seed": 20260925,
+ "counts": {
+  "not polynomial: tree": 103,
+  "null ok": 22,
+  "not polynomial: tu": 13,
+  "real-dag ok": 97,
+  "real ok": 24,
+  "null-dag ok": 65
+ },
+ "identities_checked_per_point": 2071,
+ "failures": [],
+ "red_controls": [
+  {
+   "control": "null: first cofactor's first coefficient + 1",
+   "red": true,
+   "reason": "cofactor identity fails"
+  },
+  {
+   "control": "null: a cofactor term dropped",
+   "red": true,
+   "reason": "cofactor identity fails"
+  },
+  {
+   "control": "real: f's first coefficient + 1",
+   "red": true,
+   "reason": "cofactor identity fails"
+  },
+  {
+   "control": "null-dag: row 0 poly coefficient + 1",
+   "red": true,
+   "reason": "row 0 identity fails"
+  },
+  {
+   "control": "null-dag: last row's cofactors emptied",
+   "red": true,
+   "reason": "row 17 identity fails"
+  },
+  {
+   "control": "real-dag: an SOS weight doubled",
+   "red": true,
+   "reason": "SOS identity fails"
+  },
+  {
+   "control": "real: the SOS constant changed",
+   "red": true,
+   "reason": "SOS identity fails"
+  },
+  {
+   "control": "real-dag: a frame swapped for a non-edge",
+   "red": true,
+   "reason": "frame is not an edge"
+  }
+ ],
+ "all_red": true,
+ "seconds": 114,
+ "verdict": "MODP PASS"
+}

@@ -1,0 +1,442 @@
+{
+  "added_unrun_shards": null,
+  "artifacts": {
+    "input.g6": "87428bb8daccb12196d2f20f7dc8154a2a793a007edb680c08248a558d51a788",
+    "unknown-records.jsonl.gz": "25409b9276d343ad5765de96fbbca9c2c2ac41d44f417f4e5dcc0a68745c2999"
+  },
+  "bundle_unknown": 244,
+  "count": 244,
+  "excluded_decided_by_state": 0,
+  "helper_sha256": "480bd174eed52939912939abe5b567026536454caf6333d0aa28270b1fa0533d",
+  "predecessors": [
+    {
+      "assigned": 99,
+      "bundle": "<repo>/f1-bundles/f1-008",
+      "summary_sha256": "dac19a1cca9d2207f64f92e8412f6d48167a41b1cd6936b590e24bda162b1eef",
+      "unknown": 3
+    },
+    {
+      "assigned": 108,
+      "bundle": "<repo>/f1-bundles/f1-009",
+      "summary_sha256": "4546f0d113bf02bb7bfced83e78379fac51b8c1442574cde2435fde5bc855a91",
+      "unknown": 2
+    },
+    {
+      "assigned": 108,
+      "bundle": "<repo>/f1-bundles/f1-010",
+      "summary_sha256": "5a55ee6da7e7cc1143b23ef2dbeee5bf1a2d133cc81491ce12cd9476ca6799c0",
+      "unknown": 3
+    },
+    {
+      "assigned": 88,
+      "bundle": "<repo>/f1-bundles/f1-011",
+      "summary_sha256": "ff595cb599e4d54269f7fec8886fcd6812bbd0dddfaaf716a269b73d3890481b",
+      "unknown": 1
+    },
+    {
+      "assigned": 91,
+      "bundle": "<repo>/f1-bundles/f1-016",
+      "summary_sha256": "d5e3565eb385cb3de0dba2010164ed5e41d17dee7c592cdd9e1f32bfdb88a279",
+      "unknown": 2
+    },
+    {
+      "assigned": 80,
+      "bundle": "<repo>/f1-bundles/f1-019",
+      "summary_sha256": "40beaca0ab188206aeb59fc5e459609ff95f13fa592d803f0e1b94987c7dee18",
+      "unknown": 1
+    },
+    {
+      "assigned": 82,
+      "bundle": "<repo>/f1-bundles/f1-024",
+      "summary_sha256": "a4c68421c4ddf1c9f5b88bef01f9aa32f117f12c853d178e3a5452a4503cd1a5",
+      "unknown": 5
+    },
+    {
+      "assigned": 95,
+      "bundle": "<repo>/f1-bundles/f1-025",
+      "summary_sha256": "dfa8457be9d629baa1ecfb7d1650e21d69dec1c4bb3b8f1b9e71cc49556da1ce",
+      "unknown": 5
+    },
+    {
+      "assigned": 87,
+      "bundle": "<repo>/f1-bundles/f1-026",
+      "summary_sha256": "6d869826173c48287c8fc67da32406a0c1f77b9d036a9117320c9cdea1dac473",
+      "unknown": 1
+    },
+    {
+      "assigned": 85,
+      "bundle": "<repo>/f1-bundles/f1-027",
+      "summary_sha256": "4997539501efac7b4dfaa9a9c8dde6b82856152b94bf75d655117e862a89814e",
+      "unknown": 3
+    },
+    {
+      "assigned": 84,
+      "bundle": "<repo>/f1-bundles/f1-033",
+      "summary_sha256": "eb849ed42599ec0aa68dacf3a51895aca45640d4b7a1faea16267494fd004ae8",
+      "unknown": 2
+    },
+    {
+      "assigned": 85,
+      "bundle": "<repo>/f1-bundles/f1-034",
+      "summary_sha256": "772fde77faf9e9bcf2edf51463b11b4c77ba1ec40e7cfc1e92680162e78ad6e4",
+      "unknown": 5
+    },
+    {
+      "assigned": 92,
+      "bundle": "<repo>/f1-bundles/f1-040",
+      "summary_sha256": "a914c30eb2358990ec542d32166e4da0f23e18f636fd3a40e5513177527c13cf",
+      "unknown": 5
+    },
+    {
+      "assigned": 89,
+      "bundle": "<repo>/f1-bundles/f1-041",
+      "summary_sha256": "44daf55d64144eaf3b536b9528e4a369225f81ab2d0a4fc889d891dadcfbdcd7",
+      "unknown": 2
+    },
+    {
+      "assigned": 101,
+      "bundle": "<repo>/f1-bundles/f1-042",
+      "summary_sha256": "9d18a849a601d559ac010befb0d988e77bd969d541f33f3aaf6043b1cee74110",
+      "unknown": 2
+    },
+    {
+      "assigned": 88,
+      "bundle": "<repo>/f1-bundles/f1-048",
+      "summary_sha256": "f6e50ee98576d1facf1e73c46455e9ea5851baf0e7d915264bca931f49dfefbb",
+      "unknown": 1
+    },
+    {
+      "assigned": 82,
+      "bundle": "<repo>/f1-bundles/f1-049",
+      "summary_sha256": "29a46a8ecd79555313eb668a3d389f70f34f12146dce033815662b896fa2baac",
+      "unknown": 4
+    },
+    {
+      "assigned": 87,
+      "bundle": "<repo>/f1-bundles/f1-050",
+      "summary_sha256": "16d440d954fea85197abd04560b480a31c9b972deca5c38444fce1f765f366c7",
+      "unknown": 1
+    },
+    {
+      "assigned": 94,
+      "bundle": "<repo>/f1-bundles/f1-051",
+      "summary_sha256": "56e345275de8846b06263f5193472d2ec557e8956aecda6d68a12f1fd40d34b4",
+      "unknown": 4
+    },
+    {
+      "assigned": 100,
+      "bundle": "<repo>/f1-bundles/f1-056",
+      "summary_sha256": "ac7f629849417010441f63cb3c69957a64e7e506ecfaf8e01f5a921d083bba20",
+      "unknown": 6
+    },
+    {
+      "assigned": 103,
+      "bundle": "<repo>/f1-bundles/f1-057",
+      "summary_sha256": "0724e32bfcbd86142e769925cb0765e5857868709f98c1b26e2adbef1d390e0d",
+      "unknown": 4
+    },
+    {
+      "assigned": 79,
+      "bundle": "<repo>/f1-bundles/f1-059",
+      "summary_sha256": "aa02a158df2d07376eeddfe05fa88214378e83c42e2ea2362d86d9f01b0e848c",
+      "unknown": 2
+    },
+    {
+      "assigned": 99,
+      "bundle": "<repo>/f1-bundles/f1-066",
+      "summary_sha256": "29669f104331d797fe08aa4bf3a5feb13a157dfcbc0ff933e42e07506315cca3",
+      "unknown": 6
+    },
+    {
+      "assigned": 76,
+      "bundle": "<repo>/f1-bundles/f1-067",
+      "summary_sha256": "1b04b59e00713d8d04c01177a38717ddf407ecbf7a620a159d934d0e83ce273c",
+      "unknown": 2
+    },
+    {
+      "assigned": 79,
+      "bundle": "<repo>/f1-bundles/f1-074",
+      "summary_sha256": "d5dde4ff13a88d83f9df6299e50adc0cb5c358da4416becd71eb6f566a1a2917",
+      "unknown": 5
+    },
+    {
+      "assigned": 77,
+      "bundle": "<repo>/f1-bundles/f1-075",
+      "summary_sha256": "4430a5dcd7ff2dba4b5fd5f404c09e1e90ea1cb012fe5aa7d5595ba116aab572",
+      "unknown": 1
+    },
+    {
+      "assigned": 79,
+      "bundle": "<repo>/f1-bundles/f1-082",
+      "summary_sha256": "a5ba43dcee334784fb2170da3e365fd750dce4378426392529878b5f44802e16",
+      "unknown": 6
+    },
+    {
+      "assigned": 91,
+      "bundle": "<repo>/f1-bundles/f1-088",
+      "summary_sha256": "019bcbf1dbdd4a64ad971289ef8e94ac07b0338c5e0d5da3ec15a313f3b43588",
+      "unknown": 8
+    },
+    {
+      "assigned": 94,
+      "bundle": "<repo>/f1-bundles/f1-089",
+      "summary_sha256": "e84cc8dadd8cfb8990aa4d963fabe1aee1105d2512ec9f42d3d582474dbd8603",
+      "unknown": 6
+    },
+    {
+      "assigned": 99,
+      "bundle": "<repo>/f1-bundles/f1-096",
+      "summary_sha256": "be18c69b582969feba09a8b65afa1fc95f4a75b82594a9c709d7d1b0ddd5b1b6",
+      "unknown": 5
+    },
+    {
+      "assigned": 72,
+      "bundle": "<repo>/f1-bundles/f1-097",
+      "summary_sha256": "aa1c4732658e756f9deec6ce4bb01906ace6f8472ba24fc1c1856cda7173d214",
+      "unknown": 4
+    },
+    {
+      "assigned": 91,
+      "bundle": "<repo>/f1-bundles/f1-098",
+      "summary_sha256": "cc6c5e2cf78f1af3143a20948095ff909e0c6f0cbd4d12cbcfed7e6da3dfff2c",
+      "unknown": 2
+    },
+    {
+      "assigned": 100,
+      "bundle": "<repo>/f1-bundles/f1-099",
+      "summary_sha256": "afddf334204d43ac65cbccdea561997df883dab7892c7dc622dc2764b5a1da8c",
+      "unknown": 4
+    },
+    {
+      "assigned": 90,
+      "bundle": "<repo>/f1-bundles/f1-104",
+      "summary_sha256": "0087dbcc8b6b73e34ecd577329346587ebe78661d404437409b3179d3020cd86",
+      "unknown": 3
+    },
+    {
+      "assigned": 96,
+      "bundle": "<repo>/f1-bundles/f1-105",
+      "summary_sha256": "1b47ef8247b73c5a62ca54a4eaf08607e34ccd15a7f575166f9dcfe939b9769b",
+      "unknown": 2
+    },
+    {
+      "assigned": 80,
+      "bundle": "<repo>/f1-bundles/f1-113",
+      "summary_sha256": "6b83fd273437edfb1a8e4c03374d4a9646d1522fea02ac07a0bf5df96a417e23",
+      "unknown": 5
+    },
+    {
+      "assigned": 94,
+      "bundle": "<repo>/f1-bundles/f1-114",
+      "summary_sha256": "07f379df715c70ccf8b5fade38e8ae877b97e09919681f7f468d247e04e85b36",
+      "unknown": 4
+    },
+    {
+      "assigned": 92,
+      "bundle": "<repo>/f1-bundles/f1-115",
+      "summary_sha256": "30e42997ec68ec9f705f34934a958f11a5d9554cc4ab65b665bb15c30b055f94",
+      "unknown": 4
+    },
+    {
+      "assigned": 88,
+      "bundle": "<repo>/f1-bundles/f1-120",
+      "summary_sha256": "d1cff7c7aa2051b0a90aa9183ae9c2938bfe54bc6694c116f56f8e0ff74e77d4",
+      "unknown": 8
+    },
+    {
+      "assigned": 98,
+      "bundle": "<repo>/f1-bundles/f1-121",
+      "summary_sha256": "70e691dfa3f7f9aaa218ecda7dd685a2d6a050b9393cc0c2d727dd15be532a71",
+      "unknown": 3
+    },
+    {
+      "assigned": 101,
+      "bundle": "<repo>/f1-bundles/f1-122",
+      "summary_sha256": "acde80f8fcda2384144ceb8ca7ca2f2f4e986eae6163c793a4db5de0f59c2cdd",
+      "unknown": 4
+    },
+    {
+      "assigned": 92,
+      "bundle": "<repo>/f1-bundles/f1-128",
+      "summary_sha256": "54e9ebd831c9621dcc25ceeefcb571df5d5cae84964b015727e52424585adcea",
+      "unknown": 3
+    },
+    {
+      "assigned": 95,
+      "bundle": "<repo>/f1-bundles/f1-130",
+      "summary_sha256": "1e7ad518dbe6386149356838439077058b35edcb36cf6d886ea3d969ac3a432f",
+      "unknown": 2
+    },
+    {
+      "assigned": 97,
+      "bundle": "<repo>/f1-bundles/f1-131",
+      "summary_sha256": "b83e9c775039adfa813df270d2702a273666034c7ff0f0961480da99622037f7",
+      "unknown": 5
+    },
+    {
+      "assigned": 81,
+      "bundle": "<repo>/f1-bundles/f1-136",
+      "summary_sha256": "0b13a9ec4788b3ecdad88c8a4e24936c2b6f0a2341cbd229780b1071010d736e",
+      "unknown": 2
+    },
+    {
+      "assigned": 96,
+      "bundle": "<repo>/f1-bundles/f1-137",
+      "summary_sha256": "8cd3953549947167ed3784447a80fb3c9911d457ee085f5ad31b70013edc186a",
+      "unknown": 3
+    },
+    {
+      "assigned": 84,
+      "bundle": "<repo>/f1-bundles/f1-138",
+      "summary_sha256": "e1167e59a7aa97171a8ce0dd6a44c2008458a0d255982db6774b242792210422",
+      "unknown": 5
+    },
+    {
+      "assigned": 99,
+      "bundle": "<repo>/f1-bundles/f1-144",
+      "summary_sha256": "0c049bbf3a021ced64c7e1381a091b871074f5e975251796f545fd8a3f1e8e8e",
+      "unknown": 4
+    },
+    {
+      "assigned": 99,
+      "bundle": "<repo>/f1-bundles/f1-145",
+      "summary_sha256": "9f184d46b0ae75af4a56349bc637c42283dee8d4abc4d409e33020030d00188a",
+      "unknown": 5
+    },
+    {
+      "assigned": 87,
+      "bundle": "<repo>/f1-bundles/f1-147",
+      "summary_sha256": "f98e6bc4616ed0b80381e0bc2092658bc0ecded3eda742c7300889663fdfa0a4",
+      "unknown": 2
+    },
+    {
+      "assigned": 85,
+      "bundle": "<repo>/f1-bundles/f1-152",
+      "summary_sha256": "dde64a689ff70a5e677436d809862c9063f37af5c1c3ecc3e8b3035c96163356",
+      "unknown": 2
+    },
+    {
+      "assigned": 79,
+      "bundle": "<repo>/f1-bundles/f1-154",
+      "summary_sha256": "bbd595c2bbd148f439bd71c8075c7d7b06925816df84a62779251b05836aa8bc",
+      "unknown": 1
+    },
+    {
+      "assigned": 110,
+      "bundle": "<repo>/f1-bundles/f1-160",
+      "summary_sha256": "072c3e2e2ae8d8814fd9c2c34ad7516b8006a994289adb895706953fdbbe0d99",
+      "unknown": 7
+    },
+    {
+      "assigned": 98,
+      "bundle": "<repo>/f1-bundles/f1-161",
+      "summary_sha256": "bd298aea4da8d454915cadcf2fa9943a552cac1182164845dc816669e1649fa3",
+      "unknown": 4
+    },
+    {
+      "assigned": 93,
+      "bundle": "<repo>/f1-bundles/f1-162",
+      "summary_sha256": "2a09399f1a71080a54c4a13e1b364f06513614a0a621748193ba02df36954ed9",
+      "unknown": 3
+    },
+    {
+      "assigned": 84,
+      "bundle": "<repo>/f1-bundles/f1-163",
+      "summary_sha256": "496aafc3357b5ebd98e0ee20eae87cc00cf08d53441ba88be582a014e8bdcda2",
+      "unknown": 3
+    },
+    {
+      "assigned": 95,
+      "bundle": "<repo>/f1-bundles/f1-168",
+      "summary_sha256": "6fa70eb663769a3fdeb51912ef10f00568476a3d4590ab5b3ba849f175f028a7",
+      "unknown": 2
+    },
+    {
+      "assigned": 92,
+      "bundle": "<repo>/f1-bundles/f1-169",
+      "summary_sha256": "c90479a16ecd28e3a4f1eb2615e7a8dbdbf3198b57b6dd8a6355d044423cdf30",
+      "unknown": 5
+    },
+    {
+      "assigned": 92,
+      "bundle": "<repo>/f1-bundles/f1-170",
+      "summary_sha256": "e823d06d6da6b63f09379bc2277e6b6aaf9f18b65f58c80797725540a52db319",
+      "unknown": 2
+    },
+    {
+      "assigned": 86,
+      "bundle": "<repo>/f1-bundles/f1-171",
+      "summary_sha256": "9dfcb40487f1a550af6a653c64ce47eec3fbb1363ff70ef0c91d383006ed1656",
+      "unknown": 3
+    },
+    {
+      "assigned": 100,
+      "bundle": "<repo>/f1-bundles/f1-176",
+      "summary_sha256": "9ef7b43cdbc51682dffde9ec3c099c7168cfc9d90ba73bf826208c7055c77be0",
+      "unknown": 5
+    },
+    {
+      "assigned": 89,
+      "bundle": "<repo>/f1-bundles/f1-177",
+      "summary_sha256": "318a1be0ef2cf4c0457af7cc747745fc20f5ecabc7bc8e2fb3f726a22da86bf1",
+      "unknown": 4
+    },
+    {
+      "assigned": 94,
+      "bundle": "<repo>/f1-bundles/f1-178",
+      "summary_sha256": "1612c9698ced3efbfdec555caa74823922d76f422d652ade9d58d16061b2fe84",
+      "unknown": 3
+    },
+    {
+      "assigned": 76,
+      "bundle": "<repo>/f1-bundles/f1-179",
+      "summary_sha256": "247e84fcb6d3e86085960d85a59bbe1d961d9969e69252236d565a761dc4bcb0",
+      "unknown": 1
+    },
+    {
+      "assigned": 90,
+      "bundle": "<repo>/f1-bundles/f1-184",
+      "summary_sha256": "060275d287993aa3a5a2e1b193d6cc0534fc1b5b704b97fd0c096ef564bcd5d8",
+      "unknown": 3
+    },
+    {
+      "assigned": 88,
+      "bundle": "<repo>/f1-bundles/f1-185",
+      "summary_sha256": "de6303bc8974adb427db1ece312af4decb82b8d85c53b140c3fe79679c0a65c9",
+      "unknown": 3
+    },
+    {
+      "assigned": 94,
+      "bundle": "<repo>/f1-bundles/f1-186",
+      "summary_sha256": "d61dd3d8ed03504180a99d0fa4ae592465f806dd07e679856e2edca074f1fc6c",
+      "unknown": 3
+    },
+    {
+      "assigned": 81,
+      "bundle": "<repo>/f1-bundles/f1-187",
+      "summary_sha256": "1e5bed5349b1e261416406bbf009236f98a7d6320b35419c132f9d915c3689c0",
+      "unknown": 3
+    },
+    {
+      "assigned": 84,
+      "bundle": "<repo>/f1-bundles/f1-188",
+      "summary_sha256": "5ad2fe3124633bd660ef916d60538eca62e8d4be14fa0911c1ed9f62d014233a",
+      "unknown": 6
+    },
+    {
+      "assigned": 68,
+      "bundle": "<repo>/f1-bundles/f1-189",
+      "summary_sha256": "bcc385bffee357364334287afa421bcbf1869530e6bfe46cfd4ea57d4f973cd1",
+      "unknown": 3
+    },
+    {
+      "assigned": 89,
+      "bundle": "<repo>/f1-bundles/f1-190",
+      "summary_sha256": "de1530aee055c58d915f93ca11a9783d6f2fc1e02409d51933adfb15f2879733",
+      "unknown": 1
+    }
+  ],
+  "purpose": "frontier_allocation_only",
+  "schema": 1,
+  "state": "<repo>/population-cheap-state/state.sqlite"
+}

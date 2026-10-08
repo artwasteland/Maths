@@ -1,0 +1,14 @@
+{
+  "method": "extension",
+  "cap": 3.0,
+  "count": 500,
+  "counts": {
+    "unknown": 500
+  },
+  "extra": {},
+  "seconds": 15.099235001020133,
+  "max_rss_kib": 146320,
+  "min_MemAvailable_kib": 5461336,
+  "cpu_self": 7.907158,
+  "cpu_children": 7.848980999999999
+}

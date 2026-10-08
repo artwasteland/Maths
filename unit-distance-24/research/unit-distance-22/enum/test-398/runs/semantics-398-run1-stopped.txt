@@ -1,0 +1,10 @@
+new udenum a99b130ab5ad0386265c429b78cf3c4a4c708e1d5dd6e222bec14a4596c16a84; new udfilter b0947a10659b78059013d3d99ba22b8ddc116e9add7d3ce0c4e34c098407a09e; matcher32 5c95b5227064ce0c267643c5f3cff761501f50cae6329e635fceb06518849aba; forbidden-398.g6 91d5810c4d7b02d97afec7dfe2a2a5629f2075439100aa8eae6b60dca4ff4381
+dag-22-61/11-19              P74  18668 (398-hits    505) P398  18163 | C74  59129 (398-hits  10957) expected  48172 C398  48172 | EQUAL (udfilter agrees True, nx negatives 6, witnesses 11462)
+dag-22-61/11-20              P74   3333 (398-hits    362) P398   2971 | C74   5737 (398-hits   1308) expected   4429 C398   4429 | EQUAL (udfilter agrees True, nx negatives 3, witnesses 1670)
+dag-22-61/11-21              P74    247 (398-hits      9) P398    238 | C74    363 (398-hits     20) expected    343 C398    343 | EQUAL (udfilter agrees True, nx negatives 2, witnesses 29)
+dag-22-61/11-22              P74    247 (398-hits      9) P398    238 | C74     25 (398-hits      0) expected     25 C398     25 | EQUAL (udfilter agrees True, nx negatives 1, witnesses 9)
+dag-22-61/11-23              P74     20 (398-hits      0) P398     20 | C74      2 (398-hits      0) expected      2 C398      2 | EQUAL (udfilter agrees True, nx negatives 1, witnesses 0)
+dag-22-61/12-23              P74   6125 (398-hits   1328) P398   4797 | C74  16281 (398-hits   4831) expected  11450 C398  11450 | EQUAL (udfilter agrees True, nx negatives 1, witnesses 6159)
+dag-22-61/12-24              P74   6127 (398-hits   1328) P398   4799 | C74   1034 (398-hits    113) expected    921 C398    921 | EQUAL (udfilter agrees True, nx negatives 1, witnesses 1441)
+dag-22-61/12-25              P74    390 (398-hits     20) P398    370 | C74     81 (398-hits      2) expected     79 C398     79 | EQUAL (udfilter agrees True, nx negatives 1, witnesses 22)
+dag-22-61/12-26              P74     27 (398-hits      0) P398     27 | C74      6 (398-hits      0) expected      6 C398      6 | EQUAL (udfilter agrees True, nx negatives 1, witnesses 0)

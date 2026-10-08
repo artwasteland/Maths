@@ -1,0 +1,35 @@
+{
+  "checker_sha256": "9064ccc64ae900aee07672f14d4e3fec4f4cb6a09ec0042bb2db7e6e8df3ce6f",
+  "claim_authorized": false,
+  "detail": "records_rejected: 1",
+  "direct_rejections": 1,
+  "elapsed_seconds": 0.05238291202113032,
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 85188,
+    "nice": 19,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "hosts": false,
+      "path": "<repo>/research/gp-10/check-audit/cases/coordinate-not-reduced/records.jsonl",
+      "sha256": "e15c399f318a2b301bafb5177e451deae30fcf668e07414c010abd4517fcb8c4"
+    }
+  ],
+  "forbidden_limit": 9,
+  "input_count": 1,
+  "input_sha256": "49f558aab4209c80066049f107a9ac52f26228dff440ab337f9e7c157bbbbe77",
+  "kernel_sha256": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+  "profile": "sample",
+  "reason": "records_rejected",
+  "scope": "certificate-and-run-checks",
+  "status": "REJECT",
+  "trusted_data_sha256": {
+    "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  }
+}

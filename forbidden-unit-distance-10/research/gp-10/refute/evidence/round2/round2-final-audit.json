@@ -1,0 +1,108 @@
+{
+  "retry_records": {
+    "run": "evidence/round2/checker-focused-retries",
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "records": 18,
+    "refuted": 18,
+    "unknown": [],
+    "certificate_types": {
+      "null": 2,
+      "tree": 13,
+      "real": 3
+    },
+    "max_line_bytes": 3370754
+  },
+  "GP74": {
+    "run": "evidence/round2/checker-GP74-round2",
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "records": 74,
+    "refuted": 73,
+    "unknown": [
+      "HGEAXjw"
+    ],
+    "certificate_types": {
+      "tree": 67,
+      "null": 3,
+      "real": 3
+    },
+    "max_line_bytes": 3370754
+  },
+  "B8p": {
+    "run": "evidence/round2/checker-B8p-final",
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "records": 17,
+    "refuted": 17,
+    "unknown": [],
+    "certificate_types": {
+      "tu": 11,
+      "tree": 5,
+      "null": 1
+    },
+    "max_line_bytes": 491639,
+    "fresh_cumulative_by_certificate_type": {
+      "tu": 11,
+      "tree": 16,
+      "null": 6,
+      "real": 7
+    }
+  },
+  "B8p-replay": {
+    "run": "evidence/round2/checker-B8p-replay",
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "records": 17,
+    "refuted": 17,
+    "unknown": [],
+    "certificate_types": {
+      "tree": 12,
+      "null": 1,
+      "sub": 4
+    },
+    "max_line_bytes": 419666,
+    "graph_seconds": 0.6704466342926025
+  },
+  "B9p": {
+    "run": "evidence/round2/checker-B9p-final",
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "records": 101,
+    "refuted": 100,
+    "unknown": [
+      "HGEAXjw"
+    ],
+    "certificate_types": {
+      "tu": 71,
+      "real": 6,
+      "tree": 21,
+      "null": 2
+    },
+    "max_line_bytes": 3370754,
+    "fresh_cumulative_by_certificate_type": {
+      "tu": 71,
+      "tree": 92,
+      "null": 21,
+      "real": 35
+    }
+  },
+  "B9p-replay": {
+    "run": "evidence/round2/checker-B9p-replay",
+    "checker_exit": 0,
+    "final_line": "ACCEPT run verified",
+    "records": 101,
+    "refuted": 100,
+    "unknown": [
+      "HGEAXjw"
+    ],
+    "certificate_types": {
+      "tree": 49,
+      "sub": 46,
+      "real": 3,
+      "null": 2
+    },
+    "max_line_bytes": 4657940,
+    "graph_seconds": 9.24459533393383
+  }
+}

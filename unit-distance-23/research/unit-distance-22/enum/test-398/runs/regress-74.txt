@@ -1,0 +1,77 @@
+old udenum 94a85d333d753ec2f518e62ef6d2f855d56b22dc6f3b890f53aa9575680f57b4 (production 94a85d333d753ec2f518e62ef6d2f855d56b22dc6f3b890f53aa9575680f57b4: same file)
+new udenum a99b130ab5ad0386265c429b78cf3c4a4c708e1d5dd6e222bec14a4596c16a84
+dag-22-61/11-19                  parents  18668 children  59129 IDENTICAL
+dag-22-61/11-20                  parents   3333 children   5737 IDENTICAL
+dag-22-61/11-21                  parents    247 children    363 IDENTICAL
+dag-22-61/11-22                  parents    247 children     25 IDENTICAL
+dag-22-61/11-23                  parents     20 children      2 IDENTICAL
+dag-22-61/12-23                  parents   6125 children  16281 IDENTICAL
+dag-22-61/12-24                  parents   6127 children   1034 IDENTICAL
+dag-22-61/12-25                  parents    390 children     81 IDENTICAL
+dag-22-61/12-26                  parents     27 children      6 IDENTICAL
+dag-22-61/12-27                  parents      2 children      1 IDENTICAL
+dag-18-46/15-34                  parents  20654 children   5886 IDENTICAL
+dag-18-46/15-35                  parents   1162 children    252 IDENTICAL
+dag-18-46/15-36                  parents     57 children     11 IDENTICAL
+dag-18-46/15-37                  parents      2 children      1 IDENTICAL
+dag-18-46/16-38                  parents   6150 children   2045 IDENTICAL
+dag-18-46/16-39                  parents    264 children    108 IDENTICAL
+dag-18-46/16-40                  parents    264 children      6 IDENTICAL
+dag-18-46/16-41                  parents     12 children      1 IDENTICAL
+dag-18-46/17-42                  parents   2160 children    590 IDENTICAL
+dag-18-46/17-43                  parents   2160 children     15 IDENTICAL
+dag-18-46/18-46                  parents  19708 children     84 IDENTICAL
+u22-s0of48/22-61                 parents     52 children      0 IDENTICAL
+u22-s1of48/22-61                 parents      1 children      0 IDENTICAL
+u22-s2of48/22-61                 parents      2 children      0 IDENTICAL
+u22-s3of48/22-61                 parents      7 children      0 IDENTICAL
+u22-s4of48/22-61                 parents      5 children      0 IDENTICAL
+u22-s5of48/22-61                 parents     10 children      0 IDENTICAL
+u22-s6of48/22-61                 parents      1 children      0 IDENTICAL
+u22-s7of48/22-61                 parents      2 children      0 IDENTICAL
+u22-s8of48/22-61                 parents     53 children      0 IDENTICAL
+u22-s9of48/22-61                 parents      2 children      0 IDENTICAL
+u22-s10of48/22-61                parents      6 children      0 IDENTICAL
+u22-s11of48/22-61                parents     10 children      0 IDENTICAL
+u22-s12of48/22-61                parents      3 children      0 IDENTICAL
+u22-s13of48/22-61                parents      9 children      0 IDENTICAL
+u22-s14of48/22-61                parents      1 children      0 IDENTICAL
+u22-s15of48/22-61                parents      9 children      2 IDENTICAL
+u22-s16of48/22-61                parents      0 children      0 IDENTICAL
+u22-s17of48/22-61                parents      2 children      0 IDENTICAL
+u22-s18of48/22-61                parents      7 children      0 IDENTICAL
+u22-s19of48/22-61                parents      0 children      0 IDENTICAL
+u22-s20of48/22-61                parents      5 children      0 IDENTICAL
+u22-s21of48/22-61                parents      1 children      0 IDENTICAL
+u22-s22of48/22-61                parents      1 children      0 IDENTICAL
+u22-s23of48/22-61                parents      0 children      0 IDENTICAL
+u22-s24of48/22-61                parents      3 children      0 IDENTICAL
+u22-s25of48/22-61                parents      0 children      0 IDENTICAL
+u22-s26of48/22-61                parents      0 children      0 IDENTICAL
+u22-s27of48/22-61                parents     11 children      0 IDENTICAL
+u22-s28of48/22-61                parents      6 children      0 IDENTICAL
+u22-s29of48/22-61                parents      2 children      0 IDENTICAL
+u22-s30of48/22-61                parents     57 children      0 IDENTICAL
+u22-s31of48/22-61                parents      0 children      0 IDENTICAL
+u22-s32of48/22-61                parents      1 children      0 IDENTICAL
+u22-s33of48/22-61                parents      2 children      0 IDENTICAL
+u22-s34of48/22-61                parents      7 children      0 IDENTICAL
+u22-s35of48/22-61                parents      0 children      0 IDENTICAL
+u22-s36of48/22-61                parents     26 children      0 IDENTICAL
+u22-s37of48/22-61                parents      0 children      0 IDENTICAL
+u22-s38of48/22-61                parents     20 children      2 IDENTICAL
+u22-s39of48/22-61                parents      6 children      0 IDENTICAL
+u22-s40of48/22-61                parents      1 children      0 IDENTICAL
+u22-s41of48/22-61                parents      0 children      0 IDENTICAL
+u22-s42of48/22-61                parents    245 children      0 IDENTICAL
+u22-s43of48/22-61                parents      5 children      0 IDENTICAL
+u22-s44of48/22-61                parents      2 children      0 IDENTICAL
+u22-s45of48/22-61                parents      2 children      0 IDENTICAL
+u22-s46of48/22-61                parents    152 children      0 IDENTICAL
+u22-s47of48/22-61                parents      6 children      0 IDENTICAL
+RED CONTROL went red: R1 new binary --mutation-no-child-orbit on dag-22-61/12-24 (children 2157 vs reference 1034)
+RED CONTROL went red: R2 new binary --mutation-drop-first-badset on parent K3, target (4,6), against the old binary (children 1 vs reference 0)
+RED CONTROL went red: R3 new binary with --forbidden-set 398 on dag-18-46/18-46 (the 74-list cell) (children 30 vs reference 84)
+RED CONTROL went red: R4 tracked output of dag-22-61/12-24 with its last record removed (children 1034 vs reference 1033)
+cells identical: 69 of 69; children compared 91662; parents 88522; red controls 4 of 4 went red
+RESULT: PASS

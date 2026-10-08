@@ -1,0 +1,13 @@
+{
+ "records": "<repo>/runs/supervisor-mutations/other-quadratic-field.jsonl",
+ "bytes": 56556,
+ "sha256": "4b3a15e708186ef32517f8c717f2ed411cf859ec2c309b37ca2b89d15b8962ca",
+ "lines": 1,
+ "verdicts": {
+  "refuted": 1
+ },
+ "refuted_indexed": 1,
+ "duplicate_g6": 0,
+ "duplicates": [],
+ "seconds": 0.0
+}

@@ -1,0 +1,5 @@
+{
+  "quick": "The published minimal list against all 5,264 status summaries, all 34 normalized gate files and the bounded-size direct minimal-member refutations named in QUICK-SCOPE.json, selected in frozen input order.",
+  "audit": "Quick checks plus all 5,264 refutations, independent reconstruction of every deletion against separate verdict receipts, exact L11 comparison and small-order, named and regression controls; embedding verdicts and the accepted census remain historical receipts.",
+  "full": "The frozen checker over all 448,708 candidates and prerequisite controls, using the separate compressed records file."
+}

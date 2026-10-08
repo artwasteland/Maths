@@ -1,0 +1,17 @@
+{"cert":{"end":{"forbidden":1,"map":[0,1,2,6,7]},"steps":[{"gadget":0,"map":[4,2,7,3,5,6],"pair":[2,6]}],"type":"tu"},"g6":"G?K]Nc","verdict":"refuted"}
+{"cert":{"end":{"forbidden":2,"map":[7,2,4,3,6,0]},"steps":[{"gadget":0,"map":[6,0,5,1,7,2],"pair":[0,2]}],"type":"tu"},"g6":"G?Nebs","verdict":"refuted"}
+{"cert":{"end":{"forbidden":1,"map":[0,1,3,5,7]},"steps":[{"gadget":1,"map":[3,4,7,2,5,1,6],"pair":[1,5]}],"type":"tu"},"g6":"G@IQV{","verdict":"refuted"}
+{"cert":{"budget":{"limit":0.5,"method":"tu","seconds":0.02171280374750495},"reason":"exhausted"},"g6":"G@fBJs","verdict":"unknown"}
+{"cert":{"end":{"forbidden":2,"map":[7,5,1,3,6,0]},"steps":[{"gadget":2,"map":[1,6,7,3,5,2,4],"pair":[5,7]}],"type":"tu"},"g6":"GAJcrs","verdict":"refuted"}
+{"cert":{"end":{"forbidden":1,"map":[0,1,7,2,6]},"steps":[{"gadget":1,"map":[3,5,7,4,2,0,6],"pair":[0,2]}],"type":"tu"},"g6":"GHCML{","verdict":"refuted"}
+{"cert":{"budget":{"limit":0.5,"method":"tu","seconds":0.02032880438491702},"reason":"exhausted"},"g6":"G[dBG{","verdict":"unknown"}
+{"cert":{"end":{"forbidden":2,"map":[6,0,1,5,7,3]},"steps":[{"gadget":0,"map":[3,0,4,2,7,6],"pair":[0,6]}],"type":"tu"},"g6":"GdhAXk","verdict":"refuted"}
+{"cert":{"budget":{"limit":0.5,"method":"tu","seconds":0.020258032716810703},"reason":"exhausted"},"g6":"Gm__x[","verdict":"unknown"}
+{"cert":{"end":{"forbidden":0,"map":[2,4,6,7]},"steps":[{"gadget":1,"map":[0,5,7,1,2,4,3],"pair":[2,4]}],"type":"tu"},"g6":"GoDPV{","verdict":"refuted"}
+{"cert":{"end":{"forbidden":1,"map":[0,3,7,1,2]},"steps":[{"gadget":0,"map":[5,1,7,4,6,3],"pair":[1,3]}],"type":"tu"},"g6":"Gp@Gzo","verdict":"refuted"}
+{"cert":{"end":{"forbidden":1,"map":[1,2,7,0,3]},"steps":[{"gadget":0,"map":[5,2,7,4,6,3],"pair":[2,3]}],"type":"tu"},"g6":"Gq?g~o","verdict":"refuted"}
+{"cert":{"budget":{"limit":0.5,"method":"tu","seconds":0.0198884392157197},"reason":"exhausted"},"g6":"GqGTYw","verdict":"unknown"}
+{"cert":{"end":{"forbidden":1,"map":[0,3,6,1,5]},"steps":[{"gadget":0,"map":[2,0,6,4,7,5],"pair":[0,5]}],"type":"tu"},"g6":"GqGUXw","verdict":"refuted"}
+{"cert":{"budget":{"limit":0.5,"method":"tu","seconds":0.024941675830632448},"reason":"exhausted"},"g6":"GqHPW{","verdict":"unknown"}
+{"cert":{"end":{"forbidden":5,"map":[1,3,0,2,7,6,5]},"steps":[{"gadget":0,"map":[4,0,2,7,6,3],"pair":[0,3]}],"type":"tu"},"g6":"Gr`?x[","verdict":"refuted"}
+{"cert":{"budget":{"limit":0.5,"method":"tu","seconds":0.015902715735137463},"reason":"exhausted"},"g6":"GsOiho","verdict":"unknown"}

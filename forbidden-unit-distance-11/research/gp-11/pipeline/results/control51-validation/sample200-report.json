@@ -1,0 +1,63 @@
+{
+  "checker_sha256": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+  "claim_authorized": false,
+  "conditional": true,
+  "conditional_minimal": [],
+  "control": "not_a_control",
+  "counts": {
+    "embedded": 196,
+    "refuted": 3,
+    "unknown": 1
+  },
+  "cross_checks": 0,
+  "direct_rejections": 0,
+  "elapsed_seconds": 5.835882944986224,
+  "environment": {
+    "SYMPY_GROUND_TYPES": "python",
+    "executable": "<repo>/pyenv-gp10/bin/python",
+    "flint": "0.9.0",
+    "max_rss_kib": 78924,
+    "nice": 19,
+    "python": "3.12.3",
+    "sympy": "1.14.0"
+  },
+  "files": [
+    {
+      "hosts": false,
+      "path": "/tmp/control51-sample200-gp11-replay/records.jsonl",
+      "sha256": "424d1bfc0028c8c3569cd869d5c27a3fc6f3734118f8a3f8c6e0a7d83c6be8df"
+    }
+  ],
+  "forbidden_limit": 9,
+  "hosts": 0,
+  "input_count": 200,
+  "input_sha256": "f9ebbf3ff3adff1d72652496258352458d26d5a4ae93ab1ef82179df154ab687",
+  "kernel_sha256": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+  "minimal": [],
+  "profile": "sample",
+  "profile_sources": {
+    "research/gp-10/check/gp10check.py": "d717816bde784fae3314e2c73dbc85f0e786a753f776429d61ba17a4ddeeaf04",
+    "research/gp-11/CONTRACT.md": "dc4ea1bb1df5fc2011772724003799623778ebc694778965201fd18a4697ab21",
+    "research/gp-11/PROOFS.md": "b8b090aea7dd7dfa89f4c2468e029c5e69b351d3098d3ca0cf35568b397da22b",
+    "research/gp-11/check/gp11check.py": "ac1e3d94571fcabfd3f99d083ffd54cddb78ccff2138111913e67513b4560baa",
+    "research/gp-11/check/selftest.py": "6cfa561fb4fe73bbf05762e0d4dea30a47446fbf16940ac40aa45e9fbfb83691",
+    "research/gp-11/tools/write_result.py": "736ae0a31fe7ada02fb31a02908161aa105333d3d20ecc319f48b57760bbfcb0",
+    "research/unit-distance-22/check/udcheck.py": "63b7f1b5e641f130b559b67700da41297c469e0336f86a57360093cb3a0633de",
+    "research/unit-distance-22/data/forbidden-398.json": "8e8a81a145f75a6599332f50258f1bd28b5f439d19a3ed53351cbbba1b6adc7c",
+    "research/unit-distance-22/data/forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "research/unit-distance-22/data/tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629",
+    "research/unit-distance-22/sources/amp/anc/graph6.txt": "4f7da8729d4818712e8718daabce29fb7f423cd7abec07eb195f0a04d6601a49"
+  },
+  "reason": "verified",
+  "scope": "certificate-and-run-checks",
+  "status": "ACCEPT",
+  "trusted_data_sha256": {
+    "forbidden-74.json": "ff1badd63a155fe71e53e2fef54888425f47bcae1a9e7b1d43e0df04cfff3c1a",
+    "tu-gadgets.json": "a904487c6c327be215825bb129144445c16511495984cd5a3897012e906de629"
+  },
+  "unknown_rate": {
+    "budgets": "unknown-budgets.jsonl",
+    "denominator": 200,
+    "numerator": 1
+  }
+}

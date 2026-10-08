@@ -1,0 +1,4 @@
+# 2026-10-06T23:22:47Z <host>, commit e857daef1c3 + tools/retained_scan.py: python3 -B research/unit-distance-24/tools/retained_scan.py <snapshot 2026-10-06T19:40:25Z> research/unit-distance-24/evidence/judge-final-2026-10-06
+RETAINED SCAN OK: 1936 copies, 15488 retained level files measured, 0 problem(s)
+# self-test on the s50 copy (vm03), whose level-23 keep and certificate files are non-empty:
+{"original clean": true, "level-23 certificate record added": true, "... and its producer hash rebound": true, "level-23 keep file altered, hashes.json refreshed": true}

@@ -1,0 +1,1 @@
+selftest.py actual control flow: checked invocations plus two inline proof checks = 41; expected accept 18; expected reject 23; literal footer agrees True

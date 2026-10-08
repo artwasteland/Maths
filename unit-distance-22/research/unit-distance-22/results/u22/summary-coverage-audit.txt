@@ -1,0 +1,85 @@
+72 slice summaries from 18 branches matching origin/claude/reaching-noether-cloud-u22-w*
+  reaching-noether-cloud-u22-w1/s0of48: origin/claude/reaching-noether-cloud-u22-w1 35c59e55ce699e31a116c4b0d8e5ebf6b49bf76e; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w1/s12of48: origin/claude/reaching-noether-cloud-u22-w1 35c59e55ce699e31a116c4b0d8e5ebf6b49bf76e; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w1/s24of48: origin/claude/reaching-noether-cloud-u22-w1 35c59e55ce699e31a116c4b0d8e5ebf6b49bf76e; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w1/s36of48: origin/claude/reaching-noether-cloud-u22-w1 35c59e55ce699e31a116c4b0d8e5ebf6b49bf76e; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w10/s9of48: origin/claude/reaching-noether-cloud-u22-w10 387753937b6e665b0ca18714a3cbb4cbbe020337; 1 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w10/s21of48: origin/claude/reaching-noether-cloud-u22-w10 387753937b6e665b0ca18714a3cbb4cbbe020337; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w10/s33of48: origin/claude/reaching-noether-cloud-u22-w10 387753937b6e665b0ca18714a3cbb4cbbe020337; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w10/s45of48: origin/claude/reaching-noether-cloud-u22-w10 387753937b6e665b0ca18714a3cbb4cbbe020337; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w10-1zqpbf/s9of48: origin/claude/reaching-noether-cloud-u22-w10-1zqpbf 387753937b6e665b0ca18714a3cbb4cbbe020337; 1 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w10-1zqpbf/s21of48: origin/claude/reaching-noether-cloud-u22-w10-1zqpbf 387753937b6e665b0ca18714a3cbb4cbbe020337; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w10-1zqpbf/s33of48: origin/claude/reaching-noether-cloud-u22-w10-1zqpbf 387753937b6e665b0ca18714a3cbb4cbbe020337; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w10-1zqpbf/s45of48: origin/claude/reaching-noether-cloud-u22-w10-1zqpbf 387753937b6e665b0ca18714a3cbb4cbbe020337; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w11/s10of48: origin/claude/reaching-noether-cloud-u22-w11 5d83c2d9232871bbb93d0af12b8366b301b971a2; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w11/s22of48: origin/claude/reaching-noether-cloud-u22-w11 5d83c2d9232871bbb93d0af12b8366b301b971a2; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w11/s34of48: origin/claude/reaching-noether-cloud-u22-w11 5d83c2d9232871bbb93d0af12b8366b301b971a2; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w11/s46of48: origin/claude/reaching-noether-cloud-u22-w11 5d83c2d9232871bbb93d0af12b8366b301b971a2; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w12/s11of48: origin/claude/reaching-noether-cloud-u22-w12 b4e27e11ed02b13f67232a3a217123403f8aac50; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w12/s23of48: origin/claude/reaching-noether-cloud-u22-w12 b4e27e11ed02b13f67232a3a217123403f8aac50; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w12/s35of48: origin/claude/reaching-noether-cloud-u22-w12 b4e27e11ed02b13f67232a3a217123403f8aac50; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w12/s47of48: origin/claude/reaching-noether-cloud-u22-w12 b4e27e11ed02b13f67232a3a217123403f8aac50; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w12-lyg27f/s11of48: origin/claude/reaching-noether-cloud-u22-w12-lyg27f b4e27e11ed02b13f67232a3a217123403f8aac50; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w12-lyg27f/s23of48: origin/claude/reaching-noether-cloud-u22-w12-lyg27f b4e27e11ed02b13f67232a3a217123403f8aac50; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w12-lyg27f/s35of48: origin/claude/reaching-noether-cloud-u22-w12-lyg27f b4e27e11ed02b13f67232a3a217123403f8aac50; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w12-lyg27f/s47of48: origin/claude/reaching-noether-cloud-u22-w12-lyg27f b4e27e11ed02b13f67232a3a217123403f8aac50; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w13/s3of48: origin/claude/reaching-noether-cloud-u22-w13 b60ec19f832bb9502b7c23300cf6ae7f57f392a9; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w13/s15of48: origin/claude/reaching-noether-cloud-u22-w13 b60ec19f832bb9502b7c23300cf6ae7f57f392a9; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w13/s27of48: origin/claude/reaching-noether-cloud-u22-w13 b60ec19f832bb9502b7c23300cf6ae7f57f392a9; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w13/s39of48: origin/claude/reaching-noether-cloud-u22-w13 b60ec19f832bb9502b7c23300cf6ae7f57f392a9; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w14/s9of48: origin/claude/reaching-noether-cloud-u22-w14 fe10b674e67785dedcddf7535e59ead528e3581d; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w14/s21of48: origin/claude/reaching-noether-cloud-u22-w14 fe10b674e67785dedcddf7535e59ead528e3581d; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w14/s33of48: origin/claude/reaching-noether-cloud-u22-w14 fe10b674e67785dedcddf7535e59ead528e3581d; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w14/s45of48: origin/claude/reaching-noether-cloud-u22-w14 fe10b674e67785dedcddf7535e59ead528e3581d; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w14-ldvzig/s9of48: origin/claude/reaching-noether-cloud-u22-w14-ldvzig fe10b674e67785dedcddf7535e59ead528e3581d; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w14-ldvzig/s21of48: origin/claude/reaching-noether-cloud-u22-w14-ldvzig fe10b674e67785dedcddf7535e59ead528e3581d; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w14-ldvzig/s33of48: origin/claude/reaching-noether-cloud-u22-w14-ldvzig fe10b674e67785dedcddf7535e59ead528e3581d; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w14-ldvzig/s45of48: origin/claude/reaching-noether-cloud-u22-w14-ldvzig fe10b674e67785dedcddf7535e59ead528e3581d; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w2/s1of48: origin/claude/reaching-noether-cloud-u22-w2 0944e1a18cb04458a8f55da80346fad9ea7de668; 1 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w2/s13of48: origin/claude/reaching-noether-cloud-u22-w2 0944e1a18cb04458a8f55da80346fad9ea7de668; 1 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w2/s25of48: origin/claude/reaching-noether-cloud-u22-w2 0944e1a18cb04458a8f55da80346fad9ea7de668; 1 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w2/s37of48: origin/claude/reaching-noether-cloud-u22-w2 0944e1a18cb04458a8f55da80346fad9ea7de668; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w3/s2of48: origin/claude/reaching-noether-cloud-u22-w3 896295fe8086a297e3532d365cf5a6e0c5734224; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w3/s14of48: origin/claude/reaching-noether-cloud-u22-w3 896295fe8086a297e3532d365cf5a6e0c5734224; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w3/s26of48: origin/claude/reaching-noether-cloud-u22-w3 896295fe8086a297e3532d365cf5a6e0c5734224; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w3/s38of48: origin/claude/reaching-noether-cloud-u22-w3 896295fe8086a297e3532d365cf5a6e0c5734224; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w4/s3of48: origin/claude/reaching-noether-cloud-u22-w4 9b87a3940be579dec91d1820fd688e2a87252dd5; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w4/s15of48: origin/claude/reaching-noether-cloud-u22-w4 9b87a3940be579dec91d1820fd688e2a87252dd5; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w4/s27of48: origin/claude/reaching-noether-cloud-u22-w4 9b87a3940be579dec91d1820fd688e2a87252dd5; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w4/s39of48: origin/claude/reaching-noether-cloud-u22-w4 9b87a3940be579dec91d1820fd688e2a87252dd5; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w5/s4of48: origin/claude/reaching-noether-cloud-u22-w5 3c390b3daa5dee7ae9cb186c703bbe9407185771; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w5/s16of48: origin/claude/reaching-noether-cloud-u22-w5 3c390b3daa5dee7ae9cb186c703bbe9407185771; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w5/s28of48: origin/claude/reaching-noether-cloud-u22-w5 3c390b3daa5dee7ae9cb186c703bbe9407185771; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w5/s40of48: origin/claude/reaching-noether-cloud-u22-w5 3c390b3daa5dee7ae9cb186c703bbe9407185771; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w6/s5of48: origin/claude/reaching-noether-cloud-u22-w6 24ab272bcafbdca844a5cb2069bf3762305bbb47; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w6/s17of48: origin/claude/reaching-noether-cloud-u22-w6 24ab272bcafbdca844a5cb2069bf3762305bbb47; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w6/s29of48: origin/claude/reaching-noether-cloud-u22-w6 24ab272bcafbdca844a5cb2069bf3762305bbb47; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w6/s41of48: origin/claude/reaching-noether-cloud-u22-w6 24ab272bcafbdca844a5cb2069bf3762305bbb47; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w7/s6of48: origin/claude/reaching-noether-cloud-u22-w7 480538a5c3b0edd8f4132f92a39721a5ec0f3d23; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w7/s18of48: origin/claude/reaching-noether-cloud-u22-w7 480538a5c3b0edd8f4132f92a39721a5ec0f3d23; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w7/s30of48: origin/claude/reaching-noether-cloud-u22-w7 480538a5c3b0edd8f4132f92a39721a5ec0f3d23; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w7/s42of48: origin/claude/reaching-noether-cloud-u22-w7 480538a5c3b0edd8f4132f92a39721a5ec0f3d23; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w8/s7of48: origin/claude/reaching-noether-cloud-u22-w8 dab0f7c8f4fc5d8e3f1cab553c940bb9315072c2; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w8/s19of48: origin/claude/reaching-noether-cloud-u22-w8 dab0f7c8f4fc5d8e3f1cab553c940bb9315072c2; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w8/s31of48: origin/claude/reaching-noether-cloud-u22-w8 dab0f7c8f4fc5d8e3f1cab553c940bb9315072c2; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w8/s43of48: origin/claude/reaching-noether-cloud-u22-w8 dab0f7c8f4fc5d8e3f1cab553c940bb9315072c2; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w8-nmau2w/s7of48: origin/claude/reaching-noether-cloud-u22-w8-nmau2w e7c9560b1c59986ac3a849ea45c9956b703300e5; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w8-nmau2w/s19of48: origin/claude/reaching-noether-cloud-u22-w8-nmau2w e7c9560b1c59986ac3a849ea45c9956b703300e5; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w8-nmau2w/s31of48: origin/claude/reaching-noether-cloud-u22-w8-nmau2w e7c9560b1c59986ac3a849ea45c9956b703300e5; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w8-nmau2w/s43of48: origin/claude/reaching-noether-cloud-u22-w8-nmau2w e7c9560b1c59986ac3a849ea45c9956b703300e5; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w9/s8of48: origin/claude/reaching-noether-cloud-u22-w9 0f8ef5569f6e72de33e62d37bea9767d61b175de; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w9/s20of48: origin/claude/reaching-noether-cloud-u22-w9 0f8ef5569f6e72de33e62d37bea9767d61b175de; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w9/s32of48: origin/claude/reaching-noether-cloud-u22-w9 0f8ef5569f6e72de33e62d37bea9767d61b175de; 0 earlier versions of run-summary.json
+  reaching-noether-cloud-u22-w9/s44of48: origin/claude/reaching-noether-cloud-u22-w9 0f8ef5569f6e72de33e62d37bea9767d61b175de; 0 earlier versions of run-summary.json
+{"mode": "summary-only", "runs": 72, "audited": 72, "pinned": {}, "required": [], "fleets": [{"target": [22, 61], "slice_level": 13, "slice_count": 48, "summaries": 72, "slice_indices": 48, "missing_slices": 0, "prefix_files_hashed": 0, "prefix_files_identical_in": 0, "g4_results": {"null": 72}, "slice_partition": {"23": {"stage_file": 16609368, "slices_recording": 47, "sum": 16261937, "present_slices_without_a_share": [37]}, "24": {"stage_file": 3820085, "slices_recording": 47, "sum": 3740686, "present_slices_without_a_share": [37]}, "25": {"stage_file": 324822, "slices_recording": 47, "sum": 318001, "present_slices_without_a_share": [37]}, "26": {"stage_file": 12746, "slices_recording": 47, "sum": 12453, "present_slices_without_a_share": [37]}, "27": {"stage_file": 670, "slices_recording": 47, "sum": 661, "present_slices_without_a_share": [37]}, "28": {"stage_file": 63, "slices_recording": 47, "sum": 63, "present_slices_without_a_share": [37]}, "29": {"stage_file": 6, "slices_recording": 47, "sum": 6, "present_slices_without_a_share": [37]}, "30": {"stage_file": 1, "slices_recording": 47, "sum": 1, "present_slices_without_a_share": [37]}}, "prefix_cells": 23, "prefix_cells_with_parents_recorded": 23, "cells_recovered_from_history": 235, "target_cell": {"children": 4, "kept": 0, "slices_with_children": [15, 38]}}], "problems": 0, "unresolved": 9}
+UNRESOLVED: slice 37: 24 resumed cells above the slice level whose parents no copy of the slice records, nor its pushed history (levels {14: 8, 15: 8, 16: 8})
+UNRESOLVED: fleet (22,61): slices [37] record no share of (13,23)
+UNRESOLVED: fleet (22,61): slices [37] record no share of (13,24)
+UNRESOLVED: fleet (22,61): slices [37] record no share of (13,25)
+UNRESOLVED: fleet (22,61): slices [37] record no share of (13,26)
+UNRESOLVED: fleet (22,61): slices [37] record no share of (13,27)
+UNRESOLVED: fleet (22,61): slices [37] record no share of (13,28)
+UNRESOLVED: fleet (22,61): slices [37] record no share of (13,29)
+UNRESOLVED: fleet (22,61): slices [37] record no share of (13,30)
+COVERAGE (summary only) UNRESOLVED (9): the summaries contradict nothing, but they do not record everything coverage needs
+CHAIN PARTIAL (summary only; coverage unresolved in 9 places)

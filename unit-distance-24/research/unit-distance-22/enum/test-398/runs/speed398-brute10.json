@@ -1,0 +1,3241 @@
+{
+ "reference": "<repo>/research/unit-distance-22/enum/test-398/base398/udenum",
+ "candidates": {
+  "new": "84adaddfb449a3355c56990cd6d6ac7b564a3ad6d912372b6a3668d72924731a",
+  "new-K1": "35c5ef3cea31ed9437a5ae731798326133517d22de70e15a119c22f97841a224",
+  "new-Kinf": "faf31ec231fd543a07c356d0cef180c814a7242ab38064e0d600729f5bbf1fc3",
+  "new-U1": "89d03238605ead8efc4715bd1865c8dca1291e1b49359453a5d53a5f29eb1a84",
+  "new-U1D64": "759dbf02187b06e3b704a2b693439ec3d779697e05681db099a77616056cff92"
+ },
+ "checks": {
+  "all_runs_identical": true,
+  "graphs_on_10_vertices": true,
+  "new_generator_equals_brute398": true,
+  "new_filter_equals_brute398": true,
+  "brute398_graphs": 105680
+ },
+ "rows": [
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 0,
+   "children": 1,
+   "bad_sets": 0,
+   "cpu_ref": 0.003937,
+   "output_sha256": "4d20c56a803a459e4ef5d8e95c4b9cf405f86de52f573a49e1a1d692247b8a9a",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00346
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00345
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003485
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00362
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003461
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 1,
+   "children": 1,
+   "bad_sets": 0,
+   "cpu_ref": 0.004032,
+   "output_sha256": "224f01f08bed316400d50100ac4c18c2fb478b208f2640803343c525cb8408e6",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003569
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003473
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00357
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003452
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003458
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 2,
+   "children": 2,
+   "bad_sets": 0,
+   "cpu_ref": 0.003877,
+   "output_sha256": "af9fda692baae8860a3ae7a116d5ac7d567d1414a12da6e95e2b29f1f18e2877",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003724
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00356
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004191
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003592
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004174
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 3,
+   "children": 5,
+   "bad_sets": 0,
+   "cpu_ref": 0.003982,
+   "output_sha256": "ff201ac7da07fcc0fbd7cefd8aefa12206d940472ec5218bdb078a9329a0e56e",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003659
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003955
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003652
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005865
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005779
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 4,
+   "children": 11,
+   "bad_sets": 0,
+   "cpu_ref": 0.006488,
+   "output_sha256": "a41a3d5f67d2d4a9a4bbabbbcaf3479d70a20a1134d40a276c0bd41bce9dc114",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006139
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006117
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006207
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006061
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00626
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 5,
+   "children": 26,
+   "bad_sets": 0,
+   "cpu_ref": 0.007009,
+   "output_sha256": "1b13ed6331062d142dadf6ad2ec063986f5351d86ba21031665d70f2383b7390",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006847
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006845
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006815
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006779
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006762
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 6,
+   "children": 64,
+   "bad_sets": 0,
+   "cpu_ref": 0.00847,
+   "output_sha256": "1f1425d3fa6b4df80fd7887d08637484bc9dd4a1687200ec6daed221f1c2ee2a",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.008259
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.008177
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.008291
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.008201
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00819
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 7,
+   "children": 158,
+   "bad_sets": 0,
+   "cpu_ref": 0.011137,
+   "output_sha256": "860bb81855ca758edd57cf05b653f4311a5ce36df8ad836d750a5eaaf3c26f0a",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.011427
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.01136
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.011508
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.011481
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.011564
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 8,
+   "children": 399,
+   "bad_sets": 0,
+   "cpu_ref": 0.017703,
+   "output_sha256": "405549b206f29b009857d468d79a475ad5ba661c630257177c1d90aabecbfb32",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.019343
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.018395
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.018454
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.018996
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.019945
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 9,
+   "children": 989,
+   "bad_sets": 0,
+   "cpu_ref": 0.029955,
+   "output_sha256": "c918022c04ff56b725bec680296b4adf60e31e3fab86faca66c1d64cf548db4f",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.034239
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.033781
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.034756
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.034895
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.033704
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 10,
+   "children": 2330,
+   "bad_sets": 0,
+   "cpu_ref": 0.054311,
+   "output_sha256": "d02c9336d0a29f43b0878ad332918a1fc04e8e66bc849815dfaa6e4929447d0c",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.06474
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.064229
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.064137
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.063844
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.065082
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 11,
+   "children": 5156,
+   "bad_sets": 2,
+   "cpu_ref": 0.096015,
+   "output_sha256": "bda154c34b20db6f30d618f55bba93bcfc7d45796214835673cafc1e6d521c11",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.11254
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.109838
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.110798
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.1108
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.112959
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 12,
+   "children": 10305,
+   "bad_sets": 30,
+   "cpu_ref": 0.156749,
+   "output_sha256": "f86f3d9ac4e81f4937c4b8916c3ee611afdc5ce60e0931b422f894a85d646ff9",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.17868
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.174652
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.179181
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.175087
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.176377
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 13,
+   "children": 17769,
+   "bad_sets": 283,
+   "cpu_ref": 0.297322,
+   "output_sha256": "ab7d5d8ee0a7d7cab55d98bd432f976e13de22c491320cab2608b4e6d43c4e7e",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.249911
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.246128
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.24835
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.251741
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.248513
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 14,
+   "children": 24862,
+   "bad_sets": 1820,
+   "cpu_ref": 0.652114,
+   "output_sha256": "0eb492f9be29b2eeba1404b9e274bbb6e7b598c2757aa986c10a88d5420f9670",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.244742
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.28316
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.30117
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.299777
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.301547
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 15,
+   "children": 25401,
+   "bad_sets": 6974,
+   "cpu_ref": 1.479897,
+   "output_sha256": "07bbceb48dbf02223dd282d15e9be20d9fc9f5186802cf648b19aa603847d324",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.295204
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.272333
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.29302
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.294232
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.298757
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 16,
+   "children": 15230,
+   "bad_sets": 13103,
+   "cpu_ref": 1.381722,
+   "output_sha256": "0c32bc91cbdf96aef79000566f2a53fcce34b40741ab972564afb15103e621be",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.204033
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.197669
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.206297
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.155497
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.209731
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 17,
+   "children": 2733,
+   "bad_sets": 9220,
+   "cpu_ref": 2.366087,
+   "output_sha256": "72290432d8bca390403cfd8f1f6c36f382312f2f9eeddfb8080bdc3cd2a5316a",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.115696
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.147523
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.148832
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.116361
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.135602
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 18,
+   "children": 218,
+   "bad_sets": 3179,
+   "cpu_ref": 0.543997,
+   "output_sha256": "59cbc92e752b9cd4a6d02236f52cd045699b13542dd8f3069c674f074960a069",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.094021
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.136382
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.099334
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.103244
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.111972
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 19,
+   "children": 19,
+   "bad_sets": 367,
+   "cpu_ref": 0.130884,
+   "output_sha256": "aaca5a13b06d59d5aa73af43ae81bdb49423ab360572fffb9b3b499269c1486c",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.069557
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.069238
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.071229
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.066059
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.067468
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 20,
+   "children": 1,
+   "bad_sets": 46,
+   "cpu_ref": 0.035797,
+   "output_sha256": "5863b5e6652081b9952e235a12ed8f34b329576f93183d82c64ead31b8aa28db",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.050863
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.050633
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.050101
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.048219
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.049354
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 21,
+   "children": 0,
+   "bad_sets": 31,
+   "cpu_ref": 0.034069,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.041992
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.045026
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.026108
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.026601
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.02744
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 22,
+   "children": 0,
+   "bad_sets": 24,
+   "cpu_ref": 0.022435,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.024656
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.032936
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.031044
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.026324
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.02008
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 23,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.008792,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.008951
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.010653
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009094
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.010717
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.01271
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 24,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.004524,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.006058
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004347
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00454
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00441
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004392
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 25,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.005781,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003514
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003556
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00352
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003615
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003592
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 26,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.003902,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003524
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003515
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003454
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003578
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003776
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 27,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.003762,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003513
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005507
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005514
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005491
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005496
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 28,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.006011,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005441
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005377
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00563
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00546
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005434
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 29,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.005394,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003558
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003413
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003409
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003372
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003362
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 30,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.003982,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003356
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003494
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004301
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004251
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003454
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 31,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.004699,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003618
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003508
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003453
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003476
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003441
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 32,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.004675,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00344
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003444
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003483
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003355
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003481
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 33,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.003829,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003347
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003946
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003464
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004434
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00446
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 34,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.004003,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004528
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003538
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003377
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003393
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003383
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 35,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.003755,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003502
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003413
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003417
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003444
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003771
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 36,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.003868,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003443
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003481
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003746
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003535
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003531
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 37,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.003855,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003355
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003658
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004257
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003657
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004254
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 38,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.00376,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004502
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003463
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003681
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003383
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003372
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 39,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.003755,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003481
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.0035
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003613
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003442
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003613
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 40,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.003824,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003376
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003355
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003402
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003391
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003375
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 41,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.003831,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003364
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005326
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005476
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00557
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005459
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 42,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.005878,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005445
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005383
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005486
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005441
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005461
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 43,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.005907,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005436
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005383
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005448
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005414
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005443
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 44,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.005893,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005418
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005377
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005465
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005431
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005431
+    }
+   }
+  },
+  {
+   "kind": "generator",
+   "parents": "free9",
+   "m": 45,
+   "children": 0,
+   "bad_sets": 0,
+   "cpu_ref": 0.005888,
+   "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005447
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005388
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005487
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005419
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005438
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 0,
+   "graphs": 1,
+   "kept": 1,
+   "cpu_ref": 6.9e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.1e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-05
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7.1e-05
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.7e-05
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 1,
+   "graphs": 1,
+   "kept": 1,
+   "cpu_ref": 6.8e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.8e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.9e-05
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.8e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 7e-05
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.9e-05
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 2,
+   "graphs": 2,
+   "kept": 2,
+   "cpu_ref": 8e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 9.2e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 8.5e-05
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 8.7e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 9.6e-05
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 8.6e-05
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 3,
+   "graphs": 5,
+   "kept": 5,
+   "cpu_ref": 0.000128,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000143
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000143
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000145
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000147
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000143
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 4,
+   "graphs": 11,
+   "kept": 11,
+   "cpu_ref": 0.000213,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000237
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00023
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000233
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000235
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000248
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 5,
+   "graphs": 26,
+   "kept": 26,
+   "cpu_ref": 0.000386,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000448
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000441
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000454
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000444
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000443
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 6,
+   "graphs": 66,
+   "kept": 64,
+   "cpu_ref": 0.000813,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000902
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000905
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000902
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000909
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000908
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 7,
+   "graphs": 165,
+   "kept": 158,
+   "cpu_ref": 0.001675,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00192
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001904
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001914
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001903
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001941
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 8,
+   "graphs": 428,
+   "kept": 399,
+   "cpu_ref": 0.003714,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004283
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00425
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004237
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004284
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004267
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 9,
+   "graphs": 1103,
+   "kept": 989,
+   "cpu_ref": 0.008709,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009767
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009858
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00962
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009672
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.009462
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 10,
+   "graphs": 2769,
+   "kept": 2330,
+   "cpu_ref": 0.011536,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.012467
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.014549
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.020724
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.012317
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.012662
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 11,
+   "graphs": 6759,
+   "kept": 5156,
+   "cpu_ref": 0.02902,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.027666
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.029921
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.027434
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.02604
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.026509
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 12,
+   "graphs": 15772,
+   "kept": 10305,
+   "cpu_ref": 0.082559,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.056278
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.056816
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.055431
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.082354
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.091528
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 13,
+   "graphs": 34663,
+   "kept": 17769,
+   "cpu_ref": 0.489054,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.175053
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.175838
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.174757
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.174708
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.175107
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 14,
+   "graphs": 71318,
+   "kept": 24862,
+   "cpu_ref": 0.915658,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.196875
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.218359
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.308988
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.213362
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.215184
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 15,
+   "graphs": 136433,
+   "kept": 25401,
+   "cpu_ref": 2.277432,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.355709
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.513382
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.520095
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.517166
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.515412
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 16,
+   "graphs": 241577,
+   "kept": 15230,
+   "cpu_ref": 4.623028,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.555267
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.814078
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.829162
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.830997
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.825979
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 17,
+   "graphs": 395166,
+   "kept": 2733,
+   "cpu_ref": 2.238894,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.976674
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.02387
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.229803
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.094133
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.224476
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 18,
+   "graphs": 596191,
+   "kept": 218,
+   "cpu_ref": 1.253941,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.434603
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.354525
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.325308
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.480585
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.6184
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 19,
+   "graphs": 828728,
+   "kept": 19,
+   "cpu_ref": 1.621927,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.532362
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.529106
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.532208
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.1612
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.786023
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 20,
+   "graphs": 1061159,
+   "kept": 1,
+   "cpu_ref": 1.058351,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.404746
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.276709
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.17871
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.187446
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.194525
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 21,
+   "graphs": 1251389,
+   "kept": 0,
+   "cpu_ref": 1.37418,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.617812
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.643507
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.782918
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.636716
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.667686
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 22,
+   "graphs": 1358852,
+   "kept": 0,
+   "cpu_ref": 1.702425,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.139311
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.386223
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.31812
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.284579
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.134799
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 23,
+   "graphs": 1358852,
+   "kept": 0,
+   "cpu_ref": 0.895326,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.993004
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.007966
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.284766
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.020481
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.998137
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 24,
+   "graphs": 1251389,
+   "kept": 0,
+   "cpu_ref": 0.752162,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.869535
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.830581
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.511283
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.792979
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 4.103248
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 25,
+   "graphs": 1061159,
+   "kept": 0,
+   "cpu_ref": 0.934378,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.182822
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.099282
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.560996
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.365792
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.479241
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 26,
+   "graphs": 828728,
+   "kept": 0,
+   "cpu_ref": 0.464803,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.82521
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.846425
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.840923
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.870553
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.85207
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 27,
+   "graphs": 596191,
+   "kept": 0,
+   "cpu_ref": 0.296375,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.423583
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.471074
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.338305
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.313411
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.315953
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 28,
+   "graphs": 395166,
+   "kept": 0,
+   "cpu_ref": 0.185662,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.894015
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.882553
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.8791
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.870663
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.8915
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 29,
+   "graphs": 241577,
+   "kept": 0,
+   "cpu_ref": 0.114329,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.667915
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.523554
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.519451
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.528487
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.522185
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 30,
+   "graphs": 136433,
+   "kept": 0,
+   "cpu_ref": 0.106533,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.289221
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.292955
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.371971
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.288075
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.299231
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 31,
+   "graphs": 71318,
+   "kept": 0,
+   "cpu_ref": 0.041828,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.146776
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.146862
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.146394
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.148183
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.14982
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 32,
+   "graphs": 34663,
+   "kept": 0,
+   "cpu_ref": 0.0161,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.068335
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.068045
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.069828
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.06897
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.074214
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 33,
+   "graphs": 15772,
+   "kept": 0,
+   "cpu_ref": 0.007278,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.032415
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.030421
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.030846
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.030203
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.029845
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 34,
+   "graphs": 6759,
+   "kept": 0,
+   "cpu_ref": 0.00312,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.012578
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.012452
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.013934
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.018685
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.013373
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 35,
+   "graphs": 2769,
+   "kept": 0,
+   "cpu_ref": 0.001297,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.004891
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.005308
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.0051
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00897
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.007987
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 36,
+   "graphs": 1103,
+   "kept": 0,
+   "cpu_ref": 0.000937,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001916
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001893
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.003433
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001885
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.001901
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 37,
+   "graphs": 428,
+   "kept": 0,
+   "cpu_ref": 0.000216,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000731
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000726
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000731
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000734
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000734
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 38,
+   "graphs": 165,
+   "kept": 0,
+   "cpu_ref": 9.4e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000284
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000285
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.00029
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000287
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000284
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 39,
+   "graphs": 66,
+   "kept": 0,
+   "cpu_ref": 4.6e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000189
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000121
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000123
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000123
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 0.000124
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 40,
+   "graphs": 26,
+   "kept": 0,
+   "cpu_ref": 4.3e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 8.2e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 5.7e-05
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 5.6e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 6.5e-05
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 5.6e-05
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 41,
+   "graphs": 11,
+   "kept": 0,
+   "cpu_ref": 2e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.8e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.1e-05
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.2e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.1e-05
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 3.1e-05
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 42,
+   "graphs": 5,
+   "kept": 0,
+   "cpu_ref": 1.6e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.2e-05
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.2e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.2e-05
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.1e-05
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 43,
+   "graphs": 2,
+   "kept": 0,
+   "cpu_ref": 1.5e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.6e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.6e-05
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 2.2e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.7e-05
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.6e-05
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 44,
+   "graphs": 1,
+   "kept": 0,
+   "cpu_ref": 1.3e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.4e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.5e-05
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.5e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.5e-05
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.4e-05
+    }
+   }
+  },
+  {
+   "kind": "filter",
+   "m": 45,
+   "graphs": 1,
+   "kept": 0,
+   "cpu_ref": 1.3e-05,
+   "candidates": {
+    "new": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.8e-05
+    },
+    "new-K1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.4e-05
+    },
+    "new-Kinf": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.4e-05
+    },
+    "new-U1": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.5e-05
+    },
+    "new-U1D64": {
+     "identical": true,
+     "problems": [],
+     "cpu": 1.4e-05
+    }
+   }
+  }
+ ],
+ "pass": true,
+ "seconds": 240.6
+}

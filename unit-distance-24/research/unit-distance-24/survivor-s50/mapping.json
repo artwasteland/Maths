@@ -1,0 +1,20 @@
+{
+ "survivor": "W@iiac_CA?O?GICD@C_HH?U?AWM@SE?i?GAh@?dWABT?OIr",
+ "pattern": "J?iP?dHPb`_",
+ "gp11_packet": "packet-a5561d906d5f885d",
+ "record": "refutation-a5561d906d5f885d.record.jsonl",
+ "record_sha256": "1b3bece53fd57eb407641afd210eca1fdcb27f12544b910ed71e079c8ca882a3",
+ "pattern_to_survivor": {
+  "0": 2,
+  "1": 16,
+  "2": 6,
+  "3": 21,
+  "4": 3,
+  "5": 12,
+  "6": 1,
+  "7": 19,
+  "8": 9,
+  "9": 10,
+  "10": 17
+ }
+}

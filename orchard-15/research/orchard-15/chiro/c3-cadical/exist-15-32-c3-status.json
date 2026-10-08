@@ -18,7 +18,7 @@
   "command": "python3 exist.py 15 32 --backend cadical --cubes --cube-index 3 --artifacts scratch/exist-15-32-c3 --drat-trim /tmp/drat-trim/drat-trim --timeout 36000",
   "solver": "cadical 1.7.3 (Debian package /usr/bin/cadical; --version prints 1.7.3, package version 1.7.4-1), single threaded, nice -n 5",
   "checker": "drat-trim built from github.com/marijnheule/drat-trim at HEAD, cloned 2026-09-04",
-  "host": "4 vCPU, 16 GB RAM cloud microVM",
+  "host": "<host>",
   "cnf_variables": 131725,
   "cnf_clauses": 738624,
   "cnf_bytes": 13766012,

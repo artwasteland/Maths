@@ -1,0 +1,10 @@
+verifier: research/unit-distance-23/blind-verifier/verify_tree.py sha256 1bafc054ee736f4c7275a7ccb0a747bd2839ce7fefc3b5e04858265d1b015f67
+s50of1920/23-65.g6 graph 0 V?_QPIGD@AGOoHKE_o?Q??HK?WqH@PO_m@CWCaHN_?F_ certs 46f2d3de06f72e37110daf656a5a7a98fd79554049882fa23160232c0617a145: ACCEPT (exit 0)
+  (a) one entry of the root's A changed: REJECT root.A: row space does not equal all graph 4-cycle rhombus rows (exit 1)
+  (b) one child subtree of the root removed: REJECT root: L3 requires 2 children; found 1 (exit 1)
+  (c) the root move's first coefficient changed: REJECT root.move: ax+by+cz is not in A row space (exit 1)
+  (d) the graph with the root move's first edge removed: REJECT root.edges: does not equal input graph (missing=[], extra=[(0, 4)]) (exit 1)
+  (e) the field's interval moved off its root: REJECT field.interval: expected exactly one real root, found 0 (exit 1)
+  (f) the last L3 split's d changed: REJECT root.children[1].children[1].move: L3 d squared does not equal the Heron discriminant (exit 1)
+  (g) the first L1b leaf's omega changed: REJECT root.children[0].children[0].children[0].move: L1b x-omega*y is not in A row space (exit 1)
+BLIND-CHECK OK: 1 of 1 top-level certificates accepted by the blind verifier (verify_tree.py sha256 1bafc054ee736f4c); 7 of 7 tampered inputs rejected

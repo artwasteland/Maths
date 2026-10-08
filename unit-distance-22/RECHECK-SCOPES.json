@@ -1,0 +1,5 @@
+{
+  "quick": "Exact 60-distance lower bound, all 18,689 degree-four maps and both top-level refutation sets.",
+  "audit": "Quick checks plus the original 48-slice count/hash receipts, including their nine explicitly unresolved summary entries.",
+  "full": "One named enumeration slice, compared with its immutable archived counts and hashes."
+}

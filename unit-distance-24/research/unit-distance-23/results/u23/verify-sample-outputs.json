@@ -1,0 +1,383 @@
+{
+ "what": "the certification sample's check outputs (u23-verify, 2026-09-26/27), made before u23-verify.sh recorded a digest of the files checked (e29124767c): verify_sample.py exempts exactly these files, by sha256, from the digest requirement (G5 round 11, finding 1)",
+ "outputs": [
+  {
+   "tag": "v01",
+   "slice": 276,
+   "branch_dir": "v01-hu4cn7",
+   "sha256": "e53ca3ac996be7659c36d2a9a91e0ec0015ac924202c5611b52990c707f1ea44"
+  },
+  {
+   "tag": "v02",
+   "slice": 14,
+   "branch_dir": "v02-5k5njv",
+   "sha256": "4130ac98deb96cd181a22042e44c43176f9153391b76aff8945743ebcf522d9a"
+  },
+  {
+   "tag": "v02",
+   "slice": 25,
+   "branch_dir": "v02-5k5njv",
+   "sha256": "bab234cd9b20ed486cb2e4f88d0133c6340b0978b98ea5c66925dd8e58ba2bbf"
+  },
+  {
+   "tag": "v02",
+   "slice": 453,
+   "branch_dir": "v02-5k5njv",
+   "sha256": "fb55bd26b43278828f5a3a2afb05e7b8a7652f807233a99ae27d5cd60917a50e"
+  },
+  {
+   "tag": "v02",
+   "slice": 472,
+   "branch_dir": "v02-5k5njv",
+   "sha256": "5a3b1113c95bc0d12c99e59b5b8c5146144c16a9215f6626843b91430f9f058c"
+  },
+  {
+   "tag": "v02",
+   "slice": 963,
+   "branch_dir": "v02-5k5njv",
+   "sha256": "a99564eb298311d64b3d6a93a3f03b27c4f3c52e025aafdfb167900dc9d93662"
+  },
+  {
+   "tag": "v02",
+   "slice": 1270,
+   "branch_dir": "v02-5k5njv",
+   "sha256": "3be47e0042fe8452a6624963ce5d59b14c5b781ee18f2f167613c74fb50567f0"
+  },
+  {
+   "tag": "v03",
+   "slice": 242,
+   "branch_dir": "v03-ev41j4",
+   "sha256": "73200459ac0251861669b4966ddda4c94c2bbe8d5e29eadc8289d5eb1d3e3144"
+  },
+  {
+   "tag": "v03",
+   "slice": 247,
+   "branch_dir": "v03-ev41j4",
+   "sha256": "cdb264b93a1049dece74984c1d1a067ff22a3ec9a4959745a90ebc91fa580fe7"
+  },
+  {
+   "tag": "v03",
+   "slice": 422,
+   "branch_dir": "v03-ev41j4",
+   "sha256": "68a49278a13b7d70fa3241f4059cfea4fc507e14c5d38864f1842bfb45a0d6e6"
+  },
+  {
+   "tag": "v03",
+   "slice": 526,
+   "branch_dir": "v03-ev41j4",
+   "sha256": "558ab9252a5c8b408b2089b4f01c21728c8e0086910b1821b9d601ca84961c31"
+  },
+  {
+   "tag": "v03",
+   "slice": 645,
+   "branch_dir": "v03-ev41j4",
+   "sha256": "cfd7df6c3f4c9b996d59fcb47255406c663b219030e2a5a4e5e9a9251e523061"
+  },
+  {
+   "tag": "v03",
+   "slice": 749,
+   "branch_dir": "v03-ev41j4",
+   "sha256": "3148d5dcf26a4788d782fca7db60a0e4c2af31fdb1c0c50d40a3c1cd701cf343"
+  },
+  {
+   "tag": "v03",
+   "slice": 1735,
+   "branch_dir": "v03-ev41j4",
+   "sha256": "64bd86c1cd68948e364073890e03f87d9d92d916bca938c1fdf0bfe6831df3c4"
+  },
+  {
+   "tag": "v04",
+   "slice": 113,
+   "branch_dir": "v04-local",
+   "sha256": "1809d50374715cdb58991e6e130c7ef48fd20320d1d71fcd12c0703cfe7e26c5"
+  },
+  {
+   "tag": "v04",
+   "slice": 586,
+   "branch_dir": "v04-local",
+   "sha256": "ca224150983c39066f46360453769f44469e111e0acc7c47c235e36791748d79"
+  },
+  {
+   "tag": "v04",
+   "slice": 606,
+   "branch_dir": "v04-local",
+   "sha256": "ab1a7e4746c6d99d67d7b7b591e546ceeab9b413ce89e8e69c0fb86b39f04680"
+  },
+  {
+   "tag": "v04",
+   "slice": 728,
+   "branch_dir": "v04-local",
+   "sha256": "0f2a59a501e80bab014efa0dd0a3afee51d66cc83b3d556ee612f174f2b6574c"
+  },
+  {
+   "tag": "v04",
+   "slice": 885,
+   "branch_dir": "v04-local",
+   "sha256": "a594d445c8634c81a303905a68dc0423b385a2be8c4a973b1e214f98eb2f096a"
+  },
+  {
+   "tag": "v04",
+   "slice": 1006,
+   "branch_dir": "v04-local",
+   "sha256": "1c4f204b274fd6545d151d1ad83e9ff681a3197212d276e6f5a6570107095c51"
+  },
+  {
+   "tag": "v04",
+   "slice": 1043,
+   "branch_dir": "v04-local",
+   "sha256": "610a68d3480e1593d9af4d790340ba92709e25fb641f4fec5eba402e254da66e"
+  },
+  {
+   "tag": "v05",
+   "slice": 94,
+   "branch_dir": "v05-uo0hw6",
+   "sha256": "5f7ac92aba5127770147c8e91225ae5e1912875925969fe286d8139dfa1e3bec"
+  },
+  {
+   "tag": "v05",
+   "slice": 219,
+   "branch_dir": "v05-uo0hw6",
+   "sha256": "c72d8f1a2f2b8a40728f5eb9f5e058e6adaa5b04f78a0bbaffa9288bdf559c8b"
+  },
+  {
+   "tag": "v05",
+   "slice": 534,
+   "branch_dir": "v05-uo0hw6",
+   "sha256": "09d8d9a1f1b5100374b9150f97a6b9f22c50a2aa4d2998b8a6503c1e4373bd69"
+  },
+  {
+   "tag": "v05",
+   "slice": 608,
+   "branch_dir": "v05-uo0hw6",
+   "sha256": "908970853ab287921657f256be9969a92e91f672a375a804820db149da37eecc"
+  },
+  {
+   "tag": "v05",
+   "slice": 1354,
+   "branch_dir": "v05-uo0hw6",
+   "sha256": "c8a48cf487bb3af2345498ff41bdc5202e49e7e79bbdfbd908a22933dba13c4c"
+  },
+  {
+   "tag": "v05",
+   "slice": 1405,
+   "branch_dir": "v05-uo0hw6",
+   "sha256": "ffca6b8036a9bdbc91172ab6fd9f2f0386685ab5a36ab84546a362ca6e6ed4ca"
+  },
+  {
+   "tag": "v05",
+   "slice": 1707,
+   "branch_dir": "v05-uo0hw6",
+   "sha256": "a7a83bad2202618cd34ab36c29abc5e39fe2e36049b61a8edd59f23f996c3c4f"
+  },
+  {
+   "tag": "v06",
+   "slice": 253,
+   "branch_dir": "v06-6hm8bv",
+   "sha256": "49175bcc22dfa04e0e62675d355a26e43b72ed4e9786755e1c83e955db6df0b2"
+  },
+  {
+   "tag": "v06",
+   "slice": 1076,
+   "branch_dir": "v06-6hm8bv",
+   "sha256": "79b73a1bbf63d53715ce1ddee1a19916c58af426667efff9e3776bae1a4bb5a2"
+  },
+  {
+   "tag": "v06",
+   "slice": 1112,
+   "branch_dir": "v06-6hm8bv",
+   "sha256": "4294618217cf8424f1bc44e6bea142f7ad637273e899bb7f41ac67f6336b8632"
+  },
+  {
+   "tag": "v06",
+   "slice": 1282,
+   "branch_dir": "v06-6hm8bv",
+   "sha256": "4b0d182b84c6eadfad6246771c13e33fbd342541a0174c601ed910caba7d325a"
+  },
+  {
+   "tag": "v06",
+   "slice": 1408,
+   "branch_dir": "v06-6hm8bv",
+   "sha256": "52b950cc0a621d5a71affcfec5295ee81d0f01cb494c41cc1ed35246d28d0541"
+  },
+  {
+   "tag": "v06",
+   "slice": 1859,
+   "branch_dir": "v06-6hm8bv",
+   "sha256": "b5c8624202bce4a669fffc8f3171b695ae1cef1eb9182e9dcc9a5118a98c5b26"
+  },
+  {
+   "tag": "v06",
+   "slice": 1870,
+   "branch_dir": "v06-6hm8bv",
+   "sha256": "baeff4b9a733d68b02afbaf25baa3cc897b7a2e80c0fd223e854d3cc56498479"
+  },
+  {
+   "tag": "v07",
+   "slice": 282,
+   "branch_dir": "v07-q70tbh",
+   "sha256": "1e87a43bd2be8b6f93e1c95cf4678cdd22aa4801ea9b133ae8dfc814b5cf52a2"
+  },
+  {
+   "tag": "v07",
+   "slice": 579,
+   "branch_dir": "v07-q70tbh",
+   "sha256": "10acd947c011c4c5cefd4f971c7720f5f0638ba7022a8762a7874789afd1af7c"
+  },
+  {
+   "tag": "v07",
+   "slice": 835,
+   "branch_dir": "v07-q70tbh",
+   "sha256": "22e20dbe6cd5b8efe9d7194133ba582b92422eca4f470db44a0d4186ddb31085"
+  },
+  {
+   "tag": "v07",
+   "slice": 1227,
+   "branch_dir": "v07-q70tbh",
+   "sha256": "447a61bfeaa54187bfb40aad3f78f51f35febe23b12c89b7bc88cf2329dbd115"
+  },
+  {
+   "tag": "v07",
+   "slice": 1295,
+   "branch_dir": "v07-q70tbh",
+   "sha256": "af536b3a4193746801e689f07df9be5b72fed8a5f68aa1d26c043e3fb3a0d58b"
+  },
+  {
+   "tag": "v07",
+   "slice": 1566,
+   "branch_dir": "v07-q70tbh",
+   "sha256": "5740810f2a3f72944395894c6edee04144d573654294041ecc8e7726c80fb6c4"
+  },
+  {
+   "tag": "v07",
+   "slice": 1918,
+   "branch_dir": "v07-q70tbh",
+   "sha256": "6a9dec992c6ba491dd689feaef0e7558c8943d81a9e8bba781d4575188174247"
+  },
+  {
+   "tag": "v08",
+   "slice": 231,
+   "branch_dir": "v08-r2ouh7",
+   "sha256": "f47779a8eaf02f4a30d8d12048dba226a9aa681b1b60c5d6b777bda98067572f"
+  },
+  {
+   "tag": "v08",
+   "slice": 295,
+   "branch_dir": "v08-r2ouh7",
+   "sha256": "e60728f2de1f095b22ddfc1ad22b0fc086d12a8a5a0abcbc1ae11508cd358fd9"
+  },
+  {
+   "tag": "v08",
+   "slice": 382,
+   "branch_dir": "v08-r2ouh7",
+   "sha256": "1d5fffd22afaf930cae8ff0635c68aeaa267bdf845cf7b47fee2cc138421dbd5"
+  },
+  {
+   "tag": "v08",
+   "slice": 495,
+   "branch_dir": "v08-r2ouh7",
+   "sha256": "fc251ee2b09bbc50f9f50450ade03cbc35006977c0a69416de2cb16bff4f7cc5"
+  },
+  {
+   "tag": "v08",
+   "slice": 650,
+   "branch_dir": "v08-r2ouh7",
+   "sha256": "f792647cbe87d2b5b1d4d4427f52ee354da01cacef86c7af43a663f6191bbe15"
+  },
+  {
+   "tag": "v08",
+   "slice": 1773,
+   "branch_dir": "v08-r2ouh7",
+   "sha256": "dc3a5301e36b913b58a5f82043c4b7a43f078d421e7884758d608c7ec927d4c7"
+  },
+  {
+   "tag": "v08",
+   "slice": 1808,
+   "branch_dir": "v08-r2ouh7",
+   "sha256": "20f9ad8b9f11cb83f1a65ad26d08b762564ee327f3c6e95183b10c7c8de9e0d9"
+  },
+  {
+   "tag": "v09",
+   "slice": 144,
+   "branch_dir": "v09-x69smo",
+   "sha256": "12476c9e2a687aab0d61bcc663a70f2fb8e328dfe2a2076649380c4046be530d"
+  },
+  {
+   "tag": "v09",
+   "slice": 145,
+   "branch_dir": "v09-x69smo",
+   "sha256": "2b61c6b03fb37445ee10d83726befd4aa02e349a7a8c229eeaef5128c36aaf1b"
+  },
+  {
+   "tag": "v09",
+   "slice": 263,
+   "branch_dir": "v09-x69smo",
+   "sha256": "607c5aa89a347d192bb964af6bd9a31216ebabb07355dffd7efb7b5c08821d44"
+  },
+  {
+   "tag": "v09",
+   "slice": 405,
+   "branch_dir": "v09-x69smo",
+   "sha256": "60f8d41f8c512e18247ccaf880d7f40b8383d6ad072b010599372ab4614ec8da"
+  },
+  {
+   "tag": "v09",
+   "slice": 838,
+   "branch_dir": "v09-x69smo",
+   "sha256": "ccce5ea35f24377b6da9ff59f2dc71ad6788c156a8d2580dbf0874d8e0c72d93"
+  },
+  {
+   "tag": "v09",
+   "slice": 1023,
+   "branch_dir": "v09-x69smo",
+   "sha256": "d398a133eef8833a1760d55732e40f929d20202d2c101cbf2e4af566c96ed208"
+  },
+  {
+   "tag": "v09",
+   "slice": 1623,
+   "branch_dir": "v09-x69smo",
+   "sha256": "eddbd03935736e34421648680b102ec18c76728938201d3d209f91ca2ee8695c"
+  },
+  {
+   "tag": "v10",
+   "slice": 147,
+   "branch_dir": "v10-68k9i4",
+   "sha256": "3cf1fda4e1e76a95cefce0b6a561d1f054f5824ea268bcc43be72938fd1e21c1"
+  },
+  {
+   "tag": "v10",
+   "slice": 159,
+   "branch_dir": "v10-68k9i4",
+   "sha256": "c360dfb7f2327b15244d9462e337ff578457251b9f3cc0b6d174821dbd660d77"
+  },
+  {
+   "tag": "v10",
+   "slice": 878,
+   "branch_dir": "v10-68k9i4",
+   "sha256": "8a1c3f65dc667e1f18136c093c56122e26bacdd9d1cf593476c952aa263e3a7f"
+  },
+  {
+   "tag": "v10",
+   "slice": 1315,
+   "branch_dir": "v10-68k9i4",
+   "sha256": "f0c8fc1cca4bc110e1298d7f46c620f211912e50c1c49292a15a27f4aa9123fc"
+  },
+  {
+   "tag": "v10",
+   "slice": 1372,
+   "branch_dir": "v10-68k9i4",
+   "sha256": "b509eb7ab7d61b75dddb1c7ba02ad51fd7a6d678c96b41f19447154993d720cf"
+  },
+  {
+   "tag": "v10",
+   "slice": 1593,
+   "branch_dir": "v10-68k9i4",
+   "sha256": "5a0eeabdf343291c93c2b6cb45e087a7fedfe4b27044acd4c0ef231ccaded27d"
+  },
+  {
+   "tag": "v10",
+   "slice": 1835,
+   "branch_dir": "v10-68k9i4",
+   "sha256": "29ef09ab6a0c0a4abd9af11f62b546fa0074480871daf430f1fbf3767688261a"
+  }
+ ]
+}

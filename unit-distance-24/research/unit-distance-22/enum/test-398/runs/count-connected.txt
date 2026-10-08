@@ -1,0 +1,2 @@
+<scratch>/scratchpad/t398-work/brute10/brute398.g6: 105680 graphs, 91658 connected
+<scratch>/scratchpad/t398-work/brute10/brute74.g6: 106189 graphs, 92167 connected

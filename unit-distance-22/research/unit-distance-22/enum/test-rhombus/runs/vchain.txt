@@ -1,0 +1,55 @@
+scratch tree <repo>/.claude/worktrees/agent-a3c9dc31ac1640180/research/unit-distance-22/enum/test-rhombus/scratch/tree/research/unit-distance-22; verify-chain.py new d253338569de, landed (b6494295b) 8b419f73eff2; run-dag2.py 78b66addd192
+run-dag2 (16,41) mode 398 --triangles: exit 0 after 19 s
+G --check: exit 0: ["COVERAGE exhaustive: all 20 required cells of (16,41) from seed level 10 present and checked, their parent sources exactly as L4 allows, the certificates of all 12 pruned cells replayed; target and seed as the run's files state them (pin with --expect-target, --expect-seed)"] / CHAIN OK; required cells 20, certs_replayed 12
+G --from-n 13: exit 3: CHAIN PARTIAL (levels below 13 not inspected (--from-n 13); the certificates of 8 pruned cells not replayed (no --check))
+G no --check: exit 3: CHAIN PARTIAL (the certificates of 12 pruned cells not replayed (no --check))
+G --summary-only: exit 3: ["COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares"] / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read)
+run-dag2 (16,41) mode 398 --triangles --reach-root-k 5: exit 0 after 18 s
+R1 tampered: (15,37) omitted, window 15 = [36,36], (16,41) rebuilt from (15,36) alone: top keep 0 graphs, AMP's (16,41) graph present 0/1
+R1: LANDED verify-chain exit 0: CHAIN OK (certs_replayed 11, levels_inspected 19)
+R1: NEW verify-chain exit 1: CHAIN FAIL (6 problems)
+      PROBLEM: run-summary.json reach levels are not the recomputed table's
+      PROBLEM: run-summary.json windows {'10': [17, 20], '11': [20, 23], '12': [24, 27], '13': [28, 30], '14': [32, 33], '15': [36, 36], '16': [41, 41]} are not the target's Schade windows {'10': [17, 20], '11': [20, 23], '12': [24, 27], '13': [28, 30], '14': [32, 33], '15': [36, 37], '16': [41, 41]}
+      PROBLEM: 1 required cell(s) of (16,41) not in run-summary.json: [[15, 37]]
+      PROBLEM: required cell (15,37) could not be checked: FileNotFoundError(2, 'No such file or directory')
+      PROBLEM: 16-41: listed parent levels [[15, 36]] are not the allowed [[15, 36], [15, 37]] (L4 from the target)
+      PROBLEM: 11 certificate files replayed, 12 pruned cells inspected
+R2: LANDED verify-chain exit 0: CHAIN OK (certs_replayed 0, levels_inspected 8)
+R2: NEW verify-chain exit 1: CHAIN FAIL (1 problems)
+      PROBLEM: 12 required cell(s) of (16,41) not in run-summary.json: [[12, 24], [12, 25], [12, 26], [12, 27], [13, 28], [13, 29], [13, 30], [14, 32], [14, 33], [15, 36], [15, 37], [16, 41]]
+R3 tampered: (13,30) dropped from the parents of [(14, 33)], the level-13 window narrowed to end at 29
+R3: LANDED verify-chain exit 0: CHAIN OK (certs_replayed 12, levels_inspected 20)
+R3: NEW verify-chain exit 1: CHAIN FAIL (2 problems)
+      PROBLEM: run-summary.json windows {'10': [17, 20], '11': [20, 23], '12': [24, 27], '13': [28, 29], '14': [32, 33], '15': [36, 37], '16': [41, 41]} are not the target's Schade windows {'10': [17, 20], '11': [20, 23], '12': [24, 27], '13': [28, 30], '14': [32, 33], '15': [36, 37], '16': [41, 41]}
+      PROBLEM: 14-33: listed parent levels [[13, 29]] are not the allowed [[13, 29], [13, 30]] (L4 from the target)
+R4 run-dag2.py --reach-root-k 5 at (16,41): top keep 0 graphs, AMP's (16,41) graph present 0/1
+R4: LANDED verify-chain exit 0: CHAIN OK (certs_replayed 9, levels_inspected 17)
+R4: NEW verify-chain exit 1: CHAIN FAIL (10 problems)
+      PROBLEM: reach.json root k 5 is not justified: Schade's bound is 41 - u-bar(15) = 4, and no lemma is recorded for (16,41)
+      PROBLEM: reach.json table does not follow from the target's root by the L4 recursion
+      PROBLEM: run-summary.json reach levels are not the recomputed table's
+      PROBLEM: 3 required cell(s) of (16,41) not in run-summary.json: [[13, 30], [14, 33], [15, 37]]
+      PROBLEM: required cell (13,30) could not be checked: FileNotFoundError(2, 'No such file or directory')
+      PROBLEM: required cell (14,33) could not be checked: FileNotFoundError(2, 'No such file or directory')
+      PROBLEM: required cell (15,37) could not be checked: FileNotFoundError(2, 'No such file or directory')
+      PROBLEM: 16-41.reach.g6: reach manifest hashes or k do not match
+F slice 0 of 2: run-dag2 exit 0 after 16 s
+F slice 0 of 2: verify-chain --check exit 0: ["COVERAGE exhaustive: all 20 required cells of (16,41) from seed level 10 present and checked, their parent sources exactly as L4 allows, the certificates of all 12 pruned cells replayed (slice 0 of 2 at level 12: the fleet needs all 2 slices); target and seed as the run's files state them (pin with --expect-target, --expect-seed)"] / CHAIN OK
+F slice 1 of 2: run-dag2 exit 0 after 16 s
+F slice 1 of 2: verify-chain --check exit 0: ["COVERAGE exhaustive: all 20 required cells of (16,41) from seed level 10 present and checked, their parent sources exactly as L4 allows, the certificates of all 12 pruned cells replayed (slice 1 of 2 at level 12: the fleet needs all 2 slices); target and seed as the run's files state them (pin with --expect-target, --expect-seed)"] / CHAIN OK
+F --summary-only on both slices: exit 3: ["COVERAGE (summary only) OK: every run's required cells are listed and recorded with the parents L4 allows, every count is consistent, and every fleet's slices are all present with their shares"] / CHAIN PARTIAL (summary only: no level, keep, parent or certificate file was read); slice partition {'24': {'stage_file': 74, 'slices_recording': 2, 'sum': 74}, '25': {'stage_file': 25, 'slices_recording': 2, 'sum': 25}, '26': {'stage_file': 2, 'slices_recording': 2, 'sum': 2}, '27': {'stage_file': 1, 'slices_recording': 2, 'sum': 1}}
+F --summary-only on slice 0 alone: exit 1: CHAIN FAIL (1 problems); ['fleet (16,41) sliced 2 ways at level 12: 1 slices have no summary ([1])']
+F --summary-only with slice 1's records of its level-12 parents raised by one: exit 1: CHAIN FAIL (4 problems); ['fleet (16,41): the 2 recorded shares of (12,24) add up to 75, the cell holds 74', 'fleet (16,41): the 2 recorded shares of (12,25) add up to 26, the cell holds 25', 'fleet (16,41): the 2 recorded shares of (12,26) add up to 3, the cell holds 2']
+P green --resume: exit 0 after 0 s; prune steps reused 12/12
+P target changed to (16,40): --resume exit 0; prune steps rerun ['13-28']; outputs identical True; the manifest rewritten clean True
+P udcheck_rhombus.py sha256 zeroed: --resume exit 0; prune steps rerun ['13-28']; outputs identical True; the manifest rewritten clean True
+P checker from the environment: --resume exit 0; prune steps rerun ['13-28']; outputs identical True; the manifest rewritten clean True
+P checker path changed: --resume exit 0; prune steps rerun ['13-28']; outputs identical True; the manifest rewritten clean True
+P ACCEPT line emptied: --resume exit 0; prune steps rerun ['13-28']; outputs identical True; the manifest rewritten clean True
+P ACCEPT tu count changed: --resume exit 0; prune steps rerun ['13-28']; outputs identical True; the manifest rewritten clean True
+P verified counts emptied: --resume exit 0; prune steps rerun ['13-28']; outputs identical True; the manifest rewritten clean True
+P --resume with $PRUNE_UDCHECK_RHOMBUS set: exit 0; prune steps rerun 12/12
+P --resume next, without it (the manifests record the environment's checker): exit 0; prune steps rerun 12/12
+P --resume once more: exit 0; prune steps rerun 0/12
+P after the resumes: verify-chain --check exit 0: CHAIN OK
+VCHAIN PASS

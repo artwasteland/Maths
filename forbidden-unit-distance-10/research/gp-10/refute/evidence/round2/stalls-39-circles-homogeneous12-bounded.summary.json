@@ -1,0 +1,13 @@
+{
+  "reason": "AlgebraError: CAS exit 14: \nSingular error: no more memory\nSystem 944706k:944787k Appl 929907k/14798k Malloc 1614k/0k Valloc 943092k/14798k Pages 235773/0 Regions 713:713 Internal: 72784\n\nhalt 14\n",
+  "g6": "HGEAXjw",
+  "frame": [
+    0,
+    8
+  ],
+  "degree": 12,
+  "seconds": 23.42477799486369,
+  "limit": 55.0,
+  "stages": [],
+  "verdict": "unknown"
+}

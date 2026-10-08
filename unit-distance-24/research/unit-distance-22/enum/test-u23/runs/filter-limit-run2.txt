@@ -1,0 +1,8 @@
+NEW udfilter 6e0771bb0888e193b7790bdd4b34518d5b35b313fd6a15f330f39f8489fd6dcc; BASE b0947a10; ORIG d4ccae3f
+P2 filter/selfcheck.py on NEW: exit 0; output identical to the recorded one: True
+P5 lattice unit-distance hosts, 23 vertices, set 398: 800 hosts {'tu': 105, 'pass': 675, 'forbidden': 20}; matcher32 + Python TU search agree on verdict and index: 800/800; witnesses re-verified: 800/800
+P5 lattice unit-distance hosts, 23 vertices, set 74: 800 hosts {'tu': 106, 'pass': 675, 'forbidden': 19}; matcher32 + Python TU search agree on verdict and index: 800/800; witnesses re-verified: 800/800
+P5 lattice unit-distance hosts, 24 vertices, set 398: 800 hosts {'tu': 119, 'pass': 666, 'forbidden': 15}; matcher32 + Python TU search agree on verdict and index: 800/800; witnesses re-verified: 800/800
+P5 lattice unit-distance hosts, 24 vertices, set 74: 800 hosts {'tu': 119, 'pass': 666, 'forbidden': 15}; matcher32 + Python TU search agree on verdict and index: 800/800; witnesses re-verified: 800/800
+P4 ASAN + UBSan build on every Part-3 host file in both sets (29184 runs of a host): clean and identical
+FILTER-LIMIT PASS

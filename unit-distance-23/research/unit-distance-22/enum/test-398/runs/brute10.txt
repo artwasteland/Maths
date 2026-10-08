@@ -1,0 +1,14 @@
+geng: 274668 graphs on 9 vertices, 12005168 on 10
+brute force: 106189 74-free and 105680 398-free graphs on 10 vertices
+generator old74: 106189 graphs on 10 vertices
+generator new74: 106189 graphs on 10 vertices
+generator new398: 105680 graphs on 10 vertices
+ok  gen74_equals_brute74
+ok  gen398_equals_brute398
+ok  old74_bytes_equal_new74
+ok  brute398_subset_of_brute74
+ok  brute74_minus_brute398_is_the_509_refuted
+RED CONTROL went red: gen398 with its last record dropped 
+RED CONTROL went red: the set-74 generator judged against brute398 
+RED CONTROL went red: brute398 without member 74 508
+RESULT: PASS

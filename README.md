@@ -24,13 +24,37 @@ publishes its own corrections prominently and has a standing habit of doing so.
 
 Across the directories below, the artifact gate reads the **903 terms published here** and reports **782 recomputed**, 121 drift-guarded and **0 unbound**, with **0** disagreeing with the computation. Those three words are defined in each result's README, and every number in them is generated from the same run as this sentence.
 
-### [`unit-distance-22/`](unit-distance-22/) — The unit-distance number of 22 points: u(22) = 60, with checked certificates
+### [`unit-distance-22/`](unit-distance-22/): The unit-distance number of 22 points: u(22) = 60, with checked certificates
 
-DOI: `10.5281/zenodo.22468977`
+Earlier deposited version DOI: `10.5281/zenodo.22468977`
 
-No set of 22 points in the plane has 61 unit distances, so **A186705(22) = 60**, the value Alexeev, Mixon and Parshall bracketed as 60 or 61 in 2024. The method is theirs, reimplemented: canonical augmentation of the forbidden-subgraph-free graphs with 22 vertices and 61 edges, pruned at every level by six totally unfaithful gadgets and a minimum-degree lemma (18,689 extensions checked), cut into 48 slices and run on fourteen machines. The top level produced four graphs in all; each contains a gadget with its forced pair non-adjacent and each is refuted algebraically, both certificate sets accepted by a blind checker (`results/u22/cell-22-61/`).
+No set of 22 points in the plane has 61 unit distances, so **A186705(22) = 60**, the value Alexeev, Mixon and Parshall bracketed as 60 or 61 in 2024. The method is theirs, reimplemented: canonical augmentation of the forbidden-subgraph-free graphs with 22 vertices and 61 edges, pruned at every level by six totally unfaithful gadgets and a minimum-degree lemma (18,689 extensions checked), cut into 48 slices and run on fourteen machines. The top level produced four graphs in all; each contains a gadget with its forced pair non-adjacent and each is refuted algebraically, both certificate sets accepted by a blind checker (`results/u22/cell-22-61/`). A later (22,61) control of the u(23) programme gives a second derivation over 1,920 slices.
 
 > ⚠ Carries a stated limit. See [`unit-distance-22/README.md`](unit-distance-22/README.md).
+
+### [`unit-distance-23/`](unit-distance-23/): The unit-distance number of 23 points: u(23) = 64, with checked certificates
+
+The (23,65) enumeration over 1,920 slices leaves one graph, refuted by an exact proof tree checked by the project checker and an independent verifier. Together with the known 64-distance configuration (a lower bound already in Alexeev, Mixon and Parshall's paper; the coordinates used here come from Engel, Hammond-Lee, Su, Varga and Zsámboki's dataset), this gives **A186705(23) = 64**.
+
+> ⚠ Carries a stated limit. See [`unit-distance-23/README.md`](unit-distance-23/README.md).
+
+### [`unit-distance-24/`](unit-distance-24/): The unit-distance number of 24 points: u(24) = 68, with checked certificates
+
+The (24,69) enumeration over 1,920 slices leaves one graph. An injective subgraph map sends an 11-vertex graph with a checked refutation into that survivor. Together with the known 68-distance configuration (a lower bound already in Alexeev, Mixon and Parshall's paper; the coordinates used here come from Engel, Hammond-Lee, Su, Varga and Zsámboki's dataset), this gives **A186705(24) = 68**.
+
+> ⚠ Carries a stated limit. See [`unit-distance-24/README.md`](unit-distance-24/README.md).
+
+### [`forbidden-unit-distance-10/`](forbidden-unit-distance-10/): The 324 minimal forbidden unit-distance graphs on 10 vertices, with checked certificates
+
+There are 324 minimal forbidden unit-distance graphs on 10 vertices: 4 with 15 edges, 126 with 16, 191 with 17 and 3 with 18. Among 33,162 biconnected candidates free of the earlier forbidden list, 32,653 embed and 509 are refuted. Minimality follows from all one-edge deletions. The extension was suggested in correspondence by a researcher.
+
+> ⚠ Carries a stated limit. See [`forbidden-unit-distance-10/README.md`](forbidden-unit-distance-10/README.md).
+
+### [`forbidden-unit-distance-11/`](forbidden-unit-distance-11/): The 2,833 minimal forbidden unit-distance graphs on 11 vertices, with checked certificates
+
+There are 2,833 minimal forbidden unit-distance graphs on 11 vertices. The frozen checker accepts all 448,708 candidates: 443,444 embedded and 5,264 refuted, with no unknown or conditional result. It derives the minimal list by checking every one-edge deletion.
+
+> ⚠ Carries a stated limit. See [`forbidden-unit-distance-11/README.md`](forbidden-unit-distance-11/README.md).
 
 ### [`orchard-15/`](orchard-15/) — The orchard problem at fifteen points: t3(15) = 31, with a checked SAT certificate
 

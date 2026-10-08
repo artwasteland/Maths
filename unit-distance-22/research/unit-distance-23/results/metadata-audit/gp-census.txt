@@ -1,0 +1,4 @@
+certificate_stream_sha256 577c1f8de771dc80832c4cddce39f7efc2fad5dee3363480805b379e7e87f20e; matches_checker_consumed_hash True
+records 33162; duplicates 0; missing 0; extra 0; verdicts {'embedded': 32653, 'refuted': 509}
+minimal_member_certificate_types {'null': 22, 'null-dag': 65, 'real': 24, 'real-dag': 97, 'tree': 103, 'tu': 13}
+minimality_deletions_for_canonicalization 8039; nonbiconnected_deletions 472

@@ -1,7 +1,7 @@
 {
  "tag": "control-a",
  "dag": "<repo>/research/unit-distance-22/enum/out-22/dag-22-61-f12",
- "host": "liam-desktop",
+ "host": "<host>",
  "shards_total": 1,
  "shards_identical": 0,
  "parents_replayed": 30,

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "g6": "Is?HGtcU?",
+  "good_frame": [
+    0,
+    1
+  ],
+  "mutated_frame": [
+    0,
+    5
+  ],
+  "sat_unchanged": true,
+  "embedding_edges_exact": true,
+  "distinct_pairs_positive": 45,
+  "positive_system_has_exact_real_point": true,
+  "unsafe_identity_equals_one": true,
+  "production_guard_reason": "frame: not an edge",
+  "certificate_rejection_reason": "frame: not an edge",
+  "outer_soundness_red_reason": "soundness bug: prism refuted after wrong frame",
+  "embedding_mutation_reason": "prism-coordinate-mutation: points 0 and 1 collide",
+  "false_refutation_emitted_by_producer": false,
+  "seconds": 0.5624138028360903,
+  "argv": [
+    "research/gp-10/refute/wrong_frame_control.py"
+  ]
+}

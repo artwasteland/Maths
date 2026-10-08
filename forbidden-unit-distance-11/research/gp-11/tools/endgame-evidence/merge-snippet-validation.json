@@ -1,0 +1,10 @@
+{
+  "scope": "synthetic structural merge test; no checker replay or B10 acceptance claim",
+  "population_rows": 33162,
+  "replacement_bytes_preserved": true,
+  "all_other_record_bytes_unchanged": true,
+  "UNKNOWN_exact_difference": true,
+  "F10_index_74_rejected_before_publication": true,
+  "duplicate_analyst_graph_rejected_before_publication": true,
+  "report_bash_examples_syntax_checked": 7
+}
