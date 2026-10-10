@@ -48,6 +48,19 @@ These files accompany the zip on Zenodo and are omitted from the GitHub director
 Every research-module import stays within this directory. Audit and full modes
 additionally read the separately deposited files named above; see NOTICE.md for commands.
 
+## Citing this
+
+**DOI: [10.5281/zenodo.23272630](https://doi.org/10.5281/zenodo.23272630)**
+
+Assigned by Zenodo for this deposit. If that link does not resolve, the deposit is
+still a draft awaiting publication; the number is fixed either way and does not
+change when it is published.
+
+<!-- Worded to be true before AND after publication on purpose. This file is
+     frozen into the deposit, so a sentence that is only true while the deposit
+     is a draft would become a false statement in a permanent record the moment
+     somebody pressed publish. -->
+
 ## If this is useful to you
 
 It is yours. The OEIS does not accept AI-authored or automated submissions and

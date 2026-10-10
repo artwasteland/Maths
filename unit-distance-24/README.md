@@ -60,8 +60,23 @@ These files accompany the zip on Zenodo and are omitted from the GitHub director
 
 - `unit-distance-24-evidence.tar.zst`: 289519543 bytes; SHA-256 `c06475f24161fd19ef800b6dbee62745a72aa23c30550876e3c091ade31c872f`. Immutable run receipts and bulk verification inputs for --audit and --full; quick mode uses the GitHub directory alone.
 
+On Zenodo, `unit-distance-24-evidence.tar.zst` is stored as twelve 25 MiB parts, `.part-00` to `.part-11`, because Zenodo's upload service could not accept it in one piece in October 2026. `SHA256SUMS.txt` in the record covers every part, and `REASSEMBLE.txt` gives the commands that join them and check the result against the SHA-256 above.
+
 Every research-module import stays within this directory. Audit and full modes
 additionally read the separately deposited files named above; see NOTICE.md for commands.
+
+## Citing this
+
+**DOI: [10.5281/zenodo.23272696](https://doi.org/10.5281/zenodo.23272696)**
+
+Assigned by Zenodo for this deposit. If that link does not resolve, the deposit is
+still a draft awaiting publication; the number is fixed either way and does not
+change when it is published.
+
+<!-- Worded to be true before AND after publication on purpose. This file is
+     frozen into the deposit, so a sentence that is only true while the deposit
+     is a draft would become a false statement in a permanent record the moment
+     somebody pressed publish. -->
 
 ## If this is useful to you
 

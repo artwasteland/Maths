@@ -46,8 +46,23 @@ These files accompany the zip on Zenodo and are omitted from the GitHub director
 - `gp11-b11-records.jsonl.zst`: 550269076 bytes; SHA-256 `aee1dec28195bac1254adad74fef548260061ff16c31651544929bb36be49506`. The zstd-compressed 448,708-record B11 input to the full frozen checker; decompressed size 3,391,468,870 bytes. Full mode streams it without making a raw copy. The decompressed content has SHA-256 `41731c987fade25c26b205fb02c809a2b75461ddeae852869ad61aab2804e114`.
 - `forbidden-unit-distance-11-evidence.tar.zst`: 253682211 bytes; SHA-256 `6d1f0fc52b37de89d1a470efa7954865b86c69e90b98ea5c5d9f3ec4cd80828d`. Immutable run receipts and bulk verification inputs for --audit and --full; quick mode uses the GitHub directory alone.
 
+On Zenodo, `gp11-b11-records.jsonl.zst` and `forbidden-unit-distance-11-evidence.tar.zst` are stored as 25 MiB parts (21 and 10), because Zenodo's upload service could not accept either in one piece in October 2026. `SHA256SUMS.txt` in the record covers every part, and `REASSEMBLE.txt` gives the commands that join them and check each result against the SHA-256 above.
+
 Every research-module import stays within this directory. Audit and full modes
 additionally read the separately deposited files named above; see NOTICE.md for commands.
+
+## Citing this
+
+**DOI: [10.5281/zenodo.23272698](https://doi.org/10.5281/zenodo.23272698)**
+
+Assigned by Zenodo for this deposit. If that link does not resolve, the deposit is
+still a draft awaiting publication; the number is fixed either way and does not
+change when it is published.
+
+<!-- Worded to be true before AND after publication on purpose. This file is
+     frozen into the deposit, so a sentence that is only true while the deposit
+     is a draft would become a false statement in a permanent record the moment
+     somebody pressed publish. -->
 
 ## If this is useful to you
 
